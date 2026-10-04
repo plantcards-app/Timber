@@ -316,5 +316,24 @@ all five frame whole at default framing, no `PHOTO_FOCUS` override.
 | 11 | Vinca major 'Variegata' | 1580x2766, staged 1200x2101: green leaves broadly margined cream-yellow, the fine hairs on the leaf edge visible on the top leaves (the greater periwinkle's ciliate margin); no flower. Matches. |
 | 12 | Vinca minor 'Illumination' | 1934x3534, staged 1200x2193: trailing stems with gold leaves narrowly edged dark green, one leaf at the foot of the frame green-centred; no flower. Matches the card's "bright golden-yellow leaves narrowly edged green". The tall frame's lower third falls behind the plaque at the default focus, which keeps the gold leaves in the well. |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #13–#17 in batch order (Aster 'Dark Purple',
-Hesperantha 'Pink Princess', Hesperantha 'Major', Delphinium 'Pure White', Crocosmia 'Babylon').
+Next to deal after this section was written: #13–#15, dealt below on 2026-10-04.
+
+## Cards 13–15 dealt (2026-10-04)
+
+Oscar's three photos, no text, filed in batch order; each matches its entry on sight. All three Galaxy S24
+shots of 2026-10-03 12:24–12:25, 4000x3000 with EXIF orientation 6, staged upright 1200x1600; byte scans
+found no C2PA, JUMBF or `trainedAlgorithmicMedia` markers. One `add-plants-bulk.js --quick` run,
+derivatives built in the run, credits by basename, conventions exactly as in `batch-corrected.json`, every
+other field as supplied. Deck 501 -> 504, hold 75 unchanged; restamped r346. Originals here are
+byte-identical to the files Oscar sent. Data checks green after the insert (the credits check failed only
+until the entries were written). Rendered at phone size from a `?cards=3` deck: all three frame whole at
+default framing, no `PHOTO_FOCUS` override.
+
+| # | card | notes |
+|---|---|---|
+| 13 | Symphyotrichum novae-angliae 'Dark Purple' | one open violet-purple daisy with a gold-and-red disc, a furry purple bud and hairy stems below — the hairy stem and clasping leaves are the New England aster's marks. In flower on 3 October, inside the Aug-Oct band. The cultivar is Oscar's label and GPT's name, not the photograph's (its own `uncertain` says 'Dark Purple' is thinly documented). |
+| 14 | Hesperantha coccinea 'Pink Princess' | a spike of pale blush-pink starry flowers with yellow anthers over grassy leaves, buds behind; matches the card's "large, delicate pale blush-pink autumn flowers". In flower on 3 October, inside the Sep-Nov band. |
+| 15 | Hesperantha coccinea 'Major' | one large scarlet flower with dark anthers filling the frame, a second flower and a bud behind; matches "large crimson-scarlet flowers". In flower on 3 October, inside the Aug-Nov band. |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #16–#20 in batch order (Delphinium 'Pure
+White', Crocosmia 'Babylon', Skimmia 'Perosa', Echinacea MOOODZ FEARLESS, Hydrangea 'HI Ocean').
