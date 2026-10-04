@@ -912,6 +912,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "carex-oshimensis-evergold.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "carpinus-betulus.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -3725,6 +3735,16 @@
    "note": "Oscar confirmed the plant and cultivar from his own pond. The IMAGE FILE as supplied carries a C2PA manifest from the OpenAI Media Service API (softwareAgent gpt-image v2.0, action c2pa.created, IPTC digitalSourceType trainedAlgorithmicMedia), i.e. the picture itself is synthetic rather than a camera capture. Recorded as not cleared for commercial use until a real photograph of the plant replaces it. 1086px wide, below the 1200px house standard."
   },
   {
+   "file": "oenothera-lindheimeri-gambit-variegata-rose.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "oenothera-lindheimeri-gaudi-rose-florgaucomro.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -4626,6 +4646,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "rosa-cutie-pie-rop007.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "rosa-deseo.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -5505,6 +5535,26 @@
    "commitSubject": "Add Laurustinus 'Eve Price' — deck reaches 30 plants",
    "commercialUseCleared": true,
    "note": "Replaced 2026-10-01 at Oscar's request (\"better photo\") with his two-panel collage: open white flowers with pink buds left, a deep-pink bud cluster over the leaves right; collage app, no camera EXIF, no AI markers. The previous master (his berry close-up of 2026-08-23, commit 533b0fa) is retired; sent with batch data/held-photos/2026-10-01c/. Card text and ratings unchanged."
+  },
+  {
+   "file": "vinca-major-variegata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "vinca-minor-illumination.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
   },
   {
    "file": "viola-babyface-series-white.jpg",

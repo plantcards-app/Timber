@@ -295,5 +295,26 @@ entry are unchanged. `tools/check-boot.js` validates its keys as current slugs. 
 foliage, clear of the growth rail and the HEIGHT value on the left spine. audit-layout, verify-cards,
 deck-audit and perf-test green on the build; the full sequential gate on the pushed head is in the ledger.
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #8–#12 in batch order (CUTIE PIE, Gambit
-Variegata Rose, Evergold, Vinca major 'Variegata', Vinca minor 'Illumination').
+Next to deal after this section was written: #8–#12, dealt below on 2026-10-04.
+
+## Cards 8–12 dealt (2026-10-04)
+
+Oscar's five photos, sent with one word, "In order", so they are filed in batch order. All five are Galaxy
+S24 shots of 2026-10-03 12:25–12:27 with EXIF orientation 1, already trimmed on the phone (none is the
+sensor's 4000x3000); byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia` markers. One
+`add-plants-bulk.js --quick` run, derivatives built in the run, credits by basename, conventions exactly as
+in `batch-corrected.json`, every other field as supplied. Deck 496 -> 501, hold 75 unchanged; restamped
+r345. Originals here are byte-identical to the files Oscar sent. Data checks green after the insert (the
+credits check failed only until the entries were written). Rendered at phone size from a `?cards=5` deck:
+all five frame whole at default framing, no `PHOTO_FOCUS` override.
+
+| # | card | notes |
+|---|---|---|
+| 8 | Rosa CUTIE PIE ('Rop007') | 3000x3498, staged 1200x1399: glossy, sharply serrated pinnate rose foliage filling the frame, fresh pale shoots at the centre; no flower on the bench on 3 October, so the white-edged-pink flowers the card leads on are not in this frame (the Jun-Sep band). The cultivar is Oscar's label and GPT's identification, not the photograph's — any small rose reads like this out of flower. |
+| 9 | Oenothera lindheimeri 'Gambit Variegata Rose' | 2758x2292, landscape, staged 1200x997: magenta four-petalled flowers with long stamens on red stems over narrow cream-margined leaves — the variegation and the pink flowers are the cultivar's two claims and both are in the frame. In flower on 3 October, inside the Jun-Oct band. The well keeps the centre column of a landscape frame: flowers top, variegated leaves below, the sides cropped. |
+| 10 | Carex oshimensis 'Evergold' | 3000x3348, staged 1200x1339: arching blades with the broad creamy-yellow centre stripe and green margins filling the frame; a few older blades browning at the base. Matches. |
+| 11 | Vinca major 'Variegata' | 1580x2766, staged 1200x2101: green leaves broadly margined cream-yellow, the fine hairs on the leaf edge visible on the top leaves (the greater periwinkle's ciliate margin); no flower. Matches. |
+| 12 | Vinca minor 'Illumination' | 1934x3534, staged 1200x2193: trailing stems with gold leaves narrowly edged dark green, one leaf at the foot of the frame green-centred; no flower. Matches the card's "bright golden-yellow leaves narrowly edged green". The tall frame's lower third falls behind the plaque at the default focus, which keeps the gold leaves in the well. |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #13–#17 in batch order (Aster 'Dark Purple',
+Hesperantha 'Pink Princess', Hesperantha 'Major', Delphinium 'Pure White', Crocosmia 'Babylon').
