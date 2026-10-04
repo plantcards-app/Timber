@@ -335,5 +335,32 @@ default framing, no `PHOTO_FOCUS` override.
 | 14 | Hesperantha coccinea 'Pink Princess' | a spike of pale blush-pink starry flowers with yellow anthers over grassy leaves, buds behind; matches the card's "large, delicate pale blush-pink autumn flowers". In flower on 3 October, inside the Sep-Nov band. |
 | 15 | Hesperantha coccinea 'Major' | one large scarlet flower with dark anthers filling the frame, a second flower and a bud behind; matches "large crimson-scarlet flowers". In flower on 3 October, inside the Aug-Nov band. |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #16–#20 in batch order (Delphinium 'Pure
-White', Crocosmia 'Babylon', Skimmia 'Perosa', Echinacea MOOODZ FEARLESS, Hydrangea 'HI Ocean').
+Next to deal after this section was written: #16–#20, dealt below on 2026-10-04.
+
+## Cards 16–20 dealt (2026-10-04)
+
+Oscar's five photos with "In order", filed in batch order; each matches its entry on sight. Four are Galaxy
+S24 shots of 2026-10-03 12:22–12:23, 4000x3000 with EXIF orientation 6, staged upright 1200x1600; the
+Delphinium is a two-panel collage from the collage app (2160x2021, no camera EXIF, a 2026-10-04 23:10
+timestamp from the collage, staged 1200x1123, kept whole). Byte scans found no C2PA, JUMBF or
+`trainedAlgorithmicMedia` markers. One `add-plants-bulk.js --quick` run, derivatives built in the run,
+credits by basename, conventions exactly as in `batch-corrected.json`, every other field as supplied.
+Deck 504 -> 509, hold 75 unchanged; restamped r347. Originals here are byte-identical to the files Oscar
+sent. Data checks green after the insert (the credits check failed only until the entries were written).
+
+Rendered at phone size from a `?cards=5` deck: four frame whole at default framing. **The Delphinium
+collage takes `PHOTO_FOCUS` 0% 40%** (the Freckles clematis precedent, with a comment in the registry): the
+collage is nearly square, its flower spike is the left panel and the leaf panel sits lower right under
+the app's green fill, so the centred default showed the fill, cut the spike on the left and caught half
+the leaf; at 0% the spike is whole with a strip of the leaf panel beside it.
+
+| # | card | notes |
+|---|---|---|
+| 16 | Delphinium 'Pure White' | collage: a dense double white spike with black "bees" at the centre of each floret, left; a palmate, deeply cut hairy leaf on a stone slab, right. In flower on the bench in October against a Jun-Aug band — a bench photo says nothing about flowering time. The cultivar is the label's name; GPT's own `uncertain` says not to equate it with Magic Fountains Pure White. |
+| 17 | Crocosmia × crocosmiiflora 'Babylon' | arching spray of orange-red trumpets with golden throats and long orange stamens, buds along the stem, grassy leaves soft below; matches. In flower on 3 October, just past the Jul-Sep band. |
+| 18 | Skimmia japonica 'Perosa' | dense heads of red-pink buds over glossy green leaves with a fine pale margin; the "red-pink buds" of the card, in bud on 3 October inside the Oct-Apr band. The card's "grey-green leaves edged yellow" reads as plain green with a narrow pale edge in this frame — noted only, the label's name stands. |
+| 19 | Echinacea MOOODZ FEARLESS ('Hilmofear') | one strong orange flower with a dark red-and-green cone, a second orange flower below; matches "strong orange flowers with fresh green tones in the developing central cone". In flower on 3 October, just past the May-Sep band. |
+| 20 | Hydrangea macrophylla 'HI Ocean' | a mophead in deep magenta-purple with blue-white fertile florets, over green leaves bronzing at the edges. The label GPT read said "Hi Ocean Blue"; this plant is in the pinker presentation the card's own visual describes for higher pH — the colour is the soil's, not a different cultivar. Hue 225 (blue) kept as supplied. In flower on 3 October, past the Jun-Aug band. |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #21–#25 in batch order (Acer 'Moonfire',
+Lantana camara, Polygala myrtifolia, Osteospermum Dalina Compact White Pink Blush, Cynara cardunculus).

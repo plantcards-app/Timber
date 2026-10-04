@@ -1250,7 +1250,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r346 · 2026-10-04 · fb97084';
+const BUILD='r347 · 2026-10-04 · bb212a7';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -13024,6 +13024,71 @@ const PLANTS = [
    uses:"Borders, cut flowers, containers.", size:"50–70 cm H × 30–50 cm W",
    hardinessNote:"−10 to −5°C.", foliage:"semi-evergreen",
    seasonalImpact:"", growthSpeed:10, pestRisk:3, thirst:11, careLevel:5, sunNeed:90, sunMin:70},
+  {common:"Delphinium Pure White", latin:"Delphinium 'Pure White'", hue:0,
+   visual:"Upright herbaceous perennial producing strong spikes of crisp white flowers above deeply divided green foliage.",
+   water:"Moderate to high during active growth.",
+   aspect:"East / South / West",
+   soil:"Rich, moist, well-drained; No waterlogging or exposed windy sites",
+   prune:"Cut spent flower stems down after flowering to encourage a second flush.",
+   source:"", peak:"Jun-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Pure White",
+   hardiness:"H5", resilience:"Cold-hardy but tall flowers can require shelter or support.",
+   uses:"Cottage gardens, borders, containers, cut flowers.", size:"60–80 cm H × 30–50 cm W",
+   toxicity:"All parts are harmful if eaten.", hardinessNote:"Hardy in most UK gardens.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:10, pestRisk:9, thirst:11, careLevel:8, sunNeed:85, sunMin:60},
+  {common:"Crocosmia Babylon", latin:"Crocosmia × crocosmiiflora 'Babylon'", hue:15,
+   visual:"Cormous perennial with sword-like leaves and arching sprays of large orange-red flowers with dark rings around golden throats.",
+   water:"Moderate.",
+   aspect:"East / South / West",
+   soil:"Moist but well-drained; No heavy stagnant winter soil",
+   prune:"Remove dead foliage and flower stems before spring growth.",
+   source:"", peak:"Jul-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Babylon",
+   hardiness:"H4", resilience:"Vigorous once established.",
+   uses:"Borders, cottage gardens, cut flowers.", size:"0.5-1 m H × 30–50 cm W",
+   hardinessNote:"−10 to −5°C.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:11, pestRisk:5, thirst:8, careLevel:4, sunNeed:80, sunMin:45},
+  {common:"Skimmia Perosa", latin:"Skimmia japonica 'Perosa'", hue:345,
+   visual:"Compact evergreen male skimmia with grey-green leaves edged yellow and clusters of red-pink buds opening creamy-white.",
+   water:"Moderate.",
+   aspect:"North / East",
+   soil:"Humus-rich, moist, drained; No hot dry sun or poor dry soil",
+   prune:"Little pruning required; lightly shape after flowering.",
+   source:"", peak:"Oct-Apr", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Perosa",
+   hardiness:"H5", resilience:"Reliable shade-tolerant evergreen.",
+   uses:"Shade borders, woodland planting, containers.", size:"0.5-1 m H × 0.5-1 m W",
+   toxicity:"Plant material should not be eaten.", hardinessNote:"−15 to −10°C.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:6, pestRisk:6, thirst:9, careLevel:5, sunNeed:35, sunMin:10},
+  {common:"Coneflower MOOODZ Fearless", latin:"Echinacea MOOODZ FEARLESS ('Hilmofear')", hue:25,
+   visual:"Compact well-branched coneflower producing strong orange flowers with fresh green tones in the developing central cone.",
+   water:"Moderate while establishing; drought tolerant once mature.",
+   aspect:"South / West",
+   soil:"Fertile, well-drained; No wet winter soil",
+   prune:"Deadhead for repeat flowering or retain seedheads for wildlife.",
+   source:"", peak:"May-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Hilmofear (MOOODZ Fearless)",
+   hardiness:"H5", resilience:"Heat tolerant, sturdy and floriferous.",
+   uses:"Containers, borders, pollinator gardens, cut flowers.", size:"35–45 cm H × 35–45 cm W",
+   hardinessNote:"Generally hardy in most UK gardens where drainage is good.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:9, pestRisk:5, thirst:6, careLevel:4, sunNeed:95, sunMin:75},
+  {common:"Hydrangea HI Ocean", latin:"Hydrangea macrophylla 'HI Ocean'", hue:225,
+   visual:"Compact mophead hydrangea producing large rounded flower heads that can develop intense blue tones in acidic conditions and pinker tones at higher pH.",
+   water:"High; keep soil reliably moist.",
+   aspect:"East / South / West",
+   soil:"Humus-rich, moist, drained; No drought; soil pH shifts flower colour",
+   prune:"Remove old flowerheads and dead stems in spring without heavily cutting healthy old wood.",
+   source:"", peak:"Jun-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"HI Ocean",
+   hardiness:"H5", resilience:"Compact and suitable for garden or container production.",
+   uses:"Containers, borders, shaded patios, cut flowers.", size:"0.8-1.2 m H × 0.8-1.2 m W",
+   toxicity:"Harmful if eaten; may irritate skin.", hardinessNote:"Cold hardy but flower buds benefit from a sheltered site.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:8, pestRisk:7, thirst:14, careLevel:8, sunNeed:60, sunMin:30},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -16454,6 +16519,12 @@ buildSwapCSS();
    The lesson is the general one: judge a swap on the two CARDS, not the two
    files. */
 const PHOTO_FOCUS={
+  /* Oscar's two-panel collage of 2026-10-04 (2160x2021, nearly square): the double white
+     flower spike is the LEFT panel (x 2–49%) and the leaf panel sits lower right, with the
+     collage app's green fill above it. At the centred default the 0.62 well showed that
+     fill, cut the spike on the left and caught half the leaf. 0% keeps the spike whole
+     with a strip of the leaf panel beside it — the Freckles clematis precedent. */
+  'delphinium-pure-white':'0% 40%',
   /* Oscar's second two-panel collage (his first is kept as -alt in the batch folder):
      the sharp bells and fresh leaves are the LEFT panel, which starts at the edge, so a
      centred crop in the 0.62 well cut its outer bell. 0% keeps that panel whole with
