@@ -1,20 +1,30 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first five dealt: Rhododendron
-  'Ramapo', Robinia 'Frisia', Gentiana 'The Caley', Echinacea 'Princess Citrus', Amsonia 'Blue Ice';
-  Berrybank Dome resolved as a double of the dealt Gentiana sino-ornata; Alstroemeria 'Valley Beach'
-  named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia (deck 491 -> 496,
-  r344, gate 18/18 (app-test 270s, edge-test 270s, the rest green) on its head). Oscar merges, or says "merge". Then a Little Lime photo he is sure of,
-  and photos for #8–#12 (CUTIE PIE, Gambit Variegata Rose, Evergold, Vinca major 'Variegata', Vinca
-  minor 'Illumination'), five at a time; say "not live until merged" on every push; a push to the
-  feature branch while a PR is open joins that PR, so update its title and body rather than opening
-  another. Open for Oscar, not blocking: rename the dealt Gentiana sino-ornata card to 'Berrybank Dome'
-  (he says that is the plant), or leave the species name with "Berrybank Dome" in cvs as now.
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first ten dealt: Rhododendron
+  'Ramapo', Robinia 'Frisia', Gentiana 'The Caley', Echinacea 'Princess Citrus', Amsonia 'Blue Ice',
+  Rosa CUTIE PIE, Oenothera 'Gambit Variegata Rose', Carex 'Evergold', Vinca major 'Variegata', Vinca
+  minor 'Illumination'; Berrybank Dome resolved as a double of the dealt Gentiana sino-ornata;
+  Alstroemeria 'Valley Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on
+  the Amsonia (deck 491 -> 501, r345, gate 18/18 (app-test 260s, edge-test 273s, the rest green) on its head). Oscar merges, or says "merge". Then a
+  Little Lime photo he is sure of, and photos for #13–#17 (Aster 'Dark Purple', Hesperantha 'Pink
+  Princess', Hesperantha 'Major', Delphinium 'Pure White', Crocosmia 'Babylon'), five at a time; say
+  "not live until merged" on every push; a push to the feature branch while a PR is open joins that PR,
+  so update its title and body rather than opening another. Open for Oscar, not blocking: rename the
+  dealt Gentiana sino-ornata card to 'Berrybank Dome' (he says that is the plant), or leave the species
+  name with "Berrybank Dome" in cvs as now.
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-04 (**cards 8–12 dealt: Rosa CUTIE PIE, Oenothera 'Gambit Variegata Rose', Carex 'Evergold', Vinca major 'Variegata', Vinca minor 'Illumination'; deck 496 -> 501**) —
+  Oscar's five Galaxy S24 shots with "In order", filed in batch order; all already trimmed on the phone,
+  no AI or C2PA markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp
+  r345. Rendered at phone size: all five whole at default framing (the landscape Gaura keeps flowers over
+  variegated leaves in the centre column; the two tall periwinkle frames keep their leaves in the well).
+  The rose is foliage only — no flower on the bench in October — noted in the README. gate 18/18 (app-test 260s, edge-test 273s, the rest green).
+  Pushed to the feature branch, joining PR #54 (title and body updated to ten cards). Not live until
+  merged.
 progress: 2026-10-04 (**cards 6 and 7 dealt: Echinacea 'Princess Citrus', Amsonia 'Blue Ice'; deck 494 -> 496; the first PHOTO CAPTION (v14.62)**) —
   Oscar's two Galaxy S24 shots with "the amsonia needs like a little lable at the bottom saying autumnal
   colour". Both dealt with the bulk tool (derivatives built in the run now sharp is installed), credits,
