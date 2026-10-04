@@ -1,19 +1,32 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first three dealt: Rhododendron
-  'Ramapo', Robinia 'Frisia', Gentiana 'The Caley'; Berrybank Dome resolved as a double of the dealt
-  Gentiana sino-ornata; Alstroemeria 'Valley Beach' named from its label (deck 491 -> 494, r343, gate
-  18/18 on its head b0fe58e). Oscar merges, or says "merge". Then a Little Lime photo he is sure of, and
-  photos for #6–#10 (Princess Citrus, Blue Ice, CUTIE PIE, Gambit Variegata Rose, Evergold), five at a
-  time; say "not live until merged" on every push; a push to the feature branch while a PR is open joins
-  that PR, so update its title and body rather than opening another. Open for Oscar, not blocking:
-  rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' (he says that is the plant), or leave
-  the species name with "Berrybank Dome" in cvs as now.
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first five dealt: Rhododendron
+  'Ramapo', Robinia 'Frisia', Gentiana 'The Caley', Echinacea 'Princess Citrus', Amsonia 'Blue Ice';
+  Berrybank Dome resolved as a double of the dealt Gentiana sino-ornata; Alstroemeria 'Valley Beach'
+  named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia (deck 491 -> 496,
+  r344, gate 18/18 (app-test 270s, edge-test 270s, the rest green) on its head). Oscar merges, or says "merge". Then a Little Lime photo he is sure of,
+  and photos for #8–#12 (CUTIE PIE, Gambit Variegata Rose, Evergold, Vinca major 'Variegata', Vinca
+  minor 'Illumination'), five at a time; say "not live until merged" on every push; a push to the
+  feature branch while a PR is open joins that PR, so update its title and body rather than opening
+  another. Open for Oscar, not blocking: rename the dealt Gentiana sino-ornata card to 'Berrybank Dome'
+  (he says that is the plant), or leave the species name with "Berrybank Dome" in cvs as now.
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-04 (**cards 6 and 7 dealt: Echinacea 'Princess Citrus', Amsonia 'Blue Ice'; deck 494 -> 496; the first PHOTO CAPTION (v14.62)**) —
+  Oscar's two Galaxy S24 shots with "the amsonia needs like a little lable at the bottom saying autumnal
+  colour". Both dealt with the bulk tool (derivatives built in the run now sharp is installed), credits,
+  originals byte-identical, no AI or C2PA markers. The card had no way to say which season a photo shows,
+  so one was built, small and general: a `PHOTO_CAPTION` text registry keyed by latin-slug beside
+  PHOTO_FOCUS, `captionHTML()` printing one italic tag on a dark pill above the PLANT POWER POINTS line
+  only for cards with an entry, the registry added to check-boot's REGISTRIES so a stray key fails the
+  fast set; CARD-PROTOCOL v14.62 records the geometry. First entry `amsonia-blue-ice` → "Autumnal
+  colour", his words. Rendered at phone size: tag legible over the gold foliage, both cards whole at
+  default framing; audit-layout, verify-cards, deck-audit, perf-test green on the build; restamp r344;
+  gate 18/18 (app-test 270s, edge-test 270s, the rest green). Pushed to the feature branch, which joins PR #54 (title and body updated). Not live
+  until merged.
 progress: 2026-10-03, afternoon (**PR #54 opened on b0fe58e; gate 18/18**) — the sequential gate (app-test
   254s, edge-test 263s) came back green four minutes after the push; PR #54 carries both commits of the
   day (the stored batch and the three dealt), subscribed, check-in armed. Not live until merged.
