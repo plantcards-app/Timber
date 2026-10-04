@@ -1,0 +1,15 @@
+{
+  "sourcePx":        {"w": 3000, "h": 4000},
+  "featureVisible":  true,
+  "featureSeen":     "one magenta pea flower (two wings, white fringed keel at lower left) with small oval leaves to its right; measured as the bounding box of strongly magenta pixels, x 0.293-0.750, y 0.252-0.623 of the displayed 3000x4000 frame",
+  "featureBox":      {"x": 0.293, "y": 0.252, "w": 0.457, "h": 0.371},
+  "crop":            {"x": 0.106, "y": 0.170, "w": 0.830, "h": 0.830},
+  "cropAspect":      0.75,
+  "rotateDeg":       0,
+  "featureInSafeBox": true,
+  "objectPosition":  "50% 40%",
+  "labels": [],
+  "exposure":        {"evAdjust": 0, "whiteBalance": "none"},
+  "verdict":         "crop",
+  "reason":          "Oscar asked for the flower to sit in the centre of the photo box. The 3:4 master fills the card well's full height, so object-position cannot lift it; a 3:4 window dropped to the bottom edge (y 0.17-1.00) moves the flower centre from 44% to 32% down the frame, the middle of the part of the well the stats plaque leaves visible (0-62%), and its keel fringe clears the plaque at 55%."
+}

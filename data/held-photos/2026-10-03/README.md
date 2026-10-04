@@ -383,5 +383,21 @@ from a `?cards=4` deck: all four frame whole at default framing, no `PHOTO_FOCUS
 | 23 | Polygala myrtifolia | one magenta pea flower with the fringed white keel, small oval leaves behind; matches "purple-pink pea-like flowers". In flower on 3 October, inside the Apr-Oct band. GPT's species choice (label gave the genus only) is consistent with the leaf and flower but [Unverified]. |
 | 24 | Osteospermum ecklonis 'Dalina Compact White Pink Blush' | one creamy-white daisy, the petals washed pink on the backs and tips, around a blue-grey disc rimmed orange; the "white flowers flushed and blushed soft pink around darker centres" of the card. In flower on 3 October, just past the May-Sep band. Oscar's note reads "OSTEOSPERMUM Dalina White"; [Unverified] whether that is the label's full wording or his shorthand — the card keeps GPT's name, which the pink blush in the frame supports. If the label says only Dalina White, the latin is a one-line rename before merge. |
 
+**Polygala reframed after the deal (2026-10-04).** Oscar: "Shake rhe sweet pea shrub photo wasn't slightly
+higher so the floer was in the centre of rhe plsnt box" — read as *shame the sweet pea shrub photo wasn't
+slightly higher, so the flower was in the centre of the plant box* ([Inference] from the typing). The 3:4
+master fills the well's full height under `object-fit: cover`, so `PHOTO_FOCUS` cannot lift it; only a crop
+can. The flower was measured as the bounding box of strongly magenta pixels in the displayed 3000x4000 frame
+(x 0.293–0.750, y 0.252–0.623; centre 52% across, 44% down). `tools/reframe-photo.js` with
+`polygala-myrtifolia-crop.json` (stored here) took the 3:4 window x 0.106–0.936, y 0.170–1.000 of the camera
+original: 2490x3320 at exactly 0.750, feature centre at 50% across and 32% down the crop (inside the tool's
+safe box), no rotation, no exposure change, no pixels generated. The tool's output is stored here as
+`polygala-myrtifolia-crop.jpg`; the master `photos/polygala-myrtifolia.jpg` is that file downscaled to
+1200x1600 at JPEG 85, as `add-plants-bulk.js` stages, and the derivative was rebuilt with
+`optimise-photos.js --only`. The original here is untouched (md5 13a18691336fe44a69e065cdcb4d8594 before and
+after). Re-rendered at phone size: the flower spans 10–55% of the well's height (was 25–62%), its centre at
+32% against the PLANT POWER POINTS line at 60%, so it sits in the middle of the visible part of the well and
+the keel fringe clears the plaque. Credits entry updated. Restamped r349.
+
 Next to deal: #1 when Oscar has a photo he is sure of; then #25–#29 in batch order (Cynara cardunculus,
 Heuchera 'Toncka Green & Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis).
