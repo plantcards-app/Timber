@@ -1,20 +1,41 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first eighteen dealt (cards 2–20
-  bar Berrybank Dome, which is a double of the dealt Gentiana sino-ornata; Little Lime paused);
-  Alstroemeria 'Valley Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on
-  the Amsonia (deck 491 -> 509, r347, gate 18/18 (app-test 274s, edge-test 275s, the rest green) on its head). Oscar merges, or says "merge". Then a
-  Little Lime photo he is sure of, and photos for #21–#25 (Acer 'Moonfire', Lantana camara, Polygala
-  myrtifolia, Osteospermum Dalina, Cynara cardunculus), five at a time; say "not live until merged" on
-  every push; a push to the feature branch while a PR is open joins that PR, so update its title and
-  body rather than opening another. Open for Oscar, not blocking: rename the dealt Gentiana sino-ornata
-  card to 'Berrybank Dome' (he says that is the plant), or leave the species name with "Berrybank Dome"
-  in cvs as now.
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first twenty-two dealt (cards
+  2–24 bar Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria
+  'Valley Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia;
+  the Polygala photo reframed at Oscar's word (deck 491 -> 513, r349; gate 18/18 (app-test 264s, edge-test 271s, the rest green) on f44af4d, the
+  twenty-two-card head, and gate 18/18 (app-test 259s, edge-test 271s, the rest green) on 55f5938, the reframe head). Oscar merges, or says "merge". Then a
+  Little Lime photo he is sure of, and photos for #25–#29 (Cynara cardunculus, Heuchera 'Toncka Green &
+  Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis), five at a time; say "not live
+  until merged" on every push; a push to the feature branch while a PR is open joins that PR, so update
+  its title and body rather than opening another. Open for Oscar, not blocking: the Acer 'Moonfire' photo
+  shows yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if it
+  is the wrong plant); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the
+  species name with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina
+  White".
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-04 (**Polygala photo reframed — flower centred in the well**) —
+  Oscar: the sweet pea shrub photo should have sat slightly higher so the flower was in the centre of the
+  plant box. The 3:4 master fills the well's full height under object-fit cover, so PHOTO_FOCUS has no
+  vertical slack; the only honest answer is a crop. Flower measured as the magenta bounding box of the
+  displayed 3000x4000 frame (centre 44% down); tools/reframe-photo.js took a 3:4 window of the camera
+  original (x 0.106–0.936, y 0.170–1.000, 2490x3320 at 0.750, feature centre 32% down, inside the safe
+  box), master restaged at 1200x1600, derivative rebuilt, no pixels generated, the stored original
+  untouched; the crop JSON and the tool's output kept in the batch folder, credits entry and README
+  record it. Re-rendered: the flower spans 10–55% of the well (was 25–62%), the PPP line at 60%.
+  Restamp r349, fast set 9/9, gate 18/18 (app-test 259s, edge-test 271s, the rest green). Pushed to the feature branch, joining PR #54 (title and body
+  updated). Not live until merged.
+progress: 2026-10-04 (**cards 21–24 dealt: Acer 'Moonfire', Lantana camara, Polygala myrtifolia, Osteospermum Dalina; deck 509 -> 513**) —
+  Oscar's four Galaxy S24 shots with "OSTEOSPERMUM Dalina White"; filed in batch order, no AI or C2PA
+  markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp r348. All
+  four whole at default framing. The maple photo is yellow-green with bronze tips while the card says
+  deep reddish-purple: dealt under the label's name by the label rule, doubt in the README and flagged to
+  Oscar ([Unverified] it is 'Moonfire'). The Lantana is in bud, the Polygala and Osteospermum in flower
+  and matching. gate 18/18 (app-test 264s, edge-test 271s, the rest green). Pushed to the feature branch, joining PR #54. Not live until merged.
 progress: 2026-10-04 (**cards 16–20 dealt: Delphinium 'Pure White', Crocosmia 'Babylon', Skimmia 'Perosa', Echinacea MOOODZ FEARLESS, Hydrangea 'HI Ocean'; deck 504 -> 509**) —
   Oscar's five, "In order": four Galaxy S24 shots and one two-panel collage (the Delphinium); no AI or
   C2PA markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp r347.
