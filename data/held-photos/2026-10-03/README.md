@@ -362,5 +362,26 @@ the leaf; at 0% the spike is whole with a strip of the leaf panel beside it.
 | 19 | Echinacea MOOODZ FEARLESS ('Hilmofear') | one strong orange flower with a dark red-and-green cone, a second orange flower below; matches "strong orange flowers with fresh green tones in the developing central cone". In flower on 3 October, just past the May-Sep band. |
 | 20 | Hydrangea macrophylla 'HI Ocean' | a mophead in deep magenta-purple with blue-white fertile florets, over green leaves bronzing at the edges. The label GPT read said "Hi Ocean Blue"; this plant is in the pinker presentation the card's own visual describes for higher pH — the colour is the soil's, not a different cultivar. Hue 225 (blue) kept as supplied. In flower on 3 October, past the Jun-Aug band. |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #21–#25 in batch order (Acer 'Moonfire',
-Lantana camara, Polygala myrtifolia, Osteospermum Dalina Compact White Pink Blush, Cynara cardunculus).
+Next to deal after this section was written: #21–#24, dealt below on 2026-10-04.
+
+## Cards 21–24 dealt (2026-10-04)
+
+Oscar's four photos, sent with "OSTEOSPERMUM Dalina White" (the Osteospermum came first, out of batch
+order, and the note names it); filed to #21–#24, no Cardoon photo yet. All four Galaxy S24 shots of
+2026-10-03 12:00–12:21 (three 4000x3000 with EXIF orientation 6, staged upright 1200x1600; the Lantana
+already upright, 3000x4000 orientation 1); byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia`
+markers. One `add-plants-bulk.js --quick` run, derivatives built in the run, credits by basename,
+conventions exactly as in `batch-corrected.json`, every other field as supplied. Deck 509 -> 513, hold 75
+unchanged; restamped r348. Originals here are byte-identical to the files Oscar sent. Data checks green
+after the insert (the credits check failed only until the entries were written). Rendered at phone size
+from a `?cards=4` deck: all four frame whole at default framing, no `PHOTO_FOCUS` override.
+
+| # | card | notes |
+|---|---|---|
+| 21 | Acer palmatum 'Moonfire' | **the photograph does not show the card's colour.** Seven-lobed, sharply serrated Acer palmatum leaves, yellow-green with pink-bronze tips and a few brown spots, on a staked young plant in a pot; the card describes "deep reddish-purple" leaves turning crimson in autumn. Dealt under the label's name by the label rule (NEW-SESSION, the Cordyline australis precedent), with the doubt here: [Unverified] that the plant photographed is 'Moonfire'. [Speculation] a red-leaved form faded to green-gold under shade cloth by October, a nursery mislabel, or a different plant on the bench — the photo cannot say which. Flagged to Oscar in the reply; if it is the wrong plant the fix is a replacement photo (the Eve Price routine), card text untouched. |
+| 22 | Lantana camara | a shoot tip of rough, hairy, serrated leaves with a flower bud just forming at the centre; no open flower on 3 October against a May-Oct band, so the yellow the card is named for is not in the frame. Genus is safe on the leaf ([Inference]); the species is the label's. |
+| 23 | Polygala myrtifolia | one magenta pea flower with the fringed white keel, small oval leaves behind; matches "purple-pink pea-like flowers". In flower on 3 October, inside the Apr-Oct band. GPT's species choice (label gave the genus only) is consistent with the leaf and flower but [Unverified]. |
+| 24 | Osteospermum ecklonis 'Dalina Compact White Pink Blush' | one creamy-white daisy, the petals washed pink on the backs and tips, around a blue-grey disc rimmed orange; the "white flowers flushed and blushed soft pink around darker centres" of the card. In flower on 3 October, just past the May-Sep band. Oscar's note reads "OSTEOSPERMUM Dalina White"; [Unverified] whether that is the label's full wording or his shorthand — the card keeps GPT's name, which the pink blush in the frame supports. If the label says only Dalina White, the latin is a one-line rename before merge. |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #25–#29 in batch order (Cynara cardunculus,
+Heuchera 'Toncka Green & Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis).

@@ -141,6 +141,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "acer-palmatum-moonfire.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "acer-palmatum-orangeola.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3194,6 +3204,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "lantana-camara.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "laurus-nobilis-sunlit.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Second frame for the Bay Laurel card (PHOTO_SWAP alt): Oscar's 2026-10-01 frame, sent with a re-researched JSON: leaves backlit with the yellow midribs and stems glowing and one young leaf curled, the aromatic foliage a customer is buying. Alternates with the card's own foliage photo..",
@@ -3915,6 +3935,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "osteospermum-ecklonis-dalina-compact-white-pink-blush.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "oxalis-triangularis-mijke.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4312,6 +4342,16 @@
    "sourceUrl": null,
    "commit": "e676e9a",
    "commitSubject": "Add Cape Leadwort (Plumbago auriculata, H2 tender, hero-on-self cutout)",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "polygala-myrtifolia.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
