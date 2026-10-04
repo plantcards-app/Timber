@@ -643,6 +643,18 @@
     font-family:Georgia,serif;font-size:9.5px;font-weight:700;letter-spacing:3.5px;
     text-transform:uppercase;color:#ecd7a0;
     text-shadow:0 1px 3px rgba(10,20,10,.92),0 0 8px rgba(10,20,10,.7)}
+  /* PHOTO CAPTION — Oscar, 2026-10-04: "the amsonia needs like a little label at the
+     bottom saying autumnal colour". A photograph can show a season the card's prose only
+     names (his Amsonia is the gold autumn foliage, not the blue May-Jun stars the card is
+     named for), and nothing on the front said which. One short italic tag in the photo's
+     bottom-left corner, sitting just above the PLANT POWER POINTS line (its bottom edge
+     at ~57%, the line at 58.28%), keyed by latin-slug in PHOTO_CAPTION. Absent on every
+     card without an entry. Dark pill behind cream italic so it reads on any photo. */
+  .pcap{position:absolute;left:15.14%;top:54.3%;z-index:4;max-width:60%;
+    font-family:Georgia,serif;font-style:italic;font-size:9px;line-height:1.3;
+    color:#f2e8c8;background:rgba(8,18,10,.72);border:1px solid rgba(236,215,160,.45);
+    border-radius:9px;padding:1px 7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    text-shadow:0 1px 2px rgba(0,0,0,.6);pointer-events:none}
   /* PANEL ART ON ::before, NOT ON THE ELEMENT. Until 2026-09-15 each of these three
      panels carried its own <img> — 3 per card, 1,038 across the deck, all pointing at
      the same three files. They are backgrounds now, but they are NOT set on .plaque /
@@ -1238,7 +1250,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r343 · 2026-10-03 · 5544de0';
+const BUILD='r344 · 2026-10-04 · f0c2f44';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -12882,6 +12894,32 @@ const PLANTS = [
    uses:"Rock gardens, containers, alpine beds, edging.", size:"10 cm H × 10–50 cm W",
    hardinessNote:"−15 to −10°C.", foliage:"semi-evergreen",
    seasonalImpact:"", growthSpeed:5, pestRisk:8, thirst:12, careLevel:9, sunNeed:65, sunMin:35},
+  {common:"Coneflower Princess Citrus", latin:"Echinacea 'Princess Citrus'", hue:55,
+   visual:"Compact coneflower with flowers opening greenish and developing lemon-yellow petals with green-tinted tips around a golden central cone.",
+   water:"Moderate while establishing; relatively drought tolerant once mature.",
+   aspect:"South / West",
+   soil:"Fertile, well-drained; No heavy wet winter soil",
+   prune:"Deadhead for repeat flowering or leave seedheads for winter wildlife.",
+   source:"", peak:"Jun-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Princess Citrus",
+   hardiness:"H6", resilience:"Good heat and drought tolerance once established.",
+   uses:"Pollinator planting, containers, borders, cut flowers.", size:"40–50 cm H × 40–50 cm W",
+   hardinessNote:"Approximately −20 to −15°C based on its stated cold-hardiness range.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:9, pestRisk:5, thirst:6, careLevel:4, sunNeed:95, sunMin:75},
+  {common:"Bluestar Blue Ice", latin:"Amsonia 'Blue Ice'", hue:215,
+   visual:"Compact clump-forming perennial with dark green narrow leaves, star-shaped periwinkle-blue flowers and yellow-gold autumn foliage.",
+   water:"Moderate; drought tolerant once established.",
+   aspect:"East / South / West",
+   soil:"Moist or well-drained; No prolonged waterlogging",
+   prune:"Cut back after autumn foliage colour has finished.",
+   source:"", peak:"May-Jun", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Blue Ice",
+   hardiness:"H4", resilience:"Drought resistant and generally pest-free.",
+   uses:"Prairie planting, borders, ground cover, coastal gardens.", size:"30–50 cm H × 0.5-1 m W",
+   toxicity:"Milky sap may irritate sensitive skin.", hardinessNote:"−10 to −5°C according to current RHS rating.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:8, pestRisk:3, thirst:6, careLevel:3, sunNeed:75, sunMin:35},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -16464,7 +16502,7 @@ function buildCard(c){
         <div class="railval rail-s" data-label="Spread"><span class="v">${sz.s}</span></div>
         <div class="crest"><span class="hnum">${p.hardiness}</span></div>
         ${toxFlag(p)}
-        <div class="ppp">Plant Power Points</div>
+        <div class="ppp">Plant Power Points</div>${captionHTML(slug)}
         <div class="plaque"${ho&&ho.plaque?` style="--panel-art:url(${ho.plaque})"`:''}>
           ${pestIcon?`<div class="patch tiny p-pest-icon"></div><img class="pesticon" src="${pestIcon}" alt="">`:''}
           <div class="patch lbl p-bloom-val"></div><div class="val-ink pval t-bloom">${p.peak||''}</div>
@@ -16664,6 +16702,20 @@ const H_SCALE={
   'H6':['Very hardy — severe UK winters and beyond','-20 to -15°C'],
   'H7':['Extremely hardy — severest European winters','below -20°C'],
 };
+/* PHOTO CAPTION — one short line printed as a tag in the photo's bottom-left corner,
+   keyed by latin-slug like PHOTO_FOCUS. For a photograph that shows one season or one
+   feature of a plant the card describes in more than one. Only the cards listed here
+   carry a tag; tools/check-boot.js checks every key is a current card's slug. */
+const PHOTO_CAPTION={
+  /* Oscar, 2026-10-04: his photo is the plant in its gold autumn foliage, not the
+     periwinkle-blue May-Jun stars the card is named for; his words for the tag. */
+  'amsonia-blue-ice':'Autumnal colour',
+};
+function captionHTML(slug){
+  const t=PHOTO_CAPTION[slug];
+  if(!t)return'';
+  return`<div class="pcap">${String(t).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]))}</div>`;
+}
 function buildLensHardy(p){
   const h=(p.hardiness||'').trim(),sc=H_SCALE[h];
   return `<div class="lens-head">Hardiness · ${h||'not rated'}</div>`

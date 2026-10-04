@@ -268,5 +268,32 @@ entries had not been written yet, and passed once they were.
 | 4 | Gentiana 'The Caley' (reading above) | two-panel collage: a trumpet opening wide at the left, closed and half-open ones at the right, deep blue with pale, dark-spotted throats over narrow grassy leaves; the collage app's blurred fill behind the stats panel. Both panels in the well at default framing. In flower on 3 October, inside the Sep-Nov band. |
 
 Rendered at phone size (390x780, 2x) from a `?cards=3` deck after the derivatives were built: all three frame
-whole, no `PHOTO_FOCUS` override. Next to deal: #1 when Oscar has a photo he is sure of; then #6–#10 in
-batch order (Princess Citrus, Blue Ice, CUTIE PIE, Gambit Variegata Rose, Evergold).
+whole, no `PHOTO_FOCUS` override. Next to deal after this section was written: #6 and #7, dealt below on 2026-10-04.
+
+## Cards 6 and 7 dealt (2026-10-04), and the first photo caption
+
+Oscar's two photos, with: "The amsonia needs like a little lable at the bottom saying autumnal colour".
+Both Galaxy S24 shots of 2026-10-03 (the Echinacea 12:30:10, the Amsonia 12:29:13), 4000x3000 with EXIF
+orientation 6, staged upright 1200x1600; byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia`
+markers. One `add-plants-bulk.js --quick` run, derivatives built in the run (sharp now present), credits
+by basename, conventions exactly as in `batch-corrected.json`, every other field as supplied. Deck 494 ->
+496, hold 75 unchanged. Originals here are byte-identical to the files Oscar sent. The data checks were
+green after the insert; the bulk run's credits check failed only because the entries were not yet
+written, and passed once they were. Restamped r344 together with the caption below.
+
+| # | card | notes |
+|---|---|---|
+| 6 | Echinacea 'Princess Citrus' | matches: one open flower, lemon-yellow petals with green-tinted tips around a golden-green cone, a second flower still green at the lower right. In flower on the bench on 3 October, just past the Jun-Sep band — a bench photo says nothing about flowering time. Flower whole in the well at default framing. |
+| 7 | Amsonia 'Blue Ice' | the plant in autumn: upright stems of narrow willow-like leaves gone gold with bronze tips, the "yellow-gold autumn foliage" the card's visual names; no flowers (the periwinkle stars are May-Jun). Foliage fills the well at default framing. Carries the tag below. |
+
+**Photo caption, new card feature (CARD-PROTOCOL v14.62).** The card had no way to say which season or
+feature a photograph shows, and Oscar asked for one on this card in so many words. A text registry
+`PHOTO_CAPTION` in `timber.html`, keyed by latin-slug like `PHOTO_FOCUS`, prints one short italic tag on
+a dark pill in the photo's bottom-left corner, just above the PLANT POWER POINTS line; cards without an
+entry are unchanged. `tools/check-boot.js` validates its keys as current slugs. First and only entry:
+`amsonia-blue-ice` → "Autumnal colour", his words. Rendered at phone size: the tag reads over the gold
+foliage, clear of the growth rail and the HEIGHT value on the left spine. audit-layout, verify-cards,
+deck-audit and perf-test green on the build; the full sequential gate on the pushed head is in the ledger.
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #8–#12 in batch order (CUTIE PIE, Gambit
+Variegata Rose, Evergold, Vinca major 'Variegata', Vinca minor 'Illumination').

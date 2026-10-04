@@ -441,6 +441,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "amsonia-blue-ice.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "anemone-fantasy-aurora.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -1845,6 +1855,16 @@
   },
   {
    "file": "echinacea-ifecssmin.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "echinacea-princess-citrus.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
