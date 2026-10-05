@@ -7,7 +7,7 @@ brick: Deal the 2026-10-05 batch as Oscar's photos arrive — eight new cards st
   Acer negundo, #10 "Lavandula spp." pending the label's name), five at a time in batch order with
   `add-plants-bulk.js --quick`; a photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight' — both
   filled on the dealt cards, r355) is a second frame via add-swap. Branch `ccr-cd5f214b-6ow2oi` carries the
-  store (fast checks 9/9 on r355 (16eeff6); the full sequential gate was still in its browser suites when the stop hook asked for the push, so this commit went up on the fast set alone — the feature branch does not deploy — and the gate's result is recorded in the entry above it once it reports); no PR opened — Oscar was not asked and did not ask; say "not live until merged" on every
+  store, 6b91b43 — gate 18/18 (app-test 271s, edge-test 279s, the rest green) on its timber.html, r355 (16eeff6); no PR opened — Oscar was not asked and did not ask; say "not live until merged" on every
   push until it lands. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: Caryopteris
   'Dark Knight' went H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9 Acer negundo's
   orange Toxic flag rests on the horse hazard (atypical myopathy), not a human one; #7 Phytolacca's H6 is
@@ -19,6 +19,9 @@ brick: Deal the 2026-10-05 batch as Oscar's photos arrive — eight new cards st
   direct read; the r270 iPhone check — Oscar opening the app on an iPhone that crashed and pasting back the
   *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**gate 18/18 on 6b91b43, r355**) — the full sequential gate (app-test 271s, edge-test 279s,
+  the rest green) came back green on the working tree 6b91b43 carries; timber.html is byte-identical between the
+  gate and the push (stamp 16eeff6 both sides), only the ledger moved. Not live until merged.
 progress: 2026-10-05 (**batch 2026-10-05 stored: 10 entries, 8 fitted, 2 doubles filled (r355)**) — Oscar's
   paste of ten GPT JSONs (GPT's own header: "Cross-checked against current RHS/Kew data"), no photos, no
   instruction — the repo's routine for a bare JSON paste, as 2026-10-03. As-sent, corrected and README under
@@ -39,7 +42,7 @@ progress: 2026-10-05 (**batch 2026-10-05 stored: 10 entries, 8 fitted, 2 doubles
   plant-sense pre-check on a scratch hold block (deck 531 / hold 83): identical issue list, --strict 0. #10
   "Lavandula spp." names no plant — GPT offers 'Platinum Blonde' or 'Walberton's Silver Edge', both H5 by
   its account; stored because it passes the validator, and the label names the card when the photo comes.
-  Restamp r355 (two card rows and the stamp are the whole timber.html diff); fast 9/9; fast checks 9/9 on r355 (16eeff6); the full sequential gate was still in its browser suites when the stop hook asked for the push, so this commit went up on the fast set alone — the feature branch does not deploy — and the gate's result is recorded in the entry above it once it reports. Pushed to
+  Restamp r355 (two card rows and the stamp are the whole timber.html diff); fast 9/9; full sequential gate 18/18 (app-test 271s, edge-test 279s, the rest green) on r355 (16eeff6) — it was still in its browser suites when the stop hook asked for the push, so 6b91b43 went up on the fast set alone (the feature branch does not deploy) and the result landed in the next commit. Pushed to
   `ccr-cd5f214b-6ow2oi`. Not live until merged.
 progress: 2026-10-05 (**PR #54 merged by Oscar, deck 531 live**) — merged 2026-10-05 10:34 UTC, merge
   commit 749c2ec on the deploy branch; Pages run 127 (job 111721837615) deployed it, conclusion success, and
