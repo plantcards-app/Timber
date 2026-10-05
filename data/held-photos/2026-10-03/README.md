@@ -477,6 +477,34 @@ frame.
 | 33 | Cordyline obtecta SUPERSTAR ('Albatross') | broad dark red-purple strap leaves with pink and bronze striping, dew-beaded, arching from an upright rosette; matches "broad glossy dark purple-red leaves forming a strong upright tropical rosette". A white label stick at the base sits under the plaque on the card, unreadable in the frame. The cultivar is the label's ([Unverified] from the photo). |
 | 34 | Physocarpus opulifolius MAGIC BALL ('Lp1') | three-lobed, serrated leaves turning from green through gold to orange-red on red stems, a young potted plant in autumn colour; matches "colourful lobed foliage". The trade name is GPT's reading of the label's "Magic Ba" (GPT's own flag) and [Unverified] from the photo. |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #35–#39 in batch order (Hydrangea paniculata
-'Little Fresco', Hydrangea paniculata LIVING RED VELVET ('LC NO19'), Alstroemeria 'Valley Beach', Euonymus
-alatus 'Compactus', Acer platanoides 'Crimson King').
+## Cards 35–39 dealt (2026-10-05)
+
+Oscar's five photos, sent with no text in batch order: two white panicle hydrangeas, a cream alstroemeria, a
+two-panel collage of red euonymus leaves, a dark purple maple; filed to #35–#39 ([Inference] from the order
+and the plants against the entries; the two hydrangeas are told apart only by the order and by the pink flush
+on the second, which is the maturing colour the LIVING RED VELVET entry describes). Four are Galaxy S24 shots
+of 2026-10-03 11:45–11:48 (the Alstroemeria and the Acer 4000x3000 with EXIF orientation 6, staged upright
+1200x1600; the two hydrangeas trimmed on the phone to 3000x3750 and 3000x3462, orientation 1, staged
+1200x1500 and 1200x1385); the Euonymus is a 2160x3840 collage export with no EXIF ([Inference] the phone's
+collage tool, as the Gentiana and Delphinium panels were), kept whole, staged 1200x2133. Byte scans found no
+C2PA, JUMBF or `trainedAlgorithmicMedia` markers in any of the five; the four camera files carry the Samsung
+Ultra HDR gain map in XMP as before. One `add-plants-bulk.js --quick` run, derivatives built in the run,
+credits by basename, conventions exactly as in `batch-corrected.json`, every other field as supplied. Deck
+523 -> 528, hold 75 unchanged; restamped r353. Originals here are byte-identical to the files Oscar sent (md5
+checked). Data checks green after the insert (the credits check failed only until the entries were written);
+fast set 9/9. Rendered at phone size from a `?cards=5` deck: all five frame whole at default framing, no
+`PHOTO_FOCUS` override — the tall collage (0.56) fills the well's width with both panels in the visible band
+and its blurred surround under the plaque. In flower: both hydrangeas (Jul–Sep band, 3 October, just past)
+and the Alstroemeria (Jun–Oct); the Euonymus in its Sep–Nov autumn colour; the Acer in leaf (Apr–Nov).
+
+| # | card | notes |
+|---|---|---|
+| 35 | Hydrangea paniculata 'Little Fresco' | one rounded creamy-white panicle of large sterile florets, older heads pinking in the background, red-stemmed lanceolate leaves; matches "large creamy-white flower heads ageing through pink". The cultivar is the label's ([Unverified] from the photo). |
+| 36 | Hydrangea paniculata LIVING RED VELVET ('LC NO19') | one white panicle whose outer florets and pedicels are flushing pink, pink-red stems, dark green serrated leaves; matches "large flowers that mature from pale tones to rich deep pink-red", caught early in that change. The trade name is the label's ([Unverified] from the photo). |
+| 37 | Alstroemeria 'Valley Beach' | cream flowers with a yellow throat flecked maroon, outer tepals flushed pink, stamens golden, narrow green leaves, in a pot; "colourful lily-like flowers" as the card says. The name comes from Oscar's label text (see the label read above); [Unverified] that Valley Beach is the cultivar, and the photo cannot settle it. |
+| 38 | Euonymus alatus 'Compactus' | a two-panel collage, both panels rain-beaded leaves turned scarlet to crimson on green stems with small brown buds; matches "green leaves turning vivid rosy scarlet in autumn". The corky wings the common name refers to are not visible on the young stems in frame, nor any fruit. [Inference] consistent with Euonymus alatus in autumn colour; 'Compactus' is the label's ([Unverified] from the photo). |
+| 39 | Acer platanoides 'Crimson King' | large five-lobed, sharply pointed leaves in deep purple-black with red petioles and a glossy, rain-marked surface, against a fence; matches "broad five-lobed leaves remaining deep purplish-crimson". Genus and the purple-leaved Norway maple group read on the leaf ([Inference]); 'Crimson King' is the label's ([Unverified] from the photo). |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #40–#42 in batch order (Acer pseudoplatanus
+'Drummondii', Abelia × grandiflora 'Radiance', Hibiscus syriacus STARBURST CHIFFON ('Rwoods6')), which
+finishes the batch.
