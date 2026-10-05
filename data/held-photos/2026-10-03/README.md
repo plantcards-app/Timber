@@ -399,5 +399,29 @@ after). Re-rendered at phone size: the flower spans 10–55% of the well's heigh
 32% against the PLANT POWER POINTS line at 60%, so it sits in the middle of the visible part of the well and
 the keel fringe clears the plaque. Credits entry updated. Restamped r349.
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #25–#29 in batch order (Cynara cardunculus,
-Heuchera 'Toncka Green & Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis).
+## Cards 25–29 dealt (2026-10-05)
+
+Oscar's five photos, sent with no text in the order Heuchera, Cardoon, Scadoxus, Hosta, Phoenix; filed to
+#25–#29 by sight (each matches its entry's leaf, below). All five Galaxy S24 shots of 2026-10-03 11:55–11:59
+(four 4000x3000 with EXIF orientation 6, staged upright 1200x1600; the Heuchera trimmed on the phone to
+2758x3448, orientation 1, staged 1200x1500); byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia`
+markers; XMP carries a Samsung Ultra HDR gain map, as on earlier frames. One `add-plants-bulk.js --quick` run
+in batch order, derivatives built in the run, credits by basename, conventions exactly as in
+`batch-corrected.json`, every other field as supplied. Deck 513 -> 518, hold 75 unchanged; restamped r350.
+Originals here are byte-identical to the files Oscar sent (md5 checked). Data checks green after the insert
+(the credits check failed only until the entries were written); fast set 9/9. Rendered at phone size from a
+`?cards=5` deck: all five frame whole at default framing, no `PHOTO_FOCUS` override. No flower in any of the
+five: the Cardoon (Jun–Sep), Scadoxus (Jul–Sep) and Hosta (Apr–Sep) were photographed on 3 October, past or
+at the end of their bands; the Heuchera and Phoenix cards are foliage plants with a Jan–Dec band.
+
+| # | card | notes |
+|---|---|---|
+| 25 | Cynara cardunculus | a mass of deeply cut, grey-green leaves with spiny lobe tips and pale midribs, potted under glass; no flower stem. The leaves read mid green rather than the card's "silvery-grey" ([Inference] young nursery foliage under glass). Consistent with Cynara on the leaf ([Inference]); species as labelled. |
+| 26 | Heuchera 'Toncka Green & Brown' | two hairy, lobed, scallop-edged green leaves with dark brown-purple veining and a purple flush at the leaf base, older leaves gone orange-brown around them; matches "green leaves with contrasting darker brown-toned markings". The cultivar is the label's and [Unverified]: GPT's two flags stand (the label's 'Tonka Green' may be abbreviated; cultivar-level documentation thin). Oscar's fingertips are in the bottom-left corner of the frame; on the card they sit under the stats plaque and the aspect bar (at most a few pixels show between them at phone size). Not cropped: a crop that removed them would cut the left leaf or fall outside the reframe tool's aspect gate. |
+| 27 | Scadoxus katherinae 'Flame' | a thick pale green pseudostem with broad, bright green, wavy-edged leaves showing a fine cross-hatched vein pattern, under green shade netting; one dead leaf caught in the crown. No flower, so the scarlet head the card is named for is not in the frame. [Inference] consistent with Scadoxus multiflorus subsp. katherinae in leaf; the cultivar is the label's and [Unverified]. GPT's two flags stand (Haemanthus synonymy; "x katherinae" read as label formatting). |
+| 28 | Hosta 'Autumn Frost' | top-down of a potted clump: blue-green leaf centres with wide cream-yellow margins, leaf tips scorched brown, a pale residue on the blades ([Inference] hard-water or spray marks); matches "blue-green heart-shaped leaves edged broad yellow in spring, fading to creamy white" — cream now, as the card says for late season. No flower. |
+| 29 | Phoenix canariensis | close-up of a young crown: stiff, narrow, V-folded pinnate leaflets, deep green with pale midribs, brown fibre strands between them; matches "deep-green pinnate fronds"; no trunk in the frame. Genus plausible on the leaflet ([Inference]); species is the label's (GPT's flags stand: 'canadensis' corrected to canariensis, 'Ciotola' read as the pot). |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #30–#34 in batch order (Clematis BIG & EASY PURPLE
+('Tumaini'), Clematis 'Niobe', Schisandra sphenanthera, Cordyline obtecta SUPERSTAR ('Albatross'), Physocarpus
+opulifolius MAGIC BALL ('Lp1')).
