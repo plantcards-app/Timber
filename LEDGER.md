@@ -1,23 +1,32 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first twenty-two dealt (cards
-  2–24 bar Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first twenty-seven dealt (cards
+  2–29 bar Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria
   'Valley Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia;
-  the Polygala photo reframed at Oscar's word (deck 491 -> 513, r349; gate 18/18 (app-test 264s, edge-test 271s, the rest green) on f44af4d, the
-  twenty-two-card head, and gate 18/18 (app-test 259s, edge-test 271s, the rest green) on 55f5938, the reframe head). Oscar merges, or says "merge". Then a
-  Little Lime photo he is sure of, and photos for #25–#29 (Cynara cardunculus, Heuchera 'Toncka Green &
-  Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis), five at a time; say "not live
-  until merged" on every push; a push to the feature branch while a PR is open joins that PR, so update
-  its title and body rather than opening another. Open for Oscar, not blocking: the Acer 'Moonfire' photo
-  shows yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if it
-  is the wrong plant); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the
+  the Polygala photo reframed at Oscar's word (deck 491 -> 518, r350; gate 18/18 (app-test 262s, edge-test 272s, the rest green) on 34071a2, the
+  twenty-seven-card head; 18/18 on 55f5938 and f44af4d before it). Oscar merges, or says "merge". Then a
+  Little Lime photo he is sure of, and photos for #30–#34 (Clematis BIG & EASY PURPLE, Clematis 'Niobe',
+  Schisandra sphenanthera, Cordyline obtecta SUPERSTAR, Physocarpus MAGIC BALL), five at a time; say "not
+  live until merged" on every push; a push to the feature branch while a PR is open joins that PR, so
+  update its title and body rather than opening another. Open for Oscar, not blocking: the Acer 'Moonfire'
+  photo shows yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if
+  it is the wrong plant); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the
   species name with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina
   White".
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-05 (**cards 25–29 dealt: Cynara cardunculus, Heuchera 'Toncka Green & Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis; deck 513 -> 518**) —
+  Oscar's five Galaxy S24 shots, no text, filed to the next five entries by sight (each matches its
+  entry's leaf; none in flower, all five bands past or foliage-only in October); no AI or C2PA markers.
+  One bulk run, derivatives in the run, credits, originals byte-identical, restamp r350. Rendered at
+  phone size: all five whole at default framing. The Heuchera frame carries Oscar's fingertips in its
+  bottom-left corner, under the plaque on the card and left alone (a crop would cut the leaf). Cultivar
+  names on the Heuchera and Scadoxus are the labels' and [Unverified], GPT's flags kept in the README.
+  gate 18/18 (app-test 262s, edge-test 272s, the rest green). Pushed to the feature branch, joining PR #54 (title and body updated to twenty-seven cards).
+  Not live until merged.
 progress: 2026-10-04 (**Polygala photo reframed — flower centred in the well**) —
   Oscar: the sweet pea shrub photo should have sat slightly higher so the flower was in the centre of the
   plant box. The 3:4 master fills the well's full height under object-fit cover, so PHOTO_FOCUS has no
