@@ -1,22 +1,105 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards), forty of them dealt (cards 2–42 bar
-  Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria 'Valley
-  Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia; the
-  Polygala photo reframed at Oscar's word; the Schisandra cut-out composited hero-on-self (deck 491 -> 531,
-  r354; gate 18/18 (app-test 268s, edge-test 279s, the rest green) on 04d3005, the forty-card head; 18/18 on c550a77, 79c6926, 19cc56e, 34071a2, 55f5938 and
-  f44af4d before it). Oscar said "The pr n merge" with the last three photos ([Inference] then the PR and
-  merge), so the merge follows the gate; say "not live until merged" on every push until it lands. Then a
-  Little Lime photo he is sure of. Open for Oscar, not blocking: the Acer 'Moonfire' photo shows
-  yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if it is the
-  wrong plant); the BIG & EASY PURPLE photo shows his hand behind the bloom (a replacement frame if he
-  wants one); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the species name
-  with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina White".
-  (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
-  check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
-  the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
-since: 2026-10-03  sessions-unchanged: 0
+brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's photo arrives with the label in
+  frame — the card goes in under the label's name ("Lavandula spp." as supplied names no plant; GPT offers
+  'Platinum Blonde' or 'Walberton's Silver Edge'): set `latin`/`common` from the label in a copy of its
+  `batch-corrected.json` entry, `add-plants-bulk.js --quick`, credits, restamp, phone-size render, sequential
+  gate, push. Nine of ten entries are done: cards 1, 2, 5, 6, 7, 8, 9 dealt (deck 531 -> 538, r357) and the
+  two doubles filled, all on `ccr-cd5f214b-6ow2oi` (gate 18/18 (app-test 274s, edge-test 284s, the rest
+  green) on 339b1d7, the seven-card head); no PR opened (not asked); say "not live until merged" on
+  every push until it lands. A photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a
+  second frame via add-swap. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: the
+  Phytolacca photo is a pokeweed for certain and [Unverified] *americana* rather than *acinosa* (his own "not
+  sure"; the label settles it); the Choisya 'Sundance' photo shows mostly dark green leaves with one golden
+  shoot (dealt under the label's name, [Unverified] it is 'Sundance'; a replacement photo if not);
+  Caryopteris 'Dark Knight' went H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9
+  Acer negundo's orange Toxic flag rests on the horse hazard (atypical myopathy), not a human one; #7
+  Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo shows yellow-green leaves against a deep
+  red-purple card (dealt and flagged; a replacement photo if it is the wrong plant); the BIG & EASY PURPLE
+  photo shows his hand behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana
+  sino-ornata card to 'Berrybank Dome' or leave the species name with "Berrybank Dome" in cvs as now; whether
+  the Osteospermum label says only "Dalina White". (Displaced, not dropped: Little Devil's label hardiness,
+  H7 [Unverified] by direct read; the r270 iPhone check — Oscar opening the app on an iPhone that crashed
+  and pasting back the *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since
+  2026-09-13.)
+since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**gate 18/18 on 339b1d7, r357**) — the full sequential gate (app-test 274s, edge-test
+  284s, the rest green) came back green on the seven-card head; nothing on the branch moved between the gate
+  and this entry but the ledger. Not live until merged.
+progress: 2026-10-05 (**cards 7, 8, 9 of the 2026-10-05 batch dealt: Phytolacca americana, Agave 'Marginata', Acer negundo; deck 535 -> 538, r357**) —
+  Oscar's three Galaxy S24 shots of 2026-10-03 11:55–12:08 with "Is the first photo correct not sure"; no
+  #10 (the lavender was not sent). The Agave 4000x3000 orientation 6, staged upright 1200x1600; the Phytolacca
+  and the Acer trimmed nearly square on the phone (3000x3302, 3000x3072), staged 1200x1321 and 1200x1229; no
+  AI or C2PA markers; originals byte-identical in the batch folder. His question: the first photo is a
+  pokeweed for certain — a drooping raceme of green berries ribbed like tiny pumpkins on pink pedicels with
+  white-green flowers at the tip — and [Unverified] *americana* rather than *acinosa* from the photo (the
+  drooping raceme fits americana, berries this ribbed also fit acinosa, which carries them upright —
+  [Inference] from the written descriptions); dealt under the JSON's name, the label's. The Agave and the
+  Acer match their entries on sight; all three in leaf or fruit, none out of band. One bulk run, derivatives
+  in the run, credits by basename, data-audit / plant-sense --strict / deck-audit green, restamp r357; fast
+  9/9. Rendered at phone size from a `?cards=3` deck: all three whole at default framing (the pokeweed's
+  nearly square frame is cropped at the sides, raceme centred). Full sequential gate 18/18 (app-test 274s,
+  edge-test 284s, the rest green) on 339b1d7 — it was still in its browser suites at the push, so the commit
+  went up on the fast set (the feature branch does not deploy) and the result landed in the next commit.
+  Pushed to `ccr-cd5f214b-6ow2oi`. Not live until merged.
+progress: 2026-10-05 (**gate 18/18 on 0180991, r356**) — the full sequential gate (app-test 269s, edge-test
+  281s, the rest green) came back green on the four-card head; nothing on the branch moved between the
+  gate and this entry but the ledger. Not live until merged.
+progress: 2026-10-05 (**cards 1, 2, 5, 6 of the 2026-10-05 batch dealt: Choisya 'Sundance' (photo flagged), Leycesteria formosa (reframed), Lycianthes 'Variegata', Hibiscus trionum; deck 531 -> 535, r356**) —
+  Oscar's four Galaxy S24 shots, no text, in the order asked (the Choisya and Leycesteria of 2026-10-04
+  12:14, the Lycianthes and Hibiscus of 2026-10-03 12:02; 4000x3000, orientation 6, staged upright
+  1200x1600; no AI or C2PA markers; originals byte-identical in the batch folder). Each matches its entry:
+  the Leycesteria in bract and flower, the Lycianthes and the Hibiscus in flower (the Hibiscus on 3 October
+  against an Aug-Sep band — a bench photo says nothing about flowering time), the Choisya in flower with one
+  golden shoot over mostly dark green leaves — dealt under the label's name by the batch rule and flagged
+  ([Unverified] it is 'Sundance'). sharp installed first (`npm i -g sharp`, 0.35.5), so the derivatives
+  built in the one bulk run; credits by basename; data-audit, plant-sense --strict and deck-audit green.
+  Rendered at phone size from a `?cards=4` deck: three whole at default framing; the Leycesteria's bract
+  cluster sat at 52–80% down the frame, under the plaque from 62%, so it was reframed as the Polygala was —
+  `reframe-photo.js` took a 3:4 window of the lower 60% of the camera original (x 0.265–0.865, y 0.40–1.00,
+  1800x2400 at 0.750; cluster centre 66% → 44% down, top 52% → 21%, inside the safe box), crop JSON and the
+  tool's output kept in the batch folder, master restaged 1200x1600 through the bulk tool's canvas pipeline,
+  derivative rebuilt, the stored original untouched, credits entry says so; re-rendered, the cluster hangs in
+  the middle of the visible well with the leaf canopy above. Restamp r356; fast 9/9; full sequential gate
+  18/18 (app-test 269s, edge-test 281s, the rest green) on 0180991 — it was still in its browser suites at
+  the push, so the commit went up on the fast set (the feature branch does not deploy) and the result landed
+  in the next commit. Pushed to `ccr-cd5f214b-6ow2oi`. Not live until merged.
+progress: 2026-10-05 (**first photo ask of the 2026-10-05 batch: four cards, Oscar's new cadence**) — Oscar:
+  "Start asking 4 new cards from trusted recent batch" ([Inference] the batch stored today, four photos per
+  ask instead of five, new cards only). Asked for #1 Choisya ternata 'Sundance', #2 Leycesteria formosa, #5
+  Lycianthes rantonnetii 'Variegata', #6 Hibiscus trionum, in that order; the two doubles' photos are welcome
+  any time as second frames and are not in the count. Record only, no deck change.
+progress: 2026-10-05 (**gate 18/18 on 6b91b43, r355**) — the full sequential gate (app-test 271s, edge-test 279s,
+  the rest green) came back green on the working tree 6b91b43 carries; timber.html is byte-identical between the
+  gate and the push (stamp 16eeff6 both sides), only the ledger moved. Not live until merged.
+progress: 2026-10-05 (**batch 2026-10-05 stored: 10 entries, 8 fitted, 2 doubles filled (r355)**) — Oscar's
+  paste of ten GPT JSONs (GPT's own header: "Cross-checked against current RHS/Kew data"), no photos, no
+  instruction — the repo's routine for a bare JSON paste, as 2026-10-03. As-sent, corrected and README under
+  `data/held-photos/2026-10-05/`. compare-double: two exact-latin doubles of dealt cards, filled under the
+  NEW-SESSION rules — Rhus typhina 'Dissecta' took toxicity (blank → "Sap may irritate sensitive skin…",
+  Handle with care) and growthSpeed 11 → 15 (the held species sibling at 17 sides with the incoming);
+  Caryopteris × clandonensis ('Dark Knight' under the species name) took hardiness H6 → H4 (its one sibling
+  'Worcester Gold' is H4 and its own note reads as H4; [Unverified] against the RHS, blocked from the
+  container) and toxicity reworded to open "No known hazard" because GPT's "No significant toxicity
+  commonly reported." prints the orange Toxic rung — the brief's own trap, hit four times in this paste (#1,
+  #4, #6, #10; all reworded in the corrected file, same claim, ladder-tested) and once the other way (#5
+  "severe discomfort if eaten" landed on amber through "glove"; now "Harmful if eaten: …", Toxic). Kept on
+  both doubles: hue, peak, size, notes, prose, every rating within an icon. Three PROBABLE word-hits are
+  different plants ('Sundance' beside the species card, "potato", "marginata"). check-plant-json: as sent 3
+  hard errors, all the compass rule ("Any aspect · full sun to partial shade…", "Full sun to partial
+  shade"); corrected 8/8, remaining warnings the 2–5 ratings and shared "moist"/"drained". Facings: eight
+  state one ahead of the light level and keep it, #7 derived from the sun band (72 → East / South / West).
+  plant-sense pre-check on a scratch hold block (deck 531 / hold 83): identical issue list, --strict 0. #10
+  "Lavandula spp." names no plant — GPT offers 'Platinum Blonde' or 'Walberton's Silver Edge', both H5 by
+  its account; stored because it passes the validator, and the label names the card when the photo comes.
+  Restamp r355 (two card rows and the stamp are the whole timber.html diff); fast 9/9; full sequential gate 18/18 (app-test 271s, edge-test 279s, the rest green) on r355 (16eeff6) — it was still in its browser suites when the stop hook asked for the push, so 6b91b43 went up on the fast set alone (the feature branch does not deploy) and the result landed in the next commit. Pushed to
+  `ccr-cd5f214b-6ow2oi`. Not live until merged.
+progress: 2026-10-05 (**PR #54 merged by Oscar, deck 531 live**) — merged 2026-10-05 10:34 UTC, merge
+  commit 749c2ec on the deploy branch; Pages run 127 (job 111721837615) deployed it, conclusion success, and
+  the "Verify the deployed page is this commit" step passed (read from the run's job via the GitHub API;
+  github.io is still blocked from the container, 403 from the proxy). This session's feature branch starts
+  from that head.
 progress: 2026-10-05 (**cards 40–42 dealt: Acer pseudoplatanus 'Drummondii', Abelia 'Radiance', Hibiscus STARBURST CHIFFON; deck 528 -> 531 — the batch is dealt**) —
   Oscar's last three Galaxy S24 shots, sent with "The pr n merge", in batch order, each trimmed on the
   phone, no AI or C2PA markers. Each matches its entry; the Hibiscus in flower, the other two in leaf; the
