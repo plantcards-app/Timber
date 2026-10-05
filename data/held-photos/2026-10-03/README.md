@@ -505,6 +505,29 @@ and the Alstroemeria (Jun–Oct); the Euonymus in its Sep–Nov autumn colour; t
 | 38 | Euonymus alatus 'Compactus' | a two-panel collage, both panels rain-beaded leaves turned scarlet to crimson on green stems with small brown buds; matches "green leaves turning vivid rosy scarlet in autumn". The corky wings the common name refers to are not visible on the young stems in frame, nor any fruit. [Inference] consistent with Euonymus alatus in autumn colour; 'Compactus' is the label's ([Unverified] from the photo). |
 | 39 | Acer platanoides 'Crimson King' | large five-lobed, sharply pointed leaves in deep purple-black with red petioles and a glossy, rain-marked surface, against a fence; matches "broad five-lobed leaves remaining deep purplish-crimson". Genus and the purple-leaved Norway maple group read on the leaf ([Inference]); 'Crimson King' is the label's ([Unverified] from the photo). |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #40–#42 in batch order (Acer pseudoplatanus
-'Drummondii', Abelia × grandiflora 'Radiance', Hibiscus syriacus STARBURST CHIFFON ('Rwoods6')), which
-finishes the batch.
+## Cards 40–42 dealt (2026-10-05) — batch complete
+
+Oscar's last three photos, sent with "The pr n merge" ([Inference] "then the PR and merge") in batch order: a
+cream-margined sycamore leaf, variegated abelia foliage, a white hibiscus with a magenta eye; filed to #40 Acer
+pseudoplatanus 'Drummondii', #41 Abelia × grandiflora 'Radiance' and #42 Hibiscus syriacus STARBURST CHIFFON
+('Rwoods6') ([Inference] from the order and the plants against the entries). All three Galaxy S24 shots of
+2026-10-03 11:42–11:45, each trimmed on the phone (2450x2858, 3206x3000 and 3000x2994, orientation 1; staged
+1200x1400, 1200x1123 and 1200x1198); byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia` markers; XMP
+carries the Samsung Ultra HDR gain map as before. One `add-plants-bulk.js --quick` run, derivatives built in
+the run, credits by basename, conventions exactly as in `batch-corrected.json`, every other field as supplied.
+Deck 528 -> 531, hold 75 unchanged; restamped r354. Originals here are byte-identical to the files Oscar sent
+(md5 checked). Data checks green after the insert (the credits check failed only until the entries were
+written); fast set 9/9. Rendered at phone size from a `?cards=3` deck: all three frame whole at default
+framing, no `PHOTO_FOCUS` override; the two near-square frames (1.07 and 1.00) fill the well's height and lose
+only their sides. The Hibiscus is in flower (Aug–Oct); the Abelia card's Jul–Oct band names white trumpet
+flowers that are not in the frame; the sycamore is in leaf (Apr–Oct).
+
+| # | card | notes |
+|---|---|---|
+| 40 | Acer pseudoplatanus 'Drummondii' | large five-lobed sycamore leaves, grey-green with a broad creamy-white margin browning at the edges by October, on a young staked tree with green petioles; matches "broad green leaves conspicuously margined creamy white". The cultivar is the label's (GPT corrected 'pesudoplaanus', its own flag); [Unverified] from the photo. |
+| 41 | Abelia × grandiflora 'Radiance' | small glossy leaves, green centres with wide cream margins, some flushed pink, on thin red-brown stems; matches "glossy green leaves broadly variegated cream, bright red stems"; no flower in the frame. The cultivar is the label's ([Unverified] from the photo). |
+| 42 | Hibiscus syriacus STARBURST CHIFFON ('Rwoods6') | one large white semi-double flower, each outer petal feathered with magenta-red veins from the base, a ruffled pale centre around yellow stamens, lobed serrated leaves; the card's "semi-double pale pink flowers strongly marked with darker pink-red veins" — the photo reads white rather than pale pink ([Inference] a fresh flower in shade; card text left as supplied). The trade name is the label's ([Unverified] from the photo). |
+
+The batch is dealt: forty cards from forty-two entries. Not dealt: #1 LITTLE LIME ('Jane'), paused at Oscar's
+word until he has a photo he is sure of; #4 Berrybank Dome, resolved as a double of the dealt Gentiana
+sino-ornata (its cvs filled, no card added). Deck 491 -> 531 across the batch.
