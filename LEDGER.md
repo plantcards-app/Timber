@@ -5,8 +5,8 @@ brick: Deal the last four of the 2026-10-05 batch when Oscar's photos arrive —
   Agave americana 'Marginata', #9 Acer negundo, #10 "Lavandula spp." (the label names it) — asked for on
   2026-10-05, four at a time at his word: `add-plants-bulk.js --quick` from `batch-corrected.json`, credits by
   basename, restamp, phone-size render from a `?cards=4` deck, sequential gate, push. Cards 1, 2, 5 and 6 are
-  dealt (deck 531 -> 535, r356) on `ccr-cd5f214b-6ow2oi` with the stored batch and the two filled doubles; no
-  PR opened (not asked); say "not live until merged" on every push until it lands. A photo of either double
+  dealt (deck 531 -> 535, r356; gate 18/18 (app-test 269s, edge-test 281s, the rest green) on 0180991) on
+  `ccr-cd5f214b-6ow2oi` with the stored batch and the two filled doubles; no PR opened (not asked); say "not live until merged" on every push until it lands. A photo of either double
   (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a second frame via add-swap. Then a Little Lime photo he is
   sure of. Open for Oscar, not blocking: the Choisya 'Sundance' photo shows mostly dark green leaves with one
   golden shoot and white flowers against a card that says brilliant golden-yellow foliage (dealt under the
@@ -21,6 +21,9 @@ brick: Deal the last four of the 2026-10-05 batch when Oscar's photos arrive —
   the r270 iPhone check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a
   problem* text; the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**gate 18/18 on 0180991, r356**) — the full sequential gate (app-test 269s, edge-test
+  281s, the rest green) came back green on the four-card head; nothing on the branch moved between the
+  gate and this entry but the ledger. Not live until merged.
 progress: 2026-10-05 (**cards 1, 2, 5, 6 of the 2026-10-05 batch dealt: Choisya 'Sundance' (photo flagged), Leycesteria formosa (reframed), Lycianthes 'Variegata', Hibiscus trionum; deck 531 -> 535, r356**) —
   Oscar's four Galaxy S24 shots, no text, in the order asked (the Choisya and Leycesteria of 2026-10-04
   12:14, the Lycianthes and Hibiscus of 2026-10-03 12:02; 4000x3000, orientation 6, staged upright
@@ -36,9 +39,10 @@ progress: 2026-10-05 (**cards 1, 2, 5, 6 of the 2026-10-05 batch dealt: Choisya 
   1800x2400 at 0.750; cluster centre 66% → 44% down, top 52% → 21%, inside the safe box), crop JSON and the
   tool's output kept in the batch folder, master restaged 1200x1600 through the bulk tool's canvas pipeline,
   derivative rebuilt, the stored original untouched, credits entry says so; re-rendered, the cluster hangs in
-  the middle of the visible well with the leaf canopy above. Restamp r356; fast 9/9; the full sequential
-  gate was running at the push (its result is the entry above this one). Pushed to `ccr-cd5f214b-6ow2oi`.
-  Not live until merged.
+  the middle of the visible well with the leaf canopy above. Restamp r356; fast 9/9; full sequential gate
+  18/18 (app-test 269s, edge-test 281s, the rest green) on 0180991 — it was still in its browser suites at
+  the push, so the commit went up on the fast set (the feature branch does not deploy) and the result landed
+  in the next commit. Pushed to `ccr-cd5f214b-6ow2oi`. Not live until merged.
 progress: 2026-10-05 (**first photo ask of the 2026-10-05 batch: four cards, Oscar's new cadence**) — Oscar:
   "Start asking 4 new cards from trusted recent batch" ([Inference] the batch stored today, four photos per
   ask instead of five, new cards only). Asked for #1 Choisya ternata 'Sundance', #2 Leycesteria formosa, #5
