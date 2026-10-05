@@ -1,23 +1,33 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first twenty-seven dealt (cards
-  2–29 bar Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first twenty-nine dealt (cards
+  2–31 bar Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria
   'Valley Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia;
-  the Polygala photo reframed at Oscar's word (deck 491 -> 518, r350; gate 18/18 (app-test 262s, edge-test 272s, the rest green) on 34071a2, the
-  twenty-seven-card head; 18/18 on 55f5938 and f44af4d before it). Oscar merges, or says "merge". Then a
-  Little Lime photo he is sure of, and photos for #30–#34 (Clematis BIG & EASY PURPLE, Clematis 'Niobe',
-  Schisandra sphenanthera, Cordyline obtecta SUPERSTAR, Physocarpus MAGIC BALL), five at a time; say "not
-  live until merged" on every push; a push to the feature branch while a PR is open joins that PR, so
-  update its title and body rather than opening another. Open for Oscar, not blocking: the Acer 'Moonfire'
-  photo shows yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if
-  it is the wrong plant); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the
-  species name with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina
-  White".
+  the Polygala photo reframed at Oscar's word (deck 491 -> 520, r351; gate 18/18 (app-test 261s, edge-test 273s, the rest green) on 19cc56e, the
+  twenty-nine-card head; 18/18 on 34071a2, 55f5938 and f44af4d before it). Oscar merges, or says "merge".
+  Then a Little Lime photo he is sure of, and photos for #32–#36 (Schisandra sphenanthera, Cordyline
+  obtecta SUPERSTAR, Physocarpus MAGIC BALL, Hydrangea 'Little Fresco', Hydrangea LIVING RED VELVET),
+  five at a time; say "not live until merged" on every push; a push to the feature branch while a PR is
+  open joins that PR, so update its title and body rather than opening another. Open for Oscar, not
+  blocking: the Acer 'Moonfire' photo shows yellow-green leaves against a deep red-purple card (dealt and
+  flagged; a replacement photo if it is the wrong plant); the BIG & EASY PURPLE photo shows his hand
+  behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana sino-ornata card to
+  'Berrybank Dome' or leave the species name with "Berrybank Dome" in cvs as now; whether the
+  Osteospermum label says only "Dalina White".
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-05 (**cards 30–31 dealt: Clematis BIG & EASY PURPLE ('Tumaini'), Clematis 'Niobe'; deck 518 -> 520**) —
+  Oscar's two Galaxy S24 shots, no text, filed to the next two entries by colour ([Inference]: the batch's
+  next two cards are both clematis, sent in batch order); both in flower, each matching its card's
+  colour and stamens; no AI or C2PA markers. Originals stored byte-identical in f971e0a ahead of the
+  deal (the stop hook asked for untracked files to be committed while the previous gate ran). One bulk
+  run, derivatives in the run, credits, restamp r351. Rendered at phone size: both whole at default
+  framing; Oscar's hand shows behind the purple bloom and no crop removes it without cutting the flower,
+  so the frame is as shot and the README says so. gate 18/18 (app-test 261s, edge-test 273s, the rest green). Pushed to the feature branch, joining PR #54
+  (title and body updated to twenty-nine cards). Not live until merged.
 progress: 2026-10-05 (**cards 25–29 dealt: Cynara cardunculus, Heuchera 'Toncka Green & Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis; deck 513 -> 518**) —
   Oscar's five Galaxy S24 shots, no text, filed to the next five entries by sight (each matches its
   entry's leaf; none in flower, all five bands past or foliage-only in October); no AI or C2PA markers.
