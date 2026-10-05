@@ -5,10 +5,11 @@ brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's p
   frame — the card goes in under the label's name ("Lavandula spp." as supplied names no plant; GPT offers
   'Platinum Blonde' or 'Walberton's Silver Edge'): set `latin`/`common` from the label in a copy of its
   `batch-corrected.json` entry, `add-plants-bulk.js --quick`, credits, restamp, phone-size render, sequential
-  gate, push. Nine of ten entries are done: cards 1, 2, 5, 6, 7, 8, 9 dealt (deck 531 -> 538, r357) and the
-  two doubles filled, all on `ccr-cd5f214b-6ow2oi` (gate 18/18 (app-test 274s, edge-test 284s, the rest
-  green) on 339b1d7, the seven-card head); no PR opened (not asked); say "not live until merged" on
-  every push until it lands. A photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a
+  gate, push. Nine of ten entries are done and LIVE: cards 1, 2, 5, 6, 7, 8, 9 dealt (deck 531 -> 538, r357) and the
+  two doubles filled, merged by Oscar in PR #55 (19:50 UTC, merge 14dd131) and deployed by Pages run 129
+  (served-bytes step green, 20:21 UTC) after run 128 was lost to GitHub's runner pool. The feature branch
+  `ccr-cd5f214b-6ow2oi` restarts from the merged head for the lavender; say "not live until merged" on
+  every push until that lands. A photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a
   second frame via add-swap. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: the
   Phytolacca photo is a pokeweed for certain and [Unverified] *americana* rather than *acinosa* (his own "not
   sure"; the label settles it); the Choisya 'Sundance' photo shows mostly dark green leaves with one golden
@@ -24,6 +25,26 @@ brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's p
   and pasting back the *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since
   2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**PR #55 merged by Oscar, deck 538 live at r357; Pages run 128 lost to GitHub's runner pool, run 129 dispatched and green**) —
+  Oscar opened and merged PR #55 from `ccr-cd5f214b-6ow2oi` at 19:50 UTC (merge commit 14dd131 on the
+  deploy branch, tree identical to bf0500b; fast checks 9/9 on that exact tree from here). The push's own
+  deploy, run 128, never ran a step: GitHub's annotation reads "The job was not acquired by Runner of type
+  hosted even after multiple attempts", the job was cancelled at 20:05 after 15 minutes and the run marked
+  failure — the hosted runner pool, not this repo; live stayed on run 127's r354 meanwhile. Fresh dispatch
+  at 20:19 (the README's recovery; never a re-run of a failed deploy): run 129 (job 111961086374) was picked
+  up in 47s and every step went green by 20:21:38 — fast checks, upload, deploy-pages, "Verify the deployed
+  page is this commit", assetlinks — so r357 and deck 538 are live: the seven new cards and the two filled
+  doubles. Read from the Actions API; github.io is still blocked from the container (403 from the proxy).
+  Oscar's question, "Check the app will work if I send the link to ppl": a fresh-visitor run on an exact
+  copy of the then-live tree (749c2ec, 531 cards) served under /Timber/ as Pages serves it, Chromium at
+  390x844 @3x with touch and at 1280x800 — the index redirect lands on timber.html, the deck deals, the top
+  cards' photos load, learn and skip count, the typo-tolerant search finds Choisya from "choysia", the
+  service worker installs and controls the second load; zero console errors, zero page errors, no 4xx/5xx
+  (two photo fetches aborted by my own navigation mid-trickle, [Inference] benign). The merged tree differs
+  from it only by the seven cards and two rows, gate 18/18. The repo is public and Pages is on, so the link
+  needs no login. [Unverified] on iPhone/Safari — no WebKit in this container; the two iPhone crash reports
+  of August have had three fixes since (r78, r79, the r270 shells) and no iPhone report since, and light
+  mode is the detector if one still dies. Branch restarted from 14dd131, same name.
 progress: 2026-10-05 (**gate 18/18 on 339b1d7, r357**) — the full sequential gate (app-test 274s, edge-test
   284s, the rest green) came back green on the seven-card head; nothing on the branch moved between the gate
   and this entry but the ledger. Not live until merged.
