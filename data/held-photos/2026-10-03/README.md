@@ -442,6 +442,41 @@ override. Both in flower on 3 October, just past the May–Sep band on each card
 | 30 | Clematis BIG & EASY PURPLE ('Tumaini') | one large violet-purple flower, six broad sepals with a paler central bar, dark red-purple stamens with white filament bases, held up to the camera against the plant's leaves; matches "large richly coloured purple-toned flowers". Oscar's hand holds the bloom and shows behind it on the right of the well; no crop can remove it without cutting the flower, so the frame is as shot. A replacement frame without the hand is the fix if he wants one. The cultivar is the label's ([Unverified] from the photo). |
 | 31 | Clematis 'Niobe' | one deep wine-red flower, six velvety sepals with a darker central bar, cream-yellow stamens on pale filaments, a furry bud top left; matches "velvety ruby-red flowers ageing wine-red around contrasting yellow-green stamens". The frame fills the well with the flower face; the lower sepals sit under the plaque. The cultivar is the label's ([Unverified] from the photo). |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #32–#36 in batch order (Schisandra sphenanthera,
-Cordyline obtecta SUPERSTAR ('Albatross'), Physocarpus opulifolius MAGIC BALL ('Lp1'), Hydrangea paniculata
-'Little Fresco', Hydrangea paniculata LIVING RED VELVET ('LC NO19')).
+## Cards 32–34 dealt (2026-10-05)
+
+Oscar's three photos, sent with no text in batch order: a young potted plant as a transparent cut-out PNG, a
+red-leaved cordyline, a ninebark in autumn colour; filed to #32 Schisandra sphenanthera, #33 Cordyline obtecta
+SUPERSTAR ('Albatross') and #34 Physocarpus opulifolius MAGIC BALL ('Lp1') ([Inference] from the order and the
+plants against the entries). The two JPEGs are Galaxy S24 shots of 2026-10-03 11:49–11:50 (4000x3000, EXIF
+orientation 6, staged upright 1200x1600); the PNG is 1493x2000 with an alpha channel (21% of it transparent),
+an eXIf chunk dated 2026-10-03 11:53:05 and no XMP ([Inference] the phone's object cut-out export of a shot
+from the same minutes as the others — the deck's earlier cut-outs came the same way); byte scans found no
+C2PA, JUMBF or `trainedAlgorithmicMedia` markers in any of the three.
+
+**The cut-out was composited, not staged raw.** The app loads JPEG masters, so a transparent PNG would have
+gone black at the edge; per the photo register's hero-on-self rule, `tools/composite-hero.js` flattened the
+cut-out onto a deep tint of the card's own hue (5), blurred and darkened that for the backdrop, and laid the
+untouched cut-out over it (1493x2000; every pixel from the cut-out or a flat colour, nothing invented). That
+composite was staged as the master (1200x1608) and the raw cut-out kept beside it as
+`photos/schisandra-sphenanthera-cutout.png` with its own credits entry, as for the earlier cut-outs. The
+original PNG is stored here as sent.
+
+One `add-plants-bulk.js --quick` run, derivatives built in the run, credits by basename, conventions exactly
+as in `batch-corrected.json`, every other field as supplied. Deck 520 -> 523, hold 75 unchanged; restamped
+r352. Originals here are byte-identical to the files Oscar sent (md5 checked; stored in f6a9f18 ahead of the
+deal). Data checks green after the insert (the credits check failed only until the entries were written);
+fast set 9/9. Rendered at phone size from a `?cards=3` deck: all three frame whole at default framing, no
+`PHOTO_FOCUS` override (the composite's dark backdrop melts into the card frame at the top of the well). No
+flower on any of the three: the Cordyline card is foliage-only (Jan–Dec), the ninebark's Apr–Oct band covers
+the autumn leaf colour shown, and the Schisandra's May–Oct band names flowers and berries that are not in the
+frame.
+
+| # | card | notes |
+|---|---|---|
+| 32 | Schisandra sphenanthera | a young plant in a pot: ovate, glossy, finely toothed green leaves with pale veins and a few spots, on reddish-brown woody stems with one cut stub; no flower or berry. [Inference] consistent with a young Schisandra in leaf; the species is GPT's reading of the label's garbled text ("Schigndsa Spedtandra", GPT's own flag) and [Unverified] from the photo. |
+| 33 | Cordyline obtecta SUPERSTAR ('Albatross') | broad dark red-purple strap leaves with pink and bronze striping, dew-beaded, arching from an upright rosette; matches "broad glossy dark purple-red leaves forming a strong upright tropical rosette". A white label stick at the base sits under the plaque on the card, unreadable in the frame. The cultivar is the label's ([Unverified] from the photo). |
+| 34 | Physocarpus opulifolius MAGIC BALL ('Lp1') | three-lobed, serrated leaves turning from green through gold to orange-red on red stems, a young potted plant in autumn colour; matches "colourful lobed foliage". The trade name is GPT's reading of the label's "Magic Ba" (GPT's own flag) and [Unverified] from the photo. |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #35–#39 in batch order (Hydrangea paniculata
+'Little Fresco', Hydrangea paniculata LIVING RED VELVET ('LC NO19'), Alstroemeria 'Valley Beach', Euonymus
+alatus 'Compactus', Acer platanoides 'Crimson King').

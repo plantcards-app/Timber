@@ -1434,6 +1434,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "cordyline-obtecta-superstar-albatross.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "coreopsis-solanna-golden-sphere-dcoreo16.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4295,6 +4305,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "physocarpus-opulifolius-magic-ball-lp1.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "picea-glauca-echiniformis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Single frame, EXIF orientation 6 baked at restaging",
@@ -5237,6 +5257,26 @@
   },
   {
    "file": "scadoxus-katherinae-flame.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "schisandra-sphenanthera-cutout.png",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright (raw cutout; the card uses the hero-on-self composite)",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "schisandra-sphenanthera.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
