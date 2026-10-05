@@ -6,7 +6,8 @@ brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's p
   'Platinum Blonde' or 'Walberton's Silver Edge'): set `latin`/`common` from the label in a copy of its
   `batch-corrected.json` entry, `add-plants-bulk.js --quick`, credits, restamp, phone-size render, sequential
   gate, push. Nine of ten entries are done: cards 1, 2, 5, 6, 7, 8, 9 dealt (deck 531 -> 538, r357) and the
-  two doubles filled, all on `ccr-cd5f214b-6ow2oi`; no PR opened (not asked); say "not live until merged" on
+  two doubles filled, all on `ccr-cd5f214b-6ow2oi` (gate 18/18 (app-test 274s, edge-test 284s, the rest
+  green) on 339b1d7, the seven-card head); no PR opened (not asked); say "not live until merged" on
   every push until it lands. A photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a
   second frame via add-swap. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: the
   Phytolacca photo is a pokeweed for certain and [Unverified] *americana* rather than *acinosa* (his own "not
@@ -23,6 +24,9 @@ brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's p
   and pasting back the *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since
   2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**gate 18/18 on 339b1d7, r357**) — the full sequential gate (app-test 274s, edge-test
+  284s, the rest green) came back green on the seven-card head; nothing on the branch moved between the gate
+  and this entry but the ledger. Not live until merged.
 progress: 2026-10-05 (**cards 7, 8, 9 of the 2026-10-05 batch dealt: Phytolacca americana, Agave 'Marginata', Acer negundo; deck 535 -> 538, r357**) —
   Oscar's three Galaxy S24 shots of 2026-10-03 11:55–12:08 with "Is the first photo correct not sure"; no
   #10 (the lavender was not sent). The Agave 4000x3000 orientation 6, staged upright 1200x1600; the Phytolacca
@@ -35,8 +39,10 @@ progress: 2026-10-05 (**cards 7, 8, 9 of the 2026-10-05 batch dealt: Phytolacca 
   Acer match their entries on sight; all three in leaf or fruit, none out of band. One bulk run, derivatives
   in the run, credits by basename, data-audit / plant-sense --strict / deck-audit green, restamp r357; fast
   9/9. Rendered at phone size from a `?cards=3` deck: all three whole at default framing (the pokeweed's
-  nearly square frame is cropped at the sides, raceme centred). The full sequential gate was running at the
-  push (its result is the entry above this one). Pushed to `ccr-cd5f214b-6ow2oi`. Not live until merged.
+  nearly square frame is cropped at the sides, raceme centred). Full sequential gate 18/18 (app-test 274s,
+  edge-test 284s, the rest green) on 339b1d7 — it was still in its browser suites at the push, so the commit
+  went up on the fast set (the feature branch does not deploy) and the result landed in the next commit.
+  Pushed to `ccr-cd5f214b-6ow2oi`. Not live until merged.
 progress: 2026-10-05 (**gate 18/18 on 0180991, r356**) — the full sequential gate (app-test 269s, edge-test
   281s, the rest green) came back green on the four-card head; nothing on the branch moved between the
   gate and this entry but the ledger. Not live until merged.
