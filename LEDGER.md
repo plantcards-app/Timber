@@ -1,16 +1,147 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #53 — it now carries everything since PR #52: Red Cascade, the Dissectum maple,
-  the honeysuckle and Eternal Flame frames and the Viburnum davidii replacement (deck 489 -> 491,
-  r342, gate 18/18 on its head). Oscar merges, or says "merge". Then the next batch, five photos
-  at a time; say "not live until merged" on every push; a push to the feature branch while a PR
-  is open joins that PR, so update its title and body rather than opening another.
-  (Displaced, not dropped: Little Devil's photo and label hardiness, which deals the last held
-  card of the 2026-10-01 batch; the r270 iPhone check — Oscar opening the app on an iPhone that
-  crashed and pasting back the *Report a problem* text; the toxicity paste, 317 of 432 blank,
-  unchanged since 2026-09-13.)
-since: 2026-10-02  sessions-unchanged: 0
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards), forty of them dealt (cards 2–42 bar
+  Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria 'Valley
+  Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia; the
+  Polygala photo reframed at Oscar's word; the Schisandra cut-out composited hero-on-self (deck 491 -> 531,
+  r354; gate 18/18 (app-test 268s, edge-test 279s, the rest green) on 04d3005, the forty-card head; 18/18 on c550a77, 79c6926, 19cc56e, 34071a2, 55f5938 and
+  f44af4d before it). Oscar said "The pr n merge" with the last three photos ([Inference] then the PR and
+  merge), so the merge follows the gate; say "not live until merged" on every push until it lands. Then a
+  Little Lime photo he is sure of. Open for Oscar, not blocking: the Acer 'Moonfire' photo shows
+  yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if it is the
+  wrong plant); the BIG & EASY PURPLE photo shows his hand behind the bloom (a replacement frame if he
+  wants one); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the species name
+  with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina White".
+  (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
+  check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
+  the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
+since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-05 (**cards 40–42 dealt: Acer pseudoplatanus 'Drummondii', Abelia 'Radiance', Hibiscus STARBURST CHIFFON; deck 528 -> 531 — the batch is dealt**) —
+  Oscar's last three Galaxy S24 shots, sent with "The pr n merge", in batch order, each trimmed on the
+  phone, no AI or C2PA markers. Each matches its entry; the Hibiscus in flower, the other two in leaf; the
+  Hibiscus reads white where the card says pale pink (noted, text as supplied); every cultivar and trade
+  name is the label's and [Unverified] from the photo. One bulk run, derivatives in the run, credits,
+  originals byte-identical, restamp r354. Rendered at phone size: all three whole at default framing.
+  Forty of forty-two entries are cards (Little Lime paused, Berrybank Dome a double). gate 18/18 (app-test 268s, edge-test 279s, the rest green). Pushed to
+  the feature branch, joining PR #54 (title and body updated to forty cards). Not live until merged.
+progress: 2026-10-05 (**cards 35–39 dealt: Hydrangea 'Little Fresco', Hydrangea LIVING RED VELVET, Alstroemeria 'Valley Beach', Euonymus alatus 'Compactus', Acer platanoides 'Crimson King'; deck 523 -> 528**) —
+  Oscar's five photos, no text, in batch order: four Galaxy S24 shots and one two-panel collage (the
+  Euonymus, kept whole), no AI or C2PA markers; the two white panicle hydrangeas told apart by the order
+  and the pink flush on the second ([Inference]). Each matches its entry; the hydrangeas and the
+  Alstroemeria in flower, the Euonymus in autumn colour, the maple in leaf; every cultivar and trade name
+  is the label's and [Unverified] from the photo, the Valley Beach name still resting on the label read.
+  One bulk run, derivatives in the run, credits, originals byte-identical, restamp r353. Rendered at phone
+  size: all five whole at default framing. gate 18/18 (app-test 267s, edge-test 278s, the rest green). Pushed to the feature branch, joining PR #54 (title
+  and body updated to thirty-seven cards). Not live until merged.
+progress: 2026-10-05 (**cards 32–34 dealt: Schisandra sphenanthera, Cordyline obtecta SUPERSTAR, Physocarpus MAGIC BALL; deck 520 -> 523**) —
+  Oscar's three photos, no text, in batch order; the Schisandra a transparent cut-out PNG (phone object
+  cut-out, no AI or C2PA markers), composited with tools/composite-hero.js onto a darkened, blurred copy of
+  itself on the card's hue and staged as the master, raw cut-out kept with its own credits entry, as the
+  deck's earlier cut-outs. Each matches its entry's leaf; none in flower; the Schisandra species and both
+  trade names are GPT's readings of garbled labels, [Unverified] from the photos, flags kept in the README.
+  Originals stored byte-identical in f6a9f18 ahead of the deal. One bulk run, derivatives in the run,
+  credits, restamp r352. Rendered at phone size: all three whole at default framing. gate 18/18 (app-test 261s, edge-test 275s, the rest green). Pushed to the
+  feature branch, joining PR #54 (title and body updated to thirty-two cards). Not live until merged.
+progress: 2026-10-05 (**cards 30–31 dealt: Clematis BIG & EASY PURPLE ('Tumaini'), Clematis 'Niobe'; deck 518 -> 520**) —
+  Oscar's two Galaxy S24 shots, no text, filed to the next two entries by colour ([Inference]: the batch's
+  next two cards are both clematis, sent in batch order); both in flower, each matching its card's
+  colour and stamens; no AI or C2PA markers. Originals stored byte-identical in f971e0a ahead of the
+  deal (the stop hook asked for untracked files to be committed while the previous gate ran). One bulk
+  run, derivatives in the run, credits, restamp r351. Rendered at phone size: both whole at default
+  framing; Oscar's hand shows behind the purple bloom and no crop removes it without cutting the flower,
+  so the frame is as shot and the README says so. gate 18/18 (app-test 261s, edge-test 273s, the rest green). Pushed to the feature branch, joining PR #54
+  (title and body updated to twenty-nine cards). Not live until merged.
+progress: 2026-10-05 (**cards 25–29 dealt: Cynara cardunculus, Heuchera 'Toncka Green & Brown', Scadoxus 'Flame', Hosta 'Autumn Frost', Phoenix canariensis; deck 513 -> 518**) —
+  Oscar's five Galaxy S24 shots, no text, filed to the next five entries by sight (each matches its
+  entry's leaf; none in flower, all five bands past or foliage-only in October); no AI or C2PA markers.
+  One bulk run, derivatives in the run, credits, originals byte-identical, restamp r350. Rendered at
+  phone size: all five whole at default framing. The Heuchera frame carries Oscar's fingertips in its
+  bottom-left corner, under the plaque on the card and left alone (a crop would cut the leaf). Cultivar
+  names on the Heuchera and Scadoxus are the labels' and [Unverified], GPT's flags kept in the README.
+  gate 18/18 (app-test 262s, edge-test 272s, the rest green). Pushed to the feature branch, joining PR #54 (title and body updated to twenty-seven cards).
+  Not live until merged.
+progress: 2026-10-04 (**Polygala photo reframed — flower centred in the well**) —
+  Oscar: the sweet pea shrub photo should have sat slightly higher so the flower was in the centre of the
+  plant box. The 3:4 master fills the well's full height under object-fit cover, so PHOTO_FOCUS has no
+  vertical slack; the only honest answer is a crop. Flower measured as the magenta bounding box of the
+  displayed 3000x4000 frame (centre 44% down); tools/reframe-photo.js took a 3:4 window of the camera
+  original (x 0.106–0.936, y 0.170–1.000, 2490x3320 at 0.750, feature centre 32% down, inside the safe
+  box), master restaged at 1200x1600, derivative rebuilt, no pixels generated, the stored original
+  untouched; the crop JSON and the tool's output kept in the batch folder, credits entry and README
+  record it. Re-rendered: the flower spans 10–55% of the well (was 25–62%), the PPP line at 60%.
+  Restamp r349, fast set 9/9, gate 18/18 (app-test 259s, edge-test 271s, the rest green). Pushed to the feature branch, joining PR #54 (title and body
+  updated). Not live until merged.
+progress: 2026-10-04 (**cards 21–24 dealt: Acer 'Moonfire', Lantana camara, Polygala myrtifolia, Osteospermum Dalina; deck 509 -> 513**) —
+  Oscar's four Galaxy S24 shots with "OSTEOSPERMUM Dalina White"; filed in batch order, no AI or C2PA
+  markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp r348. All
+  four whole at default framing. The maple photo is yellow-green with bronze tips while the card says
+  deep reddish-purple: dealt under the label's name by the label rule, doubt in the README and flagged to
+  Oscar ([Unverified] it is 'Moonfire'). The Lantana is in bud, the Polygala and Osteospermum in flower
+  and matching. gate 18/18 (app-test 264s, edge-test 271s, the rest green). Pushed to the feature branch, joining PR #54. Not live until merged.
+progress: 2026-10-04 (**cards 16–20 dealt: Delphinium 'Pure White', Crocosmia 'Babylon', Skimmia 'Perosa', Echinacea MOOODZ FEARLESS, Hydrangea 'HI Ocean'; deck 504 -> 509**) —
+  Oscar's five, "In order": four Galaxy S24 shots and one two-panel collage (the Delphinium); no AI or
+  C2PA markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp r347.
+  The nearly square Delphinium collage needed the Freckles treatment, PHOTO_FOCUS 0%, to keep its flower
+  panel whole; the other four whole at default. The HI Ocean photographed in its magenta-purple
+  presentation, not the blue the label named — noted, hue kept. gate 18/18 (app-test 274s, edge-test 275s, the rest green). Pushed to the feature
+  branch, joining PR #54 (title and body updated to eighteen cards). Not live until merged.
+progress: 2026-10-04 (**cards 13–15 dealt: Symphyotrichum 'Dark Purple', Hesperantha 'Pink Princess', Hesperantha 'Major'; deck 501 -> 504**) —
+  Oscar's three Galaxy S24 shots, no text, filed in batch order, each matching its entry on sight; no AI
+  or C2PA markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp r346.
+  Rendered at phone size: all three whole at default framing. gate 18/18 (app-test 263s, edge-test 274s, the rest green). Pushed to the feature branch,
+  joining PR #54 (title and body updated to thirteen cards). Not live until merged.
+progress: 2026-10-04 (**cards 8–12 dealt: Rosa CUTIE PIE, Oenothera 'Gambit Variegata Rose', Carex 'Evergold', Vinca major 'Variegata', Vinca minor 'Illumination'; deck 496 -> 501**) —
+  Oscar's five Galaxy S24 shots with "In order", filed in batch order; all already trimmed on the phone,
+  no AI or C2PA markers. One bulk run, derivatives in the run, credits, originals byte-identical, restamp
+  r345. Rendered at phone size: all five whole at default framing (the landscape Gaura keeps flowers over
+  variegated leaves in the centre column; the two tall periwinkle frames keep their leaves in the well).
+  The rose is foliage only — no flower on the bench in October — noted in the README. gate 18/18 (app-test 260s, edge-test 273s, the rest green).
+  Pushed to the feature branch, joining PR #54 (title and body updated to ten cards). Not live until
+  merged.
+progress: 2026-10-04 (**cards 6 and 7 dealt: Echinacea 'Princess Citrus', Amsonia 'Blue Ice'; deck 494 -> 496; the first PHOTO CAPTION (v14.62)**) —
+  Oscar's two Galaxy S24 shots with "the amsonia needs like a little lable at the bottom saying autumnal
+  colour". Both dealt with the bulk tool (derivatives built in the run now sharp is installed), credits,
+  originals byte-identical, no AI or C2PA markers. The card had no way to say which season a photo shows,
+  so one was built, small and general: a `PHOTO_CAPTION` text registry keyed by latin-slug beside
+  PHOTO_FOCUS, `captionHTML()` printing one italic tag on a dark pill above the PLANT POWER POINTS line
+  only for cards with an entry, the registry added to check-boot's REGISTRIES so a stray key fails the
+  fast set; CARD-PROTOCOL v14.62 records the geometry. First entry `amsonia-blue-ice` → "Autumnal
+  colour", his words. Rendered at phone size: tag legible over the gold foliage, both cards whole at
+  default framing; audit-layout, verify-cards, deck-audit, perf-test green on the build; restamp r344;
+  gate 18/18 (app-test 270s, edge-test 270s, the rest green). Pushed to the feature branch, which joins PR #54 (title and body updated). Not live
+  until merged.
+progress: 2026-10-03, afternoon (**PR #54 opened on b0fe58e; gate 18/18**) — the sequential gate (app-test
+  254s, edge-test 263s) came back green four minutes after the push; PR #54 carries both commits of the
+  day (the stored batch and the three dealt), subscribed, check-in armed. Not live until merged.
+progress: 2026-10-03, afternoon (**cards 2, 3 and 4 of the 2026-10-03 batch dealt: Rhododendron 'Ramapo', Robinia 'Frisia', Gentiana 'The Caley'; deck 491 -> 494**) —
+  Oscar's three photos with a note. Little Lime paused at his word ("not sure the plant in the photo is
+  right"). The gentian collage filed as The Caley from "the other gentalia in the deck alright is the
+  berrybankdome" ([Inference]; the note is quoted in the batch README and the photo fits either entry), so
+  Berrybank Dome is a double of the dealt Gentiana sino-ornata and took only the card's blank cvs under
+  the NEW-SESSION rules; renaming the card is his call. His label text for the Alstroemeria reads
+  "Alstroem Valley Beach# Paper": entry 37 is `Alstroemeria 'Valley Beach'` now, "Paper" the packaging
+  field GPT predicted. sharp was not in the container, so the bulk tool staged the masters and warned that
+  the card derivatives were unbuilt — `npm i -g sharp`, derivatives built, then all three rendered at
+  phone size from a `?cards=3` deck: whole in the well at default framing, no PHOTO_FOCUS. Credits by
+  basename, restamp r343, originals byte-identical, no AI or C2PA markers. Committed and pushed with the
+  gate still in its browser suites (the stop hook asked for the push; the feature branch does not deploy);
+  the PR waited for the gate.
+progress: 2026-10-03 (**batch 2026-10-03 stored: 42 entries, 42 fitted, no doubles**) — Oscar's paste
+  "strait from gpt", 42 cards from bench labels, no photos; as-sent, corrected and README under
+  `data/held-photos/2026-10-03/`. compare-double: no card for any of the 42 (ten PROBABLE word-hits, all
+  different plants). check-plant-json: 42/42 after the one hard error, #27 "H1C" → H1c. Layout fields
+  fitted by a script that asserts the 26/44 budgets and calls fit-incoming's deriveFacing; eight codes take
+  the CAPS trade-name form their genus already carries (LITTLE LIME, CUTIE PIE, MOOODZ FEARLESS, BIG &
+  EASY PURPLE, SUPERSTAR, MAGIC BALL, LIVING RED VELVET, STARBURST CHIFFON), pairings GPT's and
+  [Unverified] from here. New this batch: the 42 rows appended to a scratch copy's hold block and
+  plant-sense run on it — issue list byte-identical to the live deck's, --strict 0 — so the Dissectum
+  surprise cannot recur at deal time for these cards. Data only, no deck change; fast checks 9/9. Photos
+  asked for five at a time.
+progress: 2026-10-03 (**PR #53 merged by Oscar, deck 491 live**) — merged 2026-10-02 23:09 UTC, merge
+  commit 5ebd536 on the deploy branch; Pages run 126 (job 111066537215) deployed it, conclusion success,
+  and the "Verify the deployed page is this commit" step passed (read from the run's job via the GitHub
+  API; github.io is still blocked from the container). This session's feature branch starts from that head.
 progress: 2026-10-02, late (**gate 18/18 on ab8dd7a; pushed; PR #53 updated to carry it**) — a push
   to the feature branch while PR #53 was open joined that PR (GitHub allows one open PR per head),
   so its title and body were rewritten to cover all three commits instead of opening a new one.

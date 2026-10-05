@@ -22,7 +22,7 @@ const ROOT = path.join(__dirname, '..');
 const HTML = path.join(ROOT, 'timber.html');
 const { readDeck, readHold } = require('./plant-data.js');
 
-const REGISTRIES = ['HOLO', 'FULLART', 'ANIM', 'PHOTO_SWAP', 'PHOTO_FOCUS', 'PEST'];
+const REGISTRIES = ['HOLO', 'FULLART', 'ANIM', 'PHOTO_SWAP', 'PHOTO_FOCUS', 'PHOTO_CAPTION', 'PEST'];
 const PNG_SIG = Buffer.from([0x89, 0x50, 0x4e, 0x47, 0x0d, 0x0a, 0x1a, 0x0a]);
 
 function fail(errors, msg) { errors.push(msg); }

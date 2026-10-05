@@ -456,6 +456,35 @@ Focal point recorded here when off-centre:
   messages on the card-build branch still say the old numbers; this note is
   the key.
 
+- **v14.62 (496 dealt / 75 held — PHOTO CAPTION: a one-line tag on the photograph)**:
+  Oscar, 2026-10-04, sending his Amsonia 'Blue Ice' photo: *"the amsonia needs like a
+  little label at the bottom saying autumnal colour"*. The photograph is the plant in its
+  gold autumn foliage; the card is named for periwinkle-blue stars in May-Jun and its
+  `visual` names both, but nothing on the front said which one the picture shows. The
+  same gap exists on every card whose photo is one season or one feature of a plant the
+  card describes in more than one (the flash-between cards show their frames in turn and
+  never say what each is).
+
+  **What was added.** A text registry `PHOTO_CAPTION`, keyed by latin-slug exactly like
+  `PHOTO_FOCUS`, and one element: `captionHTML(slug)` emits `<div class="pcap">…</div>`
+  after the PLANT POWER POINTS line only when the slug has an entry, with `& < > "`
+  escaped. `.pcap` is a small italic Georgia tag (9px, cream `#f2e8c8`) on a dark pill
+  (`rgba(8,18,10,.72)`, 1px `rgba(236,215,160,.45)` border, 9px radius) at `left:15.14%`
+  (the plaque's left edge) and `top:54.3%`, so its bottom edge sits at about 57% with the
+  PLANT POWER POINTS lettering at 58.28% below it; `max-width:60%`, one line,
+  ellipsis, `pointer-events:none`, z-index 4 with the lettering. Italic lower-case on a
+  pill so it reads as a caption and not as a second line of the gold small-caps strip.
+  Every card without an entry is byte-for-byte what it was.
+
+  **Checks.** `PHOTO_CAPTION` is in `tools/check-boot.js` REGISTRIES, so a key that is
+  not a current card's slug fails the fast set like a stray `PHOTO_FOCUS` key. The nine
+  locked anchors are untouched (`template-geometry --check` green); `audit-layout`,
+  `verify-cards`, `deck-audit` and `perf-test` green on the build; the full sequential
+  gate run on the pushed head. Rendered at 390x780 2x: the tag clears the growth rail
+  (its right edge stops well short of 78%) and the HEIGHT rail value (whose box ends at
+  53.9% on the left spine, a different column). First and only entry: `amsonia-blue-ice`
+  → "Autumnal colour", Oscar's words. Record: `data/held-photos/2026-10-03/README.md`.
+
 - **v14.61 (348 dealt / 84 held — THE CARD'S PAINTED FURNITURE BECOMES CSS,
   and the deck stops building 13,546 images)**: no visual change at all — this
   is the same card, drawn the same way, costing a fraction of what it cost.
