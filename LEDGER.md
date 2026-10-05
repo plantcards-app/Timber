@@ -1,26 +1,44 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Deal the 2026-10-05 batch as Oscar's photos arrive — eight new cards stored under
-  `data/held-photos/2026-10-05/` (#1 Choisya ternata 'Sundance', #2 Leycesteria formosa, #5 Lycianthes
-  rantonnetii 'Variegata', #6 Hibiscus trionum, #7 Phytolacca americana, #8 Agave americana 'Marginata', #9
-  Acer negundo, #10 "Lavandula spp." pending the label's name), four at a time in batch order at Oscar's word
-  ("Start asking 4 new cards from trusted recent batch"; five before today) with `add-plants-bulk.js --quick`
-  — first four asked for: #1 Choisya 'Sundance', #2 Leycesteria formosa, #5 Lycianthes 'Variegata', #6
-  Hibiscus trionum; a photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight' — both
-  filled on the dealt cards, r355) is a second frame via add-swap. Branch `ccr-cd5f214b-6ow2oi` carries the
-  store, 6b91b43 — gate 18/18 (app-test 271s, edge-test 279s, the rest green) on its timber.html, r355 (16eeff6); no PR opened — Oscar was not asked and did not ask; say "not live until merged" on every
-  push until it lands. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: Caryopteris
-  'Dark Knight' went H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9 Acer negundo's
-  orange Toxic flag rests on the horse hazard (atypical myopathy), not a human one; #7 Phytolacca's H6 is
-  GPT's inference; the Acer 'Moonfire' photo shows yellow-green leaves against a deep red-purple card (dealt
-  and flagged; a replacement photo if it is the wrong plant); the BIG & EASY PURPLE photo shows his hand
-  behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana sino-ornata card to
-  'Berrybank Dome' or leave the species name with "Berrybank Dome" in cvs as now; whether the Osteospermum
-  label says only "Dalina White". (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by
-  direct read; the r270 iPhone check — Oscar opening the app on an iPhone that crashed and pasting back the
-  *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
+brick: Deal the last four of the 2026-10-05 batch when Oscar's photos arrive — #7 Phytolacca americana, #8
+  Agave americana 'Marginata', #9 Acer negundo, #10 "Lavandula spp." (the label names it) — asked for on
+  2026-10-05, four at a time at his word: `add-plants-bulk.js --quick` from `batch-corrected.json`, credits by
+  basename, restamp, phone-size render from a `?cards=4` deck, sequential gate, push. Cards 1, 2, 5 and 6 are
+  dealt (deck 531 -> 535, r356) on `ccr-cd5f214b-6ow2oi` with the stored batch and the two filled doubles; no
+  PR opened (not asked); say "not live until merged" on every push until it lands. A photo of either double
+  (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a second frame via add-swap. Then a Little Lime photo he is
+  sure of. Open for Oscar, not blocking: the Choisya 'Sundance' photo shows mostly dark green leaves with one
+  golden shoot and white flowers against a card that says brilliant golden-yellow foliage (dealt under the
+  label's name, [Unverified] it is 'Sundance'; a replacement photo if not); Caryopteris 'Dark Knight' went
+  H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9 Acer negundo's orange Toxic flag
+  rests on the horse hazard (atypical myopathy), not a human one; #7 Phytolacca's H6 is GPT's inference; the
+  Acer 'Moonfire' photo shows yellow-green leaves against a deep red-purple card (dealt and flagged; a
+  replacement photo if it is the wrong plant); the BIG & EASY PURPLE photo shows his hand behind the bloom
+  (a replacement frame if he wants one); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or
+  leave the species name with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only
+  "Dalina White". (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read;
+  the r270 iPhone check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a
+  problem* text; the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**cards 1, 2, 5, 6 of the 2026-10-05 batch dealt: Choisya 'Sundance' (photo flagged), Leycesteria formosa (reframed), Lycianthes 'Variegata', Hibiscus trionum; deck 531 -> 535, r356**) —
+  Oscar's four Galaxy S24 shots, no text, in the order asked (the Choisya and Leycesteria of 2026-10-04
+  12:14, the Lycianthes and Hibiscus of 2026-10-03 12:02; 4000x3000, orientation 6, staged upright
+  1200x1600; no AI or C2PA markers; originals byte-identical in the batch folder). Each matches its entry:
+  the Leycesteria in bract and flower, the Lycianthes and the Hibiscus in flower (the Hibiscus on 3 October
+  against an Aug-Sep band — a bench photo says nothing about flowering time), the Choisya in flower with one
+  golden shoot over mostly dark green leaves — dealt under the label's name by the batch rule and flagged
+  ([Unverified] it is 'Sundance'). sharp installed first (`npm i -g sharp`, 0.35.5), so the derivatives
+  built in the one bulk run; credits by basename; data-audit, plant-sense --strict and deck-audit green.
+  Rendered at phone size from a `?cards=4` deck: three whole at default framing; the Leycesteria's bract
+  cluster sat at 52–80% down the frame, under the plaque from 62%, so it was reframed as the Polygala was —
+  `reframe-photo.js` took a 3:4 window of the lower 60% of the camera original (x 0.265–0.865, y 0.40–1.00,
+  1800x2400 at 0.750; cluster centre 66% → 44% down, top 52% → 21%, inside the safe box), crop JSON and the
+  tool's output kept in the batch folder, master restaged 1200x1600 through the bulk tool's canvas pipeline,
+  derivative rebuilt, the stored original untouched, credits entry says so; re-rendered, the cluster hangs in
+  the middle of the visible well with the leaf canopy above. Restamp r356; fast 9/9; the full sequential
+  gate was running at the push (its result is the entry above this one). Pushed to `ccr-cd5f214b-6ow2oi`.
+  Not live until merged.
 progress: 2026-10-05 (**first photo ask of the 2026-10-05 batch: four cards, Oscar's new cadence**) — Oscar:
   "Start asking 4 new cards from trusted recent batch" ([Inference] the batch stored today, four photos per
   ask instead of five, new cards only). Asked for #1 Choisya ternata 'Sundance', #2 Leycesteria formosa, #5

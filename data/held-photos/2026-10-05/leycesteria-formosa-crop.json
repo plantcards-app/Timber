@@ -1,0 +1,15 @@
+{
+  "sourcePx":        {"w": 3000, "h": 4000},
+  "featureVisible":  true,
+  "featureSeen":     "one hanging cluster of wine-red bracts with white flowers inside them, below a canopy of sea-green heart-shaped leaves; measured as the bounding box of strongly crimson pixels in the displayed 3000x4000 frame (a stray second cluster at the far left edge excluded), x 0.385-0.745, y 0.524-0.800",
+  "featureBox":      {"x": 0.385, "y": 0.524, "w": 0.360, "h": 0.276},
+  "crop":            {"x": 0.265, "y": 0.400, "w": 0.600, "h": 0.600},
+  "cropAspect":      0.75,
+  "rotateDeg":       0,
+  "featureInSafeBox": true,
+  "objectPosition":  "50% 40%",
+  "labels": [],
+  "exposure":        {"evAdjust": 0, "whiteBalance": "none"},
+  "verdict":         "crop",
+  "reason":          "At default framing the bract cluster, the feature this card is sold on, sits at 52-80% down the frame and the stats plaque covers it from 62%. The 3:4 master fills the card well's full height, so object-position cannot lift it; a 3:4 window of the lower 60% of the frame (x 0.265-0.865, y 0.40-1.00, 1800x2400 at exactly 0.750) moves the cluster's centre from 66% to 44% down the frame and its top from 52% to 21%, so the cluster hangs in the middle of the part of the well the plaque leaves visible with the leaf canopy above it; only the lowest dangling tips (frame 76-80%) pass under the plaque line."
+}

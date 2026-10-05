@@ -1252,6 +1252,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "choisya-ternata-sundance.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "choisya-ternata.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -2934,6 +2944,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "hibiscus-trionum.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "hosta-autumn-frost.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3464,6 +3484,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "leycesteria-formosa.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Cropped through tools/reframe-photo.js from the camera original (sensor 4000x3000, EXIF orientation 6, displayed 3000x4000): a 3:4 window x 0.265-0.865, y 0.400-1.000, 1800x2400 at exactly 0.750, so the bract cluster's centre moves from 66% to 44% down the frame and its top from 52% to 21%, into the part of the well above the stats plaque, on 2026-10-05 after the first render put the cluster under the plaque; the tool's output is data/held-photos/2026-10-05/leycesteria-formosa-crop.jpg and the master is that file downscaled to 1200x1600 as add-plants-bulk.js stages; no rotation, no exposure change, no pixels generated. EXIF Samsung Galaxy S24, 2026-10-04 (current season). No C2PA, JUMBF or trainedAlgorithmicMedia marker in the file",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "liatris-spicata-cobalus.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -3657,6 +3687,16 @@
    "file": "lupinus-the-governor-band-of-nobles-series.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. C2PA: c2pa.edited, softwareAgent 'Photo assist', digitalSourceType compositeWithTrainedAlgorithmicMedia (Galaxy AI generative edit); visible 'AI-generated content' label burned in. See VERIFY-QUEUE 32.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lycianthes-rantonnetii-variegata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

@@ -174,3 +174,43 @@ Asked for four at a time, in batch order, new cards only (the doubles are not in
 8. Agave americana 'Marginata' → `agave-americana-marginata`
 9. Acer negundo → `acer-negundo`
 10. Lavandula spp. → `lavandula-spp`, or the label's name (see flags)
+
+## Cards 1, 2, 5 and 6 dealt (2026-10-05)
+
+Oscar's four photos, no text, in the order asked (#1, #2, #5, #6), each matching its entry on sight. All four
+are Galaxy S24 shots, 4000x3000 with EXIF orientation 6, staged upright 1200x1600 by `add-plants-bulk.js`:
+the Choisya and the Leycesteria of 2026-10-04 12:14, the Lycianthes and the Hibiscus of 2026-10-03 12:02;
+byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia` markers. One `add-plants-bulk.js --quick` run
+with the entries split out of `batch-corrected.json`; conventions exactly as in that file, every other field
+as supplied. Deck 531 -> 535, hold 75 unchanged; card derivatives built in the run (sharp installed first
+with `npm i -g sharp`, 0.35.5 — the container does not carry it); credits by basename; restamped r356.
+Originals here are byte-identical to the files Oscar sent. The bulk run's data checks: data-audit green,
+plant-sense --strict green with the four in the deck (no new contradiction); its credits check failed only
+because the entries had not been written yet, and passed once they were; deck-audit PASS on 535 cards after.
+
+| # | card | notes |
+|---|---|---|
+| 1 | Choisya ternata 'Sundance' | **flagged.** The frame shows mostly dark glossy green trifoliate leaves with one golden-yellow shoot at the left and a cluster of white star flowers top right; a chain-link fence behind. The card says "brilliant golden-yellow aromatic leaves". A 'Sundance' goes green in shade and gold on new growth, and the species throws no golden shoots — so the shoot is consistent with 'Sundance' ([Inference]); it is also consistent with a green plant in a 'Sundance' pot. Dealt under the label's name by the batch rule (the Acer 'Moonfire' precedent), **[Unverified]** that the plant photographed is 'Sundance'; the fix if not is a replacement photo. In flower on 4 October against a May-Jun band — a bench photo says nothing about flowering time. Golden shoot and flowers whole in the well at default framing. |
+| 2 | Leycesteria formosa | matches: one hanging cluster of wine-red bracts with white flowers inside them under sea-green heart-shaped leaves, a fence line below. In bract and flower on 4 October, inside the Jul-Oct band. **Reframed before the push** — below. |
+| 5 | Lycianthes rantonnetii 'Variegata' | matches: one saucer-shaped violet-purple flower with a yellow centre over cream-white leaves blotched green down the midrib; a tangle of bare brown twigs across the lower frame, as shot (no crop removes them without cutting the leaves). In flower on 3 October, inside the Jun-Oct band. Flower and leaves whole in the well at default framing. |
+| 6 | Hibiscus trionum | matches: one open creamy-white flower with lilac-flushed petal tips, a dark maroon eye and orange anthers, over dissected leaves, inflated bud calyces behind; a second flower top right. In flower on 3 October against an Aug-Sep band — a bench photo says nothing about flowering time. Flower centred and whole in the well at default framing. |
+
+**#2 Leycesteria reframed (2026-10-05).** Rendered at phone size (390x780, 2x) from a `?cards=4` deck, the
+bract cluster — the feature the card sells — sat at 52–80% down the frame, under the stats plaque from 62%,
+with only leaves in the visible well. The 3:4 master fills the well's full height under `object-fit: cover`,
+so `PHOTO_FOCUS` cannot lift it; only a crop can (the Polygala precedent of 2026-10-04). The cluster was
+measured as the bounding box of strongly crimson pixels in the displayed 3000x4000 frame, a stray second
+cluster at the far left edge excluded: x 0.385–0.745, y 0.524–0.800 (centre 56% across, 66% down).
+`tools/reframe-photo.js` with `leycesteria-formosa-crop.json` (stored here) took the 3:4 window x
+0.265–0.865, y 0.400–1.000 of the camera original: 1800x2400 at exactly 0.750, cluster centre at 50% across
+and 44% down the crop (inside the tool's safe box), top at 21%, no rotation, no exposure change, no pixels
+generated. The tool's output is stored here as `leycesteria-formosa-crop.jpg`; the master
+`photos/leycesteria-formosa.jpg` is that file downscaled to 1200x1600 at JPEG 85 through the same canvas
+pipeline `add-plants-bulk.js` stages with, and the derivative was rebuilt with `optimise-photos.js --only`.
+The original here is untouched (sha256 5169d0462568… before and after). Re-rendered: the cluster hangs in the
+middle of the visible well with the leaf canopy above it; only its lowest dangling tips touch the PLANT POWER
+POINTS line. Credits entry updated. `timber.html` unchanged by the reframe, so r356 stands.
+
+Rendered at phone size from a `?cards=4` deck after the reframe: all four frame whole, no `PHOTO_FOCUS`
+override. Next to deal: #7 Phytolacca americana, #8 Agave americana 'Marginata', #9 Acer negundo, #10 the
+variegated lavender under the label's name — asked for 2026-10-05.
