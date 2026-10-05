@@ -1,26 +1,42 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Deal the last four of the 2026-10-05 batch when Oscar's photos arrive — #7 Phytolacca americana, #8
-  Agave americana 'Marginata', #9 Acer negundo, #10 "Lavandula spp." (the label names it) — asked for on
-  2026-10-05, four at a time at his word: `add-plants-bulk.js --quick` from `batch-corrected.json`, credits by
-  basename, restamp, phone-size render from a `?cards=4` deck, sequential gate, push. Cards 1, 2, 5 and 6 are
-  dealt (deck 531 -> 535, r356; gate 18/18 (app-test 269s, edge-test 281s, the rest green) on 0180991) on
-  `ccr-cd5f214b-6ow2oi` with the stored batch and the two filled doubles; no PR opened (not asked); say "not live until merged" on every push until it lands. A photo of either double
-  (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a second frame via add-swap. Then a Little Lime photo he is
-  sure of. Open for Oscar, not blocking: the Choisya 'Sundance' photo shows mostly dark green leaves with one
-  golden shoot and white flowers against a card that says brilliant golden-yellow foliage (dealt under the
-  label's name, [Unverified] it is 'Sundance'; a replacement photo if not); Caryopteris 'Dark Knight' went
-  H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9 Acer negundo's orange Toxic flag
-  rests on the horse hazard (atypical myopathy), not a human one; #7 Phytolacca's H6 is GPT's inference; the
-  Acer 'Moonfire' photo shows yellow-green leaves against a deep red-purple card (dealt and flagged; a
-  replacement photo if it is the wrong plant); the BIG & EASY PURPLE photo shows his hand behind the bloom
-  (a replacement frame if he wants one); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or
-  leave the species name with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only
-  "Dalina White". (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read;
-  the r270 iPhone check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a
-  problem* text; the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
+brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's photo arrives with the label in
+  frame — the card goes in under the label's name ("Lavandula spp." as supplied names no plant; GPT offers
+  'Platinum Blonde' or 'Walberton's Silver Edge'): set `latin`/`common` from the label in a copy of its
+  `batch-corrected.json` entry, `add-plants-bulk.js --quick`, credits, restamp, phone-size render, sequential
+  gate, push. Nine of ten entries are done: cards 1, 2, 5, 6, 7, 8, 9 dealt (deck 531 -> 538, r357) and the
+  two doubles filled, all on `ccr-cd5f214b-6ow2oi`; no PR opened (not asked); say "not live until merged" on
+  every push until it lands. A photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a
+  second frame via add-swap. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: the
+  Phytolacca photo is a pokeweed for certain and [Unverified] *americana* rather than *acinosa* (his own "not
+  sure"; the label settles it); the Choisya 'Sundance' photo shows mostly dark green leaves with one golden
+  shoot (dealt under the label's name, [Unverified] it is 'Sundance'; a replacement photo if not);
+  Caryopteris 'Dark Knight' went H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9
+  Acer negundo's orange Toxic flag rests on the horse hazard (atypical myopathy), not a human one; #7
+  Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo shows yellow-green leaves against a deep
+  red-purple card (dealt and flagged; a replacement photo if it is the wrong plant); the BIG & EASY PURPLE
+  photo shows his hand behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana
+  sino-ornata card to 'Berrybank Dome' or leave the species name with "Berrybank Dome" in cvs as now; whether
+  the Osteospermum label says only "Dalina White". (Displaced, not dropped: Little Devil's label hardiness,
+  H7 [Unverified] by direct read; the r270 iPhone check — Oscar opening the app on an iPhone that crashed
+  and pasting back the *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since
+  2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**cards 7, 8, 9 of the 2026-10-05 batch dealt: Phytolacca americana, Agave 'Marginata', Acer negundo; deck 535 -> 538, r357**) —
+  Oscar's three Galaxy S24 shots of 2026-10-03 11:55–12:08 with "Is the first photo correct not sure"; no
+  #10 (the lavender was not sent). The Agave 4000x3000 orientation 6, staged upright 1200x1600; the Phytolacca
+  and the Acer trimmed nearly square on the phone (3000x3302, 3000x3072), staged 1200x1321 and 1200x1229; no
+  AI or C2PA markers; originals byte-identical in the batch folder. His question: the first photo is a
+  pokeweed for certain — a drooping raceme of green berries ribbed like tiny pumpkins on pink pedicels with
+  white-green flowers at the tip — and [Unverified] *americana* rather than *acinosa* from the photo (the
+  drooping raceme fits americana, berries this ribbed also fit acinosa, which carries them upright —
+  [Inference] from the written descriptions); dealt under the JSON's name, the label's. The Agave and the
+  Acer match their entries on sight; all three in leaf or fruit, none out of band. One bulk run, derivatives
+  in the run, credits by basename, data-audit / plant-sense --strict / deck-audit green, restamp r357; fast
+  9/9. Rendered at phone size from a `?cards=3` deck: all three whole at default framing (the pokeweed's
+  nearly square frame is cropped at the sides, raceme centred). The full sequential gate was running at the
+  push (its result is the entry above this one). Pushed to `ccr-cd5f214b-6ow2oi`. Not live until merged.
 progress: 2026-10-05 (**gate 18/18 on 0180991, r356**) — the full sequential gate (app-test 269s, edge-test
   281s, the rest green) came back green on the four-card head; nothing on the branch moved between the
   gate and this entry but the ledger. Not live until merged.

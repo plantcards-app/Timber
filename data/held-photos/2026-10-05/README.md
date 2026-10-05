@@ -214,3 +214,27 @@ POINTS line. Credits entry updated. `timber.html` unchanged by the reframe, so r
 Rendered at phone size from a `?cards=4` deck after the reframe: all four frame whole, no `PHOTO_FOCUS`
 override. Next to deal: #7 Phytolacca americana, #8 Agave americana 'Marginata', #9 Acer negundo, #10 the
 variegated lavender under the label's name — asked for 2026-10-05.
+
+## Cards 7, 8 and 9 dealt (2026-10-05)
+
+Oscar's three photos with one question, "Is the first photo correct not sure", in the order asked (#7, #8,
+#9; no #10 — the variegated lavender was not sent). All three are Galaxy S24 shots of 2026-10-03 11:55–12:08;
+byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia` markers. The Agave is the sensor's 4000x3000 with
+EXIF orientation 6, staged upright 1200x1600; the Phytolacca (3000x3302) and the Acer (3000x3072) were trimmed
+nearly square on the phone, orientation 1, staged 1200x1321 and 1200x1229. One `add-plants-bulk.js --quick`
+run with the entries split out of `batch-corrected.json`; conventions exactly as in that file, every other
+field as supplied. Deck 535 -> 538, hold 75 unchanged; derivatives built in the run; credits by basename;
+restamped r357. Originals here are byte-identical to the files Oscar sent. The bulk run's data checks:
+data-audit green, plant-sense --strict green with the three in the deck (no new contradiction); its credits
+check failed only because the entries had not been written yet, and passed once they were; deck-audit PASS on
+538 cards after.
+
+| # | card | notes |
+|---|---|---|
+| 7 | Phytolacca americana | **Oscar's question answered: yes, it is a pokeweed.** One drooping raceme of green berries ribbed like tiny pumpkins on pink pedicels, the last white-green flowers still opening at its tip, a second raceme behind, lance-shaped leaves, bubble-wrap glazing behind (under cover). That combination is Phytolacca and nothing else on a bench. What the photo cannot settle is the species: the drooping raceme fits *P. americana*, while berries this deeply ribbed are also what *P. acinosa* shows, and that one holds its racemes upright ([Inference], from the written descriptions of the two, not checked against a key). The card's name is the JSON's, which is the label's; **[Unverified]** *americana* rather than *acinosa* from the photo. In fruit and flower on 3 October, inside the Jul-Oct band. The nearly square frame is cropped at the sides under `object-fit: cover`; the raceme is centred, so the berry mass and the flower tip sit in the visible well with the leaves above and only the raceme's lower end under the plaque. No `PHOTO_FOCUS`. |
+| 8 | Agave americana 'Marginata' | matches: a rosette of grey-green sword leaves with broad yellow margins and marginal teeth, some tip and surface scarring on the older leaves, gravel behind. Leaves fill the well at default framing. |
+| 9 | Acer negundo | matches: pinnate leaves of three to five coarsely toothed lime-green leaflets on a young potted plant; in leaf, no autumn colour on 3 October. Leaves fill the well at default framing. |
+
+Rendered at phone size (390x780, 2x) from a `?cards=3` deck: all three frame whole, no `PHOTO_FOCUS`
+override. **Still to deal: #10, the variegated lavender** — not sent; the label names the card (see the
+flags above). Nine of ten entries are now cards or filled doubles.
