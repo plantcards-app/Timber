@@ -4,8 +4,10 @@
 brick: Deal the 2026-10-05 batch as Oscar's photos arrive — eight new cards stored under
   `data/held-photos/2026-10-05/` (#1 Choisya ternata 'Sundance', #2 Leycesteria formosa, #5 Lycianthes
   rantonnetii 'Variegata', #6 Hibiscus trionum, #7 Phytolacca americana, #8 Agave americana 'Marginata', #9
-  Acer negundo, #10 "Lavandula spp." pending the label's name), five at a time in batch order with
-  `add-plants-bulk.js --quick`; a photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight' — both
+  Acer negundo, #10 "Lavandula spp." pending the label's name), four at a time in batch order at Oscar's word
+  ("Start asking 4 new cards from trusted recent batch"; five before today) with `add-plants-bulk.js --quick`
+  — first four asked for: #1 Choisya 'Sundance', #2 Leycesteria formosa, #5 Lycianthes 'Variegata', #6
+  Hibiscus trionum; a photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight' — both
   filled on the dealt cards, r355) is a second frame via add-swap. Branch `ccr-cd5f214b-6ow2oi` carries the
   store, 6b91b43 — gate 18/18 (app-test 271s, edge-test 279s, the rest green) on its timber.html, r355 (16eeff6); no PR opened — Oscar was not asked and did not ask; say "not live until merged" on every
   push until it lands. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: Caryopteris
@@ -19,6 +21,11 @@ brick: Deal the 2026-10-05 batch as Oscar's photos arrive — eight new cards st
   direct read; the r270 iPhone check — Oscar opening the app on an iPhone that crashed and pasting back the
   *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**first photo ask of the 2026-10-05 batch: four cards, Oscar's new cadence**) — Oscar:
+  "Start asking 4 new cards from trusted recent batch" ([Inference] the batch stored today, four photos per
+  ask instead of five, new cards only). Asked for #1 Choisya ternata 'Sundance', #2 Leycesteria formosa, #5
+  Lycianthes rantonnetii 'Variegata', #6 Hibiscus trionum, in that order; the two doubles' photos are welcome
+  any time as second frames and are not in the count. Record only, no deck change.
 progress: 2026-10-05 (**gate 18/18 on 6b91b43, r355**) — the full sequential gate (app-test 271s, edge-test 279s,
   the rest green) came back green on the working tree 6b91b43 carries; timber.html is byte-identical between the
   gate and the push (stamp 16eeff6 both sides), only the ledger moved. Not live until merged.

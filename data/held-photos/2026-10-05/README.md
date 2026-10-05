@@ -6,8 +6,8 @@ identities, UK hardiness and the important toxicity flags", his first paste afte
 `batch-corrected.json` is the 8 entries that will go in, with the standing layout conventions applied (table
 below) and four toxicity sentences reworded to land on the safety tier they mean. The other two entries are
 doubles of dealt cards and were resolved on those cards (below). **Nothing new is in `timber.html` yet**:
-each card is added when its photo arrives, five at a time in batch order — the routine of every batch since
-2026-09-26d. To deal a group: split them out of `batch-corrected.json`, `node tools/add-plants-bulk.js
+each card is added when its photo arrives, **four at a time** in batch order (Oscar, 2026-10-05: "Start asking
+4 new cards from trusted recent batch" — four, not the five of every batch since 2026-09-26d). To deal a group: split them out of `batch-corrected.json`, `node tools/add-plants-bulk.js
 --quick a.json a.jpg …`, `photo-credits.js --set <basename>` for each, restamp, update this file, the
 sequential `node tests/run-all.js`.
 
@@ -159,7 +159,8 @@ formosa H5 where the dealt 'Golden Lanterns' cultivar card is H4; #6 Hibiscus tr
 
 ## Photo order and the filename each photo should match
 
-Asked for five at a time, in batch order. The slug is what `photos/<slug>.jpg` will be called
+Asked for four at a time, in batch order, new cards only (the doubles are not in the count). First ask,
+2026-10-05: #1, #2, #5, #6. The slug is what `photos/<slug>.jpg` will be called
 (NEW-SESSION.md slug rule). The two doubles' photos become a **second frame on the dealt card** with
 `tools/add-swap.js "<latin>" photo.jpg --as <suffix>` — never a replacement, never a question.
 
