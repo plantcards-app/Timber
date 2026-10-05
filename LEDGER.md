@@ -1,24 +1,30 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards) and its first thirty-seven dealt (cards
-  2–39 bar Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria
-  'Valley Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia;
-  the Polygala photo reframed at Oscar's word; the Schisandra cut-out composited hero-on-self (deck 491 ->
-  528, r353; gate 18/18 (app-test 267s, edge-test 278s, the rest green) on c550a77, the thirty-seven-card head; 18/18 on 79c6926, 19cc56e, 34071a2, 55f5938
-  and f44af4d before it). Oscar merges, or says "merge". Then a Little Lime photo he is sure of, and
-  photos for #40–#42 (Acer pseudoplatanus 'Drummondii', Abelia 'Radiance', Hibiscus STARBURST CHIFFON),
-  which finish the batch; say "not live until merged" on every push; a push to the feature branch while a
-  PR is open joins that PR, so update its title and body rather than opening another. Open for Oscar, not
-  blocking: the Acer 'Moonfire' photo shows yellow-green leaves against a deep red-purple card (dealt and
-  flagged; a replacement photo if it is the wrong plant); the BIG & EASY PURPLE photo shows his hand
-  behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana sino-ornata card to
-  'Berrybank Dome' or leave the species name with "Berrybank Dome" in cvs as now; whether the
-  Osteospermum label says only "Dalina White".
+brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards), forty of them dealt (cards 2–42 bar
+  Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria 'Valley
+  Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia; the
+  Polygala photo reframed at Oscar's word; the Schisandra cut-out composited hero-on-self (deck 491 -> 531,
+  r354; gate 18/18 (app-test 268s, edge-test 279s, the rest green) on 04d3005, the forty-card head; 18/18 on c550a77, 79c6926, 19cc56e, 34071a2, 55f5938 and
+  f44af4d before it). Oscar said "The pr n merge" with the last three photos ([Inference] then the PR and
+  merge), so the merge follows the gate; say "not live until merged" on every push until it lands. Then a
+  Little Lime photo he is sure of. Open for Oscar, not blocking: the Acer 'Moonfire' photo shows
+  yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if it is the
+  wrong plant); the BIG & EASY PURPLE photo shows his hand behind the bloom (a replacement frame if he
+  wants one); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the species name
+  with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina White".
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-03  sessions-unchanged: 0
+progress: 2026-10-05 (**cards 40–42 dealt: Acer pseudoplatanus 'Drummondii', Abelia 'Radiance', Hibiscus STARBURST CHIFFON; deck 528 -> 531 — the batch is dealt**) —
+  Oscar's last three Galaxy S24 shots, sent with "The pr n merge", in batch order, each trimmed on the
+  phone, no AI or C2PA markers. Each matches its entry; the Hibiscus in flower, the other two in leaf; the
+  Hibiscus reads white where the card says pale pink (noted, text as supplied); every cultivar and trade
+  name is the label's and [Unverified] from the photo. One bulk run, derivatives in the run, credits,
+  originals byte-identical, restamp r354. Rendered at phone size: all three whole at default framing.
+  Forty of forty-two entries are cards (Little Lime paused, Berrybank Dome a double). gate 18/18 (app-test 268s, edge-test 279s, the rest green). Pushed to
+  the feature branch, joining PR #54 (title and body updated to forty cards). Not live until merged.
 progress: 2026-10-05 (**cards 35–39 dealt: Hydrangea 'Little Fresco', Hydrangea LIVING RED VELVET, Alstroemeria 'Valley Beach', Euonymus alatus 'Compactus', Acer platanoides 'Crimson King'; deck 523 -> 528**) —
   Oscar's five photos, no text, in batch order: four Galaxy S24 shots and one two-panel collage (the
   Euonymus, kept whole), no AI or C2PA markers; the two white panicle hydrangeas told apart by the order
