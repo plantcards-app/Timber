@@ -1282,6 +1282,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "clematis-big-easy-purple-tumaini.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "clematis-cartmanii-avalanche-blaaval.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -1314,6 +1324,16 @@
   },
   {
    "file": "clematis-nelly-moser.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "clematis-niobe.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

@@ -422,6 +422,26 @@ at the end of their bands; the Heuchera and Phoenix cards are foliage plants wit
 | 28 | Hosta 'Autumn Frost' | top-down of a potted clump: blue-green leaf centres with wide cream-yellow margins, leaf tips scorched brown, a pale residue on the blades ([Inference] hard-water or spray marks); matches "blue-green heart-shaped leaves edged broad yellow in spring, fading to creamy white" — cream now, as the card says for late season. No flower. |
 | 29 | Phoenix canariensis | close-up of a young crown: stiff, narrow, V-folded pinnate leaflets, deep green with pale midribs, brown fibre strands between them; matches "deep-green pinnate fronds"; no trunk in the frame. Genus plausible on the leaflet ([Inference]); species is the label's (GPT's flags stand: 'canadensis' corrected to canariensis, 'Ciotola' read as the pot). |
 
-Next to deal: #1 when Oscar has a photo he is sure of; then #30–#34 in batch order (Clematis BIG & EASY PURPLE
-('Tumaini'), Clematis 'Niobe', Schisandra sphenanthera, Cordyline obtecta SUPERSTAR ('Albatross'), Physocarpus
-opulifolius MAGIC BALL ('Lp1')).
+## Cards 30–31 dealt (2026-10-05)
+
+Oscar's two photos, sent with no text: a violet-purple clematis, then a wine-red one. Filed to #30 Clematis
+BIG & EASY PURPLE ('Tumaini') and #31 Clematis 'Niobe' in that order — [Inference] from the colours against
+the two entries (the batch's next two cards, both clematis, sent in batch order), not from a label in either
+frame. Both Galaxy S24 shots of 2026-10-03 11:54 (the purple 4000x3000 with EXIF orientation 6, staged upright
+1200x1600; the Niobe trimmed on the phone to 3000x3668, orientation 1, staged 1200x1467); byte scans found no
+C2PA, JUMBF or `trainedAlgorithmicMedia` markers; XMP carries the Samsung Ultra HDR gain map as before. One
+`add-plants-bulk.js --quick` run, derivatives built in the run, credits by basename, conventions exactly as in
+`batch-corrected.json`, every other field as supplied. Deck 518 -> 520, hold 75 unchanged; restamped r351.
+Originals here are byte-identical to the files Oscar sent (md5 checked; stored in f971e0a ahead of the deal).
+Data checks green after the insert (the credits check failed only until the entries were written); fast set
+9/9. Rendered at phone size from a `?cards=2` deck: both frame whole at default framing, no `PHOTO_FOCUS`
+override. Both in flower on 3 October, just past the May–Sep band on each card.
+
+| # | card | notes |
+|---|---|---|
+| 30 | Clematis BIG & EASY PURPLE ('Tumaini') | one large violet-purple flower, six broad sepals with a paler central bar, dark red-purple stamens with white filament bases, held up to the camera against the plant's leaves; matches "large richly coloured purple-toned flowers". Oscar's hand holds the bloom and shows behind it on the right of the well; no crop can remove it without cutting the flower, so the frame is as shot. A replacement frame without the hand is the fix if he wants one. The cultivar is the label's ([Unverified] from the photo). |
+| 31 | Clematis 'Niobe' | one deep wine-red flower, six velvety sepals with a darker central bar, cream-yellow stamens on pale filaments, a furry bud top left; matches "velvety ruby-red flowers ageing wine-red around contrasting yellow-green stamens". The frame fills the well with the flower face; the lower sepals sit under the plaque. The cultivar is the label's ([Unverified] from the photo). |
+
+Next to deal: #1 when Oscar has a photo he is sure of; then #32–#36 in batch order (Schisandra sphenanthera,
+Cordyline obtecta SUPERSTAR ('Albatross'), Physocarpus opulifolius MAGIC BALL ('Lp1'), Hydrangea paniculata
+'Little Fresco', Hydrangea paniculata LIVING RED VELVET ('LC NO19')).
