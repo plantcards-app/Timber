@@ -1,22 +1,24 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Merge PR #54 — the stored 2026-10-03 batch (42 cards), forty of them dealt (cards 2–42 bar
-  Berrybank Dome, a double of the dealt Gentiana sino-ornata; Little Lime paused); Alstroemeria 'Valley
-  Beach' named from its label; the first photo caption (PHOTO_CAPTION, v14.62) on the Amsonia; the
-  Polygala photo reframed at Oscar's word; the Schisandra cut-out composited hero-on-self (deck 491 -> 531,
-  r354; gate 18/18 (app-test 268s, edge-test 279s, the rest green) on 04d3005, the forty-card head; 18/18 on c550a77, 79c6926, 19cc56e, 34071a2, 55f5938 and
-  f44af4d before it). Oscar said "The pr n merge" with the last three photos ([Inference] then the PR and
-  merge), so the merge follows the gate; say "not live until merged" on every push until it lands. Then a
-  Little Lime photo he is sure of. Open for Oscar, not blocking: the Acer 'Moonfire' photo shows
-  yellow-green leaves against a deep red-purple card (dealt and flagged; a replacement photo if it is the
-  wrong plant); the BIG & EASY PURPLE photo shows his hand behind the bloom (a replacement frame if he
-  wants one); rename the dealt Gentiana sino-ornata card to 'Berrybank Dome' or leave the species name
-  with "Berrybank Dome" in cvs as now; whether the Osteospermum label says only "Dalina White".
+brick: A Little Lime photo Oscar is sure of (batch entry #1, the one card of the 2026-10-03 batch still
+  waiting), then the open questions he has not answered: the Acer 'Moonfire' photo (yellow-green leaves
+  against a deep red-purple card — a replacement photo if it is the wrong plant); the BIG & EASY PURPLE
+  frame with his hand behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana
+  sino-ornata card to 'Berrybank Dome' or leave "Berrybank Dome" in cvs as now; whether the Osteospermum
+  label says only "Dalina White". PR #54 merged 2026-10-05 (749c2ec): deck 531, r354 — pages.yml run #127 succeeded at 10:38 UTC (CI fast checks green, Pages deploy done, the workflow's own step verified the served page as commit 749c2ec). The
+  feature branch ccr-eba5e0b2-vns5fo was restarted from the merged base for whatever comes next; a push
+  to it joins nothing until a PR is opened, and "not live until merged" applies again from the first one.
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text;
   the toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
-since: 2026-10-03  sessions-unchanged: 0
+since: 2026-10-05  sessions-unchanged: 0
+progress: 2026-10-05 (**PR #54 merged — the 2026-10-03 batch is in: forty cards, deck 491 -> 531, r342 -> r354**) —
+  Oscar: "The pr n merge" with the last three photos, then "Merge it when the gate is green". Gate 18/18
+  on 04d3005; ledger and PR body brought to forty cards; merged with a merge commit as PRs #51–#53 were
+  (749c2ec, PR head 79c08a7). pages.yml run #127 succeeded at 10:38 UTC (CI fast checks green, Pages deploy done, the workflow's own step verified the served page as commit 749c2ec). Not dealt from the batch: Little Lime (paused at Oscar's word) and
+  Berrybank Dome (a double of the dealt Gentiana sino-ornata). The PR subscription ended with the merge;
+  no check-in trigger was pending.
 progress: 2026-10-05 (**cards 40–42 dealt: Acer pseudoplatanus 'Drummondii', Abelia 'Radiance', Hibiscus STARBURST CHIFFON; deck 528 -> 531 — the batch is dealt**) —
   Oscar's last three Galaxy S24 shots, sent with "The pr n merge", in batch order, each trimmed on the
   phone, no AI or C2PA markers. Each matches its entry; the Hibiscus in flower, the other two in leaf; the
