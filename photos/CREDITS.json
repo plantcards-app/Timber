@@ -4726,6 +4726,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "pteris-nipponica-backlit.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Silver Ribbon Fern card (PHOTO_SWAP alts): his first photo, cropped to the backlit frond, heathers and trolley, leaving out a colleague in a branded uniform; the two photos his collage is made from go beside the collage so he can judge collages against single photos.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "pteris-nipponica-fronds.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Silver Ribbon Fern card (PHOTO_SWAP alts): Oscar's second photo, the silver-striped fronds against the trolley, with a blurred strip of uniform trimmed off the top.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "pteris-nipponica.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. A two-panel collage from his phone's collage app (2160x3840, no camera EXIF), kept whole: two shots of the same plant over a blurred fill the app builds from the photo itself",

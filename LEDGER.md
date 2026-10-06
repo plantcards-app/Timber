@@ -31,6 +31,18 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**Pteris nipponica: the collage's two photos as frames two and three beside the collage, both cropped clear of a colleague; r365**) —
+  Oscar wants to judge collages against single photos ("use the existing collage as one flah betwen and then
+  use these two aswell"), so the collage stays the card photo and add-swap ran twice (`--as backlit`,
+  `--as fronds`): a three-frame cycle. His first photo shows a colleague behind the fern in a branded
+  uniform with logo and name badge, so by the v14.34 rule (a person or label is not for a customer-facing card)
+  it went through `tools/reframe-photo.js` cropped to x 0-0.43, y 0.38-0.81: backlit frond, heathers and
+  trolley, 0 shirt-blue pixels. His second had a blurred strip of the same uniform in its top 5%, trimmed and
+  nothing more. Crop JSONs, originals byte-identical and a README under `data/held-photos/2026-10-06g/`; no AI
+  or C2PA markers; no card text changed. Rendered at phone size, all three frames frozen in turn: whole, no
+  person in either new frame. Deck audit PASS, audit-layout clean, fast 9/9, restamp r365. The full gate
+  started on f8f52fd overlapped these edits (app-test had passed on the clean tree), so it was stopped and runs
+  again on this head. Not live until merged.
 progress: 2026-10-06, late (**a second frame for Rosa 'Auscrowd' (Gabriel Oak): one full open deep pink rosette; r364**) —
   "A flash between for Gabriel oak", one Galaxy S24 photo: add-swap `--as bloom` on the dealt card, whose
   photo is foliage with one opening bud. No card text changed, no AI or C2PA markers, original

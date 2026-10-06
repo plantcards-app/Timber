@@ -1250,7 +1250,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r364 · 2026-10-06 · bb3ed20';
+const BUILD='r365 · 2026-10-06 · ad79868';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -17052,6 +17052,15 @@ const PHOTO_SWAP={
   /* Oscar's 2026-10-06 frame, sent as a second photo: one full open bloom close up, a many-petalled deep pink rosette over the leaves. The card photo is his shot of the foliage with a single opening bud */
   'rosa-auscrowd':{
     alt:'photos/card/rosa-auscrowd-bloom.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-06 ask: the two photos his collage is made from, as frames beside the collage, so he can judge collages against single photos. Frame two is his first photo cropped to the backlit frond, heathers and trolley, leaving out a colleague in a branded uniform; frame three is his second photo, the silver-striped fronds, with a blurred strip of that uniform trimmed off the top (crop JSONs in data/held-photos/2026-10-06g) */
+  'pteris-nipponica':{
+    alts:[
+      'photos/card/pteris-nipponica-backlit.webp',
+      'photos/card/pteris-nipponica-fronds.webp',
+    ],
     focus:'50% 45%',
     hold:'3.5s',
   },

@@ -1,0 +1,9 @@
+{
+  "photo": "pteris-nipponica-fronds.jpg",
+  "verdict": "crop",
+  "reason": "A blurred band of a colleague's blue uniform sits along the top edge at the right (x 0.80-0.95, y 0-0.05 of the upright frame; every shirt-blue pixel in the photo falls in that strip). Trimmed off the top and not a pixel more, as the Cryptomeria fingertip was (v14.34): the fronds are untouched.",
+  "sourcePx": { "w": 3000, "h": 4000 },
+  "featureVisible": true,
+  "featureBox": { "x": 0.30, "y": 0.30, "w": 0.40, "h": 0.30 },
+  "crop": { "x": 0.0, "y": 0.05, "w": 1.0, "h": 0.95 }
+}
