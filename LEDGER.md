@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**gate 18/18 on 782378a, r362**) — the full sequential gate (app-test 277s,
+  edge-test 287s, audit-layout and the rest green) came back green on the head that carries the two
+  flash-between frames; nothing on the branch moved between the gate and this entry but the ledger. Not live
+  until merged.
 progress: 2026-10-06, late (**two flash-between frames: The Lark Ascending's open bloom and Campsis 'Tropical Summer' in autumn colour; r362**) —
   Oscar's "Flash between photo for Rosa the acending" and "Flash between photo for CAMPSIS gran. 'TROPCCA
   SUMMER autumn colour", one Galaxy S24 photo each, no JSON. `tools/add-swap.js` on the two dealt cards,
