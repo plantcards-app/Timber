@@ -1,29 +1,170 @@
 # Next-brick ledger
 
 ## timber  [active]
-brick: Deal #10 of the 2026-10-05 batch, the variegated lavender, when Oscar's photo arrives with the label in
-  frame — the card goes in under the label's name ("Lavandula spp." as supplied names no plant; GPT offers
-  'Platinum Blonde' or 'Walberton's Silver Edge'): set `latin`/`common` from the label in a copy of its
-  `batch-corrected.json` entry, `add-plants-bulk.js --quick`, credits, restamp, phone-size render, sequential
-  gate, push. Nine of ten entries are done: cards 1, 2, 5, 6, 7, 8, 9 dealt (deck 531 -> 538, r357) and the
-  two doubles filled, all on `ccr-cd5f214b-6ow2oi` (gate 18/18 (app-test 274s, edge-test 284s, the rest
-  green) on 339b1d7, the seven-card head); no PR opened (not asked); say "not live until merged" on
-  every push until it lands. A photo of either double (Rhus 'Dissecta', Caryopteris 'Dark Knight') is a
-  second frame via add-swap. Then a Little Lime photo he is sure of. Open for Oscar, not blocking: the
-  Phytolacca photo is a pokeweed for certain and [Unverified] *americana* rather than *acinosa* (his own "not
-  sure"; the label settles it); the Choisya 'Sundance' photo shows mostly dark green leaves with one golden
-  shoot (dealt under the label's name, [Unverified] it is 'Sundance'; a replacement photo if not);
-  Caryopteris 'Dark Knight' went H6 → H4 by the sibling rule ([Unverified] against the RHS from here); #9
-  Acer negundo's orange Toxic flag rests on the horse hazard (atypical myopathy), not a human one; #7
-  Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo shows yellow-green leaves against a deep
-  red-purple card (dealt and flagged; a replacement photo if it is the wrong plant); the BIG & EASY PURPLE
-  photo shows his hand behind the bloom (a replacement frame if he wants one); rename the dealt Gentiana
-  sino-ornata card to 'Berrybank Dome' or leave the species name with "Berrybank Dome" in cvs as now; whether
-  the Osteospermum label says only "Dalina White". (Displaced, not dropped: Little Devil's label hardiness,
-  H7 [Unverified] by direct read; the r270 iPhone check — Oscar opening the app on an iPhone that crashed
-  and pasting back the *Report a problem* text; the toxicity paste, 317 of 432 blank, unchanged since
-  2026-09-13.)
-since: 2026-10-05  sessions-unchanged: 0
+brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need to focus on getting it playstore
+  ready and then moving from there"). The repo side is done and verified: the TWA bundle workflow builds
+  (runs #3 and #4 green, 2026-09-28), the upload keystore is in repository secrets (run #4's log: "using the
+  upload keystore from repository secrets"), `.well-known/assetlinks.json` is live with two fingerprints — the
+  upload key's (printed by run #4) and, [Inference], Play's app-signing certificate, which only exists once a
+  bundle has been uploaded to the Console — and the listing kit is in `play/` (copy, 1024x500 feature
+  graphic, seven 1080x1920 screenshots, privacy page, data-safety and content-rating answers). What is left
+  lives in the Play Console and is [Unverified] from here: which track the .aab sits on, how many testers
+  are opted in, whether the account is a personal one created after 13 Nov 2023 (then 12 testers for 14
+  days before production), and which listing sections are still red. So the brick: **Oscar opens Play
+  Console → Testing → Closed testing and sends one screenshot of the tester count and the production-access
+  requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
+  to-do when he says go: `play/LISTING.md` still says "430+ plants" (538 live). Parked, not dropped, at his
+  word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
+  photo comes, ten minutes' work. The 2026-10-06b batch under
+  `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
+  r361. Open for Oscar, not blocking: the Sorbus 'Joseph Rock' photo shows pale peach-pink berries where the card says
+  creamy butter-yellow to amber (dealt under the label's name, [Unverified] it is 'Joseph Rock'; a replacement photo
+  of the berries in shade if not); Skimmia 'Pabella' carries Mar-Dec as supplied where its berrying siblings carry the
+  berry season only (Oct-Mar/Oct-Apr); Pteris nipponica and Sarracenia 'Fiona' / 'Maroon' are the labels' names,
+  [Unverified] from the photos; the Phytolacca photo is a pokeweed for
+  certain and [Unverified] *americana* rather than *acinosa*; the Choisya 'Sundance' photo shows mostly dark
+  green leaves with one golden shoot ([Unverified] it is 'Sundance'); Caryopteris 'Dark Knight' went H6 → H4
+  by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
+  hazard; #7 Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo doubt; the BIG & EASY PURPLE hand
+  in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of.
+  (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
+  check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
+  toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
+since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**Play rules checked against Google's own pages; the bundle meets the 2026 target API**) —
+  Oscar asked whether Play Console sets a time limit for gathering testers. Google's testing-requirements page
+  (Play Console Help answer 14151465): personal accounts created after 13 Nov 2023 need a closed test with at
+  least 12 testers opted in continuously for at least 14 days; a tester who opts out before 14 days does not
+  count, and opting back in restarts that tester's 14 days; organisation accounts are not affected. The
+  production-access form asks how easy recruiting was, how engaged testers were, a summary of their feedback and
+  what changed because of it; review "usually takes seven days or less". No deadline for gathering testers or
+  finishing the test found there or in the community guide. The one account clock found is inactive-account
+  closure (answer 11605267): created over a year ago and never submitted an app, or, with apps, all under 1,000
+  combined lifetime installs, contact details unverified and unused for 180 days; emails at 60/30/7 days; verifying
+  email and phone in Account details is one of Google's listed ways to avoid it. Target API (answer 11926878): from
+  31 Aug 2026 new apps and updates must target API 36. `play-bundle.yml` pins `@bubblewrap/cli@1.25.0`, which
+  takes `@bubblewrap/core ^1.25.0`; that resolves to 1.25.0 (the latest, published 2026-07-31), whose
+  `template_project/app/build.gradle` sets compileSdk and targetSdk 36. So the bundle meets it, [Inference]: the
+  template was read, the built .aab's manifest was not opened. Brick unchanged; the tester count in words will do
+  in place of the screenshot.
+progress: 2026-10-06 (**gate 18/18 on 1769493, r361**) — the full sequential gate (app-test 277s, edge-test
+  287s, audit-layout and the rest green) came back green on the 549-card head; nothing on the branch moved between
+  the gate and this entry but the ledger. The branch carries eleven cards over the live deck (538 -> 549). Not live
+  until merged.
+progress: 2026-10-06 (**cards 5–8 of the 2026-10-06b batch dealt: Sorbus commixta 'Embley', Sorbus 'Joseph Rock' (photo flagged), Sorbus vilmorinii, Cornus canadensis; deck 545 -> 549, r361 — the batch is dealt**) —
+  Oscar's four Galaxy S24 shots of this morning with "In order", 4000x3000 orientation 6, staged upright; no AI
+  or C2PA markers; originals byte-identical in the batch folder. Embley: red-stalked narrow leaflets sharp over
+  scarlet berries shot soft, left as shot (a crop would trade sharp leaves for more soft berries). Joseph Rock:
+  rowan foliage with three pale peach-pink berries where the card says creamy-yellow to amber — dealt under the
+  label's name by the batch rule (the Moonfire precedent), flagged [Unverified]; low warm sun shifts colour, but
+  not to pink ([Inference]). Vilmorinii: rose-pink berry clusters, the card's pink stage. Cornel: whorled
+  arc-veined leaves, no bracts or berries in October. One bulk run, derivatives in the run, credits,
+  data-audit / plant-sense --strict / deck-audit / audit-layout green, restamp r361, fast 9/9; all four whole at
+  phone size from a `?cards=4` deck. Full sequential gate 18/18 (app-test 277s, edge-test 287s, the rest green)
+  on 1769493 — it was still in its browser suites at the push, so the commit went up on the fast set (the feature
+  branch does not deploy) and the result landed in the next commit. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened
+  (not asked). Not live until merged.
+progress: 2026-10-06 (**gate 18/18 on fe91f19, r360**) — the full sequential gate (app-test 276s, edge-test
+  285s, audit-layout and the rest green) came back green on the head that carries both of today's later deals
+  (3652389, the carnivores, and fe91f19, the Skimmia and the fern); nothing on the branch moved between the gate
+  and this entry but the ledger. Not live until merged.
+progress: 2026-10-06 (**Skimmia japonica 'Pabella' and Pteris nipponica dealt from Oscar's JSON + photos, batch 2026-10-06c; deck 543 -> 545, r360**) —
+  two cards with their photos in one message, "In order with photos", dealt the day they came; the Play brick
+  unchanged. No doubles (five dealt Skimmias and one held beside 'Pabella'; no Pteris). check-plant-json: the
+  fern's "H1C" → H1c (the Scadoxus precedent) and "Year-round" → Jan-Dec (plant-sense's own prescription); 2/2
+  after. Facings kept (North / East / West, the Skimmia siblings' form); the Skimmia takes its siblings' soil line;
+  fern sizes in cm. Toxicity: the fern's "No significant toxicity is widely documented…" hit the "toxicity" trap
+  and now opens "No known hazard"; the Skimmia's "should not be eaten" kept, Toxic as its siblings. Noted, not
+  changed: the Skimmia's Mar-Dec band against its siblings' berry season. Photos: the Skimmia a Galaxy S24 shot of
+  17:00 today (orientation 6, staged upright), in berry; the fern a two-panel collage from the phone's collage app
+  (2160x3840, no camera EXIF), kept whole as the Gentiana and Delphinium collages were; no AI or C2PA markers;
+  originals byte-identical in `data/held-photos/2026-10-06c/`. One bulk run, credits, data-audit / plant-sense
+  --strict / deck-audit / audit-layout green, restamp r360, fast 9/9; both rendered whole at phone size from a
+  `?cards=2` deck. Full sequential gate 18/18 (app-test 276s, edge-test 285s, the rest green) on fe91f19 — it
+  was still in its browser suites at the push, so the commit went up on the fast set (the feature branch does not
+  deploy) and the result landed in the next commit. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked).
+  Not live until merged.
+progress: 2026-10-06 (**cards 1–4 of the 2026-10-06b batch dealt: Pinguicula agnata, Dionaea muscipula, Sarracenia 'Maroon', Sarracenia 'Fiona' (reframed, spread shortened); deck 539 -> 543, r359**) —
+  Oscar's four Galaxy S24 shots of today, no text, in the order asked; the Pinguicula trimmed nearly square on
+  the phone, the other three 4000x3000 orientation 6, staged upright; no AI or C2PA markers; originals
+  byte-identical in the batch folder. Each matches its entry: the butterwort's sticky rosette with gnats on it,
+  the flytrap's open traps with a fly (green inside, not the red the card calls typical — a strong-light colour,
+  [Inference]; no label in frame, so the plain species stands), the Maroon's burgundy clump, Fiona's pink-veined
+  hood. sharp present, derivatives in the one bulk run; credits by basename; data-audit / plant-sense --strict /
+  deck-audit green. Rendered at phone size from a `?cards=4` deck: three whole at default framing; Fiona's hood sat
+  on the plaque line (51–64% down) under blurred glazing, so reframed as the Leycesteria was — `reframe-photo.js`
+  took a 3:4 window of the lower 70% of the camera original (x 0–0.70, y 0.30–1.00, 2100x2800 at 0.750; hood centre
+  58% → 39% down, inside the safe box), crop JSON and output kept in the batch folder, master restaged, derivative
+  rebuilt, original untouched, credits say so. audit-layout, run before the push this time: Fiona's spread "Up to
+  10 cm" overran its rail by 8.9px and crossed the baked label — written "≤10 cm" (same claim) on the card and in
+  batch-corrected.json, then all cards clean. Restamp r359; fast 9/9. Full sequential gate 18/18 on fe91f19, the
+  head that carries this deal and the next. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
+progress: 2026-10-06 (**batch 2026-10-06b stored: 8 entries, 8 fitted, no doubles**) — Oscar's second GPT
+  paste of the day, four carnivores, three rowans and the dwarf cornel, no photos; as-sent, corrected and
+  README under `data/held-photos/2026-10-06b/`. compare-double: no card for any of the 8 (three PROBABLE
+  word-hits — "rowan" twice to the dealt Sorbus AUTUMN SPIRE, "joseph" to Clematis JOSEPHINE — all different
+  plants). check-plant-json: as sent 2 hard errors, #1 peak "Spring-Summer" (now Mar-Aug, the two seasons'
+  months, [Inference]) and #3 foliage "Perennial" naming no class (now prefixed "Evergreen to semi-dormant"
+  from its sibling #4 in the same paste, [Inference]); corrected 8/8. Facings: every entry states one,
+  kept; the four points become "Any aspect". Soil lines on the carnivores follow the dealt Drosera capensis.
+  Toxicity through the ladder: #1–#4 "Not generally regarded as toxic." hit the "toxic" trap and now open
+  "No known hazard"; #5 "not intended for eating" matched nothing and is now "not to be eaten" (Toxic, the
+  deck's fruit line); #8 reworded to keep both claims, Toxic through "not to be eaten". plant-sense
+  pre-check on a scratch hold block: no new contradiction, --strict 0, one new warning (Vilmorin's rowan
+  "compact" at a 2.5-4 m band, as supplied). GPT's flags carried: the Dionaea label read "Tleshopofho"
+  (supplier text, species filed, no cultivar invented), 'Maroon' hardiness unresolved, 'Fiona' H5 and the
+  Cornus H7 [Unverified] from here, 'Fiona' spread "Up to 10 cm" as supplied. Data only, timber.html
+  untouched; fast checks 9/9. Photos asked for four at a time, #1–#4 first. The Play brick unchanged.
+progress: 2026-10-06 (**gate 18/18 on 5b74741, r358**) — the full sequential gate (app-test 275s, edge-test
+  286s, the rest green) came back green on the rose head; nothing on the branch moved between the gate and
+  this entry but the ledger. Not live until merged.
+progress: 2026-10-06 (**Rosa A WHITER SHADE OF PALE ('Peafanfare') dealt from Oscar's JSON + photo; deck 538 -> 539, r358**) —
+  one card sent with its photo in one message, so dealt the same day, the Play brick unchanged. Not a double
+  (compare-double: no Rosa card with that code or name; the deck's thirtieth rose). Corrected as the deck's
+  roses are: the latin in the CAPS trade-name form after ROYAL WILLIAM and PRECIOUS LOVE, the stated facing
+  kept (East / South / West), soil "Fertile, drained, any pH; No waterlogging; renew old rose soil", sizes in
+  cm; toxicity reworded because "Generally low toxicity; thorny stems…" prints the orange Toxic rung through
+  the word itself — now "Low hazard if eaten; the thorny stems are sharp and can injure skin, so wear gloves
+  when handling.", amber, the tier it means (no hips claim added; the other roses print Toxic because theirs
+  say the hips are not to be eaten). Galaxy S24 shot of 13:58 today, trimmed nearly square, 1200x1283, no
+  markers, original byte-identical in `data/held-photos/2026-10-06/`. One bulk run, derivative in the run,
+  credits, data-audit / plant-sense --strict / deck-audit green, restamp r358, fast 9/9; rendered at phone
+  size from a `?cards=1` deck, the flower whole at default framing. A slip on the way: the first attempt wrote
+  the corrected entry to a stray `undefined/` folder (an unexported shell variable) and restamped with no
+  content change; both reverted before the real deal. Full sequential gate 18/18 (app-test 275s, edge-test
+  286s, the rest green) on 5b74741 — it was still in its browser suites at the push, so the commit went up on
+  the fast set (the feature branch does not deploy) and the result landed in the next commit. Pushed to
+  `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
+progress: 2026-10-06 (**focus moved to the Play Store at Oscar's word; repo side audited**) — "I really think
+  i just need to focus on getting it playstore ready and then moving from there". Read from the repo and the
+  Actions API, not from the Console: bundle workflow green on runs #3 and #4 (28 Sep; package
+  com.scionstudios.plantcards, versionCode 1, name Plant Cards); run #4's keystore step logged "using the
+  upload keystore from repository secrets" and printed the upload key SHA-256 ending 20:49, which is the
+  second fingerprint in the live assetlinks.json — so the first (ending E5:6F) is Play's app-signing
+  certificate ([Inference]) and a bundle has been uploaded; Pages run 129 verified assetlinks served with
+  the Play key; manifest.webmanifest live; icons, feature graphic, seven screenshots, LISTING.md,
+  privacy.html and mission.html in place. Not knowable from here: track, tester count, account type,
+  listing-section status. The lavender card parked at his word (no conflict — it waits on a photo anyway).
+progress: 2026-10-05 (**PR #55 merged by Oscar, deck 538 live at r357; Pages run 128 lost to GitHub's runner pool, run 129 dispatched and green**) —
+  Oscar opened and merged PR #55 from `ccr-cd5f214b-6ow2oi` at 19:50 UTC (merge commit 14dd131 on the
+  deploy branch, tree identical to bf0500b; fast checks 9/9 on that exact tree from here). The push's own
+  deploy, run 128, never ran a step: GitHub's annotation reads "The job was not acquired by Runner of type
+  hosted even after multiple attempts", the job was cancelled at 20:05 after 15 minutes and the run marked
+  failure — the hosted runner pool, not this repo; live stayed on run 127's r354 meanwhile. Fresh dispatch
+  at 20:19 (the README's recovery; never a re-run of a failed deploy): run 129 (job 111961086374) was picked
+  up in 47s and every step went green by 20:21:38 — fast checks, upload, deploy-pages, "Verify the deployed
+  page is this commit", assetlinks — so r357 and deck 538 are live: the seven new cards and the two filled
+  doubles. Read from the Actions API; github.io is still blocked from the container (403 from the proxy).
+  Oscar's question, "Check the app will work if I send the link to ppl": a fresh-visitor run on an exact
+  copy of the then-live tree (749c2ec, 531 cards) served under /Timber/ as Pages serves it, Chromium at
+  390x844 @3x with touch and at 1280x800 — the index redirect lands on timber.html, the deck deals, the top
+  cards' photos load, learn and skip count, the typo-tolerant search finds Choisya from "choysia", the
+  service worker installs and controls the second load; zero console errors, zero page errors, no 4xx/5xx
+  (two photo fetches aborted by my own navigation mid-trickle, [Inference] benign). The merged tree differs
+  from it only by the seven cards and two rows, gate 18/18. The repo is public and Pages is on, so the link
+  needs no login. [Unverified] on iPhone/Safari — no WebKit in this container; the two iPhone crash reports
+  of August have had three fixes since (r78, r79, the r270 shells) and no iPhone report since, and light
+  mode is the detector if one still dies. Branch restarted from 14dd131, same name.
 progress: 2026-10-05 (**gate 18/18 on 339b1d7, r357**) — the full sequential gate (app-test 274s, edge-test
   284s, the rest green) came back green on the seven-card head; nothing on the branch moved between the gate
   and this entry but the ledger. Not live until merged.
