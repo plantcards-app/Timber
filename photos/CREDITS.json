@@ -972,6 +972,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "campsis-grandiflora-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Tropical Summer Trumpet Creeper card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: the same serrated pinnate leaflets turned orange-red in autumn, in low sun. The card photo is his summer shot of green leaves and orange trumpets.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "campsis-grandiflora.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright, WITH his own red-marker redaction over two nursery labels (Samsung PhotoEditor drawing edit, the Salvia 'Black and Blue' / Solanum class). The manifest declares no generative action: isScaleAI false, isAIFilterReEditOnly false, no Photo assist agent, no digitalSourceType, no trained-media marker. REPLACED 2026-09-04: the previous master was a tight 1200x1253 macro of one soft bloom with the foliage cropped away; this is the supplied frame with only the bottom 15% removed (pot, hand, redacted labels) — measured, because the topmost label sits at y 0.560 and a 0.90 trim put it exactly on the plaque line at 0.622 and showed as a sliver on the rendered card. Master 1059x1200 at 0.882. EXIF Samsung Galaxy S24, 2026-08-29",
@@ -4999,6 +5009,16 @@
    "file": "rosa-ausmerchant.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "rosa-ausursula-bloom.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the English rose The Lark Ascending card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: one open bloom close up, apricot-pink outer petals over a butter-yellow centre and golden stamens, in sun. The card photo is his collage of bud, open flower and foliage.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

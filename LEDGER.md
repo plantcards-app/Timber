@@ -31,6 +31,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**two flash-between frames: The Lark Ascending's open bloom and Campsis 'Tropical Summer' in autumn colour; r362**) —
+  Oscar's "Flash between photo for Rosa the acending" and "Flash between photo for CAMPSIS gran. 'TROPCCA
+  SUMMER autumn colour", one Galaxy S24 photo each, no JSON. `tools/add-swap.js` on the two dealt cards,
+  Rosa 'Ausursula' (`--as bloom`) and Campsis grandiflora (`--as autumn`): masters staged at 1200 px wide,
+  derivatives built, PHOTO_SWAP entries and CREDITS written (the rose's credit rewritten once to drop a
+  doubled full stop the tool's note joiner made), no card text changed. Originals byte-identical with a
+  README under `data/held-photos/2026-10-06d/`; no AI or C2PA markers. [Inference] "the acending" is the
+  deck's only "Ascending" card. Campsis's foliage line says nothing of autumn colour and stays as written.
+  Rendered at phone size through `goToCard` with the cycle frozen: both frames whole in the window. Deck
+  audit PASS, audit-layout clean, fast 9/9, restamp r362. Not live until merged.
 progress: 2026-10-06, late (**PR #56 opened and merged on Oscar's "Push all cards to deck"; deck 549 live at r361**) —
   read as the eleven branch cards over the live deck (538 -> 549), the only cards with a photo not yet live;
   the 75 held cards stay held (no photo yet — his 2026-08-07 rule in the hold block's header), put to him in
