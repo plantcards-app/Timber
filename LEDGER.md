@@ -13,7 +13,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   days before production), and which listing sections are still red. So the brick: **Oscar opens Play
   Console → Testing → Closed testing and sends one screenshot of the tester count and the production-access
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
-  to-do when he says go: `play/LISTING.md` still says "430+ plants" (538 live). Parked, not dropped, at his
+  to-do when he says go: `play/LISTING.md` still says "430+ plants" (549 live). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
   `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
@@ -31,6 +31,87 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**Cornus alba Miracle ('Verpaalen2') dealt from Oscar's JSON + photo; deck 549 -> 550, r367**) —
+  one card, no text. Not a double; its Verpaalen sibling Nightfall ('Verpaalen3') set the latin form, so the
+  JSON's "[Miracle]" brackets went (none in the deck). Four facings became "Any aspect", soil and warning were cut
+  to the 26/44 budgets, hardiness took the rating alone with the band moved into the note, sizes got en dashes.
+  Everything else is as supplied, pestRisk/careLevel 5 matching 'Minbat'. Bulk tool --quick (stopped at
+  credits as always), credit written, data-audit / plant-sense --strict / deck-audit PASS, audit-layout clean,
+  fast 9/9, restamp r367. Rendered whole at phone size from `?cards=1`. Galaxy S24 photo, no AI or C2PA markers,
+  original byte-identical with both JSONs and a README under `data/held-photos/2026-10-06h/`. [Unverified]
+  Miracle from the photo alone; dealt under the label's name. Not live until merged.
+progress: 2026-10-06, late (**gate 18/18 on 44acc71, r366**) — the full sequential gate (app-test 277s,
+  edge-test 287s, audit-layout and the rest green) came back green on the head carrying all of tonight's frames:
+  the Gabriel Oak bloom, the Weigela pair, the Verbena flower head and the three-frame fern with the logo
+  blurred. Nothing on the branch moved between the gate and this entry but the ledger. Six cards' photo
+  changes wait on a PR (The Lark Ascending, Campsis, Weigela, Verbena, Gabriel Oak, Pteris). Not live until
+  merged.
+progress: 2026-10-06, late (**Pteris nipponica frames redone at Oscar's word: both photos as shot, the colleague kept, only the employer's logo blurred; r366**) —
+  "No just blur thr [employer's] image keep the woman she said it was ok" (name withheld here, as in every new
+  file). The crops of 6a4c1c8 were undone: frame two is his first photo as shot, with one box blurred over the
+  logo, the line under it and the badge (x 0.52-0.61, y 0.157-0.24 upright, Gaussian sigma 28, feather
+  14, no fern pixels inside, every other pixel untouched). Frame three is his second photo as shot. Box in
+  `data/held-photos/2026-10-06g/pteris-nipponica-backlit-blur.json`, crop JSONs removed, README rewritten,
+  credits and the PHOTO_SWAP note updated. Rendered at phone size, frames frozen: she is behind the fronds, the
+  logo is a soft smudge with no letters, and the top-corner strip on frame three sits under the hardiness
+  shield. Deck audit PASS, audit-layout clean, fast 9/9, restamp r366. The gate started on 6a4c1c8 was
+  stopped before its browser suites, so nothing overlapped; it runs on this head. Not live until merged.
+  Then the batch folder's copy of that photo was swapped for the blurred one: kept byte-identical it put the
+  readable logo in the public repo, against his "no [employer] or Oscar's surname anywhere public" rule
+  (play/NEXT-SESSION.md). The original's sha256 stays in the README. The unblurred file is still in the
+  branch history (6a4c1c8, 4b1b7f3); whether to rewrite that is put to Oscar.
+progress: 2026-10-06, late (**Pteris nipponica: the collage's two photos as frames two and three beside the collage, both cropped clear of a colleague; r365**) —
+  Oscar wants to judge collages against single photos ("use the existing collage as one flah betwen and then
+  use these two aswell"), so the collage stays the card photo and add-swap ran twice (`--as backlit`,
+  `--as fronds`): a three-frame cycle. His first photo shows a colleague behind the fern in a branded
+  uniform with logo and name badge, so by the v14.34 rule (a person or label is not for a customer-facing card)
+  it went through `tools/reframe-photo.js` cropped to x 0-0.43, y 0.38-0.81: backlit frond, heathers and
+  trolley, 0 shirt-blue pixels. His second had a blurred strip of the same uniform in its top 5%, trimmed and
+  nothing more. Crop JSONs, originals byte-identical and a README under `data/held-photos/2026-10-06g/`; no AI
+  or C2PA markers; no card text changed. Rendered at phone size, all three frames frozen in turn: whole, no
+  person in either new frame. Deck audit PASS, audit-layout clean, fast 9/9, restamp r365. The full gate
+  started on f8f52fd overlapped these edits (app-test had passed on the clean tree), so it was stopped and runs
+  again on this head. Not live until merged.
+progress: 2026-10-06, late (**a second frame for Rosa 'Auscrowd' (Gabriel Oak): one full open deep pink rosette; r364**) —
+  "A flash between for Gabriel oak", one Galaxy S24 photo: add-swap `--as bloom` on the dealt card, whose
+  photo is foliage with one opening bud. No card text changed, no AI or C2PA markers, original
+  byte-identical with a README under `data/held-photos/2026-10-06f/`. Rendered at phone size, frame frozen:
+  the rosette fills the window above the plaque. Deck audit PASS, audit-layout clean, fast 9/9, restamp
+  r364. Not live until merged.
+progress: 2026-10-06, late (**Weigela 'Nana Variegata' photo replaced by his two flashing frames; a second frame for Verbena bonariensis; r363**) —
+  "the existing photo sucks all eddited and stuff simiple take it out and make it a flash between these 2":
+  said as a replacement, so the old cut-out-on-black master went to git history by the Eve Price routine.
+  His first photo (pale-pink bells) restaged as the card photo (orientation 6 came out upright, 1200x1600),
+  derivative rebuilt, CREDITS rewritten. His second (near-white bells, pink buds) went on via add-swap
+  `--as white-flowers`, in message order. Then "Also another flash between photo for Verbena bonariensis":
+  add-swap `--as flowerhead`, card photo (bee and crab spider, focus 50% 10%) kept. No card text changed,
+  no AI or C2PA markers, originals byte-identical with a README under `data/held-photos/2026-10-06e/`.
+  Rendered at phone size, frames frozen: all three new frames upright and whole. Deck audit PASS,
+  audit-layout clean, fast 9/9, restamp r363. Not live until merged.
+progress: 2026-10-06, late (**gate 18/18 on 782378a, r362**) — the full sequential gate (app-test 277s,
+  edge-test 287s, audit-layout and the rest green) came back green on the head that carries the two
+  flash-between frames; nothing on the branch moved between the gate and this entry but the ledger. Not live
+  until merged.
+progress: 2026-10-06, late (**two flash-between frames: The Lark Ascending's open bloom and Campsis 'Tropical Summer' in autumn colour; r362**) —
+  Oscar's "Flash between photo for Rosa the acending" and "Flash between photo for CAMPSIS gran. 'TROPCCA
+  SUMMER autumn colour", one Galaxy S24 photo each, no JSON. `tools/add-swap.js` on the two dealt cards,
+  Rosa 'Ausursula' (`--as bloom`) and Campsis grandiflora (`--as autumn`): masters staged at 1200 px wide,
+  derivatives built, PHOTO_SWAP entries and CREDITS written (the rose's credit rewritten once to drop a
+  doubled full stop the tool's note joiner made), no card text changed. Originals byte-identical with a
+  README under `data/held-photos/2026-10-06d/`; no AI or C2PA markers. [Inference] "the acending" is the
+  deck's only "Ascending" card. Campsis's foliage line says nothing of autumn colour and stays as written.
+  Rendered at phone size through `goToCard` with the cycle frozen: both frames whole in the window. Deck
+  audit PASS, audit-layout clean, fast 9/9, restamp r362. Not live until merged.
+progress: 2026-10-06, late (**PR #56 opened and merged on Oscar's "Push all cards to deck"; deck 549 live at r361**) —
+  read as the eleven branch cards over the live deck (538 -> 549), the only cards with a photo not yet live;
+  the 75 held cards stay held (no photo yet — his 2026-08-07 rule in the hold block's header), put to him in
+  the reply rather than dealt. Fast set 9/9 on f75ad77 (only LEDGER.md changed since the 18/18 gate on
+  1769493). PR #56 from `ccr-cd5f214b-6ow2oi` opened and merged here at 21:45 UTC — merged by me this time,
+  not by Oscar, because the ask was to put the cards in the deck — merge commit 0144220, tree identical to
+  f75ad77. Pages run 130 (job 112517385158) was picked up in 5s and every step went green by 21:47:33 — fast
+  checks, upload, deploy-pages, "Verify the deployed page is this commit", assetlinks — so r361 and deck 549
+  are live. Read from the Actions API; github.io still does not answer from the container (curl: no
+  connection). Feature branch restarted from the merged head (a fast-forward).
 progress: 2026-10-06 (**Play rules checked against Google's own pages; the bundle meets the 2026 target API**) —
   Oscar asked whether Play Console sets a time limit for gathering testers. Google's testing-requirements page
   (Play Console Help answer 14151465): personal accounts created after 13 Nov 2023 need a closed test with at

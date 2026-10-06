@@ -972,6 +972,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "campsis-grandiflora-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Tropical Summer Trumpet Creeper card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: the same serrated pinnate leaflets turned orange-red in autumn, in low sun. The card photo is his summer shot of green leaves and orange trumpets.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "campsis-grandiflora.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright, WITH his own red-marker redaction over two nursery labels (Samsung PhotoEditor drawing edit, the Salvia 'Black and Blue' / Solanum class). The manifest declares no generative action: isScaleAI false, isAIFilterReEditOnly false, no Photo assist agent, no digitalSourceType, no trained-media marker. REPLACED 2026-09-04: the previous master was a tight 1200x1253 macro of one soft bloom with the foliage cropped away; this is the supplied frame with only the bottom 15% removed (pot, hand, redacted labels) — measured, because the topmost label sits at y 0.560 and a 0.90 trim put it exactly on the plaque line at 0.622 and showed as a sliver on the rendered card. Master 1059x1200 at 0.882. EXIF Samsung Galaxy S24, 2026-08-29",
@@ -1525,6 +1535,16 @@
   },
   {
    "file": "cornus-alba-minbat.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "cornus-alba-miracle-verpaalen2.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -4716,6 +4736,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "pteris-nipponica-backlit.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Silver Ribbon Fern card (PHOTO_SWAP alts): his first photo as shot, the backlit fronds with a colleague behind them, kept at Oscar's word that she agreed (2026-10-06); the employer's logo and badge on her shirt are blurred (box in data/held-photos/2026-10-06g), no other pixel altered. The two photos his collage is made from go beside the collage so he can judge collages against single photos.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "pteris-nipponica-fronds.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Silver Ribbon Fern card (PHOTO_SWAP alts): his second photo as shot, the silver-striped fronds against the trolley.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "pteris-nipponica.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. A two-panel collage from his phone's collage app (2160x3840, no camera EXIF), kept whole: two shots of the same plant over a blurred fill the app builds from the photo itself",
@@ -4966,6 +5006,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "rosa-auscrowd-bloom.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the English rose Gabriel Oak card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: one full open bloom close up, a many-petalled deep pink rosette over the leaves. The card photo is his shot of the foliage with a single opening bud.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "rosa-auscrowd.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4999,6 +5049,16 @@
    "file": "rosa-ausmerchant.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "rosa-ausursula-bloom.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the English rose The Lark Ascending card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: one open bloom close up, apricot-pink outer petals over a butter-yellow centre and golden stamens, in sun. The card photo is his collage of bud, open flower and foliage.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -5886,6 +5946,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "verbena-bonariensis-flowerhead.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Purpletop Vervain card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: one whole flower head close up, purple florets on magenta spikes browning at the base, on hairy grey-green stems. The card photo is his cluster with a bee and a white crab spider.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "verbena-bonariensis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -6087,9 +6157,19 @@
    "commercialUseCleared": true
   },
   {
+   "file": "weigela-florida-nana-variegata-white-flowers.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Variegated Dwarf Weigela card (PHOTO_SWAP alt): Oscar's 2026-10-06 ask: his two 2026-09-29 shots replace the cut-out card photo and the card flashes between them. This frame is near-white bells with pink buds; the card photo is pale-pink bells, both over the cream-edged, red-rimmed leaves.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "weigela-florida-nana-variegata.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
+   "licence": "Oscar's own photograph — owned outright. Replaced 2026-10-06 at Oscar's request (\"take it out and make it a flash between these 2\"): pale-pink bells over cream-edged, red-rimmed leaves, his 2026-09-29 shot; the previous master, a cut-out on black, is in git history.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": "5ac8d8c",
