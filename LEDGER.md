@@ -31,6 +31,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**Cornus alba Miracle ('Verpaalen2') dealt from Oscar's JSON + photo; deck 549 -> 550, r367**) —
+  one card, no text. Not a double; its Verpaalen sibling Nightfall ('Verpaalen3') set the latin form, so the
+  JSON's "[Miracle]" brackets went (none in the deck). Four facings became "Any aspect", soil and warning were cut
+  to the 26/44 budgets, hardiness took the rating alone with the band moved into the note, sizes got en dashes.
+  Everything else is as supplied, pestRisk/careLevel 5 matching 'Minbat'. Bulk tool --quick (stopped at
+  credits as always), credit written, data-audit / plant-sense --strict / deck-audit PASS, audit-layout clean,
+  fast 9/9, restamp r367. Rendered whole at phone size from `?cards=1`. Galaxy S24 photo, no AI or C2PA markers,
+  original byte-identical with both JSONs and a README under `data/held-photos/2026-10-06h/`. [Unverified]
+  Miracle from the photo alone; dealt under the label's name. Not live until merged.
 progress: 2026-10-06, late (**gate 18/18 on 44acc71, r366**) — the full sequential gate (app-test 277s,
   edge-test 287s, audit-layout and the rest green) came back green on the head carrying all of tonight's frames:
   the Gabriel Oak bloom, the Weigela pair, the Verbena flower head and the three-frame fern with the logo
