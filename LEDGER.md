@@ -31,6 +31,22 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**Play rules checked against Google's own pages; the bundle meets the 2026 target API**) —
+  Oscar asked whether Play Console sets a time limit for gathering testers. Google's testing-requirements page
+  (Play Console Help answer 14151465): personal accounts created after 13 Nov 2023 need a closed test with at
+  least 12 testers opted in continuously for at least 14 days; a tester who opts out before 14 days does not
+  count, and opting back in restarts that tester's 14 days; organisation accounts are not affected. The
+  production-access form asks how easy recruiting was, how engaged testers were, a summary of their feedback and
+  what changed because of it; review "usually takes seven days or less". No deadline for gathering testers or
+  finishing the test found there or in the community guide. The one account clock found is inactive-account
+  closure (answer 11605267): created over a year ago and never submitted an app, or, with apps, all under 1,000
+  combined lifetime installs, contact details unverified and unused for 180 days; emails at 60/30/7 days; verifying
+  email and phone in Account details is one of Google's listed ways to avoid it. Target API (answer 11926878): from
+  31 Aug 2026 new apps and updates must target API 36. `play-bundle.yml` pins `@bubblewrap/cli@1.25.0`, which
+  takes `@bubblewrap/core ^1.25.0`; that resolves to 1.25.0 (the latest, published 2026-07-31), whose
+  `template_project/app/build.gradle` sets compileSdk and targetSdk 36. So the bundle meets it, [Inference]: the
+  template was read, the built .aab's manifest was not opened. Brick unchanged; the tester count in words will do
+  in place of the screenshot.
 progress: 2026-10-06 (**gate 18/18 on 1769493, r361**) — the full sequential gate (app-test 277s, edge-test
   287s, audit-layout and the rest green) came back green on the 549-card head; nothing on the branch moved between
   the gate and this entry but the ledger. The branch carries eleven cards over the live deck (538 -> 549). Not live
