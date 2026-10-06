@@ -25,6 +25,22 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**Rosa A WHITER SHADE OF PALE ('Peafanfare') dealt from Oscar's JSON + photo; deck 538 -> 539, r358**) —
+  one card sent with its photo in one message, so dealt the same day, the Play brick unchanged. Not a double
+  (compare-double: no Rosa card with that code or name; the deck's thirtieth rose). Corrected as the deck's
+  roses are: the latin in the CAPS trade-name form after ROYAL WILLIAM and PRECIOUS LOVE, the stated facing
+  kept (East / South / West), soil "Fertile, drained, any pH; No waterlogging; renew old rose soil", sizes in
+  cm; toxicity reworded because "Generally low toxicity; thorny stems…" prints the orange Toxic rung through
+  the word itself — now "Low hazard if eaten; the thorny stems are sharp and can injure skin, so wear gloves
+  when handling.", amber, the tier it means (no hips claim added; the other roses print Toxic because theirs
+  say the hips are not to be eaten). Galaxy S24 shot of 13:58 today, trimmed nearly square, 1200x1283, no
+  markers, original byte-identical in `data/held-photos/2026-10-06/`. One bulk run, derivative in the run,
+  credits, data-audit / plant-sense --strict / deck-audit green, restamp r358, fast 9/9; rendered at phone
+  size from a `?cards=1` deck, the flower whole at default framing. A slip on the way: the first attempt wrote
+  the corrected entry to a stray `undefined/` folder (an unexported shell variable) and restamped with no
+  content change; both reverted before the real deal. The full sequential gate was running at the push (its
+  result is the entry above this one). Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live
+  until merged.
 progress: 2026-10-06 (**focus moved to the Play Store at Oscar's word; repo side audited**) — "I really think
   i just need to focus on getting it playstore ready and then moving from there". Read from the repo and the
   Actions API, not from the Console: bundle workflow green on runs #3 and #4 (28 Sep; package
