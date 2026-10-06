@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**gate 18/18 on 1769493, r361**) — the full sequential gate (app-test 277s, edge-test
+  287s, audit-layout and the rest green) came back green on the 549-card head; nothing on the branch moved between
+  the gate and this entry but the ledger. The branch carries eleven cards over the live deck (538 -> 549). Not live
+  until merged.
 progress: 2026-10-06 (**cards 5–8 of the 2026-10-06b batch dealt: Sorbus commixta 'Embley', Sorbus 'Joseph Rock' (photo flagged), Sorbus vilmorinii, Cornus canadensis; deck 545 -> 549, r361 — the batch is dealt**) —
   Oscar's four Galaxy S24 shots of this morning with "In order", 4000x3000 orientation 6, staged upright; no AI
   or C2PA markers; originals byte-identical in the batch folder. Embley: red-stalked narrow leaflets sharp over
@@ -40,8 +44,10 @@ progress: 2026-10-06 (**cards 5–8 of the 2026-10-06b batch dealt: Sorbus commi
   not to pink ([Inference]). Vilmorinii: rose-pink berry clusters, the card's pink stage. Cornel: whorled
   arc-veined leaves, no bracts or berries in October. One bulk run, derivatives in the run, credits,
   data-audit / plant-sense --strict / deck-audit / audit-layout green, restamp r361, fast 9/9; all four whole at
-  phone size from a `?cards=4` deck. The full sequential gate was running at the push (its result is the entry
-  above this one). Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
+  phone size from a `?cards=4` deck. Full sequential gate 18/18 (app-test 277s, edge-test 287s, the rest green)
+  on 1769493 — it was still in its browser suites at the push, so the commit went up on the fast set (the feature
+  branch does not deploy) and the result landed in the next commit. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened
+  (not asked). Not live until merged.
 progress: 2026-10-06 (**gate 18/18 on fe91f19, r360**) — the full sequential gate (app-test 276s, edge-test
   285s, audit-layout and the rest green) came back green on the head that carries both of today's later deals
   (3652389, the carnivores, and fe91f19, the Skimmia and the fern); nothing on the branch moved between the gate
