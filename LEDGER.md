@@ -16,8 +16,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   to-do when he says go: `play/LISTING.md` still says "430+ plants" (538 live). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
-  `data/held-photos/2026-10-06b/`: #1–#4, the carnivores, dealt (r359); #5–#8 (Sorbus commixta 'Embley', Sorbus
-  'Joseph Rock', Sorbus vilmorinii, Cornus canadensis) waiting on photos, asked four at a time. Open for Oscar, not blocking: Skimmia 'Pabella' carries Mar-Dec as supplied where its berrying siblings carry the
+  `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
+  r361. Open for Oscar, not blocking: the Sorbus 'Joseph Rock' photo shows pale peach-pink berries where the card says
+  creamy butter-yellow to amber (dealt under the label's name, [Unverified] it is 'Joseph Rock'; a replacement photo
+  of the berries in shade if not); Skimmia 'Pabella' carries Mar-Dec as supplied where its berrying siblings carry the
   berry season only (Oct-Mar/Oct-Apr); Pteris nipponica and Sarracenia 'Fiona' / 'Maroon' are the labels' names,
   [Unverified] from the photos; the Phytolacca photo is a pokeweed for
   certain and [Unverified] *americana* rather than *acinosa*; the Choisya 'Sundance' photo shows mostly dark
@@ -29,6 +31,17 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**cards 5–8 of the 2026-10-06b batch dealt: Sorbus commixta 'Embley', Sorbus 'Joseph Rock' (photo flagged), Sorbus vilmorinii, Cornus canadensis; deck 545 -> 549, r361 — the batch is dealt**) —
+  Oscar's four Galaxy S24 shots of this morning with "In order", 4000x3000 orientation 6, staged upright; no AI
+  or C2PA markers; originals byte-identical in the batch folder. Embley: red-stalked narrow leaflets sharp over
+  scarlet berries shot soft, left as shot (a crop would trade sharp leaves for more soft berries). Joseph Rock:
+  rowan foliage with three pale peach-pink berries where the card says creamy-yellow to amber — dealt under the
+  label's name by the batch rule (the Moonfire precedent), flagged [Unverified]; low warm sun shifts colour, but
+  not to pink ([Inference]). Vilmorinii: rose-pink berry clusters, the card's pink stage. Cornel: whorled
+  arc-veined leaves, no bracts or berries in October. One bulk run, derivatives in the run, credits,
+  data-audit / plant-sense --strict / deck-audit / audit-layout green, restamp r361, fast 9/9; all four whole at
+  phone size from a `?cards=4` deck. The full sequential gate was running at the push (its result is the entry
+  above this one). Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
 progress: 2026-10-06 (**gate 18/18 on fe91f19, r360**) — the full sequential gate (app-test 276s, edge-test
   285s, audit-layout and the rest green) came back green on the head that carries both of today's later deals
   (3652389, the carnivores, and fe91f19, the Skimmia and the fern); nothing on the branch moved between the gate

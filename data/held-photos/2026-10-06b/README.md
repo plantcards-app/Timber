@@ -164,3 +164,25 @@ label. Restamped at r359 (the revision had not been committed). The value itself
 Rendered at phone size from a `?cards=4` deck after both fixes: all four frame whole, no `PHOTO_FOCUS` override.
 Next to deal: #5 Sorbus commixta 'Embley', #6 Sorbus 'Joseph Rock', #7 Sorbus vilmorinii, #8 Cornus canadensis —
 asked for 2026-10-06.
+
+## Cards 5–8 dealt (2026-10-06): the rowans and the cornel — the batch is dealt
+
+Oscar's four photos with "In order", filed to #5–#8 in the order sent. All Galaxy S24 shots of 2026-10-06
+11:20–11:24, 4000x3000 with EXIF orientation 6, staged upright 1200x1600; byte scans found no C2PA, JUMBF or
+`trainedAlgorithmicMedia` markers. One `add-plants-bulk.js --quick` run with the entries split out of
+`batch-corrected.json`; conventions exactly as in that file, every other field as supplied. Deck 545 -> 549, hold
+75 unchanged; derivatives built in the run; credits by basename; restamped r361. Originals here are byte-identical to
+the files Oscar sent. Data checks: data-audit and plant-sense --strict green (no new contradiction; the Vilmorin's
+rowan "compact" warning as pre-checked); the credits check failed only because the entries had not been written
+yet, and passed once they were; deck-audit PASS on 549 cards; audit-layout all cards clean.
+
+| # | card | notes |
+|---|---|---|
+| 5 | Sorbus commixta 'Embley' | matches: long narrow sharply toothed leaflets on red stalks and rachises, in focus at the top of the frame, over a cluster of scarlet berries shot out of focus. In berry on 6 October, inside the May-Nov band. At default framing the sharp leaflets fill the top of the well and the upper part of the berry cluster shows above the plaque, the rest beneath it; left as shot, because the berries are soft in the original and a crop would trade sharp leaves for more soft berries. The cultivar name is the label's and [Unverified] from the photo. |
+| 6 | Sorbus 'Joseph Rock' | **flagged.** Rowan foliage of many toothed leaflets with some dark leaf spotting, on a larger tree in low warm sun; three berries in frame, pale peach-pink, and a cluster of dried brown fruit at the top right. The card says "creamy butter-yellow to amber berries". Low warm sun shifts colours toward orange ([Inference]), but pink is not what the card describes. Dealt under the label's name by the batch rule (the Acer 'Moonfire' precedent of 2026-10-04): **[Unverified]** that the plant photographed is 'Joseph Rock'; the fix if not is a replacement photo, ideally of the berries in shade. Foliage fills the well at default framing, the berries just above the plaque. |
+| 7 | Sorbus vilmorinii | matches: hanging clusters of rose-pink berries with dark calyx stars over narrow finely toothed leaflets, a young tree in a grey pot on gravel — the card's "crimson berries that fade through pink to almost white", in their pink stage. Berries and foliage whole in the well at default framing. The species is the label's and [Unverified] from the photo. |
+| 8 | Cornus canadensis | matches: whorls of oval leaves with arching veins meeting at reddish nodes, raindrops on them, one pale bud at the lower right; no bracts or berries in October. Leaves fill the well at default framing. |
+
+Rendered at phone size (390x780, 2x) from a `?cards=4` deck: all four frame whole, no `PHOTO_FOCUS` override.
+
+**Batch complete: all eight entries are cards** (#1–#4 at r359, #5–#8 at r361).

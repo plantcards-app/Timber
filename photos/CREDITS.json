@@ -1544,6 +1544,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "cornus-canadensis.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "cornus-controversa-variegata.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -5623,6 +5633,36 @@
    "sourceUrl": null,
    "commit": "5213b09",
    "commitSubject": "Add 18 plants to deck: 107 -> 125; add bulk tool verifying once per batch",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sorbus-commixta-embley.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sorbus-joseph-rock.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sorbus-vilmorinii.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
