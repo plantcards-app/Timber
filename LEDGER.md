@@ -31,6 +31,12 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**gate 18/18 on 44acc71, r366**) — the full sequential gate (app-test 277s,
+  edge-test 287s, audit-layout and the rest green) came back green on the head carrying all of tonight's frames:
+  the Gabriel Oak bloom, the Weigela pair, the Verbena flower head and the three-frame fern with the logo
+  blurred. Nothing on the branch moved between the gate and this entry but the ledger. Six cards' photo
+  changes wait on a PR (The Lark Ascending, Campsis, Weigela, Verbena, Gabriel Oak, Pteris). Not live until
+  merged.
 progress: 2026-10-06, late (**Pteris nipponica frames redone at Oscar's word: both photos as shot, the colleague kept, only the employer's logo blurred; r366**) —
   "No just blur thr [employer's] image keep the woman she said it was ok" (name withheld here, as in every new
   file). The crops of 6a4c1c8 were undone: frame two is his first photo as shot, with one box blurred over the
