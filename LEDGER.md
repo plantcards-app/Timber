@@ -13,7 +13,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   days before production), and which listing sections are still red. So the brick: **Oscar opens Play
   Console → Testing → Closed testing and sends one screenshot of the tester count and the production-access
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
-  to-do when he says go: `play/LISTING.md` still says "430+ plants" (549 live). Parked, not dropped, at his
+  to-do when he says go: `play/LISTING.md` still says "430+ plants" (550 live). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
   `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
@@ -31,6 +31,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**PR #57 opened and merged on Oscar's "Push"; deck 550 live at r367**) — PR #57 from
+  `ccr-cd5f214b-6ow2oi` was opened while the full gate ran on its head, and merged at 23:49 UTC once that gate
+  came back 18/18 on 46acc12 (app-test 273s, edge-test 287s, the rest green). Merge commit bba61e4, tree identical
+  to 46acc12. Pages run 131 (job 112558655791) was picked up in 4s and every step went green by 23:51:17: fast
+  checks, upload, deploy-pages, "Verify the deployed page is this commit", assetlinks. So r367 and deck 550 are
+  live: Dogwood Miracle, plus the new frames on The Lark Ascending, Campsis, Weigela (old cut-out retired),
+  Verbena, Gabriel Oak and the three-frame fern with the logo blurred. Read from the Actions API. Feature
+  branch restarted from the merged head (a fast-forward). Still open for Oscar: whether to rewrite branch
+  history to drop the unblurred fern original (6a4c1c8, 4b1b7f3); the Play Console tester count (the brick).
 progress: 2026-10-06, late (**Cornus alba Miracle ('Verpaalen2') dealt from Oscar's JSON + photo; deck 549 -> 550, r367**) —
   one card, no text. Not a double; its Verpaalen sibling Nightfall ('Verpaalen3') set the latin form, so the
   JSON's "[Miracle]" brackets went (none in the deck). Four facings became "Any aspect", soil and warning were cut
