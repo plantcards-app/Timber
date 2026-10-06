@@ -15,9 +15,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
   to-do when he says go: `play/LISTING.md` still says "430+ plants" (538 live). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
-  photo comes, ten minutes' work. Stored and waiting on photos: the 2026-10-06b batch under
-  `data/held-photos/2026-10-06b/` (8 cards — Pinguicula agnata, Dionaea muscipula, Sarracenia 'Maroon' and
-  'Fiona', three Sorbus, Cornus canadensis), asked four at a time, #1–#4 the carnivores first. Open for Oscar, not blocking: the Phytolacca photo is a pokeweed for
+  photo comes, ten minutes' work. The 2026-10-06b batch under
+  `data/held-photos/2026-10-06b/`: #1–#4, the carnivores, dealt (r359); #5–#8 (Sorbus commixta 'Embley', Sorbus
+  'Joseph Rock', Sorbus vilmorinii, Cornus canadensis) waiting on photos, asked four at a time. Open for Oscar, not blocking: the Phytolacca photo is a pokeweed for
   certain and [Unverified] *americana* rather than *acinosa*; the Choisya 'Sundance' photo shows mostly dark
   green leaves with one golden shoot ([Unverified] it is 'Sundance'); Caryopteris 'Dark Knight' went H6 → H4
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
@@ -27,6 +27,21 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**cards 1–4 of the 2026-10-06b batch dealt: Pinguicula agnata, Dionaea muscipula, Sarracenia 'Maroon', Sarracenia 'Fiona' (reframed, spread shortened); deck 539 -> 543, r359**) —
+  Oscar's four Galaxy S24 shots of today, no text, in the order asked; the Pinguicula trimmed nearly square on
+  the phone, the other three 4000x3000 orientation 6, staged upright; no AI or C2PA markers; originals
+  byte-identical in the batch folder. Each matches its entry: the butterwort's sticky rosette with gnats on it,
+  the flytrap's open traps with a fly (green inside, not the red the card calls typical — a strong-light colour,
+  [Inference]; no label in frame, so the plain species stands), the Maroon's burgundy clump, Fiona's pink-veined
+  hood. sharp present, derivatives in the one bulk run; credits by basename; data-audit / plant-sense --strict /
+  deck-audit green. Rendered at phone size from a `?cards=4` deck: three whole at default framing; Fiona's hood sat
+  on the plaque line (51–64% down) under blurred glazing, so reframed as the Leycesteria was — `reframe-photo.js`
+  took a 3:4 window of the lower 70% of the camera original (x 0–0.70, y 0.30–1.00, 2100x2800 at 0.750; hood centre
+  58% → 39% down, inside the safe box), crop JSON and output kept in the batch folder, master restaged, derivative
+  rebuilt, original untouched, credits say so. audit-layout, run before the push this time: Fiona's spread "Up to
+  10 cm" overran its rail by 8.9px and crossed the baked label — written "≤10 cm" (same claim) on the card and in
+  batch-corrected.json, then all cards clean. Restamp r359; fast 9/9. The full sequential gate runs on the head
+  that carries the next deal too. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
 progress: 2026-10-06 (**batch 2026-10-06b stored: 8 entries, 8 fitted, no doubles**) — Oscar's second GPT
   paste of the day, four carnivores, three rowans and the dwarf cornel, no photos; as-sent, corrected and
   README under `data/held-photos/2026-10-06b/`. compare-double: no card for any of the 8 (three PROBABLE

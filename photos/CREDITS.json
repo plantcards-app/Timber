@@ -1964,6 +1964,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "dionaea-muscipula.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "disporum-sessile-variegatum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright, the plant held in his hand in its nursery pot. Cropped by tools/reframe-photo.js by trimming the bottom fifth only: the pot was floating the foliage above the card's readable band, which the tool refused until it was fixed. The hand and pot are kept. No pixels generated. EXIF Samsung Galaxy S24, 2026-08-22 (current season). No C2PA manifest and no AI or generative marker",
@@ -4485,6 +4495,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "pinguicula-agnata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "pinus-koraiensis-jack-corbit.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Uncropped: orientation 6, rotation baked in by tools/reframe-photo.js at verdict as-is, no crop, no pixels generated. EXIF Samsung Galaxy S24, 2026-08-22 (current season). No C2PA manifest in the file and no AI or generative marker",
@@ -5367,6 +5387,26 @@
   },
   {
    "file": "sarcococca-ruscifolia.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sarracenia-fiona.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Cropped through tools/reframe-photo.js from the camera original (sensor 4000x3000, EXIF orientation 6, displayed 3000x4000): a 3:4 window x 0.000-0.700, y 0.300-1.000, 2100x2800 at exactly 0.750, so the pitcher hood's centre moves from 58% to 39% down the frame and its top from 51% to 30%, between the title block and the stats plaque, on 2026-10-06 after the first render put the hood on the plaque line; the tool's output is data/held-photos/2026-10-06b/sarracenia-fiona-crop.jpg and the master is that file downscaled to 1200x1600 as add-plants-bulk.js stages; no rotation, no exposure change, no pixels generated. EXIF Samsung Galaxy S24, 2026-10-06 (current season). No C2PA, JUMBF or trainedAlgorithmicMedia marker in the file",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sarracenia-maroon.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

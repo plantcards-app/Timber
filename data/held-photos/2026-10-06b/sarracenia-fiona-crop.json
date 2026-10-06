@@ -1,0 +1,15 @@
+{
+  "sourcePx":        {"w": 3000, "h": 4000},
+  "featureVisible":  true,
+  "featureSeen":     "one pitcher's ruffled pink hood, red-veined over a paler pink net, on its upright green-and-red tube, with a younger green pitcher curling beside it and a tall out-of-focus pitcher at the right edge; the hood measured as the bounding box of strongly pink-red pixels in the left 60% of the displayed 3000x4000 frame, rows 0.50-0.64 (the tube below it excluded), x 0.140-0.485, y 0.511-0.640",
+  "featureBox":      {"x": 0.140, "y": 0.511, "w": 0.345, "h": 0.129},
+  "crop":            {"x": 0.000, "y": 0.300, "w": 0.700, "h": 0.700},
+  "cropAspect":      0.75,
+  "rotateDeg":       0,
+  "featureInSafeBox": true,
+  "objectPosition":  "50% 40%",
+  "labels": [],
+  "exposure":        {"evAdjust": 0, "whiteBalance": "none"},
+  "verdict":         "crop",
+  "reason":          "At default framing the hood, the feature this card is sold on, sat at 51-64% down the frame, on the PLANT POWER POINTS line at 62%, with blurred glasshouse filling the well above it. The 3:4 master fills the card well's full height, so object-position cannot lift it; a 3:4 window of the lower 70% of the frame (x 0-0.70, y 0.30-1.00, 2100x2800 at exactly 0.750) moves the hood's centre from 58% to 39% down and its top from 51% to 30%, between the title block and the plaque; the curling green pitcher stays in frame and most of the blurred right-hand pitcher drops out."
+}

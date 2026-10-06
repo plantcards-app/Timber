@@ -66,7 +66,7 @@ hyphens as supplied) and all ratings.
 | 1 | Pinguicula agnata | Open, nutrient-poor mix | Rainwater only; no compost, feed or lime | East / West (65, stated) | 5-15 cm / 10-20 cm |
 | 2 | Dionaea muscipula | Acid carnivorous compost | Tap water, feed, lime or compost can kill it | South / West (90, stated) | 5-10 cm / 10-30 cm |
 | 3 | Sarracenia 'Maroon' | Acid carnivorous compost | No feed, lime or tap water; never let it dry | South / West (95, stated) | 15-30 cm / 30-50 cm |
-| 4 | Sarracenia 'Fiona' | Acid carnivorous compost | No hard tap water, feed or lime; never dry | South / West (95, stated) | 10-50 cm / Up to 10 cm (as supplied) |
+| 4 | Sarracenia 'Fiona' | Acid carnivorous compost | No hard tap water, feed or lime; never dry | South / West (95, stated) | 10-50 cm / ≤10 cm (shortened from "Up to 10 cm" at deal time for the rail, below) |
 | 5 | Sorbus commixta 'Embley' | Humus-rich, acid-neutral | No waterlogged or very alkaline ground | Any aspect (70, all four stated) | 8-12 m / 4-8 m |
 | 6 | Sorbus 'Joseph Rock' | Humus-rich, acid-neutral | No waterlogged or strongly alkaline soil | Any aspect (70, all four stated) | 8-12 m / 4-8 m |
 | 7 | Sorbus vilmorinii | Well-drained; lime OK | No waterlogging; shallow chalk cuts its life | Any aspect (65, all four stated) | 2.5-4 m / 2.5-4 m |
@@ -98,8 +98,9 @@ the ladder copied from `timber.html`. All eight carry text.
 - #3 Sarracenia 'Maroon': the RHS lists the name as unresolved with no cultivar-level hardiness; H3 as
   supplied, with GPT's note that some sellers call it frost tender despite its *S. purpurea* parentage.
   [Unverified] from here (the RHS site is blocked from the build container).
-- #4 Sarracenia 'Fiona': H5 "confirmed" by GPT — [Unverified] from here. Spread "Up to 10 cm" is as
-  supplied and unusual beside a 10-50 cm height for a clump-former; [Unverified], the label may settle it.
+- #4 Sarracenia 'Fiona': H5 "confirmed" by GPT — [Unverified] from here. Spread "Up to 10 cm" as
+  supplied (written "≤10 cm" at deal time, same claim, because the long form overran the rail) is unusual beside a
+  10-50 cm height for a clump-former; [Unverified], the label may settle it.
 - #1 Pinguicula agnata: H2 is GPT's conservative estimate (no RHS rating); the peak is a translation (above).
 - #8 Cornus canadensis: H7 as supplied, GPT citing the RHS profile; [Unverified] from here.
 - #7 Sorbus vilmorinii: the plant-sense "compact" warning (above).
@@ -117,3 +118,49 @@ slug rule). First ask, 2026-10-06: #1–#4.
 6. Sorbus 'Joseph Rock' → `sorbus-joseph-rock`
 7. Sorbus vilmorinii → `sorbus-vilmorinii`
 8. Cornus canadensis → `cornus-canadensis`
+
+## Cards 1–4 dealt (2026-10-06): the carnivores
+
+Oscar's four photos, no text, in the order asked (#1–#4), each matching its entry on sight. All Galaxy S24 shots
+of 2026-10-06: the Pinguicula of 13:55:30, trimmed nearly square on the phone (3000x3078, EXIF orientation 1,
+staged 1200x1231); the Dionaea of 13:55:03 and the two Sarracenia of 12:03 and 12:04, each 4000x3000 with EXIF
+orientation 6, staged upright 1200x1600. Byte scans found no C2PA, JUMBF or `trainedAlgorithmicMedia` markers.
+One `add-plants-bulk.js --quick` run with the entries split out of `batch-corrected.json`; conventions exactly
+as in that file, every other field as supplied. Deck 539 -> 543, hold 75 unchanged; derivatives built in the run;
+credits by basename; restamped r359. Originals here are byte-identical to the files Oscar sent. The bulk run's
+data checks: data-audit green, plant-sense --strict green with the four in the deck (no new contradiction); its
+credits check failed only because the entries had not been written yet, and passed once they were; deck-audit
+PASS on 543 cards after; audit-layout clean after the Fiona spread fix below.
+
+| # | card | notes |
+|---|---|---|
+| 1 | Pinguicula agnata | matches: a rosette of broad pale yellow-green leaves dense with glistening sticky glands, small gnats caught on them, moss and a stone in a terracotta pot. No flower in frame. Rosette whole in the well at default framing (the nearly square frame cropped at the sides). |
+| 2 | Dionaea muscipula | matches: two open traps with long marginal teeth, a fly standing in the upper one, in a terracotta pot. The trap faces are green rather than the "flushed pink to deep red within" the card describes as typical; flytraps colour up in strong light, so a green bench plant in October is consistent with the species ([Inference]). No label in frame, so "Tleshopofho" stays unread and the plain species stands as filed. The upper trap with the fly whole above the plaque at default framing, the lower trap's teeth arcing into view. |
+| 3 | Sarracenia 'Maroon' | matches: a dense clump of stocky burgundy-red pitchers with darker veining, hooded lids over the mouths, green bases. Fills the well at default framing. The colour fits the card; the cultivar name is the label's and [Unverified] from the photo. |
+| 4 | Sarracenia 'Fiona' | matches: a slender upright pitcher with a ruffled pink hood, red-veined over a paler pink net, a younger green pitcher curling beside it, a tall pitcher out of focus at the right edge; glasshouse glazing behind. **Reframed before the push**, and its spread shortened for the rail — both below. The cultivar name is the label's and [Unverified] from the photo. |
+
+**#4 Sarracenia 'Fiona' reframed (2026-10-06).** Rendered at phone size (390x780, 2x) from a `?cards=4` deck, the
+hood — the feature the card sells — sat at 51–64% down the frame, on the PLANT POWER POINTS line at 62%, with
+blurred glazing filling the well above it. The 3:4 master fills the well's full height under `object-fit: cover`,
+so `PHOTO_FOCUS` cannot lift it; only a crop can (the Polygala and Leycesteria precedents). The hood was measured as
+the bounding box of strongly pink-red pixels in the left 60% of the displayed 3000x4000 frame, rows 0.50–0.64 so
+the tube below it is excluded: x 0.140–0.485, y 0.511–0.640 (centre 31% across, 58% down).
+`tools/reframe-photo.js` with `sarracenia-fiona-crop.json` (stored here) took the 3:4 window x 0.000–0.700,
+y 0.300–1.000 of the camera original: 2100x2800 at exactly 0.750, hood centre at 45% across and 39% down the crop
+(inside the tool's safe box), top at 30%, no rotation, no exposure change, no pixels generated. The tool's output is
+stored here as `sarracenia-fiona-crop.jpg`; the master `photos/sarracenia-fiona.jpg` is that file downscaled to
+1200x1600 at JPEG 85 through the same canvas pipeline `add-plants-bulk.js` stages with, and the derivative was
+rebuilt with `optimise-photos.js --only`. The original here is untouched (sha256 dbc25b9e341e… before and after).
+Re-rendered: the hood sits in the middle of the visible well between the title block and the plaque, the young
+curling pitcher beside it. Credits entry updated.
+
+**#4 spread shortened for the rail (2026-10-06).** `design/audit-layout.js`, run on the deal before the push:
+"rail-s value 'Up to 10 cm' overruns its patch by 8.9px and crosses the baked label — shorten the spread value".
+The only "Up to" size in the deck. Written "≤10 cm", the same claim in the notation family of the deck's ">12 m",
+on the dealt card (`compare-double.js --card "Sarracenia 'Fiona'" --set size="10-50 cm H × ≤10 cm W"`) and in
+`batch-corrected.json`; audit-layout then "all cards clean", deck-audit PASS, the rail re-rendered clear of its
+label. Restamped at r359 (the revision had not been committed). The value itself stays [Unverified] (flags above).
+
+Rendered at phone size from a `?cards=4` deck after both fixes: all four frame whole, no `PHOTO_FOCUS` override.
+Next to deal: #5 Sorbus commixta 'Embley', #6 Sorbus 'Joseph Rock', #7 Sorbus vilmorinii, #8 Cornus canadensis —
+asked for 2026-10-06.
