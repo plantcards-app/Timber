@@ -8,10 +8,10 @@ So the card keeps its collage as the card photo and cycles through three frames:
 then his second. The entry has two alts, built with `tools/add-swap.js` twice (`--as backlit`, then
 `--as fronds`). This is a test of collages against single photos, at his request. No card text changed.
 
-| original (byte-identical) | camera, size, taken | became | sha256 (first 16) |
+| file here | camera, size, taken | became | sha256 (first 16) |
 |---|---|---|---|
-| `pteris-nipponica-backlit.jpg` | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:39 | frame two, `photos/pteris-nipponica-backlit.jpg`: as shot, one box blurred | 57962905a7443cee |
-| `pteris-nipponica-fronds.jpg` | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:38 | frame three, `photos/pteris-nipponica-fronds.jpg`: as shot | 3ca999845032a5ea |
+| `pteris-nipponica-backlit.jpg`: **the blurred copy, not the original** (see below) | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:39 | frame two, `photos/pteris-nipponica-backlit.jpg`: as shot, one box blurred | original 57962905a7443cee; this copy 0866031b852f2df1 |
+| `pteris-nipponica-fronds.jpg`: the original, byte-identical | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:38 | frame three, `photos/pteris-nipponica-fronds.jpg`: as shot | 3ca999845032a5ea |
 
 A byte search for C2PA, JUMBF, content-credential and AI-generation markers found none in either file.
 
@@ -32,6 +32,17 @@ change is a blur over the logo.
   pipeline at 1200 px wide, then the card derivative.
 - **The second photo** went through the canvas pipeline as shot. Its blurred strip of uniform in the top-right
   corner sits under the hardiness shield on the card.
+
+## Why the first file here is not the original
+
+This folder normally keeps each original byte-identical. That one would have put the readable logo into the
+public repo, against Oscar's standing rule of no employer name anywhere public (play/NEXT-SESSION.md). So
+`pteris-nipponica-backlit.jpg` here is the blurred copy, made with the same box and settings as the card
+photo, written upright at JPEG 95. The camera EXIF was lost in that step and is recorded in the table above.
+The original's sha256 stands in the table as its provenance record.
+
+Whether to take the unblurred original out of the branch's git history as well is Oscar's call.
+It is in commits 6a4c1c8 and 4b1b7f3, and removing it means rewriting the branch history.
 
 ## Checks
 

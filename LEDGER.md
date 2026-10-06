@@ -41,6 +41,10 @@ progress: 2026-10-06, late (**Pteris nipponica frames redone at Oscar's word: bo
   logo is a soft smudge with no letters, and the top-corner strip on frame three sits under the hardiness
   shield. Deck audit PASS, audit-layout clean, fast 9/9, restamp r366. The gate started on 6a4c1c8 was
   stopped before its browser suites, so nothing overlapped; it runs on this head. Not live until merged.
+  Then the batch folder's copy of that photo was swapped for the blurred one: kept byte-identical it put the
+  readable logo in the public repo, against his "no Knights or Oscar's surname anywhere public" rule
+  (play/NEXT-SESSION.md). The original's sha256 stays in the README. The unblurred file is still in the
+  branch history (6a4c1c8, 4b1b7f3); whether to rewrite that is put to Oscar.
 progress: 2026-10-06, late (**Pteris nipponica: the collage's two photos as frames two and three beside the collage, both cropped clear of a colleague; r365**) —
   Oscar wants to judge collages against single photos ("use the existing collage as one flah betwen and then
   use these two aswell"), so the collage stays the card photo and add-swap ran twice (`--as backlit`,
