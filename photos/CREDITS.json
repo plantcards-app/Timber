@@ -4976,6 +4976,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "rosa-auscrowd-bloom.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the English rose Gabriel Oak card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: one full open bloom close up, a many-petalled deep pink rosette over the leaves. The card photo is his shot of the foliage with a single opening bud.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "rosa-auscrowd.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",

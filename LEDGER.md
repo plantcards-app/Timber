@@ -31,6 +31,12 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**a second frame for Rosa 'Auscrowd' (Gabriel Oak): one full open deep pink rosette; r364**) —
+  "A flash between for Gabriel oak", one Galaxy S24 photo: add-swap `--as bloom` on the dealt card, whose
+  photo is foliage with one opening bud. No card text changed, no AI or C2PA markers, original
+  byte-identical with a README under `data/held-photos/2026-10-06f/`. Rendered at phone size, frame frozen:
+  the rosette fills the window above the plaque. Deck audit PASS, audit-layout clean, fast 9/9, restamp
+  r364. Not live until merged.
 progress: 2026-10-06, late (**Weigela 'Nana Variegata' photo replaced by his two flashing frames; a second frame for Verbena bonariensis; r363**) —
   "the existing photo sucks all eddited and stuff simiple take it out and make it a flash between these 2":
   said as a replacement, so the old cut-out-on-black master went to git history by the Eve Price routine.
