@@ -4706,6 +4706,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "pteris-nipponica.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. A two-panel collage from his phone's collage app (2160x3840, no camera EXIF), kept whole: two shots of the same plant over a blurred fill the app builds from the photo itself",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "pyracantha-coccinea-orange-star.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -5537,6 +5547,16 @@
   },
   {
    "file": "skimmia-japonica-obsession-obsbolwi.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "skimmia-japonica-pabella.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

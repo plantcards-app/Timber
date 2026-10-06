@@ -17,7 +17,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
   `data/held-photos/2026-10-06b/`: #1–#4, the carnivores, dealt (r359); #5–#8 (Sorbus commixta 'Embley', Sorbus
-  'Joseph Rock', Sorbus vilmorinii, Cornus canadensis) waiting on photos, asked four at a time. Open for Oscar, not blocking: the Phytolacca photo is a pokeweed for
+  'Joseph Rock', Sorbus vilmorinii, Cornus canadensis) waiting on photos, asked four at a time. Open for Oscar, not blocking: Skimmia 'Pabella' carries Mar-Dec as supplied where its berrying siblings carry the
+  berry season only (Oct-Mar/Oct-Apr); Pteris nipponica and Sarracenia 'Fiona' / 'Maroon' are the labels' names,
+  [Unverified] from the photos; the Phytolacca photo is a pokeweed for
   certain and [Unverified] *americana* rather than *acinosa*; the Choisya 'Sundance' photo shows mostly dark
   green leaves with one golden shoot ([Unverified] it is 'Sundance'); Caryopteris 'Dark Knight' went H6 → H4
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
@@ -27,6 +29,20 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**Skimmia japonica 'Pabella' and Pteris nipponica dealt from Oscar's JSON + photos, batch 2026-10-06c; deck 543 -> 545, r360**) —
+  two cards with their photos in one message, "In order with photos", dealt the day they came; the Play brick
+  unchanged. No doubles (five dealt Skimmias and one held beside 'Pabella'; no Pteris). check-plant-json: the
+  fern's "H1C" → H1c (the Scadoxus precedent) and "Year-round" → Jan-Dec (plant-sense's own prescription); 2/2
+  after. Facings kept (North / East / West, the Skimmia siblings' form); the Skimmia takes its siblings' soil line;
+  fern sizes in cm. Toxicity: the fern's "No significant toxicity is widely documented…" hit the "toxicity" trap
+  and now opens "No known hazard"; the Skimmia's "should not be eaten" kept, Toxic as its siblings. Noted, not
+  changed: the Skimmia's Mar-Dec band against its siblings' berry season. Photos: the Skimmia a Galaxy S24 shot of
+  17:00 today (orientation 6, staged upright), in berry; the fern a two-panel collage from the phone's collage app
+  (2160x3840, no camera EXIF), kept whole as the Gentiana and Delphinium collages were; no AI or C2PA markers;
+  originals byte-identical in `data/held-photos/2026-10-06c/`. One bulk run, credits, data-audit / plant-sense
+  --strict / deck-audit / audit-layout green, restamp r360, fast 9/9; both rendered whole at phone size from a
+  `?cards=2` deck. The full sequential gate was running at the push (its result is the entry above this one).
+  Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
 progress: 2026-10-06 (**cards 1–4 of the 2026-10-06b batch dealt: Pinguicula agnata, Dionaea muscipula, Sarracenia 'Maroon', Sarracenia 'Fiona' (reframed, spread shortened); deck 539 -> 543, r359**) —
   Oscar's four Galaxy S24 shots of today, no text, in the order asked; the Pinguicula trimmed nearly square on
   the phone, the other three 4000x3000 orientation 6, staged upright; no AI or C2PA markers; originals
