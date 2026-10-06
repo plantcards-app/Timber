@@ -31,6 +31,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**Pteris nipponica frames redone at Oscar's word: both photos as shot, the colleague kept, only the employer's logo blurred; r366**) —
+  "No just blur thr [employer's] image keep the woman she said it was ok" (name withheld here, as in every new
+  file). The crops of 6a4c1c8 were undone: frame two is his first photo as shot, with one box blurred over the
+  logo, the line under it and the badge (x 0.52-0.61, y 0.157-0.24 upright, Gaussian sigma 28, feather
+  14, no fern pixels inside, every other pixel untouched). Frame three is his second photo as shot. Box in
+  `data/held-photos/2026-10-06g/pteris-nipponica-backlit-blur.json`, crop JSONs removed, README rewritten,
+  credits and the PHOTO_SWAP note updated. Rendered at phone size, frames frozen: she is behind the fronds, the
+  logo is a soft smudge with no letters, and the top-corner strip on frame three sits under the hardiness
+  shield. Deck audit PASS, audit-layout clean, fast 9/9, restamp r366. The gate started on 6a4c1c8 was
+  stopped before its browser suites, so nothing overlapped; it runs on this head. Not live until merged.
 progress: 2026-10-06, late (**Pteris nipponica: the collage's two photos as frames two and three beside the collage, both cropped clear of a colleague; r365**) —
   Oscar wants to judge collages against single photos ("use the existing collage as one flah betwen and then
   use these two aswell"), so the collage stays the card photo and add-swap ran twice (`--as backlit`,

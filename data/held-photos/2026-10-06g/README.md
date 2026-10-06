@@ -10,34 +10,32 @@ then his second. The entry has two alts, built with `tools/add-swap.js` twice (`
 
 | original (byte-identical) | camera, size, taken | became | sha256 (first 16) |
 |---|---|---|---|
-| `pteris-nipponica-backlit.jpg` | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:39 | frame two, `photos/pteris-nipponica-backlit.jpg`, cropped | 57962905a7443cee |
-| `pteris-nipponica-fronds.jpg` | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:38 | frame three, `photos/pteris-nipponica-fronds.jpg`, top strip trimmed | 3ca999845032a5ea |
+| `pteris-nipponica-backlit.jpg` | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:39 | frame two, `photos/pteris-nipponica-backlit.jpg`: as shot, one box blurred | 57962905a7443cee |
+| `pteris-nipponica-fronds.jpg` | Galaxy S24, 4000x3000 orientation 6 (upright 3000x4000), 2026-10-06 16:51:38 | frame three, `photos/pteris-nipponica-fronds.jpg`: as shot | 3ca999845032a5ea |
 
 A byte search for C2PA, JUMBF, content-credential and AI-generation markers found none in either file.
 
-## Why both are cropped
+## The colleague, the logo and the blur
 
-The first photo shows a colleague behind the fern: branded uniform with logo and name badge, gloved hands on a
-trolley, legs behind the lower fronds. A person, a badge or a logo is a thing that should not be on a
-customer-facing card. That is the v14.34 rule, made for a fingertip on the Cryptomeria. His own collage had
-already cropped most of the colleague out.
+The first photo shows a colleague behind the fern, in her work uniform with the employer's logo and a badge.
+The first version (commit 6a4c1c8) cropped her out by the v14.34 rule, and also trimmed a blurred strip of the
+same uniform from the top of the second photo. Oscar's reply, verbatim but for the employer's name: "No just
+blur thr [employer's] image keep the woman she said it was ok". So both photos now go in as shot, and the one
+change is a blur over the logo.
 
-- **Frame two.** `pteris-nipponica-backlit-crop.json` keeps the left side below the gloved hands: x 0-0.43,
-  y 0.38-0.81 of the upright frame, 1290x1720, aspect 0.750. That is the backlit frond, the heathers and the
-  trolley. A shirt-blue pixel count inside the box is 0.
-- **Frame three.** The second photo has a blurred band of the same uniform along the top edge at the right,
-  x 0.80-0.95, y 0-0.05. Every shirt-blue pixel in the photo fell in that strip.
-  `pteris-nipponica-fronds-crop.json` trims the top 5% and nothing else: 3000x3800, aspect 0.789. One pale
-  lavender highlight remains, at x 0.53, y 0.33 (RGB 184,155,239). It is a light spot, not cloth.
-
-Both crops went through `tools/reframe-photo.js`, which checks the box, the aspect and the feature's place
-against the card's safe area, and cuts the original's pixels without inventing any. Then `add-swap` staged each
-through the canvas pipeline at 1200 px wide. The tool's `*-reframed.jpg` outputs are not kept: the same
-original plus the same JSON always produces the same file, so
-`node tools/reframe-photo.js <original> <crop.json>` reproduces either.
+- **The box.** `pteris-nipponica-backlit-blur.json` covers the four coloured squares, the name, the line under
+  it and the badge below: x 0.52-0.61, y 0.157-0.24 of the upright frame, 270x332 px. It was measured on the
+  full-resolution frame, and no fern pixels fall inside it.
+- **The blur.** Gaussian, sigma 28 px at full resolution, feathered over 14 px at the box edges. Every pixel
+  outside the box is untouched. At the card's size the logo reads as a soft smudge with no letters or squares.
+- **The steps.** sharp auto-orient, then the blurred box composited back, written at JPEG 95, then the canvas
+  pipeline at 1200 px wide, then the card derivative.
+- **The second photo** went through the canvas pipeline as shot. Its blurred strip of uniform in the top-right
+  corner sits under the hardiness shield on the card.
 
 ## Checks
 
-The card was rendered at 390x844 @2x, reached through `goToCard`, with each of the three frames shot while the
-cycle was frozen. All three are whole in the photo window, and no person is visible in either new frame.
-Results: deck-audit PASS (549 cards), audit-layout "all cards clean", fast set 9/9, build r365.
+The card was rendered at 390x844 @2x, reached through `goToCard`, with each frame shot while the cycle was
+frozen. All three frames are whole. On frame two she is behind the fronds and the logo is unreadable. Results:
+deck-audit PASS (549 cards), build r366. The layout audit and fast set results are recorded in the ledger
+entry.

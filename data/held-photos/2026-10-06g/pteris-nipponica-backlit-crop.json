@@ -1,9 +1,0 @@
-{
-  "photo": "pteris-nipponica-backlit.jpg",
-  "verdict": "crop",
-  "reason": "A colleague in a branded uniform (logo and name badge) stands behind the fern in the upper middle of the frame, gloved hands on a trolley, legs behind the lower fronds. A person, a badge or a logo is a thing that should not be on a customer-facing card (the v14.34 finger rule), so the crop keeps the left side below the hands: the backlit frond, the heathers and the trolley. Measured on the upright frame: no shirt-blue pixels inside the box.",
-  "sourcePx": { "w": 3000, "h": 4000 },
-  "featureVisible": true,
-  "featureBox": { "x": 0.08, "y": 0.40, "w": 0.24, "h": 0.30 },
-  "crop": { "x": 0.0, "y": 0.38, "w": 0.43, "h": 0.43 }
-}
