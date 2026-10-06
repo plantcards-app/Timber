@@ -29,6 +29,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**gate 18/18 on fe91f19, r360**) — the full sequential gate (app-test 276s, edge-test
+  285s, audit-layout and the rest green) came back green on the head that carries both of today's later deals
+  (3652389, the carnivores, and fe91f19, the Skimmia and the fern); nothing on the branch moved between the gate
+  and this entry but the ledger. Not live until merged.
 progress: 2026-10-06 (**Skimmia japonica 'Pabella' and Pteris nipponica dealt from Oscar's JSON + photos, batch 2026-10-06c; deck 543 -> 545, r360**) —
   two cards with their photos in one message, "In order with photos", dealt the day they came; the Play brick
   unchanged. No doubles (five dealt Skimmias and one held beside 'Pabella'; no Pteris). check-plant-json: the
@@ -41,8 +45,10 @@ progress: 2026-10-06 (**Skimmia japonica 'Pabella' and Pteris nipponica dealt fr
   (2160x3840, no camera EXIF), kept whole as the Gentiana and Delphinium collages were; no AI or C2PA markers;
   originals byte-identical in `data/held-photos/2026-10-06c/`. One bulk run, credits, data-audit / plant-sense
   --strict / deck-audit / audit-layout green, restamp r360, fast 9/9; both rendered whole at phone size from a
-  `?cards=2` deck. The full sequential gate was running at the push (its result is the entry above this one).
-  Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
+  `?cards=2` deck. Full sequential gate 18/18 (app-test 276s, edge-test 285s, the rest green) on fe91f19 — it
+  was still in its browser suites at the push, so the commit went up on the fast set (the feature branch does not
+  deploy) and the result landed in the next commit. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked).
+  Not live until merged.
 progress: 2026-10-06 (**cards 1–4 of the 2026-10-06b batch dealt: Pinguicula agnata, Dionaea muscipula, Sarracenia 'Maroon', Sarracenia 'Fiona' (reframed, spread shortened); deck 539 -> 543, r359**) —
   Oscar's four Galaxy S24 shots of today, no text, in the order asked; the Pinguicula trimmed nearly square on
   the phone, the other three 4000x3000 orientation 6, staged upright; no AI or C2PA markers; originals
@@ -56,8 +62,8 @@ progress: 2026-10-06 (**cards 1–4 of the 2026-10-06b batch dealt: Pinguicula a
   58% → 39% down, inside the safe box), crop JSON and output kept in the batch folder, master restaged, derivative
   rebuilt, original untouched, credits say so. audit-layout, run before the push this time: Fiona's spread "Up to
   10 cm" overran its rail by 8.9px and crossed the baked label — written "≤10 cm" (same claim) on the card and in
-  batch-corrected.json, then all cards clean. Restamp r359; fast 9/9. The full sequential gate runs on the head
-  that carries the next deal too. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
+  batch-corrected.json, then all cards clean. Restamp r359; fast 9/9. Full sequential gate 18/18 on fe91f19, the
+  head that carries this deal and the next. Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
 progress: 2026-10-06 (**batch 2026-10-06b stored: 8 entries, 8 fitted, no doubles**) — Oscar's second GPT
   paste of the day, four carnivores, three rowans and the dwarf cornel, no photos; as-sent, corrected and
   README under `data/held-photos/2026-10-06b/`. compare-double: no card for any of the 8 (three PROBABLE
