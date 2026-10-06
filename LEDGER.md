@@ -15,7 +15,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
   to-do when he says go: `play/LISTING.md` still says "430+ plants" (538 live). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
-  photo comes, ten minutes' work. Open for Oscar, not blocking: the Phytolacca photo is a pokeweed for
+  photo comes, ten minutes' work. Stored and waiting on photos: the 2026-10-06b batch under
+  `data/held-photos/2026-10-06b/` (8 cards — Pinguicula agnata, Dionaea muscipula, Sarracenia 'Maroon' and
+  'Fiona', three Sorbus, Cornus canadensis), asked four at a time, #1–#4 the carnivores first. Open for Oscar, not blocking: the Phytolacca photo is a pokeweed for
   certain and [Unverified] *americana* rather than *acinosa*; the Choisya 'Sundance' photo shows mostly dark
   green leaves with one golden shoot ([Unverified] it is 'Sundance'); Caryopteris 'Dark Knight' went H6 → H4
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
@@ -25,6 +27,22 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**batch 2026-10-06b stored: 8 entries, 8 fitted, no doubles**) — Oscar's second GPT
+  paste of the day, four carnivores, three rowans and the dwarf cornel, no photos; as-sent, corrected and
+  README under `data/held-photos/2026-10-06b/`. compare-double: no card for any of the 8 (three PROBABLE
+  word-hits — "rowan" twice to the dealt Sorbus AUTUMN SPIRE, "joseph" to Clematis JOSEPHINE — all different
+  plants). check-plant-json: as sent 2 hard errors, #1 peak "Spring-Summer" (now Mar-Aug, the two seasons'
+  months, [Inference]) and #3 foliage "Perennial" naming no class (now prefixed "Evergreen to semi-dormant"
+  from its sibling #4 in the same paste, [Inference]); corrected 8/8. Facings: every entry states one,
+  kept; the four points become "Any aspect". Soil lines on the carnivores follow the dealt Drosera capensis.
+  Toxicity through the ladder: #1–#4 "Not generally regarded as toxic." hit the "toxic" trap and now open
+  "No known hazard"; #5 "not intended for eating" matched nothing and is now "not to be eaten" (Toxic, the
+  deck's fruit line); #8 reworded to keep both claims, Toxic through "not to be eaten". plant-sense
+  pre-check on a scratch hold block: no new contradiction, --strict 0, one new warning (Vilmorin's rowan
+  "compact" at a 2.5-4 m band, as supplied). GPT's flags carried: the Dionaea label read "Tleshopofho"
+  (supplier text, species filed, no cultivar invented), 'Maroon' hardiness unresolved, 'Fiona' H5 and the
+  Cornus H7 [Unverified] from here, 'Fiona' spread "Up to 10 cm" as supplied. Data only, timber.html
+  untouched; fast checks 9/9. Photos asked for four at a time, #1–#4 first. The Play brick unchanged.
 progress: 2026-10-06 (**gate 18/18 on 5b74741, r358**) — the full sequential gate (app-test 275s, edge-test
   286s, the rest green) came back green on the rose head; nothing on the branch moved between the gate and
   this entry but the ledger. Not live until merged.
