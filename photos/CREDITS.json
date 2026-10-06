@@ -5906,6 +5906,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "verbena-bonariensis-flowerhead.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Purpletop Vervain card (PHOTO_SWAP alt): Oscar's 2026-10-06 frame, sent as a second photo: one whole flower head close up, purple florets on magenta spikes browning at the base, on hairy grey-green stems. The card photo is his cluster with a bee and a white crab spider.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "verbena-bonariensis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -6107,9 +6117,19 @@
    "commercialUseCleared": true
   },
   {
+   "file": "weigela-florida-nana-variegata-white-flowers.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Variegated Dwarf Weigela card (PHOTO_SWAP alt): Oscar's 2026-10-06 ask: his two 2026-09-29 shots replace the cut-out card photo and the card flashes between them. This frame is near-white bells with pink buds; the card photo is pale-pink bells, both over the cream-edged, red-rimmed leaves.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "weigela-florida-nana-variegata.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
+   "licence": "Oscar's own photograph — owned outright. Replaced 2026-10-06 at Oscar's request (\"take it out and make it a flash between these 2\"): pale-pink bells over cream-edged, red-rimmed leaves, his 2026-09-29 shot; the previous master, a cut-out on black, is in git history.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": "5ac8d8c",

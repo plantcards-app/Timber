@@ -31,6 +31,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**Weigela 'Nana Variegata' photo replaced by his two flashing frames; a second frame for Verbena bonariensis; r363**) —
+  "the existing photo sucks all eddited and stuff simiple take it out and make it a flash between these 2":
+  said as a replacement, so the old cut-out-on-black master went to git history by the Eve Price routine.
+  His first photo (pale-pink bells) restaged as the card photo (orientation 6 came out upright, 1200x1600),
+  derivative rebuilt, CREDITS rewritten. His second (near-white bells, pink buds) went on via add-swap
+  `--as white-flowers`, in message order. Then "Also another flash between photo for Verbena bonariensis":
+  add-swap `--as flowerhead`, card photo (bee and crab spider, focus 50% 10%) kept. No card text changed,
+  no AI or C2PA markers, originals byte-identical with a README under `data/held-photos/2026-10-06e/`.
+  Rendered at phone size, frames frozen: all three new frames upright and whole. Deck audit PASS,
+  audit-layout clean, fast 9/9, restamp r363. Not live until merged.
 progress: 2026-10-06, late (**gate 18/18 on 782378a, r362**) — the full sequential gate (app-test 277s,
   edge-test 287s, audit-layout and the rest green) came back green on the head that carries the two
   flash-between frames; nothing on the branch moved between the gate and this entry but the ledger. Not live
