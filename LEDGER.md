@@ -25,6 +25,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06 (**gate 18/18 on 5b74741, r358**) — the full sequential gate (app-test 275s, edge-test
+  286s, the rest green) came back green on the rose head; nothing on the branch moved between the gate and
+  this entry but the ledger. Not live until merged.
 progress: 2026-10-06 (**Rosa A WHITER SHADE OF PALE ('Peafanfare') dealt from Oscar's JSON + photo; deck 538 -> 539, r358**) —
   one card sent with its photo in one message, so dealt the same day, the Play brick unchanged. Not a double
   (compare-double: no Rosa card with that code or name; the deck's thirtieth rose). Corrected as the deck's
@@ -38,9 +41,10 @@ progress: 2026-10-06 (**Rosa A WHITER SHADE OF PALE ('Peafanfare') dealt from Os
   credits, data-audit / plant-sense --strict / deck-audit green, restamp r358, fast 9/9; rendered at phone
   size from a `?cards=1` deck, the flower whole at default framing. A slip on the way: the first attempt wrote
   the corrected entry to a stray `undefined/` folder (an unexported shell variable) and restamped with no
-  content change; both reverted before the real deal. The full sequential gate was running at the push (its
-  result is the entry above this one). Pushed to `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live
-  until merged.
+  content change; both reverted before the real deal. Full sequential gate 18/18 (app-test 275s, edge-test
+  286s, the rest green) on 5b74741 — it was still in its browser suites at the push, so the commit went up on
+  the fast set (the feature branch does not deploy) and the result landed in the next commit. Pushed to
+  `ccr-cd5f214b-6ow2oi`; no PR opened (not asked). Not live until merged.
 progress: 2026-10-06 (**focus moved to the Play Store at Oscar's word; repo side audited**) — "I really think
   i just need to focus on getting it playstore ready and then moving from there". Read from the repo and the
   Actions API, not from the Console: bundle workflow green on runs #3 and #4 (28 Sep; package
