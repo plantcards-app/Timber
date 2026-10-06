@@ -13,7 +13,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   days before production), and which listing sections are still red. So the brick: **Oscar opens Play
   Console → Testing → Closed testing and sends one screenshot of the tester count and the production-access
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
-  to-do when he says go: `play/LISTING.md` still says "430+ plants" (538 live). Parked, not dropped, at his
+  to-do when he says go: `play/LISTING.md` still says "430+ plants" (549 live). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
   `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
@@ -31,6 +31,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-06, late (**PR #56 opened and merged on Oscar's "Push all cards to deck"; deck 549 live at r361**) —
+  read as the eleven branch cards over the live deck (538 -> 549), the only cards with a photo not yet live;
+  the 75 held cards stay held (no photo yet — his 2026-08-07 rule in the hold block's header), put to him in
+  the reply rather than dealt. Fast set 9/9 on f75ad77 (only LEDGER.md changed since the 18/18 gate on
+  1769493). PR #56 from `ccr-cd5f214b-6ow2oi` opened and merged here at 21:45 UTC — merged by me this time,
+  not by Oscar, because the ask was to put the cards in the deck — merge commit 0144220, tree identical to
+  f75ad77. Pages run 130 (job 112517385158) was picked up in 5s and every step went green by 21:47:33 — fast
+  checks, upload, deploy-pages, "Verify the deployed page is this commit", assetlinks — so r361 and deck 549
+  are live. Read from the Actions API; github.io still does not answer from the container (curl: no
+  connection). Feature branch restarted from the merged head (a fast-forward).
 progress: 2026-10-06 (**Play rules checked against Google's own pages; the bundle meets the 2026 target API**) —
   Oscar asked whether Play Console sets a time limit for gathering testers. Google's testing-requirements page
   (Play Console Help answer 14151465): personal accounts created after 13 Nov 2023 need a closed test with at
