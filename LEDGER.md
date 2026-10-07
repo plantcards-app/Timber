@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on 519072d, r376**) — the full sequential gate is green on the 571-card head (app-test
+  289s, edge-test 300s, perf-test 22s). It covers the named 2026-10-07b cards (r375) and Chanticleer (r376). Nothing on
+  the branch moved between the gate and this entry but the ledger. Not live until merged.
 progress: 2026-10-07 (**Chanticleer dealt, deck 570 -> 571, r376; the two-tag cherry stays held; #8 renamed to the label's
   'Pink Champagne'**) — Oscar: the Pink Perfection tree's second tag reads "prunus pink champagn", probably his
   centre's label and probably added second. The RHS keeps 'Pink Perfection' (plants/44879) and 'Ichiyo' (plants/90553,
