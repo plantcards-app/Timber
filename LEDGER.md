@@ -31,6 +31,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**four-entry GPT batch for the held photos a, c, d, i: all dealt; deck 572 -> 576, r378**) — Sweet
+  Tea, Sugar and Spice, Sedum lineare 'Variegatum' and Ceropegia woodii 'Variegata', stored verbatim under
+  `data/held-photos/2026-10-07d/` and dealt with the 2026-10-07b photos. Fitting: "No known hazard; " prefixed on
+  all four safety lines (as sent, "toxicity" / "non-toxic" matched /toxic/ and would have printed Toxic), RHS
+  'Lady Heart' into the Ceropegia's cvs, sizes, derived facings and soil short forms. The stonecrop failed plant-sense
+  strict (pest-vs-prose: "susceptible to crown and root rot", pestRisk 4), so it joins KNOWN and VQ 85 with both sides
+  his. Raised: Sweet Tea's label genus (he wrote both Heucherella and Heuchera), its photo pinker than the text, and
+  whether the Sedum label says 'Variegatum'. Also on this commit: gate 18/18 on cba107f (r377, the spider plant
+  correction). Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
 progress: 2026-10-07 (**correction: the spider plant's photo was Song of India; Song of India dealt; deck 571 -> 572,
   r377**) — his "Song of India" photo is byte-identical to the drop 1 photo matched by eye that morning to the
   Variegated Spider Plant, so that match was wrong. Photo b, which he named Chlorophytum 'Variegatum', is now the

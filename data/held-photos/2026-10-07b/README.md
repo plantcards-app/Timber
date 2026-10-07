@@ -63,15 +63,15 @@ for tracing back to the sheet.
 
 | letter | his name | was | now | outcome |
 |---|---|---|---|---|
-| a | "heucherella sweet tea" | `unmatched-photo-1-coral-heuchera.jpg` | `heucherella-sweet-tea.jpg` | held: no card data yet (not in this batch, the deck or the hold) |
+| a | "heucherella sweet tea" | `unmatched-photo-1-coral-heuchera.jpg` | `heucherella-sweet-tea.jpg` | dealt as × Heucherella 'Sweet Tea' from the 2026-10-07d JSON |
 | b | "Chlorophytum 'Variegatum'" | `unmatched-photo-6-spider-plant-white-centre.jpg` | `chlorophytum-comosum-variegatum.jpg` | the Variegated Spider Plant's card photo, after the correction below |
-| c | first "Dracaena refl. Song of India", then "ceropegia woodii", variety unknown | `unmatched-photo-7-variegated-string-of-hearts.jpg` | unchanged | held: no card data yet |
-| d | "tiarella sugar and spice" | `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` | `tiarella-sugar-and-spice.jpg` | held: no card data yet |
+| c | first "Dracaena refl. Song of India", then "ceropegia woodii", variety unknown | `unmatched-photo-7-variegated-string-of-hearts.jpg` | unchanged | dealt as Ceropegia woodii 'Variegata' from the 2026-10-07d JSON |
+| d | "tiarella sugar and spice" | `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` | `tiarella-sugar-and-spice.jpg` | dealt from the 2026-10-07d JSON |
 | e | "tarella pink skyrocket" | `unmatched-photo-09-green-dark-stripe-cut-leaf.jpg` | `tiarella-pink-skyrocket.jpg` | dealt (#14) |
 | f | "heuchera forever purple" | `unmatched-photo-10-lilac-purple-heuchera.jpg` | `heuchera-forever-purple-tnheufp.jpg` | dealt (#11) |
 | g | "heuchera cinnabar silver" | `unmatched-photo-11-silver-heuchera.jpg` | `heuchera-cinnabar-silver.jpg` | dealt (#12) |
 | h | "heucherella golden zebra" | `unmatched-photo-12-yellow-edge-purple-centre.jpg` | `heucherella-golden-zebra.jpg` | dealt (#13) |
-| i | "sedum lineare" | `unmatched-photo-14-narrow-variegated-leaves.jpg` | `sedum-lineare.jpg` | held: no card data yet |
+| i | "sedum lineare" | `unmatched-photo-14-narrow-variegated-leaves.jpg` | `sedum-lineare.jpg` | dealt as Sedum lineare 'Variegatum' from the 2026-10-07d JSON |
 
 [Unverified] doubts, dealt under his names as his rule asks, and raised with him:
 - **c:** his first name for it, Song of India, did not fit a string of hearts, so it was held and asked. His
@@ -80,7 +80,7 @@ for tracing back to the sheet.
   that form as Ceropegia linearis subsp. woodii 'Lady Heart' (v), with Ceropegia woodii 'Variegata' as a synonym
   (rhs.org.uk/plants/153282). [Inference] By his genus and species and the photo, the name to ask GPT for is
   Ceropegia woodii 'Variegata'. It needs card data before it can be dealt.
-- **h:** the Golden Zebra entry says "bright yellow, deeply cut foliage marked by a bold dark red centre". The
+- **h** (answered: he re-sent d as "Sugar and spice", so d and h are not swapped and h stays Golden Zebra): the Golden Zebra entry says "bright yellow, deeply cut foliage marked by a bold dark red centre". The
   photo is mostly purple-red with a lime edge, and its leaves are lobed rather than deeply cut. That is closer to
   the deck's × Heucherella 'Solar Eclipse'. Photo d (lime, deeply cut, dark centre) fits the Golden Zebra text
   better. Asked whether d and h are swapped.
@@ -111,15 +111,15 @@ match was wrong. b, the photo he names Chlorophytum 'Variegatum', is the spider 
 | `heuchera-champagne-tnheucha.jpg` | 519d65703bf4664b | dealt |
 | `heuchera-fire-chief.jpg` | e03f496b10bd96ff | dealt |
 | `sedum-spurium-tricolor.jpg` | c5a5b2868b33f02c | dealt |
-| `heucherella-sweet-tea.jpg` (a) | 320c47c114af5c0f | held, no card data |
+| `heucherella-sweet-tea.jpg` (a) | 320c47c114af5c0f | dealt (2026-10-07d) |
 | `chlorophytum-comosum-variegatum.jpg` (b) | 11035b74c69ef24d | dealt: the spider plant's card photo |
-| `unmatched-photo-7-variegated-string-of-hearts.jpg` (c) | 2ed685d84d031c3d | held, name does not fit |
-| `tiarella-sugar-and-spice.jpg` (d) | 4d4cf98a27ad801f | held, no card data |
+| `unmatched-photo-7-variegated-string-of-hearts.jpg` (c) | 2ed685d84d031c3d | dealt (2026-10-07d) |
+| `tiarella-sugar-and-spice.jpg` (d) | 4d4cf98a27ad801f | dealt (2026-10-07d) |
 | `tiarella-pink-skyrocket.jpg` (e) | 883c44b487515406 | dealt |
 | `heuchera-forever-purple-tnheufp.jpg` (f) | a9107d4197cf604b | dealt |
 | `heuchera-cinnabar-silver.jpg` (g) | d7c340379bf7ea81 | dealt |
 | `heucherella-golden-zebra.jpg` (h) | 2432d60b8c1d6a55 | dealt, doubt raised |
-| `sedum-lineare.jpg` (i) | f0cbe71108616ac9 | held, no card data |
+| `sedum-lineare.jpg` (i) | f0cbe71108616ac9 | dealt (2026-10-07d) |
 
 Every file here is byte-identical to what he sent.
 
@@ -136,3 +136,7 @@ new cards and both spider plant frames were rendered at 390x844 @2x and are whol
 Correction, r377: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
 0 unrecorded, check-boot OK (PHOTO_SWAP 30), deck-audit PASS (572 cards), audit-layout "all cards clean", fast set 9/9.
 The spider plant and Song of India were rendered at 390x844 @2x and are whole. The deck goes from 571 to 572.
+
+Later that evening he re-sent photos a and d with names: "Heuchera sweat tea" and "Sugar and spice". Both
+are byte-identical to the held files, so nothing new was stored. His GPT JSON for a, c, d and i arrived next,
+and all four are dealt from it. See `data/held-photos/2026-10-07d/`. No photo from this sheet is held any more.

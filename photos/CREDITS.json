@@ -1252,6 +1252,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "ceropegia-woodii-variegata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "chaenomeles-speciosa-kinshiden.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3105,6 +3115,16 @@
   },
   {
    "file": "heucherella-solar-eclipse.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heucherella-sweet-tea.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -5816,6 +5836,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "sedum-lineare-variegatum.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "sedum-spurium-tricolor.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -6177,6 +6207,16 @@
   },
   {
    "file": "tiarella-pink-skyrocket.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "tiarella-sugar-and-spice.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
