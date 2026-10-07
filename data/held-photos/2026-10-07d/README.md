@@ -44,8 +44,18 @@ The deck goes from 572 to 576 at r378.
   rhs.org.uk/plants/286105) and the card as dealt, so nothing changed.
 - **Sweet Tea's colour:** the photo is coral-pink, while the visual says copper-orange and burnt amber. The RHS notes
   the colour softens in autumn and winter, and the photo was taken in October.
-- **Sedum lineare's label:** he wrote "sedum lineare". GPT took 'Variegatum' for the cream-edged plant in the
-  photo. Whether the label says so is not known here.
+- **Sedum lineare's label: answered, and the form checked.** "Sedum lable doesn't say verigata but very well could
+  be, search Google images compare and come back with a definitive answer." No image search or image download was
+  possible from this session: Wikimedia Commons and rhs.org.uk are blocked by the network policy (403). So the
+  answer rests on written descriptions and a full-resolution close-up of his photo:
+  - RHS, via search: Sedum lineare 'Variegatum' (v) has leaves "fleshy, lance-shaped and bright green, edged in
+    white", about 15 cm tall (rhs.org.uk/plants/86581). World of Succulents gives "pale green with cream-white
+    edges". Synonyms in the trade are var. albomarginatum and f. variegatum.
+  - LLIFLE, plain species: leaves "light green or pale greenish yellow", in whorls of 3(–4), with no edge mentioned
+    (llifle.net, Sedum lineare).
+  - His photo: every leaf in frame has a green centre and a distinct cream-white margin, on pink stems.
+  [Inference] By the label's species and that margin, it is Sedum lineare 'Variegatum', so the card is unchanged.
+  The identification relies on the label's species being right.
 - **Sugar and Spice is H7,** while the deck's Tiarella 'Pink Skyrocket' (2026-10-07b JSON) is H6. Both are as supplied.
 
 ## The stonecrop on plant-sense's KNOWN list

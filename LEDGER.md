@@ -31,6 +31,11 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Sedum lineare: the label says only "Sedum lineare"; the plant is the white-edged 'Variegatum'; card
+  unchanged**) — Oscar asked for an image comparison and a definitive answer. Commons and rhs.org.uk are blocked
+  here (403), so it rests on the RHS description of 'Variegatum' ("bright green, edged in white", via search),
+  LLIFLE's plain species ("light green or pale greenish yellow", no edge), and a full-resolution close-up showing a
+  cream-white margin on every leaf. Evidence in the 2026-10-07d README.
 progress: 2026-10-07 (**Parrotia 'Bella' gains four flash frames, now cycling five; Sweet Tea's label confirmed; r381**) —
   "Some flash between photos for patrotia persica Bella": four Galaxy S24 photos, no AI markers, added in the
   order sent (droplets, leaf-tip, backlit, crimson). add-swap's "Second frame" credit wording was corrected for
