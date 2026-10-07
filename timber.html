@@ -1250,7 +1250,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r381 · 2026-10-07 · 7f00f4b';
+const BUILD='r382 · 2026-10-07 · 0a3b478';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -16641,13 +16641,19 @@ function tradeBlocks(p){
 const wIcon=kind=>fill=>`<span class="ricon ricon-${kind}" style="--fill:${fill}"></span>`;
 const wRow=(kind,score)=>score==null?'':getRatingSegments(score/4).map(wIcon(kind)).join('');
 const MONTHS={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
-function parseMonths(str){                    /* "Jul-Oct" -> [7,8,9,10]; wraps Oct-Feb */
+function parseMonths(str){                    /* "Jul-Oct" -> [7,8,9,10]; wraps Oct-Feb; "Apr-May / Oct-Nov" -> [4,5,10,11] */
   if(!str)return[];
-  const found=(str.toLowerCase().match(/[a-z]{3,}/g)||[]).map(w=>MONTHS[w.slice(0,3)]).filter(Boolean);
-  if(!found.length)return[];
-  if(found.length===1)return[found[0]];
-  const out=[];let m=found[0];
-  while(true){out.push(m);if(m===found[found.length-1]||out.length>12)break;m=m%12+1;}
+  /* A split peak names two seasons, spring blossom then autumn colour, and each run is read on its own.
+     Read whole, first month to last, Sargent's cherry lit April to November, showed as "in season" all
+     summer, and fell out of "Peaks here" for being longer than six months (2026-10-07). The split is
+     the one tools/plant-sense.js monthsOf already uses; a peak with no separator reads exactly as before. */
+  const out=[];
+  for(const part of str.toLowerCase().split(/[,/&;]|\band\b/)){
+    const found=(part.match(/[a-z]{3,}/g)||[]).map(w=>MONTHS[w.slice(0,3)]).filter(Boolean);
+    if(!found.length)continue;
+    let m=found[0];const end=found[found.length-1];
+    for(let k=0;k<12;k++){if(!out.includes(m))out.push(m);if(m===end)break;m=m%12+1;}
+  }
   return out;
 }
 function parseSize(str){                      /* "60–90 cm H × 45–60 cm W" -> {h,s} */

@@ -81,13 +81,15 @@ if (p.soil && String(p.soil).length > 36)
 
 /* ---- bloom ---- */
 const MONTHS = { jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12 };
-function parseMonths(str) {
+function parseMonths(str) {   /* the app's parseMonths: each run of a split peak ("Apr-May / Oct-Nov") on its own */
   if (!str) return [];
-  const found = (String(str).toLowerCase().match(/[a-z]{3,}/g) || []).map(w => MONTHS[w.slice(0,3)]).filter(Boolean);
-  if (!found.length) return [];
-  if (found.length === 1) return [found[0]];
-  const out = []; let m = found[0];
-  while (true) { out.push(m); if (m === found[found.length-1] || out.length > 12) break; m = m % 12 + 1; }
+  const out = [];
+  for (const part of String(str).toLowerCase().split(/[,/&;]|\band\b/)) {
+    const found = (part.match(/[a-z]{3,}/g) || []).map(w => MONTHS[w.slice(0,3)]).filter(Boolean);
+    if (!found.length) continue;
+    let m = found[0]; const end = found[found.length-1];
+    for (let k = 0; k < 12; k++) { if (!out.includes(m)) out.push(m); if (m === end) break; m = m % 12 + 1; }
+  }
   return out;
 }
 const parsed = parseMonths(p.peak);

@@ -31,6 +31,13 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**two-season fix in: parseMonths reads each run of a split peak; r382**) — Oscar: "all of that sounds
+  perfect" after the explanation. parseMonths (timber.html, mirrored in tools/check-plant-json.js) now splits a peak on
+  / , & ; "and", the split plant-sense's monthsOf already used, and reads each run first-to-last with the Oct-Feb
+  wrap. Proved on all 652 cards: 646 read identically, and the six split peaks change (Nelly Moser, Sargent's cherry,
+  Braendkjaer, Gorgeous, Schmetterling, Chanticleer). Their strips were rendered with two runs each. features-test
+  gains two checks (87/87). Fast 9/9. Not "push": not live until merged. Next: multi-select filters (his
+  ask: drought tolerant + shade, then a month, narrowing to plants that manage all of them).
 progress: 2026-10-07 (**gate 18/18 on f57f2a2, r381**) — the full sequential gate is green on the 577-card head (app-test
   289s, edge-test 301s, perf-test 21s). It covers Pink Perfection (r379), the Chanticleer crop and Ginkgo frame (r380),
   and the five-frame Parrotia (r381). Since f57f2a2 only docs moved (LEDGER and two batch READMEs). Live is still

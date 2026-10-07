@@ -210,6 +210,19 @@ const answerRound = (page, correctly) => page.evaluate(right => {
   await page.evaluate(() => { localStorage.clear(); });
   await page.reload(); await page.waitForTimeout(400);
 
+  /* A split peak is two seasons. "Apr-May / Oct-Nov" (Sargent's cherry: blossom, then autumn
+     colour) used to read first month to last, lighting April to November, and the six-month
+     "Peaks here" rule dropped it from every season (2026-10-07). */
+  const pm = await page.evaluate(() => ({
+    split: parseMonths('Apr-May / Oct-Nov'), comma: parseMonths('May-Jun, Aug-Sep'),
+    wrap: parseMonths('Oct-Feb'), plain: parseMonths('Jul-Oct'), one: parseMonths('May'),
+  }));
+  check('a split peak lights each run, not the months between',
+    JSON.stringify(pm.split) === '[4,5,10,11]' && JSON.stringify(pm.comma) === '[5,6,8,9]', JSON.stringify(pm));
+  check('a one-run peak reads as before, wrap included',
+    JSON.stringify(pm.wrap) === '[10,11,12,1,2]' && JSON.stringify(pm.plain) === '[7,8,9,10]' &&
+    JSON.stringify(pm.one) === '[5]', JSON.stringify(pm));
+
   await page.click('#menuBtn'); await page.waitForTimeout(350);
   const chips = await page.evaluate(() =>
     [...document.querySelectorAll('#filterChips .chip')].map(c => ({
