@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Escallonia GOLDEN CARPET and Penstemon 'Volcano Fujiyama' dealt; deck 557 -> 559, r371**) —
+  "Escolinia and 2 flash berweens for penstomn": three Galaxy S24 photos taken that afternoon, no AI or C2PA
+  markers, byte-identical under `data/held-photos/2026-10-07c/`. Escallonia dealt with his first photo. The
+  Penstemon takes its two in the order sent: the leaf close-up is the card photo and the flowers are the flash
+  frame (`--as flowers`). The flower photo was taken 12 s earlier, so the frames can be swapped if he wants
+  the flowers first. No card text changed. Rendered at phone size: both cards and both frames whole. Deck
+  audit PASS, audit-layout clean, fast 9/9. Next photos asked, in batch order: Magnolia 'Little Gem', Prunus
+  sargentii, Malus 'Braendkjaer', Prunus 'Amanogawa'. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on 1faea4c, r370**) — the full sequential gate (app-test 283s, edge-test 292s,
   audit-layout and the rest green) came back green on the 13-entry batch commit. Nothing on the branch moved between the
   gate and this entry but the ledger. Not live until merged.
