@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Oscar named the nine held photos; four dealt, one flash, four held; deck 566 -> 570, r375**) —
+  e Tiarella 'Pink Skyrocket', f Heuchera FOREVER PURPLE, g 'Cinnabar Silver' and h × Heucherella 'Golden Zebra'
+  were dealt from the 2026-10-07b JSON. b ("Chlorophytum 'Variegatum'") became a flash frame on the dealt spider
+  plant; [Unverified] it shows a white centre stripe, while the card shows white margins. Held: c, because his
+  name "Song of India" is a Dracaena and the photo is a string of hearts; and a "heucherella sweet tea", d "tiarella
+  sugar and spice" and i "sedum lineare", which have no card data anywhere (they need GPT JSON). Doubt raised: h
+  looks closer to the deck's Solar Eclipse, and d fits the Golden Zebra text better. Files renamed to his names;
+  the 07b README has the full table. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on b0b6ecd, r374**) — the full sequential gate is green on the 566-card head (app-test
   286s, edge-test 298s, perf-test 22s). Nothing on the branch moved between the gate and this entry but the ledger.
   Worplesdon, Gorgeous and Schmetterling are gated, not live until merged.

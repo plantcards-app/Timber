@@ -1,4 +1,4 @@
-# 2026-10-07b — the 22-name label list: JSON stored and fitted, seven cards dealt
+# 2026-10-07b — the 22-name label list: JSON stored and fitted, eleven cards dealt
 
 Oscar, morning of 2026-10-07. The GPT batch he pasted ("Worked for 4m 21s", then the JSON) answers the
 22-name list built from his bench-label OCR the night before, recorded in LEDGER.md 2026-10-07.
@@ -56,20 +56,33 @@ Seven cards were dealt: Hebe Petita Red, Golden Pothos, Alocasia zebrina, Varieg
 
 ## Lettered for naming (2026-10-07 evening)
 
-Oscar asked to see the nine held photos so he could name them, so they went to him on one sheet lettered a–i.
-An answer by letter maps to these files:
+Oscar asked to see the nine held photos so he could name them. They went to him on one sheet, lettered a–i,
+and he answered by letter. The files were then renamed to his names, except c. The original names are shown
+for tracing back to the sheet.
 
-| letter | file |
-|---|---|
-| a | `unmatched-photo-1-coral-heuchera.jpg` |
-| b | `unmatched-photo-6-spider-plant-white-centre.jpg` |
-| c | `unmatched-photo-7-variegated-string-of-hearts.jpg` |
-| d | `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` |
-| e | `unmatched-photo-09-green-dark-stripe-cut-leaf.jpg` |
-| f | `unmatched-photo-10-lilac-purple-heuchera.jpg` |
-| g | `unmatched-photo-11-silver-heuchera.jpg` |
-| h | `unmatched-photo-12-yellow-edge-purple-centre.jpg` |
-| i | `unmatched-photo-14-narrow-variegated-leaves.jpg` |
+| letter | his name | was | now | outcome |
+|---|---|---|---|---|
+| a | "heucherella sweet tea" | `unmatched-photo-1-coral-heuchera.jpg` | `heucherella-sweet-tea.jpg` | held: no card data yet (not in this batch, the deck or the hold) |
+| b | "Chlorophytum 'Variegatum'" | `unmatched-photo-6-spider-plant-white-centre.jpg` | `chlorophytum-comosum-variegatum-stripes.jpg` | flash frame on the dealt Variegated Spider Plant (`--as stripes`) |
+| c | "Dracaena refl. Song of India" | `unmatched-photo-7-variegated-string-of-hearts.jpg` | unchanged | **held: the name does not fit the photo** |
+| d | "tiarella sugar and spice" | `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` | `tiarella-sugar-and-spice.jpg` | held: no card data yet |
+| e | "tarella pink skyrocket" | `unmatched-photo-09-green-dark-stripe-cut-leaf.jpg` | `tiarella-pink-skyrocket.jpg` | dealt (#14) |
+| f | "heuchera forever purple" | `unmatched-photo-10-lilac-purple-heuchera.jpg` | `heuchera-forever-purple-tnheufp.jpg` | dealt (#11) |
+| g | "heuchera cinnabar silver" | `unmatched-photo-11-silver-heuchera.jpg` | `heuchera-cinnabar-silver.jpg` | dealt (#12) |
+| h | "heucherella golden zebra" | `unmatched-photo-12-yellow-edge-purple-centre.jpg` | `heucherella-golden-zebra.jpg` | dealt (#13) |
+| i | "sedum lineare" | `unmatched-photo-14-narrow-variegated-leaves.jpg` | `sedum-lineare.jpg` | held: no card data yet |
+
+[Unverified] doubts, dealt under his names as his rule asks, and raised with him:
+- **c:** the photo is a variegated string of hearts (Ceropegia): heart-shaped leaves on thin trailing stems. The
+  fitted 'Song of India' entry describes "dense whorls of narrow deep green leaves edged broad yellow-green",
+  a Dracaena. That is a different plant, not a naming doubt, so it is held and asked.
+- **h:** the Golden Zebra entry says "bright yellow, deeply cut foliage marked by a bold dark red centre". The
+  photo is mostly purple-red with a lime edge, and its leaves are lobed rather than deeply cut. That is closer to
+  the deck's × Heucherella 'Solar Eclipse'. Photo d (lime, deeply cut, dark centre) fits the Golden Zebra text
+  better. Asked whether d and h are swapped.
+- **b:** the dealt card's photo and text show white margins. This photo shows a white centre stripe with green
+  edges. [Inference] That is the pattern usually sold as 'Vittatum'. The card now flashes between the two
+  patterns, so the doubt is raised with him.
 
 ## Files
 
@@ -83,15 +96,15 @@ An answer by letter maps to these files:
 | `heuchera-champagne-tnheucha.jpg` | 519d65703bf4664b | dealt |
 | `heuchera-fire-chief.jpg` | e03f496b10bd96ff | dealt |
 | `sedum-spurium-tricolor.jpg` | c5a5b2868b33f02c | dealt |
-| `unmatched-photo-1-coral-heuchera.jpg` | 320c47c114af5c0f | held |
-| `unmatched-photo-6-spider-plant-white-centre.jpg` | 11035b74c69ef24d | held |
-| `unmatched-photo-7-variegated-string-of-hearts.jpg` | 2ed685d84d031c3d | held |
-| `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` | 4d4cf98a27ad801f | held |
-| `unmatched-photo-09-green-dark-stripe-cut-leaf.jpg` | 883c44b487515406 | held |
-| `unmatched-photo-10-lilac-purple-heuchera.jpg` | a9107d4197cf604b | held |
-| `unmatched-photo-11-silver-heuchera.jpg` | d7c340379bf7ea81 | held |
-| `unmatched-photo-12-yellow-edge-purple-centre.jpg` | 2432d60b8c1d6a55 | held |
-| `unmatched-photo-14-narrow-variegated-leaves.jpg` | f0cbe71108616ac9 | held |
+| `heucherella-sweet-tea.jpg` (a) | 320c47c114af5c0f | held, no card data |
+| `chlorophytum-comosum-variegatum-stripes.jpg` (b) | 11035b74c69ef24d | flash frame on the Variegated Spider Plant |
+| `unmatched-photo-7-variegated-string-of-hearts.jpg` (c) | 2ed685d84d031c3d | held, name does not fit |
+| `tiarella-sugar-and-spice.jpg` (d) | 4d4cf98a27ad801f | held, no card data |
+| `tiarella-pink-skyrocket.jpg` (e) | 883c44b487515406 | dealt |
+| `heuchera-forever-purple-tnheufp.jpg` (f) | a9107d4197cf604b | dealt |
+| `heuchera-cinnabar-silver.jpg` (g) | d7c340379bf7ea81 | dealt |
+| `heucherella-golden-zebra.jpg` (h) | 2432d60b8c1d6a55 | dealt, doubt raised |
+| `sedum-lineare.jpg` (i) | f0cbe71108616ac9 | held, no card data |
 
 Every file here is byte-identical to what he sent.
 
@@ -100,3 +113,7 @@ Every file here is byte-identical to what he sent.
 Results: data-audit, plant-sense --strict, photo-credits and deck-audit PASS (557 cards), audit-layout "all
 cards clean", fast set 9/9. All seven cards were rendered at 390x844 @2x and are whole; the Hebe was shot in
 both frames.
+
+Named photos dealt, r375: data-audit 0 problems, plant-sense --strict "No card contradicts itself",
+photo-credits 0 unrecorded, deck-audit PASS (570 cards), audit-layout "all cards clean", fast set 9/9. The four
+new cards and both spider plant frames were rendered at 390x844 @2x and are whole. The deck goes from 566 to 570.

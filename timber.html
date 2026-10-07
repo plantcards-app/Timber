@@ -1250,7 +1250,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r374 · 2026-10-07 · b4a8c07';
+const BUILD='r375 · 2026-10-07 · fc21189';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -13830,6 +13830,58 @@ const PLANTS = [
    uses:"specimen tree · woodland gardens · cottage gardens · autumn colour · wildlife", size:"2.5–4 m H × 2.5–4 m W",
    hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
    seasonalImpact:"", growthSpeed:7, pestRisk:5, thirst:9, careLevel:5, sunNeed:72, sunMin:38},
+  {common:"Pink Skyrocket Foam Flower", latin:"Tiarella 'Pink Skyrocket'", hue:340,
+   visual:"Lacy green leaves with burgundy markings beneath upright, foamy pink-to-white flower spikes in spring and early summer.",
+   water:"Moderate to high; keep cool and consistently moist without waterlogging.",
+   aspect:"North / East",
+   soil:"Humus-rich, moist, drained; No long drought or winter wet at the crown",
+   prune:"Deadhead after flowering and remove old or damaged leaves in late winter or early spring.",
+   source:"", peak:"Apr-Jun", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Pink Skyrocket'",
+   hardiness:"H6", resilience:"Cold hardy, shade tolerant and reliable in cool, humus-rich soils.",
+   uses:"Woodland gardens, shaded borders, ground cover, underplanting and containers.", size:"30–40 cm H × 30–40 cm W",
+   hardinessNote:"H6 · −20 to −15°C; rHS AGM listing gives H6; hardy throughout the UK and northern Europe.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:13, pestRisk:5, thirst:13, careLevel:5, sunNeed:35, sunMin:15},
+  {common:"Forever Purple Heuchera", latin:"Heuchera FOREVER PURPLE ('Tnheufp')", hue:285,
+   visual:"Dense mound of glossy, deeply lobed intense purple leaves, with short spikes of purple-pink summer flowers.",
+   water:"Moderate; keep evenly moist during establishment and dry weather.",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No winter wet; mulch the rising crown",
+   prune:"Deadhead flower stems and remove old or damaged foliage.",
+   source:"", peak:"Apr-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Tnheufp; Forever Series",
+   hardiness:"H5", resilience:"Cold hardy and drought resistant once established; strong foliage colour in good light.",
+   uses:"Containers, edging, ground cover, mixed borders and bold foliage contrast.", size:"20–30 cm H × 40–50 cm W",
+   hardinessNote:"H5 · −15 to −10°C; hardy in most UK gardens.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:8, thirst:10, careLevel:5, sunNeed:65, sunMin:35},
+  {common:"Cinnabar Silver Heuchera", latin:"Heuchera 'Cinnabar Silver'", hue:350,
+   visual:"Compact mound of purple leaves heavily overlaid with metallic silver, topped by loose sprays of brick-red flowers.",
+   water:"Moderate; keep evenly moist but ensure excellent drainage around the crown.",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No winter wet or long, severe drought",
+   prune:"Remove faded flower spikes and tidy damaged foliage in late winter.",
+   source:"", peak:"May-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Cinnabar Silver'",
+   hardiness:"H6", resilience:"Cold hardy and drought resistant once established where drainage is good.",
+   uses:"Containers, edging, mixed borders, ground cover and metallic foliage contrast.", size:"20–40 cm H × 30–50 cm W",
+   compliance:"PBR protected · commercial propagation restricted", hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:8, thirst:10, careLevel:5, sunNeed:65, sunMin:35},
+  {common:"Golden Zebra Heucherella", latin:"× Heucherella 'Golden Zebra'", hue:60,
+   visual:"Bright yellow, deeply cut foliage marked by a bold dark red centre, with airy white flowers in spring.",
+   water:"Moderate; keep consistently moist but never waterlogged.",
+   aspect:"North / East",
+   soil:"Fertile, moist, drained; No winter wet; hot sun scorches the gold",
+   prune:"Remove faded flower spikes and damaged leaves; lift and replant if the crown rises.",
+   source:"", peak:"Apr-Jul", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Golden Zebra'",
+   hardiness:"H6", resilience:"Cold hardy and shade tolerant; performs best with consistent moisture and good drainage.",
+   uses:"Shade borders, containers, edging, ground cover and bright foliage contrast.", size:"30–60 cm H × 30–50 cm W",
+   hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:11, pestRisk:7, thirst:11, careLevel:5, sunNeed:35, sunMin:15},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -17318,6 +17370,12 @@ const PHOTO_SWAP={
   /* Oscar's 2026-10-07 second photo: clusters of glossy red crab apples among broad green leaves with water droplets, a few yellow leaves and a cane at the left, as shot. The card photo is his other shot of the same fruiting branches, taken six seconds earlier */
   'malus-baccata-braendkjaer':{
     alt:'photos/card/malus-baccata-braendkjaer-fruit.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 second photo, named by him from a lettered sheet that evening: arching narrow leaves with a white centre stripe and green edges, and a pale flower stem, as shot. The card photo shows white margins, so the two frames show different leaf patterns */
+  'chlorophytum-comosum-variegatum':{
+    alt:'photos/card/chlorophytum-comosum-variegatum-stripes.webp',
     focus:'50% 45%',
     hold:'3.5s',
   },
