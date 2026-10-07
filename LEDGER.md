@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on b770cea, r372**) — the full sequential gate is green on the 560-card head, with
+  the perf-test fix (app-test 285s, edge-test 295s, perf-test 22s). Nothing on the branch moved between the gate
+  and this entry but the ledger. Escallonia, Penstemon and Magnolia are gated, not live until merged.
 progress: 2026-10-07 (**gate 17/18 on 6d79d43: perf-test's flat photo budget broke; the test now counts the window**) —
   "photo fetching stays windowed at load" allowed 12 requests: the ten newest cards plus room for two flash
   frames. Penstemon and Magnolia made three flash cards among the newest ten (with Hebe Petita Red), so 10
