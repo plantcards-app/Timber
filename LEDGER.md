@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on e2697ce, r383**) — the full sequential gate is green with multi-select filters
+  (features-test 41s with the nine new checks, app-test 289s, edge-test 301s). Nothing on the branch moved between the
+  gate and this entry but the ledger. Live is still 550. Everything since PR #57 waits on Oscar's "push".
 progress: 2026-10-07 (**multi-select filters: every chip pressed narrows the deck; r383. Also: gate 18/18 on befbf1d, the
   two-season fix**) — Oscar: "select multiple filters ... drought tolerant ... then shade loving ... narrows it down to
   plants that will manage both ... even picking a month within the seasons". The single `activeFilter` became
