@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on 4625ed5, r378**) — the full sequential gate is green on the 576-card head (app-test
+  289s, edge-test 301s, perf-test 21s). Nothing on the branch moved between the gate and this entry but the ledger.
+  Live is still 550. Waiting on Oscar's "push": everything since PR #57.
 progress: 2026-10-07 (**four-entry GPT batch for the held photos a, c, d, i: all dealt; deck 572 -> 576, r378**) — Sweet
   Tea, Sugar and Spice, Sedum lineare 'Variegatum' and Ceropegia woodii 'Variegata', stored verbatim under
   `data/held-photos/2026-10-07d/` and dealt with the 2026-10-07b photos. Fitting: "No known hazard; " prefixed on
