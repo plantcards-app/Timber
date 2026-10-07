@@ -31,6 +31,12 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**two more label names: Sedum spurium 'Tricolor', × Heucherella 'Golden Zebra'; 22 named and new**) —
+  "Sedumspurium tricolorHeucherellagolden zebra", neither in the deck or the hold. Each names one of a pair of
+  set-aside lines (Sedum / Sedum Fantasticfoliage; Heucherella / Heucherella Fantasticfoliage). Whether the other
+  line of each pair is a different plant is unknown, so it stays set aside. Still set aside: Chrysanthemum Pink,
+  Aglaonema, Ceropegia, "Planten gree", "Tant", plus the other Sedum and Heucherella lines if they are
+  different plants.
 progress: 2026-10-07 (**label-list corrections: five set-aside names now have full names; 20 named and new**) — Oscar's
   corrections, run together as typed: "Alocasla zebrinaHeuchera champagnetiarella pink sky rocketHeuchera forever purple
   Heucheracinnabar silver". Read as Alocasia zebrina, Heuchera 'Champagne', Tiarella 'Pink Skyrocket', Heuchera
