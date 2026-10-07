@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on d03e4f8, r369**) — the full sequential gate (app-test 283s, edge-test 294s,
+  audit-layout and the rest green) came back green on the 557-card head. Nothing on the branch moved between the gate
+  and this entry but the ledger. Not live until merged.
 progress: 2026-10-07 (**the 22-name batch stored and fitted; seven cards dealt from three photo drops; deck 550 -> 557, r369**) —
   GPT's 22-entry JSON for the label list, stored verbatim and fitted under `data/held-photos/2026-10-07b/`. Label
   names were kept: Dianthus Hardy Rose/Violet/Violet Picotee in place of "Dianthus spp.", Sedum spurium
