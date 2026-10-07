@@ -1292,19 +1292,9 @@
    "commercialUseCleared": true
   },
   {
-   "file": "chlorophytum-comosum-variegatum-stripes.jpg",
-   "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright. Second frame for the Variegated Spider Plant card (PHOTO_SWAP alt): Oscar's 2026-10-07 second photo, named by him from a lettered sheet that evening: arching narrow leaves with a white centre stripe and green edges, and a pale flower stem, as shot. The card photo shows white margins, so the two frames show different leaf patterns.",
-   "author": "Scion Studios",
-   "sourceUrl": null,
-   "commit": null,
-   "commitSubject": "staged after CREDITS.json was created — not yet committed",
-   "commercialUseCleared": true
-  },
-  {
    "file": "chlorophytum-comosum-variegatum.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright",
+   "licence": "Oscar's own photograph — owned outright. Since 2026-10-07 evening this is his photo he named Chlorophytum 'Variegatum'; the card's first photo, matched by eye that morning, was his Dracaena 'Song of India'",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -2057,6 +2047,16 @@
    "file": "disporum-sessile-variegatum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright, the plant held in his hand in its nursery pot. Cropped by tools/reframe-photo.js by trimming the bottom fifth only: the pot was floating the foliage above the card's readable band, which the tool refused until it was fixed. The hand and pot are kept. No pixels generated. EXIF Samsung Galaxy S24, 2026-08-22 (current season). No C2PA manifest and no AI or generative marker",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "dracaena-reflexa-song-of-india.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

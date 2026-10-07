@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**correction: the spider plant's photo was Song of India; Song of India dealt; deck 571 -> 572,
+  r377**) — his "Song of India" photo is byte-identical to the drop 1 photo matched by eye that morning to the
+  Variegated Spider Plant, so that match was wrong. Photo b, which he named Chlorophytum 'Variegatum', is now the
+  spider plant's only card photo, the evening flash entry is removed, and Dracaena 'Song of India' is dealt with
+  the drop 1 photo. c is "ceropegia woodii", variety for me to find: the RHS files the variegated form as
+  C. linearis subsp. woodii 'Lady Heart' (syn. C. woodii 'Variegata'). It needs JSON, along with Sweet Tea, Sugar and
+  Spice and Sedum lineare. Still raised: the spider plant text says white margins but b has a white centre;
+  d and h may be swapped. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on 519072d, r376**) — the full sequential gate is green on the 571-card head (app-test
   289s, edge-test 300s, perf-test 22s). It covers the named 2026-10-07b cards (r375) and Chanticleer (r376). Nothing on
   the branch moved between the gate and this entry but the ledger. Not live until merged.

@@ -1,4 +1,4 @@
-# 2026-10-07b — the 22-name label list: JSON stored and fitted, eleven cards dealt
+# 2026-10-07b — the 22-name label list: JSON stored and fitted, twelve cards dealt
 
 Oscar, morning of 2026-10-07. The GPT batch he pasted ("Worked for 4m 21s", then the JSON) answers the
 22-name list built from his bench-label OCR the night before, recorded in LEDGER.md 2026-10-07.
@@ -32,7 +32,8 @@ such as "song", "spider" and "croton".
 ## Photos and cards
 
 **Drop 1** (7 photos, no text). Matched by eye ([Inference]):
-- Alocasia zebrina, the Variegated Spider Plant ('Variegatum', cream margins) and Golden Pothos.
+- Alocasia zebrina, the Variegated Spider Plant ('Variegatum', cream margins) and Golden Pothos. **The spider
+  plant match was wrong.** That photo is his Dracaena 'Song of India'; see the correction below.
 - A Hebe, whose shot Oscar then dropped (drop 2). It was never committed.
 - Held, unmatched: a coral Heuchera (`unmatched-photo-1`), a spider plant with a white centre stripe
   (`unmatched-photo-6`, [Inference] 'Vittatum' rather than 'Variegatum'), and a variegated string of hearts
@@ -63,8 +64,8 @@ for tracing back to the sheet.
 | letter | his name | was | now | outcome |
 |---|---|---|---|---|
 | a | "heucherella sweet tea" | `unmatched-photo-1-coral-heuchera.jpg` | `heucherella-sweet-tea.jpg` | held: no card data yet (not in this batch, the deck or the hold) |
-| b | "Chlorophytum 'Variegatum'" | `unmatched-photo-6-spider-plant-white-centre.jpg` | `chlorophytum-comosum-variegatum-stripes.jpg` | flash frame on the dealt Variegated Spider Plant (`--as stripes`) |
-| c | "Dracaena refl. Song of India" | `unmatched-photo-7-variegated-string-of-hearts.jpg` | unchanged | **held: the name does not fit the photo** |
+| b | "Chlorophytum 'Variegatum'" | `unmatched-photo-6-spider-plant-white-centre.jpg` | `chlorophytum-comosum-variegatum.jpg` | the Variegated Spider Plant's card photo, after the correction below |
+| c | first "Dracaena refl. Song of India", then "ceropegia woodii", variety unknown | `unmatched-photo-7-variegated-string-of-hearts.jpg` | unchanged | held: no card data yet |
 | d | "tiarella sugar and spice" | `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` | `tiarella-sugar-and-spice.jpg` | held: no card data yet |
 | e | "tarella pink skyrocket" | `unmatched-photo-09-green-dark-stripe-cut-leaf.jpg` | `tiarella-pink-skyrocket.jpg` | dealt (#14) |
 | f | "heuchera forever purple" | `unmatched-photo-10-lilac-purple-heuchera.jpg` | `heuchera-forever-purple-tnheufp.jpg` | dealt (#11) |
@@ -73,23 +74,37 @@ for tracing back to the sheet.
 | i | "sedum lineare" | `unmatched-photo-14-narrow-variegated-leaves.jpg` | `sedum-lineare.jpg` | held: no card data yet |
 
 [Unverified] doubts, dealt under his names as his rule asks, and raised with him:
-- **c:** the photo is a variegated string of hearts (Ceropegia): heart-shaped leaves on thin trailing stems. The
-  fitted 'Song of India' entry describes "dense whorls of narrow deep green leaves edged broad yellow-green",
-  a Dracaena. That is a different plant, not a naming doubt, so it is held and asked.
+- **c:** his first name for it, Song of India, did not fit a string of hearts, so it was held and asked. His
+  answer: "the strands of hearts plant is ceropegia woodii "verity " u may need to guess the correct verity".
+  The photo shows the variegated form, with pink and cream edges around silver-marbled centres. The RHS files
+  that form as Ceropegia linearis subsp. woodii 'Lady Heart' (v), with Ceropegia woodii 'Variegata' as a synonym
+  (rhs.org.uk/plants/153282). [Inference] By his genus and species and the photo, the name to ask GPT for is
+  Ceropegia woodii 'Variegata'. It needs card data before it can be dealt.
 - **h:** the Golden Zebra entry says "bright yellow, deeply cut foliage marked by a bold dark red centre". The
   photo is mostly purple-red with a lime edge, and its leaves are lobed rather than deeply cut. That is closer to
   the deck's × Heucherella 'Solar Eclipse'. Photo d (lime, deeply cut, dark centre) fits the Golden Zebra text
   better. Asked whether d and h are swapped.
-- **b:** the dealt card's photo and text show white margins. This photo shows a white centre stripe with green
-  edges. [Inference] That is the pattern usually sold as 'Vittatum'. The card now flashes between the two
-  patterns, so the doubt is raised with him.
+- **b:** the card's text says "narrow green leaves with clean white margins". This photo, now its card photo,
+  shows a white centre stripe with green edges. [Inference] That is the pattern usually sold as 'Vittatum'.
+  It is dealt under his label name, with the text unchanged, and the doubt is raised with him.
+
+## Correction: the spider plant's first photo was Song of India (2026-10-07 evening)
+
+Oscar sent his Song of India photo: "Sorry this is Dracaena refl. Song of India". It is byte-identical
+(sha256 73067abf…) to the drop 1 photo matched by eye that morning to the Variegated Spider Plant, so that
+match was wrong. b, the photo he names Chlorophytum 'Variegatum', is the spider plant. Three changes followed:
+- The spider plant's evening flash entry was removed. Photo b's staged frame became the card photo, and its
+  derivative was rebuilt. The `-stripes` files and their credit are gone, and the card's credit records the swap.
+- Dracaena reflexa 'Song of India' (#18) was dealt with the drop 1 photo.
+- The held originals were renamed to match: `dracaena-reflexa-song-of-india.jpg` (the drop 1 photo) and
+  `chlorophytum-comosum-variegatum.jpg` (photo b). The duplicate he re-sent was not kept.
 
 ## Files
 
 | file | sha256 (first 16) | |
 |---|---|---|
 | `alocasia-zebrina.jpg` | 2537c24f02040363 | dealt |
-| `chlorophytum-comosum-variegatum.jpg` | 73067abfea3f232e | dealt |
+| `dracaena-reflexa-song-of-india.jpg` | 73067abfea3f232e | dealt: Song of India (sent first as unnamed, matched wrongly to the spider plant) |
 | `epipremnum-pinnatum-golden-pothos.jpg` | d05d6a383c7b8fe3 | dealt |
 | `hebe-petita-red.jpg` | b3f57c3a54c52f90 | dealt, card photo |
 | `hebe-petita-red-spikes.jpg` | 3c6a71ec5df9eb9e | dealt, flash frame |
@@ -97,7 +112,7 @@ for tracing back to the sheet.
 | `heuchera-fire-chief.jpg` | e03f496b10bd96ff | dealt |
 | `sedum-spurium-tricolor.jpg` | c5a5b2868b33f02c | dealt |
 | `heucherella-sweet-tea.jpg` (a) | 320c47c114af5c0f | held, no card data |
-| `chlorophytum-comosum-variegatum-stripes.jpg` (b) | 11035b74c69ef24d | flash frame on the Variegated Spider Plant |
+| `chlorophytum-comosum-variegatum.jpg` (b) | 11035b74c69ef24d | dealt: the spider plant's card photo |
 | `unmatched-photo-7-variegated-string-of-hearts.jpg` (c) | 2ed685d84d031c3d | held, name does not fit |
 | `tiarella-sugar-and-spice.jpg` (d) | 4d4cf98a27ad801f | held, no card data |
 | `tiarella-pink-skyrocket.jpg` (e) | 883c44b487515406 | dealt |
@@ -117,3 +132,7 @@ both frames.
 Named photos dealt, r375: data-audit 0 problems, plant-sense --strict "No card contradicts itself",
 photo-credits 0 unrecorded, deck-audit PASS (570 cards), audit-layout "all cards clean", fast set 9/9. The four
 new cards and both spider plant frames were rendered at 390x844 @2x and are whole. The deck goes from 566 to 570.
+
+Correction, r377: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
+0 unrecorded, check-boot OK (PHOTO_SWAP 30), deck-audit PASS (572 cards), audit-layout "all cards clean", fast set 9/9.
+The spider plant and Song of India were rendered at 390x844 @2x and are whole. The deck goes from 571 to 572.
