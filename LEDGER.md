@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on 52e847d, r368**) — the full sequential gate (app-test 272s, edge-test 287s,
+  audit-layout and the rest green) came back green on the head carrying the two doubles. Nothing on the branch
+  moved between the gate and this entry but the ledger. Not live until merged.
 progress: 2026-10-07 (**two doubles: Chile Lantern Tree close lanterns, Charles Lamont autumn leaves with flowers; r368**) —
   "Double for the chilian lantern plant check i got the common name right latin begins with c" and "Double for
   viburnum Charles lamiont": add-swap `--as lanterns` on Crinodendron hookerianum and `--as autumn` on
