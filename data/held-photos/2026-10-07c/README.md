@@ -1,4 +1,4 @@
-# 2026-10-07c — 13 GPT entries: twelve new cards fitted (three dealt so far), one Aronia double
+# 2026-10-07c — 13 GPT entries: twelve new cards fitted (six dealt so far), one Aronia double
 
 Oscar pasted this batch on 2026-10-07 with no text. `batch-as-sent.json` is the paste exactly as supplied
 (13 entries). `batch-corrected.json` holds the twelve new entries fitted to the card conventions. Entry 13,
@@ -74,7 +74,35 @@ and 13:01:16. Neither has C2PA, JUMBF, content-credential or AI-generation marke
 - A white shape at the foot of the card photo is a blurred pot rim with compost, not a label. The flash
   frame shows a wire bench and pots, blurred, at the right. Neither shows a person, finger or label.
 
-The deck goes from 559 to 560 at r372. The other nine wait for photos.
+The deck goes from 559 to 560 at r372.
+
+**Drop 3**, 2026-10-07: five photos, with the words "Prunus pink perfection last photo the tree had two different
+tags so it could actually not be pink perfection check of the foliage should be thus colour or that it looks
+right if not sure pause, I tuink it probably is tho". All five are Galaxy S24, taken between 13:03 and 13:07,
+with no C2PA, JUMBF, content-credential or AI-generation markers.
+- Only the last photo was named. The first four were matched to the three names asked for before it, in the
+  order asked. [Inference] The sequence fits exactly: a cherry in autumn leaf, then two shots of one crab apple
+  six seconds apart, then a cherry in green leaf.
+- **#4 Prunus sargentii** was dealt with the first photo: red, pink and green autumn leaves with water droplets.
+- **#5 Malus baccata 'Braendkjaer'** was dealt with the two crab apple photos. The first is the card photo and
+  the second is the flash frame (`--as fruit`), under his 2026-10-01 rule that a second photo becomes a flash.
+  [Unverified] that the tree is 'Braendkjaer' and not the batch's other crab apple, 'Gorgeous'. The order is
+  the only evidence.
+- **#6 Prunus 'Amanogawa'** was dealt with the fourth photo: large green leaves with bristle-tipped teeth, red
+  stalks and a staked stem. A white nursery code band on the stem ("…8 C JRR…") sat at the right edge. It is
+  a label, so by the v14.34 rule it came out with the smallest crop that holds the 0.75 aspect: the right 312 px
+  and bottom 416 px of 3000x4000. The box is in `prunus-amanogawa-crop.json`. Original pixels only. The band
+  carries no plant name, so it does not confirm the variety.
+- **#7 Prunus 'Pink Perfection' is held, not dealt.** He asked for a check that the foliage looks right, and to
+  pause if not sure. The photo shows one leaf deep red (backlit) and others orange-tan to yellow-green. The RHS
+  entry (rhs.org.uk/plants/44879) gives "some orange tints in autumn". Nursery copy goes redder: Hillier gives
+  "rich shades of orange-red", and Orange Pippin lists "Orange / Red". The colour is redder than the RHS and
+  within the nursery descriptions. No autumn leaf can tell 'Pink Perfection' from other Japanese cherries, such
+  as the deck's 'Kanzan'. Not sure, so paused. What the second tag said, or the spring flowers (double, light
+  pink, in drooping clusters), would settle it.
+
+The deck goes from 560 to 563 at r373. Pink Perfection's photo is held here, and five wait for photos: 'Ichiyo',
+Liquidambar 'Worplesdon', Malus 'Gorgeous', Cornus 'Schmetterling' and Pyrus 'Chanticleer'.
 
 | file | camera, size, taken | sha256 (first 16) | |
 |---|---|---|---|
@@ -83,8 +111,13 @@ The deck goes from 559 to 560 at r372. The other nine wait for photos.
 | `penstemon-volcano-fujiyama-flowers.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:40 | 9208305e0eb591a5 | dealt, flash frame |
 | `magnolia-grandiflora-little-gem.jpg` | Galaxy S24, 3000x2776, 2026-10-07 13:01 | aeaaa6e3fb76851f | dealt, card photo |
 | `magnolia-grandiflora-little-gem-buds.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:00 | 75077bbc79545d27 | dealt, flash frame |
+| `prunus-sargentii.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | 6d206902c63f4cd0 | dealt |
+| `malus-baccata-braendkjaer.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | 4bc00c7180e95b9a | dealt, card photo |
+| `malus-baccata-braendkjaer-fruit.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | e755d006aa737f2d | dealt, flash frame |
+| `prunus-amanogawa.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | c1c57b1f6e7da76b | dealt after the crop above |
+| `prunus-pink-perfection.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | fe190b1ece5c6bf6 | held, foliage check unsure |
 
-Every file here is byte-identical to what he sent.
+Every photo here is byte-identical to what he sent.
 
 ## Checks
 
@@ -98,3 +131,8 @@ rendered at 390x844 @2x and are whole. The Penstemon was shot in both frames.
 Drop 2 dealt, r372: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
 0 unrecorded, deck-audit PASS (560 cards), audit-layout "all cards clean", fast set 9/9. The Magnolia was
 rendered at 390x844 @2x in both frames, and both are whole.
+
+Drop 3 dealt, r373: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
+0 unrecorded, deck-audit PASS (563 cards), audit-layout "all cards clean", fast set 9/9. All three cards and the
+crab apple's flash frame were rendered at 390x844 @2x and are whole, and the code band is out of the Amanogawa.
+The bloom strips on Sargent's cherry and the crab apple show the split-peak span (Apr–Nov) described above.

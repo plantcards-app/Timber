@@ -1250,7 +1250,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r372 · 2026-10-07 · 436d10c';
+const BUILD='r373 · 2026-10-07 · 3b9e447';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -13752,6 +13752,45 @@ const PLANTS = [
    uses:"specimen tree · architectural planting · screening · courtyards · large containers", size:"4–8 m H × 2.5–4 m W",
    hardinessNote:"H4 · −10 to −5°C", foliage:"evergreen",
    seasonalImpact:"", growthSpeed:7, pestRisk:7, thirst:8, careLevel:7, sunNeed:75, sunMin:42},
+  {common:"Sargent's Cherry", latin:"Prunus sargentii", hue:345,
+   visual:"Large spreading deciduous cherry · single rosy-pink spring blossom · young bronze foliage · brilliant orange-red autumn colour",
+   water:"Moderate; water young trees during dry periods",
+   aspect:"Any aspect",
+   soil:"Any moist, drained soil; No persistently waterlogged ground",
+   prune:"Prune only when necessary, preferably in midsummer to reduce silver-leaf risk",
+   source:"", peak:"Apr-May / Oct-Nov", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"very cold hardy · adaptable to many soils · exposed-site tolerant",
+   uses:"specimen tree · avenues · large gardens · spring blossom · autumn colour · wildlife", size:"12 m+ H × 8 m+ W",
+   toxicity:"Seeds and kernels contain cyanogenic compounds and should not be eaten", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:11, pestRisk:10, thirst:8, careLevel:5, sunNeed:95, sunMin:75},
+  {common:"Braendkjaer Siberian Crab Apple", latin:"Malus baccata 'Braendkjaer'", hue:35,
+   visual:"Deciduous ornamental crab apple · masses of pale spring blossom · small decorative fruits · rounded tree habit",
+   water:"Moderate; water regularly while establishing",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No permanently waterlogged ground",
+   prune:"Minimal pruning; remove damaged or crossing branches in winter",
+   source:"", peak:"Apr-May / Sep-Nov", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"very cold hardy · adaptable · good wildlife value",
+   uses:"specimen tree · wildlife gardens · blossom · ornamental fruit · pollinators", size:"6–10 m H × 4–8 m W",
+   toxicity:"Fruit flesh is generally edible; seeds contain cyanogenic compounds and should not be eaten", hardinessNote:"Approximately H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:10, pestRisk:11, thirst:8, careLevel:6, sunNeed:88, sunMin:55},
+  {common:"Amanogawa Flowering Cherry", latin:"Prunus 'Amanogawa'", hue:350,
+   visual:"Narrow columnar deciduous cherry · upright branches · semi-double pale pink slightly fragrant blossom · orange-red autumn foliage",
+   water:"Moderate; water young trees in dry spells",
+   aspect:"Any aspect",
+   soil:"Any moist, drained soil; No prolonged waterlogging",
+   prune:"Prune only when necessary in midsummer to reduce silver-leaf risk",
+   source:"", peak:"Apr-May", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Synonyms include Prunus serrulata 'Amanogawa'",
+   hardiness:"H6", resilience:"very cold hardy · urban-garden friendly · relatively wind tolerant",
+   uses:"small gardens · narrow spaces · avenues · specimen tree · spring blossom", size:"4–8 m H × 2.5–4 m W",
+   toxicity:"Seeds and kernels contain cyanogenic compounds and should not be eaten", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:9, pestRisk:10, thirst:8, careLevel:5, sunNeed:95, sunMin:72},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -17234,6 +17273,12 @@ const PHOTO_SWAP={
   /* Oscar's 2026-10-07 second photo: a half-open white flower with browned outer petals, two cream buds marked brown, and glossy dark green leaves with water droplets, some showing rusty-brown undersides, as shot. The card photo is his close-up of an open flower with cream stamens tipped pink, sent with it */
   'magnolia-grandiflora-little-gem':{
     alt:'photos/card/magnolia-grandiflora-little-gem-buds.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 second photo: clusters of glossy red crab apples among broad green leaves with water droplets, a few yellow leaves and a cane at the left, as shot. The card photo is his other shot of the same fruiting branches, taken six seconds earlier */
+  'malus-baccata-braendkjaer':{
+    alt:'photos/card/malus-baccata-braendkjaer-fruit.webp',
     focus:'50% 45%',
     hold:'3.5s',
   },

@@ -3934,6 +3934,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "malus-baccata-braendkjaer-fruit.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Braendkjaer Siberian Crab Apple card (PHOTO_SWAP alt): Oscar's 2026-10-07 second photo: clusters of glossy red crab apples among broad green leaves with water droplets, a few yellow leaves and a cane at the left, as shot. The card photo is his other shot of the same fruiting branches, taken six seconds earlier.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "malus-baccata-braendkjaer.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "malus-domestica-red-belle-de-boskoop.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4796,6 +4816,16 @@
    "note": "Oscar's own photo (EXIF 2025-12-02); cropped by Claude to remove the pot label at lower left. An earlier copy Oscar sent had the label removed with an AI eraser and carried an AI-content watermark; that copy is not used."
   },
   {
+   "file": "prunus-amanogawa.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Cropped to drop a nursery code band on the stem: the right 312 px and bottom 416 px of the 3000x4000 original, original pixels only (box in data/held-photos/2026-10-07c/prunus-amanogawa-crop.json)",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "prunus-cerasifera-nigra.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -4857,6 +4887,16 @@
   },
   {
    "file": "prunus-pissardii.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "prunus-sargentii.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

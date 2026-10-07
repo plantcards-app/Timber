@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Sargent's cherry, Braendkjaer crab apple and Amanogawa dealt; Pink Perfection paused; deck 560 -> 563,
+  r373**) — five photos, only the last named ("Prunus pink perfection last photo… if not sure pause"). The first four
+  were matched to the names asked, in order ([Inference]: cherry in autumn leaf, two crab apple shots 6 s apart,
+  cherry in green leaf). The crab apple pair became a card photo and flash frame; [Unverified] it is 'Braendkjaer'
+  and not 'Gorgeous'. A nursery code band on the Amanogawa stem was cropped out (right 312 px, bottom 416 px; box
+  in the batch folder). Pink Perfection is held: RHS gives "some orange tints" in autumn, Hillier "orange-red";
+  the photo is redder than the RHS, and leaves cannot tell it from 'Kanzan'. Waiting on what the second tag said,
+  or his word. Deck audit PASS, audit-layout clean, fast 9/9, all frames rendered whole. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on b770cea, r372**) — the full sequential gate is green on the 560-card head, with
   the perf-test fix (app-test 285s, edge-test 295s, perf-test 22s). Nothing on the branch moved between the gate
   and this entry but the ledger. Escallonia, Penstemon and Magnolia are gated, not live until merged.
