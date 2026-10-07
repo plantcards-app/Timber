@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on f57f2a2, r381**) — the full sequential gate is green on the 577-card head (app-test
+  289s, edge-test 301s, perf-test 21s). It covers Pink Perfection (r379), the Chanticleer crop and Ginkgo frame (r380),
+  and the five-frame Parrotia (r381). Since f57f2a2 only docs moved (LEDGER and two batch READMEs). Live is still
+  550. Waiting on Oscar's "push" and his yes or no on the two-season fix.
 progress: 2026-10-07 (**Sedum 'Variegatum' confirmed; Pink Champagne parked; the undealt list**) — "It is verigatumn" (no
   change). "Shelf pink champagne": #8 parked, with its fitted entry kept in the 2026-10-07c batch file. Every pasted
   batch is stored and fitted. Undealt for want of a photo (14): ten 2026-10-07b entries (Dianthus Hardy Rose /
