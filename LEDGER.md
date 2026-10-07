@@ -31,6 +31,12 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Parrotia 'Bella' gains four flash frames, now cycling five; Sweet Tea's label confirmed; r381**) —
+  "Some flash between photos for patrotia persica Bella": four Galaxy S24 photos, no AI markers, added in the
+  order sent (droplets, leaf-tip, backlit, crimson). add-swap's "Second frame" credit wording was corrected for
+  frames 3–5. All five frames rendered whole. "heucherella sweet tea": the label matches the card as dealt, so no
+  change. The gate on c408bbb was stopped mid-run so files could change, and runs on this head instead. Deck audit
+  PASS, audit-layout clean, fast 9/9. Not live until merged.
 progress: 2026-10-07 (**Chanticleer takes his own crop; Ginkgo gains an autumn flash frame; r380**) — "id prefer that
   pryus to be a photo more higher alowinf more of the leaf to be seen": his phone crop of the same photo (2244x2714,
   same timestamp, no AI markers) is restaged as the card photo, and the red leaf now fills the window above the

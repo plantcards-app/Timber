@@ -39,8 +39,9 @@ found no doubles. Its PROBABLE hits were single shared words: "bells", "sugar" a
 The deck goes from 572 to 576 at r378.
 
 [Unverified] doubts, carried as written:
-- **Sweet Tea's label:** he wrote "heucherella sweet tea", then "Heuchera sweat tea". The RHS name is × Heucherella
-  'Sweet Tea' (rhs.org.uk/plants/286105), and the card carries it until his label says otherwise.
+- **Sweet Tea's label: answered.** He wrote "heucherella sweet tea", then "Heuchera sweat tea". Asked which the
+  label says, he answered "heucherella sweet tea". That matches the RHS (× Heucherella 'Sweet Tea',
+  rhs.org.uk/plants/286105) and the card as dealt, so nothing changed.
 - **Sweet Tea's colour:** the photo is coral-pink, while the visual says copper-orange and burnt amber. The RHS notes
   the colour softens in autumn and winter, and the photo was taken in October.
 - **Sedum lineare's label:** he wrote "sedum lineare". GPT took 'Variegatum' for the cream-edged plant in the
