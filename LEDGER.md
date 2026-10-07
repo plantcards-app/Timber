@@ -31,6 +31,12 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Chanticleer takes his own crop; Ginkgo gains an autumn flash frame; r380**) — "id prefer that
+  pryus to be a photo more higher alowinf more of the leaf to be seen": his phone crop of the same photo (2244x2714,
+  same timestamp, no AI markers) is restaged as the card photo, and the red leaf now fills the window above the
+  plaque (rendered before/after). "A flash between photo for ginkgo biloba": add-swap `--as autumn` on the Maidenhair
+  Tree; README under `data/held-photos/2026-10-07e/`. The gate on ffc5c15 was stopped mid-run so files could
+  change, and runs on this head instead. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
 progress: 2026-10-07 (**Pink Perfection dealt at Oscar's call; deck 576 -> 577, r379**) — "I think its probably pink
   perfection": the two-tag cherry photo is dealt as #7 Prunus 'Pink Perfection'. [Unverified] The tree's second tag
   (his centre's label) reads Pink Champagne. #8 'Pink Champagne' waits for its own photo. Deck audit PASS,

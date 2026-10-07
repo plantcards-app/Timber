@@ -2754,6 +2754,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "ginkgo-biloba-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Maidenhair Tree card (PHOTO_SWAP alt): Oscar's 2026-10-07 photo: fan-shaped leaves turning golden yellow among green ones, with water droplets, as shot. The card photo is his earlier one.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "ginkgo-biloba.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -5058,7 +5068,7 @@
   {
    "file": "pyrus-calleryana-chanticleer.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright",
+   "licence": "Oscar's own photograph — owned outright. Since 2026-10-07 evening the card uses his own phone crop of the same photo (2244x2714), sent so more of the red leaf shows; his uncropped original is kept under data/held-photos/2026-10-07c/",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

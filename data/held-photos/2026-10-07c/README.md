@@ -131,6 +131,10 @@ The deck goes from 563 to 566 at r374.
 content-credential or AI-generation markers.
 - **#12 Pyrus calleryana 'Chanticleer'** was dealt with it: glossy leaves on pink-red stalks, turning red and
   orange over green, with water droplets.
+- **The card photo is his own crop (2026-10-07 evening):** "Also id prefer that pryus to be a photo more higher
+  alowinf more of the leaf to be seen". He sent a phone crop of the same photo: 2244x2714, the same 13:10:31
+  timestamp, and no C2PA, JUMBF, content-credential or AI-edit markers. It was restaged as the card photo
+  (1200x1451), so the red leaf fills the window above the stats plaque. The uncropped original stays here.
 
 The deck goes from 570 to 571 at r376. The 2026-10-07b named photos took it from 566 to 570 at r375. #8 'Pink
 Champagne' waits for a photo of its own.
@@ -150,7 +154,8 @@ Champagne' waits for a photo of its own.
 | `liquidambar-styraciflua-worplesdon.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:07 | 1cb1c65e056f5231 | dealt |
 | `malus-atrosanguinea-gorgeous.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:08 | fde0835b0675a1d7 | dealt |
 | `cornus-kousa-schmetterling.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:09 | ca0c2e5bbc75330a | dealt |
-| `pyrus-calleryana-chanticleer.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:10 | 0b2347621b909a6c | dealt |
+| `pyrus-calleryana-chanticleer.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:10 | 0b2347621b909a6c | his original, replaced on the card by his crop |
+| `pyrus-calleryana-chanticleer-crop.jpg` | Galaxy S24 crop, 2244x2714, 2026-10-07 13:10 | d1a55ec2aef3547a | the card photo since that evening |
 
 Every photo here is byte-identical to what he sent.
 
@@ -185,3 +190,7 @@ entry passes check-plant-json, and compare-double's only hit is the known word m
 Pink Perfection dealt at his call, r379: data-audit 0 problems, plant-sense --strict "No card contradicts
 itself", photo-credits 0 unrecorded, deck-audit PASS (577 cards), audit-layout "all cards clean", fast set 9/9. The
 card was rendered at 390x844 @2x and is whole.
+
+Chanticleer re-photo, r380: data-audit 0 problems, plant-sense --strict "No card contradicts itself",
+photo-credits 0 unrecorded, deck-audit PASS (577 cards), audit-layout "all cards clean", fast set 9/9. Rendered
+before and after at 390x844 @2x, the new frame is whole.
