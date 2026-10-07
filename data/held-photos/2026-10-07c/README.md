@@ -1,4 +1,4 @@
-# 2026-10-07c — 13 GPT entries: twelve new cards fitted (nine dealt so far), one Aronia double
+# 2026-10-07c — 13 GPT entries: twelve new cards fitted (ten dealt so far), one Aronia double
 
 Oscar pasted this batch on 2026-10-07 with no text. `batch-as-sent.json` is the paste exactly as supplied
 (13 entries). `batch-corrected.json` holds the twelve new entries fitted to the card conventions. Entry 13,
@@ -11,6 +11,7 @@ comes (below).
 | # | as supplied | as it went in | why |
 |---|---|---|---|
 | 2 | Escallonia [Golden Carpet] ('Alcaura') | Escallonia GOLDEN CARPET ('Alcaura') | The trade name with its denomination, in the form of the deck's Escallonia laevis PINK ELLE ('Lades'). |
+| 8 | Prunus 'Ichiyo' | Prunus 'Pink Champagne' | The label name, which became known on the evening of 2026-10-07 (see Drop 3, #7). The RHS lists 'Pink Champagne' as a synonym of the accepted 'Ichiyo' (rhs.org.uk/plants/90553), and that goes to cvs, as with Sedum 'Tricolor'. |
 | 10 | toxicity "… seeds contain toxins and should be removed" | "… seeds are toxic and should be removed" | "toxins" matches no word on the card's safety ladder, so the plaque would fall to the default "Handle with care". Reworded, it prints "Toxic", as Malus 'Evereste' does. ('John Downie' and 'Veitch's Scarlet' carry no safety line.) |
 
 Applied across the twelve:
@@ -23,9 +24,8 @@ Applied across the twelve:
   good light", Magnolia's "very exposed sites", and "severe" before the Cornus's young-plant drought.
 
 Everything else is as supplied. That includes hardiness (already H4 / H6), hardinessNote, the prose and these:
-- **#8 Prunus 'Ichiyo'**, common name "Pink Champagne Cherry". GPT's cvs line says 'Pink Champagne' is a synonym
-  of 'Ichiyo'. [Unverified] The label wording is not known here. The label name is the card name, so the
-  latin may change when the label photo comes.
+- **#8**, common name "Pink Champagne Cherry". It went in as GPT's Prunus 'Ichiyo' while the label wording was
+  unknown, and was renamed to the label's 'Pink Champagne' once that was known (table above).
 - **#4 Prunus sargentii:** GPT read "CLT" in its input as container notation. Its note stays in `uncertain`.
 - **#5 Malus baccata 'Braendkjaer':** GPT notes the RHS lists the name as unresolved and the dimensions as
   poorly documented. Its note stays in `uncertain`.
@@ -98,8 +98,15 @@ with no C2PA, JUMBF, content-credential or AI-generation markers.
   entry (rhs.org.uk/plants/44879) gives "some orange tints in autumn". Nursery copy goes redder: Hillier gives
   "rich shades of orange-red", and Orange Pippin lists "Orange / Red". The colour is redder than the RHS and
   within the nursery descriptions. No autumn leaf can tell 'Pink Perfection' from other Japanese cherries, such
-  as the deck's 'Kanzan'. Not sure, so paused. What the second tag said, or the spring flowers (double, light
-  pink, in drooping clusters), would settle it.
+  as the deck's 'Kanzan'. Not sure, so paused.
+  - **The second tag** (Oscar, that evening): "Second tag was prunus pink champagn, think it was my garden
+    centres lable tho so its way more likley to have come second but could be wrong". The tree carries two
+    tags naming two different cultivars, and both are cards in this batch: #7 'Pink Perfection' and #8
+    'Pink Champagne' (RHS: a synonym of 'Ichiyo'). The RHS keeps them as separate plants (plants/44879 and
+    plants/90553), so the two tags cannot both be right for this tree. The RHS gives no autumn colour for
+    'Ichiyo', and nursery copy says orange-red (Coolings), so the leaf cannot choose between them either.
+    Still held. The photo was renamed `prunus-two-tags-pink-perfection-or-pink-champagne.jpg`, so its name
+    no longer claims one cultivar. A tree carrying only one of the two tags would settle each card.
 
 The deck goes from 560 to 563 at r373.
 
@@ -116,8 +123,15 @@ AI-generation markers. They were not named, so each was matched to the only card
   window, so it is left as shot, as with the Astrantia label.
 - **#11 Cornus kousa 'Schmetterling'**: broad oval leaves with curved veins, turning red-orange over green.
 
-The deck goes from 563 to 566 at r374. Pink Perfection's photo is held here, and two wait for photos: 'Ichiyo'
-and Pyrus 'Chanticleer'.
+The deck goes from 563 to 566 at r374.
+
+**Drop 5**, 2026-10-07: "Pryus chantcleer", one photo, Galaxy S24, taken 13:10, with no C2PA, JUMBF,
+content-credential or AI-generation markers.
+- **#12 Pyrus calleryana 'Chanticleer'** was dealt with it: glossy leaves on pink-red stalks, turning red and
+  orange over green, with water droplets.
+
+The deck goes from 570 to 571 at r376. The 2026-10-07b named photos took it from 566 to 570 at r375. The two-tag
+cherry photo is held here, and #8 'Pink Champagne' waits for a photo of its own.
 
 | file | camera, size, taken | sha256 (first 16) | |
 |---|---|---|---|
@@ -130,10 +144,11 @@ and Pyrus 'Chanticleer'.
 | `malus-baccata-braendkjaer.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | 4bc00c7180e95b9a | dealt, card photo |
 | `malus-baccata-braendkjaer-fruit.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | e755d006aa737f2d | dealt, flash frame |
 | `prunus-amanogawa.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | c1c57b1f6e7da76b | dealt after the crop above |
-| `prunus-pink-perfection.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | fe190b1ece5c6bf6 | held, foliage check unsure |
+| `prunus-two-tags-pink-perfection-or-pink-champagne.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | fe190b1ece5c6bf6 | held: two tags, two cultivars |
 | `liquidambar-styraciflua-worplesdon.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:07 | 1cb1c65e056f5231 | dealt |
 | `malus-atrosanguinea-gorgeous.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:08 | fde0835b0675a1d7 | dealt |
 | `cornus-kousa-schmetterling.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:09 | ca0c2e5bbc75330a | dealt |
+| `pyrus-calleryana-chanticleer.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:10 | 0b2347621b909a6c | dealt |
 
 Every photo here is byte-identical to what he sent.
 
@@ -159,3 +174,8 @@ Drop 4 dealt, r374: data-audit 0 problems, plant-sense --strict "No card contrad
 0 unrecorded, deck-audit PASS (566 cards), audit-layout "all cards clean", fast set 9/9. All three cards were
 rendered at 390x844 @2x and are whole. The Gorgeous card carries the front hazard flag, so the reworded
 toxicity line reads as Toxic.
+
+Drop 5 dealt, r376: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
+0 unrecorded, deck-audit PASS (571 cards), audit-layout "all cards clean", fast set 9/9. The card was rendered
+at 390x844 @2x and is whole. Its bloom strip shows the split-peak span (Mar–Nov) described above. #8's renamed
+entry passes check-plant-json, and compare-double's only hit is the known word match on Heuchera CHAMPAGNE.

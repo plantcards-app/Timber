@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Chanticleer dealt, deck 570 -> 571, r376; the two-tag cherry stays held; #8 renamed to the label's
+  'Pink Champagne'**) — Oscar: the Pink Perfection tree's second tag reads "prunus pink champagn", probably his
+  centre's label and probably added second. The RHS keeps 'Pink Perfection' (plants/44879) and 'Ichiyo' (plants/90553,
+  syn. 'Pink Champagne') as separate cultivars, so one tag is wrong, and autumn leaves cannot tell them apart. The
+  photo is held, renamed so it claims neither. #8 (fitted, not dealt) now reads Prunus 'Pink Champagne' by the
+  label rule, with RHS 'Ichiyo' in cvs; it still passes check-plant-json. The gate on 4db4d0f was stopped mid-run
+  so files could change, and runs on this head instead. Deck audit PASS, audit-layout clean, fast 9/9. Not live
+  until merged.
 progress: 2026-10-07 (**Oscar named the nine held photos; four dealt, one flash, four held; deck 566 -> 570, r375**) —
   e Tiarella 'Pink Skyrocket', f Heuchera FOREVER PURPLE, g 'Cinnabar Silver' and h × Heucherella 'Golden Zebra'
   were dealt from the 2026-10-07b JSON. b ("Chlorophytum 'Variegatum'") became a flash frame on the dealt spider
