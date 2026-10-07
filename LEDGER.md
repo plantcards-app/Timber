@@ -31,6 +31,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**a 30-line label-name list checked against the deck: 15 named and new, 14 set aside for no full name**) —
+  Oscar pasted 30 bench-label names (OCR-style typos) with no instruction, then "Any without full names ignore but
+  let me know". None is already a card ('Solar Eclipse' is the deck's only Heucherella; unnamed, so unknowable).
+  Named and new, spellings read from the typos ([Inference]): Dianthus 'Hardy Rose', 'Hardy Violet', 'Hardy Violet
+  Picotee'; Vinca 'Ralph Shugert', 'Colada'; Pilea 'Greyzy'; Peperomia obtusifolia 'Obtipan Bicolor'; Heuchera
+  'Fire Chief'; Hebe 'Petita Red' (listed twice, once with "Addenda"); Epipremnum pinnatum 'Golden Pothos'; Dracaena
+  reflexa 'Song of India'; Chlorophytum 'Variegatum'; Asplenium 'Parvati'; Codiaeum variegatum 'Petra'; Ficus
+  benjamina 'Twilight'. Set aside: Chrysanthemum Pink, Aglaonema, Sedum Fantasticfoliage, Sedum, Heucherella,
+  Heuchera x3, Tiarella Fantasticfoliage, Heucherella Fantasticfoliage, Alocasia Abud, Ceropegia, "Planten gree",
+  "Tant". Nothing dealt or written to the deck; the named 15 wait on GPT JSON (PLANT-BRIEF.md) and photos.
 progress: 2026-10-07 (**gate 18/18 on 52e847d, r368**) — the full sequential gate (app-test 272s, edge-test 287s,
   audit-layout and the rest green) came back green on the head carrying the two doubles. Nothing on the branch
   moved between the gate and this entry but the ledger. Not live until merged.
