@@ -31,6 +31,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**multi-select filters: every chip pressed narrows the deck; r383. Also: gate 18/18 on befbf1d, the
+  two-season fix**) — Oscar: "select multiple filters ... drought tolerant ... then shade loving ... narrows it down to
+  plants that will manage both ... even picking a month within the seasons". The single `activeFilter` became
+  `activeFilters` (AND across every chip on). activeFilter stays as the null-or-joined answer the rest of the app asks,
+  so persistence, review, deck-exhaustion and goToCard are untouched. A child stands in for its parent, a parent over
+  its own children broadens back to it, and switching off the last child steps back to its season, as before. Every
+  count is what pressing that chip next would give; a chip that would empty the deck is disabled. The menu stays open
+  while chips are pressed, and a bar under them reads "Show N plants" / "Clear filters". features-test rewrites the
+  single-filter checks to the new rules and adds nine (98/98). Rendered at 390x844 on his flow: drought 141, + shade
+  25, + spring 20, -> March 11, Show -> an 11-card deck, no page errors. Fast 9/9. Not live until merged.
 progress: 2026-10-07 (**two-season fix in: parseMonths reads each run of a split peak; r382**) — Oscar: "all of that sounds
   perfect" after the explanation. parseMonths (timber.html, mirrored in tools/check-plant-json.js) now splits a peak on
   / , & ; "and", the split plant-sense's monthsOf already used, and reads each run first-to-last with the Oct-Feb
