@@ -31,6 +31,13 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Sedum 'Variegatum' confirmed; Pink Champagne parked; the undealt list**) — "It is verigatumn" (no
+  change). "Shelf pink champagne": #8 parked, with its fitted entry kept in the 2026-10-07c batch file. Every pasted
+  batch is stored and fitted. Undealt for want of a photo (14): ten 2026-10-07b entries (Dianthus Hardy Rose /
+  Violet / Violet Picotee, Vinca 'Ralph Shugert' and 'Colada', Pilea 'Greyzy', Peperomia 'Obtipan Bicolor',
+  Asplenium 'Parvati', Codiaeum 'Petra', Ficus 'Twilight'), Pink Champagne, LITTLE LIME (paused, photo doubt),
+  the 2026-10-05 variegated lavender (parked), and Berrybank Dome (folded into Gentiana sino-ornata; a rename is
+  his call). Plus 75 older cards on the app's hold list. Oscar asked for the two-season fix to be explained again.
 progress: 2026-10-07 (**Sedum lineare: the label says only "Sedum lineare"; the plant is the white-edged 'Variegatum'; card
   unchanged**) — Oscar asked for an image comparison and a definitive answer. Commons and rhs.org.uk are blocked
   here (403), so it rests on the RHS description of 'Variegatum' ("bright green, edged in white", via search),

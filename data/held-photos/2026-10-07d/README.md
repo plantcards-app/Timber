@@ -56,6 +56,7 @@ The deck goes from 572 to 576 at r378.
   - His photo: every leaf in frame has a green centre and a distinct cream-white margin, on pink stems.
   [Inference] By the label's species and that margin, it is Sedum lineare 'Variegatum', so the card is unchanged.
   The identification relies on the label's species being right.
+  **Confirmed by Oscar:** "It is verigatumn".
 - **Sugar and Spice is H7,** while the deck's Tiarella 'Pink Skyrocket' (2026-10-07b JSON) is H6. Both are as supplied.
 
 ## The stonecrop on plant-sense's KNOWN list

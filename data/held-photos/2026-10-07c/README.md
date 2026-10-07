@@ -137,7 +137,8 @@ content-credential or AI-generation markers.
   (1200x1451), so the red leaf fills the window above the stats plaque. The uncropped original stays here.
 
 The deck goes from 570 to 571 at r376. The 2026-10-07b named photos took it from 566 to 570 at r375. #8 'Pink
-Champagne' waits for a photo of its own.
+Champagne' is parked at his word ("Shelf pink champagne"). Its fitted entry stays in `batch-corrected.json`, to be
+dealt if a photo comes.
 
 | file | camera, size, taken | sha256 (first 16) | |
 |---|---|---|---|
