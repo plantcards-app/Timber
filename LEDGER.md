@@ -31,6 +31,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**two doubles: Chile Lantern Tree close lanterns, Charles Lamont autumn leaves with flowers; r368**) —
+  "Double for the chilian lantern plant check i got the common name right latin begins with c" and "Double for
+  viburnum Charles lamiont": add-swap `--as lanterns` on Crinodendron hookerianum and `--as autumn` on
+  Viburnum × bodnantense 'Charles Lamont'. Common-name check against the RHS page (plants/4790): "Chile lantern
+  tree", which is what the card already says. The Viburnum photo has a blurred hand at the left, mostly out of
+  the card window; left as shot and raised with Oscar (the BIG & EASY PURPLE precedent). Its flower cluster sits
+  behind the title, which the near-square frame cannot avoid. No card text changed, no AI or C2PA markers,
+  originals byte-identical with a README under `data/held-photos/2026-10-07/`. Rendered at phone size, frames
+  frozen: both whole. Deck audit PASS, audit-layout clean, fast 9/9, restamp r368. Not live until merged.
 progress: 2026-10-06, late (**PR #57 opened and merged on Oscar's "Push"; deck 550 live at r367**) — PR #57 from
   `ccr-cd5f214b-6ow2oi` was opened while the full gate ran on its head, and merged at 23:49 UTC once that gate
   came back 18/18 on 46acc12 (app-test 273s, edge-test 287s, the rest green). Merge commit bba61e4, tree identical

@@ -1744,6 +1744,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "crinodendron-hookerianum-lanterns.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Chile Lantern Tree card (PHOTO_SWAP alt): Oscar's 2026-10-07 double, his 2026-09-26 shot: three crimson lanterns close up, water droplets on the petals, hanging over the pot. The card photo is his whole shrub hung with lanterns.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "crinodendron-hookerianum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -5989,6 +5999,16 @@
    "file": "veronicastrum-red-arrows.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. C2PA manifest present (claim generator Galaxy S24 c2pa-rs/0.62.0, c2pa.ingredient.v2, source title 20260829_113205(1).jpg); camera EXIF absent and frame 2948×3852, i.e. an edited export; visible 'AI-generated content' label lower left, kept outside the card window by PHOTO_FOCUS 50% 0%. See VERIFY-QUEUE 32 and 67.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "viburnum-bodnantense-charles-lamont-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Charles Lamont Bodnant Viburnum card (PHOTO_SWAP alt): Oscar's 2026-10-07 double, his 2026-09-26 shot: a pink flower cluster with buds over leaves turned red, orange and bronze, the shoot held up in sun by a hand that shows blurred at the left. The card photo is his tighter crop of the flowering shoot.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
