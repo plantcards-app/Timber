@@ -1,4 +1,4 @@
-# 2026-10-07c — 13 GPT entries: twelve new cards fitted (two dealt so far), one Aronia double
+# 2026-10-07c — 13 GPT entries: twelve new cards fitted (three dealt so far), one Aronia double
 
 Oscar pasted this batch on 2026-10-07 with no text. `batch-as-sent.json` is the paste exactly as supplied
 (13 entries). `batch-corrected.json` holds the twelve new entries fitted to the card conventions. Entry 13,
@@ -60,13 +60,29 @@ AI-generation markers found none in any of them.
   (`--as flowers`). The camera timestamps show the flower photo was taken first (13:40:57, then 13:41:09). The
   order he sent them decided it, as with Hebe Petita Red.
 
-The deck goes from 557 to 559 at r371. The other ten wait for photos.
+The deck goes from 557 to 559 at r371.
+
+**Drop 2**, 2026-10-07: "Mag lil gem flash between". Two photos, both Galaxy S24, taken that day at 13:00:37
+and 13:01:16. Neither has C2PA, JUMBF, content-credential or AI-generation markers.
+- **#3 Magnolia grandiflora 'Little Gem'** was dealt with both, in the order he sent them. His first photo
+  is the card photo: an open white flower with cream stamens tipped pink, over glossy dark green leaves with
+  water droplets. The second is the flash frame (`--as buds`): a half-open flower with browned outer petals,
+  two cream buds marked brown, and leaves, some showing rusty-brown undersides.
+- The card photo is 3000x2776, slightly wider than tall, where the camera writes 4000x3000. [Inference] He
+  cropped it on the phone before sending. The card shows the middle of the frame. The flower and its stamens
+  fill the window, and the outer petal tips fall outside it.
+- A white shape at the foot of the card photo is a blurred pot rim with compost, not a label. The flash
+  frame shows a wire bench and pots, blurred, at the right. Neither shows a person, finger or label.
+
+The deck goes from 559 to 560 at r372. The other nine wait for photos.
 
 | file | camera, size, taken | sha256 (first 16) | |
 |---|---|---|---|
 | `escallonia-golden-carpet-alcaura.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:15 | a0d3b4e207303f90 | dealt |
 | `penstemon-volcano-fujiyama.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:41 | 67563391857bf419 | dealt, card photo |
 | `penstemon-volcano-fujiyama-flowers.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:40 | 9208305e0eb591a5 | dealt, flash frame |
+| `magnolia-grandiflora-little-gem.jpg` | Galaxy S24, 3000x2776, 2026-10-07 13:01 | aeaaa6e3fb76851f | dealt, card photo |
+| `magnolia-grandiflora-little-gem-buds.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:00 | 75077bbc79545d27 | dealt, flash frame |
 
 Every file here is byte-identical to what he sent.
 
@@ -78,3 +94,7 @@ PASS (557 cards), audit-layout "all cards clean", fast set 9/9. Full gate 18/18.
 Drop 1 dealt, r371: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
 0 unrecorded, deck-audit PASS (559 cards), audit-layout "all cards clean", fast set 9/9. Both cards were
 rendered at 390x844 @2x and are whole. The Penstemon was shot in both frames.
+
+Drop 2 dealt, r372: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
+0 unrecorded, deck-audit PASS (560 cards), audit-layout "all cards clean", fast set 9/9. The Magnolia was
+rendered at 390x844 @2x in both frames, and both are whole.

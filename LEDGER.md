@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Magnolia 'Little Gem' dealt with a buds flash frame; deck 559 -> 560, r372**) — "Mag lil gem flash
+  between": two Galaxy S24 photos taken at 13:00 and 13:01, no AI or C2PA markers, byte-identical under
+  `data/held-photos/2026-10-07c/`. In the order sent, the open flower is the card photo and the half-open flower
+  with buds is the flash frame (`--as buds`). The card photo is 3000x2776, [Inference] cropped on his phone. The
+  card shows its middle, where the flower and stamens fill the window. A white shape at its foot is a pot rim,
+  not a label. The gate on eb87774 was stopped mid-run so files could change, and runs on this head instead.
+  Deck audit PASS, audit-layout clean, fast 9/9, both frames rendered whole. Next photos asked, in batch order:
+  Prunus sargentii, Malus 'Braendkjaer', Prunus 'Amanogawa', 'Pink Perfection'. Not live until merged.
 progress: 2026-10-07 (**Escallonia GOLDEN CARPET and Penstemon 'Volcano Fujiyama' dealt; deck 557 -> 559, r371**) —
   "Escolinia and 2 flash berweens for penstomn": three Galaxy S24 photos taken that afternoon, no AI or C2PA
   markers, byte-identical under `data/held-photos/2026-10-07c/`. Escallonia dealt with his first photo. The
