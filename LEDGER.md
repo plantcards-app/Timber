@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on b0b6ecd, r374**) — the full sequential gate is green on the 566-card head (app-test
+  286s, edge-test 298s, perf-test 22s). Nothing on the branch moved between the gate and this entry but the ledger.
+  Worplesdon, Gorgeous and Schmetterling are gated, not live until merged.
 progress: 2026-10-07 (**Worplesdon, Gorgeous and Schmetterling dealt; deck 563 -> 566, r374; the nine held photos sent to
   Oscar lettered a–i; a before/after of the split-peak fix sent**) — "I sent two photos of that malus, to be flash
   betweens" confirms the Braendkjaer pair (no change). His three new photos were unnamed, each the only card of its
