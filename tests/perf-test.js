@@ -36,16 +36,40 @@ const check = (name, ok, detail = '') => {
   const page = await ctx.newPage();
   const pageErrors = [];
   page.on('pageerror', (e) => pageErrors.push(e.message));
-  let photoReqs = 0;
-  page.on('request', (r) => { if (r.url().includes('/photos/')) photoReqs++; });
+  const photoReqs = [];   /* the path of every /photos/ request, in order */
+  page.on('request', (r) => { if (r.url().includes('/photos/')) photoReqs.push(r.url().replace(/^[a-z]+:\/\/[^/]+/i, '').replace(/[?#].*$/, '')); });
   await page.goto(URL);
   await page.waitForTimeout(1200);
   await deckSettled(page);
 
   const total = await page.evaluate(() => document.querySelectorAll('.deck .card').length);
 
-  /* ---- 0. photo fetching is windowed, not a load-time stampede ---- */
-  check(`photo fetching stays windowed at load (${photoReqs} requests, not ${total})`, photoReqs <= 12, `${photoReqs} > 12`);
+  /* ---- 0. photo fetching is windowed, not a load-time stampede ----
+     COUNT THE WINDOW'S IMAGES, NOT A FLAT 12. markHot fetches every .tphoto img of the
+     top FETCH_DEPTH cards, a PHOTO_SWAP card's alt frames included, and on purpose: r79
+     cut the alt off and every two-photo card blinked to black. The flat 12 was the ten
+     cards plus room for two swap frames, so it failed a deck behaving exactly as
+     designed the day a third swap card was dealt into the newest ten (2026-10-07: Hebe
+     Petita Red, Penstemon 'Volcano Fujiyama' and Magnolia 'Little Gem' made 10 photos
+     + 3 alts = 13 requests, one per image). Section 2 fell into the same proxy trap with
+     Cedrus in August. The ceiling is now what the window itself holds, and every request
+     must be one of those images, so a fetch for any deeper card (the stampede this
+     guards against) fails however few there are. tricklePhotos starts at 9s, long after this. */
+  const FETCH_DEPTH = await page.evaluate(() => FETCH_DEPTH);
+  const atLoad = photoReqs.slice();   /* the listener keeps recording through the swipes below */
+  const windowImgs = await page.evaluate((n) => {
+    const path = (u) => new URL(u, location.href).pathname;
+    return [...document.querySelectorAll('.deck .card:not([data-gone])')].slice(-n).flatMap(c => [
+      ...[...c.querySelectorAll('.tphoto img')].map(i => path(i.getAttribute('src') || i.dataset.psrc)),
+      /* a mirrored edition repeats its photo as a CSS url() */
+      ...[...c.querySelectorAll('[style*="url("]')].flatMap(el =>
+        [...el.getAttribute('style').matchAll(/url\(["']?([^"')]+)/g)].map(m => path(m[1]))),
+    ]).filter(p => p.includes('/photos/'));
+  }, FETCH_DEPTH);
+  const stray = atLoad.filter(p => !windowImgs.includes(p));
+  check(`photo fetching stays windowed at load (${atLoad.length} requests for the top ${FETCH_DEPTH} cards' ${windowImgs.length} images, not ${total})`,
+    stray.length === 0 && atLoad.length <= windowImgs.length,
+    stray.length ? `${stray.length} fetched outside the window: ${stray.slice(0, 3).join(', ')}` : `${atLoad.length} > ${windowImgs.length}`);
 
   /* ---- 1. compositing layers ---- */
   const layers = await page.evaluate(() =>

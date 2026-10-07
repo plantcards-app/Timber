@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 17/18 on 6d79d43: perf-test's flat photo budget broke; the test now counts the window**) —
+  "photo fetching stays windowed at load" allowed 12 requests: the ten newest cards plus room for two flash
+  frames. Penstemon and Magnolia made three flash cards among the newest ten (with Hebe Petita Red), so 10
+  photos + 3 alts = 13, one request per image and nothing deeper. The app was behaving as designed: markHot
+  fetches alts on purpose (r79). The fix is in the test, as section 2 did for Cedrus in August. The ceiling is
+  the top FETCH_DEPTH cards' own images, and every load request must be one of them. Proved both ways: PASS
+  on this head (13 for 13), and FAIL on a copy with one injected fetch of a buried card's photo, which the old
+  flat 12 would have let through. Not a skip: the guard is stricter.
 progress: 2026-10-07 (**Magnolia 'Little Gem' dealt with a buds flash frame; deck 559 -> 560, r372**) — "Mag lil gem flash
   between": two Galaxy S24 photos taken at 13:00 and 13:01, no AI or C2PA markers, byte-identical under
   `data/held-photos/2026-10-07c/`. In the order sent, the open flower is the card photo and the half-open flower
