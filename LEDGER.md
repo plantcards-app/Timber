@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on 55349fa, r373**) — the full sequential gate is green on the 563-card head (app-test
+  287s, edge-test 296s, perf-test 22s with three swap cards in the newest ten). Nothing on the branch moved between the
+  gate and this entry but the ledger. Open with Oscar: his "Double malus" came with no photo. Either it confirms the
+  crab apple pair (already a flash) or the photo did not attach; asked which, and Braendkjaer or Gorgeous.
 progress: 2026-10-07 (**Sargent's cherry, Braendkjaer crab apple and Amanogawa dealt; Pink Perfection paused; deck 560 -> 563,
   r373**) — five photos, only the last named ("Prunus pink perfection last photo… if not sure pause"). The first four
   were matched to the names asked, in order ([Inference]: cherry in autumn leaf, two crab apple shots 6 s apart,
