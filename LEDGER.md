@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on 1faea4c, r370**) — the full sequential gate (app-test 283s, edge-test 292s,
+  audit-layout and the rest green) came back green on the 13-entry batch commit. Nothing on the branch moved between the
+  gate and this entry but the ledger. Not live until merged.
 progress: 2026-10-07 (**13-entry GPT batch stored and fitted: twelve new cards wait on photos; the Aronia double takes
   foliage only; r370**) — pasted with no text, stored verbatim under `data/held-photos/2026-10-07c/`. Twelve new:
   Penstemon 'Volcano Fujiyama', Escallonia GOLDEN CARPET ('Alcaura') (the PINK ELLE form), Magnolia 'Little Gem',
