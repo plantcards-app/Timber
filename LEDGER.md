@@ -13,7 +13,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   days before production), and which listing sections are still red. So the brick: **Oscar opens Play
   Console → Testing → Closed testing and sends one screenshot of the tester count and the production-access
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
-  to-do when he says go: `play/LISTING.md` still says "430+ plants" (550 live). Parked, not dropped, at his
+  to-do when he says go: `play/LISTING.md` still says "430+ plants" (550 live, 557 on the branch). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
   `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
@@ -31,6 +31,18 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**the 22-name batch stored and fitted; seven cards dealt from three photo drops; deck 550 -> 557, r369**) —
+  GPT's 22-entry JSON for the label list, stored verbatim and fitted under `data/held-photos/2026-10-07b/`. Label
+  names were kept: Dianthus Hardy Rose/Violet/Violet Picotee in place of "Dianthus spp.", Sedum spurium
+  'Tricolor', Hebe Petita Red, Epipremnum pinnatum 'Golden Pothos', Codiaeum variegatum 'Petra'. Heuchera
+  CHAMPAGNE ('Tnheucha') and FOREVER PURPLE ('Tnheufp') take the CRANBERRY form. All 22 PASS check-plant-json, no
+  doubles. Dealt, matched by eye or named: Hebe Petita Red (his two named photos; the first Hebe shot dropped
+  uncommitted at his word; the second is a flash frame), Golden Pothos, Alocasia zebrina, Variegated Spider Plant,
+  Heuchera 'Fire Chief', CHAMPAGNE, Sedum 'Tricolor'. Nine photos held unmatched, waiting on his names: a coral
+  Heuchera, a white-centred spider plant, a variegated string of hearts, and six from the third drop.
+  [Unverified] doubts noted: Pothos photo solid lime, Fire Chief coral not red, Champagne not silvery. Deck audit
+  PASS, audit-layout clean, fast 9/9, restamp r369. Not live until merged. The Chile Lantern Tree
+  and Charles Lamont frames (r368) also wait on the next PR.
 progress: 2026-10-07 (**two more label names: Sedum spurium 'Tricolor', × Heucherella 'Golden Zebra'; 22 named and new**) —
   "Sedumspurium tricolorHeucherellagolden zebra", neither in the deck or the hold. Each names one of a pair of
   set-aside lines (Sedum / Sedum Fantasticfoliage; Heucherella / Heucherella Fantasticfoliage). Whether the other

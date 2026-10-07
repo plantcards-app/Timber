@@ -471,6 +471,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "alocasia-zebrina.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "aloe-vera.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright; reframed by tools/reframe-photo.js from coordinates, no pixels generated. EXIF Samsung Galaxy S24, orientation 6 (displays portrait); no C2PA manifest in the file and no AI or generative marker",
@@ -1273,6 +1283,16 @@
   },
   {
    "file": "chimonanthus-praecox.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "chlorophytum-comosum-variegatum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -2174,6 +2194,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "epipremnum-pinnatum-golden-pothos.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "erica-darleyensis-f-aureifolia-eva-gold.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -2794,6 +2824,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "hebe-petita-red-spikes.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Hebe Addenda Petita Red card (PHOTO_SWAP alt): Oscar's 2026-10-07 second photo: flower spikes in bud and bloom over grey-green leaves, some spent flowers and black specks on the leaves as shot. The card photo is his other 2026-10-07 shot of the flowering spikes; both replace his first shot of the day, which he dropped before it was published.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "hebe-petita-red.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "hedera-helix-glacier.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -2904,7 +2954,27 @@
    "commercialUseCleared": true
   },
   {
+   "file": "heuchera-champagne-tnheucha.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "heuchera-cranberry-ifhepr.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-fire-chief.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -5567,6 +5637,16 @@
   },
   {
    "file": "schisandra-sphenanthera.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sedum-spurium-tricolor.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
