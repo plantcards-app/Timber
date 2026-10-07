@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Pink Perfection dealt at Oscar's call; deck 576 -> 577, r379**) — "I think its probably pink
+  perfection": the two-tag cherry photo is dealt as #7 Prunus 'Pink Perfection'. [Unverified] The tree's second tag
+  (his centre's label) reads Pink Champagne. #8 'Pink Champagne' waits for its own photo. Deck audit PASS,
+  audit-layout clean, fast 9/9, render whole. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on 4625ed5, r378**) — the full sequential gate is green on the 576-card head (app-test
   289s, edge-test 301s, perf-test 21s). Nothing on the branch moved between the gate and this entry but the ledger.
   Live is still 550. Waiting on Oscar's "push": everything since PR #57.

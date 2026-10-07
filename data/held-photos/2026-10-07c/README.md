@@ -1,4 +1,4 @@
-# 2026-10-07c — 13 GPT entries: twelve new cards fitted (ten dealt so far), one Aronia double
+# 2026-10-07c — 13 GPT entries: twelve new cards fitted (eleven dealt so far), one Aronia double
 
 Oscar pasted this batch on 2026-10-07 with no text. `batch-as-sent.json` is the paste exactly as supplied
 (13 entries). `batch-corrected.json` holds the twelve new entries fitted to the card conventions. Entry 13,
@@ -105,8 +105,10 @@ with no C2PA, JUMBF, content-credential or AI-generation markers.
     'Pink Champagne' (RHS: a synonym of 'Ichiyo'). The RHS keeps them as separate plants (plants/44879 and
     plants/90553), so the two tags cannot both be right for this tree. The RHS gives no autumn colour for
     'Ichiyo', and nursery copy says orange-red (Coolings), so the leaf cannot choose between them either.
-    Still held. The photo was renamed `prunus-two-tags-pink-perfection-or-pink-champagne.jpg`, so its name
-    no longer claims one cultivar. A tree carrying only one of the two tags would settle each card.
+    It was held, and renamed so its name claimed neither cultivar.
+  - **His call:** "I think its probably pink perfection". It is dealt as #7 Prunus 'Pink Perfection' (r379), and
+    the photo takes the card's slug name again. [Unverified] The tree's second tag reads Pink Champagne. #8 waits
+    for a photo of its own.
 
 The deck goes from 560 to 563 at r373.
 
@@ -130,8 +132,8 @@ content-credential or AI-generation markers.
 - **#12 Pyrus calleryana 'Chanticleer'** was dealt with it: glossy leaves on pink-red stalks, turning red and
   orange over green, with water droplets.
 
-The deck goes from 570 to 571 at r376. The 2026-10-07b named photos took it from 566 to 570 at r375. The two-tag
-cherry photo is held here, and #8 'Pink Champagne' waits for a photo of its own.
+The deck goes from 570 to 571 at r376. The 2026-10-07b named photos took it from 566 to 570 at r375. #8 'Pink
+Champagne' waits for a photo of its own.
 
 | file | camera, size, taken | sha256 (first 16) | |
 |---|---|---|---|
@@ -144,7 +146,7 @@ cherry photo is held here, and #8 'Pink Champagne' waits for a photo of its own.
 | `malus-baccata-braendkjaer.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | 4bc00c7180e95b9a | dealt, card photo |
 | `malus-baccata-braendkjaer-fruit.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | e755d006aa737f2d | dealt, flash frame |
 | `prunus-amanogawa.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | c1c57b1f6e7da76b | dealt after the crop above |
-| `prunus-two-tags-pink-perfection-or-pink-champagne.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | fe190b1ece5c6bf6 | held: two tags, two cultivars |
+| `prunus-pink-perfection.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | fe190b1ece5c6bf6 | dealt at his call; the tree has two tags |
 | `liquidambar-styraciflua-worplesdon.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:07 | 1cb1c65e056f5231 | dealt |
 | `malus-atrosanguinea-gorgeous.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:08 | fde0835b0675a1d7 | dealt |
 | `cornus-kousa-schmetterling.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:09 | ca0c2e5bbc75330a | dealt |
@@ -179,3 +181,7 @@ Drop 5 dealt, r376: data-audit 0 problems, plant-sense --strict "No card contrad
 0 unrecorded, deck-audit PASS (571 cards), audit-layout "all cards clean", fast set 9/9. The card was rendered
 at 390x844 @2x and is whole. Its bloom strip shows the split-peak span (Mar–Nov) described above. #8's renamed
 entry passes check-plant-json, and compare-double's only hit is the known word match on Heuchera CHAMPAGNE.
+
+Pink Perfection dealt at his call, r379: data-audit 0 problems, plant-sense --strict "No card contradicts
+itself", photo-credits 0 unrecorded, deck-audit PASS (577 cards), audit-layout "all cards clean", fast set 9/9. The
+card was rendered at 390x844 @2x and is whole.
