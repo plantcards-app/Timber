@@ -31,6 +31,17 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**13-entry GPT batch stored and fitted: twelve new cards wait on photos; the Aronia double takes
+  foliage only; r370**) — pasted with no text, stored verbatim under `data/held-photos/2026-10-07c/`. Twelve new:
+  Penstemon 'Volcano Fujiyama', Escallonia GOLDEN CARPET ('Alcaura') (the PINK ELLE form), Magnolia 'Little Gem',
+  Prunus sargentii, Malus baccata 'Braendkjaer', Prunus 'Amanogawa', 'Pink Perfection', 'Ichiyo' (common "Pink
+  Champagne Cherry"; label wording [Unverified]), Liquidambar 'Worplesdon', Malus 'Gorgeous' (toxicity reworded
+  "contain toxins" → "are toxic" so it prints Toxic like 'Evereste', not the default Handle with care), Cornus kousa
+  'Schmetterling', Pyrus 'Chanticleer'. All twelve PASS check-plant-json, no doubles. Five carry split peaks
+  ("Apr-May / Oct-Nov"), kept as supplied; [Inference from parseMonths] they show as one continuous span and miss
+  "★ Peaks here", as Clematis 'Nelly Moser' already does. #13 Aronia melanocarpa doubles the dealt Black
+  Chokeberry: foliage blank → "deciduous"; peak, size, ratings and prose kept by the double rules. Deck audit PASS,
+  audit-layout clean, fast 9/9. Photos asked for four at a time in batch order. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on d03e4f8, r369**) — the full sequential gate (app-test 283s, edge-test 294s,
   audit-layout and the rest green) came back green on the 557-card head. Nothing on the branch moved between the gate
   and this entry but the ledger. Not live until merged.
