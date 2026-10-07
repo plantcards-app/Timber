@@ -31,6 +31,13 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**label-list corrections: five set-aside names now have full names; 20 named and new**) — Oscar's
+  corrections, run together as typed: "Alocasla zebrinaHeuchera champagnetiarella pink sky rocketHeuchera forever purple
+  Heucheracinnabar silver". Read as Alocasia zebrina, Heuchera 'Champagne', Tiarella 'Pink Skyrocket', Heuchera
+  'Forever Purple', Heuchera 'Cinnabar Silver' ([Inference] from the typos). None is in the deck or the hold. They
+  replace Alocasia Abud, Tiarella Fantasticfoliage and the three plain Heuchera lines. Still set aside (9):
+  Chrysanthemum Pink, Aglaonema, Sedum Fantasticfoliage, Sedum, Heucherella, Heucherella Fantasticfoliage,
+  Ceropegia, "Planten gree", "Tant". The 20 wait on GPT JSON and photos.
 progress: 2026-10-07 (**a 30-line label-name list checked against the deck: 15 named and new, 14 set aside for no full name**) —
   Oscar pasted 30 bench-label names (OCR-style typos) with no instruction, then "Any without full names ignore but
   let me know". None is already a card ('Solar Eclipse' is the deck's only Heucherella; unnamed, so unknowable).
