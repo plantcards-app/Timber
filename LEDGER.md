@@ -31,6 +31,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**Worplesdon, Gorgeous and Schmetterling dealt; deck 563 -> 566, r374; the nine held photos sent to
+  Oscar lettered a–i; a before/after of the split-peak fix sent**) — "I sent two photos of that malus, to be flash
+  betweens" confirms the Braendkjaer pair (no change). His three new photos were unnamed, each the only card of its
+  genus left in the batch ([Inference], in the order asked). A blurred white shape at the far edge of the Gorgeous
+  photo is outside the card window and left as shot. He asked to see the nine 2026-10-07b unmatched photos to
+  name them; the letter key is in that folder's README. He asked what the "two seasons" fix is: a test-browser
+  render (repo untouched) showed Sargent's cherry lit Apr–Nov now, Apr–May + Oct–Nov with a split-aware
+  parseMonths. Waiting on his yes. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
 progress: 2026-10-07 (**gate 18/18 on 55349fa, r373**) — the full sequential gate is green on the 563-card head (app-test
   287s, edge-test 296s, perf-test 22s with three swap cards in the newest ten). Nothing on the branch moved between the
   gate and this entry but the ledger. Open with Oscar: his "Double malus" came with no photo. Either it confirms the

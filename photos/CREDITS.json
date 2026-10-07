@@ -1624,6 +1624,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "cornus-kousa-schmetterling.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "cornus-kousa.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — Samsung camera capture, scanned for C2PA/AI provenance markers on 2026-08-09: none found",
@@ -3694,6 +3704,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "liquidambar-styraciflua-worplesdon.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "liriodendron-tulipifera-snow-bird.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3931,6 +3951,16 @@
    "sourceUrl": null,
    "commit": "18506ba",
    "commitSubject": "Stage Mahonia japonica photo (bronze new growth, species confirmed)",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "malus-atrosanguinea-gorgeous.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {

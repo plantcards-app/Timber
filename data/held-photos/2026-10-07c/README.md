@@ -1,4 +1,4 @@
-# 2026-10-07c — 13 GPT entries: twelve new cards fitted (six dealt so far), one Aronia double
+# 2026-10-07c — 13 GPT entries: twelve new cards fitted (nine dealt so far), one Aronia double
 
 Oscar pasted this batch on 2026-10-07 with no text. `batch-as-sent.json` is the paste exactly as supplied
 (13 entries). `batch-corrected.json` holds the twelve new entries fitted to the card conventions. Entry 13,
@@ -101,8 +101,23 @@ with no C2PA, JUMBF, content-credential or AI-generation markers.
   as the deck's 'Kanzan'. Not sure, so paused. What the second tag said, or the spring flowers (double, light
   pink, in drooping clusters), would settle it.
 
-The deck goes from 560 to 563 at r373. Pink Perfection's photo is held here, and five wait for photos: 'Ichiyo',
-Liquidambar 'Worplesdon', Malus 'Gorgeous', Cornus 'Schmetterling' and Pyrus 'Chanticleer'.
+The deck goes from 560 to 563 at r373.
+
+**Drop 4**, 2026-10-07: three photos, with "I sent two photos of that malus, to be flash betweens or doubles as I
+sometimes call them". That confirms the Drop 3 crab apple pair is one tree, which is already a card photo plus
+flash frame. All three are Galaxy S24, taken between 13:07 and 13:10, with no C2PA, JUMBF, content-credential or
+AI-generation markers. They were not named, so each was matched to the only card of its genus left in the batch.
+[Inference] They also came in the order asked.
+- **#9 Liquidambar styraciflua 'Worplesdon'**: star-shaped leaves turning red, orange and yellow, with water
+  droplets.
+- **#10 Malus × atrosanguinea 'Gorgeous'**: orange-red crab apples flushed yellow, hanging under green leaves.
+  The fruit is not the dark crimson of the Drop 3 crab apple, so this is a different tree. A heavily blurred
+  white shape at the far top-right edge, perhaps a tag, has nothing readable on it. It sits outside the card
+  window, so it is left as shot, as with the Astrantia label.
+- **#11 Cornus kousa 'Schmetterling'**: broad oval leaves with curved veins, turning red-orange over green.
+
+The deck goes from 563 to 566 at r374. Pink Perfection's photo is held here, and two wait for photos: 'Ichiyo'
+and Pyrus 'Chanticleer'.
 
 | file | camera, size, taken | sha256 (first 16) | |
 |---|---|---|---|
@@ -116,6 +131,9 @@ Liquidambar 'Worplesdon', Malus 'Gorgeous', Cornus 'Schmetterling' and Pyrus 'Ch
 | `malus-baccata-braendkjaer-fruit.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:03 | e755d006aa737f2d | dealt, flash frame |
 | `prunus-amanogawa.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | c1c57b1f6e7da76b | dealt after the crop above |
 | `prunus-pink-perfection.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:06 | fe190b1ece5c6bf6 | held, foliage check unsure |
+| `liquidambar-styraciflua-worplesdon.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:07 | 1cb1c65e056f5231 | dealt |
+| `malus-atrosanguinea-gorgeous.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:08 | fde0835b0675a1d7 | dealt |
+| `cornus-kousa-schmetterling.jpg` | Galaxy S24, 3000x4000, 2026-10-07 13:09 | ca0c2e5bbc75330a | dealt |
 
 Every photo here is byte-identical to what he sent.
 
@@ -136,3 +154,8 @@ Drop 3 dealt, r373: data-audit 0 problems, plant-sense --strict "No card contrad
 0 unrecorded, deck-audit PASS (563 cards), audit-layout "all cards clean", fast set 9/9. All three cards and the
 crab apple's flash frame were rendered at 390x844 @2x and are whole, and the code band is out of the Amanogawa.
 The bloom strips on Sargent's cherry and the crab apple show the split-peak span (Apr–Nov) described above.
+
+Drop 4 dealt, r374: data-audit 0 problems, plant-sense --strict "No card contradicts itself", photo-credits
+0 unrecorded, deck-audit PASS (566 cards), audit-layout "all cards clean", fast set 9/9. All three cards were
+rendered at 390x844 @2x and are whole. The Gorgeous card carries the front hazard flag, so the reworded
+toxicity line reads as Toxic.

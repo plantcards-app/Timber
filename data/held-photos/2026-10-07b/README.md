@@ -54,6 +54,23 @@ Seven cards were dealt: Hebe Petita Red, Golden Pothos, Alocasia zebrina, Varieg
 - The Fire Chief photo is coral-pink. The card says "bright red … deepening to wine-red".
 - The Champagne photo is peach-cream with red veins. The card says "pink-gold … silvery veil".
 
+## Lettered for naming (2026-10-07 evening)
+
+Oscar asked to see the nine held photos so he could name them, so they went to him on one sheet lettered a–i.
+An answer by letter maps to these files:
+
+| letter | file |
+|---|---|
+| a | `unmatched-photo-1-coral-heuchera.jpg` |
+| b | `unmatched-photo-6-spider-plant-white-centre.jpg` |
+| c | `unmatched-photo-7-variegated-string-of-hearts.jpg` |
+| d | `unmatched-photo-08-lime-dark-centre-cut-leaf.jpg` |
+| e | `unmatched-photo-09-green-dark-stripe-cut-leaf.jpg` |
+| f | `unmatched-photo-10-lilac-purple-heuchera.jpg` |
+| g | `unmatched-photo-11-silver-heuchera.jpg` |
+| h | `unmatched-photo-12-yellow-edge-purple-centre.jpg` |
+| i | `unmatched-photo-14-narrow-variegated-leaves.jpg` |
+
 ## Files
 
 | file | sha256 (first 16) | |
