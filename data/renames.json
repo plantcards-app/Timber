@@ -75,7 +75,7 @@
       "to": "Red Star Cabbage Palm",
       "fromLatin": "Cordyline australis",
       "toLatin": "Cordyline australis 'Red Star'",
-      "commit": "",
+      "commit": "a84e309",
       "date": "2026-10-08",
       "why": "Same card and photo. Oscar: \"There's a cordyline australis card in the deck that is clearly a red leafed card so that should be under this json\", with his GPT JSON for 'Red Star'. The card's data was replaced by the fitted JSON (data/held-photos/2026-10-08c/) and its photo files renamed to the new slug."
     }
