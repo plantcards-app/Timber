@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-08 (**sourced fact fixes applied on Oscar's yes; r390**) — live: Sargent's cherry Mar-Apr / Sep-Oct,
+  Braendkjaer 4–6 m, Pink Skyrocket 20–30 cm, spider plant text to its centre stripe, Fiji text white-brushed-pink,
+  1–1.5 m spread, South / West, PINKY SPOT in cvs. Undealt: Dianthus ×3 toxicity, Peperomia H1b, Mandarin Tango
+  safety line and soil. Doubtful items left as sent. Fast 9/9, deck-audit PASS, layout clean, data-audit 0. Not live.
 progress: 2026-10-08 (**the red-leaved Cordyline australis card becomes 'Red Star' under Oscar's JSON, with three flash
   frames; r389**) — edited in place (deck position kept), photo files git-mv'd to the new slug, rename in
   data/renames.json, csv re-exported. Frame 2 is cropped with reframe-photo to drop his hand and five labels.

@@ -165,3 +165,19 @@ shows a central stripe, and the label says 'Variegatum'. Before dealing, the und
 fixed: Dianthus toxicity is blank, but RHS marks the genus a skin allergen and ASPCA lists pinks as toxic to
 pets. RHS gives Peperomia obtusifolia H1b, not H1a. No series or breeder was found for "Hardy Rose/Violet",
 so their H4 is unverified.
+
+### Applied (r390)
+
+Oscar: "Yes, if they seem nessusary". Only fields that a source shows to be wrong were changed. The doubtful ones
+are left as sent.
+- **Tiarella 'Pink Skyrocket'** (live): height 30–40 cm becomes 20–30 cm. RHS gives "to 20cm high in flower". The
+  patent gives flowering stalks of 27 cm, and Terra Nova 11" in flower.
+- **Chlorophytum comosum 'Variegatum'** (live): the visual now reads "a broad creamy-white central stripe", which is
+  what the photo shows. The warning "hot sun scorches margins" becomes "…scorches leaves". cvs was "'Variegatum'",
+  only its own name; it now says the label reads 'Variegatum' and that the centre-striped leaves match RHS
+  'Vittatum', since RHS 'Variegatum' has white edges. The name stays as the label has it.
+- **Dianthus Hardy Rose, Hardy Violet and Hardy Violet Picotee** (not dealt): toxicity was blank. It is now "Mildly
+  toxic to cats and dogs if eaten (ASPCA); can irritate skin, so wear gloves (RHS)". ASPCA's pinks entry gives mild
+  stomach upset and dermatitis; RHS Dianthus pages say skin allergen.
+- **Peperomia 'Obtipan Bicolor'** (not dealt): H1a becomes H1b, the rating RHS gives P. obtusifolia and its
+  cultivars. The note now reads "keep above 10°C, ideally 15°C or more".

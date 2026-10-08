@@ -61,3 +61,15 @@ blocks fetches. The disputed points were re-checked by hand. Nothing below has b
   orange then yellow. On soil, RHS lists the species for any pH.
 - **Goldfish plant:** no errors. RHS gives H1b, summer flowers and the same size bands. Its non-toxic line rests on
   NCSU, because ASPCA's "Gold-Fish Plant" is a different species.
+
+### Applied (r390)
+
+Oscar: "Yes, if they seem nessusary".
+- **Hibiscus FIJI** (live): the visual becomes "semi-double white flowers brushed pink, with a cherry-red centre;
+  petals age to light pink", after RHS ("white flowers with pink shading and central, cherry red splashes"). Spread
+  1.2–2.1 m, the US figure, becomes 1–1.5 m (RHS). Aspect becomes South / West, as RHS lists it. cvs adds "sold in
+  the UK as PINKY SPOT (RHS AGM)".
+- **Mandarin Tango** (not dealt): the safety line becomes "No known hazard; non-toxic to dogs, cats and horses
+  (ASPCA)", because ASPCA lists Potentilla spp., shrubby cinquefoil among its names, as non-toxic. The fruit is
+  tiny dry achenes, not "ornamental fruit". Soil becomes "Drained, any pH", since RHS lists the species for acid,
+  neutral and alkaline soils. The flower-colour wording is close enough to the patent and is left as sent.
