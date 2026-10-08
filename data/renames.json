@@ -69,6 +69,15 @@
       "commit": "pending",
       "date": "2026-09-15",
       "why": "MERGE of a duplicate pair, resolved by Oscar on 2026-09-15 after he went through the deck: \"the first flower tower has a shit photo, second flower tower is much better\". They were always one plant and the cards said so themselves — the dropped card's cvs read \"'Zuilb1' (registered) - sold as FLOWER TOWER\", which is the surviving card's latin. See VERIFY-QUEUE 88 for how the pair got past every audit: they did NOT share a photograph, so nothing automated saw it, and a trade name written two ways is invisible to a string comparison. The survivor is also the fuller card: water, prune, resilience and uses are all filled on it and were all blank on the one dropped. ONE thing was lost rather than merged, and is written up in item 88 rather than silently carried: the dropped card gave aspect \"East / South / West\" where the survivor says \"Any aspect\", which shows no compass bearing. Those are two different research passes disagreeing, not a typo, so picking one would be arbitration rather than a merge. The dropped card's full data is in git at 9381e53."
+    },
+    {
+      "from": "Cordyline / Cabbage palm",
+      "to": "Red Star Cabbage Palm",
+      "fromLatin": "Cordyline australis",
+      "toLatin": "Cordyline australis 'Red Star'",
+      "commit": "",
+      "date": "2026-10-08",
+      "why": "Same card and photo. Oscar: \"There's a cordyline australis card in the deck that is clearly a red leafed card so that should be under this json\", with his GPT JSON for 'Red Star'. The card's data was replaced by the fitted JSON (data/held-photos/2026-10-08c/) and its photo files renamed to the new slug."
     }
   ]
 }

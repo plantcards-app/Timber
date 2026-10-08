@@ -1256,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r388 · 2026-10-08 · d7d9822';
+const BUILD='r389 · 2026-10-08 · 2a6a535';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -12600,19 +12600,20 @@ const PLANTS = [
    uses:"Ground cover, border fronts, rose underplanting, cottage gardens, containers.", size:"30–40 cm H × 40–50 cm W",
    hardinessNote:"Below −20°C · exceptionally hardy.", foliage:"deciduous",
    seasonalImpact:"", growthSpeed:10, pestRisk:7, thirst:8, careLevel:4, sunNeed:75, sunMin:35},
-  {common:"Cordyline / Cabbage palm", latin:"Cordyline australis", hue:110,
-   visual:"Architectural evergreen with long, narrow, sword-shaped leaves forming bold upright rosettes; mature plants can develop a palm-like trunk.",
-   water:"Moderate while establishing; water during prolonged dry spells and keep container plants more consistently watered.",
+
+  {common:"Red Star Cabbage Palm", latin:"Cordyline australis 'Red Star'", hue:350,
+   visual:"Architectural evergreen with long, narrow, sword-shaped leaves in rich burgundy-red to deep bronze-purple. Forms a fountain-like rosette, eventually developing a woody trunk.",
+   water:"Water regularly while establishing and during prolonged dry spells.",
    aspect:"East / South / West",
-   soil:"Fertile, well-drained; No wet or waterlogged soil in winter",
-   prune:"Usually needs little pruning; remove dead or damaged leaves and cut out frost-damaged growth in spring.",
+   soil:"Fertile, drained, any pH; No heavy, wet soil or winter waterlogging",
+   prune:"Minimal pruning required. Remove dead or damaged lower leaves as needed. Remove frost-damaged growth in spring once new shoots appear.",
    source:"", peak:"Jan-Dec", order:"", bench:"", root:"",
    trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
    cvs:"",
-   hardiness:"H4", resilience:"Good wind and coastal tolerance once established; moderate drought tolerance.",
-   uses:"Architectural planting, patio containers, exotic gardens, coastal gardens, specimen planting.", size:"4-8 m H × 2.5-4 m W",
-   hardinessNote:"−10 to −5°C · best in a sheltered position; young and container-grown plants are more frost-sensitive.", foliage:"evergreen",
-   seasonalImpact:"", growthSpeed:10, pestRisk:4, thirst:8, careLevel:7, sunNeed:85, sunMin:45},
+   hardiness:"H3", resilience:"Moderately drought tolerant once established, with good wind and coastal tolerance in mild climates. Vulnerable to prolonged hard frost and winter wet.",
+   uses:"architectural focal point · tropical-style borders · coastal gardens · Mediterranean planting · patio containers · contemporary landscapes", size:"2.5–4 m H × 1.5–2.5 m W",
+   toxicity:"Potentially toxic to cats and dogs if ingested, causing digestive upset. Avoid allowing pets to chew foliage.", compliance:"", hardinessNote:"H3 · −5 to 1°C; hardy outdoors in mild coastal and sheltered UK gardens. Protect from prolonged frost and cold winter winds. Young and container-grown plants are particularly vulnerable.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:7, pestRisk:5, thirst:6, careLevel:8, sunNeed:85, sunMin:40},
   {common:"Heuchera Winterberry", latin:"Heuchera 'Winterberry'", hue:330,
    visual:"Compact clump-forming foliage perennial grown primarily for colourful rounded, lobed leaves and delicate summer flower spikes.",
    water:"Moderate; keep moist but never waterlogged.",
@@ -17551,6 +17552,16 @@ const PHOTO_SWAP={
   /* two violet-blue flowers with dark veins and long arched stamens, silvery stems and a raindrop */
   'teucrium-fruticans':{
     alt:'photos/card/teucrium-fruticans-flowers.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* the upper fan of long burgundy-red leaves against the shade house (Oscar's photo cropped to drop his hand and the pot labels) */
+  'cordyline-australis-red-star':{
+    alts:[
+      'photos/card/cordyline-australis-red-star-fan.webp',
+      'photos/card/cordyline-australis-red-star-crown.webp',
+      'photos/card/cordyline-australis-red-star-leaf.webp',
+    ],
     focus:'50% 45%',
     hold:'3.5s',
   },

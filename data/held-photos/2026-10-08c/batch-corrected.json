@@ -1,0 +1,32 @@
+[
+  {
+    "common": "Red Star Cabbage Palm",
+    "latin": "Cordyline australis 'Red Star'",
+    "hue": 350,
+    "visual": "Architectural evergreen with long, narrow, sword-shaped leaves in rich burgundy-red to deep bronze-purple. Forms a fountain-like rosette, eventually developing a woody trunk.",
+    "water": "Water regularly while establishing and during prolonged dry spells.",
+    "aspect": "East / South / West",
+    "soil": "Fertile, drained, any pH",
+    "soilWarning": "No heavy, wet soil or winter waterlogging",
+    "prune": "Minimal pruning required. Remove dead or damaged lower leaves as needed. Remove frost-damaged growth in spring once new shoots appear.",
+    "toxicity": "Potentially toxic to cats and dogs if ingested, causing digestive upset. Avoid allowing pets to chew foliage.",
+    "compliance": "",
+    "peak": "Jan-Dec",
+    "cvs": "",
+    "hardiness": "H3",
+    "hardinessNote": "H3 · −5 to 1°C; hardy outdoors in mild coastal and sheltered UK gardens. Protect from prolonged frost and cold winter winds. Young and container-grown plants are particularly vulnerable.",
+    "resilience": "Moderately drought tolerant once established, with good wind and coastal tolerance in mild climates. Vulnerable to prolonged hard frost and winter wet.",
+    "uses": "architectural focal point · tropical-style borders · coastal gardens · Mediterranean planting · patio containers · contemporary landscapes",
+    "height": "2.5–4 m",
+    "spread": "1.5–2.5 m",
+    "foliage": "evergreen",
+    "container": "yes",
+    "growthSpeed": 7,
+    "pestRisk": 5,
+    "thirst": 6,
+    "careLevel": 8,
+    "sunNeed": 85,
+    "sunMin": 40,
+    "uncertain": []
+  }
+]

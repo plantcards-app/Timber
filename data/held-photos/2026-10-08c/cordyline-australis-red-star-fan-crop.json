@@ -1,0 +1,22 @@
+{
+  "sourcePx": {"w": 3000, "h": 4000},
+  "featureVisible": true,
+  "featureSeen": "a fan of long, narrow burgundy-red to bronze-purple leaves rising from the crown, other red cordylines behind",
+  "featureBox": {"x": 0.24, "y": 0.0, "w": 0.55, "h": 0.6},
+  "crop": {"x": 0.21333, "y": 0.0, "w": 0.6, "h": 0.6},
+  "cropAspect": 0.75,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {"box": {"x": 0.067, "y": 0.89, "w": 0.093, "h": 0.06}, "reads": "white pot label with barcode", "resolution": "crop"},
+    {"box": {"x": 0.167, "y": 0.80, "w": 0.053, "h": 0.05}, "reads": "orange nursery tag", "resolution": "crop"},
+    {"box": {"x": 0.393, "y": 0.665, "w": 0.073, "h": 0.045}, "reads": "printed tag among the leaves", "resolution": "crop"},
+    {"box": {"x": 0.673, "y": 0.618, "w": 0.023, "h": 0.028}, "reads": "small white label", "resolution": "crop"},
+    {"box": {"x": 0.827, "y": 0.278, "w": 0.04, "h": 0.023}, "reads": "tags on background tree stakes", "resolution": "crop"}
+  ],
+  "exposure": {"evAdjust": 0.0, "whiteBalance": "none"},
+  "verdict": "crop",
+  "concerns": ["Oscar's hand holds a leaf at the left edge (x < 0.19, y > 0.63); no fingers on customer-facing cards (v14.34), so the crop drops the left and bottom of the frame."],
+  "reason": "Keeps the upper fan of leaves, original pixels only, at 3:4. Drops the hand and every label, all of which sit left of x 0.19, below y 0.6, or right of x 0.82."
+}

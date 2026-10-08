@@ -1524,9 +1524,9 @@
    "note": "Replaced 2026-09-29 with Oscar's own photo (Galaxy S24, top-down rosette), cropped by Claude to remove a purple marker scribble at the bottom edge; nothing else changed. The previous file carried an \"AI-generated content\" watermark at lower left and is retired."
   },
   {
-   "file": "cordyline-australis-torbay-dazzler.jpg",
+   "file": "cordyline-australis-red-star-crown.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright. Single frame looking down into the crown, EXIF orientation 6 baked by the staging decoder",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Red Star Cabbage Palm card (PHOTO_SWAP alt): the crown backlit, red leaves splaying from the trunk top.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -1534,9 +1534,40 @@
    "commercialUseCleared": true
   },
   {
-   "file": "cordyline-australis.jpg",
+   "file": "cordyline-australis-red-star-fan.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Red Star Cabbage Palm card (PHOTO_SWAP alt): the upper fan of long burgundy-red leaves against the shade house (Oscar's photo cropped to drop his hand and the pot labels).",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "cordyline-australis-red-star-leaf.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Fourth frame for the Red Star Cabbage Palm card (PHOTO_SWAP alt): one leaf held forward, its fine ribbing and orange edge lit by the sun.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "cordyline-australis-red-star.jpg",
+   "note": "Renamed from cordyline-australis.jpg on 2026-10-08, when the red-leaved card became Cordyline australis 'Red Star' under Oscar's JSON. Same bytes; a collage of crops from two of his bench photos.",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "cordyline-australis-torbay-dazzler.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Single frame looking down into the crown, EXIF orientation 6 baked by the staging decoder",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

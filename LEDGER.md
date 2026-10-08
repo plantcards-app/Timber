@@ -31,6 +31,11 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-08 (**the red-leaved Cordyline australis card becomes 'Red Star' under Oscar's JSON, with three flash
+  frames; r389**) — edited in place (deck position kept), photo files git-mv'd to the new slug, rename in
+  data/renames.json, csv re-exported. Frame 2 is cropped with reframe-photo to drop his hand and five labels.
+  RHS confirms H3 and the size; nothing wrong in the JSON. See data/held-photos/2026-10-08c/README.md. Deck 578,
+  all checks green. Not live.
 progress: 2026-10-08 (**Hibiscus FIJI dealt from a 3-entry GPT batch, deck 577 -> 578; Teucrium flash frame; r388**)
   — batch stored and fitted in data/held-photos/2026-10-08b/; Mandarin Tango and the goldfish plant wait for photos.
   Teucrium fruticans gains a flowers frame (add-swap). Fast 9/9, deck-audit PASS, data-audit 0. Not live.
