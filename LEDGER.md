@@ -31,6 +31,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-08 (**PR #58 merged; deck 577 live, r383**) — Oscar: "Push". PR #58 (dev -> deploy, 33 commits,
+  head 4094000) merged as ce9d49a. Pages run 132 is green: fast checks, deploy, "Verify the deployed page is this commit"
+  (build-stamp --verify on the served timber.html) and assetlinks.json all pass on GitHub's runner. github.io returns
+  403 from this sandbox, so the runner's check is the only live check. Dev branch restarted from ce9d49a.
 progress: 2026-10-07 (**gate 18/18 on e2697ce, r383**) — the full sequential gate is green with multi-select filters
   (features-test 41s with the nine new checks, app-test 289s, edge-test 301s). Nothing on the branch moved between the
   gate and this entry but the ledger. Live is still 550. Everything since PR #57 waits on Oscar's "push".
