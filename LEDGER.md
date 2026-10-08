@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-08 (**Nerine bowdenii 'Isabel' gains a flash frame; r386**) — Oscar: "Another photo for nereen
+  bowdenii". Added with add-swap --as sunlit; the card photo is kept. Rendered whole at 390x844. deck-audit PASS,
+  fast 9/9. See data/held-photos/2026-10-08/README.md. Not live.
 progress: 2026-10-08 (**fact check of the three batches behind r383; fitting fixes r384–r385**) — Oscar: "Check the json
   is correct". 38/38 entries pass check-plant-json, and the 27 dealt cards match their JSON field for field.
   Five research agents checked every field against outside sources. Fixed, because they were the fitter's
