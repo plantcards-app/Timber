@@ -3727,6 +3727,7 @@ card; they are listed in `KNOWN` in `tools/plant-sense.js` pending that call.
 | Prickly heath 'Snow White' (`Gaultheria mucronata 'Snow White'`, 2026-09-23 batch) | 4 | "generally pest-free; naturally suckering and may be **susceptible to** honey fungus where the disease is already present" |
 | Abelia 'Kaleidoscope' (`Abelia × grandiflora 'Kaleidoscope'`, 2026-09-23 batch, held — no photo yet) | 4 | "Drought tolerant once established and generally pest-free; may be **susceptible to** honey fungus." |
 | Prickly heath 'Signaal' (`Gaultheria mucronata 'Signaal'`, 2026-09-26 batch) | 3 | "Very cold hardy and generally pest-free; may be **susceptible to** honey fungus where the disease is already present." |
+| Variegated Carpet Stonecrop (`Sedum lineare 'Variegatum'`, 2026-10-07d batch) | 4 | "generally good resistance to pests. **Susceptible to** crown and root rot in persistently wet conditions" |
 
 **The reading that argues the numbers are right and the rule is over-reading.**
 Honey fungus is a property of the *site*, not of Gaultheria — almost any woody plant

@@ -13,7 +13,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   days before production), and which listing sections are still red. So the brick: **Oscar opens Play
   Console → Testing → Closed testing and sends one screenshot of the tester count and the production-access
   requirements panel**; from that, the exact remaining list and the earliest production date. Small repo
-  to-do when he says go: `play/LISTING.md` still says "430+ plants" (549 live). Parked, not dropped, at his
+  to-do when he says go: `play/LISTING.md` still says "430+ plants" (550 live, 557 on the branch). Parked, not dropped, at his
   word: #10 of the 2026-10-05 batch, the variegated lavender — dealt under the label's name whenever its
   photo comes, ten minutes' work. The 2026-10-06b batch under
   `data/held-photos/2026-10-06b/` is fully dealt: the carnivores at r359, the three rowans and Cornus canadensis at
@@ -31,6 +31,220 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-07 (**gate 18/18 on e2697ce, r383**) — the full sequential gate is green with multi-select filters
+  (features-test 41s with the nine new checks, app-test 289s, edge-test 301s). Nothing on the branch moved between the
+  gate and this entry but the ledger. Live is still 550. Everything since PR #57 waits on Oscar's "push".
+progress: 2026-10-07 (**multi-select filters: every chip pressed narrows the deck; r383. Also: gate 18/18 on befbf1d, the
+  two-season fix**) — Oscar: "select multiple filters ... drought tolerant ... then shade loving ... narrows it down to
+  plants that will manage both ... even picking a month within the seasons". The single `activeFilter` became
+  `activeFilters` (AND across every chip on). activeFilter stays as the null-or-joined answer the rest of the app asks,
+  so persistence, review, deck-exhaustion and goToCard are untouched. A child stands in for its parent, a parent over
+  its own children broadens back to it, and switching off the last child steps back to its season, as before. Every
+  count is what pressing that chip next would give; a chip that would empty the deck is disabled. The menu stays open
+  while chips are pressed, and a bar under them reads "Show N plants" / "Clear filters". features-test rewrites the
+  single-filter checks to the new rules and adds nine (98/98). Rendered at 390x844 on his flow: drought 141, + shade
+  25, + spring 20, -> March 11, Show -> an 11-card deck, no page errors. Fast 9/9. Not live until merged.
+progress: 2026-10-07 (**two-season fix in: parseMonths reads each run of a split peak; r382**) — Oscar: "all of that sounds
+  perfect" after the explanation. parseMonths (timber.html, mirrored in tools/check-plant-json.js) now splits a peak on
+  / , & ; "and", the split plant-sense's monthsOf already used, and reads each run first-to-last with the Oct-Feb
+  wrap. Proved on all 652 cards: 646 read identically, and the six split peaks change (Nelly Moser, Sargent's cherry,
+  Braendkjaer, Gorgeous, Schmetterling, Chanticleer). Their strips were rendered with two runs each. features-test
+  gains two checks (87/87). Fast 9/9. Not "push": not live until merged. Next: multi-select filters (his
+  ask: drought tolerant + shade, then a month, narrowing to plants that manage all of them).
+progress: 2026-10-07 (**gate 18/18 on f57f2a2, r381**) — the full sequential gate is green on the 577-card head (app-test
+  289s, edge-test 301s, perf-test 21s). It covers Pink Perfection (r379), the Chanticleer crop and Ginkgo frame (r380),
+  and the five-frame Parrotia (r381). Since f57f2a2 only docs moved (LEDGER and two batch READMEs). Live is still
+  550. Waiting on Oscar's "push" and his yes or no on the two-season fix.
+progress: 2026-10-07 (**Sedum 'Variegatum' confirmed; Pink Champagne parked; the undealt list**) — "It is verigatumn" (no
+  change). "Shelf pink champagne": #8 parked, with its fitted entry kept in the 2026-10-07c batch file. Every pasted
+  batch is stored and fitted. Undealt for want of a photo (14): ten 2026-10-07b entries (Dianthus Hardy Rose /
+  Violet / Violet Picotee, Vinca 'Ralph Shugert' and 'Colada', Pilea 'Greyzy', Peperomia 'Obtipan Bicolor',
+  Asplenium 'Parvati', Codiaeum 'Petra', Ficus 'Twilight'), Pink Champagne, LITTLE LIME (paused, photo doubt),
+  the 2026-10-05 variegated lavender (parked), and Berrybank Dome (folded into Gentiana sino-ornata; a rename is
+  his call). Plus 75 older cards on the app's hold list. Oscar asked for the two-season fix to be explained again.
+progress: 2026-10-07 (**Sedum lineare: the label says only "Sedum lineare"; the plant is the white-edged 'Variegatum'; card
+  unchanged**) — Oscar asked for an image comparison and a definitive answer. Commons and rhs.org.uk are blocked
+  here (403), so it rests on the RHS description of 'Variegatum' ("bright green, edged in white", via search),
+  LLIFLE's plain species ("light green or pale greenish yellow", no edge), and a full-resolution close-up showing a
+  cream-white margin on every leaf. Evidence in the 2026-10-07d README.
+progress: 2026-10-07 (**Parrotia 'Bella' gains four flash frames, now cycling five; Sweet Tea's label confirmed; r381**) —
+  "Some flash between photos for patrotia persica Bella": four Galaxy S24 photos, no AI markers, added in the
+  order sent (droplets, leaf-tip, backlit, crimson). add-swap's "Second frame" credit wording was corrected for
+  frames 3–5. All five frames rendered whole. "heucherella sweet tea": the label matches the card as dealt, so no
+  change. The gate on c408bbb was stopped mid-run so files could change, and runs on this head instead. Deck audit
+  PASS, audit-layout clean, fast 9/9. Not live until merged.
+progress: 2026-10-07 (**Chanticleer takes his own crop; Ginkgo gains an autumn flash frame; r380**) — "id prefer that
+  pryus to be a photo more higher alowinf more of the leaf to be seen": his phone crop of the same photo (2244x2714,
+  same timestamp, no AI markers) is restaged as the card photo, and the red leaf now fills the window above the
+  plaque (rendered before/after). "A flash between photo for ginkgo biloba": add-swap `--as autumn` on the Maidenhair
+  Tree; README under `data/held-photos/2026-10-07e/`. The gate on ffc5c15 was stopped mid-run so files could
+  change, and runs on this head instead. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
+progress: 2026-10-07 (**Pink Perfection dealt at Oscar's call; deck 576 -> 577, r379**) — "I think its probably pink
+  perfection": the two-tag cherry photo is dealt as #7 Prunus 'Pink Perfection'. [Unverified] The tree's second tag
+  (his centre's label) reads Pink Champagne. #8 'Pink Champagne' waits for its own photo. Deck audit PASS,
+  audit-layout clean, fast 9/9, render whole. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on 4625ed5, r378**) — the full sequential gate is green on the 576-card head (app-test
+  289s, edge-test 301s, perf-test 21s). Nothing on the branch moved between the gate and this entry but the ledger.
+  Live is still 550. Waiting on Oscar's "push": everything since PR #57.
+progress: 2026-10-07 (**four-entry GPT batch for the held photos a, c, d, i: all dealt; deck 572 -> 576, r378**) — Sweet
+  Tea, Sugar and Spice, Sedum lineare 'Variegatum' and Ceropegia woodii 'Variegata', stored verbatim under
+  `data/held-photos/2026-10-07d/` and dealt with the 2026-10-07b photos. Fitting: "No known hazard; " prefixed on
+  all four safety lines (as sent, "toxicity" / "non-toxic" matched /toxic/ and would have printed Toxic), RHS
+  'Lady Heart' into the Ceropegia's cvs, sizes, derived facings and soil short forms. The stonecrop failed plant-sense
+  strict (pest-vs-prose: "susceptible to crown and root rot", pestRisk 4), so it joins KNOWN and VQ 85 with both sides
+  his. Raised: Sweet Tea's label genus (he wrote both Heucherella and Heuchera), its photo pinker than the text, and
+  whether the Sedum label says 'Variegatum'. Also on this commit: gate 18/18 on cba107f (r377, the spider plant
+  correction). Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
+progress: 2026-10-07 (**correction: the spider plant's photo was Song of India; Song of India dealt; deck 571 -> 572,
+  r377**) — his "Song of India" photo is byte-identical to the drop 1 photo matched by eye that morning to the
+  Variegated Spider Plant, so that match was wrong. Photo b, which he named Chlorophytum 'Variegatum', is now the
+  spider plant's only card photo, the evening flash entry is removed, and Dracaena 'Song of India' is dealt with
+  the drop 1 photo. c is "ceropegia woodii", variety for me to find: the RHS files the variegated form as
+  C. linearis subsp. woodii 'Lady Heart' (syn. C. woodii 'Variegata'). It needs JSON, along with Sweet Tea, Sugar and
+  Spice and Sedum lineare. Still raised: the spider plant text says white margins but b has a white centre;
+  d and h may be swapped. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on 519072d, r376**) — the full sequential gate is green on the 571-card head (app-test
+  289s, edge-test 300s, perf-test 22s). It covers the named 2026-10-07b cards (r375) and Chanticleer (r376). Nothing on
+  the branch moved between the gate and this entry but the ledger. Not live until merged.
+progress: 2026-10-07 (**Chanticleer dealt, deck 570 -> 571, r376; the two-tag cherry stays held; #8 renamed to the label's
+  'Pink Champagne'**) — Oscar: the Pink Perfection tree's second tag reads "prunus pink champagn", probably his
+  centre's label and probably added second. The RHS keeps 'Pink Perfection' (plants/44879) and 'Ichiyo' (plants/90553,
+  syn. 'Pink Champagne') as separate cultivars, so one tag is wrong, and autumn leaves cannot tell them apart. The
+  photo is held, renamed so it claims neither. #8 (fitted, not dealt) now reads Prunus 'Pink Champagne' by the
+  label rule, with RHS 'Ichiyo' in cvs; it still passes check-plant-json. The gate on 4db4d0f was stopped mid-run
+  so files could change, and runs on this head instead. Deck audit PASS, audit-layout clean, fast 9/9. Not live
+  until merged.
+progress: 2026-10-07 (**Oscar named the nine held photos; four dealt, one flash, four held; deck 566 -> 570, r375**) —
+  e Tiarella 'Pink Skyrocket', f Heuchera FOREVER PURPLE, g 'Cinnabar Silver' and h × Heucherella 'Golden Zebra'
+  were dealt from the 2026-10-07b JSON. b ("Chlorophytum 'Variegatum'") became a flash frame on the dealt spider
+  plant; [Unverified] it shows a white centre stripe, while the card shows white margins. Held: c, because his
+  name "Song of India" is a Dracaena and the photo is a string of hearts; and a "heucherella sweet tea", d "tiarella
+  sugar and spice" and i "sedum lineare", which have no card data anywhere (they need GPT JSON). Doubt raised: h
+  looks closer to the deck's Solar Eclipse, and d fits the Golden Zebra text better. Files renamed to his names;
+  the 07b README has the full table. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on b0b6ecd, r374**) — the full sequential gate is green on the 566-card head (app-test
+  286s, edge-test 298s, perf-test 22s). Nothing on the branch moved between the gate and this entry but the ledger.
+  Worplesdon, Gorgeous and Schmetterling are gated, not live until merged.
+progress: 2026-10-07 (**Worplesdon, Gorgeous and Schmetterling dealt; deck 563 -> 566, r374; the nine held photos sent to
+  Oscar lettered a–i; a before/after of the split-peak fix sent**) — "I sent two photos of that malus, to be flash
+  betweens" confirms the Braendkjaer pair (no change). His three new photos were unnamed, each the only card of its
+  genus left in the batch ([Inference], in the order asked). A blurred white shape at the far edge of the Gorgeous
+  photo is outside the card window and left as shot. He asked to see the nine 2026-10-07b unmatched photos to
+  name them; the letter key is in that folder's README. He asked what the "two seasons" fix is: a test-browser
+  render (repo untouched) showed Sargent's cherry lit Apr–Nov now, Apr–May + Oct–Nov with a split-aware
+  parseMonths. Waiting on his yes. Deck audit PASS, audit-layout clean, fast 9/9. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on 55349fa, r373**) — the full sequential gate is green on the 563-card head (app-test
+  287s, edge-test 296s, perf-test 22s with three swap cards in the newest ten). Nothing on the branch moved between the
+  gate and this entry but the ledger. Open with Oscar: his "Double malus" came with no photo. Either it confirms the
+  crab apple pair (already a flash) or the photo did not attach; asked which, and Braendkjaer or Gorgeous.
+progress: 2026-10-07 (**Sargent's cherry, Braendkjaer crab apple and Amanogawa dealt; Pink Perfection paused; deck 560 -> 563,
+  r373**) — five photos, only the last named ("Prunus pink perfection last photo… if not sure pause"). The first four
+  were matched to the names asked, in order ([Inference]: cherry in autumn leaf, two crab apple shots 6 s apart,
+  cherry in green leaf). The crab apple pair became a card photo and flash frame; [Unverified] it is 'Braendkjaer'
+  and not 'Gorgeous'. A nursery code band on the Amanogawa stem was cropped out (right 312 px, bottom 416 px; box
+  in the batch folder). Pink Perfection is held: RHS gives "some orange tints" in autumn, Hillier "orange-red";
+  the photo is redder than the RHS, and leaves cannot tell it from 'Kanzan'. Waiting on what the second tag said,
+  or his word. Deck audit PASS, audit-layout clean, fast 9/9, all frames rendered whole. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on b770cea, r372**) — the full sequential gate is green on the 560-card head, with
+  the perf-test fix (app-test 285s, edge-test 295s, perf-test 22s). Nothing on the branch moved between the gate
+  and this entry but the ledger. Escallonia, Penstemon and Magnolia are gated, not live until merged.
+progress: 2026-10-07 (**gate 17/18 on 6d79d43: perf-test's flat photo budget broke; the test now counts the window**) —
+  "photo fetching stays windowed at load" allowed 12 requests: the ten newest cards plus room for two flash
+  frames. Penstemon and Magnolia made three flash cards among the newest ten (with Hebe Petita Red), so 10
+  photos + 3 alts = 13, one request per image and nothing deeper. The app was behaving as designed: markHot
+  fetches alts on purpose (r79). The fix is in the test, as section 2 did for Cedrus in August. The ceiling is
+  the top FETCH_DEPTH cards' own images, and every load request must be one of them. Proved both ways: PASS
+  on this head (13 for 13), and FAIL on a copy with one injected fetch of a buried card's photo, which the old
+  flat 12 would have let through. Not a skip: the guard is stricter.
+progress: 2026-10-07 (**Magnolia 'Little Gem' dealt with a buds flash frame; deck 559 -> 560, r372**) — "Mag lil gem flash
+  between": two Galaxy S24 photos taken at 13:00 and 13:01, no AI or C2PA markers, byte-identical under
+  `data/held-photos/2026-10-07c/`. In the order sent, the open flower is the card photo and the half-open flower
+  with buds is the flash frame (`--as buds`). The card photo is 3000x2776, [Inference] cropped on his phone. The
+  card shows its middle, where the flower and stamens fill the window. A white shape at its foot is a pot rim,
+  not a label. The gate on eb87774 was stopped mid-run so files could change, and runs on this head instead.
+  Deck audit PASS, audit-layout clean, fast 9/9, both frames rendered whole. Next photos asked, in batch order:
+  Prunus sargentii, Malus 'Braendkjaer', Prunus 'Amanogawa', 'Pink Perfection'. Not live until merged.
+progress: 2026-10-07 (**Escallonia GOLDEN CARPET and Penstemon 'Volcano Fujiyama' dealt; deck 557 -> 559, r371**) —
+  "Escolinia and 2 flash berweens for penstomn": three Galaxy S24 photos taken that afternoon, no AI or C2PA
+  markers, byte-identical under `data/held-photos/2026-10-07c/`. Escallonia dealt with his first photo. The
+  Penstemon takes its two in the order sent: the leaf close-up is the card photo and the flowers are the flash
+  frame (`--as flowers`). The flower photo was taken 12 s earlier, so the frames can be swapped if he wants
+  the flowers first. No card text changed. Rendered at phone size: both cards and both frames whole. Deck
+  audit PASS, audit-layout clean, fast 9/9. Next photos asked, in batch order: Magnolia 'Little Gem', Prunus
+  sargentii, Malus 'Braendkjaer', Prunus 'Amanogawa'. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on 1faea4c, r370**) — the full sequential gate (app-test 283s, edge-test 292s,
+  audit-layout and the rest green) came back green on the 13-entry batch commit. Nothing on the branch moved between the
+  gate and this entry but the ledger. Not live until merged.
+progress: 2026-10-07 (**13-entry GPT batch stored and fitted: twelve new cards wait on photos; the Aronia double takes
+  foliage only; r370**) — pasted with no text, stored verbatim under `data/held-photos/2026-10-07c/`. Twelve new:
+  Penstemon 'Volcano Fujiyama', Escallonia GOLDEN CARPET ('Alcaura') (the PINK ELLE form), Magnolia 'Little Gem',
+  Prunus sargentii, Malus baccata 'Braendkjaer', Prunus 'Amanogawa', 'Pink Perfection', 'Ichiyo' (common "Pink
+  Champagne Cherry"; label wording [Unverified]), Liquidambar 'Worplesdon', Malus 'Gorgeous' (toxicity reworded
+  "contain toxins" → "are toxic" so it prints Toxic like 'Evereste', not the default Handle with care), Cornus kousa
+  'Schmetterling', Pyrus 'Chanticleer'. All twelve PASS check-plant-json, no doubles. Five carry split peaks
+  ("Apr-May / Oct-Nov"), kept as supplied; [Inference from parseMonths] they show as one continuous span and miss
+  "★ Peaks here", as Clematis 'Nelly Moser' already does. #13 Aronia melanocarpa doubles the dealt Black
+  Chokeberry: foliage blank → "deciduous"; peak, size, ratings and prose kept by the double rules. Deck audit PASS,
+  audit-layout clean, fast 9/9. Photos asked for four at a time in batch order. Not live until merged.
+progress: 2026-10-07 (**gate 18/18 on d03e4f8, r369**) — the full sequential gate (app-test 283s, edge-test 294s,
+  audit-layout and the rest green) came back green on the 557-card head. Nothing on the branch moved between the gate
+  and this entry but the ledger. Not live until merged.
+progress: 2026-10-07 (**the 22-name batch stored and fitted; seven cards dealt from three photo drops; deck 550 -> 557, r369**) —
+  GPT's 22-entry JSON for the label list, stored verbatim and fitted under `data/held-photos/2026-10-07b/`. Label
+  names were kept: Dianthus Hardy Rose/Violet/Violet Picotee in place of "Dianthus spp.", Sedum spurium
+  'Tricolor', Hebe Petita Red, Epipremnum pinnatum 'Golden Pothos', Codiaeum variegatum 'Petra'. Heuchera
+  CHAMPAGNE ('Tnheucha') and FOREVER PURPLE ('Tnheufp') take the CRANBERRY form. All 22 PASS check-plant-json, no
+  doubles. Dealt, matched by eye or named: Hebe Petita Red (his two named photos; the first Hebe shot dropped
+  uncommitted at his word; the second is a flash frame), Golden Pothos, Alocasia zebrina, Variegated Spider Plant,
+  Heuchera 'Fire Chief', CHAMPAGNE, Sedum 'Tricolor'. Nine photos held unmatched, waiting on his names: a coral
+  Heuchera, a white-centred spider plant, a variegated string of hearts, and six from the third drop.
+  [Unverified] doubts noted: Pothos photo solid lime, Fire Chief coral not red, Champagne not silvery. Deck audit
+  PASS, audit-layout clean, fast 9/9, restamp r369. Not live until merged. The Chile Lantern Tree
+  and Charles Lamont frames (r368) also wait on the next PR.
+progress: 2026-10-07 (**two more label names: Sedum spurium 'Tricolor', × Heucherella 'Golden Zebra'; 22 named and new**) —
+  "Sedumspurium tricolorHeucherellagolden zebra", neither in the deck or the hold. Each names one of a pair of
+  set-aside lines (Sedum / Sedum Fantasticfoliage; Heucherella / Heucherella Fantasticfoliage). Whether the other
+  line of each pair is a different plant is unknown, so it stays set aside. Still set aside: Chrysanthemum Pink,
+  Aglaonema, Ceropegia, "Planten gree", "Tant", plus the other Sedum and Heucherella lines if they are
+  different plants.
+progress: 2026-10-07 (**label-list corrections: five set-aside names now have full names; 20 named and new**) — Oscar's
+  corrections, run together as typed: "Alocasla zebrinaHeuchera champagnetiarella pink sky rocketHeuchera forever purple
+  Heucheracinnabar silver". Read as Alocasia zebrina, Heuchera 'Champagne', Tiarella 'Pink Skyrocket', Heuchera
+  'Forever Purple', Heuchera 'Cinnabar Silver' ([Inference] from the typos). None is in the deck or the hold. They
+  replace Alocasia Abud, Tiarella Fantasticfoliage and the three plain Heuchera lines. Still set aside (9):
+  Chrysanthemum Pink, Aglaonema, Sedum Fantasticfoliage, Sedum, Heucherella, Heucherella Fantasticfoliage,
+  Ceropegia, "Planten gree", "Tant". The 20 wait on GPT JSON and photos.
+progress: 2026-10-07 (**a 30-line label-name list checked against the deck: 15 named and new, 14 set aside for no full name**) —
+  Oscar pasted 30 bench-label names (OCR-style typos) with no instruction, then "Any without full names ignore but
+  let me know". None is already a card ('Solar Eclipse' is the deck's only Heucherella; unnamed, so unknowable).
+  Named and new, spellings read from the typos ([Inference]): Dianthus 'Hardy Rose', 'Hardy Violet', 'Hardy Violet
+  Picotee'; Vinca 'Ralph Shugert', 'Colada'; Pilea 'Greyzy'; Peperomia obtusifolia 'Obtipan Bicolor'; Heuchera
+  'Fire Chief'; Hebe 'Petita Red' (listed twice, once with "Addenda"); Epipremnum pinnatum 'Golden Pothos'; Dracaena
+  reflexa 'Song of India'; Chlorophytum 'Variegatum'; Asplenium 'Parvati'; Codiaeum variegatum 'Petra'; Ficus
+  benjamina 'Twilight'. Set aside: Chrysanthemum Pink, Aglaonema, Sedum Fantasticfoliage, Sedum, Heucherella,
+  Heuchera x3, Tiarella Fantasticfoliage, Heucherella Fantasticfoliage, Alocasia Abud, Ceropegia, "Planten gree",
+  "Tant". Nothing dealt or written to the deck; the named 15 wait on GPT JSON (PLANT-BRIEF.md) and photos.
+progress: 2026-10-07 (**gate 18/18 on 52e847d, r368**) — the full sequential gate (app-test 272s, edge-test 287s,
+  audit-layout and the rest green) came back green on the head carrying the two doubles. Nothing on the branch
+  moved between the gate and this entry but the ledger. Not live until merged.
+progress: 2026-10-07 (**two doubles: Chile Lantern Tree close lanterns, Charles Lamont autumn leaves with flowers; r368**) —
+  "Double for the chilian lantern plant check i got the common name right latin begins with c" and "Double for
+  viburnum Charles lamiont": add-swap `--as lanterns` on Crinodendron hookerianum and `--as autumn` on
+  Viburnum × bodnantense 'Charles Lamont'. Common-name check against the RHS page (plants/4790): "Chile lantern
+  tree", which is what the card already says. The Viburnum photo has a blurred hand at the left, mostly out of
+  the card window; left as shot and raised with Oscar (the BIG & EASY PURPLE precedent). Its flower cluster sits
+  behind the title, which the near-square frame cannot avoid. No card text changed, no AI or C2PA markers,
+  originals byte-identical with a README under `data/held-photos/2026-10-07/`. Rendered at phone size, frames
+  frozen: both whole. Deck audit PASS, audit-layout clean, fast 9/9, restamp r368. Not live until merged.
+progress: 2026-10-06, late (**PR #57 opened and merged on Oscar's "Push"; deck 550 live at r367**) — PR #57 from
+  `ccr-cd5f214b-6ow2oi` was opened while the full gate ran on its head, and merged at 23:49 UTC once that gate
+  came back 18/18 on 46acc12 (app-test 273s, edge-test 287s, the rest green). Merge commit bba61e4, tree identical
+  to 46acc12. Pages run 131 (job 112558655791) was picked up in 4s and every step went green by 23:51:17: fast
+  checks, upload, deploy-pages, "Verify the deployed page is this commit", assetlinks. So r367 and deck 550 are
+  live: Dogwood Miracle, plus the new frames on The Lark Ascending, Campsis, Weigela (old cut-out retired),
+  Verbena, Gabriel Oak and the three-frame fern with the logo blurred. Read from the Actions API. Feature
+  branch restarted from the merged head (a fast-forward). Still open for Oscar: whether to rewrite branch
+  history to drop the unblurred fern original (6a4c1c8, 4b1b7f3); the Play Console tester count (the brick).
 progress: 2026-10-06, late (**Cornus alba Miracle ('Verpaalen2') dealt from Oscar's JSON + photo; deck 549 -> 550, r367**) —
   one card, no text. Not a double; its Verpaalen sibling Nightfall ('Verpaalen3') set the latin form, so the
   JSON's "[Miracle]" brackets went (none in the deck). Four facings became "Any aspect", soil and warning were cut

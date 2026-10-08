@@ -471,6 +471,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "alocasia-zebrina.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "aloe-vera.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright; reframed by tools/reframe-photo.js from coordinates, no pixels generated. EXIF Samsung Galaxy S24, orientation 6 (displays portrait); no C2PA manifest in the file and no AI or generative marker",
@@ -1242,6 +1252,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "ceropegia-woodii-variegata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "chaenomeles-speciosa-kinshiden.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -1275,6 +1295,16 @@
    "file": "chimonanthus-praecox.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "chlorophytum-comosum-variegatum.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Since 2026-10-07 evening this is his photo he named Chlorophytum 'Variegatum'; the card's first photo, matched by eye that morning, was his Dracaena 'Song of India'",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -1604,6 +1634,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "cornus-kousa-schmetterling.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "cornus-kousa.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — Samsung camera capture, scanned for C2PA/AI provenance markers on 2026-08-09: none found",
@@ -1737,6 +1777,16 @@
    "file": "cotoneaster-horizontalis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "crinodendron-hookerianum-lanterns.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Chile Lantern Tree card (PHOTO_SWAP alt): Oscar's 2026-10-07 double, his 2026-09-26 shot: three crimson lanterns close up, water droplets on the petals, hanging over the pot. The card photo is his whole shrub hung with lanterns.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -2014,6 +2064,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "dracaena-reflexa-song-of-india.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "drosera-capensis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Supplied as a three-panel vertical COLLAGE (leaf close-ups with the glandular hairs) kept WHOLE under the one-rule of protocol v14.49; no pixels generated; no EXIF orientation tag",
@@ -2164,6 +2224,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "epipremnum-pinnatum-golden-pothos.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "erica-darleyensis-f-aureifolia-eva-gold.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -2225,6 +2295,16 @@
   },
   {
    "file": "escallonia-gold-brian.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "escallonia-golden-carpet-alcaura.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -2674,6 +2754,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "ginkgo-biloba-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Maidenhair Tree card (PHOTO_SWAP alt): Oscar's 2026-10-07 photo: fan-shaped leaves turning golden yellow among green ones, with water droplets, as shot. The card photo is his earlier one.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "ginkgo-biloba.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -2775,6 +2865,26 @@
   },
   {
    "file": "hamamelis-intermedia-ruby-glow.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "hebe-petita-red-spikes.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Hebe Addenda Petita Red card (PHOTO_SWAP alt): Oscar's 2026-10-07 second photo: flower spikes in bud and bloom over grey-green leaves, some spent flowers and black specks on the leaves as shot. The card photo is his other 2026-10-07 shot of the flowering spikes; both replace his first shot of the day, which he dropped before it was published.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "hebe-petita-red.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -2894,7 +3004,47 @@
    "commercialUseCleared": true
   },
   {
+   "file": "heuchera-champagne-tnheucha.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-cinnabar-silver.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "heuchera-cranberry-ifhepr.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-fire-chief.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-forever-purple-tnheufp.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -2964,7 +3114,27 @@
    "commercialUseCleared": true
   },
   {
+   "file": "heucherella-golden-zebra.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "heucherella-solar-eclipse.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heucherella-sweet-tea.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -3604,6 +3774,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "liquidambar-styraciflua-worplesdon.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "liriodendron-tulipifera-snow-bird.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3794,6 +3974,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "magnolia-grandiflora-little-gem-buds.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Little Gem Evergreen Magnolia card (PHOTO_SWAP alt): Oscar's 2026-10-07 second photo: a half-open white flower with browned outer petals, two cream buds marked brown, and glossy dark green leaves with water droplets, some showing rusty-brown undersides, as shot. The card photo is his close-up of an open flower with cream stamens tipped pink, sent with it.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "magnolia-grandiflora-little-gem.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "magnolia-honey-tulip-jurmag5.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -3821,6 +4021,36 @@
    "sourceUrl": null,
    "commit": "18506ba",
    "commitSubject": "Stage Mahonia japonica photo (bronze new growth, species confirmed)",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "malus-atrosanguinea-gorgeous.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "malus-baccata-braendkjaer-fruit.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Braendkjaer Siberian Crab Apple card (PHOTO_SWAP alt): Oscar's 2026-10-07 second photo: clusters of glossy red crab apples among broad green leaves with water droplets, a few yellow leaves and a cane at the left, as shot. The card photo is his other shot of the same fruiting branches, taken six seconds earlier.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "malus-baccata-braendkjaer.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -4215,6 +4445,46 @@
    "commercialUseCleared": true
   },
   {
+   "file": "parrotia-persica-bella-backlit.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Fourth frame for the Persian ironwood 'Bella' card (PHOTO_SWAP alt): Oscar's 2026-10-07 photo: leaves lit from behind, turning red and orange from green on a dark branch against a pale sky, with blurred nursery stock behind (his phone crop, 2432x4000), as shot. The card photo is his earlier one.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "parrotia-persica-bella-crimson.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Fifth frame for the Persian ironwood 'Bella' card (PHOTO_SWAP alt): Oscar's 2026-10-07 photo: a close-up of wet, glossy crimson, wine-purple and green leaves, with a dry grass stem lying across, as shot. The card photo is his earlier one.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "parrotia-persica-bella-droplets.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Persian ironwood 'Bella' card (PHOTO_SWAP alt): Oscar's 2026-10-07 photo: a curling red-and-purple leaf with green veins, beaded with water droplets, over blurred red and green leaves, as shot. The card photo is his earlier one.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "parrotia-persica-bella-leaf-tip.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Persian ironwood 'Bella' card (PHOTO_SWAP alt): Oscar's 2026-10-07 photo: a red-and-purple leaf tip with a water drop hanging from it, over blurred red and green leaves, as shot. The card photo is his earlier one.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "parrotia-persica-bella.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright — no C2PA manifest present",
@@ -4302,6 +4572,26 @@
    "sourceUrl": null,
    "commit": "cf287a6",
    "commitSubject": "Add blank hardiness crest (row-flank inpaint) + Pennisetum photo",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "penstemon-volcano-fujiyama-flowers.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Volcano Fujiyama Penstemon card (PHOTO_SWAP alt): Oscar's 2026-10-07 flower photo: pale pink tubular flowers with white throats veined magenta, and buds below, with water droplets on the petals, as shot. The card photo is the close-up of narrow glossy leaves he sent with it.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "penstemon-volcano-fujiyama.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -4666,6 +4956,16 @@
    "note": "Oscar's own photo (EXIF 2025-12-02); cropped by Claude to remove the pot label at lower left. An earlier copy Oscar sent had the label removed with an AI eraser and carried an AI-content watermark; that copy is not used."
   },
   {
+   "file": "prunus-amanogawa.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Cropped to drop a nursery code band on the stem: the right 312 px and bottom 416 px of the 3000x4000 original, original pixels only (box in data/held-photos/2026-10-07c/prunus-amanogawa-crop.json)",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "prunus-cerasifera-nigra.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -4726,7 +5026,27 @@
    "commercialUseCleared": true
   },
   {
+   "file": "prunus-pink-perfection.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "prunus-pissardii.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "prunus-sargentii.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -4779,6 +5099,16 @@
    "file": "pyracantha-red-star.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "pyrus-calleryana-chanticleer.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Since 2026-10-07 evening the card uses his own phone crop of the same photo (2244x2714), sent so more of the red leaf shows; his uncropped original is kept under data/held-photos/2026-10-07c/",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -5566,6 +5896,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "sedum-lineare-variegatum.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "sedum-spurium-tricolor.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "sedum-surrender-rose.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -5916,6 +6266,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "tiarella-pink-skyrocket.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "tiarella-sugar-and-spice.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "trachelospermum-jasminoides.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. REPLACED 2026-09-02 at Oscar's request with the wider frame of the same shot (the earlier crop sat badly in the window); 2612×2562, no camera EXIF, no C2PA.",
@@ -5989,6 +6359,16 @@
    "file": "veronicastrum-red-arrows.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. C2PA manifest present (claim generator Galaxy S24 c2pa-rs/0.62.0, c2pa.ingredient.v2, source title 20260829_113205(1).jpg); camera EXIF absent and frame 2948×3852, i.e. an edited export; visible 'AI-generated content' label lower left, kept outside the card window by PHOTO_FOCUS 50% 0%. See VERIFY-QUEUE 32 and 67.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "viburnum-bodnantense-charles-lamont-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Charles Lamont Bodnant Viburnum card (PHOTO_SWAP alt): Oscar's 2026-10-07 double, his 2026-09-26 shot: a pink flower cluster with buds over leaves turned red, orange and bronze, the shoot held up in sun by a hand that shows blurred at the left. The card photo is his tighter crop of the flowering shoot.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

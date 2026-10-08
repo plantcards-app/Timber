@@ -421,6 +421,11 @@
     border-color:rgba(255,255,255,.09);border-style:dashed;color:var(--muted)}
   .chip.kid.on{background:var(--leaf1);border-color:var(--leaf1);border-style:solid;color:#04120a}
   .f-break{flex-basis:100%;height:0;margin:0}
+  .f-actions{display:flex;gap:8px;margin:2px 0 10px}
+  .f-actions[hidden]{display:none}
+  .f-actions button{font:inherit;font-size:13px;padding:7px 14px;border-radius:20px;cursor:pointer}
+  .f-show{flex:1;background:var(--leaf1);border:1px solid var(--leaf1);color:#04120a;font-weight:600}
+  .f-clear{background:transparent;border:1px solid rgba(255,255,255,.25);color:inherit}
 
   /* stats overlay — same top-sheet pattern as the quiz */
   .stats{position:fixed;inset:0;z-index:60;visibility:hidden}
@@ -1177,8 +1182,9 @@
     <div class="row" id="reviewRow" role="button" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 9.5h16"/><path d="M8 3v4"/><path d="M16 3v4"/></svg></span> Review due <small id="reviewDueMenu">0</small></div>
     <div class="row" id="statsRow" role="button" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V11"/><path d="M12 20V4"/><path d="M19 20v-6"/></svg></span> My progress</div>
     <div class="row" id="browserRow" role="button" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></span> Open in browser</div>
-    <div class="f-label" id="filterLabel">Filter deck</div>
+    <div class="f-label" id="filterLabel">Filter deck · tap several to narrow</div>
     <div class="f-chips" id="filterChips" role="group" aria-labelledby="filterLabel"></div>
+    <div class="f-actions" id="filterActions" hidden></div>
     <div class="row" id="installRow" role="button" tabindex="0" hidden><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v9"/><path d="M8 9.5l4 4 4-4"/><path d="M5 19h14"/></svg></span> Install app</div>
     <div class="row" id="diagRow" role="button" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 21 19.5H3z"/><path d="M12 10v4"/><path d="M12 17h.01"/></svg></span> Report a problem</div>
     <div class="row" id="resetRow" role="button" tabindex="0"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.6"/><path d="M20 4v4h-4"/></svg></span> Reset progress</div>
@@ -1250,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r367 · 2026-10-06 · fd2e6d2';
+const BUILD='r383 · 2026-10-07 · 4ae74e1';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -5491,7 +5497,7 @@ const PLANTS = [
    uses:"wildlife planting · autumn colour · informal hedging · edible fruit",
    size:"1.5–2.5 m H × 1.5–3 m W",
    hardinessNote:"Hardy through a very cold UK winter, withstanding -20 to -15C.",
-   seasonalImpact:"", growthSpeed:10, pestRisk:2, thirst:11, careLevel:3, sunNeed:75, sunMin:40},
+   foliage:"deciduous", seasonalImpact:"", growthSpeed:10, pestRisk:2, thirst:11, careLevel:3, sunNeed:75, sunMin:40},
 
   {common:"Hairy Canary Clover", latin:"Lotus hirsutus LITTLE BOY BLUE ('Lisbob')", hue:205,
    visual:"Soft silver-grey foliage · pink-tinged white pea flowers · mahogany seed pods after",
@@ -13622,6 +13628,357 @@ const PLANTS = [
    uses:"winter colour · mixed borders · hedging · wildlife gardens · containers", size:"1.5–2.5 m H × 1–1.5 m W",
    hardinessNote:"H6 · −20 to −15°C; fully hardy throughout the UK", foliage:"deciduous",
    seasonalImpact:"", growthSpeed:13, pestRisk:5, thirst:11, careLevel:5, sunNeed:70, sunMin:35},
+  {common:"Hebe Addenda Petita Red", latin:"Hebe Petita Red", hue:345,
+   visual:"Compact, rounded evergreen shrub with pointed green leaves and dense red-pink flower clusters from summer into autumn.",
+   water:"Moderate; keep evenly moist while establishing and do not allow containers to dry out completely.",
+   aspect:"East / South / West",
+   soil:"Moist, well-drained; Protect from hard frost and cold, wet sites",
+   prune:"Trim lightly just below spent flower heads after flowering to maintain the rounded shape.",
+   source:"", peak:"Jul-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Addenda® Petita® Red; Petita Series",
+   hardiness:"H3", resilience:"Compact and long-flowering, but less frost tolerant than many hardy Hebe cultivars.",
+   uses:"Patio containers, seasonal colour, sheltered borders and pollinator planting.", size:"20–40 cm H × 20–40 cm W",
+   hardinessNote:"H3 · −5 to 1°C; uK grower guidance says protect from frost; best treated as a tender to borderline-hardy Hebe in colder gardens.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:9, pestRisk:7, thirst:10, careLevel:7, sunNeed:65, sunMin:35},
+  {common:"Golden Pothos", latin:"Epipremnum pinnatum 'Golden Pothos'", hue:90,
+   visual:"Trailing or climbing evergreen vine with glossy heart-shaped green leaves splashed and streaked yellow or cream.",
+   water:"Moderate; water when the upper compost has partly dried and reduce watering in winter.",
+   aspect:"East / South / West",
+   soil:"Free-draining compost; No overwatering, draughts or deep shade",
+   prune:"Tip prune in spring or trim long vines at any time during active growth to encourage branching.",
+   source:"", peak:"Jan-Dec", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"RHS: Epipremnum aureum; syn. Epipremnum pinnatum 'Aureum'; Scindapsus aureus",
+   hardiness:"H1b", resilience:"Very adaptable houseplant that tolerates lower light and short dry periods better than many tropical climbers.",
+   uses:"Houseplants, hanging pots, shelves, moss poles and indoor green walls.", size:"2–4 m H × 0.5–1.5 m W",
+   toxicity:"Harmful if eaten; sap can irritate skin and eyes and is toxic to pets.", hardinessNote:"H1b · 10 to 15°C; keep frost-free and preferably warm indoors.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:16, pestRisk:4, thirst:8, careLevel:3, sunNeed:60, sunMin:25},
+  {common:"Zebra Alocasia", latin:"Alocasia zebrina", hue:125,
+   visual:"Upright tropical foliage plant with glossy arrow-shaped green leaves on striking zebra-striped pale-and-dark petioles.",
+   water:"Moderate to high; keep evenly moist in active growth, then reduce sharply in winter.",
+   aspect:"East / South / West",
+   soil:"Gritty houseplant compost; No cold, wet roots or sun; keep above 15°C",
+   prune:"No routine pruning; remove yellow or damaged leaves cleanly at the base.",
+   source:"", peak:"Jan-Dec", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H1a", resilience:"Can shed older leaves naturally; recovers well with warmth, humidity and steady moisture.",
+   uses:"Houseplants, conservatories and bold tropical foliage displays.", size:"0.5–1 m H × 0.5–1 m W",
+   toxicity:"Toxic if eaten; sap can irritate skin and eyes and is toxic to pets.", hardinessNote:"H1a · >15°C; maintain above 15°C.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:12, pestRisk:8, thirst:14, careLevel:11, sunNeed:65, sunMin:40},
+  {common:"Variegated Spider Plant", latin:"Chlorophytum comosum 'Variegatum'", hue:115,
+   visual:"Arching fountain of narrow green leaves with clean white margins, producing white flowers and dangling plantlets.",
+   water:"Moderate; water regularly in growth but let excess drain and reduce watering in winter.",
+   aspect:"East / West",
+   soil:"Any well-drained compost; No waterlogging; hot sun scorches margins",
+   prune:"No pruning required; remove brown leaves and unwanted runners or plantlets.",
+   source:"", peak:"Jan-Dec", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Variegatum'",
+   hardiness:"H2", resilience:"Very adaptable and tolerant of variable light, missed waterings and ordinary indoor conditions.",
+   uses:"Houseplants, hanging baskets, shelves, offices and easy propagation displays.", size:"20–50 cm H × 30–50 cm W",
+   hardinessNote:"H2 · 1 to 5°C; frost tender, though tolerant of cool indoor conditions.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:14, pestRisk:4, thirst:9, careLevel:2, sunNeed:50, sunMin:20},
+  {common:"Fire Chief Heuchera", latin:"Heuchera 'Fire Chief'", hue:355,
+   visual:"Mounded bright red foliage deepening to wine-red through summer, with airy pink-and-white flowers on dark red stems.",
+   water:"Moderate; maintain even moisture without leaving the crown waterlogged.",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No winter wet; never bury the crown",
+   prune:"Remove faded flower spikes and tidy damaged foliage in late winter or early spring.",
+   source:"", peak:"Apr-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Fire Chief'",
+   hardiness:"H6", resilience:"Cold hardy and drought resistant once established where drainage is good.",
+   uses:"Containers, edging, ground cover, mixed borders, cut flowers and foliage contrast.", size:"30–50 cm H × 30–50 cm W",
+   hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:8, thirst:10, careLevel:5, sunNeed:65, sunMin:35},
+  {common:"Champagne Heuchera", latin:"Heuchera CHAMPAGNE ('Tnheucha')", hue:25,
+   visual:"Compact mound of pink-gold foliage washed with a silvery veil, topped by cream flowers on maroon stems.",
+   water:"Moderate; keep evenly moist but well drained.",
+   aspect:"East / West",
+   soil:"Fertile, moist, drained; Scorches in hot sun; no winter wet",
+   prune:"Remove faded flower spikes and old leaves; divide every few years to maintain vigour.",
+   source:"", peak:"Apr-Jul", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Tnheucha",
+   hardiness:"H6", resilience:"Cold hardy and reported by RHS as drought resistant once established.",
+   uses:"Containers, edging, ground cover, mixed borders and shaded foliage planting.", size:"20–40 cm H × 30–50 cm W",
+   hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:8, thirst:10, careLevel:5, sunNeed:45, sunMin:25},
+  {common:"Tricolor Caucasian Stonecrop", latin:"Sedum spurium 'Tricolor'", hue:340,
+   visual:"Low creeping succulent with green-centred leaves edged cream and pink, plus clusters of pale pink starry summer flowers.",
+   water:"Low; water while establishing, then only during prolonged dry spells.",
+   aspect:"South / West",
+   soil:"Gritty, neutral-alkaline; No winter wet; pull out green reversions",
+   prune:"No routine pruning; remove reverted green shoots and trim untidy growth after flowering.",
+   source:"", peak:"Jun-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"RHS: Sedum spurium 'Variegatum'; syn. Phedimus spurius 'Tricolor'",
+   hardiness:"H5", resilience:"Drought tolerant once established and well suited to poor, stony ground.",
+   uses:"Rock gardens, gravel gardens, edging, ground cover, walls and containers.", size:"5–10 cm H × 30–50 cm W",
+   hardinessNote:"H5 · −15 to −10°C; rHS H5 for the variegated form.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:12, pestRisk:6, thirst:4, careLevel:3, sunNeed:90, sunMin:65},
+  {common:"Volcano Fujiyama Penstemon", latin:"Penstemon 'Volcano Fujiyama'", hue:345,
+   visual:"Clump-forming perennial · pale pink tubular flowers with white throats and deeper pink markings · narrow green foliage",
+   water:"Moderate; water during prolonged dry spells",
+   aspect:"East / South / West",
+   soil:"Fertile, well-drained; No winter wet; dry mulch in cold areas",
+   prune:"Deadhead regularly; leave top growth over winter and cut back in spring",
+   source:"", peak:"Jun-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Also listed as 'Fujiyama' and 'Yayama'",
+   hardiness:"H4", resilience:"fairly drought tolerant once established · good summer flowering",
+   uses:"flower borders · cottage gardens · pollinators · containers · cut flowers", size:"0.5–1 m H × 10–50 cm W",
+   hardinessNote:"H4 · −10 to −5°C", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:9, careLevel:6, sunNeed:82, sunMin:45},
+  {common:"Golden Carpet Escallonia", latin:"Escallonia GOLDEN CARPET ('Alcaura')", hue:350,
+   visual:"Dwarf spreading evergreen shrub · golden-yellow spring foliage becoming lime green · small tubular deep red-pink flowers",
+   water:"Moderate while establishing; relatively drought tolerant once established",
+   aspect:"Any aspect",
+   soil:"Any well-drained soil; No waterlogging or cold, drying winds",
+   prune:"Lightly trim after flowering or in spring to maintain compact shape",
+   source:"", peak:"May-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Cultivar 'Alcaura' · trade designation GOLDEN CARPET",
+   hardiness:"H4", resilience:"coastal tolerant · drought tolerant once established · salt-wind tolerant",
+   uses:"ground cover · low borders · coastal gardens · banks · containers · pollinators", size:"50–60 cm H × 0.6–1 m W",
+   hardinessNote:"H4 · −10 to −5°C", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:8, pestRisk:6, thirst:6, careLevel:5, sunNeed:78, sunMin:38},
+  {common:"Little Gem Evergreen Magnolia", latin:"Magnolia grandiflora 'Little Gem'", hue:45,
+   visual:"Compact upright evergreen tree · glossy dark green leaves with rusty-brown felt beneath · fragrant creamy-white cup-shaped flowers",
+   water:"Moderate; keep reliably watered while establishing",
+   aspect:"East / South / West",
+   soil:"Drained, neutral to acid; Shelter from cold wind; no waterlogging",
+   prune:"Minimal pruning; remove damaged or unwanted growth in late spring or summer",
+   source:"", peak:"Jun-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H4", resilience:"heat tolerant once established · relatively drought tolerant · evergreen",
+   uses:"specimen tree · architectural planting · screening · courtyards · large containers", size:"4–8 m H × 2.5–4 m W",
+   hardinessNote:"H4 · −10 to −5°C", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:7, pestRisk:7, thirst:8, careLevel:7, sunNeed:75, sunMin:42},
+  {common:"Sargent's Cherry", latin:"Prunus sargentii", hue:345,
+   visual:"Large spreading deciduous cherry · single rosy-pink spring blossom · young bronze foliage · brilliant orange-red autumn colour",
+   water:"Moderate; water young trees during dry periods",
+   aspect:"Any aspect",
+   soil:"Any moist, drained soil; No persistently waterlogged ground",
+   prune:"Prune only when necessary, preferably in midsummer to reduce silver-leaf risk",
+   source:"", peak:"Apr-May / Oct-Nov", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"very cold hardy · adaptable to many soils · exposed-site tolerant",
+   uses:"specimen tree · avenues · large gardens · spring blossom · autumn colour · wildlife", size:"12 m+ H × 8 m+ W",
+   toxicity:"Seeds and kernels contain cyanogenic compounds and should not be eaten", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:11, pestRisk:10, thirst:8, careLevel:5, sunNeed:95, sunMin:75},
+  {common:"Braendkjaer Siberian Crab Apple", latin:"Malus baccata 'Braendkjaer'", hue:35,
+   visual:"Deciduous ornamental crab apple · masses of pale spring blossom · small decorative fruits · rounded tree habit",
+   water:"Moderate; water regularly while establishing",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No permanently waterlogged ground",
+   prune:"Minimal pruning; remove damaged or crossing branches in winter",
+   source:"", peak:"Apr-May / Sep-Nov", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"very cold hardy · adaptable · good wildlife value",
+   uses:"specimen tree · wildlife gardens · blossom · ornamental fruit · pollinators", size:"6–10 m H × 4–8 m W",
+   toxicity:"Fruit flesh is generally edible; seeds contain cyanogenic compounds and should not be eaten", hardinessNote:"Approximately H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:10, pestRisk:11, thirst:8, careLevel:6, sunNeed:88, sunMin:55},
+  {common:"Amanogawa Flowering Cherry", latin:"Prunus 'Amanogawa'", hue:350,
+   visual:"Narrow columnar deciduous cherry · upright branches · semi-double pale pink slightly fragrant blossom · orange-red autumn foliage",
+   water:"Moderate; water young trees in dry spells",
+   aspect:"Any aspect",
+   soil:"Any moist, drained soil; No prolonged waterlogging",
+   prune:"Prune only when necessary in midsummer to reduce silver-leaf risk",
+   source:"", peak:"Apr-May", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Synonyms include Prunus serrulata 'Amanogawa'",
+   hardiness:"H6", resilience:"very cold hardy · urban-garden friendly · relatively wind tolerant",
+   uses:"small gardens · narrow spaces · avenues · specimen tree · spring blossom", size:"4–8 m H × 2.5–4 m W",
+   toxicity:"Seeds and kernels contain cyanogenic compounds and should not be eaten", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:9, pestRisk:10, thirst:8, careLevel:5, sunNeed:95, sunMin:72},
+  {common:"Worplesdon Sweet Gum", latin:"Liquidambar styraciflua 'Worplesdon'", hue:18,
+   visual:"Tall pyramidal deciduous tree · deeply divided maple-like leaves · spectacular orange, yellow, red and purple autumn colour · corky mature branches",
+   water:"Moderate; water while establishing",
+   aspect:"East / South / West",
+   soil:"Drained, neutral to acid; No strong chalk; full sun for best colour",
+   prune:"Requires little pruning; remove damaged or crossing branches while dormant",
+   source:"", peak:"Oct-Nov", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"cold hardy · drought tolerant once established · tolerates exposed positions",
+   uses:"specimen tree · parkland · avenues · large gardens · autumn colour", size:"12–20 m H × 8 m+ W",
+   hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:10, pestRisk:4, thirst:8, careLevel:4, sunNeed:88, sunMin:48},
+  {common:"Gorgeous Crab Apple", latin:"Malus × atrosanguinea 'Gorgeous'", hue:5,
+   visual:"Small rounded deciduous tree · white flowers opening from pink buds · abundant crimson to orange-red crab apples · yellow-orange autumn foliage",
+   water:"Moderate; water young trees during dry periods",
+   aspect:"Any aspect",
+   soil:"Any moist, drained soil; No prolonged waterlogging",
+   prune:"Minimal pruning; remove damaged or crossing branches during dormancy",
+   source:"", peak:"Apr-May / Sep-Dec", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Also listed as Malus 'Gorgeous'",
+   hardiness:"H6", resilience:"very cold hardy · wildlife friendly · adaptable to many soils",
+   uses:"small gardens · specimen tree · wildlife gardens · crab-apple jelly · pollinators · ornamental fruit", size:"4–8 m H × 2.5–4 m W",
+   toxicity:"Fruit flesh can be cooked and eaten; seeds are toxic and should be removed", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:9, pestRisk:12, thirst:8, careLevel:6, sunNeed:82, sunMin:45},
+  {common:"Schmetterling Chinese Dogwood", latin:"Cornus kousa 'Schmetterling'", hue:48,
+   visual:"Compact upright deciduous tree · broad white flower bracts · dark green leaves with brilliant red-orange-yellow autumn colour · deep pink strawberry-like fruit",
+   water:"Moderate; keep evenly moist while establishing",
+   aspect:"Any aspect",
+   soil:"Drained, acid to neutral; No waterlogging, chalk or drought when young",
+   prune:"Minimal pruning; remove damaged or poorly placed branches in late winter or early spring",
+   source:"", peak:"May-Jun / Sep-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"cold hardy · generally low maintenance · good autumn colour",
+   uses:"specimen tree · woodland gardens · cottage gardens · autumn colour · wildlife", size:"2.5–4 m H × 2.5–4 m W",
+   hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:7, pestRisk:5, thirst:9, careLevel:5, sunNeed:72, sunMin:38},
+  {common:"Pink Skyrocket Foam Flower", latin:"Tiarella 'Pink Skyrocket'", hue:340,
+   visual:"Lacy green leaves with burgundy markings beneath upright, foamy pink-to-white flower spikes in spring and early summer.",
+   water:"Moderate to high; keep cool and consistently moist without waterlogging.",
+   aspect:"North / East",
+   soil:"Humus-rich, moist, drained; No long drought or winter wet at the crown",
+   prune:"Deadhead after flowering and remove old or damaged leaves in late winter or early spring.",
+   source:"", peak:"Apr-Jun", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Pink Skyrocket'",
+   hardiness:"H6", resilience:"Cold hardy, shade tolerant and reliable in cool, humus-rich soils.",
+   uses:"Woodland gardens, shaded borders, ground cover, underplanting and containers.", size:"30–40 cm H × 30–40 cm W",
+   hardinessNote:"H6 · −20 to −15°C; rHS AGM listing gives H6; hardy throughout the UK and northern Europe.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:13, pestRisk:5, thirst:13, careLevel:5, sunNeed:35, sunMin:15},
+  {common:"Forever Purple Heuchera", latin:"Heuchera FOREVER PURPLE ('Tnheufp')", hue:285,
+   visual:"Dense mound of glossy, deeply lobed intense purple leaves, with short spikes of purple-pink summer flowers.",
+   water:"Moderate; keep evenly moist during establishment and dry weather.",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No winter wet; mulch the rising crown",
+   prune:"Deadhead flower stems and remove old or damaged foliage.",
+   source:"", peak:"Apr-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Tnheufp; Forever Series",
+   hardiness:"H5", resilience:"Cold hardy and drought resistant once established; strong foliage colour in good light.",
+   uses:"Containers, edging, ground cover, mixed borders and bold foliage contrast.", size:"20–30 cm H × 40–50 cm W",
+   hardinessNote:"H5 · −15 to −10°C; hardy in most UK gardens.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:8, thirst:10, careLevel:5, sunNeed:65, sunMin:35},
+  {common:"Cinnabar Silver Heuchera", latin:"Heuchera 'Cinnabar Silver'", hue:350,
+   visual:"Compact mound of purple leaves heavily overlaid with metallic silver, topped by loose sprays of brick-red flowers.",
+   water:"Moderate; keep evenly moist but ensure excellent drainage around the crown.",
+   aspect:"East / South / West",
+   soil:"Fertile, moist, drained; No winter wet or long, severe drought",
+   prune:"Remove faded flower spikes and tidy damaged foliage in late winter.",
+   source:"", peak:"May-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Cinnabar Silver'",
+   hardiness:"H6", resilience:"Cold hardy and drought resistant once established where drainage is good.",
+   uses:"Containers, edging, mixed borders, ground cover and metallic foliage contrast.", size:"20–40 cm H × 30–50 cm W",
+   compliance:"PBR protected · commercial propagation restricted", hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK.", foliage:"semi-evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:8, thirst:10, careLevel:5, sunNeed:65, sunMin:35},
+  {common:"Golden Zebra Heucherella", latin:"× Heucherella 'Golden Zebra'", hue:60,
+   visual:"Bright yellow, deeply cut foliage marked by a bold dark red centre, with airy white flowers in spring.",
+   water:"Moderate; keep consistently moist but never waterlogged.",
+   aspect:"North / East",
+   soil:"Fertile, moist, drained; No winter wet; hot sun scorches the gold",
+   prune:"Remove faded flower spikes and damaged leaves; lift and replant if the crown rises.",
+   source:"", peak:"Apr-Jul", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Golden Zebra'",
+   hardiness:"H6", resilience:"Cold hardy and shade tolerant; performs best with consistent moisture and good drainage.",
+   uses:"Shade borders, containers, edging, ground cover and bright foliage contrast.", size:"30–60 cm H × 30–50 cm W",
+   hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:11, pestRisk:7, thirst:11, careLevel:5, sunNeed:35, sunMin:15},
+  {common:"Chanticleer Callery Pear", latin:"Pyrus calleryana 'Chanticleer'", hue:45,
+   visual:"Narrow conical deciduous tree · glossy dark green leaves · masses of white spring blossom · strong orange-red-purple autumn colour · small brown fruits",
+   water:"Moderate; water young trees during prolonged dry periods",
+   aspect:"Any aspect",
+   soil:"Any well-drained soil; No persistently waterlogged sites",
+   prune:"Little pruning required; remove damaged, crossing or unwanted branches while dormant",
+   source:"", peak:"Mar-Apr / Oct-Nov", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"urban tolerant · pollution tolerant · cold hardy · wind tolerant",
+   uses:"street tree · avenues · specimen tree · narrow spaces · spring blossom · autumn colour", size:"12 m+ H × 4–8 m W",
+   toxicity:"Seeds contain cyanogenic compounds and should not be eaten", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:11, pestRisk:8, thirst:7, careLevel:4, sunNeed:92, sunMin:70},
+  {common:"Song of India Dracaena", latin:"Dracaena reflexa 'Song of India'", hue:85,
+   visual:"Upright branching shrub with dense whorls of narrow deep green leaves edged broad yellow-green.",
+   water:"Moderate; water during growth once the surface starts to dry and water sparingly in winter.",
+   aspect:"East / South / West",
+   soil:"Loam-based, well-drained; No waterlogging, midday sun or draughts",
+   prune:"Usually none; shorten weak or overlong stems in spring to encourage branching.",
+   source:"", peak:"Jan-Dec", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Song of India'",
+   hardiness:"H1b", resilience:"Slow-growing, durable and tolerant of normal indoor humidity once established.",
+   uses:"Houseplants, offices, conservatories and architectural foliage displays.", size:"1–1.5 m H × 0.5–1 m W",
+   toxicity:"Harmful to pets if eaten.", hardinessNote:"H1b · 10 to 15°C; frost tender and best kept above 10°C.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:8, pestRisk:7, thirst:7, careLevel:5, sunNeed:60, sunMin:30},
+  {common:"Sweet Tea Foamy Bells", latin:"× Heucherella 'Sweet Tea'", hue:20,
+   visual:"A striking clump-forming perennial with large, deeply lobed, maple-like leaves in glowing copper-orange and burnt amber, dramatically marked with dark burgundy veins. Foliage darkens during summer and changes colour seasonally. Slender stems carry delicate sprays of small white flowers in spring and early summer.",
+   water:"Water regularly during establishment. Maintain moderately moist soil during active growth, particularly in warm weather and containers. Reduce watering during winter.",
+   aspect:"East / South / West",
+   soil:"Humus-rich, moist, drained; No waterlogging or drought; don't bury crown",
+   prune:"Remove damaged or tired foliage in late winter or early spring. Deadhead spent flower stems. Divide established clumps every few years to maintain vigour.",
+   source:"", peak:"Apr-Jun", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H6", resilience:"Good cold tolerance and dependable shade performance. Sensitive to prolonged drought and root waterlogging; container specimens may attract vine weevil.",
+   uses:"Shaded borders, woodland planting, colourful ground cover, containers, pathway edging and underplanting shrubs.", size:"30–50 cm H × 35–50 cm W",
+   toxicity:"No known hazard; no significant toxicity commonly reported. Not intended for consumption.", compliance:"Protected cultivar (PBR); check propagation rights before commercial multiplication.", hardinessNote:"H6 · −20 to −15°C; fully hardy across the UK in suitable well-drained soil. Foliage may deteriorate during severe winters but growth normally resumes in spring.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:11, pestRisk:8, thirst:12, careLevel:6, sunNeed:65, sunMin:25},
+  {common:"Sugar and Spice Foamflower", latin:"Tiarella 'Sugar and Spice'", hue:345,
+   visual:"A compact woodland perennial with deeply lobed, glossy mid-green leaves marked by striking dark burgundy to chocolate-brown centres. In spring, upright, airy flower spikes display masses of tiny pale pink to blush-white, star-shaped flowers, creating a soft, frothy effect above the attractive foliage.",
+   water:"Keep soil consistently moist during the growing season, especially during establishment and prolonged dry spells. Reduce watering in winter while avoiding complete root desiccation.",
+   aspect:"East / West",
+   soil:"Humus-rich, moist, any pH; No hot, dry spots or winter waterlogging",
+   prune:"Remove faded flower spikes after flowering and clear damaged or dead foliage in late winter. Divide congested clumps in spring if required.",
+   source:"", peak:"Apr-Jun", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H7", resilience:"Excellent frost tolerance and shade adaptation. Generally resistant to serious pests, although slugs may damage young foliage and mildew can occur under drought stress.",
+   uses:"Woodland gardens, shady ground cover, front-of-border planting, path edging, underplanting trees and naturalistic cottage gardens.", size:"25–40 cm H × 25–35 cm W",
+   toxicity:"No known hazard; no significant toxicity commonly reported. Not intended for consumption.", compliance:"Protected cultivar (PBR); check propagation rights before commercial multiplication.", hardinessNote:"H7 · below −20°C; exceptionally cold-hardy when established. Dies back seasonally and returns in spring. Protect roots from excessive winter wet.", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:15, careLevel:6, sunNeed:45, sunMin:10},
+  {common:"Variegated Carpet Stonecrop", latin:"Sedum lineare 'Variegatum'", hue:80,
+   visual:"A low-growing, spreading succulent with slender, trailing stems and narrow, fleshy, pale green leaves attractively edged in creamy white. The foliage forms a bright, textured mat, sometimes developing pinkish tones in strong light. Small, star-shaped yellow flowers appear during summer.",
+   water:"Allow the compost to dry significantly between waterings. Water moderately during active growth and sparingly in winter. Established plants tolerate periods of drought.",
+   aspect:"South / West",
+   soil:"Gritty, neutral-alkaline; No wet roots, heavy soil or winter wet",
+   prune:"Trim or pinch back elongated stems after flowering to retain compact growth. Remove damaged material and any vigorous plain-green reverted shoots.",
+   source:"", peak:"Jun-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"",
+   hardiness:"H4", resilience:"Strong drought tolerance, low nutrient requirements and generally good resistance to pests. Susceptible to crown and root rot in persistently wet conditions.",
+   uses:"Rock gardens, alpine troughs, sunny containers, hanging baskets, gravel gardens, edging and cascading over low walls.", size:"10–15 cm H × 30–50 cm W",
+   toxicity:"No known hazard; no major toxicity commonly reported for this cultivar. Avoid ingestion and keep unidentified plant material away from pets.", hardinessNote:"H4 · −10 to −5°C; hardy through much of the UK in sheltered, sharply drained positions. Winter wet can be more damaging than cold. Container specimens benefit from rain protection during severe weather.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:12, pestRisk:4, thirst:4, careLevel:4, sunNeed:90, sunMin:55},
+  {common:"Variegated String of Hearts", latin:"Ceropegia woodii 'Variegata'", hue:340,
+   visual:"A delicate trailing succulent houseplant producing long, slender purple-pink stems decorated with small, heart-shaped leaves. Each leaf displays intricate silver-green marbling with creamy white margins, frequently flushed with soft pink in bright light. Unusual narrow, lantern-shaped pink-purple flowers may appear during active growth.",
+   water:"Water thoroughly when the majority of the compost has dried, allowing excess water to drain completely. Reduce watering considerably during winter. The tuberous roots store moisture and tolerate short dry periods.",
+   aspect:"East / South / West",
+   soil:"Free-draining cactus mix; No soggy compost, wet saucers or draughts",
+   prune:"Trim excessively long or sparse trailing stems during spring or summer to encourage branching. Propagate healthy stem cuttings or aerial tubers.",
+   source:"", peak:"Jun-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"RHS: Ceropegia linearis subsp. woodii 'Lady Heart'; syn. Ceropegia woodii 'Variegata'",
+   hardiness:"H1c", resilience:"Good drought tolerance and adaptable to typical indoor humidity. Vulnerable to overwatering, cold conditions, mealybugs and occasional scale insects.",
+   uses:"Hanging baskets, indoor shelves, trailing houseplant displays, bright windowsills and decorative indoor containers.", size:"5–10 cm H × 0.5–2 m W",
+   toxicity:"No known hazard; generally regarded as non-toxic to cats and dogs, although ingestion may still cause mild gastrointestinal upset.", compliance:"Tender houseplant; unsuitable for permanent outdoor cultivation in the UK.", hardinessNote:"H1c · 5 to 10°C; frost-tender. Grow indoors throughout the UK winter, preferably maintaining temperatures above 12-15°C. May be placed outdoors during reliably warm summer weather.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:12, pestRisk:7, thirst:5, careLevel:6, sunNeed:80, sunMin:45},
+  {common:"Pink Perfection Flowering Cherry", latin:"Prunus 'Pink Perfection'", hue:345,
+   visual:"Small spreading deciduous cherry · bronze young leaves · abundant double light-pink flowers in drooping clusters · orange autumn tints",
+   water:"Moderate; water while establishing and during prolonged drought",
+   aspect:"Any aspect",
+   soil:"Any moist, drained soil; No persistently waterlogged ground",
+   prune:"Prune sparingly in midsummer to reduce risk of silver leaf",
+   source:"", peak:"Apr-May", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Also listed as Prunus serrulata 'Pink Perfection'",
+   hardiness:"H6", resilience:"very cold hardy · adaptable to many soils",
+   uses:"specimen tree · cottage gardens · urban gardens · spring blossom · wildlife", size:"4–8 m H × 4–8 m W",
+   toxicity:"Seeds and kernels contain cyanogenic compounds and should not be eaten", hardinessNote:"H6 · −20 to −15°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:9, pestRisk:10, thirst:8, careLevel:5, sunNeed:95, sunMin:72},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -15812,7 +16169,7 @@ function buildDeck(){
   stopGoto();                                    /* a reset overrules an auto-run to a card */
   if(reviewMode){reviewMode=false;reviewBackup=null;}  /* a reset always lands on the full deck */
   if(activeFilter){activeFilter=null;filterBackup=null;}
-  openGroup=null;                                /* a reset closes an open chip group too */
+  activeFilters=[];                              /* a reset turns every chip off, which closes its group too */
   deck.querySelectorAll('.card').forEach(releaseCard);
   /* newest addition deals first — PLANTS appends chronologically, so reversing
      puts fresh cards on top instead of burying them behind the whole back-catalogue */
@@ -15906,7 +16263,12 @@ function exitReview(){
 
 /* ---------- deck filters: ephemeral views over the full deck (same model as review mode;
    swipes update SRS but never persist over saved full-deck progress) ---------- */
-let activeFilter=null,filterBackup=null,openGroup=null;
+/* SEVERAL AT ONCE, Oscar's ask 2026-10-07: "I hit drought tolerant, then I can hit shade
+   loving, and then it narrows it down to plants that will manage both ... even picking a
+   month within the seasons." activeFilters is the chips that are ON, in the order pressed,
+   and a plant has to pass every one of them. activeFilter stays as the one-word answer the
+   rest of the app asks of it — is a filter view up? — null, or the ids joined. */
+let activeFilters=[],activeFilter=null,filterBackup=null;
 function isoWeek(){                            /* ISO-8601 week number, local time */
   const t=new Date();t.setHours(0,0,0,0);
   t.setDate(t.getDate()+3-((t.getDay()+6)%7));
@@ -16037,27 +16399,44 @@ function findFilter(id){
 /* A child filters to parent AND child, so the count under a chip is always the
    count you get when you press it. */
 const filterTest=(def,parent)=>p=>(!parent||parent.test(p))&&def.test(p);
-function applyFilter(id){
-  const hit=findFilter(id);if(!hit)return;
-  const {def,parent}=hit,test=filterTest(def,parent);
+/* The plants that pass every chip in ids. A child's test already includes its parent's. */
+function filterMatch(ids){
+  const tests=ids.map(id=>{const h=findFilter(id);return h?filterTest(h.def,h.parent):()=>false;});
+  return PLANTS.map((p,i)=>tests.every(t=>t(p))?i:-1).filter(i=>i>=0);
+}
+/* What pressing a chip does to the selection. Off goes on, on goes off. A child stands in for
+   its own parent (it already narrows to parent AND child), and pressing a parent while its
+   children are on broadens back out to the parent. Switching off the last child of a group
+   lands on the group, not on nothing: off a month you are back on its season, as before. */
+function nextFilters(id){
+  const hit=findFilter(id);if(!hit)return activeFilters;
+  const {def,parent}=hit,rest=activeFilters.filter(x=>x!==id);
+  if(activeFilters.includes(id)){
+    if(parent&&!rest.some(x=>(findFilter(x)||{}).parent===parent))rest.push(parent.id);
+    return rest;
+  }
+  if(parent)return rest.filter(x=>x!==parent.id).concat(id);
+  if(def.kids)return rest.filter(x=>!def.kids.some(k=>k.id===x)).concat(id);
+  return rest.concat(id);
+}
+function setFilters(ids){
+  if(!ids.length){clearFilter();return;}
+  const match=filterMatch(ids);
+  if(!match.length)return;                     /* a chip that would empty the deck is disabled anyway */
   stopGoto();                                  /* swapping views overrules an auto-run to a card */
   if(reviewMode)exitReview();                  /* one ephemeral view at a time */
-  const match=PLANTS.map((p,i)=>test(p)?i:-1).filter(i=>i>=0);
-  if(!match.length)return;                     /* zero-match chips are disabled in the menu anyway */
   if(!activeFilter)filterBackup={
     stack:liveStack(),
     order:[...order],history:[...history],learnedCount};
   deck.querySelectorAll('.card').forEach(releaseCard);
   order=[...match];history=[];
   dealCards([...match].reverse());
-  activeFilter=id;
-  /* the group that stays open underneath: a parent opens its own, a child keeps
-     its parent's open so the sibling months are still one tap away */
-  openGroup=parent?parent.id:(def.kids?def.id:null);
+  activeFilters=[...ids];activeFilter=ids.join(' + ');
   markHot();updateCounts();refreshEmpty();
 }
+function applyFilter(id){setFilters(nextFilters(id));}
 function clearFilter(){
-  openGroup=null;
+  activeFilters=[];
   if(!activeFilter)return;
   activeFilter=null;
   deck.querySelectorAll('.card').forEach(releaseCard);
@@ -16066,36 +16445,50 @@ function clearFilter(){
   filterBackup=null;
   markHot();updateCounts();refreshEmpty();
 }
-/* Pressing the chip that is already on steps OUT one level rather than straight to
-   the whole deck: off a month lands you back on the season you were reading, which
-   is where you wanted to be if the month was a dead end. */
-function stepOutFilter(id){
-  const hit=findFilter(id);
-  if(hit&&hit.parent)applyFilter(hit.parent.id);
-  else clearFilter();
-}
+/* a group shows its children while it, or any one of them, is on */
+const groupOpen=d=>activeFilters.includes(d.id)||(d.kids||[]).some(k=>activeFilters.includes(k.id));
 function renderFilterChips(){
   const box=document.getElementById('filterChips');
+  /* Every count is what you would be looking at if you pressed that chip next — the rule
+     the single filter kept ("the count under a chip is always the count you get when you
+     press it"), now with the chips already on taken into account. An ON chip shows the
+     view you are in. Adding a chip, or a child standing in for its parent, can only narrow
+     what is on screen, so those counts come from the current match alone; a chip that
+     would broaden is counted over the whole deck. */
+  const cur=activeFilter?filterMatch(activeFilters):null;
+  const count=id=>{
+    if(activeFilters.includes(id))return cur.length;
+    const next=nextFilters(id);
+    if(cur&&activeFilters.every(x=>next.includes(x)||(findFilter(id)||{}).parent&&findFilter(id).parent.id===x)){
+      const h=findFilter(id),t=filterTest(h.def,h.parent);
+      return cur.filter(i=>t(PLANTS[i])).length;
+    }
+    return filterMatch(next).length;
+  };
   const chip=(d,parent,cls)=>{
-    const n=PLANTS.filter(filterTest(d,parent)).length;
-    const on=activeFilter===d.id?' on':(openGroup===d.id&&!parent?' open':'');
-    return `<button class="chip${cls}${on}" data-f="${d.id}" ${n?'':'disabled'}>${d.label} <small>${n}</small></button>`;
+    const on=activeFilters.includes(d.id),n=count(d.id);
+    const state=on?' on':(!parent&&groupOpen(d)?' open':'');
+    return `<button class="chip${cls}${state}" data-f="${d.id}" aria-pressed="${on}" ${n||on?'':'disabled'}>${d.label} <small>${n}</small></button>`;
   };
   box.innerHTML=FILTER_DEFS.map(d=>
     chip(d,null,d.kids?' has-kids':'')
     /* the children run on to the RIGHT of their parent, which is what Oscar asked
        for, and then a zero-height flex break closes the group so the next
        top-level chip starts a fresh row instead of looking like a fifth sibling */
-    +(openGroup===d.id&&d.kids?d.kids.map(k=>chip(k,d,' kid')).join('')+'<i class="f-break"></i>':'')
+    +(d.kids&&groupOpen(d)?d.kids.map(k=>chip(k,d,' kid')).join('')+'<i class="f-break"></i>':'')
   ).join('');
-  box.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{
-    if(activeFilter===b.dataset.f)stepOutFilter(b.dataset.f);else applyFilter(b.dataset.f);
-    renderFilterChips();
-    /* Only a chip with nothing left below it closes the menu. A group has just
-       put its children on screen; closing over them is the clutter he was
-       avoiding, in a more annoying form. */
-    if(activeFilter&&!(findFilter(activeFilter)||{}).def.kids)closeSheet();
-  });
+  /* The menu stays open while chips are pressed — closing it after each one would make
+     a second filter cost a trip back into the menu, which is the whole of this ask. The
+     bar under the chips says what the selection comes to and is the way out to it. */
+  box.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{applyFilter(b.dataset.f);renderFilterChips();});
+  const bar=document.getElementById('filterActions');
+  bar.hidden=!activeFilter;
+  if(activeFilter){
+    bar.innerHTML=`<button class="f-show" type="button">Show ${cur.length} plant${cur.length===1?'':'s'}</button>`
+      +`<button class="f-clear" type="button">Clear filters</button>`;
+    bar.querySelector('.f-show').onclick=closeSheet;
+    bar.querySelector('.f-clear').onclick=()=>{clearFilter();renderFilterChips();};
+  }else bar.innerHTML='';
 }
 
 /* ---- v12 card template helpers (design/card-builder.html; CARD-STATS.md) ---- */
@@ -16290,13 +16683,19 @@ function tradeBlocks(p){
 const wIcon=kind=>fill=>`<span class="ricon ricon-${kind}" style="--fill:${fill}"></span>`;
 const wRow=(kind,score)=>score==null?'':getRatingSegments(score/4).map(wIcon(kind)).join('');
 const MONTHS={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
-function parseMonths(str){                    /* "Jul-Oct" -> [7,8,9,10]; wraps Oct-Feb */
+function parseMonths(str){                    /* "Jul-Oct" -> [7,8,9,10]; wraps Oct-Feb; "Apr-May / Oct-Nov" -> [4,5,10,11] */
   if(!str)return[];
-  const found=(str.toLowerCase().match(/[a-z]{3,}/g)||[]).map(w=>MONTHS[w.slice(0,3)]).filter(Boolean);
-  if(!found.length)return[];
-  if(found.length===1)return[found[0]];
-  const out=[];let m=found[0];
-  while(true){out.push(m);if(m===found[found.length-1]||out.length>12)break;m=m%12+1;}
+  /* A split peak names two seasons, spring blossom then autumn colour, and each run is read on its own.
+     Read whole, first month to last, Sargent's cherry lit April to November, showed as "in season" all
+     summer, and fell out of "Peaks here" for being longer than six months (2026-10-07). The split is
+     the one tools/plant-sense.js monthsOf already uses; a peak with no separator reads exactly as before. */
+  const out=[];
+  for(const part of str.toLowerCase().split(/[,/&;]|\band\b/)){
+    const found=(part.match(/[a-z]{3,}/g)||[]).map(w=>MONTHS[w.slice(0,3)]).filter(Boolean);
+    if(!found.length)continue;
+    let m=found[0];const end=found[found.length-1];
+    for(let k=0;k<12;k++){if(!out.includes(m))out.push(m);if(m===end)break;m=m%12+1;}
+  }
   return out;
 }
 function parseSize(str){                      /* "60–90 cm H × 45–60 cm W" -> {h,s} */
@@ -17073,6 +17472,59 @@ const PHOTO_SWAP={
     alts:[
       'photos/card/pteris-nipponica-backlit.webp',
       'photos/card/pteris-nipponica-fronds.webp',
+    ],
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 double, his 2026-09-26 shot: three crimson lanterns close up, water droplets on the petals, hanging over the pot. The card photo is his whole shrub hung with lanterns */
+  'crinodendron-hookerianum':{
+    alt:'photos/card/crinodendron-hookerianum-lanterns.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 double, his 2026-09-26 shot: a pink flower cluster with buds over leaves turned red, orange and bronze, the shoot held up in sun by a hand that shows blurred at the left. The card photo is his tighter crop of the flowering shoot */
+  'viburnum-bodnantense-charles-lamont':{
+    alt:'photos/card/viburnum-bodnantense-charles-lamont-autumn.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 second photo: flower spikes in bud and bloom over grey-green leaves, some spent flowers and black specks on the leaves as shot. The card photo is his other 2026-10-07 shot of the flowering spikes; both replace his first shot of the day, which he dropped before it was published */
+  'hebe-petita-red':{
+    alt:'photos/card/hebe-petita-red-spikes.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 flower photo: pale pink tubular flowers with white throats veined magenta, and buds below, with water droplets on the petals, as shot. The card photo is the close-up of narrow glossy leaves he sent with it */
+  'penstemon-volcano-fujiyama':{
+    alt:'photos/card/penstemon-volcano-fujiyama-flowers.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 second photo: a half-open white flower with browned outer petals, two cream buds marked brown, and glossy dark green leaves with water droplets, some showing rusty-brown undersides, as shot. The card photo is his close-up of an open flower with cream stamens tipped pink, sent with it */
+  'magnolia-grandiflora-little-gem':{
+    alt:'photos/card/magnolia-grandiflora-little-gem-buds.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 second photo: clusters of glossy red crab apples among broad green leaves with water droplets, a few yellow leaves and a cane at the left, as shot. The card photo is his other shot of the same fruiting branches, taken six seconds earlier */
+  'malus-baccata-braendkjaer':{
+    alt:'photos/card/malus-baccata-braendkjaer-fruit.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 photo: fan-shaped leaves turning golden yellow among green ones, with water droplets, as shot. The card photo is his earlier one */
+  'ginkgo-biloba':{
+    alt:'photos/card/ginkgo-biloba-autumn.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's 2026-10-07 photo: a curling red-and-purple leaf with green veins, beaded with water droplets, over blurred red and green leaves, as shot. The card photo is his earlier one */
+  'parrotia-persica-bella':{
+    alts:[
+      'photos/card/parrotia-persica-bella-droplets.webp',
+      'photos/card/parrotia-persica-bella-leaf-tip.webp',
+      'photos/card/parrotia-persica-bella-backlit.webp',
+      'photos/card/parrotia-persica-bella-crimson.webp',
     ],
     focus:'50% 45%',
     hold:'3.5s',

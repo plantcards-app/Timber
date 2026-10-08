@@ -210,6 +210,19 @@ const answerRound = (page, correctly) => page.evaluate(right => {
   await page.evaluate(() => { localStorage.clear(); });
   await page.reload(); await page.waitForTimeout(400);
 
+  /* A split peak is two seasons. "Apr-May / Oct-Nov" (Sargent's cherry: blossom, then autumn
+     colour) used to read first month to last, lighting April to November, and the six-month
+     "Peaks here" rule dropped it from every season (2026-10-07). */
+  const pm = await page.evaluate(() => ({
+    split: parseMonths('Apr-May / Oct-Nov'), comma: parseMonths('May-Jun, Aug-Sep'),
+    wrap: parseMonths('Oct-Feb'), plain: parseMonths('Jul-Oct'), one: parseMonths('May'),
+  }));
+  check('a split peak lights each run, not the months between',
+    JSON.stringify(pm.split) === '[4,5,10,11]' && JSON.stringify(pm.comma) === '[5,6,8,9]', JSON.stringify(pm));
+  check('a one-run peak reads as before, wrap included',
+    JSON.stringify(pm.wrap) === '[10,11,12,1,2]' && JSON.stringify(pm.plain) === '[7,8,9,10]' &&
+    JSON.stringify(pm.one) === '[5]', JSON.stringify(pm));
+
   await page.click('#menuBtn'); await page.waitForTimeout(350);
   const chips = await page.evaluate(() =>
     [...document.querySelectorAll('#filterChips .chip')].map(c => ({
@@ -221,10 +234,9 @@ const answerRound = (page, correctly) => page.evaluate(right => {
   check('no child chips are showing until a group is opened', chips.every(c => !c.kid),
     JSON.stringify(chips.filter(c => c.kid).map(c => c.id)));
 
-  /* A LEAF, deliberately: the assertions below include "applying a filter closes
-     the menu", which is true only of a chip with nothing left underneath it. A
-     group keeps the menu open on purpose (2026-09-14) so its children are
-     reachable, and picking one here would fail that check for the right reason.
+  /* A LEAF, deliberately, so the count and toggle steps below are about one chip.
+     Since 2026-10-07 no chip closes the menu (Oscar wanted to press several in a
+     row), and the bar under the chips is the way out to the result.
      need n >= 2: swiping a 1-card filtered view empties it, which auto-clears the
      filter — the toggle-off steps below assume the filter is still active */
   const typeChip = chips.find(c => !c.hasKids && !c.kid && c.n > 1 && c.n < NPLANTS);
@@ -236,10 +248,16 @@ const answerRound = (page, correctly) => page.evaluate(right => {
       cards: document.querySelectorAll('.card').length,
       sheetOpen: document.getElementById('sheet').classList.contains('open'),
       progress: localStorage.getItem('timber-progress-v1'),
+      bar: !document.getElementById('filterActions').hidden,
+      show: (document.querySelector('#filterActions .f-show') || {}).textContent || '',
     }));
     check('data chip filters the deck to its count', st.cards === typeChip.n, JSON.stringify({ st: st.cards, want: typeChip.n }));
-    check('applying a filter closes the menu', !st.sheetOpen);
+    check('a chip leaves the menu open, so another can be added', st.sheetOpen);
+    check('the bar under the chips offers the result', st.bar && st.show === `Show ${typeChip.n} plants`, JSON.stringify(st.show));
     check('filter never touches saved progress', st.progress === progressSnap);
+    await page.click('#filterActions .f-show'); await page.waitForTimeout(350);
+    check('Show closes the menu onto the filtered deck',
+      !(await page.evaluate(() => document.getElementById('sheet').classList.contains('open'))));
 
     /* swipe inside filter: SRS written, progress untouched */
     const filtTop = await page.evaluate(() => {
@@ -313,16 +331,19 @@ const answerRound = (page, correctly) => page.evaluate(right => {
     } else {
       await page.click(`#filterChips .chip[data-f="${kid.id}"]`); await page.waitForTimeout(400);
       await deckSettled(page);
-      const narrowed = await page.evaluate(() => ({
+      const narrowed = await page.evaluate(gid => ({
         cards: document.querySelectorAll('.card').length,
         sheetOpen: document.getElementById('sheet').classList.contains('open'),
-        f: activeFilter, g: openGroup,
-      }));
+        f: activeFilter,
+        parentOpen: document.querySelector(`#filterChips .chip[data-f="${gid}"]`).classList.contains('open'),
+        kids: document.querySelectorAll('#filterChips .chip.kid').length,
+      }), group.id);
       check('a child chip narrows the deck to its count', narrowed.cards === kid.n,
         JSON.stringify({ got: narrowed.cards, want: kid.n }));
-      check('a child chip closes the menu — nothing left below it', !narrowed.sheetOpen);
-      check('the parent group stays open behind an active child',
-        narrowed.f === kid.id && narrowed.g === group.id, JSON.stringify(narrowed));
+      check('a child chip keeps the menu open, with its siblings still on screen',
+        narrowed.sheetOpen && narrowed.kids === opened.kids.length, JSON.stringify(narrowed));
+      check('the child stands in for its parent, and the parent group stays open behind it',
+        narrowed.f === kid.id && narrowed.parentOpen, JSON.stringify(narrowed));
 
     /* The menu is open or shut depending on whether the last chip had children,
        which is the behaviour under test — so ask, rather than clicking #menuBtn
@@ -345,14 +366,84 @@ const answerRound = (page, correctly) => page.evaluate(right => {
       await page.click(`#filterChips .chip[data-f="${group.id}"]`); await page.waitForTimeout(400);
       await deckSettled(page);
       const cleared = await page.evaluate(() => ({
-        cards: document.querySelectorAll('.card').length, f: activeFilter, g: openGroup,
-        kids: document.querySelectorAll('#filterChips .chip.kid').length }));
+        cards: document.querySelectorAll('.card').length, f: activeFilter,
+        kids: document.querySelectorAll('#filterChips .chip.kid').length,
+        bar: !document.getElementById('filterActions').hidden }));
       check('pressing the active parent clears the filter and closes the group',
-        cleared.f === null && cleared.g === null && cleared.kids === 0 && cleared.cards === NPLANTS,
+        cleared.f === null && cleared.kids === 0 && cleared.cards === NPLANTS && !cleared.bar,
         JSON.stringify(cleared));
       await page.click('.sheet .scrim', { position: { x: 15, y: 300 } }); await page.waitForTimeout(350);
     }
   }
+
+  /* ---- several chips at once (Oscar, 2026-10-07): "drought tolerant, then shade
+     loving, and it narrows it down to plants that will manage both". Each chip
+     narrows what the others left; every count is what pressing it would give; a
+     chip that would leave nothing is disabled; off broadens back; Clear clears. */
+  await page.evaluate(() => { localStorage.clear(); });
+  await page.reload(); await page.waitForTimeout(400);
+  await page.click('#menuBtn'); await page.waitForTimeout(350);
+  const leafChips = () => page.evaluate(() =>
+    [...document.querySelectorAll('#filterChips .chip:not(.kid)')].map(b => ({
+      id: b.dataset.f, n: +b.querySelector('small').textContent, dis: b.disabled,
+      on: b.classList.contains('on'), kids: b.classList.contains('has-kids') })));
+  const first = (await leafChips()).filter(c => !c.dis && !c.kids && c.n > 2 && c.n < NPLANTS)
+    .sort((a, b) => b.n - a.n)[0];
+  if (!first) {
+    check('a broad leaf chip exists to combine', false, 'inspect FILTER_DEFS');
+  } else {
+    await page.click(`#filterChips .chip[data-f="${first.id}"]`); await page.waitForTimeout(400);
+    await deckSettled(page);
+    const after1 = await leafChips();
+    check('with one chip on, every enabled count is a narrowing of it',
+      after1.filter(c => !c.on && !c.dis).every(c => c.n <= first.n), JSON.stringify(after1));
+    check('a chip that would leave nothing is disabled',
+      after1.filter(c => !c.on && c.n === 0).every(c => c.dis), JSON.stringify(after1.filter(c => c.n === 0)));
+    const second = after1.filter(c => !c.on && !c.dis && c.n >= 1 && c.n < first.n)
+      .sort((a, b) => (a.kids - b.kids) || (b.n - a.n))[0];
+    if (!second) {
+      check('a second chip narrows the first', false, JSON.stringify(after1));
+    } else {
+      await page.click(`#filterChips .chip[data-f="${second.id}"]`); await page.waitForTimeout(400);
+      await deckSettled(page);
+      const both = await page.evaluate(ids => {
+        const tests = ids.map(id => { const h = findFilter(id); return filterTest(h.def, h.parent); });
+        const idx = [...document.querySelectorAll('.card')].map(c => +c.dataset.idx);
+        return { cards: idx.length, f: activeFilters.slice(),
+          allPass: idx.every(i => tests.every(t => t(PLANTS[i]))),
+          sheetOpen: document.getElementById('sheet').classList.contains('open'),
+          show: (document.querySelector('#filterActions .f-show') || {}).textContent || '' };
+      }, [first.id, second.id]);
+      check('two chips narrow the deck to the count the second one showed',
+        both.cards === second.n, JSON.stringify({ got: both.cards, want: second.n }));
+      check('both chips stay on', both.f.includes(first.id) && both.f.includes(second.id), JSON.stringify(both.f));
+      check('every card left passes both chips', both.allPass);
+      check('the menu is still open after the second chip', both.sheetOpen);
+      check('the Show button counts the combined result',
+        both.show === `Show ${second.n} plant${second.n === 1 ? '' : 's'}`, JSON.stringify(both.show));
+
+      /* switching the FIRST chip off leaves the second on its own */
+      await page.click(`#filterChips .chip[data-f="${first.id}"]`); await page.waitForTimeout(400);
+      await deckSettled(page);
+      const alone = await page.evaluate(id => ({
+        cards: document.querySelectorAll('.card').length, f: activeFilter,
+        want: filterMatch([id]).length }), second.id);
+      check('switching one chip off broadens back to the others',
+        alone.f === second.id && alone.cards === alone.want, JSON.stringify(alone));
+
+      /* Clear filters: whole deck back, bar gone, nothing on */
+      await page.click('#filterActions .f-clear'); await page.waitForTimeout(400);
+      await deckSettled(page);
+      const clearedAll = await page.evaluate(() => ({
+        cards: document.querySelectorAll('.card').length, f: activeFilter, n: activeFilters.length,
+        bar: !document.getElementById('filterActions').hidden,
+        on: document.querySelectorAll('#filterChips .chip.on').length }));
+      check('Clear filters restores the whole deck and turns every chip off',
+        clearedAll.cards === NPLANTS && clearedAll.f === null && clearedAll.n === 0 && !clearedAll.bar && clearedAll.on === 0,
+        JSON.stringify(clearedAll));
+    }
+  }
+  await page.click('.sheet .scrim', { position: { x: 15, y: 300 } }); await page.waitForTimeout(350);
 
   /* filter ↔ review: one ephemeral view at a time */
   await page.evaluate(() => {
@@ -363,8 +454,7 @@ const answerRound = (page, correctly) => page.evaluate(right => {
   if (typeChip) {
     await page.click('#menuBtn'); await page.waitForTimeout(350);
     await page.click(`#filterChips .chip[data-f="${typeChip.id}"]`); await page.waitForTimeout(350);
-    await page.click('#menuBtn'); await page.waitForTimeout(350);
-    await page.click('#reviewRow'); await page.waitForTimeout(350);
+    await page.click('#reviewRow'); await page.waitForTimeout(350);   /* the menu is still open */
     const cross = await page.evaluate(() => ({
       cards: document.querySelectorAll('.card').length,
       review: reviewMode, filter: activeFilter,
