@@ -31,6 +31,13 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-08 (**fact check of the three batches behind r383; fitting fixes r384–r385**) — Oscar: "Check the json
+  is correct". 38/38 entries pass check-plant-json, and the 27 dealt cards match their JSON field for field.
+  Five research agents checked every field against outside sources. Fixed, because they were the fitter's
+  errors: "rHS"/"uK" casing on three cards, Sedum 'Tricolor' cvs (RHS naming reversed), and facings RHS
+  states (Alocasia and Ceropegia East / West, both Vinca Any aspect). Facts wrong in his JSON (Sargent's
+  cherry peak, Braendkjaer height, Pink Skyrocket height, spider plant text vs photo) are put to Oscar and
+  left as sent. Details: data/held-photos/2026-10-07b/README.md. Fast 9/9, deck-audit PASS. Not live.
 progress: 2026-10-08 (**PR #58 merged; deck 577 live, r383**) — Oscar: "Push". PR #58 (dev -> deploy, 33 commits,
   head 4094000) merged as ce9d49a. Pages run 132 is green: fast checks, deploy, "Verify the deployed page is this commit"
   (build-stamp --verify on the served timber.html) and assetlinks.json all pass on GitHub's runner. github.io returns

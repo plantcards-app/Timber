@@ -140,3 +140,28 @@ The spider plant and Song of India were rendered at 390x844 @2x and are whole. T
 Later that evening he re-sent photos a and d with names: "Heuchera sweat tea" and "Sugar and spice". Both
 are byte-identical to the held files, so nothing new was stored. His GPT JSON for a, c, d and i arrived next,
 and all four are dealt from it. See `data/held-photos/2026-10-07d/`. No photo from this sheet is held any more.
+
+## Fact check (2026-10-08)
+
+Oscar: "Check the json is correct". All 38 fitted entries from 2026-10-07b, c and d pass check-plant-json with
+0 errors and 0 warnings. The 27 dealt cards match their fitted entries field for field. Every field was then
+checked against outside sources (RHS through search snippets, since rhs.org.uk returns 403 to fetch).
+
+Fitting errors, fixed (r384, r385). These were the fitter's, not his JSON's:
+- The hardiness notes on Hebe Petita Red, Sedum 'Tricolor' and Tiarella 'Pink Skyrocket' read "uK" or "rHS".
+  The fit script lowercased the note's first letter. It now leaves a leading acronym alone.
+- Sedum spurium 'Tricolor': cvs had the RHS naming the wrong way round. RHS's main entry is Sedum spurium
+  'Tricolor' (v). 'Variegatum' and Phedimus spurius 'Tricolor' are its synonyms
+  (rhs.org.uk/plants/58466). The fitter had taken GPT's `uncertain` note as fact. That note is kept verbatim
+  above, and it is wrong.
+- Facings: the fitter had derived these from sunNeed, but RHS states them, and a stated facing wins.
+  Alocasia zebrina becomes East / West (rhs.org.uk/plants/136827). Both Vinca minor cards become Any aspect
+  (RHS lists N/E/S/W).
+  
+Wrong or doubtful facts in his JSON are listed for Oscar and left as sent until he says otherwise. On the
+dealt cards these are: Pink Skyrocket's height (RHS: to 20 cm in flower; card 30–40 cm), and the spider
+plant's text against its photo. RHS 'Variegatum' has white margins and 'Vittatum' a central stripe; the photo
+shows a central stripe, and the label says 'Variegatum'. Before dealing, the undealt entries need these
+fixed: Dianthus toxicity is blank, but RHS marks the genus a skin allergen and ASPCA lists pinks as toxic to
+pets. RHS gives Peperomia obtusifolia H1b, not H1a. No series or breeder was found for "Hardy Rose/Violet",
+so their H4 is unverified.

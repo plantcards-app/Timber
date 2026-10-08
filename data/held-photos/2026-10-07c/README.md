@@ -195,3 +195,17 @@ card was rendered at 390x844 @2x and is whole.
 Chanticleer re-photo, r380: data-audit 0 problems, plant-sense --strict "No card contradicts itself",
 photo-credits 0 unrecorded, deck-audit PASS (577 cards), audit-layout "all cards clean", fast set 9/9. Rendered
 before and after at 390x844 @2x, the new frame is whole.
+
+## Fact check (2026-10-08)
+
+See the fact-check section in `../2026-10-07b/README.md`. These cards need no fitting fixes. Facts flagged
+for Oscar and left as sent:
+- Prunus sargentii's peak reads Apr-May / Oct-Nov. Keele and van den Berk give flowering in early April, and
+  Trees and Shrubs Online gives autumn colour in late September to early October.
+- Malus 'Braendkjaer' reads 6–10 m. Van den Berk, the only cultivar source, gives 4–6 m.
+
+Doubtful but not shown wrong:
+- RHS lists the Escallonia as "sheltered", which sits awkwardly with the card's "coastal".
+- 'Pink Perfection' and 'Pink Champagne' have double flowers, and no source supports "wildlife" for them.
+- Chanticleer colours late, around November.
+- RHS lists Magnolia 'Little Gem' for any pH, while the card says neutral to acid.
