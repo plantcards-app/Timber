@@ -18,3 +18,18 @@ photo shows mid-pink flowers, while the card text says "dark rose-pink". The car
 
 At r386: deck-audit PASS (577 cards), audit-layout clean, check-boot OK, fast set 9/9. Both frames were rendered
 at 390x844 @2x. The new one is whole; the tip of one bud at the left edge is cropped by the card window.
+
+## Teucrium fruticans
+
+"Teucrium flash between photo", one photo. It was taken on a Galaxy S24 at 13:13:35 on 2026-10-07, at 4000x3000
+with EXIF rotation 6, so it is staged upright at 1200x1600. A byte search found no C2PA, JUMBF, content-credential
+or AI-edit markers, and it is not a copy of the card photo. The Shrubby Germander card had one photo and no flash.
+This one went on with `tools/add-swap.js --as flowers`: two violet-blue flowers with dark veins and long arched
+stamens, on silvery stems with a raindrop. No card text changed. A bench photo in flower on 7 October says nothing
+about garden flowering time (NEW-SESSION rule 3), so the card's Jun-Aug stays.
+
+| file | camera, size, taken | sha256 (first 16) | |
+|---|---|---|---|
+| `teucrium-fruticans-flowers.jpg` | Galaxy S24, 4000x3000 (rot 6), 2026-10-07 13:13 | e767cb5dcdb0892b | flash frame |
+
+The file is byte-identical to what he sent. Rendered at 390x844 @2x, the new frame is whole.
