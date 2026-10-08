@@ -35,12 +35,29 @@ stopped at the missing credit as it always does. The credit was then set with ph
 |---|---|---|
 | `hibiscus-syriacus-fiji-minspot.jpg` | Galaxy S24, 4000x3000 (rot 6), 2026-10-07 14:05 | 622236fab0e1c1c1 |
 
-[Unverified]: the photo shows white-to-blush semi-double flowers with pink-flushed edges and crimson rays from
-a red centre. The card text says "semi-double pink flowers with a deep crimson-red centre". The card keeps the
-JSON's name, as the label rule requires.
+The photo shows white-to-blush semi-double flowers with pink-flushed edges and crimson rays from a red
+centre. That matches RHS's description of 'Minspot', which it lists under its UK/EU trade name PINKY SPOT:
+"Semi-double, white flowers with pink shading and central, cherry red splashes" (rhs.org.uk/plants/346676).
+So the photo fits the name. It is the card text, "semi-double pink flowers", that differs from RHS. Chicago
+Botanic's archived page says pink, so sources disagree, but RHS is the UK authority.
 
 Mandarin Tango and the goldfish plant wait for photos.
 
 At r388: data-audit 0 problems (deck 578, hold 75), plant-sense --strict "No card contradicts itself",
 deck-audit PASS, fast set 9/9. The fitted JSON and the dealt card match field for field. The card was rendered
 at 390x844 and is whole.
+
+## Fact check (2026-10-08)
+
+A research agent checked all three entries against outside sources, using search snippets only because the proxy
+blocks fetches. The disputed points were re-checked by hand. Nothing below has been changed; it waits for Oscar.
+
+- **Fiji, visual:** "pink flowers" should read white flowers brushed pink, with a cherry-red centre (RHS, as above).
+  RHS gives a spread of 1–1.5 m, where the card has 1.2–2.1 m, the US First Editions figure. RHS lists south or
+  west facing. The UK trade name PINKY SPOT is not on the card. RHS gives it an AGM.
+- **Mandarin Tango, toxicity:** "Ornamental fruit not for eating; gloves advised" is not supported. ASPCA lists
+  cinquefoil (Potentilla spp., shrubby cinquefoil among its names) as non-toxic to dogs, cats and horses, and the
+  fruit is tiny dry achenes. On the visual, the patent (USPP29830) has flowers opening orange-red and fading to
+  orange then yellow. On soil, RHS lists the species for any pH.
+- **Goldfish plant:** no errors. RHS gives H1b, summer flowers and the same size bands. Its non-toxic line rests on
+  NCSU, because ASPCA's "Gold-Fish Plant" is a different species.
