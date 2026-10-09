@@ -47,3 +47,23 @@ already under VERIFY-QUEUE item 85, so it is added to KNOWN and to the item 85 t
 Deck 578 -> 580 at r391. data-audit 0 problems (deck 580, hold 74), plant-sense --strict "No card contradicts
 itself", deck-audit PASS, audit-layout clean, check-boot OK, fast set 9/9. Every card and frame was rendered at
 390x844 and is whole.
+
+## Fact check (2026-10-09)
+
+A research agent checked both entries, using search snippets because the proxy blocks fetches. One point was
+wrong, and I re-checked it by hand:
+- **Pyrus, peak:** May-Sep leaves out the blossom. Trees and Shrubs Online (Bean) gives "flowers … produced in
+  April", Red Butte Garden gives April, and van den Berk gives April–May. The peak is now **Apr-Sep** (r392), under
+  Oscar's standing "yes, if they seem necessary".
+
+Doubtful, left as sent:
+- **Pyrus, height:** 5–6 m against RHS's 8–12 m. UK nurseries give 3–7 m, and his `uncertain` note already
+  states the split.
+- **Spiraea, "No known hazard":** ASPCA has no Spiraea entry either way.
+- **Spiraea, cvs:** Golden Princess is RHS's trade designation for 'Lisp'.
+- **Spiraea, visual:** "golden summer foliage" is a slight stretch, since RHS has yellow turning mid-green.
+
+Confirmed:
+- Pyrus is H6, has thorns on its short shoots (RBG Victoria flora), and has small, hard, unpalatable fruit.
+- Spiraea is H6 and 0.5–1 m, with pink flowers mid to late summer, a hard spring prune to 15 cm, and is
+  generally pest-free except for honey fungus.
