@@ -63,6 +63,9 @@ const KNOWN = new Set([
   /* 2026-10-07d batch: "susceptible to crown and root rot in persistently wet conditions",
      pestRisk 4, both from Oscar's supplied JSON. Same call, same item: VQ 85. */
   "Sedum lineare 'Variegatum'|pest-vs-prose",
+  /* 2026-10-09: held card dealt with Oscar's double JSON; its new resilience prose carries the same
+     "occasionally susceptible to honey fungus" caveat beside "generally pest-free", pestRisk 3. VQ 85. */
+  "Spiraea japonica 'Goldflame'|pest-vs-prose",
   /* 2026-09-26 batch: peak is the fruit season the plant is sold on (Aug-Sep), while
      Oscar's own visual also names the spring flowers. See VERIFY-QUEUE item 91. */
   "Vaccinium corymbosum 'Brigitta'|peak-vs-prose",

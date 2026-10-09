@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-09 (**Weeping Silver Pear dealt; held Spiraea 'Goldflame' dealt with his double JSON and a buds
+  frame; deck 578 -> 580, r391**) — double rules applied via compare-double --apply; the honey-fungus pest-vs-prose
+  flag joins VQ 85 / KNOWN. See data/held-photos/2026-10-09/README.md. All checks green. Not live.
 progress: 2026-10-08 (**sourced fact fixes applied on Oscar's yes; r390**) — live: Sargent's cherry Mar-Apr / Sep-Oct,
   Braendkjaer 4–6 m, Pink Skyrocket 20–30 cm, spider plant text to its centre stripe, Fiji text white-brushed-pink,
   1–1.5 m spread, South / West, PINKY SPOT in cvs. Undealt: Dianthus ×3 toxicity, Peperomia H1b, Mandarin Tango
