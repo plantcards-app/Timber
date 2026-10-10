@@ -224,3 +224,11 @@ field. All three cards and both frames were rendered at 390x844 and are whole, w
 [Unverified], carried as written: the photos show bright green leaves, while the cards say "grey-green" and
 "blue-green". Hardy Violet's flowers look crimson-magenta rather than "violet-purple". The agent noted the same
 about chinensis × barbatus types on 2026-10-08. The red Dianthus is held until Oscar names it.
+
+## Vinca minor 'Colada' dealt (2026-10-10, r396)
+
+One photo, sent without text. It was taken on a Galaxy S24 at 10:33:12 on 2026-10-07, at 4000x3000 with EXIF
+rotation 6. It has no C2PA or AI-edit markers, and `vinca-minor-colada.jpg` is byte-identical to what he sent
+(sha256 a301781d6fa312e8…). It shows a white five-petalled flower over plain glossy green leaves, which matches
+'Colada' (RHS: white flowers). The only object in it is a pot rim, so it was not cropped. Deck 592 -> 593. The
+card was rendered at 390x844 and is whole.

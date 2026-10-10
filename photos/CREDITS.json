@@ -1995,6 +1995,36 @@
    "commercialUseCleared": true
   },
   {
+   "file": "dasiphora-fruticosa-mandarin-tango-jefman-buds.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Mandarin Tango Shrubby Cinquefoil card (PHOTO_SWAP alt): an open orange flower among half-open buds and fading yellow blooms.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "dasiphora-fruticosa-mandarin-tango-jefman-sky.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Mandarin Tango Shrubby Cinquefoil card (PHOTO_SWAP alt): an orange-gold flower against a grey sky, seen from below.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "dasiphora-fruticosa-mandarin-tango-jefman.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "davidia-involucrata.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -6772,6 +6802,16 @@
   },
   {
    "file": "vinca-major-variegata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "vinca-minor-colada.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

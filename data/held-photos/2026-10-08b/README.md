@@ -73,3 +73,22 @@ Oscar: "Yes, if they seem nessusary".
   (ASPCA)", because ASPCA lists Potentilla spp., shrubby cinquefoil among its names, as non-toxic. The fruit is
   tiny dry achenes, not "ornamental fruit". Soil becomes "Drained, any pH", since RHS lists the species for acid,
   neutral and alkaline soils. The flower-colour wording is close enough to the patent and is left as sent.
+
+## Mandarin Tango dealt (2026-10-10, r397)
+
+Oscar: "Tango flash throughs". Four photos, all taken on a Galaxy S24 on 2026-10-07 between 14:06:20 and
+14:06:30. None has C2PA or AI-edit markers or shows a label, and all are byte-identical to what he sent.
+
+| sent | time | file | use |
+|---|---|---|---|
+| 4 | 14:06:22 | `dasiphora-fruticosa-mandarin-tango-jefman.jpg` | **card**: open orange-red flowers, sharp |
+| 2 | 14:06:26 | `…-buds.jpg` | flash `buds` |
+| 3 | 14:06:30 | `…-sky.jpg` | flash `sky`, from below against grey sky |
+| 1 | 14:06:20 | `…-spare.jpg` | held as a spare |
+
+Photos 1 and 4 are the same scene 2 s apart, and 4 is the sharper. Flashing between two near-identical frames
+reads as a jitter, so 4 is the card and 1 is kept unused. It goes on as a frame if Oscar wants it.
+
+The photos bear out the patent's description: flowers opening orange-red and fading through orange to yellow.
+Deck 593 -> 594. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean, check-boot OK. The
+card matches the fitted JSON field for field, and its three frames were rendered at 390x844 and are whole.

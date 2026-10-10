@@ -1256,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r395 · 2026-10-10 · 6ea698f';
+const BUILD='r397 · 2026-10-10 · 7ade8a0';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -14188,6 +14188,32 @@ const PLANTS = [
    uses:"Containers, edging, rock gardens, sunny borders and pollinator planting.", size:"20–40 cm H × 20–30 cm W",
    toxicity:"Mildly toxic to cats and dogs if eaten (ASPCA); can irritate skin, so wear gloves (RHS)", hardinessNote:"H4 · −10 to −5°C; treated as a hardy bedding/perennial Dianthus; exact cultivar-level hardiness is unverified.", foliage:"evergreen",
    seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:8, careLevel:5, sunNeed:80, sunMin:45},
+  {common:"Colada Lesser Periwinkle", latin:"Vinca minor 'Colada'", hue:0,
+   visual:"Mat-forming evergreen with glossy dark green leaves and clean white, five-petalled flowers from spring into summer.",
+   water:"Moderate; keep evenly moist while establishing and water during prolonged drought.",
+   aspect:"Any aspect",
+   soil:"Moist, drained, any pH; No very dry ground; rooting runners spread",
+   prune:"Cut back hard in early spring if needed to restrict spread and refresh growth.",
+   source:"", peak:"Apr-Aug", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Colada'",
+   hardiness:"H6", resilience:"Cold hardy, adaptable and useful in sun or shade once established.",
+   uses:"Ground cover, banks, woodland edges, containers and underplanting shrubs.", size:"10–30 cm H × 1–1.5 m W",
+   toxicity:"Harmful if eaten; Vinca contains biologically active alkaloids.", hardinessNote:"H6 · −20 to −15°C; fully hardy in UK conditions.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:15, pestRisk:5, thirst:9, careLevel:4, sunNeed:50, sunMin:15},
+  {common:"Mandarin Tango Shrubby Cinquefoil", latin:"Dasiphora fruticosa MANDARIN TANGO ('Jefman')", hue:35,
+   visual:"Compact rounded shrub with small grey-green leaves and warm orange-yellow five-petalled flowers, often orange when opening before fading towards yellow",
+   water:"Moderate while establishing; drought tolerant once established",
+   aspect:"South / East / West",
+   soil:"Drained, any pH; No wet, compacted or heavy clay",
+   prune:"Lightly prune in spring; remove older stems periodically to maintain a compact, vigorous framework",
+   source:"", peak:"Jul-Oct", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Mandarin Tango®; cultivar 'Jefman'",
+   hardiness:"H7", resilience:"Very hardy; tolerant of exposed sites, cold and periods of drought once established",
+   uses:"shrub borders · low hedging · banks · gravel gardens · wildlife gardens · containers", size:"60–80 cm H × 60–80 cm W",
+   toxicity:"No known hazard; non-toxic to dogs, cats and horses (ASPCA)", hardinessNote:"H7 · below −20°C", foliage:"deciduous",
+   seasonalImpact:"", growthSpeed:8, pestRisk:4, thirst:7, careLevel:4, sunNeed:90, sunMin:50},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -17780,6 +17806,15 @@ const PHOTO_SWAP={
   /* two magenta flowers with white fringed edges, from the bench beside the label (cropped clear of it) */
   'dianthus-hardy-violet-picotee':{
     alt:'photos/card/dianthus-hardy-violet-picotee-fringed.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* an open orange flower among half-open buds and fading yellow blooms */
+  'dasiphora-fruticosa-mandarin-tango-jefman':{
+    alts:[
+      'photos/card/dasiphora-fruticosa-mandarin-tango-jefman-buds.webp',
+      'photos/card/dasiphora-fruticosa-mandarin-tango-jefman-sky.webp',
+    ],
     focus:'50% 45%',
     hold:'3.5s',
   },
