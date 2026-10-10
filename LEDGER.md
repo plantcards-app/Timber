@@ -31,6 +31,25 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**PR #59 merged; deck 600 live, r401. HANDOVER: Oscar is starting a new chat**) — Oscar: "After
+  goldfishplant push and merge". The full gate was 18/18 on d4290b7. PR #59 merged as cfeea9d. Pages run 133 is green,
+  including "Verify the deployed page is this commit" and assetlinks. Dev branch restarted from cfeea9d.
+  STATE FOR THE NEXT SESSION:
+  - Every fitted JSON with a photo is dealt. Nothing waits on a photo except the 74 older hold cards.
+  - Shelved at Oscar's call: Prunus 'Pink Champagne' (2026-10-07c); the pink Aglaonema and red Dianthus photos
+    ("If no specific name shelve it"); LITTLE LIME (paused); the variegated lavender (parked).
+  - Doubts carried as written ([Unverified]) are listed in each batch README under "Fact check" and in the photo
+    notes. Main ones: the Hellebore Ivory Blush photo is pink/green, not ivory; the Photinia 'Red Ballcoon' photo is
+    upright, not a 50 cm dwarf; Leea's "toxic" line is unsourced; FOREVER RED's cvs names a 'Sweet' that may not exist.
+  - Open with Oscar, not yet answered:
+    - play/LISTING.md still says "430+ plants" (the deck is 600)
+    - the old URL with his surname still appears in LEDGER.md, MONETISATION-BRIEF.md and play/NEXT-SESSION.md
+    - the fern history rewrite
+    - the Play Console brick
+  - Method notes:
+    - The scratch fit scripts must keep a leading acronym's capitals (fixed 2026-10-08).
+    - A label in a photo is cropped with tools/reframe-photo.js plus a *-crop.json, never hand-edited.
+    - The local http.server on :8477 drops between turns, so restart it before any browser check.
 progress: 2026-10-10 (**Goldfish Plant dealt, cropped clear of a pot tag; deck 600, r401**) — every fitted JSON with a
   photo is now dealt. Full gate next, then push on Oscar's word.
 progress: 2026-10-10 (**unnamed photos shelved**) — Oscar: "If no specific name shelve it". The pink Aglaonema and the
