@@ -267,3 +267,7 @@ Each was checked against the waiting entries and the card text:
 Deck 597 -> 599. Every entry in this batch with a photo is now dealt. Fast 9/9, data-audit 0, plant-sense clean,
 deck-audit PASS, layout clean. Both cards match the fitted JSON field for field, and both were rendered at
 390x844 and are whole.
+
+**Shelved (2026-10-10):** `unmatched-dianthus-red.jpg`. Under Oscar's rule for the unnamed Aglaonema ("If no
+specific name shelve it"), the red Dianthus has no specific name either, so it is shelved. The photo is kept and
+nothing was dealt.
