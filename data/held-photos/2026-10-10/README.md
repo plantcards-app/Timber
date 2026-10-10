@@ -78,3 +78,54 @@ No field is shown wrong, so nothing changed. These are doubtful and left as sent
 - **Pieris 'Prelude':** RHS 92004 confirms every card field (H5, AGM, 0.5–1 m, creamy-white late-spring
   flowers, pink young leaves, east or west facing, acid soil). Only the truncated `uncertain` and `sources`
   are incomplete.
+
+## Photos (2026-10-10) — all eight dealt
+
+Fifteen photos came with no text. All were taken on a Galaxy S24 on 2026-10-09 between 13:04 and 15:48. None has
+C2PA or AI-edit markers, and every file here is byte-identical to what he sent. They were matched to the eight
+fitted entries by eye ([Inference]), and the Heuchera match is confirmed by the label in photo 9, which reads
+"Heuchera 'Forever Red'". The first photo sent for each plant is its card photo; the rest are flash frames, in
+the order sent.
+
+| sent | file | card / frame |
+|---|---|---|
+| 1 | `helleborus-…-hg-1416.jpg` | Ice N’ Roses Ivory Blush, card (cropped) |
+| 2 | `helleborus-…-hg-1416-green.jpg` | flash `green`: an aged flower gone green, pink rim (landscape, EXIF rot 3) |
+| 3 | `symphyotrichum-dumosum-indigo.jpg` | Aster 'Indigo', card |
+| 4 | `pieris-japonica-prelude.jpg` | Pieris 'Prelude', card: autumn flower-bud panicles, toothed leaves |
+| 5 | `phlox-paniculata-mardi-gras.jpg` | Phlox 'Mardi Gras', card |
+| 6 | `phlox-paniculata-mardi-gras-buds.jpg` | flash `buds` (cropped) |
+| 7 | `heuchera-forever-red-tnheufr.jpg` | FOREVER RED, card (cropped) |
+| 8 | `heuchera-forever-red-tnheufr-crown.jpg` | flash `crown` |
+| 9 | `heuchera-forever-red-tnheufr-leaves.jpg` | flash `leaves` (cropped) |
+| 10 | `ilex-crenata-golden-rock.jpg` | Golden Rock holly, card |
+| 11 | `photinia-fraseri-red-ballcoon.jpg` | Photinia 'Red Ballcoon', card (cropped) |
+| 12–14 | `…-shoots`, `…-stems`, `…-tip` | flash frames 2–4 |
+| 15 | `leea-guineensis-burgundy.jpg` | Leea 'Burgundy', card |
+
+**No labels on customer cards (v14.34).** Five photos had something to remove. Each was cropped with
+`tools/reframe-photo.js` to the `*-crop.json` beside it, using original pixels only, and every crop is
+between 0.75 and 1.0:
+- the hellebore (bottom 500 px, a blank label stake)
+- the first Heuchera (top 580 px, a "£3…" price sticker)
+- the third Heuchera (left 320 px, the "Gardeners Choice … Forever Red" label)
+- the second Phlox (both edges, two nursery labels)
+- the first Photinia (bottom 300 px, unidentified white/red objects)
+
+The blue shapes in the background of the Photinia photos are out-of-focus blobs with nothing readable, so they
+were left. The three cropped card photos carry a note in CREDITS. add-swap's "Second frame" wording was
+corrected to Third/Fourth on the extra frames.
+
+[Unverified], carried as written under the label rule:
+- **Hellebore:** the flowers shown are pink-red flushed over green, and one has aged to green. The card text says
+  "soft ivory-white", and the breeder describes white petals. Hellebore sepals do colour as they age, but these
+  photos alone don't confirm the cultivar.
+- **Photinia:** the plant shown is upright with long red stems, while the card describes a "tiny rounded" 50 cm
+  dwarf.
+- **Aster:** the disc florets in the photo are magenta-red, while the card text says "yellow centres". Aster
+  discs often redden with age.
+
+Deck 580 -> 588 at r393. data-audit 0 problems (deck 588, hold 74), plant-sense --strict "No card contradicts
+itself", deck-audit PASS, audit-layout "all cards clean", check-boot OK, fast set 9/9. The eight dealt cards
+match `batch-corrected.json` field for field. Every card and frame was rendered at 390x844 and is whole, with no
+label showing.

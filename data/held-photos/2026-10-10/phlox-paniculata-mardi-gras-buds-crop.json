@@ -1,0 +1,53 @@
+{
+  "sourcePx": {
+    "w": 3000,
+    "h": 4000
+  },
+  "featureVisible": true,
+  "featureSeen": "purple phlox flowers and buds above purple-edged leaves",
+  "featureBox": {
+    "x": 0.1,
+    "y": 0.0,
+    "w": 0.75,
+    "h": 0.6
+  },
+  "crop": {
+    "x": 0.06667,
+    "y": 0.0,
+    "w": 0.79333,
+    "h": 0.7925
+  },
+  "cropAspect": 0.751,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": {
+        "x": 0.0,
+        "y": 0.3,
+        "w": 0.053,
+        "h": 0.03
+      },
+      "reads": "purple label edge reading 'PH\u2026'",
+      "resolution": "crop"
+    },
+    {
+      "box": {
+        "x": 0.867,
+        "y": 0.41,
+        "w": 0.133,
+        "h": 0.12
+      },
+      "reads": "nursery label reading 'Ga\u2026' / '& Ph\u2026'",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": {
+    "evAdjust": 0.0,
+    "whiteBalance": "none"
+  },
+  "verdict": "crop",
+  "concerns": [],
+  "reason": "Keeps the flowers, buds and leaves; drops both label edges and the lower soil band."
+}

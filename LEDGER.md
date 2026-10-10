@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**all eight 2026-10-10 cards dealt from 15 photos; deck 580 -> 588, r393**) — five photos
+  cropped with reframe-photo to drop labels, a price sticker and a label stake; seven flash frames. Hellebore and
+  Photinia photo-vs-text doubts recorded. All checks green. See data/held-photos/2026-10-10/README.md. Not live.
 progress: 2026-10-10 (**eight-entry JSON stored and fitted; all wait for photos**) — Golden Rock holly, Leea 'Burgundy',
   Heuchera FOREVER RED, Phlox 'Mardi Gras', Aster 'Indigo', Hellebore Ice N’ Roses Ivory Blush, Photinia 'Red Ballcoon',
   Pieris 'Prelude' (its message was cut off inside `uncertain`; card fields complete). 8/8 pass check-plant-json.

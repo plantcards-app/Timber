@@ -1,0 +1,43 @@
+{
+  "sourcePx": {
+    "w": 3000,
+    "h": 4000
+  },
+  "featureVisible": true,
+  "featureSeen": "an open hellebore flower, pink-red flushed sepals over green, with cream stamens",
+  "featureBox": {
+    "x": 0.15,
+    "y": 0.08,
+    "w": 0.6,
+    "h": 0.45
+  },
+  "crop": {
+    "x": 0.0,
+    "y": 0.0,
+    "w": 1.0,
+    "h": 0.875
+  },
+  "cropAspect": 0.857,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": {
+        "x": 0.88,
+        "y": 0.8875,
+        "w": 0.12,
+        "h": 0.1125
+      },
+      "reads": "blank grey plastic label stake",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": {
+    "evAdjust": 0.0,
+    "whiteBalance": "none"
+  },
+  "verdict": "crop",
+  "concerns": [],
+  "reason": "Drops the bottom 500 px, which hold the tip of a plant label; original pixels only."
+}

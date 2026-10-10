@@ -2965,6 +2965,27 @@
    "commercialUseCleared": true
   },
   {
+   "file": "helleborus-glandorfensis-ice-n-roses-ivory-blush-hg-1416-green.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Ice N' Roses Ivory Blush Hellebore card (PHOTO_SWAP alt): an older flower turned green with a pink-edged rim, under dark leaves.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "helleborus-glandorfensis-ice-n-roses-ivory-blush-hg-1416.jpg",
+   "note": "Cropped with tools/reframe-photo.js (data/held-photos/2026-10-10/…-crop.json): the bottom 500 px held a plant-label stake. Original pixels only.",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "helleborus-hybridus-viv-celestina.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3076,6 +3097,37 @@
   },
   {
    "file": "heuchera-forever-purple-tnheufp.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-forever-red-tnheufr-crown.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Forever Red Coral Bells card (PHOTO_SWAP alt): the crown of coral-red scalloped leaves.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-forever-red-tnheufr-leaves.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Forever Red Coral Bells card (PHOTO_SWAP alt): coral-red leaves beside a dark Heuchera (cropped to drop the nursery label).",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-forever-red-tnheufr.jpg",
+   "note": "Cropped with tools/reframe-photo.js (data/held-photos/2026-10-10/heuchera-forever-red-tnheufr-crop.json): the top 580 px held a '£3…' price sticker. Original pixels only.",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -3535,6 +3587,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "ilex-crenata-golden-rock.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "ilex-crenata-jenny.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -3692,6 +3754,16 @@
    "sourceUrl": null,
    "commit": "2b30ea4",
    "commitSubject": "Add French Lavender 'Anouk Deluxe Purple' (sunniest card, sunNeed 95)",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "leea-guineensis-burgundy.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -4726,6 +4798,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "phlox-paniculata-mardi-gras-buds.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Mardi Gras Garden Phlox card (PHOTO_SWAP alt): purple flowers and buds over purple-edged leaves (cropped to drop two nursery labels).",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "phlox-paniculata-mardi-gras.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "phoenix-canariensis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4753,6 +4845,47 @@
    "sourceUrl": null,
    "commit": "5213b09",
    "commitSubject": "Add 18 plants to deck: 107 -> 125; add bulk tool verifying once per batch",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "photinia-fraseri-red-ballcoon-shoots.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Dwarf Christmas Berry 'Red Ballcoon' card (PHOTO_SWAP alt): red, orange and lemon new shoots on red stems.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "photinia-fraseri-red-ballcoon-stems.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Dwarf Christmas Berry 'Red Ballcoon' card (PHOTO_SWAP alt): upright red stems with coloured new growth.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "photinia-fraseri-red-ballcoon-tip.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Fourth frame for the Dwarf Christmas Berry 'Red Ballcoon' card (PHOTO_SWAP alt): one shoot tip in red, coral and lemon.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "photinia-fraseri-red-ballcoon.jpg",
+   "note": "Cropped with tools/reframe-photo.js (data/held-photos/2026-10-10/photinia-fraseri-red-ballcoon-crop.json): the bottom 300 px held unidentified white/red objects. Original pixels only.",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -4857,6 +4990,16 @@
   },
   {
    "file": "pieris-japonica-mountain-fire.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "pieris-japonica-prelude.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -6278,6 +6421,16 @@
   },
   {
    "file": "symphyotrichum-dumosum-granat.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "symphyotrichum-dumosum-indigo.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
