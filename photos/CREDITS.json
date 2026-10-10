@@ -1012,6 +1012,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "carex-brunnea-jenneke.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "carex-oshimensis-evergold.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -1315,6 +1325,16 @@
    "file": "chlorophytum-comosum-variegatum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Since 2026-10-07 evening this is his photo he named Chlorophytum 'Variegatum'; the card's first photo, matched by eye that morning, was his Dracaena 'Song of India'",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "choisya-dewitteana-white-dazzler-londaz.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -2275,6 +2295,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "echium-candicans.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "edgeworthia-chrysantha.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -3116,6 +3146,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "helleborus-sternii-silver-star.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "heptacodium-miconioides-temple-of-bloom-smnhmrf.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3528,6 +3568,17 @@
   },
   {
    "file": "hydrangea-paniculata-little-fresco.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "hydrangea-paniculata-little-lime-punch-smnhph.jpg",
+   "note": "Cropped with tools/reframe-photo.js (data/held-photos/2026-10-10c/hydrangea-paniculata-little-lime-punch-smnhph-crop.json): the bottom 31% and left 10% of the frame held a pictorial plant label and a window frame. Original pixels only.",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -4047,6 +4098,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "lomandra-longifolia-miner-s-gold-km-mg24.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "lomandra-longifolia-white-sands-roma-13.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -4054,6 +4115,16 @@
    "sourceUrl": null,
    "commit": "e541e38",
    "commitSubject": "Add White Sands Lomandra to deck: 87 -> 88",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lonicera-heckrottii-gold-flame.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -4438,6 +4509,16 @@
   },
   {
    "file": "myrtus-communis.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "nandina-domestica-magical-lemon-and-lime-lemlim.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -5602,6 +5683,16 @@
   },
   {
    "file": "rhododendron-scarlet-wonder.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "rhododendron-silver-sword.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

@@ -26,11 +26,19 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   green leaves with one golden shoot ([Unverified] it is 'Sundance'); Caryopteris 'Dark Knight' went H6 → H4
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
   hazard; #7 Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo doubt; the BIG & EASY PURPLE hand
-  in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of.
+  in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of. New 2026-10-10c: which Ceanothus the one photo is ('Victoria' or
+  impressus); the sourced 'Silver Sword' and Little Lime Punch fixes.
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**batch 2026-10-10c: eleven-entry JSON ("New builds") stored and fitted; nine dealt from his eleven
+  photos; deck 600 -> 609, r402**) — Choisya WHITE DAZZLER, Echium candicans, Hydrangea LITTLE LIME PUNCH (cropped clear of a
+  label), Rhododendron 'Silver Sword', Helleborus × sternii 'Silver Star', Carex 'Jenneke', Lonicera 'Gold Flame', Nandina
+  MAGICAL LEMON AND LIME, Lomandra MINER’S GOLD. Not dealt: one Ceanothus photo against two Ceanothus JSONs ('Victoria' and
+  impressus), his call which; photo 11 was the Ivory Blush green frame again. Fact check (snippets only, proxy blocks pages):
+  nothing changed; RHS figures for 'Silver Sword' (H5, 0.5–1 m, bright red) and the Little Lime Punch source/H6 are his call.
+  All checks green. See data/held-photos/2026-10-10c/README.md. Not live.
 progress: 2026-10-10 (**Goldfish Plant dealt, cropped clear of a pot tag; deck 600, r401**) — every fitted JSON with a
   photo is now dealt. Full gate next, then push on Oscar's word.
 progress: 2026-10-10 (**unnamed photos shelved**) — Oscar: "If no specific name shelve it". The pink Aglaonema and the
