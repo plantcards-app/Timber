@@ -36,7 +36,8 @@ progress: 2026-10-10 (**Ivory Blush: the green flower is the card on Oscar's wor
   fresh Ivory Blush JSON is a double for the dealt card (compare-double: nothing applied; H5 vs H7 and 80 vs 50–60 cm spread are
   his call). The green frame, cropped, is now the card photo and his new close-up the flash frame; the morning's pink-flushed
   photo is a different plant, shelved as data/held-photos/2026-10-10/unmatched-hellebore-pink-flushed.jpg until he names it.
-  All checks green. See data/held-photos/2026-10-10d/README.md. Not live.
+  Data checks green; full gate 17/18 under --jobs 3 (perf-test's swipe-timing check, frame 3 vs 2; 23/23 run alone).
+  See data/held-photos/2026-10-10d/README.md. Not live.
 progress: 2026-10-10 (**batch 2026-10-10c: eleven-entry JSON ("New builds") stored and fitted; nine dealt from his eleven
   photos; deck 600 -> 609, r402**) — Choisya WHITE DAZZLER, Echium candicans, Hydrangea LITTLE LIME PUNCH (cropped clear of a
   label), Rhododendron 'Silver Sword', Helleborus × sternii 'Silver Star', Carex 'Jenneke', Lonicera 'Gold Flame', Nandina

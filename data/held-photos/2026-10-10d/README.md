@@ -47,3 +47,9 @@ So, on his word:
 Deck unchanged at 609, r403. check-boot OK (PHOTO_SWAP 43), data-audit 0 problems, plant-sense --strict clean,
 photo-credits OK, deck-audit PASS, audit-layout clean, fast set 9/9. The card was rendered at 390x844 at 0.6 s, 4.2 s
 and 7.8 s: whole, no label, and it flashes between the cropped green flower and the close-up.
+
+Full gate on this head (`run-all --jobs 3`): 17/18. The one failure was perf-test's swipe-timing check ("the card is
+already moving two frames after the release": frame 3 at 61 ms, under three browser suites at once); every layer,
+paint and photo-window check in that suite passed, and perf-test run alone afterwards passed 23/23 (frame 2, 40 ms).
+[Inference] a load-timing flake, as the ledger recorded for edge-test under --jobs 3 on 2026-10-01; nothing in a
+photo swap touches swipe timing.
