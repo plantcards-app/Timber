@@ -251,3 +251,19 @@ match the fitted JSON field for field, and all were rendered at 390x844 and are 
 [Unverified], carried as written: the Parvati card says "dark green" fronds, while the photo shows bright mid-green.
 The 2026-10-08 fact check left its H1a (RHS Plants suggests 10°C, which is H1b) and its 50–80 cm spread as
 doubtful.
+
+## Peperomia 'Obtipan Bicolor' and Codiaeum 'Petra' dealt (2026-10-10, r400)
+
+Oscar: "Double check this", with three photos. All were taken on a Galaxy S24 on 2026-10-07 at 4000x3000 with
+EXIF rotation 6. None has C2PA or AI-edit markers or shows a label, and all are byte-identical to what he sent.
+Each was checked against the waiting entries and the card text:
+
+| file | taken | sha256 (first 16) | check |
+|---|---|---|---|
+| `peperomia-obtusifolia-obtipan-bicolor.jpg` | 10:27:48 | 4f8a0a45bf44243d | broad cream-lime margins with a pink-red rim, as the card says. Dealt. |
+| `codiaeum-variegatum-petra.jpg` | 09:21:41 | de653ee7d2beb2f9 | green leaves veined yellow, with red margins and midribs and burgundy older leaves, as the card says. Dealt. |
+| `../2026-10-10b/unmatched-aglaonema-pink.jpg` | 10:27:16 | 7841a169ab25031c | pink-splashed, green-speckled leaves on pink stalks, [Inference] an Aglaonema. No card, hold entry or waiting JSON matches, so it is **held** until Oscar names it or sends its JSON. |
+
+Deck 597 -> 599. Every entry in this batch with a photo is now dealt. Fast 9/9, data-audit 0, plant-sense clean,
+deck-audit PASS, layout clean. Both cards match the fitted JSON field for field, and both were rendered at
+390x844 and are whole.
