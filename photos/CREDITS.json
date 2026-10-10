@@ -4457,6 +4457,17 @@
    "commercialUseCleared": true
   },
   {
+   "file": "nematanthus-gregarius.jpg",
+   "note": "Cropped with tools/reframe-photo.js (data/held-photos/2026-10-08b/nematanthus-gregarius-crop.json): the bottom 1040 px held plant tags on a background pot. Original pixels only.",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "nemesia-confetti.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. A composite Oscar assembled himself: massed lilac flowers with a white-outlined, labelled 'foliage' cutout pasted mid-right. Kept whole under the two-part-identification rule. No pixels generated. EXIF Samsung Galaxy S24, current season. No C2PA/JUMBF manifest and no AI or generative marker; XMP carries only a Samsung Ultra HDR gain map (2026-08-31)",

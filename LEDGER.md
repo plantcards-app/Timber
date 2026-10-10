@@ -31,6 +31,8 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**Goldfish Plant dealt, cropped clear of a pot tag; deck 600, r401**) — every fitted JSON with a
+  photo is now dealt. Full gate next, then push on Oscar's word.
 progress: 2026-10-10 (**unnamed photos shelved**) — Oscar: "If no specific name shelve it". The pink Aglaonema and the
   red Dianthus are shelved, with photos kept, until a named label or JSON arrives. Only the Goldfish Plant waits on a photo.
 progress: 2026-10-10 (**Peperomia 'Obtipan Bicolor' and Codiaeum 'Petra' dealt; deck 599, r400**) — both checked

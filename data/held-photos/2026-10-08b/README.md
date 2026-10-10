@@ -92,3 +92,15 @@ reads as a jitter, so 4 is the card and 1 is kept unused. It goes on as a frame 
 The photos bear out the patent's description: flowers opening orange-red and fading through orange to yellow.
 Deck 593 -> 594. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean, check-boot OK. The
 card matches the fitted JSON field for field, and its three frames were rendered at 390x844 and are whole.
+
+## Goldfish Plant dealt (2026-10-10, r401): deck 600
+
+One photo. It was taken on a Galaxy S24 at 13:59:07 on 2026-10-07, at 4000x3000 with EXIF rotation 6. It has no
+C2PA or AI-edit markers, and `nematanthus-gregarius.jpg` is byte-identical to what he sent (sha256
+ac02d8d9769c8aeb…). It shows a rosette of small glossy dark-green leaves; there are no flowers. A blurred white tag
+on a terracotta pot in the background, and a faded tag behind it, sit below 76% of the height. The photo was
+cropped with `tools/reframe-photo.js` to `nematanthus-gregarius-crop.json` (2940x2960, aspect 0.993, original
+pixels only), and the tool confirmed both tags are out. CREDITS carries the crop note. Deck 599 -> 600. Fast 9/9,
+data-audit 0, plant-sense clean, deck-audit PASS, layout clean. The card matches the fitted JSON field for field,
+and it was rendered at 390x844 and is whole. [Unverified]: the photo shows foliage only; the orange flowers in
+the card text are not in shot.
