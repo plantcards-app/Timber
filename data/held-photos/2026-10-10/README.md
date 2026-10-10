@@ -50,3 +50,31 @@ and Pieris, and growthSpeed 3 and careLevel 5 on 'Red Ballcoon'. These are slow 
 scores on the 0–20 scale fit, so they stand.
 
 None is dealt. Each waits for a photo.
+
+## Fact check (2026-10-10)
+
+Two research agents checked all eight entries, using search snippets because the proxy blocks most fetches.
+No field is shown wrong, so nothing changed. These are doubtful and left as sent:
+- **Golden Rock holly:** RHS describes "glossy dark green to golden yellow" leaves, gold on the outer growth,
+  rather than "gold-splashed". RHS lists any pH for the cultivar, against "Acidic / Avoid lime"; the species
+  prefers acid soil.
+- **Leea 'Burgundy':** no reliable source supports "Leaves and berries are toxic". ASPCA has no Leea entry, and a
+  genus review reports low toxicity. As written, the card prints the Harmful rung. 1 m × 65 cm looks like a
+  sale size, since indoor plants reach about 1.5 m. H1a against H1b is not settled.
+- **FOREVER RED:** RHS confirms H5, white flowers, all-year red and vine weevil/rust. The US patent is PP29,644
+  ('TNHEUFR', Terra Nova). Nothing indexed links EU PVR 51881 to it. No FOREVER 'Sweet' was found; Terra Nova
+  has FOREVER 'Midnight'. Its spread of 40–50 cm is on the high side, with about 35 cm quoted.
+- **Phlox 'Mardi Gras':** every field checks out. RHS gives dark green leaves and fragrant iridescent purple
+  flowers, H7, 0.5–1 m.
+- **Aster 'Indigo':** the spread of 40–50 cm compares with 20–30 cm from a German retailer. The cultivar is
+  carried only by German retailers.
+- **Ivory Blush:** × glandorfensis and the breeder's white flowers, dark stems, November start and 50–60 cm
+  are confirmed. 'HG 1416' is a real Heuger patent (PP36158) for a white-to-greenish-white hellebore, but no
+  source ties that code to Ivory Blush. The 80 cm spread is a planting distance. 'White Ivory' and
+  'Red Romance' are retailer labels; the RHS names are 'White' and 'Red'.
+- **Photinia 'Red Ballcoon':** sellers spell it 'Ballcoon', 'Balcoon' and 'Ballcon', and there is no RHS or
+  registry entry, so the label decides. Berries on a 50 cm dwarf are unconfirmed. The autumn colour comes
+  from one retailer.
+- **Pieris 'Prelude':** RHS 92004 confirms every card field (H5, AGM, 0.5–1 m, creamy-white late-spring
+  flowers, pink young leaves, east or west facing, acid soil). Only the truncated `uncertain` and `sources`
+  are incomplete.
