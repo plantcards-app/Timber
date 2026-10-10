@@ -31,6 +31,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**Vinca minor 'Ralph Shugert' dealt; deck 589, r394**) — matched by its violet flower ('Colada' is white). Not live.
 progress: 2026-10-10 (**all eight 2026-10-10 cards dealt from 15 photos; deck 580 -> 588, r393**) — five photos
   cropped with reframe-photo to drop labels, a price sticker and a label stake; seven flash frames. Hellebore and
   Photinia photo-vs-text doubts recorded. All checks green. See data/held-photos/2026-10-10/README.md. Not live.

@@ -181,3 +181,16 @@ are left as sent.
   stomach upset and dermatitis; RHS Dianthus pages say skin allergen.
 - **Peperomia 'Obtipan Bicolor'** (not dealt): H1a becomes H1b, the rating RHS gives P. obtusifolia and its
   cultivars. The note now reads "keep above 10°C, ideally 15°C or more".
+
+## Vinca minor 'Ralph Shugert' dealt (2026-10-10, r394)
+
+Oscar sent one photo captioned "Vinca". It was taken on a Galaxy S24 at 10:33:31 on 2026-10-07, at 4000x3000
+with EXIF rotation 6. It has no C2PA or AI-edit markers, and `vinca-minor-ralph-shugert.jpg` is byte-identical
+to what he sent (sha256 72139df29924e452…). Two Vinca entries were waiting. The flower is violet-blue, and RHS
+gives 'Colada' white flowers, so the photo goes to 'Ralph Shugert' ([Inference] by flower colour). [Unverified]:
+the cream leaf margins look fairly broad for V. minor; the card keeps its JSON name.
+
+The lime shape in the top-left corner looks like an out-of-focus leaf, green on its left half, not a tag
+([Inference]), and the card's left strip covers most of it. The pot's moulded marks are unreadable. The photo
+was not cropped. Deck 588 -> 589. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean. The
+card was rendered at 390x844 and is whole.
