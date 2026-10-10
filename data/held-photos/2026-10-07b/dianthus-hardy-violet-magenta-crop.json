@@ -1,0 +1,43 @@
+{
+  "sourcePx": {
+    "w": 3000,
+    "h": 4000
+  },
+  "featureVisible": true,
+  "featureSeen": "a single magenta-crimson pink with a paler eye, among narrow leaves",
+  "featureBox": {
+    "x": 0.38,
+    "y": 0.08,
+    "w": 0.55,
+    "h": 0.45
+  },
+  "crop": {
+    "x": 0.0,
+    "y": 0.0,
+    "w": 0.96,
+    "h": 0.96
+  },
+  "cropAspect": 0.75,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": {
+        "x": 0.973,
+        "y": 0.62,
+        "w": 0.027,
+        "h": 0.24
+      },
+      "reads": "edge of the pink 'Dianthus Hardy Violet' label",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": {
+    "evAdjust": 0.0,
+    "whiteBalance": "none"
+  },
+  "verdict": "crop",
+  "concerns": [],
+  "reason": "Drops the right 120 px holding a strip of the nursery label, and the bottom 160 px to hold 3:4."
+}

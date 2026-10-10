@@ -194,3 +194,33 @@ The lime shape in the top-left corner looks like an out-of-focus leaf, green on 
 ([Inference]), and the card's left strip covers most of it. The pot's moulded marks are unreadable. The photo
 was not cropped. Deck 588 -> 589. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean. The
 card was rendered at 390x844 and is whole.
+
+## The Dianthus bench (2026-10-10, r395)
+
+Oscar: "Here's some bulk images I took of that bench u work it out I guess". Eight photos, all taken on a Galaxy
+S24 on 2026-10-07 between 10:38:44 and 10:39:56. None has C2PA or AI-edit markers, and every file here is
+byte-identical to what he sent. Three show readable nursery labels, which were used to identify the plants but
+never put on a card. They were matched by label, timestamp and flower pattern ([Inference]):
+
+| time | file | match | use |
+|---|---|---|---|
+| 10:39:54 | `dianthus-hardy-rose.jpg` | **Hardy Rose**: bright pink speckled flowers, the same as those beside the label 2 s later | card |
+| 10:39:56 | `dianthus-hardy-rose-label.jpg` | the "DIANTHUS HARDY ROSE" label | identification only |
+| 10:38:58 | `dianthus-hardy-violet.jpg` | **Hardy Violet**: deep crimson-violet with a pale eye, as in the label's picture | card |
+| 10:39:04 | `dianthus-hardy-violet-label.jpg` | the "DIANTHUS HARDY VIOLET" label, leaves only | identification only |
+| 10:39:09 | `dianthus-hardy-violet-magenta.jpg` | Hardy Violet, 5 s after its label | flash `magenta`, cropped |
+| 10:38:44 | `dianthus-hardy-violet-picotee.jpg` | **Hardy Violet Picotee**: white-fringed flower with a magenta zone | card |
+| 10:39:02 | `dianthus-hardy-violet-picotee-label.jpg` | the "DIANTHUS HARDY VIOLET PICOTEE" label over white-fringed magenta flowers | flash `fringed`, cropped |
+| 10:39:31 | `unmatched-dianthus-red.jpg` | red flowers beside a red label; matches none of the three JSONs | **held**, not used |
+
+Two crops were made with `tools/reframe-photo.js`, recorded in `*-crop.json`, using original pixels only:
+- the magenta Violet frame drops a strip of its label on the right edge (aspect 0.75)
+- the picotee frame keeps only the two flowers below the label, as a 1400x1400 square
+
+The tool confirmed every listed label is outside each crop. Deck 589 -> 592 at r395. Fast 9/9, data-audit 0,
+plant-sense clean, deck-audit PASS, layout clean, check-boot OK. The cards match `batch-corrected.json` field for
+field. All three cards and both frames were rendered at 390x844 and are whole, with no label showing.
+
+[Unverified], carried as written: the photos show bright green leaves, while the cards say "grey-green" and
+"blue-green". Hardy Violet's flowers look crimson-magenta rather than "violet-purple". The agent noted the same
+about chinensis × barbatus types on 2026-10-08. The red Dianthus is held until Oscar names it.

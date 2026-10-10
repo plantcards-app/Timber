@@ -1256,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r394 · 2026-10-10 · 48478e7';
+const BUILD='r395 · 2026-10-10 · 6ea698f';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -14149,6 +14149,45 @@ const PLANTS = [
    uses:"Ground cover, banks, woodland edges, underplanting shrubs and difficult shaded sites.", size:"10–20 cm H × 0.5–1 m W",
    toxicity:"Harmful if eaten; Vinca contains biologically active alkaloids.", hardinessNote:"H6 · −20 to −15°C; hardy throughout the UK and northern Europe.", foliage:"evergreen",
    seasonalImpact:"", growthSpeed:15, pestRisk:5, thirst:9, careLevel:4, sunNeed:50, sunMin:15},
+  {common:"Dianthus 'Hardy Rose'", latin:"Dianthus Hardy Rose", hue:335,
+   visual:"Compact grey-green mound with abundant rose-pink, lightly fringed flowers over a long season.",
+   water:"Moderate; water during establishment and prolonged dry spells, allowing excess water to drain.",
+   aspect:"East / South / West",
+   soil:"Neutral-alkaline, drained; No winter waterlogging or heavy wet ground",
+   prune:"Deadhead regularly to prolong flowering; trim lightly after the main flush to keep plants compact.",
+   source:"", peak:"May-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Retail colour selection sold as 'Hardy Rose'",
+   hardiness:"H4", resilience:"Compact and generally easy once established; good drainage is more important than rich soil.",
+   uses:"Containers, edging, sunny borders, rock gardens and pollinator planting.", size:"20–40 cm H × 20–30 cm W",
+   toxicity:"Mildly toxic to cats and dogs if eaten (ASPCA); can irritate skin, so wear gloves (RHS)", hardinessNote:"H4 · −10 to −5°C; marketed as a hardy perennial Dianthus; exact cultivar identity and therefore precise hardiness are not published.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:8, careLevel:5, sunNeed:80, sunMin:45},
+  {common:"Dianthus 'Hardy Violet'", latin:"Dianthus Hardy Violet", hue:275,
+   visual:"Low, bushy grey-green foliage carrying rich violet-purple, fringed flowers from spring into late summer.",
+   water:"Moderate; water during establishment and in dry spells, but do not keep constantly wet.",
+   aspect:"East / South / West",
+   soil:"Neutral-alkaline, drained; No winter wet or dense, poorly drained clay",
+   prune:"Deadhead spent flowers and shear lightly after flowering to encourage a tidy second flush.",
+   source:"", peak:"May-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Retail colour selection sold as 'Hardy Violet'",
+   hardiness:"H4", resilience:"Tolerates exposed sunny positions once rooted where drainage is sharp.",
+   uses:"Containers, edging, rock gardens, sunny borders and pollinator planting.", size:"20–40 cm H × 20–30 cm W",
+   toxicity:"Mildly toxic to cats and dogs if eaten (ASPCA); can irritate skin, so wear gloves (RHS)", hardinessNote:"H4 · −10 to −5°C; sold as a hardy perennial Dianthus, but no cultivar-level hardiness record was located.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:8, careLevel:5, sunNeed:80, sunMin:45},
+  {common:"Dianthus 'Hardy Violet Picotee'", latin:"Dianthus Hardy Violet Picotee", hue:285,
+   visual:"Compact blue-green foliage with violet flowers edged or patterned in a contrasting picotee margin.",
+   water:"Moderate; water in dry spells but allow the root zone to drain freely.",
+   aspect:"East / South / West",
+   soil:"Sharply drained, alkaline; No winter wet; don't bury the crown",
+   prune:"Deadhead regularly and trim back lightly after the main flowering flush.",
+   source:"", peak:"May-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"Retail colour selection sold as 'Hardy Violet Picotee'",
+   hardiness:"H4", resilience:"Best longevity comes from sun, airflow and free drainage.",
+   uses:"Containers, edging, rock gardens, sunny borders and pollinator planting.", size:"20–40 cm H × 20–30 cm W",
+   toxicity:"Mildly toxic to cats and dogs if eaten (ASPCA); can irritate skin, so wear gloves (RHS)", hardinessNote:"H4 · −10 to −5°C; treated as a hardy bedding/perennial Dianthus; exact cultivar-level hardiness is unverified.", foliage:"evergreen",
+   seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:8, careLevel:5, sunNeed:80, sunMin:45},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -17729,6 +17768,18 @@ const PHOTO_SWAP={
       'photos/card/photinia-fraseri-red-ballcoon-stems.webp',
       'photos/card/photinia-fraseri-red-ballcoon-tip.webp',
     ],
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* a magenta-crimson flower with a paler eye (cropped to drop the edge of the nursery label) */
+  'dianthus-hardy-violet':{
+    alt:'photos/card/dianthus-hardy-violet-magenta.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* two magenta flowers with white fringed edges, from the bench beside the label (cropped clear of it) */
+  'dianthus-hardy-violet-picotee':{
+    alt:'photos/card/dianthus-hardy-violet-picotee-fringed.webp',
     focus:'50% 45%',
     hold:'3.5s',
   },

@@ -1,0 +1,63 @@
+{
+  "sourcePx": {
+    "w": 3000,
+    "h": 4000
+  },
+  "featureVisible": true,
+  "featureSeen": "two white-fringed magenta picotee flowers under the label",
+  "featureBox": {
+    "x": 0.29,
+    "y": 0.59,
+    "w": 0.4,
+    "h": 0.3
+  },
+  "crop": {
+    "x": 0.28667,
+    "y": 0.575,
+    "w": 0.46667,
+    "h": 0.35
+  },
+  "cropAspect": 1.0,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": {
+        "x": 0.0,
+        "y": 0.3,
+        "w": 0.27,
+        "h": 0.32
+      },
+      "reads": "left tab of the 'DIANTHUS HARDY VIOLET PICOTEE' label (flower picture)",
+      "resolution": "crop"
+    },
+    {
+      "box": {
+        "x": 0.27,
+        "y": 0.18,
+        "w": 0.73,
+        "h": 0.39
+      },
+      "reads": "main strip of the label, 'HARDY VIOLET PICOTEE'",
+      "resolution": "crop"
+    },
+    {
+      "box": {
+        "x": 0.75,
+        "y": 0.94,
+        "w": 0.25,
+        "h": 0.06
+      },
+      "reads": "corner of another pink label in a grey tray",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": {
+    "evAdjust": 0.0,
+    "whiteBalance": "none"
+  },
+  "verdict": "crop",
+  "concerns": [],
+  "reason": "Keeps only the two picotee flowers below the label; the label and a tag corner are outside the square crop."
+}
