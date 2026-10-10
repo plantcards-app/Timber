@@ -642,6 +642,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "asplenium-parvati.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "astilbe-chocolate-shogun.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Supplied as a two-frame side-by-side COMPOSITE (leaf close-up left, clump right) kept whole; no pixels generated",
@@ -2702,6 +2712,16 @@
    "sourceUrl": null,
    "commit": "079905e",
    "commitSubject": "Add Intense Blue Fescue to deck: 82 -> 83",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "ficus-benjamina-twilight.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -5080,6 +5100,16 @@
   },
   {
    "file": "pieris-japonica-prelude.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "pilea-glaucophylla-greyzy.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

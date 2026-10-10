@@ -31,6 +31,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**Pilea 'Greyzy', Asplenium 'Parvati' and Ficus 'Twilight' dealt; deck 597, r399**) — all checks green. Not live.
 progress: 2026-10-10 (**Vinca 'Colada' dealt; Mandarin Tango dealt with two flash frames; deck 594, r397**) — the
   white Vinca is 'Colada'; Tango's near-duplicate first photo held as a spare. All checks green. Not live.
 progress: 2026-10-10 (**Dianthus Hardy Rose, Hardy Violet and Hardy Violet Picotee dealt from his bench photos;

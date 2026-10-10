@@ -232,3 +232,22 @@ rotation 6. It has no C2PA or AI-edit markers, and `vinca-minor-colada.jpg` is b
 (sha256 a301781d6fa312e8…). It shows a white five-petalled flower over plain glossy green leaves, which matches
 'Colada' (RHS: white flowers). The only object in it is a pot rim, so it was not cropped. Deck 592 -> 593. The
 card was rendered at 390x844 and is whole.
+
+## Pilea 'Greyzy', Asplenium 'Parvati' and Ficus 'Twilight' dealt (2026-10-10, r398–r399)
+
+Oscar sent "Pilea", then "Aspliem and figus". Three photos, all taken on a Galaxy S24 on 2026-10-07 at 4000x3000
+with EXIF rotation 6. None has C2PA or AI-edit markers or shows a label, and all are byte-identical to what he
+sent.
+
+| file | taken | sha256 (first 16) | what it shows |
+|---|---|---|---|
+| `pilea-glaucophylla-greyzy.jpg` | 10:28:04 | 48fc6e8e3baeb485 | small round silvery-grey leaves on red-brown stems |
+| `asplenium-parvati.jpg` | 09:23:43 | 07c3b810fd212e94 | finely divided feathery fern fronds |
+| `ficus-benjamina-twilight.jpg` | 09:22:09 | b4247663190da807 | glossy leaves broadly and irregularly edged creamy-white, as RHS describes |
+
+Deck 594 -> 597. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean. All three cards
+match the fitted JSON field for field, and all were rendered at 390x844 and are whole.
+
+[Unverified], carried as written: the Parvati card says "dark green" fronds, while the photo shows bright mid-green.
+The 2026-10-08 fact check left its H1a (RHS Plants suggests 10°C, which is H1b) and its 50–80 cm spread as
+doubtful.
