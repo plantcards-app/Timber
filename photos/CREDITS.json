@@ -3105,9 +3105,9 @@
    "commercialUseCleared": true
   },
   {
-   "file": "helleborus-glandorfensis-ice-n-roses-ivory-blush-hg-1416-green.jpg",
+   "file": "helleborus-glandorfensis-ice-n-roses-ivory-blush-hg-1416-closeup.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright. Second frame for the Ice N' Roses Ivory Blush Hellebore card (PHOTO_SWAP alt): an older flower turned green with a pink-edged rim, under dark leaves.",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Ice N' Roses Ivory Blush Hellebore card (PHOTO_SWAP alt): the same green-white flower close up, cream stamens and a thin pink rim (2026-10-09 15:48:50).",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -3116,7 +3116,7 @@
   },
   {
    "file": "helleborus-glandorfensis-ice-n-roses-ivory-blush-hg-1416.jpg",
-   "note": "Cropped with tools/reframe-photo.js (data/held-photos/2026-10-10/…-crop.json): the bottom 500 px held a plant-label stake. Original pixels only.",
+   "note": "Replaced 2026-10-10 on Oscar's word (\"first card is a pinkish flower, second is the greeny one\"): the first master, a pink-flushed flower (commit bdbda1b), is a different plant and is shelved as data/held-photos/2026-10-10/unmatched-hellebore-pink-flushed.jpg. This is his 2026-10-09 15:48:40 frame of the green-white flower, cropped with tools/reframe-photo.js (data/held-photos/2026-10-10d/…-green-crop.json). Original pixels only.",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

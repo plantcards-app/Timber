@@ -27,11 +27,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
   hazard; #7 Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo doubt; the BIG & EASY PURPLE hand
   in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of. New 2026-10-10c: which Ceanothus the one photo is ('Victoria' or
-  impressus); the sourced 'Silver Sword' and Little Lime Punch fixes.
+  impressus); the sourced 'Silver Sword' and Little Lime Punch fixes. The pink-flushed hellebore photo of 2026-10-10 (shelved, unnamed): which variety?
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**Ivory Blush: the green flower is the card on Oscar's word; pink photo shelved unnamed; r403**) — his
+  fresh Ivory Blush JSON is a double for the dealt card (compare-double: nothing applied; H5 vs H7 and 80 vs 50–60 cm spread are
+  his call). The green frame, cropped, is now the card photo and his new close-up the flash frame; the morning's pink-flushed
+  photo is a different plant, shelved as data/held-photos/2026-10-10/unmatched-hellebore-pink-flushed.jpg until he names it.
+  All checks green. See data/held-photos/2026-10-10d/README.md. Not live.
 progress: 2026-10-10 (**batch 2026-10-10c: eleven-entry JSON ("New builds") stored and fitted; nine dealt from his eleven
   photos; deck 600 -> 609, r402**) — Choisya WHITE DAZZLER, Echium candicans, Hydrangea LITTLE LIME PUNCH (cropped clear of a
   label), Rhododendron 'Silver Sword', Helleborus × sternii 'Silver Star', Carex 'Jenneke', Lonicera 'Gold Flame', Nandina
