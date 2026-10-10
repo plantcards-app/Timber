@@ -1,0 +1,19 @@
+{
+  "sourcePx": {"w": 3000, "h": 4000},
+  "featureVisible": true,
+  "featureSeen": "a rosette of small glossy dark-green leaves at a shoot tip, trailing stems behind",
+  "featureBox": {"x": 0.15, "y": 0.14, "w": 0.82, "h": 0.6},
+  "crop": {"x": 0.0, "y": 0.0, "w": 0.98, "h": 0.74},
+  "cropAspect": 0.993,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {"box": {"x": 0.39, "y": 0.77, "w": 0.13, "h": 0.2}, "reads": "white plant tag on the terracotta pot (blurred, unreadable)", "resolution": "crop"},
+    {"box": {"x": 0.29, "y": 0.76, "w": 0.1, "h": 0.12}, "reads": "second faded tag behind it", "resolution": "crop"}
+  ],
+  "exposure": {"evAdjust": 0.0, "whiteBalance": "none"},
+  "verdict": "crop",
+  "concerns": [],
+  "reason": "Drops the bottom 1040 px, which hold the plant tags on the background pot; original pixels only."
+}

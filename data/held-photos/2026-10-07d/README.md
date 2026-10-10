@@ -71,3 +71,10 @@ changed.
 At r378: data-audit 0 problems, plant-sense --strict "No card contradicts itself" (the stonecrop under KNOWN),
 photo-credits 0 unrecorded, deck-audit PASS (576 cards), audit-layout "all cards clean", fast set 9/9. All four
 cards were rendered at 390x844 @2x and are whole.
+
+## Fact check (2026-10-08)
+
+See the fact-check section in `../2026-10-07b/README.md`. Fitting fix (r385): Ceropegia woodii 'Variegata'
+becomes East / West, the facing RHS gives for the species (rhs.org.uk/plants/74288). It had been derived from
+sunNeed. The heights of Sweet Tea and Sugar and Spice differ a little from the breeder's figures; both are
+left as sent.

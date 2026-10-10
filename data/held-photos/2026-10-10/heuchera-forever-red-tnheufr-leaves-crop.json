@@ -1,0 +1,43 @@
+{
+  "sourcePx": {
+    "w": 3000,
+    "h": 4000
+  },
+  "featureVisible": true,
+  "featureSeen": "coral-red Heuchera leaves, one dark Heuchera at the edge",
+  "featureBox": {
+    "x": 0.15,
+    "y": 0.15,
+    "w": 0.75,
+    "h": 0.65
+  },
+  "crop": {
+    "x": 0.10667,
+    "y": 0.0,
+    "w": 0.89333,
+    "h": 0.8925
+  },
+  "cropAspect": 0.751,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": {
+        "x": 0.0,
+        "y": 0.41,
+        "w": 0.097,
+        "h": 0.59
+      },
+      "reads": "nursery label 'Gardeners Choice perennials Heuchera Forever Red'",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": {
+    "evAdjust": 0.0,
+    "whiteBalance": "none"
+  },
+  "verdict": "crop",
+  "concerns": [],
+  "reason": "Drops the left 320 px holding the label and the bottom band to hold 3:4."
+}

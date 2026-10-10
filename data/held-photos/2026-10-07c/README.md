@@ -195,3 +195,29 @@ card was rendered at 390x844 @2x and is whole.
 Chanticleer re-photo, r380: data-audit 0 problems, plant-sense --strict "No card contradicts itself",
 photo-credits 0 unrecorded, deck-audit PASS (577 cards), audit-layout "all cards clean", fast set 9/9. Rendered
 before and after at 390x844 @2x, the new frame is whole.
+
+## Fact check (2026-10-08)
+
+See the fact-check section in `../2026-10-07b/README.md`. These cards need no fitting fixes. Facts flagged
+for Oscar and left as sent:
+- Prunus sargentii's peak reads Apr-May / Oct-Nov. Keele and van den Berk give flowering in early April, and
+  Trees and Shrubs Online gives autumn colour in late September to early October.
+- Malus 'Braendkjaer' reads 6–10 m. Van den Berk, the only cultivar source, gives 4–6 m.
+
+Doubtful but not shown wrong:
+- RHS lists the Escallonia as "sheltered", which sits awkwardly with the card's "coastal".
+- 'Pink Perfection' and 'Pink Champagne' have double flowers, and no source supports "wildlife" for them.
+- Chanticleer colours late, around November.
+- RHS lists Magnolia 'Little Gem' for any pH, while the card says neutral to acid.
+
+### Applied (r390)
+
+Oscar: "Yes, if they seem nessusary".
+- **Prunus sargentii**: peak Apr-May / Oct-Nov becomes Mar-Apr / Sep-Oct. Keele and van den Berk give flowering in
+  early April, and Barcham March–April. RHS says it reliably colours before most other trees. Trees and Shrubs
+  Online's late September to early October came from the agent's snippet; I did not confirm it myself.
+- **Malus 'Braendkjaer'**: height 6–10 m becomes 4–6 m. Van den Berk, the only source specific to this cultivar,
+  says "a height of 4 to 6 meters". The spread stays 4–8 m, because no source gives one.
+
+Left as sent, because they are doubtful rather than wrong: Escallonia "coastal", "wildlife" on the double
+cherries, Chanticleer's autumn months, and Magnolia's soil pH.

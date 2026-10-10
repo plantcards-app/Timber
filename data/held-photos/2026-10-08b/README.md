@@ -1,0 +1,106 @@
+# 2026-10-08b — three-entry GPT batch; Hibiscus 'Fiji' dealt
+
+Oscar, 2026-10-08: a GPT JSON of three entries (Dasiphora MANDARIN TANGO, Hibiscus syriacus FIJI, Nematanthus
+gregarius), then "Also / Hibiscus photo attached". `batch-as-sent.json` is his JSON verbatim, and
+`batch-corrected.json` is the fitted copy. compare-double found none of the three in the deck. The cinquefoil's
+"PROBABLE" match to Rosa 'Summer Song' ('Austango') was the word "tango" alone, so it is not a double.
+
+Fitting changes (scratch `fit.js`; no fact changed):
+- The trade designations are in capitals: `Dasiphora fruticosa MANDARIN TANGO ('Jefman')` and
+  `Hibiscus syriacus FIJI ('Minspot')`.
+- H1B became H1b. The goldfish plant's note became "H1b · 10 to 15°C; keep above 10°C".
+- Sizes take the "a–b cm" / "a–b m" form.
+- The goldfish plant's facing, "Bright filtered light / East or West window", became East / West, the facing
+  it states.
+- Soil and warning are cut to the panel budgets (26 / 44): "Drained, neutral-alkaline" / "No wet, compacted or
+  heavy clay"; "Fertile, moist, drained" / "No waterlogging; cold or shade cuts flowers"; "Airy, free-draining
+  mix" / "No waterlogging, dense mix or cold wet roots".
+- "No known hazard; " goes ahead of both "Non-toxic to dogs and cats" lines, because without it "non-toxic"
+  matches the ladder's /toxic/ and the card prints Toxic. The cinquefoil's line already lands on Caution
+  (/glove/).
+- `uses` is joined with " · " in lower case, and `foliage` and `container` are in lower case.
+
+check-plant-json passes all three. On the cinquefoil it notes that pestRisk 4 and careLevel 4 look like 0–5
+values. On the 0–20 scale, 4 is "trouble-free" and "plant-and-forget", which fits a shrubby cinquefoil, so both
+stand.
+
+## Hibiscus syriacus FIJI ('Minspot') — dealt
+
+The photo was taken on a Galaxy S24 at 14:05:12 on 2026-10-07, at 4000x3000 with EXIF rotation 6, so it is
+staged upright at 1200x1600. It has no C2PA or AI-edit markers. Dealt with `add-plants-bulk.js --quick`, which
+stopped at the missing credit as it always does. The credit was then set with photo-credits. The deck goes from
+577 to 578 at r388.
+
+| file | camera, size, taken | sha256 (first 16) |
+|---|---|---|
+| `hibiscus-syriacus-fiji-minspot.jpg` | Galaxy S24, 4000x3000 (rot 6), 2026-10-07 14:05 | 622236fab0e1c1c1 |
+
+The photo shows white-to-blush semi-double flowers with pink-flushed edges and crimson rays from a red
+centre. That matches RHS's description of 'Minspot', which it lists under its UK/EU trade name PINKY SPOT:
+"Semi-double, white flowers with pink shading and central, cherry red splashes" (rhs.org.uk/plants/346676).
+So the photo fits the name. It is the card text, "semi-double pink flowers", that differs from RHS. Chicago
+Botanic's archived page says pink, so sources disagree, but RHS is the UK authority.
+
+Mandarin Tango and the goldfish plant wait for photos.
+
+At r388: data-audit 0 problems (deck 578, hold 75), plant-sense --strict "No card contradicts itself",
+deck-audit PASS, fast set 9/9. The fitted JSON and the dealt card match field for field. The card was rendered
+at 390x844 and is whole.
+
+## Fact check (2026-10-08)
+
+A research agent checked all three entries against outside sources, using search snippets only because the proxy
+blocks fetches. The disputed points were re-checked by hand. Nothing below has been changed; it waits for Oscar.
+
+- **Fiji, visual:** "pink flowers" should read white flowers brushed pink, with a cherry-red centre (RHS, as above).
+  RHS gives a spread of 1–1.5 m, where the card has 1.2–2.1 m, the US First Editions figure. RHS lists south or
+  west facing. The UK trade name PINKY SPOT is not on the card. RHS gives it an AGM.
+- **Mandarin Tango, toxicity:** "Ornamental fruit not for eating; gloves advised" is not supported. ASPCA lists
+  cinquefoil (Potentilla spp., shrubby cinquefoil among its names) as non-toxic to dogs, cats and horses, and the
+  fruit is tiny dry achenes. On the visual, the patent (USPP29830) has flowers opening orange-red and fading to
+  orange then yellow. On soil, RHS lists the species for any pH.
+- **Goldfish plant:** no errors. RHS gives H1b, summer flowers and the same size bands. Its non-toxic line rests on
+  NCSU, because ASPCA's "Gold-Fish Plant" is a different species.
+
+### Applied (r390)
+
+Oscar: "Yes, if they seem nessusary".
+- **Hibiscus FIJI** (live): the visual becomes "semi-double white flowers brushed pink, with a cherry-red centre;
+  petals age to light pink", after RHS ("white flowers with pink shading and central, cherry red splashes"). Spread
+  1.2–2.1 m, the US figure, becomes 1–1.5 m (RHS). Aspect becomes South / West, as RHS lists it. cvs adds "sold in
+  the UK as PINKY SPOT (RHS AGM)".
+- **Mandarin Tango** (not dealt): the safety line becomes "No known hazard; non-toxic to dogs, cats and horses
+  (ASPCA)", because ASPCA lists Potentilla spp., shrubby cinquefoil among its names, as non-toxic. The fruit is
+  tiny dry achenes, not "ornamental fruit". Soil becomes "Drained, any pH", since RHS lists the species for acid,
+  neutral and alkaline soils. The flower-colour wording is close enough to the patent and is left as sent.
+
+## Mandarin Tango dealt (2026-10-10, r397)
+
+Oscar: "Tango flash throughs". Four photos, all taken on a Galaxy S24 on 2026-10-07 between 14:06:20 and
+14:06:30. None has C2PA or AI-edit markers or shows a label, and all are byte-identical to what he sent.
+
+| sent | time | file | use |
+|---|---|---|---|
+| 4 | 14:06:22 | `dasiphora-fruticosa-mandarin-tango-jefman.jpg` | **card**: open orange-red flowers, sharp |
+| 2 | 14:06:26 | `…-buds.jpg` | flash `buds` |
+| 3 | 14:06:30 | `…-sky.jpg` | flash `sky`, from below against grey sky |
+| 1 | 14:06:20 | `…-spare.jpg` | held as a spare |
+
+Photos 1 and 4 are the same scene 2 s apart, and 4 is the sharper. Flashing between two near-identical frames
+reads as a jitter, so 4 is the card and 1 is kept unused. It goes on as a frame if Oscar wants it.
+
+The photos bear out the patent's description: flowers opening orange-red and fading through orange to yellow.
+Deck 593 -> 594. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean, check-boot OK. The
+card matches the fitted JSON field for field, and its three frames were rendered at 390x844 and are whole.
+
+## Goldfish Plant dealt (2026-10-10, r401): deck 600
+
+One photo. It was taken on a Galaxy S24 at 13:59:07 on 2026-10-07, at 4000x3000 with EXIF rotation 6. It has no
+C2PA or AI-edit markers, and `nematanthus-gregarius.jpg` is byte-identical to what he sent (sha256
+ac02d8d9769c8aeb…). It shows a rosette of small glossy dark-green leaves; there are no flowers. A blurred white tag
+on a terracotta pot in the background, and a faded tag behind it, sit below 76% of the height. The photo was
+cropped with `tools/reframe-photo.js` to `nematanthus-gregarius-crop.json` (2940x2960, aspect 0.993, original
+pixels only), and the tool confirmed both tags are out. CREDITS carries the crop note. Deck 599 -> 600. Fast 9/9,
+data-audit 0, plant-sense clean, deck-audit PASS, layout clean. The card matches the fitted JSON field for field,
+and it was rendered at 390x844 and is whole. [Unverified]: the photo shows foliage only; the orange flowers in
+the card text are not in shot.

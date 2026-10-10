@@ -31,6 +31,55 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-10 (**Goldfish Plant dealt, cropped clear of a pot tag; deck 600, r401**) — every fitted JSON with a
+  photo is now dealt. Full gate next, then push on Oscar's word.
+progress: 2026-10-10 (**unnamed photos shelved**) — Oscar: "If no specific name shelve it". The pink Aglaonema and the
+  red Dianthus are shelved, with photos kept, until a named label or JSON arrives. Only the Goldfish Plant waits on a photo.
+progress: 2026-10-10 (**Peperomia 'Obtipan Bicolor' and Codiaeum 'Petra' dealt; deck 599, r400**) — both checked
+  against their card text; a pink Aglaonema photo matches no JSON and is held (data/held-photos/2026-10-10b/). Not live.
+progress: 2026-10-10 (**Pilea 'Greyzy', Asplenium 'Parvati' and Ficus 'Twilight' dealt; deck 597, r399**) — all checks green. Not live.
+progress: 2026-10-10 (**Vinca 'Colada' dealt; Mandarin Tango dealt with two flash frames; deck 594, r397**) — the
+  white Vinca is 'Colada'; Tango's near-duplicate first photo held as a spare. All checks green. Not live.
+progress: 2026-10-10 (**Dianthus Hardy Rose, Hardy Violet and Hardy Violet Picotee dealt from his bench photos;
+  deck 592, r395**) — matched by label, timestamp and flower; two frames cropped clear of labels; a red Dianthus
+  photo matches no JSON and is held. Not live.
+progress: 2026-10-10 (**Vinca minor 'Ralph Shugert' dealt; deck 589, r394**) — matched by its violet flower ('Colada' is white). Not live.
+progress: 2026-10-10 (**all eight 2026-10-10 cards dealt from 15 photos; deck 580 -> 588, r393**) — five photos
+  cropped with reframe-photo to drop labels, a price sticker and a label stake; seven flash frames. Hellebore and
+  Photinia photo-vs-text doubts recorded. All checks green. See data/held-photos/2026-10-10/README.md. Not live.
+progress: 2026-10-10 (**eight-entry JSON stored and fitted; all wait for photos**) — Golden Rock holly, Leea 'Burgundy',
+  Heuchera FOREVER RED, Phlox 'Mardi Gras', Aster 'Indigo', Hellebore Ice N’ Roses Ivory Blush, Photinia 'Red Ballcoon',
+  Pieris 'Prelude' (its message was cut off inside `uncertain`; card fields complete). 8/8 pass check-plant-json.
+  See data/held-photos/2026-10-10/README.md. Fact check running.
+progress: 2026-10-09 (**Weeping Silver Pear dealt; held Spiraea 'Goldflame' dealt with his double JSON and a buds
+  frame; deck 578 -> 580, r391**) — double rules applied via compare-double --apply; the honey-fungus pest-vs-prose
+  flag joins VQ 85 / KNOWN. See data/held-photos/2026-10-09/README.md. All checks green. Not live.
+progress: 2026-10-08 (**sourced fact fixes applied on Oscar's yes; r390**) — live: Sargent's cherry Mar-Apr / Sep-Oct,
+  Braendkjaer 4–6 m, Pink Skyrocket 20–30 cm, spider plant text to its centre stripe, Fiji text white-brushed-pink,
+  1–1.5 m spread, South / West, PINKY SPOT in cvs. Undealt: Dianthus ×3 toxicity, Peperomia H1b, Mandarin Tango
+  safety line and soil. Doubtful items left as sent. Fast 9/9, deck-audit PASS, layout clean, data-audit 0. Not live.
+progress: 2026-10-08 (**the red-leaved Cordyline australis card becomes 'Red Star' under Oscar's JSON, with three flash
+  frames; r389**) — edited in place (deck position kept), photo files git-mv'd to the new slug, rename in
+  data/renames.json, csv re-exported. Frame 2 is cropped with reframe-photo to drop his hand and five labels.
+  RHS confirms H3 and the size; nothing wrong in the JSON. See data/held-photos/2026-10-08c/README.md. Deck 578,
+  all checks green. Not live.
+progress: 2026-10-08 (**Hibiscus FIJI dealt from a 3-entry GPT batch, deck 577 -> 578; Teucrium flash frame; r388**)
+  — batch stored and fitted in data/held-photos/2026-10-08b/; Mandarin Tango and the goldfish plant wait for photos.
+  Teucrium fruticans gains a flowers frame (add-swap). Fast 9/9, deck-audit PASS, data-audit 0. Not live.
+progress: 2026-10-08 (**Nerine bowdenii 'Isabel' gains a flash frame; r386**) — Oscar: "Another photo for nereen
+  bowdenii". Added with add-swap --as sunlit; the card photo is kept. Rendered whole at 390x844. deck-audit PASS,
+  fast 9/9. See data/held-photos/2026-10-08/README.md. Not live.
+progress: 2026-10-08 (**fact check of the three batches behind r383; fitting fixes r384–r385**) — Oscar: "Check the json
+  is correct". 38/38 entries pass check-plant-json, and the 27 dealt cards match their JSON field for field.
+  Five research agents checked every field against outside sources. Fixed, because they were the fitter's
+  errors: "rHS"/"uK" casing on three cards, Sedum 'Tricolor' cvs (RHS naming reversed), and facings RHS
+  states (Alocasia and Ceropegia East / West, both Vinca Any aspect). Facts wrong in his JSON (Sargent's
+  cherry peak, Braendkjaer height, Pink Skyrocket height, spider plant text vs photo) are put to Oscar and
+  left as sent. Details: data/held-photos/2026-10-07b/README.md. Fast 9/9, deck-audit PASS. Not live.
+progress: 2026-10-08 (**PR #58 merged; deck 577 live, r383**) — Oscar: "Push". PR #58 (dev -> deploy, 33 commits,
+  head 4094000) merged as ce9d49a. Pages run 132 is green: fast checks, deploy, "Verify the deployed page is this commit"
+  (build-stamp --verify on the served timber.html) and assetlinks.json all pass on GitHub's runner. github.io returns
+  403 from this sandbox, so the runner's check is the only live check. Dev branch restarted from ce9d49a.
 progress: 2026-10-07 (**gate 18/18 on e2697ce, r383**) — the full sequential gate is green with multi-select filters
   (features-test 41s with the nine new checks, app-test 289s, edge-test 301s). Nothing on the branch moved between the
   gate and this entry but the ledger. Live is still 550. Everything since PR #57 waits on Oscar's "push".

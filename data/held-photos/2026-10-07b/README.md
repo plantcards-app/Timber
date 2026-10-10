@@ -140,3 +140,134 @@ The spider plant and Song of India were rendered at 390x844 @2x and are whole. T
 Later that evening he re-sent photos a and d with names: "Heuchera sweat tea" and "Sugar and spice". Both
 are byte-identical to the held files, so nothing new was stored. His GPT JSON for a, c, d and i arrived next,
 and all four are dealt from it. See `data/held-photos/2026-10-07d/`. No photo from this sheet is held any more.
+
+## Fact check (2026-10-08)
+
+Oscar: "Check the json is correct". All 38 fitted entries from 2026-10-07b, c and d pass check-plant-json with
+0 errors and 0 warnings. The 27 dealt cards match their fitted entries field for field. Every field was then
+checked against outside sources (RHS through search snippets, since rhs.org.uk returns 403 to fetch).
+
+Fitting errors, fixed (r384, r385). These were the fitter's, not his JSON's:
+- The hardiness notes on Hebe Petita Red, Sedum 'Tricolor' and Tiarella 'Pink Skyrocket' read "uK" or "rHS".
+  The fit script lowercased the note's first letter. It now leaves a leading acronym alone.
+- Sedum spurium 'Tricolor': cvs had the RHS naming the wrong way round. RHS's main entry is Sedum spurium
+  'Tricolor' (v). 'Variegatum' and Phedimus spurius 'Tricolor' are its synonyms
+  (rhs.org.uk/plants/58466). The fitter had taken GPT's `uncertain` note as fact. That note is kept verbatim
+  above, and it is wrong.
+- Facings: the fitter had derived these from sunNeed, but RHS states them, and a stated facing wins.
+  Alocasia zebrina becomes East / West (rhs.org.uk/plants/136827). Both Vinca minor cards become Any aspect
+  (RHS lists N/E/S/W).
+  
+Wrong or doubtful facts in his JSON are listed for Oscar and left as sent until he says otherwise. On the
+dealt cards these are: Pink Skyrocket's height (RHS: to 20 cm in flower; card 30–40 cm), and the spider
+plant's text against its photo. RHS 'Variegatum' has white margins and 'Vittatum' a central stripe; the photo
+shows a central stripe, and the label says 'Variegatum'. Before dealing, the undealt entries need these
+fixed: Dianthus toxicity is blank, but RHS marks the genus a skin allergen and ASPCA lists pinks as toxic to
+pets. RHS gives Peperomia obtusifolia H1b, not H1a. No series or breeder was found for "Hardy Rose/Violet",
+so their H4 is unverified.
+
+### Applied (r390)
+
+Oscar: "Yes, if they seem nessusary". Only fields that a source shows to be wrong were changed. The doubtful ones
+are left as sent.
+- **Tiarella 'Pink Skyrocket'** (live): height 30–40 cm becomes 20–30 cm. RHS gives "to 20cm high in flower". The
+  patent gives flowering stalks of 27 cm, and Terra Nova 11" in flower.
+- **Chlorophytum comosum 'Variegatum'** (live): the visual now reads "a broad creamy-white central stripe", which is
+  what the photo shows. The warning "hot sun scorches margins" becomes "…scorches leaves". cvs was "'Variegatum'",
+  only its own name; it now says the label reads 'Variegatum' and that the centre-striped leaves match RHS
+  'Vittatum', since RHS 'Variegatum' has white edges. The name stays as the label has it.
+- **Dianthus Hardy Rose, Hardy Violet and Hardy Violet Picotee** (not dealt): toxicity was blank. It is now "Mildly
+  toxic to cats and dogs if eaten (ASPCA); can irritate skin, so wear gloves (RHS)". ASPCA's pinks entry gives mild
+  stomach upset and dermatitis; RHS Dianthus pages say skin allergen.
+- **Peperomia 'Obtipan Bicolor'** (not dealt): H1a becomes H1b, the rating RHS gives P. obtusifolia and its
+  cultivars. The note now reads "keep above 10°C, ideally 15°C or more".
+
+## Vinca minor 'Ralph Shugert' dealt (2026-10-10, r394)
+
+Oscar sent one photo captioned "Vinca". It was taken on a Galaxy S24 at 10:33:31 on 2026-10-07, at 4000x3000
+with EXIF rotation 6. It has no C2PA or AI-edit markers, and `vinca-minor-ralph-shugert.jpg` is byte-identical
+to what he sent (sha256 72139df29924e452…). Two Vinca entries were waiting. The flower is violet-blue, and RHS
+gives 'Colada' white flowers, so the photo goes to 'Ralph Shugert' ([Inference] by flower colour). [Unverified]:
+the cream leaf margins look fairly broad for V. minor; the card keeps its JSON name.
+
+The lime shape in the top-left corner looks like an out-of-focus leaf, green on its left half, not a tag
+([Inference]), and the card's left strip covers most of it. The pot's moulded marks are unreadable. The photo
+was not cropped. Deck 588 -> 589. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean. The
+card was rendered at 390x844 and is whole.
+
+## The Dianthus bench (2026-10-10, r395)
+
+Oscar: "Here's some bulk images I took of that bench u work it out I guess". Eight photos, all taken on a Galaxy
+S24 on 2026-10-07 between 10:38:44 and 10:39:56. None has C2PA or AI-edit markers, and every file here is
+byte-identical to what he sent. Three show readable nursery labels, which were used to identify the plants but
+never put on a card. They were matched by label, timestamp and flower pattern ([Inference]):
+
+| time | file | match | use |
+|---|---|---|---|
+| 10:39:54 | `dianthus-hardy-rose.jpg` | **Hardy Rose**: bright pink speckled flowers, the same as those beside the label 2 s later | card |
+| 10:39:56 | `dianthus-hardy-rose-label.jpg` | the "DIANTHUS HARDY ROSE" label | identification only |
+| 10:38:58 | `dianthus-hardy-violet.jpg` | **Hardy Violet**: deep crimson-violet with a pale eye, as in the label's picture | card |
+| 10:39:04 | `dianthus-hardy-violet-label.jpg` | the "DIANTHUS HARDY VIOLET" label, leaves only | identification only |
+| 10:39:09 | `dianthus-hardy-violet-magenta.jpg` | Hardy Violet, 5 s after its label | flash `magenta`, cropped |
+| 10:38:44 | `dianthus-hardy-violet-picotee.jpg` | **Hardy Violet Picotee**: white-fringed flower with a magenta zone | card |
+| 10:39:02 | `dianthus-hardy-violet-picotee-label.jpg` | the "DIANTHUS HARDY VIOLET PICOTEE" label over white-fringed magenta flowers | flash `fringed`, cropped |
+| 10:39:31 | `unmatched-dianthus-red.jpg` | red flowers beside a red label; matches none of the three JSONs | **held**, not used |
+
+Two crops were made with `tools/reframe-photo.js`, recorded in `*-crop.json`, using original pixels only:
+- the magenta Violet frame drops a strip of its label on the right edge (aspect 0.75)
+- the picotee frame keeps only the two flowers below the label, as a 1400x1400 square
+
+The tool confirmed every listed label is outside each crop. Deck 589 -> 592 at r395. Fast 9/9, data-audit 0,
+plant-sense clean, deck-audit PASS, layout clean, check-boot OK. The cards match `batch-corrected.json` field for
+field. All three cards and both frames were rendered at 390x844 and are whole, with no label showing.
+
+[Unverified], carried as written: the photos show bright green leaves, while the cards say "grey-green" and
+"blue-green". Hardy Violet's flowers look crimson-magenta rather than "violet-purple". The agent noted the same
+about chinensis × barbatus types on 2026-10-08. The red Dianthus is held until Oscar names it.
+
+## Vinca minor 'Colada' dealt (2026-10-10, r396)
+
+One photo, sent without text. It was taken on a Galaxy S24 at 10:33:12 on 2026-10-07, at 4000x3000 with EXIF
+rotation 6. It has no C2PA or AI-edit markers, and `vinca-minor-colada.jpg` is byte-identical to what he sent
+(sha256 a301781d6fa312e8…). It shows a white five-petalled flower over plain glossy green leaves, which matches
+'Colada' (RHS: white flowers). The only object in it is a pot rim, so it was not cropped. Deck 592 -> 593. The
+card was rendered at 390x844 and is whole.
+
+## Pilea 'Greyzy', Asplenium 'Parvati' and Ficus 'Twilight' dealt (2026-10-10, r398–r399)
+
+Oscar sent "Pilea", then "Aspliem and figus". Three photos, all taken on a Galaxy S24 on 2026-10-07 at 4000x3000
+with EXIF rotation 6. None has C2PA or AI-edit markers or shows a label, and all are byte-identical to what he
+sent.
+
+| file | taken | sha256 (first 16) | what it shows |
+|---|---|---|---|
+| `pilea-glaucophylla-greyzy.jpg` | 10:28:04 | 48fc6e8e3baeb485 | small round silvery-grey leaves on red-brown stems |
+| `asplenium-parvati.jpg` | 09:23:43 | 07c3b810fd212e94 | finely divided feathery fern fronds |
+| `ficus-benjamina-twilight.jpg` | 09:22:09 | b4247663190da807 | glossy leaves broadly and irregularly edged creamy-white, as RHS describes |
+
+Deck 594 -> 597. Fast 9/9, data-audit 0, plant-sense clean, deck-audit PASS, layout clean. All three cards
+match the fitted JSON field for field, and all were rendered at 390x844 and are whole.
+
+[Unverified], carried as written: the Parvati card says "dark green" fronds, while the photo shows bright mid-green.
+The 2026-10-08 fact check left its H1a (RHS Plants suggests 10°C, which is H1b) and its 50–80 cm spread as
+doubtful.
+
+## Peperomia 'Obtipan Bicolor' and Codiaeum 'Petra' dealt (2026-10-10, r400)
+
+Oscar: "Double check this", with three photos. All were taken on a Galaxy S24 on 2026-10-07 at 4000x3000 with
+EXIF rotation 6. None has C2PA or AI-edit markers or shows a label, and all are byte-identical to what he sent.
+Each was checked against the waiting entries and the card text:
+
+| file | taken | sha256 (first 16) | check |
+|---|---|---|---|
+| `peperomia-obtusifolia-obtipan-bicolor.jpg` | 10:27:48 | 4f8a0a45bf44243d | broad cream-lime margins with a pink-red rim, as the card says. Dealt. |
+| `codiaeum-variegatum-petra.jpg` | 09:21:41 | de653ee7d2beb2f9 | green leaves veined yellow, with red margins and midribs and burgundy older leaves, as the card says. Dealt. |
+| `../2026-10-10b/unmatched-aglaonema-pink.jpg` | 10:27:16 | 7841a169ab25031c | pink-splashed, green-speckled leaves on pink stalks, [Inference] an Aglaonema. No card, hold entry or waiting JSON matches, so it is **held** until Oscar names it or sends its JSON. |
+
+Deck 597 -> 599. Every entry in this batch with a photo is now dealt. Fast 9/9, data-audit 0, plant-sense clean,
+deck-audit PASS, layout clean. Both cards match the fitted JSON field for field, and both were rendered at
+390x844 and are whole.
+
+**Shelved (2026-10-10):** `unmatched-dianthus-red.jpg`. Under Oscar's rule for the unnamed Aglaonema ("If no
+specific name shelve it"), the red Dianthus has no specific name either, so it is shelved. The photo is kept and
+nothing was dealt.
