@@ -1,0 +1,22 @@
+{
+  "sourcePx": { "w": 3000, "h": 4000 },
+  "featureVisible": true,
+  "featureSeen": "a panicle hydrangea flower head aged to pink and reddish-pink over cream, with green leaves at the left",
+  "featureBox": { "x": 0.15, "y": 0.05, "w": 0.85, "h": 0.67 },
+  "crop": { "x": 0.10, "y": 0.0, "w": 0.90, "h": 0.69 },
+  "cropAspect": 0.978,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": { "x": 0.16, "y": 0.70, "w": 0.17, "h": 0.11 },
+      "reads": "a white pictorial plant label with a pink hydrangea photograph; no text legible at full resolution",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": { "evAdjust": 0.0, "whiteBalance": "none" },
+  "verdict": "crop",
+  "concerns": ["a pink mophead hydrangea (a different plant) stays in the lower-left background; the lowest florets of the panicle tip are trimmed"],
+  "reason": "Drops the bottom 31% of the frame, which holds a plant label and a window frame, and 10% of the left edge; original pixels only."
+}

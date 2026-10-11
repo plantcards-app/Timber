@@ -129,3 +129,12 @@ Deck 580 -> 588 at r393. data-audit 0 problems (deck 588, hold 74), plant-sense 
 itself", deck-audit PASS, audit-layout "all cards clean", check-boot OK, fast set 9/9. The eight dealt cards
 match `batch-corrected.json` field for field. Every card and frame was rendered at 390x844 and is whole, with no
 label showing.
+
+## 2026-10-10, later — the hellebore pairing corrected on Oscar's word
+
+Oscar, with a fresh Ivory Blush JSON and the green flower again: "That second hellebore isn't from the other Ice N'
+Roses collection, it's this variety; first card is a pinkish flower, second is the greeny one." So the two hellebore
+photos of this batch are two plants, and the green-white one is ICE N’ ROSES IVORY BLUSH. The pink-flushed photo that
+was dealt as the card photo above (sent 1, taken 15:48:16) is a different hellebore with no name yet; it is shelved here
+as `unmatched-hellebore-pink-flushed.jpg` (its crop JSON renamed with it) until he names it. The card now carries the
+green frame (cropped) as its photo and his new close-up as the flash frame; see `../2026-10-10d/README.md`.
