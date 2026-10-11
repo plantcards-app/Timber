@@ -55,3 +55,10 @@ paint and photo-window check in that suite passed, and perf-test run alone after
 photo swap touches swipe timing.
 
 **2026-10-11:** the pink-flushed plant is Ice N' Roses Early Rose on Oscar's word; its photo is that card's flash frame now.
+
+**2026-10-11, on his yes ("Yes change it to H7 and 50-60"):** hardiness H5 -> H7 and spread 80 cm -> 50–60 cm applied to
+the dealt card with compare-double (`--apply hardiness,hardinessNote`, `--set size`). The hardiness note went with the
+band, because the card's old note read "-15 to -10°C" and would have contradicted H7; it now carries his JSON's
+"Very hardy in UK gardens, potentially tolerating temperatures below -20°C. Protect container roots from prolonged
+severe frost." Size is in the deck's "50–60 cm H × 50–60 cm W" form. [Unverified] against the RHS, as his note says;
+his call. r406, check-boot OK, data-audit 0, plant-sense clean, deck-audit PASS, fast set 9/9.

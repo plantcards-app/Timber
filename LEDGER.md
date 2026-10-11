@@ -31,6 +31,9 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-11 (**Ivory Blush H5 -> H7 and spread 80 -> 50–60 cm on Oscar's yes; r406**) — applied with compare-double
+  from his 2026-10-10d JSON; the hardiness note went with the band (the old note read -15 to -10°C). [Unverified] against the
+  RHS. Data checks green, deck-audit PASS. Not live.
 progress: 2026-10-11 (**the pink hellebore is Ice N' Roses Early Rose on Oscar's word; its photo is that card's flash frame;
   r405**) — the 2026-10-10 bench shot, cropped as before, joined the dealt Early Rose card via add-swap (--as flushed); the
   shelved files renamed for the card. Full gate 18/18 on bdffc14 (perf-test included). See data/held-photos/2026-10-11/README.md.
