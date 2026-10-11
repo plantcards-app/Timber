@@ -33,7 +33,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
 since: 2026-10-06  sessions-unchanged: 0
 progress: 2026-10-11 (**the pink hellebore is Ice N' Roses Early Rose on Oscar's word; its photo is that card's flash frame;
   r405**) — the 2026-10-10 bench shot, cropped as before, joined the dealt Early Rose card via add-swap (--as flushed); the
-  shelved files renamed for the card. Data checks green, deck-audit PASS, layout clean. See data/held-photos/2026-10-11/README.md.
+  shelved files renamed for the card. Full gate 18/18 on bdffc14 (perf-test included). See data/held-photos/2026-10-11/README.md.
   Not live.
 progress: 2026-10-11 (**Ceanothus 'Victoria' dealt on Oscar's word (the species entry was the GPT splitting one label);
   a third Crinodendron frame; deck 609 -> 610, r404**) — "the variety is Victoria, the species is impressus, the JSON must
