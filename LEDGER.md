@@ -27,11 +27,16 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
   hazard; #7 Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo doubt; the BIG & EASY PURPLE hand
   in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of. New 2026-10-10c: the sourced 'Silver Sword' and Little Lime Punch fixes. 2026-10-11b: the rest of the
-  Inaba-shidare JSON (from toxicity on) to fill its blank back fields.
+  Inaba-shidare JSON (from toxicity on) to fill its blank back fields. All of these open items now also live as
+  per-plant notes in `data/requestion-notes/` (2026-10-11), which is where Oscar will work them.
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-11 (**data/requestion-notes/ created at Oscar's word: one note per plant with an open question**) — eleven
+  notes (Inaba-shidare's missing JSON tail, 'Silver Sword', Little Lime Punch, Ivory Blush, Early Rose, 'Silver Star', Miner's
+  Gold, Lemon and Lime, Echium, 'Victoria', White Dazzler), each with the card's values, the doubt, a paste-ready question and
+  what applies the answer; the ledger's older open items quoted in its README. Full gate 18/18 on 612eeb4 (deck 611, r407).
 progress: 2026-10-11 (**Acer palmatum 'Inaba-shidare' dealt from a cut-off JSON and two autumn photos; deck 610 -> 611,
   r407**) — the JSON broke off at `toxicity`; every front field arrived, the back fields (toxicity, cvs, uses, foliage) are
   blank until he resends the tail, which compare-double then takes. Second photo is the `cascade` frame. Data checks green,
