@@ -26,11 +26,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   green leaves with one golden shoot ([Unverified] it is 'Sundance'); Caryopteris 'Dark Knight' went H6 → H4
   by the sibling rule ([Unverified] against the RHS); #9 Acer negundo's orange Toxic flag rests on the horse
   hazard; #7 Phytolacca's H6 is GPT's inference; the Acer 'Moonfire' photo doubt; the BIG & EASY PURPLE hand
-  in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of. New 2026-10-10c: the sourced 'Silver Sword' and Little Lime Punch fixes. The pink-flushed hellebore photo of 2026-10-10 (shelved, unnamed): which variety?
+  in frame; the Gentiana 'Berrybank Dome' rename; the Osteospermum label; a Little Lime photo he is sure of. New 2026-10-10c: the sourced 'Silver Sword' and Little Lime Punch fixes.
   (Displaced, not dropped: Little Devil's label hardiness, H7 [Unverified] by direct read; the r270 iPhone
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-11 (**the pink hellebore is Ice N' Roses Early Rose on Oscar's word; its photo is that card's flash frame;
+  r405**) — the 2026-10-10 bench shot, cropped as before, joined the dealt Early Rose card via add-swap (--as flushed); the
+  shelved files renamed for the card. Data checks green, deck-audit PASS, layout clean. See data/held-photos/2026-10-11/README.md.
+  Not live.
 progress: 2026-10-11 (**Ceanothus 'Victoria' dealt on Oscar's word (the species entry was the GPT splitting one label);
   a third Crinodendron frame; deck 609 -> 610, r404**) — "the variety is Victoria, the species is impressus, the JSON must
   have messed up": the 2026-10-10c photo dealt to 'Victoria', the impressus entry is not a card. His Chilean lantern photo

@@ -53,3 +53,5 @@ already moving two frames after the release": frame 3 at 61 ms, under three brow
 paint and photo-window check in that suite passed, and perf-test run alone afterwards passed 23/23 (frame 2, 40 ms).
 [Inference] a load-timing flake, as the ledger recorded for edge-test under --jobs 3 on 2026-10-01; nothing in a
 photo swap touches swipe timing.
+
+**2026-10-11:** the pink-flushed plant is Ice N' Roses Early Rose on Oscar's word; its photo is that card's flash frame now.

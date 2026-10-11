@@ -16,3 +16,18 @@ worded "Third frame"). Nothing on the card changed.
 check-boot OK (PHOTO_SWAP 43), data-audit 0 problems (deck 610, hold 74), plant-sense --strict clean, photo-credits OK,
 deck-audit PASS, audit-layout clean, r404, fast set 9/9. The Ceanothus 'Victoria' card was rendered at 390x844: whole,
 no label.
+
+## Later — the pink hellebore named: Ice N' Roses Early Rose
+
+Oscar: "Ice N' Roses Early Rose, the pink hellebore photo was from this one." The 2026-10-10 bench shot that was first
+dealt as the Ivory Blush card photo and then shelved unnamed (open flowers pink-red flushed over green, cream stamens,
+taken 2026-10-09 15:48:16) belongs to the dealt card Helleborus Ice N’ Roses Early Rose ('Coseh 4000'), which already
+had its own photo. So it is a second photograph for a dealt card: added with `tools/add-swap.js --as flushed`, cropped
+exactly as on 2026-10-10 (the bottom 500 px held a label stake; `../2026-10-10/…-flushed-crop.json`, original pixels
+only). The files in the 2026-10-10 folder are renamed for the card, history kept. Nothing on the card's fields changed.
+
+[Unverified] from the photo alone that it is Early Rose; the card text says rich rose-pink flowers with yellow stamens
+where the frame shows pink-red flushed over green, which hellebore sepals do as they age. His word carries it.
+
+check-boot OK (PHOTO_SWAP 44), data-audit 0 problems (deck 610, hold 74), plant-sense --strict clean, photo-credits
+OK, deck-audit PASS, audit-layout clean, r405, fast set 9/9.

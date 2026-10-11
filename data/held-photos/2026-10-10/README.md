@@ -138,3 +138,8 @@ photos of this batch are two plants, and the green-white one is ICE N’ ROSES I
 was dealt as the card photo above (sent 1, taken 15:48:16) is a different hellebore with no name yet; it is shelved here
 as `unmatched-hellebore-pink-flushed.jpg` (its crop JSON renamed with it) until he names it. The card now carries the
 green frame (cropped) as its photo and his new close-up as the flash frame; see `../2026-10-10d/README.md`.
+
+**2026-10-11:** Oscar named the pink one: "Ice N' Roses Early Rose, the pink hellebore photo was from this one." The shelved
+photo and its crop JSON are renamed `helleborus-ice-n-roses-early-rose-coseh-4000-flushed(.jpg / -crop.json)` and the
+photo, cropped as before, is now the flash frame of the dealt Early Rose card (`add-swap --as flushed`, r405). See
+`../2026-10-11/README.md`.

@@ -3156,6 +3156,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "helleborus-ice-n-roses-early-rose-coseh-4000-flushed.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Hellebore Ice N' Roses Early Rose card (PHOTO_SWAP alt): his 2026-10-09 15:48:16 bench shot, named by him on 2026-10-11: open flowers pink-red flushed over green with cream stamens; cropped with reframe-photo (data/held-photos/2026-10-10/…-flushed-crop.json) to drop a label stake, original pixels only.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "helleborus-ice-n-roses-early-rose-coseh-4000.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
