@@ -1102,6 +1102,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "ceanothus-victoria.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "cedrus-atlantica-glauca-group-horstmann-s-silberspitz.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. The CREAMY-TIP frame, primary of a two-photo swap. Cropped by tools/reframe-photo.js by 7% of width only, to bring 1.075 inside the 0.75-1.0 gate; background only, no pixels generated. EXIF Samsung Galaxy S24, 2026-08-22 12:30:31. No C2PA manifest and no AI or generative marker",
@@ -1858,6 +1868,16 @@
    "file": "crinodendron-hookerianum-lanterns.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Second frame for the Chile Lantern Tree card (PHOTO_SWAP alt): Oscar's 2026-10-07 double, his 2026-09-26 shot: three crimson lanterns close up, water droplets on the petals, hanging over the pot. The card photo is his whole shrub hung with lanterns.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "crinodendron-hookerianum-single-lantern.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Third frame for the Chile Lantern Tree card (PHOTO_SWAP alt): one crimson lantern on its long stalk under glossy leaves, rain-wet, after a shower (2026-10-07 13:13).",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

@@ -145,3 +145,13 @@ Doubtful, left as sent:
   yellow" (RHS), chartreuse in part shade, which is how photo 10 reads.
 - **Nandina:** RHS says "evergreen or semi-evergreen"; "poultry" in the safety line is not RHS wording (NC State says
   birds). **Echium:** the May–Jul band is not RHS-sourced at month level (RHS: spring and summer).
+
+## 2026-10-11 — the Ceanothus named: one plant, 'Victoria'
+
+Oscar: "Sorry the variety is Victoria, the species is impressus, the JSON must have messed up." So the bench label is
+Ceanothus impressus 'Victoria' and the GPT split it into two entries, a cultivar record and a species record. The
+photo (sent 3, 16:35:30), renamed `ceanothus-victoria.jpg`, was dealt to **Ceanothus 'Victoria'** with
+`add-plants-bulk.js --quick`, under the JSON's latin as sent (RHS's accepted form; the cvs line carries the synonym
+Ceanothus impressus 'Victoria', which is what the label says). The **Ceanothus impressus** entry is not a card: it is
+the same plant written twice, not a second plant, so it stays in `batch-corrected.json` as the record and nothing
+waits on it. Deck 609 -> 610 at r404.
