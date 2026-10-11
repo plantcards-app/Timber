@@ -32,6 +32,12 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-11 (**Vitex 'Flip Side' flashes: Oscar's sunlit frame added as the second photo; r404**) — his
+  2026-10-10 17:15 Galaxy S24 photo (no AI/C2PA markers), the plant lit from behind with the purple undersides and
+  a first bud spike, added with `tools/add-swap.js --as sunlit` under the never-replace-never-ask rule. Rendered at
+  390x844 on the live deck: both frames load, the cut cycles at 3.5 s, no page errors. Deck unchanged at 609. Open
+  for Oscar: a blurred shop sign in the master's top-left corner sits under the title head on the card, unreadable;
+  left whole, one reframe-photo crop away if he wants it gone. Batch README: `data/held-photos/2026-10-11/`.
 progress: 2026-10-10 (**Ivory Blush: the green flower is the card on Oscar's word; pink photo shelved unnamed; r403**) — his
   fresh Ivory Blush JSON is a double for the dealt card (compare-double: nothing applied; H5 vs H7 and 80 vs 50–60 cm spread are
   his call). The green frame, cropped, is now the card photo and his new close-up the flash frame; the morning's pink-flushed
