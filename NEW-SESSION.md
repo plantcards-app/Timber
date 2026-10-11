@@ -21,7 +21,7 @@ and buys nothing.
 If you're using a plain chat rather than one attached to this repo, paste
 `CARD-STATS.md` and `PLANT-BRIEF.md` instead of the master doc.
 
-## Two routes, and they use different tools
+## Three routes, and they use different tools
 
 Which one you are on depends on whether the card already exists.
 
@@ -29,6 +29,7 @@ Which one you are on depends on whether the card already exists.
 |---|---|---|
 | A photo of a plant already written into `PLANTS_ON_HOLD` | written, waiting on a photograph | `tools/deal-plant.js` — **the common case**, 98 cards are in that state |
 | A plant with no card at all | does not exist | plant JSON first, then `tools/add-plant.js` / `add-plants-bulk.js` |
+| A batch Oscar built in the **Card Forge** artifact | some with photos, some without, all with a JSON | `CARD-FORGE.md` — pull the cards and photos out of the artifact, then the two tools above |
 
 `node tools/data-audit.js` prints the live held count; it moves every time a
 photo lands.
@@ -52,6 +53,19 @@ photo lands.
 > Work on a feature branch, not the deploy branch. Add with
 > `node tools/add-plants-bulk.js --quick`, then `node tests/run-all.js --jobs 3`
 > once before pushing.
+
+## Opening message that works — a batch from the Card Forge artifact
+
+> New batch from the Timber Card Forge artifact (https://claude.ai/artifact/2Byv3SGZ3jyTV1QcZTqhed),
+> batch "2026-10-11". Read README.md, NEW-SESSION.md and CARD-FORGE.md first; the repo
+> carries the layout, rubric and protocol. Pull the batch exactly as CARD-FORGE.md says,
+> fact-check every draft online before writing anything (they were drafted without web
+> access), deal the cards with photos and hold the rest, then set dealtAt on each card and
+> refresh the deck index. Feature branch, not the deploy branch. `node tests/run-all.js
+> --jobs 3` once before pushing.
+
+The page writes that message itself (its *Hand off* sheet), and can start the Claude Code
+session with it as the first turn; pasting it by hand works the same.
 
 ## Doubles and second photos — the standing protocol (Oscar, 2026-10-01)
 

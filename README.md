@@ -55,6 +55,8 @@ node tools/deal-plant.js "<latin>" photo.jpg   # a photo arrived -> deal that ca
 | `tools/compare-double.js` | A JSON for a card the deck already has: finds it, diffs every field with a verdict, writes the fields you pick (`--apply`) or one field (`--set`) |
 | `tools/add-swap.js` | A second photo for a card that already has one: makes the card flash between them (never replace, never ask) |
 | `tests/run-all.js` | One command for every check — run it green before pushing |
+| `CARD-FORGE.md` | How a session pulls a batch Oscar built in the Card Forge artifact (names in, checked JSONs and photos out) and writes the result back |
+| `tools/forge-deck-index.js` | The deck as the Forge sees it: every dealt and held latin by slug, for its "already in the deck" check; refresh it after each batch |
 
 ```sh
 node tools/check-plant-json.js my-plant.json    # errors out rather than guessing
