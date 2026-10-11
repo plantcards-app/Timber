@@ -161,6 +161,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "acer-palmatum-inaba-shidare-cascade.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Inaba-shidare Japanese Maple card (PHOTO_SWAP alt): the whole cascade of lace leaves in deeper red, twelve seconds after the card photo (2026-10-10 11:51).",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "acer-palmatum-inaba-shidare.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "acer-palmatum-moonfire.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
