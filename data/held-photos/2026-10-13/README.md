@@ -1,4 +1,4 @@
-# 2026-10-13 — two-entry JSON, stored and fitted; both wait for photos
+# 2026-10-13 — two-entry JSON, stored and fitted; both dealt from Oscar's photos on 2026-10-14 (r404)
 
 Oscar, 2026-10-13: one JSON array of two entries in the PLANT-BRIEF shape, no words, no photos.
 
@@ -82,5 +82,27 @@ Gardeners' World Lamium maculatum 'Roseum' and Lamium orvala; Plant Addicts "Is 
 chrysanthemum profile (aspca.org/pet-care/animal-poison-control/toxic-and-non-toxic-plants/chrysanthemum); Gardenia
 "Are mums toxic?"; Mast Young Plants 2021 mum catalogue; Romence Gardens Belgian Mums listings.
 
-None is dealt. Both wait for photos. When they come: one JSON per plant from `batch-corrected.json`, then
-`node tools/add-plants-bulk.js --quick a.json a.jpg b.json b.jpg` and the full gate before pushing.
+## Photos and the deal (2026-10-14)
+
+Oscar, 2026-10-14: two photographs, no words, in the batch's order: the silver-leaved Lamium, then the magenta
+pompom mum. Both are stored here byte-identical, named by the card's slug.
+
+- **Lamium**: `lamium-maculatum-beacon-silver.jpg` (2342×2766). The top-left edge holds the blurred fingers of the
+  hand holding the stems, with the rim of a terracotta pot at the top right, so `lamium-maculatum-beacon-silver-crop.json`
+  drops the top 11% (full width kept, aspect 0.951, feature centre 57% across and 43% down the crop), applied with
+  `tools/reframe-photo.js`; the reframed file was dealt and is not committed (the crop JSON reproduces it from the
+  master). A sliver of the pot and a fingertip stay in the top-right corner of the crop, under the card furniture
+  and outside the detail sheet's centre. Pale nibble marks on the upper leaves are the plant as photographed.
+- **Mum**: `chrysanthemum-indicum-group-soul-sister-purple.jpg` (3000×4000 displayed, EXIF orientation 6), dealt
+  as is: flowers centred, buds and dew, a red sign blurred top-left with no legible text. Open for Oscar, not
+  blocking: the flowers read magenta to pink-purple, nearer hue 320 than the 290 as sent; `hue` stays as sent.
+
+Dealt with `node tools/add-plants-bulk.js --quick`, one JSON per plant from `batch-corrected.json`. The data gate
+caught one contradiction after the insert: plant-sense's hardiness-vs-prose rule reads the word "tender" in the
+Lamium's "slugs and snails on tender growth" as frost tenderness against the H7 crest. Reworded to "on young growth"
+with `tools/compare-double.js --card … --set resilience=…`; `batch-corrected.json` carries the earlier wording.
+Both photos take a CREDITS entry (Oscar's own, owned outright). Both renders looked at: the mum's photo fills the
+window with the H4 shield, the Oct-Nov band and the siblings' soil panel; the Lamium's silver leaves fill the window
+with the H7 shield and the May-Jul band.
+
+Deck 609 -> 611, hold 74 unchanged. Build stamp r404. Full gate `node tests/run-all.js --jobs 3`: 18/18.

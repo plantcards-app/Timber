@@ -32,6 +32,11 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-14 (**batch 2026-10-13 dealt: Lamium 'Beacon Silver' and Chrysanthemum 'Soul Sister Purple' from Oscar's two photos; deck
+  609 -> 611, r404**) — the Lamium cropped clear of the fingers at the top-left edge (crop JSON kept, reframe-photo), the mum as is. One
+  plant-sense catch after the insert: "tender growth" in the pest sentence read as frost tenderness against H7; reworded to "young growth".
+  Credits written. Both renders looked at. Full gate 18/18 under --jobs 3. Open for Oscar, not blocking: the mum's flowers read nearer hue
+  320 than the 290 as sent. See data/held-photos/2026-10-13/README.md. Not live.
 progress: 2026-10-13 (**batch 2026-10-13: two-entry JSON, Lamium 'Beacon Silver' and Chrysanthemum 'Soul Sister Purple', stored and
   fitted; both wait for photos**) — no words, no photos. compare-double: both new. check-plant-json: 0 errors on both. Fitted as the
   2026-10-10 batches were (compass aspect, 26/44 soil, prose budgets, pest key, controlled pollination/stockForm, figureless rootSize blank).
