@@ -143,3 +143,5 @@ _written to the card: size_
 ## Tally
 
 agrees 31 · corrected 3 · filled 0 · differs/reported 2 · unverified 0 · safety rung questions 3
+
+Full gate `node tests/run-all.js --jobs 3` after `--write`: 18/18 at r411.
