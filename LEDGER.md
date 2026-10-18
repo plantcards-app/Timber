@@ -32,6 +32,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-18 (**batch 2026-10-18: two arrays (14 + 12), 24 new entries stored and fitted, waiting for photos; the two
+  doubles' blank fields filled, r405**) — no words, no photos. compare-double: Jacobaea maritima and Dryopteris erythrosora are
+  dealt doubles (blank fields taken, hue 0 → 205 on the Jacobaea; everything else stays as dealt); the rest are new. check-plant-json:
+  0 errors on all 24 after fitting (band-only hardiness, class pollination, container stockForm, blank figureless rootSize and
+  conditional clay, parseable peaks, compass aspect, 26/44 soil, prose budgets, eleven safety sentences reworded to the rung they
+  mean). Latin and values otherwise as sent. Fact check (snippets) agrees on most H-ratings and sizes; open for Oscar: Sunte
+  Nectarine is unscented per the RHS Rhodo Group, Abelia 'Prostrate White' is RHS H5 not H4, 'Ling Ling' is sold as Asarum maximum,
+  RHS names for Windmills and Phormium, the PBR trade-name form. See data/held-photos/2026-10-18/README.md. Gate 18/18. Not live.
 progress: 2026-10-14 (**batch 2026-10-13 dealt: Lamium 'Beacon Silver' and Chrysanthemum 'Soul Sister Purple' from Oscar's two photos; deck
   609 -> 611, r404**) — the Lamium cropped clear of the fingers at the top-left edge (crop JSON kept, reframe-photo), the mum as is. One
   plant-sense catch after the insert: "tender growth" in the pest sentence read as frost tenderness against H7; reworded to "young growth".
