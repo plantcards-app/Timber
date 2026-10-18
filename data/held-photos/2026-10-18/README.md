@@ -134,4 +134,8 @@ flower at the top-right edge, mostly cropped by the card; Daphne sp. and Lampran
 [Inference] the daphne in the photos looks like a D. × transatlantica type (repeat flowering in October).
 
 Deck 611 -> 635 (24 new), hold unchanged. Each round: data checks green, renders looked at, full gate
-`node tests/run-all.js --jobs 3` 18/18 (r406, r407; r408 below).
+`node tests/run-all.js --jobs 3` 18/18 at r406 and r407. At r408 audit-layout caught two spread values,
+"100–150 cm" on the Yucca and the Abelia, overrunning the rail patch by 7.9px; both became "1–1.5 m" (the same
+value in the deck's form; the fit script carries it), r409. Two reruns then failed app-test on an "Update ready"
+pill: a stray http-server of this session's screenshots still held :8477 with max-age caching and weak ETags, so the
+suites ran against it. With it stopped, the gate's own server: 18/18 at r409.

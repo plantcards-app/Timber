@@ -129,6 +129,7 @@ const FIX = {
     u: [],
   },
   "Yucca filamentosa 'Color Guard'": {
+    spread: '1–1.5 m',
     hardiness: 'H5', height: '60–90 cm', aspect: 'East / South', peak: 'Jun-Aug',
     soil: 'Sharply drained sand/loam', soilWarning: 'No winter waterlogging or dense shade',
     visual: 'Architectural rosettes of stiff sword leaves, dark green with a broad creamy-yellow central stripe, often rose-tinted in cold weather. Mature plants raise tall spikes of ivory bells.',
@@ -140,6 +141,7 @@ const FIX = {
     u: ["hardiness: as sent 'Hardy UK garden perennial (approx. H6)'; H6 as estimated, [Unverified] (sibling ViV cultivars show H7 in RHS snippets)."],
   },
   "Abelia × grandiflora 'Prostrata'": {
+    spread: '1–1.5 m',
     hardiness: 'H4', aspect: 'South / West', peak: 'Jul-Oct',
     soil: 'Fertile, well-drained', soilWarning: 'Shy to flower in shade; no winter wet',
     resilience: 'Reasonably drought tolerant once established; flowers from summer into autumn. Pests: generally few; occasional aphids; root stress on poor drainage.',
