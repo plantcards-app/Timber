@@ -99,13 +99,14 @@ const FIX = {
     u: ["hardiness: as sent 'Provisional H2 · 1 to 5°C'; H2 (RHS H2 for L. spectabilis 'Tresco Brilliant' and L. brownii).", "peak: as sent 'Late spring–summer (varies)'; May-Aug.", "toxicity: as sent prints Toxic for a hazard it says is not established; reworded so the card prints Handle with care (the default rung). ASPCA lists 'ice plant' as non-toxic, but which plant this is remains open."],
   },
   "Gardenia jasminoides 'Leefour'": {
+    latin: "Gardenia jasminoides DOUBLE DIAMONDS ('Leefour')",
     hardiness: 'H4',
     hardinessNote: 'Breeder (Plantipp) claims frost tolerance to −12°C; carded at H4 (−10 to −5°C), the band that claim clears, as no RHS rating was found. Shelter from cold wind and winter wet.',
     height: '90 cm', spread: '70 cm', peak: 'May-Aug', aspect: 'East / South / West',
     soil: 'Acidic, humus-rich', soilWarning: 'No lime, cold wet roots or hard frost',
     water: 'Keep evenly moist with rainwater if possible; never leave standing in water. Feed as an acid-lover in growth.',
     resilience: 'Breeder reports better heat and disease tolerance than most gardenias; protect from hard frost. Pests: scale, aphids, mealybugs, spider mite; root rot.',
-    clay: '', u: [CL, "hardiness: as sent was the breeder claim in words, not a band. H4 [Unverified]; US patent USPP27600 gives USDA 8.", "peak: as sent 'Late spring–summer; sometimes repeat bloom'; May-Aug."],
+    clay: '', u: [CL, "hardiness: as sent was the breeder claim in words, not a band. H4 [Unverified]; US patent USPP27600 gives USDA 8.", "peak: as sent 'Late spring–summer; sometimes repeat bloom'; May-Aug.", "latin: as sent 'Gardenia jasminoides \\'Leefour\\''; Oscar gave the label name on 2026-10-18 (\"Gardenia jasminoides Double Diamonds ('Leefour' PBR)\"), written in the deck's TRADE ('code') form."],
   },
   'Orostachys iwarenge': {
     hardiness: 'H5', height: '10–20 cm', aspect: 'East / West', peak: 'Aug-Oct',

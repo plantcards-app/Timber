@@ -486,7 +486,7 @@
   },
   {
     "common": "Double Diamonds gardenia",
-    "latin": "Gardenia jasminoides 'Leefour'",
+    "latin": "Gardenia jasminoides DOUBLE DIAMONDS ('Leefour')",
     "hue": 50,
     "hardiness": "H4",
     "hardinessNote": "Breeder (Plantipp) claims frost tolerance to −12°C; carded at H4 (−10 to −5°C), the band that claim clears, as no RHS rating was found. Shelter from cold wind and winter wet.",
@@ -523,7 +523,8 @@
       "rootSize: as sent carries no figure, so it is blank (the validator refuses a figureless value).",
       "clay: as sent 'conditional', which is not yes/no; blank, as not established.",
       "hardiness: as sent was the breeder claim in words, not a band. H4 [Unverified]; US patent USPP27600 gives USDA 8.",
-      "peak: as sent 'Late spring–summer; sometimes repeat bloom'; May-Aug."
+      "peak: as sent 'Late spring–summer; sometimes repeat bloom'; May-Aug.",
+      "latin: as sent 'Gardenia jasminoides \\'Leefour\\''; Oscar gave the label name on 2026-10-18 (\"Gardenia jasminoides Double Diamonds ('Leefour' PBR)\"), written in the deck's TRADE ('code') form."
     ]
   },
   {

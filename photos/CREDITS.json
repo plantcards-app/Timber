@@ -101,6 +101,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "acanthus-whitewater.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "acer-negundo.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -234,6 +244,16 @@
    "file": "acer-palmatum-taylor.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Supplied as a three-panel vertical COLLAGE (pink new growth over the pink-margined mature leaves) kept WHOLE under the one-rule of protocol v14.49; no pixels generated; no EXIF orientation tag",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "acer-palmatum-trompenburg.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -2025,6 +2045,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "daphne-sp-flowers.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Daphne / winter-flowering fragrant shrub (unidentified) card (PHOTO_SWAP alt): a second shoot: creamy white flowers on pink tubes.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "daphne-sp.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "daphne-transatlantica-pink-fragrance-blapink.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Uncropped: EXIF orientation 6 (sensor 4000x3000, displays portrait 3000x4000 at exactly 0.750), rotation baked in by tools/reframe-photo.js at verdict as-is, no crop, no pixels generated. EXIF Samsung Galaxy S24, 2026-08-03. No C2PA manifest and no AI or generative marker. This is the SECOND photograph of this plant: the first, daphne-unidentified-summer.jpg, was parked unidentified under VERIFY-QUEUE 44 because it could not be the deck's winter-flowering D. bholua; Oscar named the plant PINK FRAGRANCE and supplied this clearer frame for the card",
@@ -2835,6 +2875,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "gardenia-jasminoides-double-diamonds-leefour-leaves.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Double Diamonds gardenia card (PHOTO_SWAP alt): a glossy leaf close up.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "gardenia-jasminoides-double-diamonds-leefour.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "garrya-elliptica-james-roof.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -2982,6 +3042,16 @@
    "sourceUrl": null,
    "commit": "0cd5c23",
    "commitSubject": "Add Spider's Web Fatsia + Griselinia (two cutouts); fix cultivar-apostrophe slug bug",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "griselinia-littoralis-variegata.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -3447,6 +3517,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "hosta-blue-mouse-ears-buds.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Blue Mouse Ears miniature hosta card (PHOTO_SWAP alt): the bud cluster from above, before the bells open.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "hosta-blue-mouse-ears.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "hosta-broadband.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3818,6 +3908,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "jacobaea-maritima-felt.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Silver Leaf Cineraria card (PHOTO_SWAP alt): felted silver leaves and the woolly flower buds, close up.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "jacobaea-maritima.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3869,6 +3969,36 @@
   },
   {
    "file": "lamium-maculatum-beacon-silver.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lampranthus-sp-flowers.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Lampranthus / trailing ice plant (identity to confirm) card (PHOTO_SWAP alt): a magenta flower face on.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lampranthus-sp-side.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Lampranthus / trailing ice plant (identity to confirm) card (PHOTO_SWAP alt): a magenta flower side on, with a bud.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lampranthus-sp.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -5060,6 +5190,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "phormium-tenax-sundowner.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "photinia-fraseri-carre-rouge.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -5733,6 +5873,26 @@
   },
   {
    "file": "rhododendron-silver-sword.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "rhododendron-sunte-nectarine-flowers.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Sunte Nectarine deciduous azalea card (PHOTO_SWAP alt): the golden-orange trusses with their long stamens, side on.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "rhododendron-sunte-nectarine.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
