@@ -116,10 +116,11 @@ const FIX = {
     u: ["height: as sent '10–20 cm (flower spikes may be taller)'; the spike note is dropped.", "toxicity: as sent prints Toxic (contains 'toxicity'); reworded to the clear rung it means."],
   },
   "× Mangave 'Night Owl'": {
+    height: '15–30 cm',
     hardiness: 'H2', peak: 'Jan-Dec', aspect: 'South / West',
     soil: 'Gritty cactus compost', soilWarning: 'No standing water, cold wet mix or frost',
     resilience: 'Very drought tolerant once established; frost tender. Pests: mealybugs, scale, occasional vine weevil in pots; root rot if saturated.',
-    u: ["hardiness: as sent 'Tender · protect from frost', not a band. H2 (keep frost-free), as the deck's Agave americana; US sources give USDA 9–11.", "peak: as sent 'Year-round foliage'; Jan-Dec."],
+    u: ["hardiness: as sent 'Tender · protect from frost', not a band. H2 (keep frost-free), as the deck's Agave americana; US sources give USDA 9–11.", "peak: as sent 'Year-round foliage'; Jan-Dec.", "height: as sent '15–30 cm (foliage)'; the note is dropped (it printed on the height rail)."],
   },
   "Asarum arifolium 'Ling Ling'": {
     hardiness: 'H6', pest: 'slugs', aspect: 'North / East', peak: 'Mar-May',

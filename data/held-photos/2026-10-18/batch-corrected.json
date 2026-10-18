@@ -574,7 +574,7 @@
     "hue": 285,
     "hardiness": "H2",
     "hardinessNote": "Not reliably winter hardy outside in the UK. Keep frost-free, ideally bright and cool, through winter.",
-    "height": "15–30 cm (foliage)",
+    "height": "15–30 cm",
     "spread": "40–50 cm",
     "peak": "Jan-Dec",
     "visual": "Low, broad rosette of slender arching succulent leaves, heavily coloured dark burgundy-purple to nearly black in strong light, with silver overtones and small red marginal teeth.",
@@ -606,7 +606,8 @@
       "Hardiness reported under USDA zones rather than a cultivar-specific RHS temperature band.",
       "rootSize: as sent carries no figure, so it is blank (the validator refuses a figureless value).",
       "hardiness: as sent 'Tender · protect from frost', not a band. H2 (keep frost-free), as the deck's Agave americana; US sources give USDA 9–11.",
-      "peak: as sent 'Year-round foliage'; Jan-Dec."
+      "peak: as sent 'Year-round foliage'; Jan-Dec.",
+      "height: as sent '15–30 cm (foliage)'; the note is dropped (it printed on the height rail)."
     ]
   },
   {

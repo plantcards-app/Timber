@@ -32,6 +32,10 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-18 (**batch 2026-10-18 dealt: all 24 from Oscar's photos, deck 611 -> 635, r408**) — four photo messages,
+  paired by his order; flash frames on nine cards plus the dealt Jacobaea and Dryopteris; the gardenia takes his label name
+  Gardenia jasminoides DOUBLE DIAMONDS ('Leefour'). Windmills, Jordan and Green Trompenburg placed by order [Inference]. One photo
+  unplaced (striped grassy plant in a grey tray), asked. Renders looked at each round; full gate 18/18 each round.
 progress: 2026-10-18 (**batch 2026-10-18: two arrays (14 + 12), 24 new entries stored and fitted, waiting for photos; the two
   doubles' blank fields filled, r405**) — no words, no photos. compare-double: Jacobaea maritima and Dryopteris erythrosora are
   dealt doubles (blank fields taken, hue 0 → 205 on the Jacobaea; everything else stays as dealt); the rest are new. check-plant-json:

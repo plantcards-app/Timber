@@ -97,8 +97,41 @@ rhodogroup-rhs.org (Sunte Nectarine); ASPCA azalea, hosta (second-hand via Heppe
 plant; Plantipp and USPP27600 (Gardenia); Proven Winners, Park Seed (Mangave); Plant Delights, Hardy's (Asarum
 maximum); Webbs, Gates GC, Promesse de Fleurs (ViV); Botanical Dermatology Database (Agave sap).
 
-## State
+## State at the fit (r405)
 
-Deck unchanged in count; hold unchanged. timber.html changes only the two doubles' blank fields (r404 → r405).
-None of the 24 is in timber.html: they are dealt with `node tools/add-plants-bulk.js --quick` once their photos come,
-one JSON per plant from `batch-corrected.json`. Full gate `node tests/run-all.js --jobs 3`: 18/18.
+Deck unchanged in count; timber.html changed only the two doubles' blank fields. Full gate 18/18.
+
+## The deal (2026-10-18, r406–r408): 24 of 24 dealt, two dealt doubles take flash frames
+
+Oscar sent photos in four messages: two for the Northern Hi-Lights ("The northern lights azelia"), then twenty, then
+two more ice-plant frames and the gardenia pair with its label name ("Gardenia jasminoides Double Diamonds
+('LeefourBR"), then fourteen with "From the other json, should be some what in order". Every photo is stored here
+byte-identical, named by the card's slug (`-altN` for the flash frames, which `add-swap.js` stages as
+`-flowers`, `-leaves` and so on). All are Oscar's own; every one has a CREDITS entry.
+
+Pairing was by his order (both arrays' JSON order) and by eye. [Inference] where marked:
+- r406 Northern Hi-Lights: the hairy purple-red autumn shoots; the shoot close-up is the flash frame. The card
+  describes creamy yellow flowers; the photos show autumn leaves.
+- r407 Sunte Nectarine (golden-orange trusses; flash: side view), Daphne sp. (white flowers on pink tubes; flash:
+  second shoot), Acanthus 'Whitewater', Griselinia 'Variegata', Phormium 'Sundowner', Hosta 'Blue Mouse Ears' (flash:
+  buds), Acer 'Trompenburg' (narrow curled lobes, burgundy and red), Lampranthus sp. (magenta; two flash frames), and
+  the gardenia, **renamed to the label name he gave**: `Gardenia jasminoides DOUBLE DIAMONDS ('Leefour')`, in the deck's
+  TRADE ('code') form (the fit script carries the rename). The silver-leaf photo is the dealt Jacobaea's flash frame.
+- r408, once he said the photos run in order: Windmills (flash: shoot with label) [Inference, by order], Acer
+  'Jordan' (three frames of lime leaves edged red) and Acer 'Green Trompenburg' (two frames of narrow yellowing lobes)
+  [Inference, by order: Jordan's leaves here are less rounded than the full-moon type], then the second array in its
+  order: Orostachys, the fern (flash frame on the dealt Dryopteris), Mangave, Asarum, Yucca (flash: centre), ViV Vera
+  (purple-pink double), Abelia, ViV Amalia (white), Carex 'Evercream', Garnet, Louise, Magical Volcano (flash: stems).
+- After the r408 deal the Mangave's size still carried "(foliage)" and printed it on the height rail; set to
+  "15–30 cm H × 40–50 cm W" with compare-double --set, and the fit script now drops the note.
+
+**Not placed, for Oscar:** one photo of a white-and-green striped grassy plant in a grey tray, held by a finger
+(upload `a766e136`), sent between the Phormium and the silver leaf. It matches no entry in either array in that
+position; it is not stored on any card. Which plant is it?
+
+Open, not blocking: the Trompenburg frame is mostly background (leaves in the top third); the ViV Vera frame shows the
+flower at the top-right edge, mostly cropped by the card; Daphne sp. and Lampranthus sp. remain genus-level names;
+[Inference] the daphne in the photos looks like a D. × transatlantica type (repeat flowering in October).
+
+Deck 611 -> 635 (24 new), hold unchanged. Each round: data checks green, renders looked at, full gate
+`node tests/run-all.js --jobs 3` 18/18 (r406, r407; r408 below).
