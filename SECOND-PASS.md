@@ -45,7 +45,7 @@ the checker added, and a tally. Commit the directory with the batch or the hold 
 | hardiness | corrected to the sourced band | reported, card keeps (double rule 3) |
 | height / spread, blank | filled from the verdict | reported ("fill by hand") |
 | height / spread, present | corrected when the verdict is RHS; reported when not | reported |
-| peak | corrected when the verdict gives a `Mon-Mon` | reported |
+| peak | corrected when the verdict gives a `Mon-Mon` from an RHS source; nursery months reported only | reported |
 | toxicity | never rewritten; flags reported; a card printing *clear* or *Handle with care* where the sources say harmful (or the reverse) is flagged `RUNG?` for the session | same |
 | name | never rewritten (the label rule, NEW-SESSION.md); accepted name and `TRADE ('code')` form reported | same |
 | compliance | reported | same |

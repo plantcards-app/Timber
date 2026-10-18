@@ -32,6 +32,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-18 (**second pass built and run once: tools/second-pass.js + SECOND-PASS.md; hold slice 0 checked, r411**) — Oscar:
+  "gather all the data and send it to Claude for a double check on numbers and stats", "want it go". prepare gathers claims (batch file,
+  --held, --deck, --latin, --skip/--limit) and writes one checker brief per chunk with the verdict schema; the session runs one
+  web-checking agent per brief; apply diffs, applies what the double rules allow (held/batch only; dealt reported), writes REPORT.md;
+  selftest on a fixture. Wired into CARD-FORGE.md step 5 and NEW-SESSION.md. First real run on the nine longest-held cards: 31 agree,
+  Clematis 'Purpurea Plena Elegans' H5 -> H6 (RHS 210954) and Fallopia H5 -> H7 (RHS 7143) corrected with their notes, Rhus typhina
+  spread 8 m+ -> 4–8 m (RHS 20902); the three Clematis had blank safety where RHS flags skin irritant + harmful to pets, set by hand;
+  Syringa and Rhus take a Defra Xylella medium-risk compliance line. Three tool fixes came out of the run (size formatting is not a
+  correction, nursery months never correct a peak, RHS author/group suffixes are the same name). Next slices: --held --skip 9.
 progress: 2026-10-18 (**first Card Forge batch pulled: 52 drafts, 40 fact-checked and held, 12 set aside; hold 74 -> 114, r410**) —
   pulled from the artifact as CARD-FORGE.md says (folder 2026-10-18b; the artifact id is 2026-10-18). Six parallel snippet checks:
   RHS agreed with the drafted hardiness on 26 of 40, disagreed by one band on 14; 29 drafts had no size and the hold tool refuses

@@ -33,7 +33,8 @@
                 entry; reported only on a dealt card.
     height/     blank on the card → filled from the verdict. Present but different →
     spread      corrected when the verdict is RHS-sourced; reported when it is not.
-    peak        corrected when the verdict gives a Mon-Mon and it differs.
+    peak        corrected when the verdict gives a Mon-Mon from an RHS source; a nursery's months are
+                reported only (a plant in flower on a bench says nothing about the garden).
     toxicity    never rewritten (the sentence is Oscar's claim); the verdict's RHS/ASPCA
                 flags are reported, and a mismatch with the card's printed rung is flagged.
     name        never rewritten (label rule); the accepted name and TRADE ('code') form
@@ -57,6 +58,19 @@ const die = m => { console.error('ABORT: ' + m); process.exit(1); };
 
 const BANDS = ['H1a', 'H1b', 'H1c', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7'];
 const band = s => { const m = String(s || '').match(/\bH(1[abc]|[2-7])\b/i); return m ? ('H' + m[1].toLowerCase()) : ''; };
+/* The deck's standard hardinessNote per band; written with a corrected band so plant-sense's
+   hardiness-vs-prose rule does not then read the old temperatures against the new crest. */
+const BAND_NOTE = {
+  H7: 'Very hardy: withstands below −20°C, so hardy anywhere in the UK',
+  H6: 'Hardy in most of the UK, approximately −20 to −15°C',
+  H5: 'Hardy through a cold UK winter, approximately −15 to −10°C',
+  H4: 'Hardy through an average UK winter, approximately −10 to −5°C',
+  H3: 'Half-hardy, approximately −5 to 1°C; shelter or protect in cold areas',
+  H2: 'Tender, approximately 1 to 5°C; frost-free over winter',
+  H1c: 'Tender, 5 to 10°C minimum; a conservatory or houseplant, outside in summer only',
+  H1b: 'Tender, 10 to 15°C minimum; a houseplant',
+  H1a: 'Tender, above 15°C; a heated-glasshouse plant',
+};
 const MON = /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$/;
 const RHS = /\brhs\b|rhs\.org\.uk/i;
 
@@ -179,14 +193,17 @@ function judge(claim, v) {
   const h = val(v, 'hardiness'); const hb = band(h.value);
   if (hb && sourced(h.source)) {
     if (hb === claim.hardiness) say('hardiness', claim.hardiness, hb, 'agrees', h.source);
-    else { say('hardiness', claim.hardiness || 'blank', hb, dealt ? 'differs (dealt card keeps)' : 'corrected', h.source); if (!dealt) fixes.hardiness = hb; }
+    else {
+      say('hardiness', claim.hardiness || 'blank', hb, dealt ? 'differs (dealt card keeps)' : 'corrected', h.source);
+      if (!dealt) { fixes.hardiness = hb; fixes.hardinessNote = `${BAND_NOTE[hb]} (${h.source}).`; }
+    }
   } else say('hardiness', claim.hardiness || 'blank', '', 'unverified', h.source || 'not found');
 
   for (const k of ['height', 'spread']) {
     const s = val(v, k);
     if (!s.value || !sourced(s.source)) { say(k, claim[k] || 'blank', '', 'unverified', s.source || 'not found'); continue; }
     if (!claim[k]) { say(k, 'blank', s.value, dealt ? 'blank on dealt card (fill by hand)' : 'filled', s.source); if (!dealt) fixes[k] = s.value; }
-    else if (norm(claim[k]) === norm(s.value)) say(k, claim[k], s.value, 'agrees', s.source);
+    else if (sizeNorm(claim[k]) === sizeNorm(s.value)) say(k, claim[k], s.value, 'agrees', s.source);
     else if (RHS.test(s.source) && !dealt) { say(k, claim[k], s.value, 'corrected (RHS)', s.source); fixes[k] = s.value; }
     else say(k, claim[k], s.value, dealt ? 'differs (dealt card keeps)' : 'differs (non-RHS, kept)', s.source);
   }
@@ -194,7 +211,8 @@ function judge(claim, v) {
   const pk = val(v, 'peak');
   if (MON.test(pk.value) && sourced(pk.source)) {
     if (pk.value === claim.peak) say('peak', claim.peak, pk.value, 'agrees', pk.source);
-    else { say('peak', claim.peak || 'blank', pk.value, dealt ? 'differs (dealt card keeps)' : 'corrected', pk.source); if (!dealt) fixes.peak = pk.value; }
+    else if (RHS.test(pk.source) && !/\bonly\b|says '|no months|\bper\b|nursery|retail/i.test(pk.source) && !dealt) { say('peak', claim.peak || 'blank', pk.value, 'corrected (RHS)', pk.source); fixes.peak = pk.value; }
+    else say('peak', claim.peak || 'blank', pk.value, dealt ? 'differs (dealt card keeps)' : 'differs (non-RHS months, kept)', pk.source);
   } else say('peak', claim.peak || 'blank', pk.value, 'unverified', pk.source || 'not found');
 
   const t = v.toxicity || {};
@@ -209,7 +227,7 @@ function judge(claim, v) {
   } else say('toxicity', claim.toxTier, '', 'no listing found', '');
 
   const nm = v.name || {};
-  if (nm.accepted && norm(nm.accepted) !== norm(claim.latin)) say('name', claim.latin, nm.accepted, 'accepted name differs (label rule: not changed)', nm.source || '');
+  if (nm.accepted && !sameName(nm.accepted, claim.latin)) say('name', claim.latin, nm.accepted, 'accepted name differs (label rule: not changed)', nm.source || '');
   if (nm.trade && norm(nm.trade) !== norm(claim.latin)) say('name', claim.latin, nm.trade, "TRADE ('code') form available", nm.source || '');
   if (nm.exists === false) say('name', claim.latin, '', 'NOT FOUND as a cultivar', nm.source || '');
 
@@ -218,6 +236,14 @@ function judge(claim, v) {
   return { fixes, rows, notes: Array.isArray(v.notes) ? v.notes : [] };
 }
 const norm = s => String(s || '').toLowerCase().replace(/\s+/g, ' ').replace(/[‘’']/g, "'").trim();
+/* "4-8m", "4–8 m" and "4 – 8m" are one size; "12m+" and ">12 m" are one size. */
+const sizeNorm = s => norm(s).replace(/\s+/g, '').replace(/[–—]/g, '-').replace(/^>(.+)$/, '$1+');
+/* RHS writes group letters and authors after the name: "Rhododendron luteum (A)", "Fallopia baldschuanica (Regel)
+   Holub", "Clematis montana var. rubens E.H.Wilson". The card's name is the same name when it is that text minus those. */
+const sameName = (accepted, latin) => {
+  const a = norm(accepted).replace(/\([^)]*\)/g, ' ').replace(/\s+/g, ' ').trim(), l = norm(latin);
+  return a === l || a.startsWith(l + ' ') || l.startsWith(a + ' ');
+};
 
 function apply() {
   const dir = argv[1]; if (!dir || !fs.existsSync(dir)) die('apply needs the prepare directory');
@@ -253,7 +279,9 @@ function apply() {
     } else if (write) {
       const changes = { ...fixes };
       if (changes.height || changes.spread) {
-        const cur = splitSize(claim.size); const hgt = changes.height || claim.height || cur.height, spr = changes.spread || claim.spread || cur.spread;
+        /* the dimension not corrected keeps its value, written in the deck's form when the verdict agrees with it */
+        const same = k => { const r = rows.find(x => x.field === k); return (r && /^agrees/.test(r.verdict) && r.now) ? r.now : claim[k]; };
+        const hgt = changes.height || same('height'), spr = changes.spread || same('spread');
         changes.size = `${hgt} H × ${spr} W`; delete changes.height; delete changes.spread;
       }
       const args = [path.join(__dirname, 'compare-double.js'), '--card', claim.latin];
@@ -287,7 +315,7 @@ function selftest() {
   const out = path.join(dir, 'out.json');
   argv.length = 0; argv.push('apply', dir, '--batch', bf, '--out', out); apply();
   const got = JSON.parse(fs.readFileSync(out, 'utf8'))[0];
-  const ok = got.hardiness === 'H4' && got.height === '0.5–1 m' && got.peak === 'Jun-Aug' && got.uncertain.length === 3 && fs.readFileSync(path.join(dir, 'REPORT.md'), 'utf8').includes('RUNG?');
+  const ok = got.hardiness === 'H4' && got.height === '0.5–1 m' && got.peak === 'Jun-Aug' && got.uncertain.length === 4 && fs.readFileSync(path.join(dir, 'REPORT.md'), 'utf8').includes('RUNG?');
   console.log(ok ? `selftest OK (${dir})` : `selftest FAILED (${dir})`); process.exit(ok ? 0 : 1);
 }
 
