@@ -32,6 +32,15 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-18 (**first Card Forge batch pulled: 52 drafts, 40 fact-checked and held, 12 set aside; hold 74 -> 114, r410**) —
+  pulled from the artifact as CARD-FORGE.md says (folder 2026-10-18b; the artifact id is 2026-10-18). Six parallel snippet checks:
+  RHS agreed with the drafted hardiness on 26 of 40, disagreed by one band on 14; 29 drafts had no size and the hold tool refuses
+  those, so every held card took an RHS or flagged nursery figure; nine names took the TRADE ('code') form; five commons clashed
+  with the deck. Seven were doubles (blanks applied on the cards), three were bench text not plants (Schefflera "Winter Haskins
+  Jungle", Hebe "Year Round Interest", Pinus), Acer 'Red Flamingo' needs a real draft, one in-batch duplicate. Oscar's GPT-vs-Forge
+  experiment answered (Forge wins on shape; facts need the check either way) and nine Forge improvements written up in the README,
+  the first being: blank size should be a validator error. **Next brick candidate**: a bulk second-pass check script (Oscar: "gather
+  all the data and send it to Claude for a double check on numbers and stats"). See data/held-photos/2026-10-18b/README.md.
 progress: 2026-10-18 (**batch 2026-10-18 dealt: all 24 from Oscar's photos, deck 611 -> 635, r408**) — four photo messages,
   paired by his order; flash frames on nine cards plus the dealt Jacobaea and Dryopteris; the gardenia takes his label name
   Gardenia jasminoides DOUBLE DIAMONDS ('Leefour'). Windmills, Jordan and Green Trompenburg placed by order [Inference]. One photo
