@@ -1,0 +1,25 @@
+{
+  "sourcePx": { "w": 2342, "h": 2766 },
+  "featureVisible": true,
+  "featureSeen": "a rosette of hairy, toothed leaves with a broad silver centre and a narrow green margin, the big front leaf centre-bottom and a cluster of younger leaves above it",
+  "featureBox": { "x": 0.20, "y": 0.12, "w": 0.75, "h": 0.75 },
+  "crop": { "x": 0.0, "y": 0.11, "w": 1.0, "h": 0.89 },
+  "cropAspect": 0.951,
+  "rotateDeg": 0.0,
+  "featureInSafeBox": true,
+  "objectPosition": "50% 40%",
+  "labels": [
+    {
+      "box": { "x": 0.0, "y": 0.0, "w": 0.30, "h": 0.09 },
+      "reads": "not a label: the fingers of a hand holding the stems, blurred, along the top-left edge",
+      "resolution": "crop"
+    }
+  ],
+  "exposure": { "evAdjust": 0.0, "whiteBalance": "none" },
+  "verdict": "crop",
+  "concerns": [
+    "a terracotta pot stays blurred at the top right of the crop, and a brown stem or tie crosses the upper left; neither is text",
+    "a few pale nibble marks on the upper leaves are the plant as photographed, not the file"
+  ],
+  "reason": "Drops the top 11% of the frame, which holds the fingers at the top-left edge and the top of the pot; full width kept; original pixels only."
+}

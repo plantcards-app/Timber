@@ -32,6 +32,27 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-14 (**batch 2026-10-13 dealt: Lamium 'Beacon Silver' and Chrysanthemum 'Soul Sister Purple' from Oscar's two photos; deck
+  609 -> 611, r404**) — the Lamium cropped clear of the fingers at the top-left edge (crop JSON kept, reframe-photo), the mum as is. One
+  plant-sense catch after the insert: "tender growth" in the pest sentence read as frost tenderness against H7; reworded to "young growth".
+  Credits written. Both renders looked at. Full gate 18/18 under --jobs 3. Open for Oscar, not blocking: the mum's flowers read nearer hue
+  320 than the 290 as sent. See data/held-photos/2026-10-13/README.md. Not live.
+progress: 2026-10-13 (**batch 2026-10-13: two-entry JSON, Lamium 'Beacon Silver' and Chrysanthemum 'Soul Sister Purple', stored and
+  fitted; both wait for photos**) — no words, no photos. compare-double: both new. check-plant-json: 0 errors on both. Fitted as the
+  2026-10-10 batches were (compass aspect, 26/44 soil, prose budgets, pest key, controlled pollination/stockForm, figureless rootSize blank).
+  Fact check (snippets): the Lamium's H7, height and evergreen agree with the RHS; RHS spread 0.5–1 m vs 50–60 cm as sent, his call;
+  toxicity blank → 'No known hazard.' on non-veterinary sources, [Unverified] beyond them. The mum's blank hardiness takes H4 by the
+  sibling rule, [Unverified]; ASPCA supports its Toxic rung, and the deck's two sibling mums print only Handle with care, his call whether
+  to raise them. See data/held-photos/2026-10-13/README.md. Not live; timber.html unchanged.
+progress: 2026-10-11 (**Timber Card Forge artifact built and published; CARD-FORGE.md is the pull protocol**) — Oscar: an artifact of agents that put JSONs and photos together, and a way to get the finished file back into a Claude chat. Built: https://claude.ai/artifact/2Byv3SGZ3jyTV1QcZTqhed. Names in (typed, or read off label photos by Claude), one Claude call per plant
+  drafts the PLANT-BRIEF JSON, a port of check-plant-json plus the 26/44 and prose budgets and the card's TOX_LADDER marks what the deck
+  would refuse, one repair call when there are errors, photos stored as artifact assets, the batch in the artifact's db, a JSON file
+  download, and a hand-off that can start a Claude Code session on this repo with the opening message as its first turn. Verified: the
+  validator port gives the as-sent 2026-10-10c Echium the same five rejections the batch README recorded and passes the corrected file;
+  the deck index (609 dealt, 74 held, r11ca25c) is seeded. [Verified from the capability contract] the page's Claude call cannot browse,
+  so every draft is an unchecked draft until the deal session fact-checks it; that is written into CARD-FORGE.md as the session's job.
+  [Unverified] the start-a-session button: create_session from a page is declared by the connector roster but has not been exercised;
+  the copy-the-message route is the fallback and is the same as today. Not live; nothing in timber.html changed.
 progress: 2026-10-10 (**Ivory Blush: the green flower is the card on Oscar's word; pink photo shelved unnamed; r403**) — his
   fresh Ivory Blush JSON is a double for the dealt card (compare-double: nothing applied; H5 vs H7 and 80 vs 50–60 cm spread are
   his call). The green frame, cropped, is now the card photo and his new close-up the flash frame; the morning's pink-flushed
