@@ -205,6 +205,7 @@ local.
 | `design/card-builder.html` | Standalone card builder — JSON in, card out |
 | `tests/` | 94 app checks + 8 edge checks + service-worker update + card verifier |
 | `CORRECTION-PROTOCOL.md` | Layout-defect audit (`design/audit-layout.js`), defect log, correction rules |
+| `SECOND-PASS.md` | The bulk fact check: `tools/second-pass.js` briefs the checkers, diffs their verdicts, applies the allowed corrections, writes the report |
 
 ## The routine — ONE command
 
