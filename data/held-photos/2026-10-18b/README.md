@@ -126,7 +126,7 @@ patents PP34544, PP32443, PP28830, PP19391, PP22965, PP17409, PP16185, PP35424, 
 ## State
 
 Hold 74 → 114 (40 new), deck 635 unchanged; the six doubles' blank fields filled. r410. Forge write-back: `dealtAt`,
-`dealtAs: "held"`, `dealtRev`, `checkedOnline: true` on the 40; `sessionId` on the batch; `deck/index` refreshed.
+`dealtAs: "held"`, `dealtRev`, `checkedOnline: true` on the 40; `sessionId` on the batch; `deck/index` refreshed. Full gate `node tests/run-all.js --jobs 3`: 18/18 at r410 (commit 2e8477b).
 
 ## What this batch teaches about the Forge (Oscar asked)
 
