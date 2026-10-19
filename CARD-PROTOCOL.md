@@ -92,6 +92,11 @@ const HOLO={
 };
 ```
 
+> **2026-10-19:** no live card uses `plaque` / `soil` / `band` / `swatch` any more. Eternal
+> Flame, the card they were built for, went back to parchment panels (v14.63): three
+> rebuilds could not make the stats read like a standard card, and reading is the panel's
+> job. Frame, edging and wisps are where a special card decorates.
+
 **Panels — two commands, and one rule you must not break.**
 
 ```sh
@@ -455,6 +460,21 @@ Focal point recorded here when off-centre:
   v14.52–v14.59, and the live line's v14.48–v14.51 kept their numbers. Commit
   messages on the card-build branch still say the old numbers; this note is
   the key.
+
+- **v14.63 (635 dealt / 114 held — ETERNAL FLAME GOES BACK TO PARCHMENT PANELS)**:
+  Oscar, 2026-10-19: *"that eternal flame card is sad we tried to make it into a
+  special rare card feel and yet we completely destroyed the general usability of
+  the card … I would just like to be able to read the info perfectly and the emojis
+  not to fade in the plant power points box."* Rendered next to Avondale, the
+  state-3 flattened holo panels still washed the plaque icons and the off months out,
+  greyed the values and lost the soil warning triangle. The HOLO entry's own note
+  named the revert (delete the four panel lines) and that is what was done: the card
+  keeps its red frame, the edging ring and the three wisps, and takes the standard
+  plaque, soil box and band. This is the Avondale rule, now the rule for every
+  special card: **holo where it decorates, parchment where it informs.** The
+  flattened panels stay in art/holo/ as masters; `extract-frame-assets.js` is
+  unchanged. The 0c example above still shows the panel keys because the mechanism
+  exists; no live card uses them.
 
 - **v14.62 (496 dealt / 75 held — PHOTO CAPTION: a one-line tag on the photograph)**:
   Oscar, 2026-10-04, sending his Amsonia 'Blue Ice' photo: *"the amsonia needs like a
