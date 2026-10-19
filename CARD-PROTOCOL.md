@@ -474,7 +474,8 @@ Focal point recorded here when off-centre:
   special card: **holo where it decorates, parchment where it informs.** The
   flattened panels stay in art/holo/ as masters; `extract-frame-assets.js` is
   unchanged. The 0c example above still shows the panel keys because the mechanism
-  exists; no live card uses them.
+  exists; no live card uses them. Full gate 18/18 at r412, perf-test's holo pixel
+  comparison included.
 
 - **v14.62 (496 dealt / 75 held — PHOTO CAPTION: a one-line tag on the photograph)**:
   Oscar, 2026-10-04, sending his Amsonia 'Blue Ice' photo: *"the amsonia needs like a
