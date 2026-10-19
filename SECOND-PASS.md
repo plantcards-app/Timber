@@ -42,7 +42,7 @@ the checker added, and a tally. Commit the directory with the batch or the hold 
 
 | Field | Held card / batch entry | Dealt card |
 |---|---|---|
-| hardiness | corrected to the sourced band | reported, card keeps (double rule 3) |
+| hardiness | corrected to the band when the verdict is RHS-sourced; reported when not | reported, card keeps (double rule 3) |
 | height / spread, blank | filled from the verdict | reported ("fill by hand") |
 | height / spread, present | corrected when the verdict is RHS; reported when not | reported |
 | peak | corrected when the verdict gives a `Mon-Mon` from an RHS source; nursery months reported only | reported |

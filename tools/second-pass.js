@@ -30,7 +30,7 @@
 
   What is corrected and what is only reported (the rules, so they are not re-litigated):
     hardiness   verdict band differs from the card's → corrected on a held card or batch
-                entry; reported only on a dealt card.
+                entry when the verdict is RHS-sourced; reported when it is not, or on a dealt card.
     height/     blank on the card → filled from the verdict. Present but different →
     spread      corrected when the verdict is RHS-sourced; reported when it is not.
     peak        corrected when the verdict gives a Mon-Mon from an RHS source; a nursery's months are
@@ -73,6 +73,11 @@ const BAND_NOTE = {
 };
 const MON = /^(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)-(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)$/;
 const RHS = /\brhs\b|rhs\.org\.uk/i;
+/* A source counts as RHS only when it cites the RHS as the evidence, not when it says "not RHS", "RHS-style",
+   "NOT an RHS page" or "RHS field not seen" (a checker writing honestly about a nursery figure). */
+const isRHS = s => RHS.test(s) && !/\b(?:not|non|no|nor)[- ]?(?:an? |the )?rhs\b|rhs-style|rhs[^.;]*\b(?:not seen|unseen|not retrievable|no hardiness)|not (?:on|from) the rhs/i.test(s);
+/* The hardinessNote cites the source briefly: the RHS id when there is one, else the first clause. */
+const shortSrc = s => (s.match(/RHS \d+/) || [s.split(/[;(—]/)[0].trim()])[0];
 
 /* The card's TOX_LADDER, as compare-double carries it; the rung a sentence prints. */
 const TOX_LADDER = [
@@ -193,10 +198,10 @@ function judge(claim, v) {
   const h = val(v, 'hardiness'); const hb = band(h.value);
   if (hb && sourced(h.source)) {
     if (hb === claim.hardiness) say('hardiness', claim.hardiness, hb, 'agrees', h.source);
-    else {
-      say('hardiness', claim.hardiness || 'blank', hb, dealt ? 'differs (dealt card keeps)' : 'corrected', h.source);
-      if (!dealt) { fixes.hardiness = hb; fixes.hardinessNote = `${BAND_NOTE[hb]} (${h.source}).`; }
-    }
+    else if (isRHS(h.source) && !dealt) {
+      say('hardiness', claim.hardiness || 'blank', hb, 'corrected (RHS)', h.source);
+      fixes.hardiness = hb; fixes.hardinessNote = `${BAND_NOTE[hb]} (${shortSrc(h.source)}).`;
+    } else say('hardiness', claim.hardiness || 'blank', hb, dealt ? 'differs (dealt card keeps)' : 'differs (non-RHS, kept)', h.source);
   } else say('hardiness', claim.hardiness || 'blank', '', 'unverified', h.source || 'not found');
 
   for (const k of ['height', 'spread']) {
@@ -204,14 +209,14 @@ function judge(claim, v) {
     if (!s.value || !sourced(s.source)) { say(k, claim[k] || 'blank', '', 'unverified', s.source || 'not found'); continue; }
     if (!claim[k]) { say(k, 'blank', s.value, dealt ? 'blank on dealt card (fill by hand)' : 'filled', s.source); if (!dealt) fixes[k] = s.value; }
     else if (sizeNorm(claim[k]) === sizeNorm(s.value)) say(k, claim[k], s.value, 'agrees', s.source);
-    else if (RHS.test(s.source) && !dealt) { say(k, claim[k], s.value, 'corrected (RHS)', s.source); fixes[k] = s.value; }
+    else if (isRHS(s.source) && !dealt) { say(k, claim[k], s.value, 'corrected (RHS)', s.source); fixes[k] = s.value; }
     else say(k, claim[k], s.value, dealt ? 'differs (dealt card keeps)' : 'differs (non-RHS, kept)', s.source);
   }
 
   const pk = val(v, 'peak');
   if (MON.test(pk.value) && sourced(pk.source)) {
     if (pk.value === claim.peak) say('peak', claim.peak, pk.value, 'agrees', pk.source);
-    else if (RHS.test(pk.source) && !/\bonly\b|says '|no months|\bper\b|nursery|retail/i.test(pk.source) && !dealt) { say('peak', claim.peak || 'blank', pk.value, 'corrected (RHS)', pk.source); fixes.peak = pk.value; }
+    else if (isRHS(pk.source) && !/\bonly\b|says '|no months|\bper\b|nursery|retail/i.test(pk.source) && !dealt) { say('peak', claim.peak || 'blank', pk.value, 'corrected (RHS)', pk.source); fixes.peak = pk.value; }
     else say('peak', claim.peak || 'blank', pk.value, dealt ? 'differs (dealt card keeps)' : 'differs (non-RHS months, kept)', pk.source);
   } else say('peak', claim.peak || 'blank', pk.value, 'unverified', pk.source || 'not found');
 
@@ -272,7 +277,8 @@ function apply() {
       const p = batch.find(x => norm(x.latin) === norm(claim.latin)); if (!p) { report.push(`_not in --batch file; nothing applied_`, ''); continue; }
       for (const [k, v2] of Object.entries(fixes)) {
         const src = rows.find(r => r.field === k)?.source || '';
-        p.uncertain = [...(p.uncertain || []), `${k}: was ${JSON.stringify(p[k] ?? '')}, second pass set ${JSON.stringify(v2)} (${src}).`];
+        /* the hardinessNote follows the band; its line would only repeat the hardiness line with no source */
+        if (k !== 'hardinessNote') p.uncertain = [...(p.uncertain || []), `${k}: was ${JSON.stringify(p[k] ?? '')}, second pass set ${JSON.stringify(v2)} (${src}).`];
         p[k] = v2;
       }
       report.push(`_applied to batch: ${Object.keys(fixes).join(', ')}_`, '');
@@ -315,7 +321,7 @@ function selftest() {
   const out = path.join(dir, 'out.json');
   argv.length = 0; argv.push('apply', dir, '--batch', bf, '--out', out); apply();
   const got = JSON.parse(fs.readFileSync(out, 'utf8'))[0];
-  const ok = got.hardiness === 'H4' && got.height === '0.5–1 m' && got.peak === 'Jun-Aug' && got.uncertain.length === 4 && fs.readFileSync(path.join(dir, 'REPORT.md'), 'utf8').includes('RUNG?');
+  const ok = got.hardiness === 'H4' && got.height === '0.5–1 m' && got.peak === 'Jun-Aug' && got.uncertain.length === 3 && fs.readFileSync(path.join(dir, 'REPORT.md'), 'utf8').includes('RUNG?');
   console.log(ok ? `selftest OK (${dir})` : `selftest FAILED (${dir})`); process.exit(ok ? 0 : 1);
 }
 

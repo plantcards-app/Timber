@@ -32,6 +32,14 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-19 (**Card Forge batch 2026-10-19: 9 drafts, 8 fact-checked by the second pass and held, 1 a dealt double; hold 114 -> 122, r413**) —
+  the first Forge batch run through tools/second-pass.js instead of by hand: one brief, one checker, 17 agree / 9 corrected / 6 filled.
+  Vitis coignetiae H6 -> H5 and spread 2.5–4 m (RHS 19030); Hedera 'Gloire de Marengo' H3 -> H5, height 2.5–4 m (RHS 82862); Euonymus
+  alatus is the deck's dealt card (blanks filled, RHS H6 = the card). Hand fixes: Diervilla KODIAK MIXX is one variegated cultivar
+  ('G2X88544VAR'), not a mix; Coronilla's toxin wording; Acer 'Red Flamingo' off the Toxic rung and H5/4–8 m [Unverified]. Open for
+  Oscar: Coronilla 'Temptations Fabulous Fragrance' exists nowhere (label photo?); 'Euonymus alatus Runner' is probably 'Blade Runner'.
+  Three tool fixes (a "not RHS" source no longer counts as RHS; hardiness corrected only from RHS; short hardinessNote source).
+  See data/held-photos/2026-10-19/README.md.
 progress: 2026-10-18 (**second pass built and run once: tools/second-pass.js + SECOND-PASS.md; hold slice 0 checked, r411**) — Oscar:
   "gather all the data and send it to Claude for a double check on numbers and stats", "want it go". prepare gathers claims (batch file,
   --held, --deck, --latin, --skip/--limit) and writes one checker brief per chunk with the verdict schema; the session runs one
