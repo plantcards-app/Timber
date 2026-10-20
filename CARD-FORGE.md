@@ -79,7 +79,9 @@ plant and no errors are "ready", and only those are in the JSON file the page do
    a photo, `node tools/ingest-batch.js` for the ones without (they go on hold); a second
    photo becomes a flash frame with `tools/add-swap.js` after the deal. Feature branch,
    `node tests/run-all.js --jobs 3` once before pushing.
-5. **Fact-check before you write.** Every draft is unchecked (fact 1 above). Check at
+5. **Fact-check before you write**, with the second pass (`SECOND-PASS.md`): `node tools/second-pass.js prepare
+   <batch-as-sent.json>`, one checker agent per brief, `apply --batch … --out batch-corrected.json`, and the
+   `REPORT.md` it writes goes in the batch folder. Every draft is unchecked (fact 1 above). Check at
    least hardiness, height/spread, peak, toxicity and compliance for each card online,
    correct the JSON where a source disagrees, and record every check and change in the
    batch README under a *Fact check* heading, [Unverified] items named as such. Where the

@@ -99,13 +99,14 @@ const FIX = {
     u: ["hardiness: as sent 'Provisional H2 · 1 to 5°C'; H2 (RHS H2 for L. spectabilis 'Tresco Brilliant' and L. brownii).", "peak: as sent 'Late spring–summer (varies)'; May-Aug.", "toxicity: as sent prints Toxic for a hazard it says is not established; reworded so the card prints Handle with care (the default rung). ASPCA lists 'ice plant' as non-toxic, but which plant this is remains open."],
   },
   "Gardenia jasminoides 'Leefour'": {
+    latin: "Gardenia jasminoides DOUBLE DIAMONDS ('Leefour')",
     hardiness: 'H4',
     hardinessNote: 'Breeder (Plantipp) claims frost tolerance to −12°C; carded at H4 (−10 to −5°C), the band that claim clears, as no RHS rating was found. Shelter from cold wind and winter wet.',
     height: '90 cm', spread: '70 cm', peak: 'May-Aug', aspect: 'East / South / West',
     soil: 'Acidic, humus-rich', soilWarning: 'No lime, cold wet roots or hard frost',
     water: 'Keep evenly moist with rainwater if possible; never leave standing in water. Feed as an acid-lover in growth.',
     resilience: 'Breeder reports better heat and disease tolerance than most gardenias; protect from hard frost. Pests: scale, aphids, mealybugs, spider mite; root rot.',
-    clay: '', u: [CL, "hardiness: as sent was the breeder claim in words, not a band. H4 [Unverified]; US patent USPP27600 gives USDA 8.", "peak: as sent 'Late spring–summer; sometimes repeat bloom'; May-Aug."],
+    clay: '', u: [CL, "hardiness: as sent was the breeder claim in words, not a band. H4 [Unverified]; US patent USPP27600 gives USDA 8.", "peak: as sent 'Late spring–summer; sometimes repeat bloom'; May-Aug.", "latin: as sent 'Gardenia jasminoides \\'Leefour\\''; Oscar gave the label name on 2026-10-18 (\"Gardenia jasminoides Double Diamonds ('Leefour' PBR)\"), written in the deck's TRADE ('code') form."],
   },
   'Orostachys iwarenge': {
     hardiness: 'H5', height: '10–20 cm', aspect: 'East / West', peak: 'Aug-Oct',
@@ -115,10 +116,11 @@ const FIX = {
     u: ["height: as sent '10–20 cm (flower spikes may be taller)'; the spike note is dropped.", "toxicity: as sent prints Toxic (contains 'toxicity'); reworded to the clear rung it means."],
   },
   "× Mangave 'Night Owl'": {
+    height: '15–30 cm',
     hardiness: 'H2', peak: 'Jan-Dec', aspect: 'South / West',
     soil: 'Gritty cactus compost', soilWarning: 'No standing water, cold wet mix or frost',
     resilience: 'Very drought tolerant once established; frost tender. Pests: mealybugs, scale, occasional vine weevil in pots; root rot if saturated.',
-    u: ["hardiness: as sent 'Tender · protect from frost', not a band. H2 (keep frost-free), as the deck's Agave americana; US sources give USDA 9–11.", "peak: as sent 'Year-round foliage'; Jan-Dec."],
+    u: ["hardiness: as sent 'Tender · protect from frost', not a band. H2 (keep frost-free), as the deck's Agave americana; US sources give USDA 9–11.", "peak: as sent 'Year-round foliage'; Jan-Dec.", "height: as sent '15–30 cm (foliage)'; the note is dropped (it printed on the height rail)."],
   },
   "Asarum arifolium 'Ling Ling'": {
     hardiness: 'H6', pest: 'slugs', aspect: 'North / East', peak: 'Mar-May',
@@ -127,6 +129,7 @@ const FIX = {
     u: [],
   },
   "Yucca filamentosa 'Color Guard'": {
+    spread: '1–1.5 m',
     hardiness: 'H5', height: '60–90 cm', aspect: 'East / South', peak: 'Jun-Aug',
     soil: 'Sharply drained sand/loam', soilWarning: 'No winter waterlogging or dense shade',
     visual: 'Architectural rosettes of stiff sword leaves, dark green with a broad creamy-yellow central stripe, often rose-tinted in cold weather. Mature plants raise tall spikes of ivory bells.',
@@ -138,6 +141,7 @@ const FIX = {
     u: ["hardiness: as sent 'Hardy UK garden perennial (approx. H6)'; H6 as estimated, [Unverified] (sibling ViV cultivars show H7 in RHS snippets)."],
   },
   "Abelia × grandiflora 'Prostrata'": {
+    spread: '1–1.5 m',
     hardiness: 'H4', aspect: 'South / West', peak: 'Jul-Oct',
     soil: 'Fertile, well-drained', soilWarning: 'Shy to flower in shade; no winter wet',
     resilience: 'Reasonably drought tolerant once established; flowers from summer into autumn. Pests: generally few; occasional aphids; root stress on poor drainage.',

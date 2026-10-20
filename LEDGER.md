@@ -32,6 +32,56 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-20 (**Hebe 'Heartbreaker' and Cuphea hyssopifolia added from Oscar's names and photos, deck 678 -> 680, r421**) —
+  RHS 388342 H3 0.5–1 m; RHS 5036 H2 10–50 cm × 0.5–1 m. See data/held-photos/2026-10-20f/README.md.
+progress: 2026-10-20 (**12 more photos: 8 held cards dealt, deck 670 -> 678, r420**) — the tail of the Forge 2026-10-18 order: Cytisus,
+  Hypericum 'Hidcote', Ilex BLUE MAID, Koelreuteria 'Coral Sun', Lagerstroemia, Rhus TIGER EYES, Olearia SPRING BLING, Tibouchina.
+  Not dealt: a variegated hebe and a Cuphea (both labels set aside, no card). See data/held-photos/2026-10-20f/README.md.
+progress: 2026-10-20 (**71 unnamed photos: 26 held cards dealt, deck 644 -> 670, r417**) — four sets following the Forge 2026-10-18
+  order; matched by appearance and order, [Inference]. Dealt with deal-plant, 11 with second photos. Doubts dealt and flagged: Sedum
+  sieboldii photo is variegated, Lavandula canariensis photo silver, Hibiscus 'Little Hibiskiss Pink' photo lilac. Not dealt: the
+  Ginkgo label reads 'Troll' (held as 'Troll Gold'), Chamaecyparis 'Nana' and Cryptomeria photos fit other forms, pines/fir/Schefflera
+  have no card. See data/held-photos/2026-10-20b/README.md.
+progress: 2026-10-20 (**Euonymus alatus 'Blade Runner' dealt as a new card, deck 643 -> 644, r416**) — Oscar: "It's blade runner, do
+  what seems best". RHS 280088 H6, 1.5–2.5 m; built from the checked Forge draft; the sharp "Runner" photo is its photo.
+progress: 2026-10-20 (**12 photos: 10 cards dealt, deck 635 -> 643, r415**) — Weigela BIG LOVE, Heuchera 'Silver Scrolls' and six
+  of the Forge 2026-10-19 holds (Vitis, Hedera, Diervilla KODIAK MIXX, Helichrysum 'Korma', Cotoneaster 'Coral Beauty', Berberis
+  'Rose Glow') dealt with deal-plant; Cotoneaster flowers and Berberis shoots as flash frames. Matched by appearance and order,
+  [Inference]. The two Euonymus alatus "Runner" photos stored, not dealt (the deck card has a photo; label doubt open). Coronilla
+  and Acer 'Red Flamingo' still on hold. See data/held-photos/2026-10-20/README.md.
+progress: 2026-10-20 (**two names held for photos: Weigela florida BIG LOVE ('JS4') and Heuchera 'Silver Scrolls'; hold 122 -> 124, r414**) —
+  Oscar typed the two labels, photos to follow. Checked online: Silver Scrolls RHS 166446 H6, PBR; Big Love has no RHS page (US patent
+  PP33977, nursery H6 and 1–1.5 m, [Unverified]). See data/held-photos/2026-10-20/README.md. Deal both when the photos arrive.
+progress: 2026-10-19 (**Card Forge batch 2026-10-19: 9 drafts, 8 fact-checked by the second pass and held, 1 a dealt double; hold 114 -> 122, r413**) —
+  the first Forge batch run through tools/second-pass.js instead of by hand: one brief, one checker, 17 agree / 9 corrected / 6 filled.
+  Vitis coignetiae H6 -> H5 and spread 2.5–4 m (RHS 19030); Hedera 'Gloire de Marengo' H3 -> H5, height 2.5–4 m (RHS 82862); Euonymus
+  alatus is the deck's dealt card (blanks filled, RHS H6 = the card). Hand fixes: Diervilla KODIAK MIXX is one variegated cultivar
+  ('G2X88544VAR'), not a mix; Coronilla's toxin wording; Acer 'Red Flamingo' off the Toxic rung and H5/4–8 m [Unverified]. Open for
+  Oscar: Coronilla 'Temptations Fabulous Fragrance' exists nowhere (label photo?); 'Euonymus alatus Runner' is probably 'Blade Runner'.
+  Three tool fixes (a "not RHS" source no longer counts as RHS; hardiness corrected only from RHS; short hardinessNote source).
+  See data/held-photos/2026-10-19/README.md.
+progress: 2026-10-18 (**second pass built and run once: tools/second-pass.js + SECOND-PASS.md; hold slice 0 checked, r411**) — Oscar:
+  "gather all the data and send it to Claude for a double check on numbers and stats", "want it go". prepare gathers claims (batch file,
+  --held, --deck, --latin, --skip/--limit) and writes one checker brief per chunk with the verdict schema; the session runs one
+  web-checking agent per brief; apply diffs, applies what the double rules allow (held/batch only; dealt reported), writes REPORT.md;
+  selftest on a fixture. Wired into CARD-FORGE.md step 5 and NEW-SESSION.md. First real run on the nine longest-held cards: 31 agree,
+  Clematis 'Purpurea Plena Elegans' H5 -> H6 (RHS 210954) and Fallopia H5 -> H7 (RHS 7143) corrected with their notes, Rhus typhina
+  spread 8 m+ -> 4–8 m (RHS 20902); the three Clematis had blank safety where RHS flags skin irritant + harmful to pets, set by hand;
+  Syringa and Rhus take a Defra Xylella medium-risk compliance line. Three tool fixes came out of the run (size formatting is not a
+  correction, nursery months never correct a peak, RHS author/group suffixes are the same name). Next slices: --held --skip 9.
+progress: 2026-10-18 (**first Card Forge batch pulled: 52 drafts, 40 fact-checked and held, 12 set aside; hold 74 -> 114, r410**) —
+  pulled from the artifact as CARD-FORGE.md says (folder 2026-10-18b; the artifact id is 2026-10-18). Six parallel snippet checks:
+  RHS agreed with the drafted hardiness on 26 of 40, disagreed by one band on 14; 29 drafts had no size and the hold tool refuses
+  those, so every held card took an RHS or flagged nursery figure; nine names took the TRADE ('code') form; five commons clashed
+  with the deck. Seven were doubles (blanks applied on the cards), three were bench text not plants (Schefflera "Winter Haskins
+  Jungle", Hebe "Year Round Interest", Pinus), Acer 'Red Flamingo' needs a real draft, one in-batch duplicate. Oscar's GPT-vs-Forge
+  experiment answered (Forge wins on shape; facts need the check either way) and nine Forge improvements written up in the README,
+  the first being: blank size should be a validator error. **Next brick candidate**: a bulk second-pass check script (Oscar: "gather
+  all the data and send it to Claude for a double check on numbers and stats"). See data/held-photos/2026-10-18b/README.md.
+progress: 2026-10-18 (**batch 2026-10-18 dealt: all 24 from Oscar's photos, deck 611 -> 635, r408**) — four photo messages,
+  paired by his order; flash frames on nine cards plus the dealt Jacobaea and Dryopteris; the gardenia takes his label name
+  Gardenia jasminoides DOUBLE DIAMONDS ('Leefour'). Windmills, Jordan and Green Trompenburg placed by order [Inference]. One photo
+  unplaced (striped grassy plant in a grey tray), asked. Renders looked at each round; full gate 18/18 each round.
 progress: 2026-10-18 (**batch 2026-10-18: two arrays (14 + 12), 24 new entries stored and fitted, waiting for photos; the two
   doubles' blank fields filled, r405**) — no words, no photos. compare-double: Jacobaea maritima and Dryopteris erythrosora are
   dealt doubles (blank fields taken, hue 0 → 205 on the Jacobaea; everything else stays as dealt); the rest are new. check-plant-json:
