@@ -32,6 +32,8 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-20 (**Euonymus alatus 'Blade Runner' dealt as a new card, deck 643 -> 644, r416**) — Oscar: "It's blade runner, do
+  what seems best". RHS 280088 H6, 1.5–2.5 m; built from the checked Forge draft; the sharp "Runner" photo is its photo.
 progress: 2026-10-20 (**12 photos: 10 cards dealt, deck 635 -> 643, r415**) — Weigela BIG LOVE, Heuchera 'Silver Scrolls' and six
   of the Forge 2026-10-19 holds (Vitis, Hedera, Diervilla KODIAK MIXX, Helichrysum 'Korma', Cotoneaster 'Coral Beauty', Berberis
   'Rose Glow') dealt with deal-plant; Cotoneaster flowers and Berberis shoots as flash frames. Matched by appearance and order,

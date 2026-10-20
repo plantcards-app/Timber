@@ -94,7 +94,7 @@ restriction found.
    series or PBR record; the only 'Temptation' plants are a Skimmia and a Clematis). [Inference] a retail strapline on
    Coronilla valentina subsp. glauca or its 'Citrina'. The label's name is kept on the held card with the species'
    figures. A label photo would settle it.
-2. **Euonymus alatus 'Runner'**: no such cultivar. [Inference] the label means 'Blade Runner' (RHS 280088, 1.5–2.5 m,
+2. **Euonymus alatus 'Runner'** — settled 2026-10-20: Oscar confirmed 'Blade Runner'; dealt as its own card (see `../2026-10-20/README.md`). Was: no such cultivar. [Inference] the label means 'Blade Runner' (RHS 280088, 1.5–2.5 m,
    a compact rounded form sold by Coolings, Gardening Express and others). The deck has E. alatus and 'Compactus'; a
    'Blade Runner' card would be new. Check the label.
 3. **Acer 'Red Flamingo' H5** rests on two sites reporting the RHS rating and last batch's snippet, not on the RHS

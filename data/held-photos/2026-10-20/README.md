@@ -36,7 +36,7 @@ sent ([Inference]; Oscar named none of them).
 | pinkish-white flowers and buds | Cotoneaster 'Coral Beauty' | flash frame (a bench photo, not evidence of flowering time) |
 | mottled pink leaf | Berberis 'Rose Glow' | dealt |
 | mottled shoots | Berberis 'Rose Glow' | flash frame |
-| crimson narrow leaves, backlit | Euonymus alatus (label "Runner") | **stored only** (`euonymus-alatus-runner-leaves.jpg`) |
+| crimson narrow leaves, backlit | Euonymus alatus 'Blade Runner' | dealt as a new card (see below) |
 | crimson leaves, out of focus | Euonymus alatus (label "Runner") | **stored only**, too blurred for a card |
 
 Still on hold, no photo yet: Coronilla 'Temptations Fabulous Fragrance' and Acer × conspicuum 'Red Flamingo'.
@@ -44,3 +44,13 @@ Still on hold, no photo yet: Coronilla 'Temptations Fabulous Fragrance' and Acer
 Euonymus: the deck's Euonymus alatus already has its own photo, and the label's 'Runner' is not a cultivar
 ([Inference] 'Blade Runner', see `../2026-10-19/README.md`). The sharp photo is kept for whichever Oscar decides: a
 flash frame on the existing card, or the photo of a new 'Blade Runner' card if the label confirms it.
+
+## Euonymus alatus 'Blade Runner' — dealt as a new card, deck 643 → 644 (r416)
+
+Oscar, 2026-10-20: "It's blade runner, do what seems best". The label's "Runner" is 'Blade Runner', so it is its own
+card, not a frame on the species card. Built from the 2026-10-19 Forge draft after the second pass (RHS 6969 band and
+toxicity) plus RHS 280088 for the cultivar: H6, 1.5–2.5 m × 1.5–2.5 m in 10–20 years (the same page's text says to
+1.5 m; retailers 1.5–1.8 m), broad corky wings, crimson autumn leaves, reddish-purple fruit with orange seeds. JSON in
+`euonymus-alatus-blade-runner.json`; photo `euonymus-alatus-blade-runner.jpg` (the sharp backlit one). The blurred
+second photo stays unused. The Forge's 2026-10-19 document for this plant was not written back: the session treated it
+as the species double, and the Forge has no field for "dealt under a different name".
