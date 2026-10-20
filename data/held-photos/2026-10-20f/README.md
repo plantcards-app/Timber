@@ -22,3 +22,17 @@ Not dealt:
   2026-10-18. No card yet.
 
 Bench flower photos are not evidence of flowering time.
+
+## Named by Oscar, 2026-10-20: "It's Hebe Heartbreaker and Cuphea hyssopifolia" — both added, deck 678 → 680 (r421)
+
+Researched online (search snippets; rhs.org.uk is proxy-blocked), drafted, validated, added with add-plant and the
+photos above. JSON with every source and doubt: `hebe-heartbreaker.json`, `cuphea-hyssopifolia.json`.
+
+| Card | Hardiness | Size | Source |
+|---|---|---|---|
+| Hebe 'Heartbreaker' (photo 03) | H3 | 0.5–1 m × 0.5–1 m (RHS text: about 60 cm) | RHS 388342 (Veronica 'Heartbreaker', syn. Hebe, PBR) |
+| Cuphea hyssopifolia, False Heather (photo 11) | H2 | 10–50 cm × 0.5–1 m | RHS 5036 |
+
+- Hebe: the RHS files it under Veronica now; the label's Hebe is kept, as on the deck's other hebes.
+- Toxicity on both prints "No known hazard": no RHS warning and no ASPCA listing found. [Unverified]
+- [Inference] the Forge label "Etoile du Mexique" set aside on 2026-10-18 was this Cuphea.

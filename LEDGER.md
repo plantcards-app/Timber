@@ -32,6 +32,8 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-20 (**Hebe 'Heartbreaker' and Cuphea hyssopifolia added from Oscar's names and photos, deck 678 -> 680, r421**) —
+  RHS 388342 H3 0.5–1 m; RHS 5036 H2 10–50 cm × 0.5–1 m. See data/held-photos/2026-10-20f/README.md.
 progress: 2026-10-20 (**12 more photos: 8 held cards dealt, deck 670 -> 678, r420**) — the tail of the Forge 2026-10-18 order: Cytisus,
   Hypericum 'Hidcote', Ilex BLUE MAID, Koelreuteria 'Coral Sun', Lagerstroemia, Rhus TIGER EYES, Olearia SPRING BLING, Tibouchina.
   Not dealt: a variegated hebe and a Cuphea (both labels set aside, no card). See data/held-photos/2026-10-20f/README.md.
