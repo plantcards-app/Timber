@@ -32,6 +32,11 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-20 (**12 photos: 10 cards dealt, deck 635 -> 643, r415**) — Weigela BIG LOVE, Heuchera 'Silver Scrolls' and six
+  of the Forge 2026-10-19 holds (Vitis, Hedera, Diervilla KODIAK MIXX, Helichrysum 'Korma', Cotoneaster 'Coral Beauty', Berberis
+  'Rose Glow') dealt with deal-plant; Cotoneaster flowers and Berberis shoots as flash frames. Matched by appearance and order,
+  [Inference]. The two Euonymus alatus "Runner" photos stored, not dealt (the deck card has a photo; label doubt open). Coronilla
+  and Acer 'Red Flamingo' still on hold. See data/held-photos/2026-10-20/README.md.
 progress: 2026-10-20 (**two names held for photos: Weigela florida BIG LOVE ('JS4') and Heuchera 'Silver Scrolls'; hold 122 -> 124, r414**) —
   Oscar typed the two labels, photos to follow. Checked online: Silver Scrolls RHS 166446 H6, PBR; Big Love has no RHS page (US patent
   PP33977, nursery H6 and 1–1.5 m, [Unverified]). See data/held-photos/2026-10-20/README.md. Deal both when the photos arrive.
