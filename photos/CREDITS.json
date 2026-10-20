@@ -2255,6 +2255,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "cytisus-boskoop-ruby.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "dahlia-electro-pink-71853-09.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4268,6 +4278,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "hypericum-hidcoteense-hidcote.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "hypericum-inodorum-miracle-grandeur-allgrandeur.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -4335,6 +4355,16 @@
    "sourceUrl": null,
    "commit": "5213b09",
    "commitSubject": "Add 18 plants to deck: 107 -> 125; add bulk tool verifying once per batch",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "ilex-meserveae-blue-maid-mesid.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -4418,9 +4448,39 @@
    "commercialUseCleared": true
   },
   {
+   "file": "koelreuteria-paniculata-coral-sun.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "lagerstroemia-indica-with-love-babe-milaperl.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Supplied as a four-panel COLLAGE (three small panels over one large frame: flowers, foliage, capsules) kept WHOLE under the one-rule of protocol v14.49; no pixels generated. No EXIF orientation tag in the file",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lagerstroemia-muskogee-leaves.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Crape Myrtle card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-20.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lagerstroemia-muskogee.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -5341,6 +5401,16 @@
   },
   {
    "file": "olearia-haastii.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "olearia-phlogopappa-spring-bling-arkpap.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -6542,6 +6612,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "rhus-typhina-tiger-eyes-bailtiger.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "robinia-pseudoacacia-frisia.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -7613,6 +7693,16 @@
   },
   {
    "file": "tiarella-sugar-and-spice.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "tibouchina-organensis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
