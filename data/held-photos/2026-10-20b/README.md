@@ -67,3 +67,6 @@ Still on hold from that batch with no photo: Freesia laxa, Hosta 'Hadspen Samphi
 Yucca gloriosa, Ginkgo 'Troll Gold', Weigela ALL SUMMER RED, Cytisus 'Boskoop Ruby', Ilex BLUE MAID, Lagerstroemia
 'Muskogee', Koelreuteria 'Coral Sun', Olearia SPRING BLING, Rhus TIGER EYES, Tibouchina organensis, Chamaecyparis
 'Nana', Cryptomeria japonica. Coronilla 'Temptations Fabulous Fragrance' (2026-10-19) too.
+
+
+Oscar, 2026-10-20: "Rename it to Ginkgo biloba 'Troll'". The held card is now Ginkgo biloba 'Troll' (common: Dwarf Maidenhair Tree 'Troll'); its sibling list no longer names itself; hardinessNote cites RHS 210450. Still waiting on a plant photo (r422).
