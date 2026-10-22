@@ -32,6 +32,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-22 (**Chitalpa SUMMER BELLS ('Minsum') dealt from a one-plant Forge drop and Oscar's photo, deck 680 -> 681, r423**) — RHS 170974 corrected H5 -> H4 and size to 4–8 × 2.5–4 m; Xylella medium-risk host confirmed. See data/held-photos/2026-10-22/README.md.
 progress: 2026-10-20 (**held Ginkgo renamed to 'Troll' at Oscar's word, r422**) — the label reads 'Troll'; "Troll Gold" came from the Gold Label badge. Still needs a photo.
 progress: 2026-10-20 (**Hebe 'Heartbreaker' and Cuphea hyssopifolia added from Oscar's names and photos, deck 678 -> 680, r421**) —
   RHS 388342 H3 0.5–1 m; RHS 5036 H2 10–50 cm × 0.5–1 m. See data/held-photos/2026-10-20f/README.md.
