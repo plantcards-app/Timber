@@ -1062,6 +1062,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "callistemon-citrinus-shoots.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Crimson Bottlebrush card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "callistemon-citrinus-splendens.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright (established by Oscar, 2026-08-09)",
@@ -1069,6 +1079,16 @@
    "sourceUrl": null,
    "commit": "ff494ba",
    "commitSubject": "Sync the 10 artifact-only cards back into the deck (47 -> 57)",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "callistemon-citrinus.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   },
   {
@@ -1532,9 +1552,39 @@
    "commercialUseCleared": true
   },
   {
+   "file": "choisya-dewitteana-goldfingers-limo-shoots.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Mexican Orange Goldfingers card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "choisya-dewitteana-goldfingers-limo.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "choisya-dewitteana-white-dazzler-londaz.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "choisya-ternata-sundance-leaves.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Mexican orange blossom Sundance card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -1996,6 +2046,16 @@
   },
   {
    "file": "corylus-avellana-contorta.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "corylus-avellana-medusa-jww9.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -3797,6 +3857,26 @@
    "commercialUseCleared": true
   },
   {
+   "file": "heuchera-lime-marmalade-leaves.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Heuchera 'Lime Marmalade' card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heuchera-lime-marmalade.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "heuchera-paris.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3858,6 +3938,26 @@
   },
   {
    "file": "heucherella-golden-zebra.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heucherella-kimono-leaves.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Heucherella 'Kimono' card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heucherella-kimono.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -4408,6 +4508,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "imperata-cylindrica-rubra-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Japanese blood grass 'Red Baron' card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "imperata-cylindrica-rubra.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright; reframed by tools/reframe-photo.js from coordinates, no pixels generated. ARCHIVE SHOT: EXIF Samsung Galaxy S21 (SM-G991B), dated 2024-07-19. No C2PA manifest in the file and no AI or generative marker",
@@ -4679,6 +4789,26 @@
   },
   {
    "file": "leucothoe-little-flames.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lewisia-little-plum-flower.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Lewisia 'Little Plum' card (PHOTO_SWAP alt): Oscar's bench photo 2026-10-24.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "lewisia-little-plum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
@@ -7974,6 +8104,16 @@
   },
   {
    "file": "viola-babyface-series-white.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "viola-columbine.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
