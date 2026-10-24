@@ -1,0 +1,93 @@
+[
+  {
+    "latin": "Viola 'Columbine'",
+    "common": "Viola 'Columbine'",
+    "where": "batch:batch-new.json",
+    "hardiness": "H5",
+    "height": "15–20 cm",
+    "spread": "20–30 cm",
+    "peak": "Apr-Sep",
+    "foliage": "semi-evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  },
+  {
+    "latin": "× Heucherella 'Hopscotch Any'",
+    "common": "Foamy Bells",
+    "where": "batch:batch-new.json",
+    "hardiness": "H6",
+    "height": "",
+    "spread": "",
+    "peak": "",
+    "foliage": "semi-evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  },
+  {
+    "latin": "× Heucherella 'Kimono'",
+    "common": "Foamy Bells Kimono",
+    "where": "batch:batch-new.json",
+    "hardiness": "H6",
+    "height": "30–40 cm",
+    "spread": "40–50 cm",
+    "peak": "Apr-Oct",
+    "foliage": "evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  },
+  {
+    "latin": "Heuchera 'Lime Marmalade'",
+    "common": "Coral Bells",
+    "where": "batch:batch-new.json",
+    "hardiness": "H6",
+    "height": "30–45 cm",
+    "spread": "40–45 cm",
+    "peak": "Mar-Nov",
+    "foliage": "evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  },
+  {
+    "latin": "Heuchera 'Caramel'",
+    "common": "Coral Bells",
+    "where": "batch:batch-new.json",
+    "hardiness": "H6",
+    "height": "30-45 cm",
+    "spread": "45 cm",
+    "peak": "Apr-Oct",
+    "foliage": "semi-evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  },
+  {
+    "latin": "Lewisia 'Little Plum'",
+    "common": "Lewisia",
+    "where": "batch:batch-new.json",
+    "hardiness": "H4",
+    "height": "15 cm",
+    "spread": "20 cm",
+    "peak": "Apr-Jun",
+    "foliage": "evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  },
+  {
+    "latin": "Heuchera 'Wild Any'",
+    "common": "Coral Bells",
+    "where": "batch:batch-new.json",
+    "hardiness": "H5",
+    "height": "",
+    "spread": "",
+    "peak": "",
+    "foliage": "evergreen",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  }
+]
