@@ -49,3 +49,8 @@ Worth knowing for future batches: more than four or five flashing cards dealt to
   The label patch at the right edge was blurred before dealing (`heuchera-caramel.jpg`; the original is 08).
 
 Still waiting: the pink-purple Heuchera (09, likely 'Wild Rose') and the green Acer (18).
+
+- **Acer palmatum 'Sumi-nagashi'** (r431) — Oscar: "That acer is noga shimi or something like that" = 'Sumi-nagashi', the
+  held card from Forge batch 2026-10-20. Dealt with photo 18. Open: the photo shows green leaves with pink tips, while
+  the RHS (48429) describes purple-red in spring and deep maroon in summer; the card keeps the RHS wording. A summer
+  photo, or a look at the label's own picture, would settle whether this stock is true to name.

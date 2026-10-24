@@ -301,6 +301,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "acer-palmatum-sumi-nagashi.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "acer-palmatum-taylor.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. Supplied as a three-panel vertical COLLAGE (pink new growth over the pink-margined mature leaves) kept WHOLE under the one-rule of protocol v14.49; no pixels generated; no EXIF orientation tag",

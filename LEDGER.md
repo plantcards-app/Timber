@@ -32,6 +32,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-24 (**Acer palmatum 'Sumi-nagashi' dealt at Oscar's word, deck 690 -> 691, r431**) — the photo is green with pink tips where RHS says maroon; card keeps RHS wording, flagged.
 progress: 2026-10-24 (**Heucherella 'Hopscotch' and Heuchera 'Caramel' dealt at Oscar's word, deck 688 -> 690, r430**) — Caramel photo's label blurred. Still waiting: pink-purple 'Wild…' and the green Acer.
 progress: 2026-10-24 (**19 photos: 7 dealt, 2 second photos, deck 681 -> 688, r427**) — Viola 'Columbine', Heucherella 'Kimono', Heuchera 'Lime Marmalade', Lewisia 'Little Plum' (salmon-pink, as RHS), Choisya GOLDFINGERS, Callistemon, Corylus MEDUSA; Sundance and Imperata 'Rubra' second photos. Waiting on Oscar: which orange Heuchera is Caramel vs Hopscotch, the pink 'Wild…', and the green Acer photo. See data/held-photos/2026-10-24c/README.md.
 progress: 2026-10-24 (**Forge download batch-2026-10-20_3: 7 new drafts, 6 held, 'Heuchera Wild…' back to Oscar; hold 87 -> 93, r426**) — Viola 'Columbine' (H6), Heucherella 'Hopscotch' and 'Kimono', Heuchera 'Lime Marmalade' and 'Caramel', Lewisia 'Little Plum'. The 7 repeats were already handled. See data/held-photos/2026-10-24b/README.md.
