@@ -54,3 +54,7 @@ Still waiting: the pink-purple Heuchera (09, likely 'Wild Rose') and the green A
   held card from Forge batch 2026-10-20. Dealt with photo 18. Open: the photo shows green leaves with pink tips, while
   the RHS (48429) describes purple-red in spring and deep maroon in summer; the card keeps the RHS wording. A summer
   photo, or a look at the label's own picture, would settle whether this stock is true to name.
+
+- **Heuchera 'Wild Rose'** (r432) — Oscar: "Yes its wild rose" (photo 09; the label read 'Wild Any'). Built from the
+  Forge's genus-level draft and checked online: RHS 369164 H5, Primo Series (Walters Gardens, US PP29923), 20–25 × 45–50 cm
+  (breeder), rosy-purple leaves with charcoal veins. JSON `heuchera-wild-rose.json`. Every photo in this set is now placed.
