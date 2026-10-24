@@ -1,0 +1,336 @@
+[
+  {
+    "latin": "Corylus avellana MEDUSA ('JWW9')",
+    "hardiness": {
+      "value": "H6",
+      "source": "RHS 4511 (species Corylus avellana, search snippet; no RHS entry for MEDUSA/'JWW9' found)"
+    },
+    "height": {
+      "value": "1.5–2.5 m",
+      "source": "futureforests.ie (not RHS); other nurseries give 2–3 m (e-katalogroslin.pl, not RHS) or 2 m max (promessedefleurs.ie, not RHS)"
+    },
+    "spread": {
+      "value": "1.5–2.5 m",
+      "source": "futureforests.ie (not RHS); promessedefleurs.ie gives 1.5 m max (not RHS)"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "no listing found",
+      "source": "not found (no RHS flags or ASPCA entry for Corylus avellana surfaced in search)"
+    },
+    "name": {
+      "accepted": "Corylus avellana 'JWW9'",
+      "trade": "Corylus avellana MEDUSA ('JWW9')",
+      "exists": true,
+      "source": "e-katalogroslin.pl (Polish nursery association catalogue, not RHS); floraccess.com; promessedefleurs.ie; no RHS entry found"
+    },
+    "compliance": {
+      "value": "PBR status not confirmed: no CPVO/UK PVR record for 'JWW9' found",
+      "source": "not found"
+    },
+    "notes": [
+      "What it is: a heavily contorted (corkscrew) form of common hazel, more compact than the species, related to 'Contorta'; green leaves turning yellow in autumn, so not a coloured-leaf form; catkins in late winter (e-katalogroslin.pl, gardeningexpress.co.uk, promessedefleurs.ie, not RHS).",
+      "Breeder: found in the Netherlands, discoverer/breeder Jan-Willem Wezelenburg (e-katalogroslin.pl Polish nursery catalogue, not RHS).",
+      "RHS: no RHS page for MEDUSA/'JWW9' found; RHS species Corylus avellana (4511) is H6 with height and spread 4–8 m; RHS 'Contorta' (97648) up to 4 m, spread 2.5–4 m (RHS search snippets).",
+      "Best nursery sizes: 1.5–2.5 m height and spread (futureforests.ie, not RHS); 1.5 x 1 m at 10 years, 2 x 1.5 m ultimate (promessedefleurs.ie, not RHS); 2–3 m (e-katalogroslin.pl, not RHS).",
+      "PBR: 'JWW9' reads as a code/denomination, but no CPVO or UK grant record was found (search, not found); the card's 'grant number not confirmed' stands.",
+      "Peak: claimed Jan-Mar; nurseries say catkins in late winter but give no months (not RHS), so left blank."
+    ]
+  },
+  {
+    "latin": "Imperata cylindrica 'Red Baron'",
+    "hardiness": {
+      "value": "H4",
+      "source": "RHS 94352 ('Rubra') and RHS 97902 ('Red Baron'), search snippets"
+    },
+    "height": {
+      "value": "10–50 cm",
+      "source": "RHS 94352, search snippet (0.1–0.5 m)"
+    },
+    "spread": {
+      "value": "10–50 cm",
+      "source": "RHS 94352, search snippet (0.1–0.5 m)"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "no listing found",
+      "source": "not found"
+    },
+    "name": {
+      "accepted": "Imperata cylindrica 'Rubra'",
+      "trade": "",
+      "exists": true,
+      "source": "RHS 94352 / RHS 97902, search snippets: 'Red Baron' listed as a synonym of 'Rubra' (accepted)"
+    },
+    "compliance": {
+      "value": "No Schedule 9 or GB invasive listing for Imperata found; species is a globally notorious invasive (IUCN top 100) and red forms can revert to the aggressive green form",
+      "source": "legislation.gov.uk Schedule 9 search (no Imperata entry surfaced, not fully verified); IUCN GISD; NC State Extension"
+    },
+    "notes": [
+      "Same plant as 'Rubra': yes, RHS lists 'Red Baron' as a synonym of 'Rubra', which is the accepted name (RHS 94352/97902 search snippets).",
+      "Hardiness: RHS H4 (not H6 as claimed), 'may need winter protection in colder areas' (RHS 94352 snippet); worldplants.ca gives H5–H4 (not RHS).",
+      "Size: RHS 10–50 cm height and spread (0.1–0.5 m), 2–5 years to maturity; worldplants.ca 45–50 cm x 30–45 cm (not RHS).",
+      "Interest: red-suffused foliage; narrow silvery panicles in late summer (RHS 94352 snippet); RHS gives no months, so peak is blank.",
+      "GB restriction: I found no evidence that Imperata cylindrica is on Schedule 9 Part 2 (legislation.gov.uk search results) or on the EU/GB invasive alien species of special concern list, but could not open the full lists (Wikipedia/Defra fetch blocked), so this is not verified.",
+      "Invasiveness: the species is in the IUCN '100 worst invasive alien species' (iucngisd.org); 'Red Baron' can revert to the aggressive green form (NC State Extension; USDA APHIS); it is excepted from the US Federal Noxious Weed list (USDA APHIS). Consider a 'remove green reversions' line."
+    ]
+  },
+  {
+    "latin": "Acer palmatum 'Sumi-nagashi'",
+    "hardiness": {
+      "value": "H6",
+      "source": "RHS 48429, search snippet"
+    },
+    "height": {
+      "value": "2.5–4 m",
+      "source": "RHS 48429, search snippet"
+    },
+    "spread": {
+      "value": "2.5–4 m",
+      "source": "RHS 48429, search snippet"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "no listing found",
+      "source": "no RHS flags found; plantaddicts.com (secondary, not ASPCA) says ASPCA does not list Japanese maple as toxic"
+    },
+    "name": {
+      "accepted": "Acer palmatum 'Sumi-nagashi'",
+      "trade": "",
+      "exists": true,
+      "source": "RHS 48429, search snippet (listed as 'Sumi-nagashi' (M))"
+    },
+    "compliance": {
+      "value": "none found",
+      "source": "not found"
+    },
+    "notes": [
+      "RHS: H6, height 2.5–4 m, spread 2.5–4 m, 10–20 years to maturity, sheltered position (RHS 48429 search snippet).",
+      "Leaf colour: 7-lobed leaves to 10 cm, purple-red in spring, deep maroon-red in summer, bright red in autumn; best colour in part shade (RHS 48429 snippet). Dobies (not RHS) says bronze-green in summer, which conflicts.",
+      "Peak: claimed Apr-Oct fits RHS's spring-to-autumn foliage description, but RHS gives no months, so left blank.",
+      "Horse toxicity: documented hazard is for red maple Acer rubrum (wilted/dried leaves cause haemolytic anaemia; sugar and silver maples suspected) per UKY Equine, MSU Extension E3062, TheHorse.com. No veterinary source found naming Acer palmatum; secondary sources conflict (hunker.com/plantaddicts.com). 'No known hazard' is not verified for horses.",
+      "Dogs/cats: secondary sources say not toxic and not on ASPCA's list (plantaddicts.com, hunker.com; ASPCA page itself not found)."
+    ]
+  },
+  {
+    "latin": "Ginkgo biloba",
+    "hardiness": {
+      "value": "H6",
+      "source": "RHS 7990, search snippet"
+    },
+    "height": {
+      "value": ">12 m",
+      "source": "RHS 7990, search snippet ('Higher than 12 metres'; description to 25 m)"
+    },
+    "spread": {
+      "value": "4–8 m",
+      "source": "RHS 7990, search snippet"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "harmful if eaten (seeds); toxic to pets (seeds)",
+      "aspca": "female trees' seeds (ginkgotoxin) toxic to pets; male trees considered non-toxic",
+      "source": "RHS 7990 search snippet (flags seeds harmful if eaten, seed toxic to pets, refers to HTA guide); ASPCA fall-plants article (aspca.org/news/fall-plants-hazardous-or-harmless), not the ASPCA database entry"
+    },
+    "name": {
+      "accepted": "Ginkgo biloba",
+      "trade": "",
+      "exists": true,
+      "source": "RHS 7990, search snippet"
+    },
+    "compliance": {
+      "value": "none found",
+      "source": "not found"
+    },
+    "notes": [
+      "Label read 'Thelma's Broom': the cultivar is registered as Ginkgo biloba 'Thelma' (horticultural status provisional, from a witch's broom) per American Conifer Society database; 'Thelma's Broom' is a descriptive variant, not a separate cultivar. No RHS page found for 'Thelma'.",
+      "Leaf form: mixed. RBG Hamilton says leaves are typically fan-shaped but some fringed, rolled, tubular, needle-like or lacy; Architectural Plants (not RHS) says frilly cut leaves; Dawes Arboretum says full-size leaves. So it is a dwarf with some tubular/rolled leaves, not a strap-leaved cultivar throughout.",
+      "'Thelma' sizes (not RHS): 1.5–3 m (5–10 ft) after 10 years, spreading (conifersociety.org); about 3 m x 1.8 m (10 x 6 ft) at maturity (plants.franzwitte.com); described as male/fruitless (bcarboretum.org).",
+      "The RHS species figures (>12 m, 4–8 m) do not suit a 'Thelma' plant; if the plant is 'Thelma', the card should use cultivar figures and the RHS species hardiness.",
+      "RHS hardiness of the species is H6, not H7 as claimed (RHS 7990 snippet); the only H7 seen was worldplants.ca for 'Ding-a-Ling' (not RHS).",
+      "RHS toxicity flags: seeds harmful if eaten; seed toxic to pets (RHS 7990 snippet). A skin-irritant flag did not appear in the snippet; the card's skin line is unverified against RHS. If 'Thelma' is male/fruitless, the seed warning is unlikely to apply to this plant."
+    ]
+  },
+  {
+    "latin": "Cryptomeria japonica 'Tenzan'",
+    "hardiness": {
+      "value": "H6",
+      "source": "RHS 71612 ('Tenzan-sugi'), search snippet"
+    },
+    "height": {
+      "value": "10–50 cm",
+      "source": "RHS 71612, search snippet (0.1–0.5 m)"
+    },
+    "spread": {
+      "value": "10–50 cm",
+      "source": "RHS 71612, search snippet (0.1–0.5 m)"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "no listing found",
+      "source": "not found"
+    },
+    "name": {
+      "accepted": "Cryptomeria japonica 'Tenzan-sugi'",
+      "trade": "",
+      "exists": true,
+      "source": "RHS 71612, search snippet (entry titled 'Tenzan-sugi'; 'Tenzan' is the same plant)"
+    },
+    "compliance": {
+      "value": "none found",
+      "source": "not found"
+    },
+    "notes": [
+      "RHS: H6; height and spread 10–50 cm (0.1–0.5 m) over 10–20 years; only about 15 cm high in 10 years; flat-topped compact dome; sheltered position (RHS 71612 snippet).",
+      "Foliage: pale green new shoots, maturing deep green; no golden tips mentioned (RHS 71612 snippet; conifersociety.org says dark green).",
+      "Winter colour: deep reddish-bronze (RHS 71612 snippet); bronze-red (conifersociety.org).",
+      "Less hardy than other Cryptomeria cultivars and prone to sun scorch (conifersociety.org / soonerplantfarm.com, not RHS).",
+      "Nursery sizes are larger: 75 cm x 90 cm at 10 years (plantdelights.com, not RHS); 1 m x 1.5 m (theplantcompany.co.nz, not RHS).",
+      "Claimed height and spread 30–50 cm vs RHS 10–50 cm. Peak Jan-Dec: evergreen, RHS gives no months."
+    ]
+  },
+  {
+    "latin": "Choisya × dewitteana GOLDFINGERS ('Limo')",
+    "hardiness": {
+      "value": "H4",
+      "source": "RHS 144467, search snippet"
+    },
+    "height": {
+      "value": "1–1.5 m",
+      "source": "RHS 144467, search snippet"
+    },
+    "spread": {
+      "value": "1–1.5 m",
+      "source": "RHS 144467, search snippet"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "no listing found",
+      "source": "not found"
+    },
+    "name": {
+      "accepted": "Choisya × dewitteana 'Limo'",
+      "trade": "Choisya × dewitteana GOLDFINGERS ('Limo')",
+      "exists": true,
+      "source": "RHS 144467, search snippet (Choisya × dewitteana Goldfingers ('Limo'PBR))"
+    },
+    "compliance": {
+      "value": "Protected variety: PBR EU 5554 (Community Plant Variety Right)",
+      "source": "plantipp.eu (not RHS); andre-briant.fr ('PBR 5554', not RHS); no CPVO register entry seen directly"
+    },
+    "notes": [
+      "Code confirmed: 'Limo' is the cultivar name and Goldfingers the trade name (RHS 144467 snippet: Choisya × dewitteana Goldfingers ('Limo'PBR)).",
+      "RHS: H4; height and spread 1–1.5 m, 10–20 years; full sun, sheltered (RHS 144467 snippet). The card agrees.",
+      "PBR: EU 5554 (plantipp.eu, andre-briant.fr, not RHS); havlis.cz calls it a 'European patent No. 5554' issued in 2000, which is a mislabel for a CPVR. Breeder Peter R. Moore (plantipp.eu); Sundance x C. arizonica cross, 1998 (havlis.cz, plantdelights.com).",
+      "Plantipp gives 120 x 60 cm and hardy to -18 °C (not RHS).",
+      "Toxicity: no RHS flag or ASPCA entry found for Choisya; the card's skin-irritant line is unverified."
+    ]
+  },
+  {
+    "latin": "Choisya ternata 'Brica'",
+    "hardiness": {
+      "value": "H4",
+      "source": "RHS 96024 (Choisya ternata Sundance ('Lich')), search snippet"
+    },
+    "height": {
+      "value": "1.5–2.5 m",
+      "source": "RHS 96024, search snippet"
+    },
+    "spread": {
+      "value": "1.5–2.5 m",
+      "source": "RHS 96024, search snippet"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "no listing found",
+      "source": "not found"
+    },
+    "name": {
+      "accepted": "Choisya ternata 'Lich'",
+      "trade": "Choisya ternata SUNDANCE ('Lich')",
+      "exists": true,
+      "source": "RHS 96024, search snippet: 'Brica', 'Lich', 'Moonsleeper' and 'Sundance' listed as synonyms; Sundance is the trade name; PBR"
+    },
+    "compliance": {
+      "value": "PBR (RHS marks Sundance ('Lich') as PBR); grant number not found",
+      "source": "RHS 96024, search snippet; grant number not found"
+    },
+    "notes": [
+      "What it is: RHS treats 'Brica' as a synonym of Choisya ternata Sundance ('Lich'), as are 'Moonsleeper' and 'Sundance'; Sundance is the trade name and 'Lich' the cultivar (RHS 96024 snippet). Retailers still sell 'Brica' as if separate (arundelarboretum.co.uk, caraghnurseries.ie, not RHS).",
+      "Leaves: golden. Glossy, aromatic, bright yellow ternate leaves (RHS 96024 snippet), not green. Not to be confused with Gold Star ('Lisstar'), whose leaves mature green (RHS 380901 snippet).",
+      "RHS: H4; height and spread 1.5–2.5 m; full sun or part shade; AGM (RHS 96024 snippet).",
+      "PBR code form: Choisya ternata SUNDANCE ('Lich') (RHS 96024 snippet); grant number not found.",
+      "Flowers: scented white flowers in spring/early summer with a second flush in Sep-Oct (arundelarboretum.co.uk, not RHS); claimed Apr-May not verified against RHS.",
+      "Card inconsistency: the toxicity text says 'not known to be seriously harmful' but the card prints 'harmful'. No RHS or ASPCA flag was found to support 'harmful'."
+    ]
+  },
+  {
+    "latin": "Callistemon citrinus",
+    "hardiness": {
+      "value": "H3",
+      "source": "RHS 2687 (Callistemon citrinus), search snippet"
+    },
+    "height": {
+      "value": "4–8 m",
+      "source": "RHS 2687, search snippet"
+    },
+    "spread": {
+      "value": "2.5–4 m",
+      "source": "RHS 2687, search snippet"
+    },
+    "peak": {
+      "value": "",
+      "source": "not found"
+    },
+    "toxicity": {
+      "rhs": "",
+      "aspca": "non-toxic to dogs, cats, horses",
+      "source": "ASPCA Callistemon citrinus / Crimson Bottlebrush entries (aspca.org/node/4699, /node/4808); gardenersworld.com 'no toxic effects reported'; no RHS flag found"
+    },
+    "name": {
+      "accepted": "Callistemon citrinus",
+      "trade": "",
+      "exists": true,
+      "source": "RHS 2687, search snippet (synonyms Metrosideros citrina, Callistemon lanceolatus); Melaleuca citrina not confirmed by search"
+    },
+    "compliance": {
+      "value": "",
+      "source": "not found"
+    },
+    "notes": [
+      "RHS species (not 'Splendens'): H3, height 4–8 m, spread 2.5–4 m, may reach about 5 m; summer red spikes to 10 cm; full sun, sheltered (RHS 2687 snippet; one RHS URL slug for id 2687 reads 'macadamia-tetraphylla', so the id is slightly uncertain).",
+      "Claimed 1.5–4 m height and 1.5–2.5 m spread do not match RHS species figures; 1.5–2.5 m matches RHS cultivars such as 'Angela' (178518) and 'Amarette' (382514), not the species.",
+      "Accepted name: RHS uses Callistemon citrinus (synonyms Metrosideros citrina, C. lanceolatus). Melaleuca citrina is the name used by botanists who merge Callistemon into Melaleuca, but no search result confirmed it, so it is not verified here.",
+      "Xylella: Defra's GB medium-risk host list (Annex 7 Part B, retained Reg. 2019/2072) was updated with effect by 31 Jan 2026 (Defra letter Dec 2025). I could not open the list (Defra portal fetch failed), so Callistemon/Melaleuca host status is not verified. High-risk hosts are Coffea, Polygala myrtifolia, Lavandula, Nerium oleander, Salvia rosmarinus, Prunus dulcis, Olea europaea, which do not include Callistemon.",
+      "Toxicity: ASPCA lists Callistemon as non-toxic to dogs, cats and horses; do not confuse it with bottlebrush buckeye Aesculus parviflora, which is toxic (ASPCA). Card's 'No known hazard' agrees.",
+      "Peak: RHS says summer flowers; no months given, so claimed May-Jul is left blank."
+    ]
+  }
+]
