@@ -3766,6 +3766,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "heuchera-caramel.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "heuchera-champagne-tnheucha.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -3938,6 +3948,16 @@
   },
   {
    "file": "heucherella-golden-zebra.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "heucherella-hopscotch.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",

@@ -39,3 +39,13 @@ evicting tiles: white screens, stale cards). The seven new cards sit at the top 
 layers. Removing the five new flash frames gave 17; removing only Callistemon's gave 23. Callistemon's second photo (15)
 was a near-repeat of its main one, so its flash entry was removed. The file stays in `photos/` as an unclaimed spare.
 Worth knowing for future batches: more than four or five flashing cards dealt together at the top can trip this check.
+
+## Confirmed by Oscar, dealt (r429–r430), deck 688 → 690
+
+- **× Heucherella 'Hopscotch'** — Oscar: "Okay this is hopscotch" (photos 02, 04 and a new labelled shot, 20). Dealt with
+  04; visual reworded to the autumn colour (coral-orange and bronze, splashed apricot). No second photo, to keep the
+  top-of-deck layer count down (perf-test 20 layers after).
+- **Heuchera 'Caramel'** — Oscar: "This is caramel, tiny bit of label in the photo to the right, may need blurring" (08).
+  The label patch at the right edge was blurred before dealing (`heuchera-caramel.jpg`; the original is 08).
+
+Still waiting: the pink-purple Heuchera (09, likely 'Wild Rose') and the green Acer (18).
