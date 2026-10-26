@@ -1256,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r432 · 2026-10-24 · 46be979';
+const BUILD='r433 · 2026-10-26 · f2ddcf7';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -16233,6 +16233,32 @@ const PLANTS = [
    uses:"Borders · containers · woodland edges · ground cover", size:"20–25 cm H × 45–50 cm W",
    toxicity:"No known hazard.", compliance:"PBR protected · commercial propagation restricted", hardinessNote:"Hardy in most of the UK, approximately −15 to −10°C (RHS 369164).", foliage:"evergreen to semi-evergreen; large rounded rosy-purple leaves with dark charcoal veins", stockForm:"container", pollination:"not applicable",
    seasonalImpact:"", growthSpeed:8, pestRisk:12, thirst:10, careLevel:6, sunNeed:55, sunMin:30},
+  {common:"Ninebark Angel Gold", latin:"Physocarpus opulifolius ANGEL GOLD ('Minange')", hue:52,
+   visual:"Bright golden-yellow lobed leaves, flushed copper in spring · domed clusters of small white to pinkish flowers in early summer · peeling bark in winter",
+   water:"Water regularly in the first summer; afterwards only in prolonged dry spells.",
+   aspect:"East / South / West",
+   soil:"Well-drained, acid/neutral; May yellow on shallow chalk",
+   prune:"After flowering, remove a few of the oldest stems at the base. A hard cut in late winter gives the brightest new foliage but fewer flowers.",
+   source:"", peak:"Apr-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Dart's Gold' – older golden form · DIABOLO ('Monlo') – dark purple leaves · 'Lady in Red' – red-purple leaves · 'Little Devil' – dwarf, purple",
+   hardiness:"H7", resilience:"Very cold-hardy and tolerant of clay and wind once established. Pests: powdery mildew in dry summers, occasional aphids.",
+   uses:"Mixed borders · foliage contrast with purple shrubs · informal hedging · cut stems", size:"1.5–2.5 m H × 1–1.5 m W",
+   toxicity:"No known hazard.", compliance:"PBR protected · commercial propagation restricted", hardinessNote:"Very hardy throughout the UK, tolerating winters colder than -20°C.", foliage:"deciduous; three-lobed golden-yellow leaves", stockForm:"container", pollination:"not applicable; grown for foliage", clay:"yes",
+   seasonalImpact:"", growthSpeed:12, pestRisk:7, thirst:10, careLevel:6, sunNeed:85, sunMin:""},
+  {common:"Glory Flower", latin:"Clerodendrum bungei", hue:330,
+   visual:"Domed heads of fragrant deep rose-pink flowers in late summer · large heart-shaped dark leaves on upright suckering stems",
+   water:"Water regularly in the first summer; established plants need watering only in prolonged dry spells.",
+   aspect:"South / West",
+   soil:"Well-drained, any pH; Suckers spread widely; site with care",
+   prune:"Cut frost-damaged or old stems to the base in spring. Remove unwanted suckers to keep it in bounds.",
+   source:"", peak:"Aug-Sep", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Pink Diamond' – cream-edged variegated leaves, less vigorous",
+   hardiness:"H4", resilience:"Recovers well from hard winters by regrowing from the base; spreads vigorously by suckers. Leaves smell unpleasant when crushed. Pests: generally trouble-free.",
+   uses:"Late-summer borders · shrub borders · wildlife and pollinator planting · sheltered gardens", size:"1.5–2.5 m H × 1.5–2.5 m W",
+   toxicity:"No record for this species; some Clerodendrum can cause mild stomach upset if eaten and skin irritation, so wear gloves if sensitive.", hardinessNote:"Hardy through most of the UK in an average winter, approximately -10 to -5°C; top growth may be cut back by hard frost but usually regrows from the base.", foliage:"deciduous; large heart-shaped dark green leaves, unpleasant-smelling when crushed", stockForm:"container", pollination:"not applicable",
+   seasonalImpact:"", growthSpeed:16, pestRisk:4, thirst:10, careLevel:8, sunNeed:80, sunMin:50},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -18504,8 +18530,6 @@ const PLANTS_ON_HOLD=[
    foliage:"evergreen; small blue-green pinnate leaves",
    growthSpeed:10, pestRisk:4, thirst:5, careLevel:6, sunNeed:85, sunMin:"null"},
 
-
-
   {common:"Dwarf Japanese Cedar", latin:"Cryptomeria japonica 'Tenzan'", hue:110,
    visual:"Tiny flat-topped bun of dense, soft needle-like foliage, pale green new shoots maturing deep green · deep reddish-bronze in winter",
    water:"Water regularly in its first year and never let pots dry out; established plants need water only in long dry spells.",
@@ -18534,13 +18558,33 @@ const PLANTS_ON_HOLD=[
    foliage:"evergreen; short, densely packed needle-like leaves forming a tight bun, bronzing in winter",
    growthSpeed:1, pestRisk:3, thirst:10, careLevel:2, sunNeed:70, sunMin:"null"},
 
-
-
-
-
-
-
-
+  {common:"Wallflower Sugar Rush Mixed", latin:"Erysimum cheiri 'Sugar Rush Mixed'", hue:30,
+   visual:"Scented spring flowers in mixed yellow, orange, red and purple · compact, bushy bedding plant",
+   water:"Water in after planting and in dry spring spells; once rooted it needs little extra.",
+   aspect:"South / West",
+   soil:"Well-drained, alkaline; Avoid ground with club root history",
+   prune:"Deadhead to prolong flowering. Usually lifted after flowering as spring bedding.",
+   source:"",
+   peak:"Mar-May",
+   order:"",
+   bench:"",
+   root:"",
+   trade:"",
+   retail:"",
+   margin:"",
+   type:"",
+   shrink:"",
+   returnRisk:"",
+   pots:"",
+   cvs:"'Fire King' – taller, orange-red · 'Blood Red' – deep red, taller · 'Persian Carpet' – mixed pastel shades",
+   hardiness:"H5",
+   resilience:"Tough through winter cold and wind once planted. Short-lived, best treated as spring bedding. Pests: aphids, flea beetle, club root, downy mildew.",
+   uses:"Spring bedding · containers · window boxes · cottage borders · pairs with tulips",
+   size:"10–50 cm H × 10–50 cm W",
+   toxicity:"Harmful if eaten: all parts, especially the seeds, contain heart-affecting compounds that can cause sickness. Keep children, dogs and cats from chewing it.",
+   hardinessNote:"Hardy through a cold UK winter, approximately −15 to −10°C (RHS 351299).",
+   foliage:"evergreen; narrow lance-shaped mid to dark green leaves",
+   growthSpeed:12, pestRisk:8, thirst:6, careLevel:6, sunNeed:90, sunMin:50},
  ];
 /* HOLD:END */
 
@@ -20305,6 +20349,12 @@ const PHOTO_SWAP={
   /* Oscar's bench photo 2026-10-24 */
   'imperata-cylindrica-rubra':{
     alt:'photos/card/imperata-cylindrica-rubra-autumn.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's second photo: the shoot from above, flower head and young leaves */
+  'clerodendrum-bungei':{
+    alt:'photos/card/clerodendrum-bungei-shoot.webp',
     focus:'50% 45%',
     hold:'3.5s',
   },

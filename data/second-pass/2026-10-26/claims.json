@@ -1,0 +1,41 @@
+[
+  {
+    "latin": "Erysimum cheiri 'Sugar Rush Mixed'",
+    "common": "Wallflower Sugar Rush Mixed",
+    "where": "batch:batch-as-sent.json",
+    "hardiness": "H4",
+    "height": "30 cm",
+    "spread": "25 cm",
+    "peak": "Mar-May",
+    "foliage": "evergreen",
+    "toxicity": "Harmful if eaten: all parts, especially the seeds, contain heart-affecting compounds that can cause sickness. Keep children, dogs and cats from chewing it.",
+    "toxTier": "harmful",
+    "compliance": ""
+  },
+  {
+    "latin": "Physocarpus opulifolius ANGEL GOLD ('Minange')",
+    "common": "Ninebark",
+    "where": "batch:batch-as-sent.json",
+    "hardiness": "H7",
+    "height": "",
+    "spread": "",
+    "peak": "Apr-Sep",
+    "foliage": "deciduous",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": "Plant breeders' rights apply (cov on label); grant number not confirmed."
+  },
+  {
+    "latin": "Clerodendrum bungei",
+    "common": "Glory Flower",
+    "where": "batch:batch-as-sent.json",
+    "hardiness": "H4",
+    "height": "1.5–2.5 m",
+    "spread": "1.5–2.5 m",
+    "peak": "Aug-Sep",
+    "foliage": "deciduous",
+    "toxicity": "No known hazard.",
+    "toxTier": "clear",
+    "compliance": ""
+  }
+]

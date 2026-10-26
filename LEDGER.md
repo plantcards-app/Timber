@@ -32,6 +32,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-10-26 (**Forge download batch-2026-10-26_1: Ninebark ANGEL GOLD and Clerodendrum bungei dealt, wallflower Sugar Rush held; deck 692 -> 694, hold 83 -> 84, r433**) — second pass: Sugar Rush H4 -> H5 and RHS band size (RHS 351299), Angel Gold size filled (RHS 338082), Clerodendrum agrees (RHS 29541) and its safety line moved to Handle with care. Waiting on Oscar: a viola photo (lilac over cream-yellow) that matches no JSON, shelved unnamed. See data/held-photos/2026-10-26/README.md.
 progress: 2026-10-24 (**Heuchera 'Wild Rose' added at Oscar's word, deck 691 -> 692, r432**) — RHS 369164 H5; the 'Wild Any' label resolved.
 progress: 2026-10-24 (**Acer palmatum 'Sumi-nagashi' dealt at Oscar's word, deck 690 -> 691, r431**) — the photo is green with pink tips where RHS says maroon; card keeps RHS wording, flagged.
 progress: 2026-10-24 (**Heucherella 'Hopscotch' and Heuchera 'Caramel' dealt at Oscar's word, deck 688 -> 690, r430**) — Caramel photo's label blurred. Still waiting: pink-purple 'Wild…' and the green Acer.
