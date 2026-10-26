@@ -1,0 +1,35 @@
+[
+  {
+    "latin": "Erysimum cheiri 'Sugar Rush Mixed'",
+    "hardiness": { "value": "H5", "source": "RHS 351299 (Erysimum Sugar Rush Series), search snippet" },
+    "height": { "value": "10–50 cm", "source": "RHS 351299, search snippet" },
+    "spread": { "value": "10–50 cm", "source": "RHS 351299, search snippet" },
+    "peak": { "value": "", "source": "RHS 351299 gives a season (spring into summer, sometimes into autumn), no months" },
+    "toxicity": { "rhs": "not found in snippets", "aspca": "no listing found", "source": "not found" },
+    "name": { "accepted": "Erysimum Sugar Rush Series", "trade": "", "exists": true, "source": "RHS 351299; retailers sell it as Erysimum cheiri F1 Sugar Rush" },
+    "compliance": { "value": "", "source": "not found" },
+    "notes": ["seed series (F1), not PBR as far as found; nurseries give about 30 cm x 30 cm (Seedaholic, Van Meuwen)", "marketed as flowering in autumn and again in spring (Seedaholic, Rogers Gardens)"]
+  },
+  {
+    "latin": "Physocarpus opulifolius ANGEL GOLD ('Minange')",
+    "hardiness": { "value": "H7", "source": "RHS 338082, search snippet" },
+    "height": { "value": "1.5–2.5 m", "source": "RHS 338082, search snippet" },
+    "spread": { "value": "1–1.5 m", "source": "RHS 338082, search snippet" },
+    "peak": { "value": "", "source": "RHS gives no months" },
+    "toxicity": { "rhs": "no flag found in snippets", "aspca": "no listing found (secondary source says not listed)", "source": "plantaddicts.com; not ASPCA directly" },
+    "name": { "accepted": "Physocarpus opulifolius ANGEL GOLD ('Minange')", "trade": "Physocarpus opulifolius ANGEL GOLD ('Minange')", "exists": true, "source": "RHS 338082 (PBR)" },
+    "compliance": { "value": "PBR", "source": "RHS 338082 lists 'Minange'PBR" },
+    "notes": ["RHS: yellow to yellow-green lobed leaves flushed copper in spring; acid or neutral, chlorosis possible on shallow chalk"]
+  },
+  {
+    "latin": "Clerodendrum bungei",
+    "hardiness": { "value": "H4", "source": "RHS 29541, search snippet" },
+    "height": { "value": "1.5–2.5 m", "source": "RHS 29541, search snippet" },
+    "spread": { "value": "1.5–2.5 m", "source": "RHS 29541, search snippet" },
+    "peak": { "value": "", "source": "RHS 29541: late summer and autumn, no months" },
+    "toxicity": { "rhs": "no flag found in snippets", "aspca": "no listing found; Pet Poison Helpline genus entry (Glory Chain): some species non-toxic, others mild stomach upset if eaten and contact dermatitis", "source": "petpoisonhelpline.com/poison/glory-chain (genus level)" },
+    "name": { "accepted": "Clerodendrum bungei", "trade": "", "exists": true, "source": "RHS 29541" },
+    "compliance": { "value": "", "source": "not found" },
+    "notes": ["suckering deciduous shrub; dies back in cold winters and reshoots from the base (Hayloft)"]
+  }
+]
