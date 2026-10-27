@@ -166,6 +166,6 @@ The page shows *Researching in the cloud* until `cloudDoneAt` lands, then *Check
 fails, the page shows the same message in a box to paste into a new Claude Code session by hand, and un-queues the
 cards (except on an ambiguous `server_unavailable` / `upstream_error`, when a session may have started).
 
-The cloud half was tested from a session on 2026-10-27 with the exact prompt (see the batch README for 2026-10-26).
+The cloud half was tested on 2026-10-27 with the exact prompt (session_015xuecgrhYUkgfaw4dBcdeK): it researched the viola card of batch 2026-10-26 online in about 15 minutes, with no questions, and wrote back Viola cornuta 'Teardrops Apricot Purple Wing', H5 (RHS species), 15 cm, Jan-Apr, nine sources, checkedOnline true; the repo validator passes it. Published as artifact version 5.
 The page's own call of the connector is [Unverified] until Oscar taps the button once: the first tap asks him to allow
 the page to use Claude Code Remote.
