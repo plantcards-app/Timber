@@ -1,0 +1,1192 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Timber Card Forge</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,700&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow phone-first column in the same family as the Label Scanner — a hang-tag header,
+   a batch strip, an intake panel, a stack of card rows, and a dock pinned to the bottom. The editor and
+   the hand-off open as full-height sheets over the column so a snapshot re-render never eats a half-typed field. */
+:root {
+  --bg: #f1f4ef; --surface: #ffffff; --ink: #17211b; --muted: #58665d; --line: #d3dbd2;
+  --tag: #1b211e; --tag-ink: #f6f7f5; --pink: #c4215c; --pink-ink: #ffffff; --tag-pink: #ff6f9f;
+  --leaf: #2c6a44; --leaf-soft: #e2efe5; --warn: #9a4f06; --warn-soft: #f8ead6; --bad: #a3202a; --bad-soft: #f9e3e4;
+  --display: "Bricolage Grotesque", "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  --body: "Figtree", "Segoe UI", Roboto, system-ui, sans-serif;
+  --mono: ui-monospace, Menlo, Consolas, monospace;
+  --radius: 10px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111612; --surface: #1a211c; --ink: #e8ede8; --muted: #9aa89f; --line: #2d372f;
+    --tag: #070908; --tag-ink: #f1f3f0; --pink: #f0628f; --pink-ink: #1d0810; --tag-pink: #ff7aa6;
+    --leaf: #82cb9a; --leaf-soft: #1c2c22; --warn: #ecab57; --warn-soft: #33270f; --bad: #f28b93; --bad-soft: #3a1a1d;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111612; --surface: #1a211c; --ink: #e8ede8; --muted: #9aa89f; --line: #2d372f;
+  --tag: #070908; --tag-ink: #f1f3f0; --pink: #f0628f; --pink-ink: #1d0810; --tag-pink: #ff7aa6;
+  --leaf: #82cb9a; --leaf-soft: #1c2c22; --warn: #ecab57; --warn-soft: #33270f; --bad: #f28b93; --bad-soft: #3a1a1d;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.45; }
+.wrap { max-width: 680px; margin: 0 auto; padding-inline: 16px; padding-block: 16px 132px; display: flex; flex-direction: column; gap: 16px; }
+
+.tag { background: var(--tag); color: var(--tag-ink); border-radius: 14px; padding: 20px 20px 18px; position: relative; display: flex; flex-direction: column; gap: 8px; }
+.tag::before { content: ""; position: absolute; top: 14px; right: 18px; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); }
+.tag h1 { margin: 0; font-family: var(--display); font-weight: 300; font-size: clamp(1.7rem, 7vw, 2.3rem); line-height: 1; letter-spacing: 0.04em; text-transform: uppercase; text-wrap: balance; padding-right: 28px; }
+.tag h1 span { display: block; color: var(--tag-pink); }
+.tag p { margin: 0; font-size: 0.95rem; opacity: 0.85; max-width: 52ch; }
+
+.panel { display: flex; flex-direction: column; gap: 10px; }
+.listhead { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.listhead h2 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 1.15rem; }
+.listhead span { color: var(--muted); font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.lbl { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.striprow { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.striprow select { flex: 1 1 160px; min-width: 0; }
+.small { font-size: 0.88rem; color: var(--muted); }
+select, textarea, input[type="text"], input[type="number"] { font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; min-height: 44px; max-width: 100%; width: 100%; }
+textarea { resize: vertical; line-height: 1.4; }
+.row2 { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.row2 .btn.primary { flex: 1 1 180px; }
+.pick { position: relative; display: inline-flex; }
+.pick input[type="file"] { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; font-size: 0; margin: 0; }
+.pick:has(input:focus-visible) .btn { outline: 3px solid var(--ink); outline-offset: 2px; }
+.btn { font: inherit; font-weight: 600; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: var(--radius); padding: 10px 14px; min-height: 44px; cursor: pointer; }
+.btn:disabled { opacity: 0.5; cursor: default; }
+.btn.primary { background: var(--pink); color: var(--pink-ink); border-color: var(--pink); }
+.btn.quiet { color: var(--muted); border-color: transparent; background: transparent; }
+.btn.danger { color: var(--bad); }
+.btn.sm { min-height: 36px; padding: 6px 10px; font-size: 0.88rem; }
+.btn:focus-visible, select:focus-visible, textarea:focus-visible, input:focus-visible, .thumb:focus-visible, summary:focus-visible { outline: 3px solid var(--pink); outline-offset: 2px; }
+label.btn { display: inline-flex; align-items: center; justify-content: center; }
+.opt { display: flex; gap: 10px; align-items: center; font-size: 0.92rem; color: var(--muted); flex-wrap: wrap; }
+.opt select { width: auto; flex: 0 1 auto; min-height: 40px; padding: 6px 10px; }
+.status { font-size: 0.92rem; color: var(--muted); }
+.status:empty { display: none; }
+.status.bad { color: var(--warn); background: var(--warn-soft); border-radius: var(--radius); padding: 10px 12px; }
+.banner { margin: 0; font-size: 0.9rem; color: var(--warn); background: var(--warn-soft); border-radius: var(--radius); padding: 10px 12px; }
+.note { font-size: 0.86rem; color: var(--muted); margin: 0; max-width: 62ch; }
+
+.list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.row { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px; display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 10px; align-items: start; }
+.row.example { border-style: dashed; }
+.row.dealt { opacity: 0.75; }
+.thumb { width: 64px; height: 64px; border-radius: 6px; background: var(--leaf-soft); border: 0; padding: 0; display: grid; place-items: center; color: var(--leaf); font-family: var(--display); font-weight: 700; font-size: 1.4rem; overflow: hidden; cursor: default; }
+.thumb img { width: 64px; height: 64px; object-fit: cover; display: block; }
+.body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.name { font-weight: 600; font-size: 1.02rem; line-height: 1.3; overflow-wrap: anywhere; }
+.sub { font-size: 0.86rem; color: var(--muted); overflow-wrap: anywhere; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.chip { font-weight: 600; font-size: 0.72rem; letter-spacing: 0.04em; text-transform: uppercase; border-radius: 99px; padding: 3px 8px; background: var(--line); color: var(--ink); white-space: nowrap; }
+.chip.ok { background: var(--leaf-soft); color: var(--leaf); }
+.chip.warn { background: var(--warn-soft); color: var(--warn); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
+.chip.pink { background: var(--pink); color: var(--pink-ink); }
+.msgs { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 3px; font-size: 0.84rem; }
+.msgs li { overflow-wrap: anywhere; padding-left: 1.2em; text-indent: -1.2em; }
+.msgs .e { color: var(--bad); } .msgs .w { color: var(--warn); } .msgs .n { color: var(--muted); }
+.acts { display: flex; flex-wrap: wrap; gap: 6px; }
+.busy { font-size: 0.88rem; color: var(--pink); font-weight: 600; overflow-wrap: anywhere; }
+.photos { display: flex; flex-wrap: wrap; gap: 6px; }
+.photos img { width: 48px; height: 48px; object-fit: cover; border-radius: 6px; display: block; }
+.ph { position: relative; }
+.ph button { position: absolute; top: -6px; right: -6px; width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface); color: var(--muted); font-size: 0.8rem; line-height: 1; cursor: pointer; padding: 0; }
+
+.scanbox { display: flex; flex-direction: column; gap: 10px; border: 1px dashed var(--line); border-radius: var(--radius); padding: 12px; }
+.pick.grow { flex: 1 1 180px; }
+.pick.grow .btn { width: 100%; }
+.opt input[type="checkbox"] { width: 20px; height: 20px; margin: 0; accent-color: var(--pink); }
+.bar { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; }
+.bar i { display: block; height: 100%; width: 0; background: var(--pink); }
+.srow { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 8px; display: grid; grid-template-columns: 56px minmax(0, 1fr) 40px; gap: 10px; align-items: start; }
+.srow.check { border-color: var(--warn); }
+.srow img, .srow .ph0 { width: 56px; height: 56px; object-fit: cover; border-radius: 6px; display: block; background: var(--leaf-soft); }
+.srow input[type="text"] { font-weight: 600; min-height: 40px; padding: 6px 8px; }
+.srow .x { font: inherit; width: 40px; height: 40px; border: 0; background: transparent; color: var(--muted); border-radius: 8px; cursor: pointer; font-size: 1.3rem; line-height: 1; }
+.dock { position: fixed; left: 0; right: 0; bottom: 0; background: var(--surface); border-top: 1px solid var(--line); padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); z-index: 5; }
+.dock .in { max-width: 680px; margin: 0 auto; display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+.dock .btn { flex: 1 1 auto; padding: 10px 6px; white-space: nowrap; font-size: 0.9rem; min-width: 0; }
+.toast { flex: 1 1 100%; font-size: 0.88rem; color: var(--leaf); font-weight: 600; overflow-wrap: anywhere; }
+.toast:empty { display: none; }
+
+.sheet { position: fixed; inset: 0; background: var(--bg); z-index: 10; overflow-y: auto; padding: calc(12px + env(safe-area-inset-top, 0px)) 16px calc(24px + env(safe-area-inset-bottom, 0px)); }
+.sheet .in { max-width: 680px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
+.sheethead { display: flex; justify-content: space-between; align-items: center; gap: 10px; position: sticky; top: 0; background: var(--bg); padding-block: 6px; z-index: 1; }
+.sheethead h2 { margin: 0; font-family: var(--display); font-weight: 700; font-size: 1.2rem; overflow-wrap: anywhere; }
+.group { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 12px; display: flex; flex-direction: column; gap: 10px; }
+.group h3 { margin: 0; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 0.86rem; color: var(--muted); }
+.field .cnt { font-size: 0.78rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.field .cnt.over { color: var(--bad); font-weight: 600; }
+.two { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; }
+.sticky-acts { position: sticky; bottom: 0; background: var(--bg); padding-block: 10px; display: flex; gap: 8px; flex-wrap: wrap; }
+.sticky-acts .btn { flex: 1 1 120px; }
+pre { margin: 0; font: 0.8rem/1.4 var(--mono); background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 10px; overflow-x: auto; white-space: pre-wrap; overflow-wrap: anywhere; }
+.kv { display: grid; grid-template-columns: auto 1fr; gap: 4px 12px; font-size: 0.92rem; }
+.kv dt { color: var(--muted); } .kv dd { margin: 0; font-variant-numeric: tabular-nums; }
+details { font-size: 0.9rem; } summary { cursor: pointer; padding: 4px 0; color: var(--muted); }
+a { color: var(--leaf); }
+@media (prefers-reduced-motion: no-preference) { .busy::after { content: "…"; animation: dots 1.2s steps(4) infinite; } @keyframes dots { to { content: ""; } } }
+</style>
+
+<main class="wrap">
+  <header class="tag">
+    <h1><span>Timber</span> card forge</h1>
+    <p>Names in from the bench, plant JSONs out. Claude drafts each card to the brief, the deck's own checks mark what is wrong, you attach the photos, and the batch hands itself to Claude Code.</p>
+  </header>
+
+  <section class="panel" aria-label="Batch">
+    <div class="striprow">
+      <span class="lbl">Batch</span>
+      <select id="batchSel" aria-label="Batch"></select>
+      <button class="btn" id="newBatch" type="button">New batch</button>
+    </div>
+    <div class="small" id="batchMeta">Loading the shared store.</div>
+    <p class="banner" id="banner" hidden></p>
+  </section>
+
+  <section class="panel" aria-label="Add plants">
+    <div class="listhead"><h2>Add plants</h2><span id="deckMeta"></span></div>
+    <div class="scanbox">
+      <div class="row2">
+        <div class="pick grow"><label class="btn primary" for="scanPhotos">Scan labels</label><input id="scanPhotos" type="file" accept="image/*" multiple></div>
+        <label class="opt" for="scanSmall"><input type="checkbox" id="scanSmall" checked> Keep the small print as label text</label>
+      </div>
+      <p class="note">Reads the label photos on this phone with the Label Scanner's reader: free, nothing uploaded. The first scan fetches the reader, about 27 MB.</p>
+      <div class="bar" id="scanBarWrap" hidden><i id="scanBar"></i></div>
+      <ul class="list" id="scanList" hidden></ul>
+      <div class="row2" id="scanActs" hidden>
+        <button class="btn primary" id="scanAdd" type="button">Add to batch</button>
+        <button class="btn quiet" id="scanClear" type="button">Clear</button>
+      </div>
+    </div>
+    <label class="lbl" for="names">Or type names, one per line (a paste from the Label Scanner's Copy table keeps its label text)</label>
+    <textarea id="names" rows="3" placeholder="Choisya × dewitteana WHITE DAZZLER ('Londaz')&#10;Echium candicans"></textarea>
+    <div class="row2">
+      <button class="btn primary" id="addNames" type="button">Add to batch</button>
+      <div class="pick" id="labelPick"><label class="btn" for="labelPhotos">Read with Claude</label><input id="labelPhotos" type="file" accept="image/*" multiple></div>
+    </div>
+    <div class="status" id="intakeStatus" role="status"></div>
+  </section>
+
+  <section class="panel" aria-label="Cards">
+    <div class="listhead"><h2>Cards</h2><span id="count"></span></div>
+    <label class="opt"><span>Research depth</span>
+      <select id="tier"><option value="complex">Thorough (slower)</option><option value="default">Standard</option></select>
+    </label>
+    <ul class="list" id="list"></ul>
+    <p class="note">Drafts come from Claude's own knowledge: this page cannot search the web, so every draft stays marked unchecked until the Claude Code session that deals the batch checks it online. Research spends your Claude usage, one call per plant, two when the validator finds errors.</p>
+  </section>
+</main>
+
+<div class="dock"><div class="in">
+  <button class="btn" id="researchAll" type="button">Research all</button>
+  <button class="btn" id="stopAll" type="button" hidden>Stop</button>
+  <button class="btn" id="downloadJson" type="button">JSON file</button>
+  <button class="btn primary" id="openHandoff" type="button">Hand off</button>
+  <div class="toast" id="toast" role="status"></div>
+</div></div>
+
+<div class="sheet" id="editor" hidden>
+  <div class="in">
+    <div class="sheethead"><h2 id="edTitle">Edit card</h2><button class="btn sm" id="edClose" type="button">Close</button></div>
+    <div class="group">
+      <h3>Research inputs</h3>
+      <div class="field"><label for="ed-name">Name as typed or read from the label</label><input type="text" id="ed-name"></div>
+      <div class="field"><label for="ed-label">From the label (care text, hardiness, sizes) — authoritative for the research</label><textarea id="ed-label" rows="3"></textarea></div>
+      <div class="field"><label for="ed-notes">Notes for the research (what you saw, what the label said)</label><textarea id="ed-notes" rows="2"></textarea></div>
+    </div>
+    <div class="group" id="edChecks"><h3>Checks</h3><ul class="msgs" id="edMsgs"></ul></div>
+    <div id="edForm"></div>
+    <details><summary>Raw JSON</summary><pre id="edRaw"></pre></details>
+    <div class="sticky-acts"><button class="btn primary" id="edSave" type="button">Save</button><button class="btn" id="edCancel" type="button">Cancel</button></div>
+  </div>
+</div>
+
+<div class="sheet" id="handoff" hidden>
+  <div class="in">
+    <div class="sheethead"><h2 id="hoTitle">Hand off the batch</h2><button class="btn sm" id="hoClose" type="button">Close</button></div>
+    <div class="group">
+      <h3>What goes</h3>
+      <dl class="kv" id="hoSummary"></dl>
+      <p class="note">Cards with validator errors stay here until fixed. Cards without a photo are dealt onto the hold block, as a JSON-only card is today. The deal session fact-checks every draft online before it writes anything.</p>
+    </div>
+    <div class="group">
+      <h3>Opening message for a Claude Code session</h3>
+      <textarea id="hoMsg" rows="9" readonly></textarea>
+      <div class="row2">
+        <button class="btn" id="hoCopy" type="button">Copy message</button>
+        <button class="btn" id="hoMark" type="button">Mark as handed</button>
+      </div>
+    </div>
+    <div class="group" id="hoSend" hidden>
+      <h3>Or start the session from here</h3>
+      <p class="note">Starts a Claude Code session on the Timber repository with the message above as its first turn. The session appears in your Claude Code list; the first call asks you to allow this page to use Claude Code Remote.</p>
+      <button class="btn primary" id="hoStart" type="button">Send to Claude Code</button>
+      <div class="status" id="hoResult" role="status"></div>
+    </div>
+    <p class="note" id="hoNoMcp">Starting a session from this page needs the Claude Code Remote connector in this view; copy the message instead and paste it into a new Claude Code session on the Timber repo.</p>
+  </div>
+</div>
+
+<script type="text/plain" id="brief">
+You are researching ONE plant for Timber, a plant-knowledge app used by staff on the floor of a UK garden centre. Return ONE JSON object in the schema below and nothing else: no prose before or after it.
+
+THIS CALL HAS NO WEB ACCESS. Answer from what you know with confidence. Anything you are not confident of is left blank ("" for text, null for numbers) and named in "uncertain" with why. A later step checks the draft online; an honest gap costs nothing, a plausible guess reaches a customer. In "sources" say what the facts rest on, for example "RHS plant profile as remembered, not checked online".
+
+THE THREE RULES
+1. Never invent. Unknown field → "" (or null for numbers), and name it in "uncertain".
+2. UK context. RHS hardiness bands, UK flowering months, UK retail reality.
+3. Ratings are 0–20 integers, not 0–5. A pestRisk of 4 means "trouble-free"; "quite prone" is 14.
+
+OUTPUT — one JSON object with exactly these keys (this example is the shape, not the answer):
+{
+  "common": "Red Hot Poker",
+  "latin": "Kniphofia 'Pyromania Orange Blaze'",
+  "hue": 28,
+  "hardiness": "H5",
+  "hardinessNote": "Hardy in most places throughout the UK, approximately -15 to -10°C.",
+  "height": "75 cm",
+  "spread": "60 cm",
+  "peak": "Jul-Oct",
+  "visual": "Torch-like orange-red spikes over grassy foliage · long season",
+  "pestRisk": 3, "thirst": 4, "careLevel": 6, "growthSpeed": 12, "sunNeed": 88, "sunMin": null,
+  "pest": "",
+  "aspect": "South / West",
+  "soil": "Free-draining",
+  "soilWarning": "Winter wet rots the crown",
+  "water": "Low once established",
+  "prune": "Cut spent spikes; tidy foliage in spring",
+  "toxicity": "No known hazard.",
+  "compliance": "",
+  "cvs": "'Flamenco' – shorter · 'Bees' Sunset' – soft orange",
+  "resilience": "Drought and wind tolerant once established; dislikes winter wet",
+  "uses": "Borders · gravel gardens · coastal · cut flowers",
+  "foliage": "deciduous; narrow grassy grey-green leaves",
+  "rootSize": "",
+  "stockForm": "container",
+  "pollination": "not applicable",
+  "clay": "yes",
+  "container": "with care",
+  "uncertain": ["every field left blank or judged, and why"],
+  "sources": ["what the facts rest on"]
+}
+
+Never send these keys: source, order, bench, root, trade, retail, margin, type, shrink, returnRisk, pots. They are the owner's trade data and the file is rejected if any is filled. Never produce prices, margins, suppliers, order weeks or stock risk.
+
+HARD LIMITS (measured; the card's panels are fixed)
+- soil at most 26 characters (rejected over 36). soilWarning at most 44 (rejected over 60). Short value in the field, detail in uncertain.
+- visual at most 190 characters, water 120, prune 165, resilience 165, uses 150. Longer text is trimmed sentence by sentence, so put the important sentence first.
+- hue a whole number 0–360. hardiness one of H1a H1b H1c H2 H3 H4 H5 H6 H7. No 0–20 score above 20; sunNeed and sunMin never above 100; sunMin never above sunNeed.
+- aspect never contains a light level. soil and soilWarning never restate each other. common, latin and hardiness are required.
+- NO citation markers or footnote numbers anywhere in a value.
+
+RATING SCALES (0–20, higher = more of the named thing; 4 points = one icon)
+pestRisk: 0–3 bulletproof (Choisya, Abelia) · 8–10 occasional aphid or mildew · 14–16 needs watching (roses) · 18–20 chronic (box blight).
+thirst: 0–3 drought-proof (lavender, Sedum) · 4–6 low (Kniphofia) · 10–12 average border · 16–20 constantly moist (Hydrangea, bog plants).
+careLevel: 0–3 plant-and-forget (grasses) · 6–8 light annual tidy · 12–14 regular pruning (roses) · 18–20 high-maintenance (dahlias, topiary).
+growthSpeed: 0–4 very slow (Acer palmatum, box) · 8–12 steady (most shrubs) · 16–18 fast (Buddleja) · 20 rampant (Leylandii).
+sunNeed (0–100): 0 deep shade, 50 part shade, 100 the most sun possible in an open spot. sunMin (0–100, optional): the lowest light it tolerates; null if you cannot state it.
+hardiness: the RHS band, checked, never assumed H5. H1a/b/c glasshouse · H2 tender, no frost · H3 half-hardy (−5 to 1°C) · H4 hardy, average winter (−10 to −5) · H5 cold winter (−15 to −10) · H6 very cold (−20 to −15) · H7 below −20.
+
+SAFETY
+toxicity is printed verbatim and a seventeen-year-old reads it out to a customer. The card picks its warning tier by keyword, in this order, first match wins:
+- the phrase "no known hazard" → No known hazard (clear)
+- highly toxic / highly poisonous / particularly dangerous / particularly poisonous / potentially dangerous / fatal / deadly → Highly toxic (red)
+- toxic / poison / harmful / cyanogenic / not edible / should not be eaten / not to be eaten / do not eat → Toxic (orange)
+- edible → Edible parts
+- irritant / irritat… / sap / allerg… / spine / sharp / glove / hairs → Handle with care (amber)
+- anything else non-empty → Handle with care by accident. Blank renders exactly like safe. BLANK IS NOT AN ANSWER.
+So a sentence like "No specific toxicity warning required" prints an ORANGE Toxic flag, because it contains "toxic". If the plant is benign write exactly "No known hazard." If it is hazardous, say which part (whole plant, berries, seeds, sap, bulb, leaves), by what route (eaten, skin, eyes, smoke), who is at risk (children, dogs, cats, horses, livestock) and what happens, in one or two sentences that contain the right keyword.
+compliance is about the law, not health: Schedule 9 of the Wildlife and Countryside Act (illegal to plant in the wild), plant breeders' rights (give the number), plant passport, biosecurity (Xylella host, ash dieback, import ban). Blank is a fine answer here.
+
+FIELD RULES
+- aspect: a compass facing only: "South / West", "East / South / West", "Any aspect". Never "full sun"; that is sunNeed.
+- soil: soil type and drainage only, from: free-draining · well-drained · moisture-retentive · reliably moist · boggy · loam · clay · sand · chalk · acid/ericaceous · neutral · alkaline · any pH.
+- soilWarning: a real constraint, not a restatement of soil: "Winter wet rots the crown", "Shelter from frost".
+- water is the sentence (how and when); thirst is the number. Do not repeat the same phrase in both.
+- peak: "Mon-Mon" only, e.g. "Jul-Oct"; "Sep-Feb" wraps the year. For berries, bark, autumn colour or foliage interest use that feature's months and say which in visual. One band only: the season the plant is sold on, the other named in visual.
+- visual: one line, about 90 characters, · separated. What it looks like and when; lead with the feature someone buys it for.
+- hue: HSL hue of the dominant feature: red 0 · orange 30 · yellow 55 · green 120 · blue 210 · purple 275 · pink 330.
+- hardinessNote: a plain sentence naming the band in words and the °C range.
+- foliage: must name one of evergreen · semi-evergreen · deciduous · herbaceous (herbaceous = vanishes to the ground). A leaf description after a semicolon is welcome: "deciduous; five-lobed leaves with strong seasonal colour". A value naming none of the four is rejected.
+- rootSize: "0.3-0.5m D × 1-1.5m W" or blank. Expect to leave it blank. A value carrying no digit is rejected.
+- stockForm: container · bare-root · both. pollination: must name one of needs partner · self-fertile · not applicable, prose after a semicolon. clay: yes · no · blank when not established, never "unknown". container: yes · with care · no.
+- cvs: notable sibling cultivars of the species, · separated, a few words each on how they differ. This plant's own registration goes in compliance, not here.
+- height and spread: separate fields, e.g. "1.5–2.5 m", "60 cm", ">8 m". A spread is required for the rails to draw.
+- pest: "" or "slugs" only (the only icon key). Name the pests a plant actually gets in resilience as a last sentence, "Pests: …".
+- latin: the name as the label prints it. Trade names in CAPS with the cultivar code in quotes: "Choisya × dewitteana WHITE DAZZLER ('Londaz')", "Hydrangea paniculata LITTLE LIME PUNCH ('SMNHPH')". Use the × hybrid sign, not the letter x. Quotes balanced. A curly apostrophe inside a name, as in MINER’S GOLD.
+
+BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating on the 0–20 scale · aspect is a facing · soil at most 26 and soilWarning at most 44 and they do not repeat each other · no value ends in a citation number · peak is Mon-Mon · toxicity contains a tier keyword or says "No known hazard." · compliance checked · pest blank or slugs · no commercial field · everything unknown is blank AND listed in uncertain.
+</script>
+
+<script>
+(function () {
+  'use strict';
+
+  // ---------- constants ----------
+  var ENV_ID = 'env_01RymtRPFLANHmFTSgpUQZsf';
+  var REPO_URL = 'https://github.com/plantcards-app/Timber';
+  var ARTIFACT_URL = 'https://claude.ai/artifact/2Byv3SGZ3jyTV1QcZTqhed';
+  var SERVER = 'Claude Code Remote';
+  var SCHEMA_KEYS = ['common', 'latin', 'hue', 'hardiness', 'hardinessNote', 'height', 'spread', 'peak', 'visual',
+    'pestRisk', 'thirst', 'careLevel', 'growthSpeed', 'sunNeed', 'sunMin', 'pest', 'aspect', 'soil', 'soilWarning',
+    'water', 'prune', 'toxicity', 'compliance', 'cvs', 'resilience', 'uses', 'foliage', 'rootSize', 'stockForm',
+    'pollination', 'clay', 'container', 'uncertain', 'sources'];
+  var NUM_KEYS = ['hue', 'pestRisk', 'thirst', 'careLevel', 'growthSpeed', 'sunNeed', 'sunMin'];
+  var LIST_KEYS = ['uncertain', 'sources'];
+  var BRIEF = document.getElementById('brief').textContent.trim();
+  var STORE_KEY = 'timber-card-forge-v1';
+
+  var $ = function (id) { return document.getElementById(id); };
+  var els = {
+    batchSel: $('batchSel'), newBatch: $('newBatch'), batchMeta: $('batchMeta'), banner: $('banner'),
+    deckMeta: $('deckMeta'), names: $('names'), addNames: $('addNames'), labelPhotos: $('labelPhotos'), labelPick: $('labelPick'),
+    intakeStatus: $('intakeStatus'), count: $('count'), tier: $('tier'), list: $('list'),
+    researchAll: $('researchAll'), stopAll: $('stopAll'), downloadJson: $('downloadJson'), openHandoff: $('openHandoff'), toast: $('toast'),
+    editor: $('editor'), edTitle: $('edTitle'), edClose: $('edClose'), edName: $('ed-name'), edLabel: $('ed-label'), edNotes: $('ed-notes'),
+    edChecks: $('edChecks'), edMsgs: $('edMsgs'), edForm: $('edForm'), edRaw: $('edRaw'), edSave: $('edSave'), edCancel: $('edCancel'),
+    handoff: $('handoff'), hoTitle: $('hoTitle'), hoClose: $('hoClose'), hoSummary: $('hoSummary'), hoMsg: $('hoMsg'), hoCopy: $('hoCopy'),
+    hoMark: $('hoMark'), hoSend: $('hoSend'), hoStart: $('hoStart'), hoResult: $('hoResult'), hoNoMcp: $('hoNoMcp'),
+    scanPhotos: $('scanPhotos'), scanSmall: $('scanSmall'), scanBarWrap: $('scanBarWrap'), scanBar: $('scanBar'),
+    scanList: $('scanList'), scanActs: $('scanActs'), scanAdd: $('scanAdd'), scanClear: $('scanClear')
+  };
+
+  var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
+  var slug = function (l) { return String(l || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); };
+  function readLocal(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function writeLocal(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* per-viewer convenience only */ } }
+  function localDate() { var d = new Date(); var p = function (n) { return String(n).padStart(2, '0'); }; return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()); }
+
+  // ---------- the deck's own checks: a port of tools/check-plant-json.js, the fit budgets and the card's TOX_LADDER ----------
+  var BANDS = ['H1a', 'H1b', 'H1c', 'H2', 'H3', 'H4', 'H5', 'H6', 'H7'];
+  var SCALES = { pestRisk: 20, thirst: 20, careLevel: 20, growthSpeed: 20, sunNeed: 100, sunMin: 100 };
+  var LIGHT_WORDS = /\b(full sun|part shade|partial shade|semi[- ]shade|dappled|deep shade|shade)\b/i;
+  var COMPASS = /\b(north|south|east|west)\b/i;
+  var MONTHS = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12 };
+  var BUDGET = { visual: 190, water: 120, prune: 165, resilience: 165, uses: 150 };
+  var COMMERCIAL = ['source', 'order', 'bench', 'root', 'trade', 'retail', 'margin', 'type', 'shrink', 'returnRisk', 'pots'];
+  var TOX_LADDER = [
+    ['clear', /\bno (?:known )?hazard/i],
+    ['severe', /highly (?:toxic|poison)|particularly (?:dangerous|poisonous)|potentially dangerous|fatal|deadly/i],
+    ['harmful', /toxic|poison|harmful|cyanogenic/i],
+    ['harmful', /not (?:be )?(?:treated as |considered )?edible|should not be eaten|not to be eaten|do not eat/i],
+    ['edible', /\bedible\b|cooked for|for preserves/i],
+    ['caution', /irritant|irritat|sap\b|allerg|spine|sharp|glove|hairs/i]
+  ];
+  var TOX_WORD = { severe: 'Highly toxic', harmful: 'Toxic', caution: 'Handle with care', edible: 'Edible parts', clear: 'No known hazard' };
+  function toxMatch(t) { for (var i = 0; i < TOX_LADDER.length; i++) if (TOX_LADDER[i][1].test(t)) return TOX_LADDER[i][0]; return null; }
+  function parseMonths(str) {
+    if (!str) return [];
+    var out = [];
+    String(str).toLowerCase().split(/[,/&;]|\band\b/).forEach(function (part) {
+      var found = (part.match(/[a-z]{3,}/g) || []).map(function (w) { return MONTHS[w.slice(0, 3)]; }).filter(Boolean);
+      if (!found.length) return;
+      var m = found[0], end = found[found.length - 1];
+      for (var k = 0; k < 12; k++) { if (out.indexOf(m) < 0) out.push(m); if (m === end) break; m = m % 12 + 1; }
+    });
+    return out;
+  }
+  var norm = function (s) { return String(s || '').toLowerCase().replace(/[^a-z ]/g, ' ').split(/\s+/).filter(function (w) { return w.length > 3; }); };
+  var blank = function (v) { return v === '' || v == null; };
+
+  function validate(p) {
+    p = p || {};
+    var errors = [], warnings = [], notes = [];
+    ['common', 'latin', 'hardiness'].forEach(function (f) { if (!p[f] || !String(p[f]).trim()) errors.push('"' + f + '" is required'); });
+    var hue = Number(p.hue);
+    if (blank(p.hue)) warnings.push('"hue" is blank; the deck treats 0 as unset, so pick the dominant feature\'s hue (red 0, orange 30, yellow 55, green 120, blue 210, purple 275, pink 330)');
+    else if (!Number.isInteger(hue) || hue < 0 || hue > 360) errors.push('"hue" must be a whole number 0-360 (got ' + JSON.stringify(p.hue) + ')');
+    if (p.hardiness && BANDS.indexOf(String(p.hardiness).trim()) < 0) errors.push('"hardiness" is "' + p.hardiness + '" and must be one of ' + BANDS.join(', '));
+    if (p.hardiness === 'H5' && !p.hardinessNote) notes.push('hardiness is H5 with no note; H5 was the value every early mock-up wrongly carried, so check it against the label or RHS');
+    Object.keys(SCALES).forEach(function (f) {
+      var max = SCALES[f], v = p[f];
+      if (blank(v)) { notes.push('"' + f + '" is blank; its row or marker will not render'); return; }
+      var n = Number(v);
+      if (!Number.isInteger(n) || n < 0 || n > max) errors.push('"' + f + '" is ' + JSON.stringify(v) + ' and must be a whole number 0-' + max);
+      else if (max === 20 && n <= 5 && n !== 0) warnings.push('"' + f + '" is ' + n + ': valid, but it reads like a 0-5 rating that was not converted (x4). Confirm it means ' + (n / 4).toFixed(2) + '/5, not ' + n + '/5');
+    });
+    if (!blank(p.sunMin) && !blank(p.sunNeed) && Number(p.sunMin) > Number(p.sunNeed)) errors.push('"sunMin" (' + p.sunMin + ') is above "sunNeed" (' + p.sunNeed + '); the tolerated floor cannot exceed the preferred level');
+    if (p.aspect && LIGHT_WORDS.test(p.aspect) && !COMPASS.test(p.aspect)) errors.push('"aspect" is "' + p.aspect + '", a light level, not a facing. Light belongs in sunNeed; use "Any aspect" here');
+    if (p.aspect && !COMPASS.test(p.aspect) && !/any aspect/i.test(p.aspect)) warnings.push('"aspect" is "' + p.aspect + '": no compass direction, so the card will show "Any aspect"');
+    if (p.soil && p.soilWarning) {
+      var shared = norm(p.soil).filter(function (w) { return norm(p.soilWarning).indexOf(w) >= 0; });
+      if (shared.length) warnings.push('"soil" and "soilWarning" share the word(s) ' + shared.join(', ') + '; the warning should add a constraint, not repeat the soil type');
+    }
+    if (p.water && p.soil) {
+      var shared2 = norm(p.water).filter(function (w) { return norm(p.soil).indexOf(w) >= 0; });
+      if (shared2.length) warnings.push('"water" and "soil" share the word(s) ' + shared2.join(', ') + '; drainage belongs in one field, not both');
+    }
+    var soilLen = String(p.soil || '').length, warnLen = String(p.soilWarning || '').length;
+    if (soilLen > 36) errors.push('"soil" is ' + soilLen + ' characters; the fit step refuses anything over 36 (aim for 26)');
+    else if (soilLen > 26) warnings.push('"soil" is ' + soilLen + ' characters; over 26 it overflows the narrow soil panel');
+    if (warnLen > 60) errors.push('"soilWarning" is ' + warnLen + ' characters; the fit step refuses anything over 60 (aim for 44)');
+    else if (warnLen > 44) warnings.push('"soilWarning" is ' + warnLen + ' characters; over 44 it overflows into the warning triangle');
+    if (p.peak && !parseMonths(p.peak).length) errors.push('"peak" is "' + p.peak + '" and the app cannot parse it. Use "Mon-Mon", e.g. "Jul-Oct"');
+    if (!p.peak) warnings.push('"peak" is blank; the card has no season band');
+    if (p.latin) {
+      var L = String(p.latin);
+      if (!/^(×\s*)?[A-Z]/.test(L)) errors.push('"latin" should start with a capitalised genus');
+      if (((L.match(/'/g) || []).length) % 2) errors.push('"latin" has unbalanced quotes: ' + L);
+      if (/\bx\s/i.test(L) && L.indexOf('×') < 0) warnings.push('"latin" may need the × hybrid sign rather than the letter x');
+    }
+    if (p.foliage && !/(?:^|[^-\w])(semi-evergreen|evergreen|deciduous|herbaceous)/i.test(String(p.foliage))) errors.push('"foliage" must name one of evergreen / semi-evergreen / deciduous / herbaceous; a leaf description after it is fine');
+    if (!p.foliage) warnings.push('"foliage" is blank; the card cannot answer "will it look bare in winter?"');
+    if (p.pollination && !/(?:^|[^-\w])(needs partner|self-fertile|not applicable)/i.test(String(p.pollination))) errors.push('"pollination" must name one of "needs partner" / "self-fertile" / "not applicable"; detail after a semicolon is fine');
+    if (p.stockForm && ['container', 'bare-root', 'bare root', 'both'].indexOf(String(p.stockForm).trim().toLowerCase()) < 0) errors.push('"stockForm" is ' + JSON.stringify(p.stockForm) + '; expected container / bare-root / both');
+    if (p.clay && ['yes', 'no'].indexOf(String(p.clay).trim().toLowerCase()) < 0) errors.push('"clay" is ' + JSON.stringify(p.clay) + '; expected yes / no, or blank when not established');
+    if (p.rootSize && !/\d/.test(String(p.rootSize))) errors.push('"rootSize" carries no figure and would print an empty row; leave it blank and say why in "uncertain"');
+    if (p.container && ['yes', 'with care', 'no'].indexOf(String(p.container).toLowerCase()) < 0) warnings.push('"container" is "' + p.container + '"; expected yes / with care / no');
+    if (p.pest && String(p.pest).trim() && String(p.pest).trim().toLowerCase() !== 'slugs') errors.push('"pest" is an icon key and only "slugs" exists; move the pest prose into "resilience" as "Pests: …" and leave this blank');
+    if (!p.spread || !/\d/.test(String(p.spread))) warnings.push('"spread" carries no figure; the size rails need one');
+    if (!p.height || !/\d/.test(String(p.height))) warnings.push('"height" carries no figure; the size rails need one');
+    COMMERCIAL.forEach(function (f) { if (p[f] && String(p[f]).trim()) errors.push('"' + f + '" is commercial data and must come from Oscar, not research; remove it'); });
+    Object.keys(BUDGET).forEach(function (f) { var n = String(p[f] || '').length; if (n > BUDGET[f]) warnings.push('"' + f + '" is ' + n + ' characters; the fit step trims it sentence by sentence to ' + BUDGET[f]); });
+    SCHEMA_KEYS.forEach(function (k) { if (NUM_KEYS.indexOf(k) < 0 && LIST_KEYS.indexOf(k) < 0 && /\s\d{1,2}$/.test(String(p[k] || ''))) warnings.push('"' + k + '" ends in a number that looks like a citation marker'); });
+    var tox = String(p.toxicity || '').trim(), tier = null, matched = null;
+    if (!tox) warnings.push('"toxicity" is blank, which renders exactly like safe. Write "No known hazard." or the hazard');
+    else {
+      matched = toxMatch(tox); tier = matched || 'caution';
+      if (!matched) warnings.push('"toxicity" matches no keyword, so it prints "Handle with care" by accident. Name the hazard with a tier word, or write "No known hazard."');
+      if (tier === 'harmful' && /\b(no|not|non|without|free of)\b[^.]{0,40}(toxic|poison|harmful)/i.test(tox)) warnings.push('"toxicity" reads as reassuring but prints the orange "Toxic" rung because it contains a toxic word. If you mean safe, write exactly "No known hazard."');
+    }
+    if (p.uncertain != null && !Array.isArray(p.uncertain)) notes.push('"uncertain" should be a list');
+    return { errors: errors, warnings: warnings, notes: notes, tox: tier };
+  }
+
+  // ---------- deck doubles: an index of every dealt and held latin, by slug, seeded by Claude from timber.html ----------
+  var deckIndex = null, deckInfo = '';
+  function deckHit(name, latin) {
+    if (!deckIndex) return null;
+    var s = slug(latin || name); if (!s) return null;
+    if (deckIndex[s]) return { how: 'exact', slug: s, status: deckIndex[s] };
+    var words = s.split('-').filter(function (w) { return w.length > 2 && ['var', 'subsp', 'syn', 'the'].indexOf(w) < 0; });
+    if (words.length < 2) return null;
+    var hits = Object.keys(deckIndex).filter(function (k) { var ks = '-' + k + '-'; return words.every(function (w) { return ks.indexOf('-' + w + '-') >= 0; }); });
+    if (hits.length === 1) return { how: 'probable', slug: hits[0], status: deckIndex[hits[0]] };
+    return null;
+  }
+
+  // ---------- store: the artifact's shared db, or memory when this view has none ----------
+  var db = null, memN = 0, mem = { batches: [], cards: [] };
+  var caps = { sample: null, assets: null, downloads: null, mcp: null, user: null, limits: null, canWrite: true };
+  var batches = [], cards = [], batchId = null;
+  var unsubCards = null, unsubBatches = null;
+  var busy = {}; var ctl = null; var stopping = false;
+
+  var store = {
+    addBatch: function (b) { if (db) return db.doc('batches/' + b.id).set(b); mem.batches.unshift(b); return Promise.resolve().then(memRefresh); },
+    updateBatch: function (id, patch) { if (db) return db.doc('batches/' + id).update(patch); var b = mem.batches.filter(function (x) { return x.id === id; })[0]; if (b) Object.assign(b, patch); return Promise.resolve().then(memRefresh); },
+    addCard: function (c) {
+      if (db) { var ref = db.collection('cards').doc(); return ref.set(c).then(function () { return ref.id; }); }
+      c.id = 'm' + (++memN); mem.cards.push(c); return Promise.resolve().then(memRefresh).then(function () { return c.id; });
+    },
+    updateCard: function (id, patch) { if (db) return db.doc('cards/' + id).update(patch); var c = mem.cards.filter(function (x) { return x.id === id; })[0]; if (c) Object.assign(c, patch); return Promise.resolve().then(memRefresh); },
+    removeCard: function (id) { if (db) return db.doc('cards/' + id).delete(); mem.cards = mem.cards.filter(function (x) { return x.id !== id; }); return Promise.resolve().then(memRefresh); }
+  };
+  function memRefresh() { batches = mem.batches.slice(); onBatches(); cards = mem.cards.filter(function (c) { return c.batch === batchId; }).sort(function (a, b) { return a.order - b.order; }); renderList(); }
+
+  function subscribeBatches() {
+    if (unsubBatches) { unsubBatches(); unsubBatches = null; }
+    if (!db) return;
+    unsubBatches = db.collection('batches').orderBy('createdAt', 'desc').limit(200).onSnapshot(function (snap) {
+      batches = snap.docs.map(function (d) { var x = Object.assign({}, d.data() || {}); x.id = d.id; return x; });   /* snapshots are frozen: clone before adding the id */
+      onBatches();
+    }, function (e) { showBanner('The batch list could not be read (' + e.code + '). Reload the page.'); });
+  }
+  function subscribeCards() {
+    if (unsubCards) { unsubCards(); unsubCards = null; }
+    cards = [];
+    if (!db || !batchId) { renderList(); return; }
+    unsubCards = db.collection('cards').where('batch', '==', batchId).orderBy('order').onSnapshot(function (snap) {
+      cards = snap.docs.map(function (d) { var x = Object.assign({}, d.data() || {}); x.id = d.id; return x; });
+      renderList();
+      if (!els.handoff.hidden) renderHandoff();
+    }, function (e) { showBanner('The cards could not be read (' + e.code + '). Reload the page.'); });
+  }
+  function onBatches() {
+    var remembered = readLocal(STORE_KEY + ':batch');
+    if (!batchId || !batches.some(function (b) { return b.id === batchId; })) {
+      var pick = batches.filter(function (b) { return b.id === remembered; })[0] || batches[0] || null;
+      selectBatch(pick ? pick.id : null, true);
+    }
+    els.batchSel.innerHTML = batches.length
+      ? batches.map(function (b) { return '<option value="' + esc(b.id) + '"' + (b.id === batchId ? ' selected' : '') + '>' + esc(b.id) + (b.handedAt ? ' · handed' : '') + '</option>'; }).join('')
+      : '<option value="">No batch yet</option>';
+    renderBatchMeta();
+  }
+  function selectBatch(id, silent) {
+    if (id === batchId && !silent) return;
+    batchId = id;
+    if (id) writeLocal(STORE_KEY + ':batch', id);
+    if (db) subscribeCards(); else memRefresh();
+    renderBatchMeta();
+  }
+  function renderBatchMeta() {
+    var b = batches.filter(function (x) { return x.id === batchId; })[0];
+    if (!b) { els.batchMeta.textContent = db ? 'No batch yet. Adding a plant starts one named after today.' : 'Shared storage is not available in this view, so nothing you add here is saved.'; return; }
+    var when = b.createdAt ? new Date(b.createdAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '';
+    els.batchMeta.textContent = 'Started ' + when + (b.handedAt ? ' · handed to Claude Code ' + new Date(b.handedAt).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' }) : '') + (b.sessionId ? ' · session ' + b.sessionId : '') + (db ? '' : ' · not saved');
+  }
+  function nextBatchId() {
+    var base = localDate(), id = base, suffix = 'b'.charCodeAt(0);
+    while (batches.some(function (b) { return b.id === id; })) { id = base + String.fromCharCode(suffix++); }
+    return id;
+  }
+  function ensureBatch() {
+    if (batchId) return Promise.resolve(batchId);
+    var id = nextBatchId();
+    return store.addBatch({ id: id, createdAt: Date.now(), note: '', handedAt: null, sessionId: null }).then(function () { selectBatch(id, true); return id; });
+  }
+
+  // ---------- small UI helpers ----------
+  var toastTimer = null;
+  function toast(msg, ms) { els.toast.textContent = msg; clearTimeout(toastTimer); toastTimer = setTimeout(function () { els.toast.textContent = ''; }, ms || 5000); }
+  function showBanner(msg) { els.banner.textContent = msg; els.banner.hidden = !msg; }
+  function status(el, msg, bad) { el.textContent = msg || ''; el.className = 'status' + (bad ? ' bad' : ''); }
+  function setBusy(id, msg) { if (msg) busy[id] = msg; else delete busy[id]; renderList(); }
+  function copyText(text, btn) {
+    var done = function () { toast('Copied.'); };
+    var fail = function () { toast('Copying was blocked here; select the text and copy it yourself.'); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(text).then(done, fail); else fail();
+  }
+
+  // ---------- derived card facts ----------
+  function cardChecks(c) { return c.plant ? validate(c.plant) : null; }
+  function cardState(c) {
+    if (c.dealtAt) return { key: 'dealt', word: 'Dealt', cls: 'ok' };
+    if (!c.plant) return { key: 'named', word: 'Named', cls: '' };
+    var v = cardChecks(c);
+    if (v.errors.length) return { key: 'fix', word: 'Needs fixes', cls: 'bad' };
+    if (c.handedAt) return { key: 'handed', word: 'Handed', cls: 'ok' };
+    return { key: 'ready', word: 'Ready', cls: 'ok' };
+  }
+  function cleanPlant(p) {
+    var out = {};
+    SCHEMA_KEYS.forEach(function (k) {
+      var v = p ? p[k] : undefined;
+      if (NUM_KEYS.indexOf(k) >= 0) { if (blank(v)) out[k] = (k === 'sunMin' ? null : ''); else { var n = Number(v); out[k] = (typeof v === 'string' && v.trim() !== '' && !isNaN(n)) ? n : v; } }
+      else if (LIST_KEYS.indexOf(k) >= 0) out[k] = Array.isArray(v) ? v.map(String) : (v ? [String(v)] : []);
+      else out[k] = v == null ? '' : (typeof v === 'string' ? v : String(v));
+    });
+    return out;
+  }
+  function exportable() { return cards.filter(function (c) { return c.plant && !c.dealtAt && !validate(c.plant).errors.length; }); }
+  /* Cards the JSON file cannot carry, named, so they are never dropped without a word. */
+  function leftOut() {
+    return cards.filter(function (c) { return !c.dealtAt && (!c.plant || validate(c.plant).errors.length); })
+      .map(function (c) { return { name: c.plant && c.plant.latin || c.name, why: c.plant ? 'needs fixes' : 'not researched' }; });
+  }
+
+  // ---------- rendering the list ----------
+  function thumbHtml(c) {
+    if (c.photos && c.photos.length) return '<div class="thumb"><img src="/_blob/' + esc(c.photos[0].id) + '" alt=""></div>';
+    var initial = (c.plant && c.plant.latin || c.name || '?').trim().charAt(0).toUpperCase();
+    return '<div class="thumb" aria-hidden="true">' + esc(initial) + '</div>';
+  }
+  function renderList() {
+    var live = cards.filter(function (c) { return !c.dealtAt; });
+    var ready = exportable().length, unresearched = live.filter(function (c) { return !c.plant; }).length;
+    els.count.textContent = cards.length ? cards.length + ' card' + (cards.length === 1 ? '' : 's') + ' · ' + ready + ' ready' : '';
+    els.researchAll.textContent = unresearched ? 'Research all (' + unresearched + ')' : 'Research all';
+    els.researchAll.disabled = !unresearched || !caps.sample || !!ctl;
+    els.downloadJson.hidden = !caps.downloads;
+    els.downloadJson.disabled = !ready;
+    els.openHandoff.disabled = !cards.length;
+    if (!cards.length) {
+      els.list.innerHTML =
+        '<li class="row example"><div class="thumb" aria-hidden="true">K</div><div class="body">' +
+        '<div class="name">Kniphofia \'Pyromania Orange Blaze\'</div><div class="sub">Red Hot Poker · H5 · Jul-Oct</div>' +
+        '<div class="meta"><span class="chip">Example</span><span class="chip ok">Ready</span><span class="chip ok">No known hazard</span><span class="chip">1 photo</span></div>' +
+        '<div class="sub">This is what a finished card looks like here. Paste names above, or read them off label photos, and each one gets a row like this: Claude drafts the JSON, the checks mark anything the deck would refuse, and the photo you attach rides with it.</div>' +
+        '</div></li>';
+      return;
+    }
+    els.list.innerHTML = cards.map(function (c) {
+      var p = c.plant, v = cardChecks(c), st = cardState(c), hit = deckHit(c.name, p && p.latin);
+      var chips = ['<span class="chip ' + st.cls + '">' + st.word + '</span>'];
+      if (v && v.tox) chips.push('<span class="chip ' + (v.tox === 'clear' ? 'ok' : v.tox === 'edible' ? '' : v.tox === 'caution' ? 'warn' : 'bad') + '">' + TOX_WORD[v.tox] + '</span>');
+      if (p && v && !v.errors.length && v.warnings.length) chips.push('<span class="chip warn">' + v.warnings.length + ' warning' + (v.warnings.length === 1 ? '' : 's') + '</span>');
+      if (hit) chips.push('<span class="chip ' + (hit.how === 'exact' ? 'bad' : 'warn') + '" title="' + esc(hit.slug) + '">' + (hit.how === 'exact' ? 'In deck · ' + hit.status : 'Probable double · ' + hit.status) + '</span>');
+      chips.push('<span class="chip">' + (c.photos && c.photos.length ? c.photos.length + ' photo' + (c.photos.length === 1 ? '' : 's') : 'no photo') + '</span>');
+      if (p && c.research) chips.push('<span class="chip">Unchecked draft</span>');
+      var msgs = '';
+      if (v && (v.errors.length || v.warnings.length)) {
+        var items = v.errors.slice(0, 3).map(function (m) { return '<li class="e">✗ ' + esc(m) + '</li>'; })
+          .concat(v.warnings.slice(0, v.errors.length ? 1 : 2).map(function (m) { return '<li class="w">! ' + esc(m) + '</li>'; }));
+        var more = v.errors.length + v.warnings.length - items.length;
+        if (more > 0) items.push('<li class="n">… ' + more + ' more in Edit</li>');
+        msgs = '<ul class="msgs">' + items.join('') + '</ul>';
+      }
+      var sub = p ? [p.common, p.hardiness, p.peak].filter(Boolean).join(' · ') : (c.label ? 'Label: ' + c.label.slice(0, 80) : 'Not researched yet');
+      var b = busy[c.id];
+      var acts = '';
+      if (b) acts = '<div class="busy">' + esc(b) + '</div>';
+      else if (!c.dealtAt) {
+        acts = '<div class="acts">' +
+          (!p ? '<button class="btn sm primary" type="button" data-act="research">Research</button>' : '') +
+          (p && v.errors.length ? '<button class="btn sm primary" type="button" data-act="fix">Fix with Claude</button>' : '') +
+          (p ? '<button class="btn sm" type="button" data-act="edit">Edit</button>' : '<button class="btn sm" type="button" data-act="edit">Label notes</button>') +
+          (p ? '<button class="btn sm" type="button" data-act="research">Again</button>' : '') +
+          (caps.assets ? '<span class="pick"><label class="btn sm" for="ph-' + esc(c.id) + '">Photo</label><input id="ph-' + esc(c.id) + '" type="file" accept="image/*" multiple data-photo="' + esc(c.id) + '"></span>' : '') +
+          '<button class="btn sm quiet danger" type="button" data-act="remove">' + (c._confirm ? 'Really remove?' : 'Remove') + '</button>' +
+          '</div>';
+      } else acts = '<div class="acts"><button class="btn sm" type="button" data-act="edit">View</button></div>';
+      var photos = c.photos && c.photos.length && !c.dealtAt
+        ? '<div class="photos">' + c.photos.map(function (ph, i) { return '<span class="ph"><img src="/_blob/' + esc(ph.id) + '" alt="' + esc(ph.name || 'photo') + '"><button type="button" data-unphoto="' + i + '" aria-label="Remove photo ' + (i + 1) + '">×</button></span>'; }).join('') + '</div>'
+        : '';
+      return '<li class="row' + (c.dealtAt ? ' dealt' : '') + '" data-id="' + esc(c.id) + '">' + thumbHtml(c) +
+        '<div class="body"><div class="name">' + esc(p && p.latin || c.name) + '</div><div class="sub">' + esc(sub) + '</div>' +
+        '<div class="meta">' + chips.join('') + '</div>' + msgs + photos + acts + '</div></li>';
+    }).join('');
+  }
+
+  // ---------- research: one call per plant, one repair call when the checks refuse the draft ----------
+  function parseJsonReply(text) {
+    var t = String(text || '').trim();
+    try { return JSON.parse(t); } catch (e) { /* fall through */ }
+    var fence = t.match(/```(?:json)?\s*([\s\S]*?)```/);
+    if (fence) { try { return JSON.parse(fence[1].trim()); } catch (e) { /* fall through */ } }
+    var a = t.indexOf('{'), b = t.lastIndexOf('}'), c = t.indexOf('['), d = t.lastIndexOf(']');
+    var s = (a >= 0 && (c < 0 || a < c)) ? t.slice(a, b + 1) : (c >= 0 ? t.slice(c, d + 1) : '');
+    if (s) { try { return JSON.parse(s); } catch (e) { /* fall through */ } }
+    return undefined;
+  }
+  function sampleCopy(e) {
+    var code = e && e.code || 'upstream_error';
+    switch (code) {
+      case 'cancelled': return '';
+      case 'not_granted': return 'This page is not allowed to use Claude in this view, so research is off here.';
+      case 'sampling_disabled': return 'Claude is not available on this account right now.';
+      case 'rate_limited': return 'Claude is busy for this page, or your usage limit is reached. Wait a minute and try again.';
+      case 'refused': return 'Claude declined this one. Change the name or the notes and try again.';
+      case 'invalid_json': return 'The reply was not one JSON object. Try again; if it keeps failing, shorten the notes.';
+      case 'prompt_too_large': return 'The notes are too long for one call. Shorten them.';
+      case 'empty_completion': return 'Claude wrote nothing. Try again with a shorter note.';
+      case 'images_unavailable': case 'image_rejected': return 'That photo could not be sent. Try a JPEG or PNG under 20 MB.';
+      case 'session_expired': return 'Sign in again, then retry.';
+      default: return 'The call failed (' + code + '). ' + (e && e.message ? e.message : 'Try again.');
+    }
+  }
+  function researchPrompt(c) {
+    return BRIEF + '\n\nPLANT TO RESEARCH: ' + c.name +
+      '\nFROM THE LABEL (authoritative for the name, hardiness, height and spread where it states them): ' + (c.label && c.label.trim() ? c.label.trim() : 'nothing supplied') +
+      '\nNOTES FROM OSCAR: ' + (c.notes && c.notes.trim() ? c.notes.trim() : 'none') +
+      '\n\nReply with only the JSON object.';
+  }
+  function repairPrompt(c, plant, v) {
+    return BRIEF + '\n\nYou drafted this JSON for "' + c.name + '":\n' + JSON.stringify(plant, null, 1) +
+      '\n\nThe deck\'s validator REJECTS it:\n- ' + v.errors.join('\n- ') +
+      (v.warnings.length ? '\n\nIt also warns:\n- ' + v.warnings.join('\n- ') : '') +
+      '\n\nReturn the corrected JSON object only. Keep every value you are confident in; change only what the validator names; never invent to satisfy a check. Where you cannot fix a value honestly, blank it and name it in "uncertain".';
+  }
+  function callClaude(prompt, opts) {
+    var sample = caps.sample;
+    return sample(prompt, opts).then(function (r) {
+      var val = parseJsonReply(r.text);
+      if (val === undefined) throw { code: 'invalid_json', message: 'no JSON in the reply', text: r.text };
+      return { value: val, truncated: r.truncated, tier: r.modelTierApplied };
+    });
+  }
+  function research(c, fresh) {
+    if (!caps.sample) { toast('Research needs Claude in this view.'); return Promise.resolve(); }
+    var thisCtl = new AbortController(); ctl = thisCtl; renderDock();
+    var tier = els.tier.value;
+    setBusy(c.id, 'Researching with Claude');
+    var progress = function (u) { busy[c.id] = 'Writing the draft (' + u.text.length + ' characters)'; var row = els.list.querySelector('[data-id="' + c.id + '"] .busy'); if (row) row.textContent = busy[c.id]; };
+    var rounds = 1, applied = '', truncated = false, ok = false;
+    var opts = { modelTier: tier, signal: thisCtl.signal, onText: progress };
+    if (fresh) opts.cache = false;
+    return callClaude(researchPrompt(c), opts)
+      .then(function (r) {
+        applied = r.tier; truncated = r.truncated;
+        var plant = cleanPlant(r.value), v = validate(plant);
+        if (!v.errors.length || thisCtl.signal.aborted) return { plant: plant, v: v };
+        busy[c.id] = 'Fixing ' + v.errors.length + ' validator error' + (v.errors.length === 1 ? '' : 's'); renderList();
+        rounds = 2;
+        return callClaude(repairPrompt(c, plant, v), { modelTier: tier, signal: thisCtl.signal, cache: false })
+          .then(function (r2) { var p2 = cleanPlant(r2.value), v2 = validate(p2); return { plant: p2, v: v2 }; }, function (e) { if (e && e.code === 'cancelled') throw e; return { plant: plant, v: v, repairFailed: sampleCopy(e) }; });
+      })
+      .then(function (res) {
+        return store.updateCard(c.id, {
+          plant: res.plant,
+          validation: { errors: res.v.errors, warnings: res.v.warnings, notes: res.v.notes, tox: res.v.tox },
+          research: { tier: tier, applied: applied, at: Date.now(), rounds: rounds, truncated: truncated, checkedOnline: false, source: 'page sample, no web access' },
+          updatedAt: Date.now()
+        }).then(function () { ok = true; if (res.repairFailed) toast('Draft saved; the repair call failed: ' + res.repairFailed); });
+      })
+      .catch(function (e) { var m = sampleCopy(e); if (m) toast(m); if (e && e.code === 'not_granted') { caps.sample = null; } })
+      .then(function () { if (ctl === thisCtl) ctl = null; setBusy(c.id, null); renderDock(); return ok; });
+  }
+  function fixWithClaude(c) {
+    if (!caps.sample || !c.plant) return Promise.resolve();
+    var v = validate(c.plant); if (!v.errors.length) return Promise.resolve();
+    var thisCtl = new AbortController(); ctl = thisCtl; renderDock();
+    setBusy(c.id, 'Fixing ' + v.errors.length + ' validator error' + (v.errors.length === 1 ? '' : 's'));
+    return callClaude(repairPrompt(c, c.plant, v), { modelTier: els.tier.value, signal: thisCtl.signal, cache: false })
+      .then(function (r) {
+        var p2 = cleanPlant(r.value), v2 = validate(p2);
+        var rs = Object.assign({}, c.research || {}, { at: Date.now(), rounds: (c.research && c.research.rounds || 1) + 1, checkedOnline: false });
+        return store.updateCard(c.id, { plant: p2, validation: { errors: v2.errors, warnings: v2.warnings, notes: v2.notes, tox: v2.tox }, research: rs, updatedAt: Date.now() });
+      })
+      .catch(function (e) { var m = sampleCopy(e); if (m) toast(m); })
+      .then(function () { if (ctl === thisCtl) ctl = null; setBusy(c.id, null); renderDock(); });
+  }
+  function researchAll() {
+    var queue = cards.filter(function (c) { return !c.plant && !c.dealtAt && !busy[c.id]; });
+    if (!queue.length || ctl) return;
+    stopping = false;
+    var i = 0;
+    var step = function () {
+      if (stopping || i >= queue.length) { stopping = false; renderDock(); toast(i ? 'Researched ' + i + ' of ' + queue.length + '.' : ''); return; }
+      var c = queue[i++];
+      toast('Researching ' + i + ' of ' + queue.length + ': ' + c.name);
+      return research(c, false).then(function (ok) { if (ok && !stopping && caps.sample) return step(); if (!ok) toast('Stopped after a failed call; fix it, then run Research all again.'); renderDock(); });   /* one failure ends the run: a loop never retries */
+    };
+    step();
+  }
+  function renderDock() {
+    els.stopAll.hidden = !ctl;
+    els.researchAll.hidden = !!ctl;
+    els.researchAll.disabled = !caps.sample || !cards.some(function (c) { return !c.plant && !c.dealtAt; });
+  }
+
+  // ---------- intake: names typed, or label photos read by Claude ----------
+  var lastOrder = 0;
+  function createCard(name, label) {
+    return ensureBatch().then(function (id) {
+      lastOrder = Math.max(Date.now(), lastOrder + 1);   /* strictly increasing, so names added together keep their order */
+      return store.addCard({ batch: id, name: name, label: label || '', notes: '', plant: null, photos: [], validation: null, research: null, createdAt: Date.now(), updatedAt: Date.now(), order: lastOrder + Math.random() / 2, handedAt: null, dealtAt: null });
+    });
+  }
+  /* A line is a name, or a row of the Label Scanner's Copy table: name, tab, other text on the label, tab, photo file. */
+  function parseNameLines(text) {
+    return String(text || '').split(/\n+/).map(function (line) {
+      var cols = line.split('\t').map(function (s) { return s.trim(); });
+      if (/^name$/i.test(cols[0]) && cols.length > 1) return null;   // the table's header row
+      return cols[0] ? { name: cols[0], label: cols[1] || '' } : null;
+    }).filter(Boolean);
+  }
+  function addEntries(entries, done) {
+    var i = 0;
+    var next = function () {
+      if (i >= entries.length) { done(); status(els.intakeStatus, 'Added ' + entries.length + ' plant' + (entries.length === 1 ? '' : 's') + '. Research them from the list below.'); return; }
+      var e = entries[i++];
+      return createCard(e.name, e.label).then(next);
+    };
+    return Promise.resolve().then(next);
+  }
+  function addNames() {
+    var entries = parseNameLines(els.names.value);
+    if (!entries.length) { status(els.intakeStatus, 'Type or paste at least one name.', true); return; }
+    els.addNames.disabled = true;
+    addEntries(entries, function () { els.names.value = ''; els.addNames.disabled = false; })
+      .catch(function (e) { els.addNames.disabled = false; status(els.intakeStatus, 'Could not save: ' + (e && e.code || e), true); });
+  }
+
+  // ---------- on-device label scanning: the Label Scanner's reader, loaded on first use ----------
+  var scanned = [], scanBusy = false, scannerLoad = null, scanN = 0;
+  function loadScript(src) {
+    return new Promise(function (resolve, reject) {
+      var s = document.createElement('script'); s.src = src;
+      s.onload = resolve; s.onerror = function () { reject(new Error('could not load ' + src)); };
+      document.head.appendChild(s);
+    });
+  }
+  function loadScanner() {
+    if (!scannerLoad) {
+      scannerLoad = (typeof ort !== 'undefined' ? Promise.resolve() : loadScript('ort.wasm.min.js'))
+        .then(function () { return window.TimberLabelScanner ? null : loadScript('label-scanner.js'); })
+        .then(function () { if (!window.TimberLabelScanner) throw new Error('the reader did not start'); return window.TimberLabelScanner; });
+      scannerLoad.catch(function () { scannerLoad = null; });
+    }
+    return scannerLoad;
+  }
+  function setScanBar(pct) {
+    els.scanBarWrap.hidden = pct == null;
+    if (pct != null) els.scanBar.style.width = Math.max(0, Math.min(100, pct)) + '%';
+  }
+  function needsCheck(s) { return !s.name || s.check || s.conf < 0.85; }
+  function renderScanned() {
+    var live = scanned.filter(function (s) { return s.state !== 'gone'; });
+    els.scanList.hidden = !live.length; els.scanActs.hidden = !live.some(function (s) { return s.state === 'done'; });
+    var ready = live.filter(function (s) { return s.state === 'done' && s.name.trim(); }).length;
+    els.scanAdd.textContent = ready ? 'Add ' + ready + ' to batch' : 'Add to batch';
+    els.scanAdd.disabled = !ready || scanBusy;
+    var f = document.activeElement, keep = f && els.scanList.contains(f) ? { id: f.id, a: f.selectionStart, b: f.selectionEnd } : null;   /* a row being typed in keeps its caret through a re-render */
+    els.scanList.innerHTML = live.map(function (s) {
+      var sub = s.state === 'reading' ? 'Reading…' : s.state === 'waiting' ? 'Waiting' : s.state === 'error' ? 'Could not read: ' + s.error
+        : needsCheck(s) ? 'Check this against the photo' + (s.why ? ' (' + s.why + ')' : '') : 'Read clearly';
+      return '<li class="srow' + (s.state === 'done' && needsCheck(s) ? ' check' : '') + '" data-scan="' + s.id + '">' +
+        (s.thumb ? '<img src="' + esc(s.thumb) + '" alt="Label photo ' + esc(s.file) + '">' : '<span class="ph0" aria-hidden="true"></span>') +
+        '<div class="body"><input type="text" id="scan-' + s.id + '" aria-label="Plant name read from ' + esc(s.file) + '" value="' + esc(s.name) + '"' + (s.state === 'done' ? '' : ' disabled') + '>' +
+        '<div class="sub">' + esc(sub) + (s.other ? ' · label: ' + esc(s.other.slice(0, 90)) : '') + '</div></div>' +
+        '<button class="x" type="button" data-unscan="' + s.id + '" aria-label="Drop this label">×</button></li>';
+    }).join('');
+    if (keep && keep.id) { var el = document.getElementById(keep.id); if (el) { el.focus(); try { el.setSelectionRange(keep.a, keep.b); } catch (e) { /* not a text field */ } } }
+  }
+  function scanFiles(files) {
+    var list = Array.prototype.slice.call(files).filter(function (f) { return !f.type || f.type.indexOf('image/') === 0; });
+    if (!list.length) return;
+    list.forEach(function (f) { scanned.push({ id: ++scanN, file: f.name || 'photo', blob: f, name: '', other: '', conf: 0, check: true, why: '', thumb: '', state: 'waiting' }); });
+    renderScanned();
+    if (!scanBusy) pumpScans();
+  }
+  function pumpScans() {
+    scanBusy = true; renderScanned();
+    status(els.intakeStatus, 'Getting the label reader ready.');
+    return loadScanner().then(function (reader) {
+      reader.onProgress = function (p) { if (p.pct != null) { setScanBar(p.pct); status(els.intakeStatus, p.text); } };
+      return reader.ensure().then(function () {
+        setScanBar(null);
+        var step = function () {
+          var s = scanned.filter(function (x) { return x.state === 'waiting'; })[0];
+          if (!s) return;
+          s.state = 'reading'; renderScanned();
+          var left = scanned.filter(function (x) { return x.state === 'waiting'; }).length;
+          status(els.intakeStatus, 'Reading ' + s.file + (left ? ' (' + left + ' more after this)' : '') + '.');
+          return reader.scan(s.blob, els.scanSmall.checked).then(function (r) {
+            s.name = r.name || ''; s.conf = r.conf || 0; s.check = !!r.check; s.why = r.why || ''; s.thumb = r.thumb || '';
+            s.other = els.scanSmall.checked ? (r.other || []).join(' · ') : ''; s.state = 'done'; s.blob = null;
+          }, function (e) { s.state = 'error'; s.error = e && e.message ? e.message : String(e); s.blob = null; })
+            .then(function () { renderScanned(); return step(); });
+        };
+        return step();
+      });
+    }).then(function () {
+      var done = scanned.filter(function (s) { return s.state === 'done'; });
+      var check = done.filter(needsCheck).length;
+      status(els.intakeStatus, done.length ? 'Read ' + done.length + ' label' + (done.length === 1 ? '' : 's') + '.' + (check ? ' ' + check + ' marked to check: fix the name by typing over it.' : '') + ' Then add them to the batch.' : 'No labels were read.');
+    }, function (e) {
+      setScanBar(null);
+      scanned.forEach(function (s) { if (s.state === 'waiting' || s.state === 'reading') { s.state = 'error'; s.error = 'the reader did not start'; } });
+      status(els.intakeStatus, 'The label reader could not start here (' + (e && e.message ? e.message : e) + '). Type the names, or use Read with Claude.', true);
+    }).then(function () { scanBusy = false; renderScanned(); });
+  }
+  function addScanned() {
+    var take = scanned.filter(function (s) { return s.state === 'done' && s.name.trim(); });
+    if (!take.length) return;
+    els.scanAdd.disabled = true;
+    addEntries(take.map(function (s) { return { name: s.name.trim(), label: s.other }; }), function () {
+      take.forEach(function (s) { s.state = 'gone'; });
+      scanned = scanned.filter(function (s) { return s.state !== 'gone'; });
+      renderScanned();
+    }).catch(function (e) { renderScanned(); status(els.intakeStatus, 'Could not save: ' + (e && e.code || e), true); });
+  }
+  function labelPrompt(n) {
+    return 'Each image is a photograph of a plant label on a UK garden-centre bench (' + n + ' image' + (n === 1 ? '' : 's') + ', in order). For each image read the plant name printed: genus, species and the cultivar or trade name exactly as printed (trade names in capitals with the cultivar code in quotes where both are printed), plus the common name if printed. Ignore prices, barcodes, pot sizes and passport codes, but copy any care text, hardiness and sizes into label_text. Reply with only a JSON array, one object per image in the same order: {"latin": string, "common": string, "label_text": string}. If a label cannot be read, use an empty latin and say why in label_text.';
+  }
+  function readLabels(files) {
+    var sample = caps.sample;
+    if (!sample) { status(els.intakeStatus, 'Reading labels needs Claude in this view. Type the names instead.', true); return; }
+    if (!caps.limits || !caps.limits.images) { status(els.intakeStatus, 'This view cannot send photos to Claude. Type the names instead, or use the Label Scanner.', true); return; }
+    var max = Math.max(1, caps.limits.images.maxCount || 1);
+    var list = Array.prototype.slice.call(files);
+    var thisCtl = new AbortController(); ctl = thisCtl; renderDock();
+    var i = 0, made = 0;
+    var step = function () {
+      if (i >= list.length || thisCtl.signal.aborted) { if (ctl === thisCtl) ctl = null; renderDock(); status(els.intakeStatus, made ? 'Added ' + made + ' plant' + (made === 1 ? '' : 's') + ' from ' + list.length + ' label photo' + (list.length === 1 ? '' : 's') + '. Check each name against the label before researching.' : 'No names were read.'); return; }
+      var chunk = list.slice(i, i + max); i += chunk.length;
+      status(els.intakeStatus, 'Reading label' + (chunk.length === 1 ? '' : 's') + ' ' + (i - chunk.length + 1) + '–' + i + ' of ' + list.length + '. Claude is looking at the photo' + (chunk.length === 1 ? '' : 's') + '.');
+      return sample(labelPrompt(chunk.length), { images: chunk, modelTier: 'default', signal: thisCtl.signal, cache: false })
+        .then(function (r) {
+          var arr = parseJsonReply(r.text);
+          if (!Array.isArray(arr)) throw { code: 'invalid_json', message: 'not an array' };
+          var k = 0;
+          var add = function () {
+            if (k >= arr.length) return;
+            var e = arr[k++] || {};
+            var name = String(e.latin || e.name || '').trim();
+            if (!name) return add();
+            return createCard(name, String(e.label_text || '').trim()).then(function () { made++; return add(); });
+          };
+          return add();
+        })
+        .then(step, function (e) { if (ctl === thisCtl) ctl = null; renderDock(); var m = sampleCopy(e); status(els.intakeStatus, m || 'Stopped.', !!m); });
+    };
+    step();
+  }
+
+  // ---------- photos: uploaded as artifact assets, the id kept on the card ----------
+  function addPhotos(c, files) {
+    var assets = caps.assets; if (!assets) return Promise.resolve();
+    var list = Array.prototype.slice.call(files);
+    setBusy(c.id, 'Uploading ' + list.length + ' photo' + (list.length === 1 ? '' : 's'));
+    var photos = (c.photos || []).slice();
+    var i = 0;
+    var step = function () {
+      if (i >= list.length) return store.updateCard(c.id, { photos: photos, updatedAt: Date.now() });
+      var f = list[i++];
+      busy[c.id] = 'Uploading photo ' + i + ' of ' + list.length; renderList();
+      return assets.upload(f).then(function (r) {
+        photos.push({ id: r.id, name: f.name || ('photo-' + i + '.jpg'), bytes: r.sizeBytes, type: r.contentType, kind: photos.length ? 'flash' : 'card', at: Date.now() });
+        return step();
+      });
+    };
+    return step().catch(function (e) {
+      var code = e && e.code || 'upstream_error';
+      toast(code === 'too_large' ? 'That photo is over 20 MB; send a smaller one.' : code === 'unsupported_type' ? 'Only JPEG, PNG, WebP or GIF photos can be stored.' : code === 'quota_or_state' ? 'The photo store is full; remove old photos first.' : 'Upload failed (' + code + ').');
+      if (photos.length !== (c.photos || []).length) return store.updateCard(c.id, { photos: photos, updatedAt: Date.now() });
+    }).then(function () { setBusy(c.id, null); });
+  }
+  function removePhoto(c, i) {
+    var assets = caps.assets; var ph = (c.photos || [])[i]; if (!assets || !ph) return Promise.resolve();
+    var photos = c.photos.filter(function (_, k) { return k !== i; }).map(function (p, k) { return Object.assign({}, p, { kind: k ? 'flash' : 'card' }); });
+    return store.updateCard(c.id, { photos: photos, updatedAt: Date.now() }).then(function () { return assets.delete(ph.id); }).catch(function (e) { toast('Could not remove the photo (' + (e && e.code || e) + ').'); });
+  }
+
+  // ---------- editor sheet ----------
+  var FIELDS = [
+    ['Identity', [['common', 'Common name'], ['latin', 'Latin, as the label prints it'], ['hue', 'Hue 0–360', 'num']]],
+    ['Hardiness', [['hardiness', 'RHS band', 'band'], ['hardinessNote', 'Hardiness note', 'text']]],
+    ['Size', [['height', 'Height'], ['spread', 'Spread'], ['rootSize', 'Root size (blank unless known)']]],
+    ['Season and look', [['peak', 'Peak, Mon-Mon'], ['visual', 'Visual line', 'text', 'visual'], ['foliage', 'Foliage: evergreen / semi-evergreen / deciduous / herbaceous; description', 'text']]],
+    ['Scores, 0–20 (sun 0–100)', [['pestRisk', 'Pest risk', 'num'], ['thirst', 'Thirst', 'num'], ['careLevel', 'Care level', 'num'], ['growthSpeed', 'Growth speed', 'num'], ['sunNeed', 'Sun need', 'num'], ['sunMin', 'Sun minimum', 'num'], ['pest', 'Pest icon key: blank or slugs']]],
+    ['Site', [['aspect', 'Aspect, a compass facing'], ['soil', 'Soil', 'short', 'soil'], ['soilWarning', 'Soil warning', 'short', 'soilWarning'], ['water', 'Water', 'text', 'water'], ['prune', 'Prune', 'text', 'prune']]],
+    ['Safety', [['toxicity', 'Toxicity, printed verbatim', 'text'], ['compliance', 'Compliance', 'text']]],
+    ['More', [['cvs', 'Sibling cultivars', 'text'], ['resilience', 'Resilience', 'text', 'resilience'], ['uses', 'Uses', 'text', 'uses'], ['stockForm', 'Stock form: container / bare-root / both'], ['pollination', 'Pollination: needs partner / self-fertile / not applicable; detail'], ['clay', 'Clay: yes / no / blank'], ['container', 'Container: yes / with care / no']]],
+    ['Record only (never on the card)', [['uncertain', 'Uncertain, one per line', 'lines'], ['sources', 'Sources, one per line', 'lines']]]
+  ];
+  var LIMITS = { soil: [26, 36], soilWarning: [44, 60], visual: [190, 190], water: [120, 120], prune: [165, 165], resilience: [165, 165], uses: [150, 150] };
+  var editing = null;
+  function openEditor(c) {
+    editing = { id: c.id, name: c.name, label: c.label || '', notes: c.notes || '', plant: c.plant ? cleanPlant(c.plant) : null, readOnly: !!c.dealtAt };
+    els.edTitle.textContent = c.plant && c.plant.latin || c.name;
+    els.edName.value = c.name; els.edLabel.value = editing.label; els.edNotes.value = editing.notes;
+    els.edForm.innerHTML = editing.plant ? FIELDS.map(function (g) {
+      return '<div class="group"><h3>' + esc(g[0]) + '</h3><div class="' + (g[1].length > 2 ? 'two' : '') + '">' + g[1].map(function (f) {
+        var key = f[0], label = f[1], kind = f[2] || 'line', lim = LIMITS[f[3] || key];
+        var v = editing.plant[key];
+        var id = 'f-' + key, cnt = lim ? '<span class="cnt" data-cnt="' + key + '"></span>' : '';
+        var ctrl;
+        if (kind === 'num') ctrl = '<input type="number" id="' + id + '" data-key="' + key + '" value="' + esc(v == null ? '' : v) + '" inputmode="numeric">';
+        else if (kind === 'band') ctrl = '<select id="' + id + '" data-key="' + key + '"><option value="">—</option>' + BANDS.map(function (b) { return '<option' + (v === b ? ' selected' : '') + '>' + b + '</option>'; }).join('') + '</select>';
+        else if (kind === 'text') ctrl = '<textarea id="' + id + '" data-key="' + key + '" rows="2">' + esc(v) + '</textarea>';
+        else if (kind === 'lines') ctrl = '<textarea id="' + id + '" data-key="' + key + '" rows="3">' + esc((v || []).join('\n')) + '</textarea>';
+        else ctrl = '<input type="text" id="' + id + '" data-key="' + key + '" value="' + esc(v) + '">';
+        return '<div class="field"><label for="' + id + '">' + esc(label) + ' ' + cnt + '</label>' + ctrl + '</div>';
+      }).join('') + '</div></div>';
+    }).join('') : '<p class="note">No JSON yet. Save the label text and notes, then research this card; both go into the research call.</p>';
+    els.edChecks.hidden = !editing.plant;
+    els.edSave.textContent = editing.readOnly ? 'Save notes' : 'Save';
+    refreshEditorChecks();
+    els.editor.hidden = false;
+    document.body.style.overflow = 'hidden';
+    els.edName.focus();
+  }
+  function closeEditor() { editing = null; els.editor.hidden = true; document.body.style.overflow = ''; }
+  function readEditorPlant() {
+    if (!editing || !editing.plant) return null;
+    var p = Object.assign({}, editing.plant);
+    els.edForm.querySelectorAll('[data-key]').forEach(function (el) {
+      var k = el.getAttribute('data-key'), v = el.value;
+      if (LIST_KEYS.indexOf(k) >= 0) p[k] = v.split(/\n+/).map(function (s) { return s.trim(); }).filter(Boolean);
+      else p[k] = v;
+    });
+    return cleanPlant(p);
+  }
+  function refreshEditorChecks() {
+    if (!editing) return;
+    var p = readEditorPlant();
+    Object.keys(LIMITS).forEach(function (k) {
+      var el = els.edForm.querySelector('[data-cnt="' + k + '"]'); if (!el || !p) return;
+      var n = String(p[k] || '').length, soft = LIMITS[k][0], hard = LIMITS[k][1];
+      el.textContent = n + '/' + soft + (n > hard ? ' (refused over ' + hard + ')' : ''); el.className = 'cnt' + (n > soft ? ' over' : '');
+    });
+    if (!p) { els.edMsgs.innerHTML = ''; els.edRaw.textContent = ''; return; }
+    var v = validate(p);
+    var items = v.errors.map(function (m) { return '<li class="e">✗ ' + esc(m) + '</li>'; })
+      .concat(v.warnings.map(function (m) { return '<li class="w">! ' + esc(m) + '</li>'; }))
+      .concat(v.notes.map(function (m) { return '<li class="n">· ' + esc(m) + '</li>'; }));
+    if (v.tox) items.unshift('<li class="n">Safety pill prints: <strong>' + esc(TOX_WORD[v.tox]) + '</strong></li>');
+    els.edMsgs.innerHTML = items.length ? items.join('') : '<li class="n">Nothing the deck would refuse.</li>';
+    els.edRaw.textContent = JSON.stringify(p, null, 2);
+  }
+  function saveEditor() {
+    if (!editing) return;
+    var p = readEditorPlant();
+    var patch = { name: els.edName.value.trim() || editing.name, label: els.edLabel.value, notes: els.edNotes.value, updatedAt: Date.now() };
+    if (p && !editing.readOnly) { var v = validate(p); patch.plant = p; patch.validation = { errors: v.errors, warnings: v.warnings, notes: v.notes, tox: v.tox }; }
+    var id = editing.id;
+    els.edSave.disabled = true;
+    store.updateCard(id, patch).then(function () { els.edSave.disabled = false; closeEditor(); toast('Saved.'); }, function (e) { els.edSave.disabled = false; toast('Could not save (' + (e && e.code || e) + ').'); });
+  }
+
+  // ---------- hand-off: the file, the message, the session ----------
+  function handoffMessage() {
+    var ready = exportable(), withPhoto = ready.filter(function (c) { return c.photos && c.photos.length; }).length;
+    var held = cards.filter(function (c) { return c.plant && !c.dealtAt && validate(c.plant).errors.length; }).length;
+    var named = cards.filter(function (c) { return !c.plant && !c.dealtAt; }).length;
+    return 'New batch from the Timber Card Forge artifact.\n' +
+      'Artifact: ' + ARTIFACT_URL + '\n' +
+      'Batch: ' + batchId + ' — ' + ready.length + ' card' + (ready.length === 1 ? '' : 's') + ' ready (' + withPhoto + ' with a photo, ' + (ready.length - withPhoto) + ' without)' +
+      (held ? '; ' + held + ' held back with validator errors' : '') + (named ? '; ' + named + ' named but not researched' : '') + '.\n' +
+      (held + named ? 'Not ready, research these yourself online: ' + leftOut().map(function (x) { return x.name; }).join('; ') + '.\n' : '') + '\n' +
+      'Read README.md, NEW-SESSION.md and CARD-FORGE.md first; the repo carries the layout, rubric and protocol, so nothing needs pasting. ' +
+      'Pull the batch exactly as CARD-FORGE.md says: query the artifact\'s "cards" collection for batch == "' + batchId + '" with a plant and no validator errors, ' +
+      'save each photo asset by id into data/held-photos/' + batchId + '/, write batch-as-sent.json there, then compare-double, fit and deal with the normal tools. ' +
+      'Every draft was written by Claude without web access, so fact-check each one online before writing it, and record what you checked in the batch README. ' +
+      'Cards with no photo go on hold. Anything you cannot place confidently, stop and ask; a photo on the wrong card is worse than no photo. ' +
+      'Feature branch, not the deploy branch. node tests/run-all.js --jobs 3 once before pushing. ' +
+      'When a card is dealt or held, set dealtAt on its document so the Forge shows it, and refresh the deck/index document from timber.html.';
+  }
+  function renderHandoff() {
+    var ready = exportable(), withPhoto = ready.filter(function (c) { return c.photos && c.photos.length; }).length;
+    var held = cards.filter(function (c) { return c.plant && !c.dealtAt && validate(c.plant).errors.length; }).length;
+    var named = cards.filter(function (c) { return !c.plant && !c.dealtAt; }).length;
+    var dealt = cards.filter(function (c) { return c.dealtAt; }).length;
+    els.hoTitle.textContent = 'Hand off batch ' + batchId;
+    els.hoSummary.innerHTML = '<dt>Ready</dt><dd>' + ready.length + ' (' + withPhoto + ' with a photo)</dd>' +
+      '<dt>Held back</dt><dd>' + held + ' with validator errors</dd>' +
+      '<dt>Not researched</dt><dd>' + named + '</dd>' + (dealt ? '<dt>Already dealt</dt><dd>' + dealt + '</dd>' : '');
+    els.hoMsg.value = handoffMessage();
+    els.hoSend.hidden = !caps.mcp; els.hoNoMcp.hidden = !!caps.mcp;
+    els.hoStart.disabled = !ready.length;
+  }
+  function openHandoff() { if (!batchId) return; renderHandoff(); els.hoResult.textContent = ''; els.handoff.hidden = false; document.body.style.overflow = 'hidden'; els.hoClose.focus(); }
+  function closeHandoff() { els.handoff.hidden = true; document.body.style.overflow = ''; }
+  function markHanded(sessionId) {
+    var now = Date.now();
+    return store.updateBatch(batchId, { handedAt: now, sessionId: sessionId || null }).then(function () {
+      var list = exportable(), i = 0;
+      var step = function () { if (i >= list.length) return; var c = list[i++]; return store.updateCard(c.id, { handedAt: now }).then(step); };
+      return step();
+    });
+  }
+  function downloadJson() {
+    var d = caps.downloads; if (!d) return;
+    var list = exportable();
+    if (!list.length) { toast('Nothing is ready to export yet.'); return; }
+    var left = leftOut();
+    var data = JSON.stringify(list.map(function (c) { return cleanPlant(c.plant); }), null, 2);
+    d.save({ filename: 'batch-' + batchId + '.json', data: data }).then(function () {
+      toast('Saved batch-' + batchId + '.json: ' + list.length + ' card' + (list.length === 1 ? '' : 's') + '.' +
+        (left.length ? ' Not in the file: ' + left.map(function (x) { return x.name + ' (' + x.why + ')'; }).join('; ') + '. Send those names to Claude Code with the file.' : ''), left.length ? 20000 : 5000);
+    },
+      function (e) { var code = e && e.code; if (code !== 'declined') toast('Could not save the file (' + code + ').'); });
+  }
+  function mcpCopy(e) {
+    var code = e && e.code || 'upstream_error';
+    switch (code) {
+      case 'server_not_connected': return 'Claude Code Remote is not connected for this page. Copy the message instead.';
+      case 'needs_reauth': return 'Reconnect Claude Code Remote in claude.ai Settings → Connectors, then try again.';
+      case 'approval_required': return 'The request needs your approval. Allow it in the prompt, then tap Send again.';
+      case 'not_in_manifest': return 'This page is not allowed to use Claude Code Remote in this view. Copy the message instead.';
+      case 'blocked_by_policy': return 'Your organisation blocks this call. Copy the message instead.';
+      case 'cancelled': return 'The request was cancelled.';
+      case 'tool_error': return 'Claude Code refused the session: ' + (e.message || 'no reason given') + '. Copy the message instead.';
+      default: return 'The call failed (' + code + '). ' + (e && e.message ? e.message : '') + ' Copy the message instead.';
+    }
+  }
+  function findSessionId(p) { var m = JSON.stringify(p == null ? '' : p).match(/session_[A-Za-z0-9]+/); return m ? m[0] : null; }
+  function sendToClaudeCode() {
+    var mcp = caps.mcp; if (!mcp) return;
+    els.hoStart.disabled = true;
+    status(els.hoResult, 'Starting a Claude Code session on the Timber repo. The first time, allow this page to use Claude Code Remote.');
+    mcp.callTool(SERVER, 'create_session', { environment_id: ENV_ID, source_url: REPO_URL, title: 'Timber batch ' + batchId, prompt: handoffMessage() })
+      .then(function (r) {
+        var id = findSessionId(r.payload);
+        els.hoResult.className = 'status';
+        els.hoResult.innerHTML = id
+          ? 'Session started: <a href="https://claude.ai/code/' + esc(id) + '" target="_blank" rel="noopener">' + esc(id) + '</a>. Open it in Claude Code to watch it deal the batch; it will ask you when a photo cannot be placed.'
+          : 'Session requested. Claude Code answered: ' + esc(JSON.stringify(r.payload).slice(0, 300));
+        return markHanded(id).then(function () { toast('Batch ' + batchId + ' handed to Claude Code.'); });
+      })
+      .catch(function (e) { status(els.hoResult, mcpCopy(e), true); })
+      .then(function () { els.hoStart.disabled = !exportable().length; });
+  }
+
+  // ---------- wiring ----------
+  els.batchSel.addEventListener('change', function () { if (els.batchSel.value) selectBatch(els.batchSel.value); });
+  els.newBatch.addEventListener('click', function () {
+    var id = nextBatchId();
+    store.addBatch({ id: id, createdAt: Date.now(), note: '', handedAt: null, sessionId: null }).then(function () { selectBatch(id, true); toast('Batch ' + id + ' started.'); }, function (e) { toast('Could not start a batch (' + (e && e.code || e) + ').'); });
+  });
+  els.addNames.addEventListener('click', addNames);
+  els.labelPhotos.addEventListener('change', function () { if (els.labelPhotos.files.length) readLabels(els.labelPhotos.files); els.labelPhotos.value = ''; });
+  els.scanPhotos.addEventListener('change', function () { if (els.scanPhotos.files.length) scanFiles(els.scanPhotos.files); els.scanPhotos.value = ''; });
+  els.scanList.addEventListener('input', function (e) {
+    var row = e.target.closest('[data-scan]'); if (!row) return;
+    var s = scanned.filter(function (x) { return String(x.id) === row.getAttribute('data-scan'); })[0];
+    if (s) { s.name = e.target.value.replace(/\s*\n\s*/g, ' '); s.check = false; s.conf = 1; row.classList.remove('check'); }
+    var ready = scanned.filter(function (x) { return x.state === 'done' && x.name.trim(); }).length;
+    els.scanAdd.textContent = ready ? 'Add ' + ready + ' to batch' : 'Add to batch'; els.scanAdd.disabled = !ready || scanBusy;
+  });
+  els.scanList.addEventListener('click', function (e) {
+    var b = e.target.closest('[data-unscan]'); if (!b) return;
+    var id = b.getAttribute('data-unscan');
+    scanned = scanned.filter(function (x) { return String(x.id) !== id || x.state === 'reading'; });
+    renderScanned();
+  });
+  els.scanAdd.addEventListener('click', addScanned);
+  els.scanClear.addEventListener('click', function () { scanned = scanned.filter(function (s) { return s.state === 'reading' || s.state === 'waiting'; }); renderScanned(); });
+  els.list.addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    var li = b.closest('[data-id]'); if (!li) return;
+    var c = cards.filter(function (x) { return x.id === li.getAttribute('data-id'); })[0]; if (!c) return;
+    if (b.hasAttribute('data-unphoto')) { removePhoto(c, Number(b.getAttribute('data-unphoto'))); return; }
+    var act = b.getAttribute('data-act');
+    if (act === 'research') research(c, !!c.plant);
+    else if (act === 'fix') fixWithClaude(c);
+    else if (act === 'edit') openEditor(c);
+    else if (act === 'remove') {
+      if (!c._confirm) { c._confirm = true; renderList(); setTimeout(function () { if (c._confirm) { c._confirm = false; renderList(); } }, 4000); return; }
+      var ids = (c.photos || []).map(function (p) { return p.id; });
+      store.removeCard(c.id).then(function () { if (caps.assets) ids.forEach(function (id) { caps.assets.delete(id).catch(function () {}); }); toast('Removed.'); }, function (e) { toast('Could not remove (' + (e && e.code || e) + ').'); });
+    }
+  });
+  els.list.addEventListener('change', function (e) {
+    var input = e.target; if (!input.hasAttribute('data-photo')) return;
+    var c = cards.filter(function (x) { return x.id === input.getAttribute('data-photo'); })[0];
+    if (c && input.files.length) addPhotos(c, input.files);
+    input.value = '';
+  });
+  els.researchAll.addEventListener('click', researchAll);
+  els.stopAll.addEventListener('click', function () { stopping = true; if (ctl) ctl.abort(); toast('Stopping after this plant.'); });
+  els.downloadJson.addEventListener('click', downloadJson);
+  els.openHandoff.addEventListener('click', openHandoff);
+  els.edClose.addEventListener('click', closeEditor); els.edCancel.addEventListener('click', closeEditor);
+  els.edSave.addEventListener('click', saveEditor);
+  var edTimer = null;
+  els.edForm.addEventListener('input', function () { clearTimeout(edTimer); edTimer = setTimeout(refreshEditorChecks, 150); });
+  els.hoClose.addEventListener('click', closeHandoff);
+  els.hoCopy.addEventListener('click', function () { copyText(els.hoMsg.value); });
+  els.hoMark.addEventListener('click', function () { markHanded(null).then(function () { toast('Marked as handed.'); renderHandoff(); }, function (e) { toast('Could not mark (' + (e && e.code || e) + ').'); }); });
+  els.hoStart.addEventListener('click', sendToClaudeCode);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { if (!els.editor.hidden) closeEditor(); else if (!els.handoff.hidden) closeHandoff(); } });
+
+  // ---------- boot: render first, light features up as the capabilities resolve ----------
+  renderList(); renderDock();
+  if (!window.claude || typeof window.claude.use !== 'function') {
+    showBanner('Open this page inside Claude to use it: the research, the photos and the shared batch all need the Claude viewer.');
+    els.batchMeta.textContent = 'Not connected to Claude.';
+    return;
+  }
+  window.claude.use('db').then(function (d) {
+    db = d;
+    if (!db) { showBanner('Shared storage is not available in this view, so cards are kept only until you leave the page.'); memRefresh(); return; }
+    subscribeBatches();
+    return db.doc('deck/index').get().then(function (snap) {
+      if (snap.exists) { var x = snap.data(); deckIndex = x.cards || null; deckInfo = (x.dealt != null ? x.dealt + ' dealt · ' + x.held + ' held' : Object.keys(deckIndex || {}).length + ' names') + (x.rev ? ' · ' + x.rev : ''); els.deckMeta.textContent = 'Deck index: ' + deckInfo; renderList(); }
+      else els.deckMeta.textContent = 'No deck index yet; doubles are not checked.';
+    }).catch(function () { els.deckMeta.textContent = 'Deck index unavailable.'; });
+  });
+  window.claude.use('user').then(function (u) {
+    caps.user = u; if (!u) return;
+    return u.can('data.write').then(function (ok) { if (ok === false) { caps.canWrite = false; showBanner('You can view this batch but not change it.'); els.addNames.disabled = true; els.newBatch.disabled = true; } });
+  }).catch(function () {});
+  window.claude.use('sample').then(function (s) {
+    caps.sample = s; renderDock(); renderList();
+    if (!s) { els.labelPick.hidden = true; return; }
+    return s.limits().then(function (l) { caps.limits = l; els.labelPick.hidden = !(l && l.images); }, function () { els.labelPick.hidden = true; });
+  });
+  window.claude.use('assets').then(function (a) { caps.assets = a; renderList(); });
+  window.claude.use('downloads').then(function (d) { caps.downloads = d; renderList(); });
+  window.claude.use('mcp').then(function (m) { caps.mcp = m; if (!els.handoff.hidden) renderHandoff(); });
+})();
+</script>
+
+</body></html>
