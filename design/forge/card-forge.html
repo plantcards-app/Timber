@@ -178,11 +178,13 @@ a { color: var(--leaf); }
       <select id="tier"><option value="complex">Thorough (slower)</option><option value="default">Standard</option></select>
     </label>
     <ul class="list" id="list"></ul>
-    <p class="note">Drafts come from Claude's own knowledge: this page cannot search the web, so every draft stays marked unchecked until the Claude Code session that deals the batch checks it online. Research spends your Claude usage, one call per plant, two when the validator finds errors.</p>
+    <p class="note"><strong>Research in the cloud</strong> hands every card that needs it to a Claude Code session, which searches the web, checks each draft with the deck's validator and writes it back here. You can lock the phone: the cards fill in on their own, and show <em>Checked online</em>. <strong>Research all</strong> drafts on this phone instead, from Claude's memory without the web, and stops when the screen goes off.</p>
+    <div class="status" id="cloudStatus" role="status"></div>
   </section>
 </main>
 
 <div class="dock"><div class="in">
+  <button class="btn primary" id="cloudAll" type="button" hidden>Research in the cloud</button>
   <button class="btn" id="researchAll" type="button">Research all</button>
   <button class="btn" id="stopAll" type="button" hidden>Stop</button>
   <button class="btn" id="downloadJson" type="button">JSON file</button>
@@ -352,7 +354,8 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     handoff: $('handoff'), hoTitle: $('hoTitle'), hoClose: $('hoClose'), hoSummary: $('hoSummary'), hoMsg: $('hoMsg'), hoCopy: $('hoCopy'),
     hoMark: $('hoMark'), hoSend: $('hoSend'), hoStart: $('hoStart'), hoResult: $('hoResult'), hoNoMcp: $('hoNoMcp'),
     scanPhotos: $('scanPhotos'), scanSmall: $('scanSmall'), scanBarWrap: $('scanBarWrap'), scanBar: $('scanBar'),
-    scanList: $('scanList'), scanActs: $('scanActs'), scanAdd: $('scanAdd'), scanClear: $('scanClear')
+    scanList: $('scanList'), scanActs: $('scanActs'), scanAdd: $('scanAdd'), scanClear: $('scanClear'),
+    cloudAll: $('cloudAll'), cloudStatus: $('cloudStatus')
   };
 
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
@@ -511,7 +514,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     var remembered = readLocal(STORE_KEY + ':batch');
     if (!batchId || !batches.some(function (b) { return b.id === batchId; })) {
       var pick = batches.filter(function (b) { return b.id === remembered; })[0] || batches[0] || null;
-      selectBatch(pick ? pick.id : null, true);
+      if ((pick ? pick.id : null) !== batchId) selectBatch(pick ? pick.id : null, true);   /* no batch yet: nothing to switch to, and switching would loop */
     }
     els.batchSel.innerHTML = batches.length
       ? batches.map(function (b) { return '<option value="' + esc(b.id) + '"' + (b.id === batchId ? ' selected' : '') + '>' + esc(b.id) + (b.handedAt ? ' · handed' : '') + '</option>'; }).join('')
@@ -588,6 +591,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     return '<div class="thumb" aria-hidden="true">' + esc(initial) + '</div>';
   }
   function renderList() {
+    renderDock();
     var live = cards.filter(function (c) { return !c.dealtAt; });
     var ready = exportable().length, unresearched = live.filter(function (c) { return !c.plant; }).length;
     els.count.textContent = cards.length ? cards.length + ' card' + (cards.length === 1 ? '' : 's') + ' · ' + ready + ' ready' : '';
@@ -612,7 +616,9 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
       if (p && v && !v.errors.length && v.warnings.length) chips.push('<span class="chip warn">' + v.warnings.length + ' warning' + (v.warnings.length === 1 ? '' : 's') + '</span>');
       if (hit) chips.push('<span class="chip ' + (hit.how === 'exact' ? 'bad' : 'warn') + '" title="' + esc(hit.slug) + '">' + (hit.how === 'exact' ? 'In deck · ' + hit.status : 'Probable double · ' + hit.status) + '</span>');
       chips.push('<span class="chip">' + (c.photos && c.photos.length ? c.photos.length + ' photo' + (c.photos.length === 1 ? '' : 's') : 'no photo') + '</span>');
-      if (p && c.research) chips.push('<span class="chip">Unchecked draft</span>');
+      if (p && c.research) chips.push(c.research.checkedOnline ? '<span class="chip ok">Checked online</span>' : '<span class="chip">Unchecked draft</span>');
+      if (c.cloudQueuedAt && !c.cloudDoneAt && !c.dealtAt) chips.push('<span class="chip pink">Researching in the cloud</span>');
+      if (c.cloudNote && !c.dealtAt) chips.push('<span class="chip warn" title="' + esc(c.cloudNote) + '">Cloud could not identify it</span>');
       var msgs = '';
       if (v && (v.errors.length || v.warnings.length)) {
         var items = v.errors.slice(0, 3).map(function (m) { return '<li class="e">✗ ' + esc(m) + '</li>'; })
@@ -622,6 +628,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
         msgs = '<ul class="msgs">' + items.join('') + '</ul>';
       }
       var sub = p ? [p.common, p.hardiness, p.peak].filter(Boolean).join(' · ') : (c.label ? 'Label: ' + c.label.slice(0, 80) : 'Not researched yet');
+      if (c.cloudNote && !c.dealtAt) sub += ' · Cloud: ' + c.cloudNote;
       var b = busy[c.id];
       var acts = '';
       if (b) acts = '<div class="busy">' + esc(b) + '</div>';
@@ -752,6 +759,77 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     els.stopAll.hidden = !ctl;
     els.researchAll.hidden = !!ctl;
     els.researchAll.disabled = !caps.sample || !cards.some(function (c) { return !c.plant && !c.dealtAt; });
+    var n = cloudCandidates().length;
+    els.cloudAll.hidden = !caps.mcp;
+    els.cloudAll.disabled = !n || cloudBusy;
+    els.cloudAll.textContent = n ? 'Research in the cloud (' + n + ')' : 'Research in the cloud';
+  }
+
+  // ---------- cloud research: a Claude Code session researches online and writes the drafts back, phone or no phone ----------
+  var cloudBusy = false;
+  /* Needs research: not dealt, and no plant yet or one the checks refuse; skip cards already queued and not yet answered. */
+  function cloudCandidates() {
+    return cards.filter(function (c) {
+      if (c.dealtAt || busy[c.id]) return false;
+      if (c.cloudQueuedAt && !c.cloudDoneAt) return false;
+      return !c.plant || validate(c.plant).errors.length;
+    });
+  }
+  function cloudPrompt(id) {
+    return 'Cloud research for the Timber Card Forge. Work alone: Oscar has put his phone away and will not answer questions in this session.\n\n' +
+      'Artifact: ' + ARTIFACT_URL + '\nBatch: ' + id + '\n\n' +
+      '1. Load the tools you need with ToolSearch: "select:ArtifactData,WebSearch".\n' +
+      '2. ArtifactData query on collection "cards" with where batch == "' + id + '". Work on every card that has cloudQueuedAt set and no cloudDoneAt and no dealtAt. Keep each card\'s version.\n' +
+      '3. For each of those cards, research the plant named in its "name" field ONLINE with WebSearch (RHS search snippets are good evidence; rhs.org.uk pages themselves may be blocked). Its "label" text is copied from the bench label and is authoritative for the name, hardiness, height and spread where it states them; its "notes" are Oscar\'s. Follow PLANT-BRIEF.md in this repository for every field rule, the 0-20 rating scales and the safety wording. The JSON must have exactly these keys: ' + SCHEMA_KEYS.join(', ') + '. Numbers as numbers, blanks as "" (sunMin blank is null), uncertain and sources as arrays of strings. Never fill ' + COMMERCIAL.join(', ') + '. Never invent: what you cannot find is blank and named in uncertain; every source you used goes in sources.\n' +
+      '4. Save the JSON to a scratch file and run: node tools/check-plant-json.js <file>. Fix every error it reports and run it again until it passes.\n' +
+      '5. Write it back with ArtifactData update on cards/<id>, pinned with if_version, data: {"plant": <the JSON>, "validation": {"errors": [], "warnings": [], "notes": [], "tox": null}, "research": {"tier": "cloud", "applied": "cloud", "at": <ms now>, "rounds": 1, "truncated": false, "checkedOnline": true, "source": "Claude Code cloud session, checked online"}, "cloudDoneAt": <ms now>, "updatedAt": <ms now>}. If a pinned write fails, re-read that card and redo it only if it still needs research.\n' +
+      '6. If you cannot identify a plant with confidence, do not guess: update the card with {"cloudDoneAt": <ms now>, "cloudNote": "<what you searched and what the label would need to show>"} and leave plant as it is.\n\n' +
+      'Do not edit, commit or push anything in the repository, and do not deal any card into the deck. That is a separate step. End with one line per card: name, latin, hardiness, and what changed.';
+  }
+  function cloudError(e) {
+    var code = e && e.code || 'upstream_error';
+    switch (code) {
+      case 'server_not_connected': return 'Claude Code Remote is not connected for this page. Add it in claude.ai Settings → Connectors, or copy the message below into a new Claude Code session on the Timber repo.';
+      case 'needs_reauth': return 'Reconnect Claude Code Remote in claude.ai Settings → Connectors, then tap the button again.';
+      case 'approval_required': return 'Starting a session needs your approval. Allow it when Claude asks, then tap the button again.';
+      case 'not_in_manifest': return 'This page is not allowed to start Claude Code sessions in this view. Copy the message below into a new Claude Code session on the Timber repo.';
+      case 'blocked_by_policy': return 'Your organisation blocks starting sessions from a page. Copy the message below into a new Claude Code session instead.';
+      case 'tool_error': return 'Claude Code refused the session: ' + (e.message || 'no reason given') + '. Copy the message below into a new Claude Code session instead.';
+      case 'server_unavailable': case 'upstream_error': return 'No answer from Claude Code (' + code + '). A session may still have started: check your Claude Code list before tapping again.';
+      default: return 'The call failed (' + code + '). Copy the message below into a new Claude Code session instead.';
+    }
+  }
+  function researchInCloud() {
+    var mcp = caps.mcp, list = cloudCandidates();
+    if (!mcp || !list.length || cloudBusy || !batchId) return;
+    cloudBusy = true; renderDock();
+    var now = Date.now(), i = 0, id = batchId;
+    status(els.cloudStatus, 'Queuing ' + list.length + ' card' + (list.length === 1 ? '' : 's') + '.');
+    var queue = function () {
+      if (i >= list.length) return;
+      var c = list[i++];
+      var patch = { cloudQueuedAt: now, cloudDoneAt: null, cloudNote: null, updatedAt: now };
+      return store.updateCard(c.id, patch).then(queue);
+    };
+    queue().then(function () {
+      status(els.cloudStatus, 'Starting a Claude Code session. The first time, Claude asks you to allow this page to use Claude Code Remote.');
+      return mcp.callTool(SERVER, 'create_session', { environment_id: ENV_ID, source_url: REPO_URL, title: 'Timber Forge research ' + id, permission_mode: 'auto', prompt: cloudPrompt(id) });
+    }).then(function (r) {
+      var sid = findSessionId(r.payload);
+      els.cloudStatus.className = 'status';
+      els.cloudStatus.innerHTML = 'Researching ' + list.length + ' card' + (list.length === 1 ? '' : 's') + ' in the cloud' +
+        (sid ? ' (<a href="https://claude.ai/code/' + esc(sid) + '" target="_blank" rel="noopener">session</a>)' : '') +
+        '. You can lock the phone now: each card fills in here when it is done, usually a few minutes a plant.';
+      return store.updateBatch(id, { cloudSessionId: sid || null, cloudAt: now });
+    }).catch(function (e) {
+      els.cloudStatus.className = 'status bad';
+      els.cloudStatus.innerHTML = esc(cloudError(e)) + '<textarea readonly rows="5" style="margin-top:8px">' + esc(cloudPrompt(id)) + '</textarea>';
+      if (e && (e.code === 'server_unavailable' || e.code === 'upstream_error')) return;   /* a session may exist: keep the cards queued */
+      var j = 0;
+      var undo = function () { if (j >= list.length) return; var c = list[j++]; return store.updateCard(c.id, { cloudQueuedAt: null, updatedAt: Date.now() }).then(undo); };
+      return undo();
+    }).catch(function () { /* the status line already says what failed */ })
+      .then(function () { cloudBusy = false; renderDock(); });
   }
 
   // ---------- intake: names typed, or label photos read by Claude ----------
@@ -1145,6 +1223,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     input.value = '';
   });
   els.researchAll.addEventListener('click', researchAll);
+  els.cloudAll.addEventListener('click', researchInCloud);
   els.stopAll.addEventListener('click', function () { stopping = true; if (ctl) ctl.abort(); toast('Stopping after this plant.'); });
   els.downloadJson.addEventListener('click', downloadJson);
   els.openHandoff.addEventListener('click', openHandoff);
@@ -1185,7 +1264,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
   });
   window.claude.use('assets').then(function (a) { caps.assets = a; renderList(); });
   window.claude.use('downloads').then(function (d) { caps.downloads = d; renderList(); });
-  window.claude.use('mcp').then(function (m) { caps.mcp = m; if (!els.handoff.hidden) renderHandoff(); });
+  window.claude.use('mcp').then(function (m) { caps.mcp = m; renderDock(); if (!els.handoff.hidden) renderHandoff(); });
 })();
 </script>
 

@@ -148,3 +148,24 @@ unchanged from the scanner's version 5 apart from its status line, and escaped t
 it is served with). The model files (`ort.wasm.min.js`, `ort-wasm-simd.wasm`, `det.b64.txt`, `rec.b64.txt`) are only in
 the two artifacts. To change the page: edit those files, then publish `card-forge.html` with the artifact's `url` and
 `files: {"label-scanner.js": "design/forge/label-scanner.js"}`; the model files are kept from the last version.
+
+## Research in the cloud (2026-10-27)
+
+Oscar: "forge should be able to research even tho ive taken it off the screen, its a waste of time for me to wait with my
+phone out". The page's own *Research all* runs inside the page, so it stops when the screen goes off (and it drafts from
+memory, without the web). *Research in the cloud* instead:
+
+1. sets `cloudQueuedAt` on every card that needs research (no plant, or one the checks refuse), and
+2. starts a Claude Code session on this repo through the Claude Code Remote connector (`create_session`, permission mode
+   `auto`), whose first message is the page's `cloudPrompt(batchId)`: query the batch, research each queued card online
+   following PLANT-BRIEF.md, run `tools/check-plant-json.js`, and write the plant back pinned to its version with
+   `research.checkedOnline: true` and `cloudDoneAt`; a plant it cannot identify gets `cloudNote` instead of a guess.
+   It edits nothing in the repo.
+
+The page shows *Researching in the cloud* until `cloudDoneAt` lands, then *Checked online*. If the connector call
+fails, the page shows the same message in a box to paste into a new Claude Code session by hand, and un-queues the
+cards (except on an ambiguous `server_unavailable` / `upstream_error`, when a session may have started).
+
+The cloud half was tested from a session on 2026-10-27 with the exact prompt (see the batch README for 2026-10-26).
+The page's own call of the connector is [Unverified] until Oscar taps the button once: the first tap asks him to allow
+the page to use Claude Code Remote.
