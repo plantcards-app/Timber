@@ -169,3 +169,22 @@ cards (except on an ambiguous `server_unavailable` / `upstream_error`, when a se
 The cloud half was tested on 2026-10-27 with the exact prompt (session_015xuecgrhYUkgfaw4dBcdeK): it researched the viola card of batch 2026-10-26 online in about 15 minutes, with no questions, and wrote back Viola cornuta 'Teardrops Apricot Purple Wing', H5 (RHS species), 15 cm, Jan-Apr, nine sources, checkedOnline true; the repo validator passes it. Published as artifact version 5.
 The page's own call of the connector is [Unverified] until Oscar taps the button once: the first tap asks him to allow
 the page to use Claude Code Remote.
+
+### How the page starts a run (2026-10-28)
+
+The page cannot call `create_session`. Another session changed both buttons (artifact version 1793228577-deec) to create a
+one-off scheduled task (`create_trigger`, fresh session per firing, no schedule) and fire it at once (`fire_trigger`); the
+manifest now declares those two tools. The run does not appear in the Claude Code session list; `list_triggers` shows it
+and its `last_run.session_id`.
+
+Evidence, 2026-10-28: Oscar tapped *Send to Claude Code* on batch 2026-10-28. Task `trig_0113JT2EmCV4P9kYBt6ZHQAa` fired
+at 23:12 and its session ran nine minutes: it pulled the card, checked it, held it (no photo) and committed locally, but
+**could not push** (403: a task-started session does not get the repo with push access) and so did no write-back. The
+page meanwhile read the word "session_request" out of the reply as a session id. The same card was dealt with its
+photo by session_019fB6qSjgxJsfeVWkLd3w2D the next morning, so nothing was lost.
+
+Fixed in artifact version 1793231013-e54b: only a real `session_0…` id or a `trig_…` id counts as started, and the
+status line says which; the raw reply is kept on the batch (`sendReply` / `cloudReply`) for the next session to read;
+and the run's opening note tells it to call `add_repo` (plantcards-app/Timber, push) before committing. [Unverified]
+that `add_repo` grants push to a task-started session without a person approving it. Cloud research never pushes, so
+it is not affected.

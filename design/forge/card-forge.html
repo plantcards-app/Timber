@@ -795,6 +795,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
       case 'not_in_manifest': return 'This page is not allowed to start Claude Code sessions in this view. Copy the message below into a new Claude Code session on the Timber repo.';
       case 'blocked_by_policy': return 'Your organisation blocks starting sessions from a page. Copy the message below into a new Claude Code session instead.';
       case 'tool_error': return 'Claude Code refused the session: ' + (e.message || 'no reason given') + '. Copy the message below into a new Claude Code session instead.';
+      case 'no_session': return 'Claude Code answered but did not start a run (' + (e.message || 'no detail') + '). Copy the message below into a new Claude Code session on the Timber repo instead.';
       case 'server_unavailable': case 'upstream_error': return 'No answer from Claude Code (' + code + '). A session may still have started: check your Claude Code list before tapping again.';
       default: return 'The call failed (' + code + '). Copy the message below into a new Claude Code session instead.';
     }
@@ -813,14 +814,16 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     };
     queue().then(function () {
       status(els.cloudStatus, 'Starting a Claude Code session. The first time, Claude asks you to allow this page to use Claude Code Remote.');
-      return mcp.callTool(SERVER, 'create_session', { environment_id: ENV_ID, source_url: REPO_URL, title: 'Timber Forge research ' + id, permission_mode: 'auto', prompt: cloudPrompt(id) });
+      return startSession('Timber Forge research ' + id, cloudPrompt(id));
     }).then(function (r) {
-      var sid = findSessionId(r.payload);
+      var sid = findSessionId(r.payload), task = findTaskId(r.payload);
+      keepReply(id, 'cloud', r.payload);
+      if (!sid && !task) throw { code: 'no_session', message: JSON.stringify(r.payload).slice(0, 300) };
       els.cloudStatus.className = 'status';
       els.cloudStatus.innerHTML = 'Researching ' + list.length + ' card' + (list.length === 1 ? '' : 's') + ' in the cloud' +
-        (sid ? ' (<a href="https://claude.ai/code/' + esc(sid) + '" target="_blank" rel="noopener">session</a>)' : '') +
+        (sid ? ' (<a href="https://claude.ai/code/' + esc(sid) + '" target="_blank" rel="noopener">session</a>)' : ' (scheduled task ' + esc(task) + ')') +
         '. You can lock the phone now: each card fills in here when it is done, usually a few minutes a plant.';
-      return store.updateBatch(id, { cloudSessionId: sid || null, cloudAt: now });
+      return store.updateBatch(id, { cloudSessionId: sid || null, cloudTask: task || null, cloudAt: now });
     }).catch(function (e) {
       els.cloudStatus.className = 'status bad';
       els.cloudStatus.innerHTML = esc(cloudError(e)) + '<textarea readonly rows="5" style="margin-top:8px">' + esc(cloudPrompt(id)) + '</textarea>';
@@ -1159,19 +1162,46 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
       default: return 'The call failed (' + code + '). ' + (e && e.message ? e.message : '') + ' Copy the message instead.';
     }
   }
-  function findSessionId(p) { var m = JSON.stringify(p == null ? '' : p).match(/session_[A-Za-z0-9]+/); return m ? m[0] : null; }
+  /* Only a real session id (session_0 plus twenty-odd characters) counts. On 2026-10-28 the word in a "session_request" field was
+     read as an id; the run had started, but under a scheduled task, so the page showed nothing true about it. */
+  function findSessionId(p) { var m = JSON.stringify(p == null ? '' : p).match(/session_0[A-Za-z0-9]{20,}/); return m ? m[0] : null; }
+  function findTaskId(p) { var m = JSON.stringify(p == null ? '' : p).match(/trig_[A-Za-z0-9]{10,}/); return m ? m[0] : null; }
+  function keepReply(id, what, payload) {   /* the raw answer, for the next Claude session to read */
+    var patch = {}; patch[what + 'Reply'] = JSON.stringify(payload == null ? null : payload).slice(0, 4000); patch[what + 'At'] = Date.now();
+    return store.updateBatch(id, patch).catch(function () {});
+  }
+  /* Claude Code Remote has no create_session tool: make a one-off scheduled task with no schedule, then fire it now.
+     The task is kept (deleting it would delete the session it started). */
+  /* A session started by a scheduled task gets the repository read-only: on 2026-10-28 one dealt the batch and could not push.
+     add_repo with push access is the documented way to get it. */
+  var REPO_NOTE = 'Work in the ' + REPO_URL + ' repository; if it is not already checked out here, clone it first. ' +
+    'Before you commit anything, call the add_repo tool (owner plantcards-app, repo Timber, access push) so the push is allowed; if it is refused, say so at the end and stop before committing.\n\n';
+  function startSession(title, prompt) {
+    var mcp = caps.mcp;
+    return mcp.callTool(SERVER, 'create_trigger', { name: title, prompt: REPO_NOTE + prompt, initiation: 'human_request', environment_id: ENV_ID, create_new_session_on_fire: true })
+      .then(function (r) {
+        var m = JSON.stringify(r && r.payload != null ? r.payload : '').match(/trig_[A-Za-z0-9]+/);
+        if (!m) { var err = new Error('No task id came back: ' + JSON.stringify(r && r.payload).slice(0, 200)); err.code = 'tool_error'; throw err; }
+        return mcp.callTool(SERVER, 'fire_trigger', { trigger_id: m[0] }).then(function (f) { return { payload: { trigger: r.payload, fire: f && f.payload } }; });
+      });
+  }
   function sendToClaudeCode() {
     var mcp = caps.mcp; if (!mcp) return;
     els.hoStart.disabled = true;
     status(els.hoResult, 'Starting a Claude Code session on the Timber repo. The first time, allow this page to use Claude Code Remote.');
-    mcp.callTool(SERVER, 'create_session', { environment_id: ENV_ID, source_url: REPO_URL, title: 'Timber batch ' + batchId, prompt: handoffMessage() })
+    startSession('Timber batch ' + batchId, handoffMessage())
       .then(function (r) {
-        var id = findSessionId(r.payload);
+        var id = findSessionId(r.payload), task = findTaskId(r.payload);
+        keepReply(batchId, 'send', r.payload);
+        if (!id && !task) {
+          status(els.hoResult, 'Claude Code did not start a run. It answered: ' + JSON.stringify(r.payload).slice(0, 300) + ' Copy the message above into a new Claude Code session on the Timber repo instead. Nothing was marked as handed.', true);
+          return;
+        }
         els.hoResult.className = 'status';
         els.hoResult.innerHTML = id
-          ? 'Session started: <a href="https://claude.ai/code/' + esc(id) + '" target="_blank" rel="noopener">' + esc(id) + '</a>. Open it in Claude Code to watch it deal the batch; it will ask you when a photo cannot be placed.'
-          : 'Session requested. Claude Code answered: ' + esc(JSON.stringify(r.payload).slice(0, 300));
-        return markHanded(id).then(function () { toast('Batch ' + batchId + ' handed to Claude Code.'); });
+          ? 'Session started: <a href="https://claude.ai/code/' + esc(id) + '" target="_blank" rel="noopener">' + esc(id) + '</a>.'
+          : 'Started a Claude Code run (scheduled task ' + esc(task) + '). It does not show in your Claude Code list; when it finishes, the cards here show Dealt or Held.';
+        return markHanded(id || task).then(function () { toast('Batch ' + batchId + ' handed to Claude Code.'); });
       })
       .catch(function (e) { status(els.hoResult, mcpCopy(e), true); })
       .then(function () { els.hoStart.disabled = !exportable().length; });
