@@ -1,0 +1,13 @@
+[
+  {
+    "latin": "Catharanthus roseus Soirée 'Cerise White Eye'",
+    "hardiness": { "value": "H1c", "source": "RHS 98105 (Catharanthus roseus), search snippet" },
+    "height": { "value": "15–25 cm", "source": "Suttons, Catharanthus roseus Soirée Sweet Besties Trio (includes Cerise White Eye); nursery, not RHS" },
+    "spread": { "value": "30–45 cm", "source": "Suttons, Catharanthus roseus Soirée Sweet Besties Trio; nursery, not RHS" },
+    "peak": { "value": "", "source": "not found" },
+    "toxicity": { "rhs": "all parts highly toxic, including the sap; wear gloves", "aspca": "NC State Extension: low-severity poison, problem for dogs, cats, horses", "source": "RHS 98105 snippet; NC State Extension" },
+    "name": { "accepted": "Catharanthus roseus Soirée Series", "trade": "", "exists": true, "source": "Promesse de Fleurs 'Cerise White Eye' page; Suttons Soirée Sweet Besties Trio; RHS Plants periwinkle Soirée listings" },
+    "compliance": { "value": "", "source": "not found" },
+    "notes": ["Soirée is a Suntory/MNP series; siblings sold in the UK include White, Pink White Eye, Light Pink Dark Eye, Dark Pink with Eye", "RHS species profile: woody-based evergreen perennial, AGM, to 45 cm"]
+  }
+]
