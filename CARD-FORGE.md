@@ -1,5 +1,8 @@
 # The Card Forge — pulling a batch built in the artifact
 
+**Since 2026-10-29 a batch arrives by the handover tray: read `HANDOVER.md` first.** This file stays the reference for
+the store's fields and the write-back.
+
 The **Timber Card Forge** is a Claude artifact Oscar uses on the shop floor:
 <https://claude.ai/artifact/2Byv3SGZ3jyTV1QcZTqhed>. He pastes plant names (from the
 Label Scanner, or read off label photos), the page asks Claude for a plant JSON in the

@@ -178,17 +178,15 @@ a { color: var(--leaf); }
       <select id="tier"><option value="complex">Thorough (slower)</option><option value="default">Standard</option></select>
     </label>
     <ul class="list" id="list"></ul>
-    <p class="note"><strong>Research in the cloud</strong> hands every card that needs it to a Claude Code session, which searches the web, checks each draft with the deck's validator and writes it back here. You can lock the phone: the cards fill in on their own, and show <em>Checked online</em>. <strong>Research all</strong> drafts on this phone instead, from Claude's memory without the web, and stops when the screen goes off.</p>
-    <div class="status" id="cloudStatus" role="status"></div>
+    <p class="note">You do not need to research anything here: hand the batch over with just names and photos, and Claude Code researches every card online when it deals them. <strong>Research all</strong> is optional: it drafts on this phone from Claude's memory, without the web, and stops when the screen goes off.</p>
   </section>
 </main>
 
 <div class="dock"><div class="in">
-  <button class="btn primary" id="cloudAll" type="button" hidden>Research in the cloud</button>
   <button class="btn" id="researchAll" type="button">Research all</button>
   <button class="btn" id="stopAll" type="button" hidden>Stop</button>
   <button class="btn" id="downloadJson" type="button">JSON file</button>
-  <button class="btn primary" id="openHandoff" type="button">Hand off</button>
+  <button class="btn primary" id="openHandoff" type="button">Hand over</button>
   <div class="toast" id="toast" role="status"></div>
 </div></div>
 
@@ -210,27 +208,20 @@ a { color: var(--leaf); }
 
 <div class="sheet" id="handoff" hidden>
   <div class="in">
-    <div class="sheethead"><h2 id="hoTitle">Hand off the batch</h2><button class="btn sm" id="hoClose" type="button">Close</button></div>
+    <div class="sheethead"><h2 id="hoTitle">Hand over the batch</h2><button class="btn sm" id="hoClose" type="button">Close</button></div>
     <div class="group">
       <h3>What goes</h3>
       <dl class="kv" id="hoSummary"></dl>
-      <p class="note">Cards with validator errors stay here until fixed. Cards without a photo are dealt onto the hold block, as a JSON-only card is today. The deal session fact-checks every draft online before it writes anything.</p>
+      <p class="note">Everything not yet dealt goes: drafted cards, names still to research, and the photos attached here. The batch stays in the Forge's own store; Claude Code reads it from there, checks every card online, deals the ones with a photo and holds the rest.</p>
     </div>
     <div class="group">
-      <h3>Opening message for a Claude Code session</h3>
-      <textarea id="hoMsg" rows="9" readonly></textarea>
-      <div class="row2">
-        <button class="btn" id="hoCopy" type="button">Copy message</button>
-        <button class="btn" id="hoMark" type="button">Mark as handed</button>
-      </div>
-    </div>
-    <div class="group" id="hoSend" hidden>
-      <h3>Or start the session from here</h3>
-      <p class="note">Starts a Claude Code session on the Timber repository with the message above as its first turn. The session appears in your Claude Code list; the first call asks you to allow this page to use Claude Code Remote.</p>
-      <button class="btn primary" id="hoStart" type="button">Send to Claude Code</button>
+      <h3>Hand over</h3>
+      <button class="btn primary" id="hoMark" type="button">Hand over to Claude Code</button>
       <div class="status" id="hoResult" role="status"></div>
+      <p class="note">Nothing is sent anywhere and nothing needs approving. Next time you open Claude Code on Timber, say:</p>
+      <textarea id="hoMsg" rows="2" readonly></textarea>
+      <div class="row2"><button class="btn" id="hoCopy" type="button">Copy</button></div>
     </div>
-    <p class="note" id="hoNoMcp">Starting a session from this page needs the Claude Code Remote connector in this view; copy the message instead and paste it into a new Claude Code session on the Timber repo.</p>
   </div>
 </div>
 
@@ -330,10 +321,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
   'use strict';
 
   // ---------- constants ----------
-  var ENV_ID = 'env_01RymtRPFLANHmFTSgpUQZsf';
-  var REPO_URL = 'https://github.com/plantcards-app/Timber';
   var ARTIFACT_URL = 'https://claude.ai/artifact/2Byv3SGZ3jyTV1QcZTqhed';
-  var SERVER = 'Claude Code Remote';
   var SCHEMA_KEYS = ['common', 'latin', 'hue', 'hardiness', 'hardinessNote', 'height', 'spread', 'peak', 'visual',
     'pestRisk', 'thirst', 'careLevel', 'growthSpeed', 'sunNeed', 'sunMin', 'pest', 'aspect', 'soil', 'soilWarning',
     'water', 'prune', 'toxicity', 'compliance', 'cvs', 'resilience', 'uses', 'foliage', 'rootSize', 'stockForm',
@@ -352,10 +340,9 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     editor: $('editor'), edTitle: $('edTitle'), edClose: $('edClose'), edName: $('ed-name'), edLabel: $('ed-label'), edNotes: $('ed-notes'),
     edChecks: $('edChecks'), edMsgs: $('edMsgs'), edForm: $('edForm'), edRaw: $('edRaw'), edSave: $('edSave'), edCancel: $('edCancel'),
     handoff: $('handoff'), hoTitle: $('hoTitle'), hoClose: $('hoClose'), hoSummary: $('hoSummary'), hoMsg: $('hoMsg'), hoCopy: $('hoCopy'),
-    hoMark: $('hoMark'), hoSend: $('hoSend'), hoStart: $('hoStart'), hoResult: $('hoResult'), hoNoMcp: $('hoNoMcp'),
+    hoMark: $('hoMark'), hoResult: $('hoResult'),
     scanPhotos: $('scanPhotos'), scanSmall: $('scanSmall'), scanBarWrap: $('scanBarWrap'), scanBar: $('scanBar'),
-    scanList: $('scanList'), scanActs: $('scanActs'), scanAdd: $('scanAdd'), scanClear: $('scanClear'),
-    cloudAll: $('cloudAll'), cloudStatus: $('cloudStatus')
+    scanList: $('scanList'), scanActs: $('scanActs'), scanAdd: $('scanAdd'), scanClear: $('scanClear')
   };
 
   var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); };
@@ -759,80 +746,6 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     els.stopAll.hidden = !ctl;
     els.researchAll.hidden = !!ctl;
     els.researchAll.disabled = !caps.sample || !cards.some(function (c) { return !c.plant && !c.dealtAt; });
-    var n = cloudCandidates().length;
-    els.cloudAll.hidden = !caps.mcp;
-    els.cloudAll.disabled = !n || cloudBusy;
-    els.cloudAll.textContent = n ? 'Research in the cloud (' + n + ')' : 'Research in the cloud';
-  }
-
-  // ---------- cloud research: a Claude Code session researches online and writes the drafts back, phone or no phone ----------
-  var cloudBusy = false;
-  /* Needs research: not dealt, and no plant yet or one the checks refuse; skip cards already queued and not yet answered. */
-  function cloudCandidates() {
-    return cards.filter(function (c) {
-      if (c.dealtAt || busy[c.id]) return false;
-      if (c.cloudQueuedAt && !c.cloudDoneAt) return false;
-      return !c.plant || validate(c.plant).errors.length;
-    });
-  }
-  function cloudPrompt(id) {
-    return 'Cloud research for the Timber Card Forge. Work alone: Oscar has put his phone away and will not answer questions in this session.\n\n' +
-      'Artifact: ' + ARTIFACT_URL + '\nBatch: ' + id + '\n\n' +
-      '1. Load the tools you need with ToolSearch: "select:ArtifactData,WebSearch".\n' +
-      '2. ArtifactData query on collection "cards" with where batch == "' + id + '". Work on every card that has cloudQueuedAt set and no cloudDoneAt and no dealtAt. Keep each card\'s version.\n' +
-      '3. For each of those cards, research the plant named in its "name" field ONLINE with WebSearch (RHS search snippets are good evidence; rhs.org.uk pages themselves may be blocked). Its "label" text is copied from the bench label and is authoritative for the name, hardiness, height and spread where it states them; its "notes" are Oscar\'s. Follow PLANT-BRIEF.md in this repository for every field rule, the 0-20 rating scales and the safety wording. The JSON must have exactly these keys: ' + SCHEMA_KEYS.join(', ') + '. Numbers as numbers, blanks as "" (sunMin blank is null), uncertain and sources as arrays of strings. Never fill ' + COMMERCIAL.join(', ') + '. Never invent: what you cannot find is blank and named in uncertain; every source you used goes in sources.\n' +
-      '4. Save the JSON to a scratch file and run: node tools/check-plant-json.js <file>. Fix every error it reports and run it again until it passes.\n' +
-      '5. Write it back with ArtifactData update on cards/<id>, pinned with if_version, data: {"plant": <the JSON>, "validation": {"errors": [], "warnings": [], "notes": [], "tox": null}, "research": {"tier": "cloud", "applied": "cloud", "at": <ms now>, "rounds": 1, "truncated": false, "checkedOnline": true, "source": "Claude Code cloud session, checked online"}, "cloudDoneAt": <ms now>, "updatedAt": <ms now>}. If a pinned write fails, re-read that card and redo it only if it still needs research.\n' +
-      '6. If you cannot identify a plant with confidence, do not guess: update the card with {"cloudDoneAt": <ms now>, "cloudNote": "<what you searched and what the label would need to show>"} and leave plant as it is.\n\n' +
-      'Do not edit, commit or push anything in the repository, and do not deal any card into the deck. That is a separate step. End with one line per card: name, latin, hardiness, and what changed.';
-  }
-  function cloudError(e) {
-    var code = e && e.code || 'upstream_error';
-    switch (code) {
-      case 'server_not_connected': return 'Claude Code Remote is not connected for this page. Add it in claude.ai Settings → Connectors, or copy the message below into a new Claude Code session on the Timber repo.';
-      case 'needs_reauth': return 'Reconnect Claude Code Remote in claude.ai Settings → Connectors, then tap the button again.';
-      case 'approval_required': return 'Starting a session needs your approval. Allow it when Claude asks, then tap the button again.';
-      case 'not_in_manifest': return 'This page is not allowed to start Claude Code sessions in this view. Copy the message below into a new Claude Code session on the Timber repo.';
-      case 'blocked_by_policy': return 'Your organisation blocks starting sessions from a page. Copy the message below into a new Claude Code session instead.';
-      case 'tool_error': return 'Claude Code refused the session: ' + (e.message || 'no reason given') + '. Copy the message below into a new Claude Code session instead.';
-      case 'no_session': return 'Claude Code answered but did not start a run (' + (e.message || 'no detail') + '). Copy the message below into a new Claude Code session on the Timber repo instead.';
-      case 'server_unavailable': case 'upstream_error': return 'No answer from Claude Code (' + code + '). A session may still have started: check your Claude Code list before tapping again.';
-      default: return 'The call failed (' + code + '). Copy the message below into a new Claude Code session instead.';
-    }
-  }
-  function researchInCloud() {
-    var mcp = caps.mcp, list = cloudCandidates();
-    if (!mcp || !list.length || cloudBusy || !batchId) return;
-    cloudBusy = true; renderDock();
-    var now = Date.now(), i = 0, id = batchId;
-    status(els.cloudStatus, 'Queuing ' + list.length + ' card' + (list.length === 1 ? '' : 's') + '.');
-    var queue = function () {
-      if (i >= list.length) return;
-      var c = list[i++];
-      var patch = { cloudQueuedAt: now, cloudDoneAt: null, cloudNote: null, updatedAt: now };
-      return store.updateCard(c.id, patch).then(queue);
-    };
-    queue().then(function () {
-      status(els.cloudStatus, 'Starting a Claude Code session. The first time, Claude asks you to allow this page to use Claude Code Remote.');
-      return startSession('Timber Forge research ' + id, cloudPrompt(id));
-    }).then(function (r) {
-      var sid = findSessionId(r.payload), task = findTaskId(r.payload);
-      keepReply(id, 'cloud', r.payload);
-      if (!sid && !task) throw { code: 'no_session', message: JSON.stringify(r.payload).slice(0, 300) };
-      els.cloudStatus.className = 'status';
-      els.cloudStatus.innerHTML = 'Researching ' + list.length + ' card' + (list.length === 1 ? '' : 's') + ' in the cloud' +
-        (sid ? ' (<a href="https://claude.ai/code/' + esc(sid) + '" target="_blank" rel="noopener">session</a>)' : ' (scheduled task ' + esc(task) + ')') +
-        '. You can lock the phone now: each card fills in here when it is done, usually a few minutes a plant.';
-      return store.updateBatch(id, { cloudSessionId: sid || null, cloudTask: task || null, cloudAt: now });
-    }).catch(function (e) {
-      els.cloudStatus.className = 'status bad';
-      els.cloudStatus.innerHTML = esc(cloudError(e)) + '<textarea readonly rows="5" style="margin-top:8px">' + esc(cloudPrompt(id)) + '</textarea>';
-      if (e && (e.code === 'server_unavailable' || e.code === 'upstream_error')) return;   /* a session may exist: keep the cards queued */
-      var j = 0;
-      var undo = function () { if (j >= list.length) return; var c = list[j++]; return store.updateCard(c.id, { cloudQueuedAt: null, updatedAt: Date.now() }).then(undo); };
-      return undo();
-    }).catch(function () { /* the status line already says what failed */ })
-      .then(function () { cloudBusy = false; renderDock(); });
   }
 
   // ---------- intake: names typed, or label photos read by Claude ----------
@@ -1097,42 +1010,28 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
   }
 
   // ---------- hand-off: the file, the message, the session ----------
-  function handoffMessage() {
-    var ready = exportable(), withPhoto = ready.filter(function (c) { return c.photos && c.photos.length; }).length;
-    var held = cards.filter(function (c) { return c.plant && !c.dealtAt && validate(c.plant).errors.length; }).length;
-    var named = cards.filter(function (c) { return !c.plant && !c.dealtAt; }).length;
-    return 'New batch from the Timber Card Forge artifact.\n' +
-      'Artifact: ' + ARTIFACT_URL + '\n' +
-      'Batch: ' + batchId + ' — ' + ready.length + ' card' + (ready.length === 1 ? '' : 's') + ' ready (' + withPhoto + ' with a photo, ' + (ready.length - withPhoto) + ' without)' +
-      (held ? '; ' + held + ' held back with validator errors' : '') + (named ? '; ' + named + ' named but not researched' : '') + '.\n' +
-      (held + named ? 'Not ready, research these yourself online: ' + leftOut().map(function (x) { return x.name; }).join('; ') + '.\n' : '') + '\n' +
-      'Read README.md, NEW-SESSION.md and CARD-FORGE.md first; the repo carries the layout, rubric and protocol, so nothing needs pasting. ' +
-      'Pull the batch exactly as CARD-FORGE.md says: query the artifact\'s "cards" collection for batch == "' + batchId + '" with a plant and no validator errors, ' +
-      'save each photo asset by id into data/held-photos/' + batchId + '/, write batch-as-sent.json there, then compare-double, fit and deal with the normal tools. ' +
-      'Every draft was written by Claude without web access, so fact-check each one online before writing it, and record what you checked in the batch README. ' +
-      'Cards with no photo go on hold. Anything you cannot place confidently, stop and ask; a photo on the wrong card is worse than no photo. ' +
-      'Feature branch, not the deploy branch. node tests/run-all.js --jobs 3 once before pushing. ' +
-      'When a card is dealt or held, set dealtAt on its document so the Forge shows it, and refresh the deck/index document from timber.html.';
-  }
+  function handoffMessage() { return 'Deal the Forge handover (batch ' + batchId + '). Read HANDOVER.md.'; }
+  function waiting() { return cards.filter(function (c) { return !c.dealtAt; }); }
   function renderHandoff() {
-    var ready = exportable(), withPhoto = ready.filter(function (c) { return c.photos && c.photos.length; }).length;
-    var held = cards.filter(function (c) { return c.plant && !c.dealtAt && validate(c.plant).errors.length; }).length;
-    var named = cards.filter(function (c) { return !c.plant && !c.dealtAt; }).length;
-    var dealt = cards.filter(function (c) { return c.dealtAt; }).length;
-    els.hoTitle.textContent = 'Hand off batch ' + batchId;
-    els.hoSummary.innerHTML = '<dt>Ready</dt><dd>' + ready.length + ' (' + withPhoto + ' with a photo)</dd>' +
-      '<dt>Held back</dt><dd>' + held + ' with validator errors</dd>' +
-      '<dt>Not researched</dt><dd>' + named + '</dd>' + (dealt ? '<dt>Already dealt</dt><dd>' + dealt + '</dd>' : '');
+    var live = waiting(), ready = exportable(), withPhoto = live.filter(function (c) { return c.photos && c.photos.length; }).length;
+    var named = live.filter(function (c) { return !c.plant; }).length, fix = live.length - ready.length - named;
+    var b = batches.filter(function (x) { return x.id === batchId; })[0] || {};
+    els.hoTitle.textContent = 'Hand over batch ' + batchId;
+    els.hoSummary.innerHTML = '<dt>Cards</dt><dd>' + live.length + ' (' + withPhoto + ' with a photo)</dd>' +
+      '<dt>Drafted</dt><dd>' + ready.length + '</dd>' + (fix ? '<dt>Draft needs fixes</dt><dd>' + fix + ', researched again online</dd>' : '') +
+      '<dt>Name only</dt><dd>' + named + ', researched online</dd>' +
+      (b.handedAt ? '<dt>Handed over</dt><dd>' + new Date(b.handedAt).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) + '</dd>' : '');
     els.hoMsg.value = handoffMessage();
-    els.hoSend.hidden = !caps.mcp; els.hoNoMcp.hidden = !!caps.mcp;
-    els.hoStart.disabled = !ready.length;
+    els.hoMark.disabled = !live.length;
+    els.hoMark.textContent = b.handedAt ? 'Hand over again (adds new cards)' : 'Hand over to Claude Code';
   }
-  function openHandoff() { if (!batchId) return; renderHandoff(); els.hoResult.textContent = ''; els.handoff.hidden = false; document.body.style.overflow = 'hidden'; els.hoClose.focus(); }
+  function openHandoff() { if (!batchId) return; renderHandoff(); status(els.hoResult, ''); els.handoff.hidden = false; document.body.style.overflow = 'hidden'; els.hoClose.focus(); }
   function closeHandoff() { els.handoff.hidden = true; document.body.style.overflow = ''; }
-  function markHanded(sessionId) {
-    var now = Date.now();
-    return store.updateBatch(batchId, { handedAt: now, sessionId: sessionId || null }).then(function () {
-      var list = exportable(), i = 0;
+  /* The hand-over is a flag in the Forge's own store: the batch and every card not yet dealt get handedAt, and the
+     Claude Code session that deals the handover (HANDOVER.md in the repo) finds them by it. No connector, no prompt. */
+  function markHanded() {
+    var now = Date.now(), list = waiting(), i = 0;
+    return store.updateBatch(batchId, { handedAt: now, handoverDoneAt: null }).then(function () {
       var step = function () { if (i >= list.length) return; var c = list[i++]; return store.updateCard(c.id, { handedAt: now }).then(step); };
       return step();
     });
@@ -1149,64 +1048,6 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     },
       function (e) { var code = e && e.code; if (code !== 'declined') toast('Could not save the file (' + code + ').'); });
   }
-  function mcpCopy(e) {
-    var code = e && e.code || 'upstream_error';
-    switch (code) {
-      case 'server_not_connected': return 'Claude Code Remote is not connected for this page. Copy the message instead.';
-      case 'needs_reauth': return 'Reconnect Claude Code Remote in claude.ai Settings → Connectors, then try again.';
-      case 'approval_required': return 'The request needs your approval. Allow it in the prompt, then tap Send again.';
-      case 'not_in_manifest': return 'This page is not allowed to use Claude Code Remote in this view. Copy the message instead.';
-      case 'blocked_by_policy': return 'Your organisation blocks this call. Copy the message instead.';
-      case 'cancelled': return 'The request was cancelled.';
-      case 'tool_error': return 'Claude Code refused the session: ' + (e.message || 'no reason given') + '. Copy the message instead.';
-      default: return 'The call failed (' + code + '). ' + (e && e.message ? e.message : '') + ' Copy the message instead.';
-    }
-  }
-  /* Only a real session id (session_0 plus twenty-odd characters) counts. On 2026-10-28 the word in a "session_request" field was
-     read as an id; the run had started, but under a scheduled task, so the page showed nothing true about it. */
-  function findSessionId(p) { var m = JSON.stringify(p == null ? '' : p).match(/session_0[A-Za-z0-9]{20,}/); return m ? m[0] : null; }
-  function findTaskId(p) { var m = JSON.stringify(p == null ? '' : p).match(/trig_[A-Za-z0-9]{10,}/); return m ? m[0] : null; }
-  function keepReply(id, what, payload) {   /* the raw answer, for the next Claude session to read */
-    var patch = {}; patch[what + 'Reply'] = JSON.stringify(payload == null ? null : payload).slice(0, 4000); patch[what + 'At'] = Date.now();
-    return store.updateBatch(id, patch).catch(function () {});
-  }
-  /* Claude Code Remote has no create_session tool: make a one-off scheduled task with no schedule, then fire it now.
-     The task is kept (deleting it would delete the session it started). */
-  /* A session started by a scheduled task gets the repository read-only: on 2026-10-28 one dealt the batch and could not push.
-     add_repo with push access is the documented way to get it. */
-  var REPO_NOTE = 'Work in the ' + REPO_URL + ' repository; if it is not already checked out here, clone it first. ' +
-    'Before you commit anything, call the add_repo tool (owner plantcards-app, repo Timber, access push) so the push is allowed; if it is refused, say so at the end and stop before committing.\n\n';
-  function startSession(title, prompt) {
-    var mcp = caps.mcp;
-    return mcp.callTool(SERVER, 'create_trigger', { name: title, prompt: REPO_NOTE + prompt, initiation: 'human_request', environment_id: ENV_ID, create_new_session_on_fire: true })
-      .then(function (r) {
-        var m = JSON.stringify(r && r.payload != null ? r.payload : '').match(/trig_[A-Za-z0-9]+/);
-        if (!m) { var err = new Error('No task id came back: ' + JSON.stringify(r && r.payload).slice(0, 200)); err.code = 'tool_error'; throw err; }
-        return mcp.callTool(SERVER, 'fire_trigger', { trigger_id: m[0] }).then(function (f) { return { payload: { trigger: r.payload, fire: f && f.payload } }; });
-      });
-  }
-  function sendToClaudeCode() {
-    var mcp = caps.mcp; if (!mcp) return;
-    els.hoStart.disabled = true;
-    status(els.hoResult, 'Starting a Claude Code session on the Timber repo. The first time, allow this page to use Claude Code Remote.');
-    startSession('Timber batch ' + batchId, handoffMessage())
-      .then(function (r) {
-        var id = findSessionId(r.payload), task = findTaskId(r.payload);
-        keepReply(batchId, 'send', r.payload);
-        if (!id && !task) {
-          status(els.hoResult, 'Claude Code did not start a run. It answered: ' + JSON.stringify(r.payload).slice(0, 300) + ' Copy the message above into a new Claude Code session on the Timber repo instead. Nothing was marked as handed.', true);
-          return;
-        }
-        els.hoResult.className = 'status';
-        els.hoResult.innerHTML = id
-          ? 'Session started: <a href="https://claude.ai/code/' + esc(id) + '" target="_blank" rel="noopener">' + esc(id) + '</a>.'
-          : 'Started a Claude Code run (scheduled task ' + esc(task) + '). It does not show in your Claude Code list; when it finishes, the cards here show Dealt or Held.';
-        return markHanded(id || task).then(function () { toast('Batch ' + batchId + ' handed to Claude Code.'); });
-      })
-      .catch(function (e) { status(els.hoResult, mcpCopy(e), true); })
-      .then(function () { els.hoStart.disabled = !exportable().length; });
-  }
-
   // ---------- wiring ----------
   els.batchSel.addEventListener('change', function () { if (els.batchSel.value) selectBatch(els.batchSel.value); });
   els.newBatch.addEventListener('click', function () {
@@ -1253,7 +1094,6 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     input.value = '';
   });
   els.researchAll.addEventListener('click', researchAll);
-  els.cloudAll.addEventListener('click', researchInCloud);
   els.stopAll.addEventListener('click', function () { stopping = true; if (ctl) ctl.abort(); toast('Stopping after this plant.'); });
   els.downloadJson.addEventListener('click', downloadJson);
   els.openHandoff.addEventListener('click', openHandoff);
@@ -1263,8 +1103,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
   els.edForm.addEventListener('input', function () { clearTimeout(edTimer); edTimer = setTimeout(refreshEditorChecks, 150); });
   els.hoClose.addEventListener('click', closeHandoff);
   els.hoCopy.addEventListener('click', function () { copyText(els.hoMsg.value); });
-  els.hoMark.addEventListener('click', function () { markHanded(null).then(function () { toast('Marked as handed.'); renderHandoff(); }, function (e) { toast('Could not mark (' + (e && e.code || e) + ').'); }); });
-  els.hoStart.addEventListener('click', sendToClaudeCode);
+  els.hoMark.addEventListener('click', function () { els.hoMark.disabled = true; markHanded().then(function () { status(els.hoResult, 'Handed over. ' + waiting().length + ' card' + (waiting().length === 1 ? '' : 's') + ' are waiting for Claude Code; they show Dealt or Held here once it has done them.'); toast('Batch ' + batchId + ' handed over.'); renderHandoff(); }, function (e) { els.hoMark.disabled = false; status(els.hoResult, 'Could not hand over (' + (e && e.code || e) + '). Try again.', true); }); });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { if (!els.editor.hidden) closeEditor(); else if (!els.handoff.hidden) closeHandoff(); } });
 
   // ---------- boot: render first, light features up as the capabilities resolve ----------
@@ -1294,7 +1133,6 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
   });
   window.claude.use('assets').then(function (a) { caps.assets = a; renderList(); });
   window.claude.use('downloads').then(function (d) { caps.downloads = d; renderList(); });
-  window.claude.use('mcp').then(function (m) { caps.mcp = m; renderDock(); if (!els.handoff.hidden) renderHandoff(); });
 })();
 </script>
 
