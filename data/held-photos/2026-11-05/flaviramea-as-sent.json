@@ -1,0 +1,51 @@
+[
+  {
+    "aspect": "Any aspect",
+    "careLevel": 10,
+    "clay": "yes",
+    "common": "Yellow-stemmed Dogwood",
+    "compliance": "",
+    "container": "with care",
+    "cvs": "'Kelseyi' – dwarf, compact mound · 'Bud's Yellow' – yellow stems, better disease resistance · 'Cardinal' – red to coral stems · 'Hedgerows Gold' – gold-edged leaves, red stems",
+    "foliage": "deciduous; oval mid-green leaves, often colouring in autumn",
+    "growthSpeed": 14,
+    "hardiness": "H7",
+    "hardinessNote": "Very hardy throughout the UK, coping with winters below -20°C.",
+    "height": "1.5–2.5 m",
+    "hue": 65,
+    "latin": "Cornus sericea 'Flaviramea'",
+    "peak": "Nov-Mar",
+    "pest": "",
+    "pestRisk": 6,
+    "pollination": "not applicable; grown for stems, berries need no partner for display",
+    "prune": "For the brightest stems, cut all stems hard to 5–10 cm in March every year or two. Or remove a third of the oldest stems each spring.",
+    "resilience": "Tough and tolerant of wet ground, clay, wind and cold. Suckers and spreads over time. Pests: occasional aphids, leaf spot or anthracnose.",
+    "rootSize": "",
+    "soil": "Moisture-retentive",
+    "soilWarning": "Struggles in very dry, thin soil",
+    "sources": [
+      "RHS plant profile for Cornus sericea 'Flaviramea' as remembered, not checked online",
+      "General horticultural knowledge of red- and yellow-stemmed dogwoods (coppicing practice, site tolerances)"
+    ],
+    "spread": "2.5–4 m",
+    "stockForm": "both",
+    "sunMin": 50,
+    "sunNeed": 80,
+    "thirst": 12,
+    "toxicity": "No known hazard.",
+    "uncertain": [
+      "hardiness: H7 is as remembered from the RHS profile and fits the species' very cold native range. Not checked online.",
+      "height and spread: no label supplied. The figures are RHS ultimate-size bands as remembered. Spread varies with suckering and pruning.",
+      "latin: the label name 'Cornus sto. Flaviramea' was taken as Cornus stolonifera 'Flaviramea', which is now usually listed as Cornus sericea 'Flaviramea'. Check which name the supplier label prints.",
+      "toxicity: no hazard is listed for Cornus in the RHS as remembered. The berries are bitter and not regarded as food, and some sources mention mild stomach upset if eaten. Verify before relying on 'No known hazard.'",
+      "compliance: not believed to be on Schedule 9, though the species can sucker and naturalise. No plant breeders' rights apply, as it is an old cultivar. Plant passport status for Cornus was not confirmed.",
+      "rootSize: left blank, no reliable figure known.",
+      "sunMin: 50 is a judgement. It grows in part shade, but stem colour is weaker.",
+      "ratings: pestRisk, thirst, careLevel and growthSpeed are judgements on the 0–20 scale, not sourced figures.",
+      "stockForm: 'both' assumes the usual UK trade in bare-root whips in winter as well as pots. Confirm against stock."
+    ],
+    "uses": "Winter borders · wet ground and pond margins · informal screening · cut stems for floristry · mass planting",
+    "visual": "Bright yellow-green winter stems after leaf fall · small white flowers in late spring then white berries · some autumn leaf colour",
+    "water": "Water well in the first summer. Copes with wet ground, so it needs little care once settled except in long droughts."
+  }
+]

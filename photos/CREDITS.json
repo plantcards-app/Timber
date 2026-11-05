@@ -1302,6 +1302,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "catharanthus-roseus-soiree-cerise-white-eye.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "ceanothus-concha.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -1783,6 +1793,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "colocasia-esculenta-white-lava.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "convolvulus-cneorum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -1975,6 +1995,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "cornus-alba-siberian-pearls.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "cornus-canadensis.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -2038,6 +2068,16 @@
    "file": "cornus-sanguinea-midwinter-fire.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "cornus-sericea-flaviramea-autumn.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Golden-twig dogwood card (PHOTO_SWAP alt): Oscar's photo, 2026-11-05: summer-green leaves turning yellow on the yellow-green stems.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -6261,6 +6301,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "pinus-mugo-carsten-s-wintergold.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "pinus-mugo-palmeter.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
@@ -6274,6 +6324,16 @@
    "file": "pinus-mugo.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright. C2PA: c2pa.edited, softwareAgent 'Photo assist', digitalSourceType compositeWithTrainedAlgorithmicMedia (Galaxy AI generative edit); the visible AI label was cropped out by tools/reframe-photo.js, the marker stands. See VERIFY-QUEUE 32.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "pinus-thunbergii-thunderhead.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -8330,16 +8390,6 @@
    "sourceUrl": null,
    "commit": "c210f80",
    "commitSubject": "Restore nine displaced plants: deck 57 -> 66",
-   "commercialUseCleared": true
-  },
-  {
-   "file": "catharanthus-roseus-soiree-cerise-white-eye.jpg",
-   "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright",
-   "author": "Scion Studios",
-   "sourceUrl": null,
-   "commit": null,
-   "commitSubject": "staged after CREDITS.json was created — not yet committed",
    "commercialUseCleared": true
   }
  ]
