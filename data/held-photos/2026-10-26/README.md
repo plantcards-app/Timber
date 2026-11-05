@@ -6,7 +6,7 @@ is false and was ignored.
 
 | Photo | Placed as | Why |
 |---|---|---|
-| 01 → `unmatched-viola-lilac-cream.jpg` | **not dealt, shelved** | a viola (lilac upper petals, cream and butter-yellow lower petals, dark whiskers). None of the three JSONs is a viola, and it is not the deck's Viola 'Columbine' (violet streaked white). Needs a name from Oscar. |
+| 01 → `unmatched-viola-lilac-cream.jpg` | **not dealt, shelved** | a viola (lilac upper petals, cream and butter-yellow lower petals, dark whiskers). None of the three JSONs is a viola, and it is not the deck's Viola 'Columbine' (violet streaked white). The Forge batch holds a fourth card, "Purple Wing Teardrops Apricot", left out of the JSON file: [Inference] this photo, Viola cornuta 'Teardrops Apricot Purple Wing' (Sarah Raven, Marshalls). Not yet dealt. |
 | 02 | Physocarpus opulifolius ANGEL GOLD ('Minange') | lobed, toothed lime-gold leaves; the only ninebark in the batch. [Inference] by appearance. |
 | 04 | Clerodendrum bungei, card photo | large toothed heart-shaped leaves, purple veins, dark stems, a dense reddish flower-bud head. [Inference] by appearance. |
 | 03 | Clerodendrum bungei, flash frame (`-shoot`) | the same plant from above. |

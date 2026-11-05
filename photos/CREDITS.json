@@ -8331,6 +8331,16 @@
    "commit": "c210f80",
    "commitSubject": "Restore nine displaced plants: deck 57 -> 66",
    "commercialUseCleared": true
+  },
+  {
+   "file": "catharanthus-roseus-soiree-cerise-white-eye.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
   }
  ]
 }
