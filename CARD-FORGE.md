@@ -1,5 +1,8 @@
 # The Card Forge — pulling a batch built in the artifact
 
+**Since 2026-10-29 a batch arrives by the handover tray: read `HANDOVER.md` first.** This file stays the reference for
+the store's fields and the write-back.
+
 The **Timber Card Forge** is a Claude artifact Oscar uses on the shop floor:
 <https://claude.ai/artifact/2Byv3SGZ3jyTV1QcZTqhed>. He pastes plant names (from the
 Label Scanner, or read off label photos), the page asks Claude for a plant JSON in the
@@ -119,3 +122,72 @@ A session without the `ArtifactData` tool (a plain chat, a session whose artifac
 are off) takes the other route: Oscar downloads `batch-<batchId>.json` from the page's
 *JSON file* button and attaches the photos himself, which is exactly the "New plant for
 Timber" opening message in NEW-SESSION.md, one JSON array instead of one object.
+
+## The page's source, and the Label Scanner inside it (2026-10-27)
+
+Oscar: "I'm not sure card forge can send the jsons over correctly, check that it actually works, also [the] forge should
+really merge with the label checker or have a method to instantly transfer names". Checked and changed that day
+(artifact version 4, `1793106588-264f`):
+
+- **The JSON file is faithful.** Batch 2026-10-26: the three plants in `batch-2026-10-26_1.json` are field for field
+  (34 keys each) what the Forge's db holds. The repo validator passed all three.
+- **But it dropped a card without a word.** The batch held a fourth card, "Purple Wing Teardrops Apricot", which the
+  page's Claude could not identify (no web access), so it stayed *Needs fixes* and was left out of the file. It is
+  Viola cornuta 'Teardrops Apricot Purple Wing' (Sarah Raven, Marshalls). The download's message now names every
+  card it leaves out and why, and the hand-off message lists them for the session to research online.
+- **"Send to Claude Code" has never started a session.** No session titled "Timber batch …" exists in Oscar's list;
+  every batch so far reached Claude Code by a copied message or a downloaded file. The `sessionId` on batches
+  2026-10-18 to 2026-10-20 was written back by the deal session. [Unverified] why: never pressed, or it failed. The
+  button is unchanged; the copy route works.
+- **The Label Scanner is now in the Forge.** *Scan labels* runs the scanner's own on-device reader (same models,
+  copied server side from <https://claude.ai/artifact/Y3iNay4N9khv2nQNFCqZuE>) and puts the names in a review list:
+  low-confidence reads are marked, names are typed over, then *Add to batch* makes the cards, with the label's
+  small print as each card's label text. Free, nothing uploaded; the first scan fetches about 27 MB. *Read with
+  Claude* stays as the second route. A paste of the old scanner's *Copy table* also keeps its label text.
+  Tested in Chromium on three Dianthus label photos: all three read exactly.
+
+The page's source lives in `design/forge/`: `card-forge.html` (the page) and `label-scanner.js` (the reader, lifted
+unchanged from the scanner's version 5 apart from its status line, and escaped to ASCII so it parses whatever charset
+it is served with). The model files (`ort.wasm.min.js`, `ort-wasm-simd.wasm`, `det.b64.txt`, `rec.b64.txt`) are only in
+the two artifacts. To change the page: edit those files, then publish `card-forge.html` with the artifact's `url` and
+`files: {"label-scanner.js": "design/forge/label-scanner.js"}`; the model files are kept from the last version.
+
+## Research in the cloud (2026-10-27)
+
+Oscar: "forge should be able to research even tho ive taken it off the screen, its a waste of time for me to wait with my
+phone out". The page's own *Research all* runs inside the page, so it stops when the screen goes off (and it drafts from
+memory, without the web). *Research in the cloud* instead:
+
+1. sets `cloudQueuedAt` on every card that needs research (no plant, or one the checks refuse), and
+2. starts a Claude Code session on this repo through the Claude Code Remote connector (`create_session`, permission mode
+   `auto`), whose first message is the page's `cloudPrompt(batchId)`: query the batch, research each queued card online
+   following PLANT-BRIEF.md, run `tools/check-plant-json.js`, and write the plant back pinned to its version with
+   `research.checkedOnline: true` and `cloudDoneAt`; a plant it cannot identify gets `cloudNote` instead of a guess.
+   It edits nothing in the repo.
+
+The page shows *Researching in the cloud* until `cloudDoneAt` lands, then *Checked online*. If the connector call
+fails, the page shows the same message in a box to paste into a new Claude Code session by hand, and un-queues the
+cards (except on an ambiguous `server_unavailable` / `upstream_error`, when a session may have started).
+
+The cloud half was tested on 2026-10-27 with the exact prompt (session_015xuecgrhYUkgfaw4dBcdeK): it researched the viola card of batch 2026-10-26 online in about 15 minutes, with no questions, and wrote back Viola cornuta 'Teardrops Apricot Purple Wing', H5 (RHS species), 15 cm, Jan-Apr, nine sources, checkedOnline true; the repo validator passes it. Published as artifact version 5.
+The page's own call of the connector is [Unverified] until Oscar taps the button once: the first tap asks him to allow
+the page to use Claude Code Remote.
+
+### How the page starts a run (2026-10-28)
+
+The page cannot call `create_session`. Another session changed both buttons (artifact version 1793228577-deec) to create a
+one-off scheduled task (`create_trigger`, fresh session per firing, no schedule) and fire it at once (`fire_trigger`); the
+manifest now declares those two tools. The run does not appear in the Claude Code session list; `list_triggers` shows it
+and its `last_run.session_id`.
+
+Evidence, 2026-10-28: Oscar tapped *Send to Claude Code* on batch 2026-10-28. Task `trig_0113JT2EmCV4P9kYBt6ZHQAa` fired
+at 23:12 and its session ran nine minutes: it pulled the card, checked it, held it (no photo) and committed locally, but
+**could not push** (403: a task-started session does not get the repo with push access) and so did no write-back. The
+page meanwhile read the word "session_request" out of the reply as a session id. The same card was dealt with its
+photo by session_019fB6qSjgxJsfeVWkLd3w2D the next morning, so nothing was lost.
+
+Fixed in artifact version 1793231013-e54b: only a real `session_0…` id or a `trig_…` id counts as started, and the
+status line says which; the raw reply is kept on the batch (`sendReply` / `cloudReply`) for the next session to read;
+and the run's opening note tells it to call `add_repo` (plantcards-app/Timber, push) before committing. [Unverified]
+that `add_repo` grants push to a task-started session without a person approving it. Cloud research never pushes, so
+it is not affected.

@@ -29,7 +29,7 @@ Which one you are on depends on whether the card already exists.
 |---|---|---|
 | A photo of a plant already written into `PLANTS_ON_HOLD` | written, waiting on a photograph | `tools/deal-plant.js` — **the common case**, 98 cards are in that state |
 | A plant with no card at all | does not exist | plant JSON first, then `tools/add-plant.js` / `add-plants-bulk.js` |
-| A batch Oscar built in the **Card Forge** artifact | some with photos, some without, all with a JSON | `CARD-FORGE.md` — pull the cards and photos out of the artifact, then the two tools above |
+| A batch Oscar **handed over** in the **Card Forge** ("deal the Forge handover") | names, drafts and photos in the Forge's store | `HANDOVER.md` — the whole procedure, then the two tools above |
 
 `node tools/data-audit.js` prints the live held count; it moves every time a
 photo lands.
