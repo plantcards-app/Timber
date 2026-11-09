@@ -1256,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r437 · 2026-11-05 · 5d7fa0a';
+const BUILD='r439 · 2026-11-08 · 8085f63';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -16324,6 +16324,32 @@ const PLANTS = [
    uses:"Winter borders · damp ground and pond edges · mass planting · cut stems for winter arrangements", size:"1.5–2.5 m H × 2.5–4 m W",
    toxicity:"Berries should not be eaten; they may cause a mild stomach upset if swallowed by children or pets.", hardinessNote:"Very hardy, below -20°C, so it survives any UK winter, as RHS rates Cornus alba.", foliage:"deciduous; oval green leaves with autumn tints", stockForm:"container", pollination:"not applicable; grown for stems, and whether a single plant reliably sets its berries is unconfirmed", clay:"yes",
    seasonalImpact:"", growthSpeed:14, pestRisk:4, thirst:12, careLevel:10, sunNeed:85, sunMin:50},
+  {common:"Mahonia 'Lionel Fortescue'", latin:"Mahonia × media 'Lionel Fortescue'", hue:55,
+   visual:"Upright sprays of scented bright yellow flowers over spiny pinnate leaves · winter bee food",
+   water:"Water regularly while establishing; copes with dry shade once settled.",
+   aspect:"North / East / West",
+   soil:"Moist, well-drained loam; Shelter from cold, drying winds",
+   prune:"Little needed; cut leggy stems back hard after flowering to thicken it.",
+   source:"", peak:"Nov-Feb", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Charity' – spreading sprays, the classic · 'Winter Sun' – denser, more compact upright sprays · 'Buckland' – longer, arching sprays",
+   hardiness:"H5", resilience:"Tough and very shade tolerant; trouble-free apart from occasional leaf spot, rust or mildew.",
+   uses:"Shady borders · woodland planting · winter interest · security planting", size:"2.5–4 m H × 2.5–4 m W",
+   toxicity:"Leaflets carry sharp spines, so wear gloves when handling. Berries and roots contain berberine and may cause a mild stomach upset if a child eats many; the ASPCA lists common Mahonia as safe for dogs and cats.", hardinessNote:"Hardy in most places throughout the UK, approximately -15 to -10°C.", foliage:"evergreen; long pinnate leaves of 17–21 spiny dark green leaflets", stockForm:"container", pollination:"not applicable", clay:"yes",
+   seasonalImpact:"", growthSpeed:10, pestRisk:4, thirst:8, careLevel:5, sunNeed:35, sunMin:10},
+  {common:"Mahonia 'Winter Sun'", latin:"Mahonia × media 'Winter Sun'", hue:55,
+   visual:"Dense upright sprays of scented bright yellow winter flowers · spiny dark green leaves",
+   water:"Water regularly in the first year; once established it copes with dry spells, but do not let it dry out in hot summers.",
+   aspect:"North / East / West",
+   soil:"Well-drained loam; Shelter from cold drying winds",
+   prune:"Little needed. After flowering, cut leggy stems back to a leaf rosette to keep it bushy; old bare plants can be cut back hard in spring.",
+   source:"", peak:"Nov-Feb", order:"", bench:"", root:"",
+   trade:"", retail:"", margin:"", type:"", shrink:"", returnRisk:"", pots:"",
+   cvs:"'Charity' – spreading sprays, the classic · 'Lionel Fortescue' – very upright, longer sprays · 'Buckland' – longer, arching sprays",
+   hardiness:"H5", resilience:"Tough, shade-tolerant evergreen that copes with clay and dry shade once established. Flowers in winter when little else does. Pests: occasional mahonia rust and leaf-spot, mostly cosmetic.",
+   uses:"Winter interest · shady borders · winter food for bees · informal screen or barrier · woodland gardens", size:"2.5–4 m H × 1.5–2.5 m W",
+   toxicity:"Leaflets carry sharp spines, so wear gloves when handling. Berries and roots contain berberine and may cause a mild stomach upset if a child eats many; the ASPCA lists common Mahonia as safe for dogs and cats.", hardinessNote:"Hardy in a cold winter throughout most of the UK, approximately -15 to -10°C.", foliage:"evergreen; large pinnate leaves with spiny holly-like leaflets, sometimes reddish in cold weather", stockForm:"container", pollination:"not applicable", clay:"yes",
+   seasonalImpact:"", growthSpeed:10, pestRisk:6, thirst:8, careLevel:6, sunNeed:35, sunMin:10},
 ];
 /* PLANTS:END */
 /* HOLD:BEGIN — managed by plants-tool.js; keep this marker pair.
@@ -20539,6 +20565,12 @@ const PHOTO_SWAP={
   /* Oscar's photo, 2026-11-05: summer-green leaves turning yellow on the yellow-green stems */
   'cornus-sericea-flaviramea':{
     alt:'photos/card/cornus-sericea-flaviramea-autumn.webp',
+    focus:'50% 45%',
+    hold:'3.5s',
+  },
+  /* Oscar's second frame: glaucous leaves and the flower spikes in bud */
+  'mahonia-media-lionel-fortescue':{
+    alt:'photos/card/mahonia-media-lionel-fortescue-buds.webp',
     focus:'50% 45%',
     hold:'3.5s',
   },
