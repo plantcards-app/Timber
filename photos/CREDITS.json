@@ -6321,6 +6321,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "pieris-japonica-scarlett-o-hara.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "pilea-glaucophylla-greyzy.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
