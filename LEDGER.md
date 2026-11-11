@@ -32,6 +32,7 @@ brick: Play Store — Oscar's focus from 2026-10-06 ("I really think i just need
   check — Oscar opening the app on an iPhone that crashed and pasting back the *Report a problem* text; the
   toxicity paste, 317 of 432 blank, unchanged since 2026-09-13.)
 since: 2026-10-06  sessions-unchanged: 0
+progress: 2026-11-11 (**Forge handover 2026-11-11: Acer palmatum 'Cascade' dealt, deck 710 -> 711, r448**) — draft assumed a weeping dissected form; RHS says an arching non-dissected tree to 3 m, matching Oscar's photo. Record under `data/held-photos/2026-11-11/`.
 progress: 2026-11-11 (**Camellia sasanqua collage binned at Oscar's word, r447**) — camellia-sasanqua-collage.jpg/.webp and its CREDITS entry deleted; it was in no rotation. Still in git history.
 progress: 2026-11-11 (**Camellia sasanqua flash trimmed to Oscar's order, r446**) — white-and-pink lead, then the full pink double; no pure-white sasanqua photo on file, so the third (white) frame waits for one. Other four frames stay on disk as spares.
 progress: 2026-11-11 (**Camellia sasanqua species card: Oscar's four new frames, white-and-pink flower now leads, r445**) — label read CAMELLIA SASANQUA "les camellias d'automne", no cultivar, so all four went on the species card as flash-betweens at Oscar's word; the 2026-10-01 collage moved from lead to last frame (file renamed -collage, CREDITS note), not dropped.

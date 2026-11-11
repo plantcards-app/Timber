@@ -171,6 +171,16 @@
    "commercialUseCleared": true
   },
   {
+   "file": "acer-palmatum-cascade.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "acer-palmatum-dissectum.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
