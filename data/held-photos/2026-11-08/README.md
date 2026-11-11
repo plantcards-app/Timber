@@ -22,5 +22,5 @@ each JSON here lists its sources and what stayed uncertain. Forge JSONs as pulle
 Also: **Colocasia esculenta 'White Lava'** photo replaced at Oscar's word ("this is far greater"), r440.
 **Duplicate**: Forge card "Lonicera Garden Clouds Purple" was a second scan of PURPLE STORM — written back as dealt,
 `duplicateOf`. **Mahonia 'Charity'** stays held (no photo sent). Unassigned chat photos: 2 (mahonia on a wall),
-12 (Eva Gold, blurred, not used), 15, 16 (mahonia beside skimmia), 20 (red bud, possibly Calycanthus 'Aphrodite').
+12 (Eva Gold, blurred, not used), 15, 16 (mahonia beside skimmia), 20 → third Glory Flower (Clerodendrum bungei) frame at Oscar's word, r444.
 Gate: 18/18 except one perf-test timing check under 3-job load; perf-test alone passed 3/3.
