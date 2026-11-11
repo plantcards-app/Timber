@@ -1,0 +1,82 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162736994,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Pieris japonica 'Scarlett Hara",
+  "notes": "",
+  "order": 1794162736994.242,
+  "photos": [],
+  "plant": {
+    "aspect": "West / North",
+    "careLevel": 6,
+    "clay": "",
+    "common": "Pieris",
+    "compliance": "",
+    "container": "yes",
+    "cvs": "'Mountain Fire' – bright red new growth · 'Katsura' – wine-red young leaves, pink flowers · 'Valley Valentine' – deep pink-red flowers · 'Debutante' – compact, upright flower sprays · 'Little Heath' – dwarf, variegated leaves",
+    "foliage": "evergreen; glossy narrow leaves, scarlet when young, maturing to dark green",
+    "growthSpeed": 6,
+    "hardiness": "H5",
+    "hardinessNote": "Hardy in a cold winter throughout most of the UK, approximately -15 to -10°C, though new spring shoots can be scorched by late frost.",
+    "height": "",
+    "hue": 5,
+    "latin": "Pieris japonica 'Scarlett O’Hara'",
+    "peak": "Mar-May",
+    "pest": "",
+    "pestRisk": 8,
+    "pollination": "not applicable",
+    "prune": "Little needed. Lightly trim after flowering to remove spent flower sprays and cut any frost-damaged shoots back to healthy growth.",
+    "resilience": "Hardy evergreen, but the new growth is scorched by late frost and cold wind. Needs acid soil and yellows on lime. Pests: Pieris lace bug, vine weevil; Phytophthora root rot in wet soil.",
+    "rootSize": "",
+    "soil": "Acid, moisture-retentive",
+    "soilWarning": "Shelter from cold wind and late frost",
+    "sources": [
+      "RHS general Pieris japonica guidance as remembered, not checked online",
+      "General horticultural knowledge of Pieris toxicity (grayanotoxins) as remembered, not checked online",
+      "No label information or staff notes supplied"
+    ],
+    "spread": "",
+    "stockForm": "container",
+    "sunMin": 25,
+    "sunNeed": 55,
+    "thirst": 12,
+    "toxicity": "All parts are toxic if eaten, especially the leaves and nectar. They can cause vomiting, drooling and a slowed heart rate in children, dogs, cats, horses and livestock.",
+    "uncertain": [
+      "latin: the input read 'Scarlett Hara with an unbalanced quote. I have assumed the cultivar 'Scarlett O’Hara'. Verify against the label, because I am not certain a cultivar spelled 'Scarlett Hara' exists.",
+      "height and spread: I am not confident of the cultivar's dimensions. The species can reach 2-4 m, so they were left blank rather than guessed.",
+      "hardiness: H5 is the typical RHS rating for Pieris japonica. Confirm the cultivar-specific rating.",
+      "hue and visual: the scarlet young growth is inferred from the cultivar name and the usual character of red-shooted Pieris. Confirm whether flowers are white.",
+      "aspect: judged from general Pieris guidance (sheltered, out of early-morning sun after frost). Not checked against an RHS profile.",
+      "sunMin: a judgement that it tolerates fairly shady woodland conditions. Not a verified figure.",
+      "growthSpeed, pestRisk, thirst and careLevel: judged from the species, not from the cultivar.",
+      "clay: acid clay may suit it, but heavy wet clay risks root rot. This is not established, so it was left blank.",
+      "compliance: I could not confirm whether Pieris is on the Xylella fastidiosa host list or carries plant passport requirements, and no PBR number is known for this cultivar. Check online.",
+      "cvs: these are recalled Pieris japonica cultivars. Descriptions should be checked."
+    ],
+    "uses": "Shrub borders · woodland gardens · ericaceous containers · shady patios",
+    "visual": "Scarlet young shoots in spring · drooping sprays of white bell flowers · glossy evergreen leaves year-round",
+    "water": "Water with rainwater in dry spells, especially the first summer and in pots. Mulch each spring to keep roots cool."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162815251,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162815251,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "harmful",
+    "warnings": [
+      "\"spread\" carries no figure; the size rails need one",
+      "\"height\" carries no figure; the size rails need one",
+      "\"resilience\" is 185 characters; the fit step trims it sentence by sentence to 165"
+    ]
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162740774,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Photinia 'Little Red Robin'",
+  "notes": "",
+  "order": 1794162740774.4888,
+  "photos": [],
+  "plant": {
+    "aspect": "East / South / West",
+    "careLevel": 8,
+    "clay": "yes",
+    "common": "Photinia",
+    "compliance": "",
+    "container": "yes",
+    "cvs": "'Red Robin' – much larger, to several metres · PINK MARBLE ('Cassini') – cream-and-pink variegated leaves · 'Louise' – variegated, red-tinged new growth",
+    "foliage": "evergreen; glossy, leathery oval leaves, bright red when young",
+    "growthSpeed": 8,
+    "hardiness": "H4",
+    "hardinessNote": "Hardy through an average UK winter, approximately -10 to -5°C; shelter from cold winds in colder areas.",
+    "height": "0.9–1.2 m",
+    "hue": 5,
+    "latin": "Photinia × fraseri 'Little Red Robin'",
+    "peak": "Mar-May",
+    "pest": "",
+    "pestRisk": 10,
+    "pollination": "not applicable; grown for foliage, flowers are rarely produced on this dwarf form",
+    "prune": "Trim lightly after the spring flush and again in late summer to trigger fresh red growth; avoid cutting in frosty weather.",
+    "resilience": "Tough, compact evergreen once established, good for low hedges and screening. Leaf spot can mar foliage in wet years. Pests: occasional aphids; prone to leaf spot and powdery mildew.",
+    "rootSize": "",
+    "soil": "Well-drained loam",
+    "soilWarning": "Shelter from cold, drying winds",
+    "sources": [
+      "RHS plant profile for Photinia × fraseri 'Red Robin' as remembered, not checked online",
+      "General UK nursery descriptions of 'Little Red Robin' as remembered, not checked online"
+    ],
+    "spread": "0.9–1.2 m",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 75,
+    "thirst": 8,
+    "toxicity": "Leaves and seeds are cyanogenic and should not be eaten; keep children and browsing pets or livestock away from the foliage.",
+    "uncertain": [
+      "hardiness: H4 is taken from the RHS rating for the parent 'Red Robin'; not confirmed for 'Little Red Robin' itself",
+      "height/spread: 0.9–1.2 m reflects nursery descriptions as remembered, not an RHS figure; check the label",
+      "latin: commonly listed as a dwarf sport of Photinia × fraseri 'Red Robin'; confirm parentage and label form",
+      "compliance: whether plant breeders' rights apply is not known; left blank",
+      "rootSize: not established; left blank",
+      "clay: tolerance of heavy clay that is not waterlogged is inferred from 'Red Robin'",
+      "toxicity: cyanogenic compounds are reported for Photinia in general; the risk is considered low but this is not specific to this cultivar",
+      "cvs: PINK MARBLE ('Cassini') and 'Louise' are recalled from memory; verify availability",
+      "sunMin and the ratings are judgements based on the genus"
+    ],
+    "uses": "Low hedges · borders · patio containers · year-round structure",
+    "visual": "Glossy bright red new shoots fading to deep green · compact dwarf form of Red Robin · second red flush after summer trimming",
+    "water": "Water well through the first year, then only in prolonged dry spells. Keep pot-grown plants evenly moist."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794163065173,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794163065173,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "harmful",
+    "warnings": [
+      "\"water\" and \"soil\" share the word(s) well; drainage belongs in one field, not both",
+      "\"resilience\" is 182 characters; the fit step trims it sentence by sentence to 165"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162736535,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Salix Iceberg Alley",
+  "notes": "",
+  "order": 1794162736535.4053,
+  "photos": [],
+  "plant": {
+    "aspect": "East / South / West",
+    "careLevel": 6,
+    "clay": "yes",
+    "common": "Willow 'Iceberg Alley'",
+    "compliance": "",
+    "container": "with care",
+    "cvs": "",
+    "foliage": "deciduous",
+    "growthSpeed": 16,
+    "hardiness": "H6",
+    "hardinessNote": "Assumed hardy in all of the UK and Northern Europe, approximately -20 to -15°C; this is a genus-level estimate, not checked for this cultivar.",
+    "height": "",
+    "hue": "",
+    "latin": "Salix 'Iceberg Alley'",
+    "peak": "",
+    "pest": "",
+    "pestRisk": 10,
+    "pollination": "not applicable; grown for foliage, and willows are male or female plants",
+    "prune": "Tolerates hard pruning; cut back in late winter to keep it compact and encourage fresh growth.",
+    "resilience": "Willows generally tolerate wet and heavy soils and cold winters but suffer in prolonged drought. Pests: willow aphids, sawfly larvae, willow leaf beetle, rust and anthracnose.",
+    "rootSize": "",
+    "soil": "Moisture-retentive",
+    "soilWarning": "Keep roots away from drains and foundations",
+    "sources": [
+      "General knowledge of the genus Salix as grown in UK gardens (RHS genus guidance as remembered, not checked online).",
+      "No cultivar-specific profile for 'Iceberg Alley' was recalled with confidence; all cultivar details need online verification."
+    ],
+    "spread": "",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 80,
+    "thirst": 14,
+    "toxicity": "No known hazard.",
+    "uncertain": [
+      "Species and parentage: I cannot confidently say which Salix species 'Iceberg Alley' belongs to. It may be a branded (possibly Proven Winners) introduction, but this is not confirmed, so latin is given at genus level and must be checked.",
+      "hardiness: H6 is a genus-level estimate. Most garden willows are H6-H7, but the RHS band for this cultivar is not verified. Check before use.",
+      "height and spread: unknown for this cultivar; left blank.",
+      "peak, visual and hue: the selling feature (assumed to be pale or silvery foliage from the name) is not confirmed, so these are left blank or null.",
+      "cvs: sibling cultivars depend on the species, which is unconfirmed; left blank.",
+      "compliance: if this is a branded introduction it may carry plant breeders' rights, but no number is known; left blank. Salix is not a Schedule 9 plant to my knowledge.",
+      "toxicity: willows contain salicin, but I know of no RHS or common pet-poison listing flagging Salix as a hazard. 'No known hazard' is based on genus-level knowledge and should be confirmed.",
+      "Ratings, sunNeed, sunMin, aspect, soil, soilWarning, water, prune, uses, clay and container are inferred from typical Salix behaviour, not from cultivar data. These include moisture-loving, fast-growing, invasive roots near drains and tolerance of hard pruning.",
+      "rootSize: not known; left blank.",
+      "stockForm: assumed container, as is usual for UK garden centre retail; not confirmed."
+    ],
+    "uses": "Borders · screening · damp ground",
+    "visual": "",
+    "water": "Water freely in dry spells, especially in the first year after planting; do not let it dry out."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162787590,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162787590,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "clear",
+    "warnings": [
+      "\"hue\" is blank; the deck treats 0 as unset, so pick the dominant feature's hue (red 0, orange 30, yellow 55, green 120, blue 210, purple 275, pink 330)",
+      "\"peak\" is blank; the card has no season band",
+      "\"spread\" carries no figure; the size rails need one",
+      "\"height\" carries no figure; the size rails need one",
+      "\"resilience\" is 175 characters; the fit step trims it sentence by sentence to 165"
+    ]
+  }
+}

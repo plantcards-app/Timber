@@ -1,0 +1,80 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162739389,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Erica X Darleyensis 'Eva Gold'",
+  "notes": "",
+  "order": 1794162739389.088,
+  "photos": [],
+  "plant": {
+    "aspect": "South / West",
+    "careLevel": 6,
+    "clay": "",
+    "common": "Winter Heath",
+    "compliance": "",
+    "container": "yes",
+    "cvs": "'Kramer's Rote' – magenta flowers, bronze-green foliage · 'White Perfection' – white flowers, bright green foliage · 'Darley Dale' – pale pink, the original hybrid · 'Silberschmelze' – white, scented",
+    "foliage": "evergreen; fine needle-like golden-yellow leaves, orange-red tips on new growth",
+    "growthSpeed": 6,
+    "hardiness": "H7",
+    "hardinessNote": "Very hardy throughout the UK, tolerating temperatures below -20°C.",
+    "height": "30–40 cm",
+    "hue": 50,
+    "latin": "Erica × darleyensis 'Eva Gold'",
+    "peak": "Dec-Apr",
+    "pest": "",
+    "pestRisk": 4,
+    "pollination": "not applicable; grown for flowers and foliage",
+    "prune": "Trim lightly with shears straight after flowering to remove spent spikes and keep it compact. Do not cut into bare old wood.",
+    "resilience": "Very hardy and tolerates lime better than most heathers. Gold foliage colours best in sun and may scorch in hot dry spots. Pests: occasional vine weevil; root rot in wet soil.",
+    "rootSize": "",
+    "soil": "Well-drained, any pH",
+    "soilWarning": "Avoid waterlogged heavy ground",
+    "sources": [
+      "General knowledge of Erica × darleyensis from RHS and heather-society guidance as remembered, not checked online.",
+      "Cultivar details for 'Eva Gold' from memory of nursery descriptions, not checked online."
+    ],
+    "spread": "50–60 cm",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 85,
+    "thirst": 8,
+    "toxicity": "No known hazard.",
+    "uncertain": [
+      "hardiness: H7 is the RHS rating I remember for Erica × darleyensis as a group. Not checked for this cultivar.",
+      "height and spread: typical figures for compact gold-leaved darleyensis cultivars, not confirmed for 'Eva Gold'. Check the label.",
+      "peak/hue: peak is set to the flowering season (Dec-Apr), which is when it sells. Exact flowering months are not verified. Hue is set to the gold foliage, which is the year-round dominant feature, rather than the pink flowers.",
+      "visual: the orange-red spring tips and lilac-pink flower colour are as remembered, not verified.",
+      "toxicity: Erica is not on common UK toxic plant lists as far as I know. Other Ericaceae (Rhododendron, Kalmia) contain grayanotoxins, so confirm online.",
+      "compliance: possible plant breeders' rights not known. The breeder is believed to be Kurt Kramer (Germany), not verified.",
+      "clay: left blank. Heathers dislike heavy waterlogged clay, but tolerance of improved clay is not established.",
+      "sunMin: 50 is a judgement (tolerates light shade but loses gold colour).",
+      "ratings: thirst, careLevel and growthSpeed are judged from the general habit of E. × darleyensis.",
+      "rootSize: not known, left blank."
+    ],
+    "uses": "Winter containers · rockeries · ground cover · front of border · heather beds",
+    "visual": "Golden-yellow needle foliage all year · lilac-pink flower spikes Dec-Apr · orange-red new tips in spring",
+    "water": "Water regularly in the first year and in dry spells; keep pots evenly moist."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162973360,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162973360,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "clear",
+    "warnings": [
+      "\"pestRisk\" is 4: valid, but it reads like a 0-5 rating that was not converted (x4). Confirm it means 1.00/5, not 4/5",
+      "\"resilience\" is 175 characters; the fit step trims it sentence by sentence to 165"
+    ]
+  }
+}

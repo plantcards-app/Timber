@@ -1,0 +1,78 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162740475,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Mahoniax media winter sun",
+  "notes": "",
+  "order": 1794162740475.0137,
+  "photos": [],
+  "plant": {
+    "aspect": "Any aspect",
+    "careLevel": 6,
+    "clay": "yes",
+    "common": "Mahonia",
+    "compliance": "",
+    "container": "with care",
+    "cvs": "'Charity' – the classic, upright spreading flower spikes · 'Lionel Fortescue' – very upright spikes · 'Buckland' – longer arching spikes",
+    "foliage": "evergreen; large pinnate leaves with spiny holly-like leaflets, sometimes reddish in cold weather",
+    "growthSpeed": 10,
+    "hardiness": "H5",
+    "hardinessNote": "Hardy in a cold winter throughout most of the UK, approximately -15 to -10°C.",
+    "height": "2.5–4 m",
+    "hue": 55,
+    "latin": "Mahonia × media 'Winter Sun'",
+    "peak": "Nov-Feb",
+    "pest": "",
+    "pestRisk": 6,
+    "pollination": "not applicable; grown for flowers, berries form without a partner",
+    "prune": "Little needed. After flowering, cut leggy stems back to a leaf rosette to keep it bushy; old bare plants can be cut back hard in spring.",
+    "resilience": "Tough, shade-tolerant evergreen that copes with clay and dry shade once established. Flowers in winter when little else does. Pests: occasional mahonia rust and leaf-spot, mostly cosmetic.",
+    "rootSize": "",
+    "soil": "Well-drained loam",
+    "soilWarning": "Shelter from cold drying winds",
+    "sources": [
+      "RHS plant profile for Mahonia × media 'Winter Sun' and related cultivars as remembered, not checked online",
+      "General horticultural knowledge of Mahonia × media, not checked online"
+    ],
+    "spread": "1.5–2.5 m",
+    "stockForm": "container",
+    "sunMin": 25,
+    "sunNeed": 50,
+    "thirst": 8,
+    "toxicity": "Spiny leaf tips are sharp; wear gloves when handling or pruning.",
+    "uncertain": [
+      "hardiness: H5 recalled from RHS listings for Mahonia × media cultivars; not verified for 'Winter Sun' specifically, check online",
+      "height and spread: typical RHS ranges for the cross remembered, not checked for this cultivar; no label supplied",
+      "peak: flowering usually Nov-Feb in UK but varies with season and region",
+      "toxicity: leaves are spiny. Berries are sometimes described as edible when cooked and sometimes as best avoided; berberine is present in roots and bark. Berry status left out of the card text pending a check",
+      "compliance: no plant breeders' rights or Schedule 9 listing known for this older cultivar; not verified",
+      "rootSize: not known, left blank",
+      "sunMin: 25 is a judgement that it tolerates fairly deep shade; not a published figure",
+      "ratings (pestRisk, thirst, careLevel, growthSpeed, sunNeed) are judgements from general Mahonia knowledge",
+      "cvs: sibling cultivars recalled from memory; descriptions are approximate"
+    ],
+    "uses": "Winter interest · shady borders · winter food for bees · informal screen or barrier · woodland gardens",
+    "visual": "Upright sprays of fragrant bright yellow flowers in midwinter · spiny glossy dark green leaves · blue-black berries follow in spring",
+    "water": "Water regularly in the first year; once established it copes with dry spells, but do not let it dry out in hot summers."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794163040521,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794163040521,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "caution",
+    "warnings": [
+      "\"resilience\" is 188 characters; the fit step trims it sentence by sentence to 165"
+    ]
+  }
+}

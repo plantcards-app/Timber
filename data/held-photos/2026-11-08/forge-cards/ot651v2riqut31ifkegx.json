@@ -1,0 +1,89 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162739096,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Lonicera Semptations Garden Clouds Purple Storm",
+  "notes": "",
+  "order": 1794162739096.2222,
+  "photos": [],
+  "plant": {
+    "aspect": "East / South / West",
+    "careLevel": 8,
+    "clay": "",
+    "common": "Honeysuckle",
+    "compliance": "",
+    "container": "with care",
+    "cvs": "",
+    "foliage": "",
+    "growthSpeed": "",
+    "hardiness": "H4",
+    "hardinessNote": "Hardy through an average UK winter, approximately -10 to -5°C. This is a cautious placeholder, not a confirmed rating.",
+    "height": "",
+    "hue": "",
+    "latin": "Lonicera SEMPTATIONS GARDEN CLOUDS PURPLE STORM",
+    "peak": "Jun-Sep",
+    "pest": "",
+    "pestRisk": 10,
+    "pollination": "not applicable; grown for flowers, not fruit",
+    "prune": "",
+    "resilience": "Generally tough once established; dry roots encourage mildew. Pests: aphids; powdery mildew in dry spells.",
+    "rootSize": "",
+    "soil": "Well-drained loam",
+    "soilWarning": "Keep roots cool and shaded",
+    "sources": [
+      "General knowledge of Lonicera (honeysuckle) cultivation and RHS genus guidance as remembered, not checked online.",
+      "No cultivar-specific facts were available. No label data or staff notes were supplied."
+    ],
+    "spread": "",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 70,
+    "thirst": 10,
+    "toxicity": "Berries are mildly toxic if eaten and can cause stomach upset; keep children and pets from eating them.",
+    "uncertain": [
+      "Name: I cannot confirm the exact registered name, cultivar code or parent species of the 'Semptations Garden Clouds' series. The latin field is printed as supplied; check the label and the breeder's listing.",
+      "hardiness: H4 is a cautious placeholder because the parentage is unknown. Many Lonicera are H5–H6, but this was not verified.",
+      "hue: left null. The name suggests purple-toned flowers, but I do not know the actual flower colour.",
+      "height and spread: unknown. The series may be bred as compact or mounding, but I have no figures. The spread is needed for the rails, so take it from the label or the breeder.",
+      "peak: Jun-Sep is the typical honeysuckle season, not confirmed for this cultivar. It may repeat-flower.",
+      "visual: the scent and flower form are genus-typical, not confirmed for this cultivar.",
+      "growthSpeed: unknown. It depends on whether this is a vigorous climber or a compact shrubby form.",
+      "prune: left blank. The method depends on whether it flowers on old or new wood and whether it is a climber or a compact form.",
+      "foliage: unknown whether deciduous or semi-evergreen. This depends on the parentage.",
+      "cvs: other members of the Semptations series are not known to me with confidence.",
+      "compliance: a newly branded series is likely protected by plant breeders' rights, but I do not know a number. Check the label.",
+      "clay: not established for this cultivar.",
+      "container: 'with care' is a judgement. It may be bred for patio pots, so check the breeder's description.",
+      "pestRisk, thirst, careLevel, sunNeed, sunMin and aspect: based on general Lonicera behaviour, not this cultivar.",
+      "toxicity: Lonicera berries are generally regarded as mildly toxic. Whether this cultivar sets berries is unknown."
+    ],
+    "uses": "Borders · fences and trellis · wildlife and pollinator planting",
+    "visual": "Clusters of tubular honeysuckle flowers, typically scented · summer",
+    "water": "Water regularly through the first summer and in dry spells; mulch the base to hold moisture."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162946609,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162946610,
+  "validation": {
+    "errors": [],
+    "notes": [
+      "\"growthSpeed\" is blank; its row or marker will not render"
+    ],
+    "tox": "harmful",
+    "warnings": [
+      "\"hue\" is blank; the deck treats 0 as unset, so pick the dominant feature's hue (red 0, orange 30, yellow 55, green 120, blue 210, purple 275, pink 330)",
+      "\"foliage\" is blank; the card cannot answer \"will it look bare in winter?\"",
+      "\"spread\" carries no figure; the size rails need one",
+      "\"height\" carries no figure; the size rails need one"
+    ]
+  }
+}

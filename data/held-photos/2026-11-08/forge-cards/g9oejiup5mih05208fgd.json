@@ -1,0 +1,81 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162738013,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Laurus nobilis Little Ragu 'Monrik' cov",
+  "notes": "",
+  "order": 1794162738013.0798,
+  "photos": [],
+  "plant": {
+    "aspect": "South / West",
+    "careLevel": 7,
+    "clay": "",
+    "common": "Sweet Bay",
+    "compliance": "Protected variety (labelled cov); PBR number not confirmed.",
+    "container": "yes",
+    "cvs": "'Aurea' – golden-yellow leaves · f. angustifolia – narrow, willow-like leaves",
+    "foliage": "evergreen; aromatic, glossy dark green lance-shaped leaves",
+    "growthSpeed": 6,
+    "hardiness": "H4",
+    "hardinessNote": "Hardy through an average UK winter, approximately -10 to -5°C; pot-grown plants need shelter in hard frosts.",
+    "height": "",
+    "hue": 125,
+    "latin": "Laurus nobilis LITTLE RAGU ('Monrik')",
+    "peak": "Jan-Dec",
+    "pest": "",
+    "pestRisk": 10,
+    "pollination": "not applicable; grown for foliage, the species bears male and female flowers on separate plants",
+    "prune": "Trim to shape in summer. Cut out frost-browned shoots in late spring once new growth shows.",
+    "resilience": "Copes well with clipping and pot culture; leaves scorch in cold winds and hard frost. Pests: bay sucker, scale insects, leaf spot.",
+    "rootSize": "",
+    "soil": "Well-drained",
+    "soilWarning": "Shelter from cold, drying winds",
+    "sources": [
+      "RHS plant profile for Laurus nobilis as remembered, not checked online",
+      "General knowledge of the Monrovia LITTLE RAGU ('Monrik') introduction as remembered, not checked online",
+      "ASPCA toxic plant listing for bay laurel as remembered, not checked online"
+    ],
+    "spread": "",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 80,
+    "thirst": 8,
+    "toxicity": "Leaves are a culinary herb for people, but bay is listed as toxic to dogs, cats and horses if eaten, causing vomiting and diarrhoea. Not the same plant as cherry laurel.",
+    "uncertain": [
+      "height and spread: blank. LITTLE RAGU is sold as a compact or dwarf bay, but I cannot state its mature dimensions with confidence. Check the breeder or label.",
+      "hardiness: H4 is the RHS rating for the species Laurus nobilis, applied here to the cultivar. Confirm there is no separate cultivar rating.",
+      "compliance: 'cov' indicates a protected or patented variety; the UK PBR number and holder (thought to be Monrovia) are not confirmed. Also check whether Laurus nobilis appears on the current Xylella host list for plant passport purposes.",
+      "growthSpeed: 6 is judged from the compact cultivar habit plus the slow-to-steady species rate; not confirmed for this cultivar.",
+      "clay: blank. The species prefers well-drained soil and dislikes winter wet, but tolerance of heavy clay is not established for this cultivar.",
+      "sunMin: 50 is judged from the species tolerating part shade.",
+      "pestRisk: 10 is judged from bay sucker and scale being common on UK bays.",
+      "toxicity: pet toxicity rests on the ASPCA listing for bay laurel as remembered; severity in small amounts is likely mild.",
+      "cvs: lists sibling forms of the species only; other compact bay selections were not confirmed.",
+      "peak: Jan-Dec reflects year-round foliage interest. The flowers are minor and appear in spring."
+    ],
+    "uses": "Patio containers · herb gardens · small gardens · culinary leaves · formal clipped shapes",
+    "visual": "Compact, dense, aromatic evergreen bay · glossy dark green culinary leaves all year · small yellowish spring flowers",
+    "water": "Water pots regularly in summer and keep them barely moist in winter. Plants in the ground need little once established."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162894573,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162894573,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "harmful",
+    "warnings": [
+      "\"spread\" carries no figure; the size rails need one",
+      "\"height\" carries no figure; the size rails need one"
+    ]
+  }
+}

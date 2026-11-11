@@ -1,0 +1,79 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162737684,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Alnus Fine Line Frangula",
+  "notes": "",
+  "order": 1794162737684.0159,
+  "photos": [],
+  "plant": {
+    "aspect": "East / South / West",
+    "careLevel": 3,
+    "clay": "yes",
+    "common": "Alder Buckthorn 'Fine Line'",
+    "compliance": "",
+    "container": "with care",
+    "cvs": "'Asplenifolia' – fern-leaved but broader and more open · 'Columnaris' (Tallhedge) – narrow upright with normal oval leaves, used for hedging",
+    "foliage": "deciduous; very narrow, wavy, thread-like dark green leaves turning yellow in autumn",
+    "growthSpeed": 10,
+    "hardiness": "H7",
+    "hardinessNote": "Very hardy throughout the UK, coping with winters colder than -20°C.",
+    "height": "1.5–2 m",
+    "hue": 120,
+    "latin": "Frangula alnus FINE LINE ('Ron Williams')",
+    "peak": "Apr-Oct",
+    "pest": "",
+    "pestRisk": 3,
+    "pollination": "not applicable; grown for foliage and form, sets little fruit",
+    "prune": "Little needed. Lightly trim in late winter to keep the column tight or remove any stray stems.",
+    "resilience": "Very cold-hardy and tolerant of damp soils and urban conditions. Pests: largely trouble-free; occasional aphids.",
+    "rootSize": "",
+    "soil": "Well-drained or moist",
+    "soilWarning": "",
+    "sources": [
+      "General knowledge of Frangula alnus and the FINE LINE cultivar from US nursery and breeder descriptions as remembered, not checked online",
+      "RHS and UK native-flora knowledge of the species as remembered, not checked online"
+    ],
+    "spread": "60–90 cm",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 85,
+    "thirst": 10,
+    "toxicity": "Berries and bark are poisonous if eaten, causing vomiting and diarrhoea. Keep away from children, dogs and cats. This form sets few berries.",
+    "uncertain": [
+      "latin: label name 'Alnus Fine Line Frangula' interpreted as Frangula alnus (syn. Rhamnus frangula) FINE LINE ('Ron Williams'). The cultivar code is recalled, not verified.",
+      "hardiness: H7 is inferred from the species, a UK native, and from US zone 2–3 ratings. An RHS rating for this cultivar is not confirmed.",
+      "height/spread: from US nursery descriptions as remembered (about 5–7 ft by 2–3 ft). UK figures not checked.",
+      "soilWarning: left blank. No confident specific constraint known.",
+      "compliance: plant breeders' rights or US plant patent number not known. No Schedule 9 listing, since the species is native to the UK. Plant passport needs are not checked.",
+      "sunMin: 50 is a judgement. Tolerates part shade, but form and density are best in sun.",
+      "container: judged 'with care'. Suitable only in a large pot kept watered.",
+      "peak: given as the foliage season. Flowers are insignificant (roughly May–Jun).",
+      "toxicity: based on the species (anthraquinone purgative in bark and berries). Berry set on this cultivar is reported as low, but this is not verified."
+    ],
+    "uses": "Narrow screening · vertical accent in small or contemporary gardens · large containers · formal rows",
+    "visual": "Narrow upright column of feathery, fern-like dark green leaves · yellow autumn colour · tiny greenish flowers in early summer",
+    "water": "Water regularly through the first year until roots establish, then only in long dry spells."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162869740,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162869740,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "harmful",
+    "warnings": [
+      "\"pestRisk\" is 3: valid, but it reads like a 0-5 rating that was not converted (x4). Confirm it means 0.75/5, not 3/5",
+      "\"careLevel\" is 3: valid, but it reads like a 0-5 rating that was not converted (x4). Confirm it means 0.75/5, not 3/5"
+    ]
+  }
+}

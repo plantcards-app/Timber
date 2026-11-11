@@ -1,0 +1,83 @@
+{
+  "batch": "2026-11-08",
+  "createdAt": 1794162738598,
+  "dealtAt": null,
+  "handedAt": 1794163080165,
+  "label": "",
+  "name": "Lonicera Garden Clouds Purple",
+  "notes": "",
+  "order": 1794162738598.3242,
+  "photos": [],
+  "plant": {
+    "aspect": "East / South / West",
+    "careLevel": 8,
+    "clay": "yes",
+    "common": "Honeysuckle",
+    "compliance": "",
+    "container": "with care",
+    "cvs": "",
+    "foliage": "deciduous",
+    "growthSpeed": 12,
+    "hardiness": "H4",
+    "hardinessNote": "Provisionally hardy through an average UK winter, approximately -10 to -5°C, pending a check of the label.",
+    "height": "",
+    "hue": 290,
+    "latin": "Lonicera GARDEN CLOUDS PURPLE",
+    "peak": "Jun-Sep",
+    "pest": "",
+    "pestRisk": 10,
+    "pollination": "not applicable; grown for flowers",
+    "prune": "Trim lightly after flowering to keep it tidy and in shape.",
+    "resilience": "Generally tough once established. Can suffer mildew in dry, airless spots. Pests: aphids.",
+    "rootSize": "",
+    "soil": "Moisture-retentive",
+    "soilWarning": "Keep roots cool and shaded",
+    "sources": [
+      "General knowledge of Lonicera (honeysuckle) cultivation and RHS guidance as remembered, not checked online.",
+      "No label information supplied. No cultivar-specific source recalled with confidence for the Garden Clouds series."
+    ],
+    "spread": "",
+    "stockForm": "container",
+    "sunMin": 50,
+    "sunNeed": 70,
+    "thirst": 10,
+    "toxicity": "Honeysuckle berries are mildly toxic and may cause stomach upset if eaten, so keep them away from children and pets.",
+    "uncertain": [
+      "latin: I cannot confidently identify the parent species of the GARDEN CLOUDS series, its cultivar code, or whether it is a climber or a compact shrubby form. The label name is used as given and needs checking.",
+      "hardiness: H4 is a cautious placeholder, not verified. Many honeysuckles are H5-H6, but the band for this cultivar must be checked.",
+      "height and spread: not known for this cultivar. Left blank, but a spread is needed for the card's rails.",
+      "hue: 290 is inferred from 'Purple' in the name only. Actual flower colour is not confirmed.",
+      "peak: Jun-Sep is the typical honeysuckle flowering window, not confirmed for this cultivar.",
+      "visual: the flower form and colour detail are generic. Scent and any berry interest are not confirmed.",
+      "foliage: deciduous is assumed from typical honeysuckles. Some Lonicera are semi-evergreen, so this needs checking.",
+      "ratings (pestRisk, thirst, careLevel, growthSpeed, sunNeed, sunMin): based on general Lonicera behaviour, not this cultivar.",
+      "aspect, soil, soilWarning, water, prune, uses, clay, container: generic honeysuckle guidance, not cultivar-specific.",
+      "toxicity: based on the general advice that honeysuckle berries are mildly toxic. Whether this cultivar fruits is unknown.",
+      "compliance: this is probably a protected trade variety with plant breeders' rights, but I do not know the number. Left blank.",
+      "cvs: left blank because the parent species is unconfirmed and other Garden Clouds colours are not reliably known to me.",
+      "rootSize: not known. Left blank as expected."
+    ],
+    "uses": "Patio containers · borders · cottage gardens · pollinator planting",
+    "visual": "Purple-toned honeysuckle flowers · summer",
+    "water": "Water regularly until established, then in dry spells; pot-grown plants need watering through summer."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794162917655,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794162917655,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "harmful",
+    "warnings": [
+      "\"spread\" carries no figure; the size rails need one",
+      "\"height\" carries no figure; the size rails need one"
+    ]
+  }
+}
