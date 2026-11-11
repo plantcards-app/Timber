@@ -1162,16 +1162,6 @@
    "commercialUseCleared": true
   },
   {
-   "file": "camellia-sasanqua-collage.jpg",
-   "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright. Was the card's lead photo until 2026-11-11; now a PHOTO_SWAP frame",
-   "author": "Scion Studios",
-   "sourceUrl": null,
-   "commit": null,
-   "commitSubject": "staged after CREDITS.json was created — not yet committed",
-   "commercialUseCleared": true
-  },
-  {
    "file": "camellia-sasanqua-elfin-rose.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
