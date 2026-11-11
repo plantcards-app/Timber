@@ -1162,9 +1162,29 @@
    "commercialUseCleared": true
   },
   {
+   "file": "camellia-sasanqua-collage.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Was the card's lead photo until 2026-11-11; now a PHOTO_SWAP frame",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "camellia-sasanqua-elfin-rose.jpg",
    "source": "oscar",
    "licence": "Oscar's own photograph — owned outright",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "camellia-sasanqua-pink-double.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Autumn Camellia card (PHOTO_SWAP alt): Oscar 2026-11-11: rose-pink formal double over glossy serrated leaves, same label.",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,
@@ -1202,9 +1222,29 @@
    "commercialUseCleared": true
   },
   {
+   "file": "camellia-sasanqua-white-blush.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Autumn Camellia card (PHOTO_SWAP alt): Oscar 2026-11-11: white semi-double, pink-blushed edges, golden stamens, label CAMELLIA SASANQUA.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
+   "file": "camellia-sasanqua-white-sunlit.jpg",
+   "source": "oscar",
+   "licence": "Oscar's own photograph — owned outright. Second frame for the Autumn Camellia card (PHOTO_SWAP alt): Oscar 2026-11-11: white and pink flower in low sun with dew, same label.",
+   "author": "Scion Studios",
+   "sourceUrl": null,
+   "commit": null,
+   "commitSubject": "staged after CREDITS.json was created — not yet committed",
+   "commercialUseCleared": true
+  },
+  {
    "file": "camellia-sasanqua.jpg",
    "source": "oscar",
-   "licence": "Oscar's own photograph — owned outright",
+   "licence": "Oscar's own photograph — owned outright. Lead photo from 2026-11-11 at Oscar's word ('put the best shot first'): white semi-double flower with pink-edged petals, label CAMELLIA SASANQUA – les camellias d'automne",
    "author": "Scion Studios",
    "sourceUrl": null,
    "commit": null,

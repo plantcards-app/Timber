@@ -1256,7 +1256,7 @@
 
 <script>
 /* ---------- latin pronunciation (built-in speech engine — offline, no files, no deps) ---------- */
-const BUILD='r444 · 2026-11-11 · 1b8120f';
+const BUILD='r445 · 2026-11-11 · abd5623';
 /* Shown in the menu foot so a phone's version is checkable at a glance — the SW
    serves the previous build once before swapping, which made "which build am I
    on?" a real question. DO NOT EDIT BY HAND: the trailing hash is a digest of
@@ -20250,9 +20250,19 @@ const PHOTO_SWAP={
     focus:'50% 45%',
     hold:'3.5s',
   },
-  /* Oscar's third sasanqua form, 2026-10-01: one single rose-pink flower with a boss of golden stamens, buds below. The card's own collage shows a pink double and a white semi-double; this frame adds the single form, so the species card shows the range it promises. */
+  /* Species card, six of Oscar's frames of plants labelled CAMELLIA SASANQUA ("les camellias d'automne").
+     2026-11-11: Oscar asked for his white-and-pink flower first, so it became the lead photo
+     (camellia-sasanqua.webp); the other white-and-pink frames follow it, then the pink forms. The
+     2026-10-01 collage (pink double + white semi-double) that used to lead is kept as the last frame;
+     the 2026-10-01 pink single shows the single form, so the card shows the range it promises. */
   'camellia-sasanqua':{
-    alt:'photos/card/camellia-sasanqua-pink-single.webp',
+    alts:[
+      'photos/card/camellia-sasanqua-white-blush.webp',
+      'photos/card/camellia-sasanqua-white-sunlit.webp',
+      'photos/card/camellia-sasanqua-pink-double.webp',
+      'photos/card/camellia-sasanqua-pink-single.webp',
+      'photos/card/camellia-sasanqua-collage.webp',
+    ],
     focus:'50% 45%',
     hold:'3.5s',
   },
