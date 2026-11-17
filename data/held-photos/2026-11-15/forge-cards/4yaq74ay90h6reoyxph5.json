@@ -1,0 +1,80 @@
+{
+  "batch": "2026-11-15",
+  "createdAt": 1794760065933,
+  "dealtAt": null,
+  "handedAt": 1794760644511,
+  "label": "",
+  "name": "Ficus Carica",
+  "notes": "",
+  "order": 1794760065933.3572,
+  "photos": [],
+  "plant": {
+    "aspect": "South / West",
+    "careLevel": 10,
+    "clay": "",
+    "common": "Fig",
+    "compliance": "",
+    "container": "yes",
+    "cvs": "'Brown Turkey' – hardiest, most reliable outdoors · 'Brunswick' – large green-yellow fruit · 'White Marseilles' – pale green fruit · 'Rouge de Bordeaux' – best under glass",
+    "foliage": "deciduous; large, rough, deeply three- to five-lobed leaves",
+    "growthSpeed": 12,
+    "hardiness": "H4",
+    "hardinessNote": "Hardy through most of the UK in an average winter, approximately -10 to -5°C; young shoots and embryo fruit can be frost-damaged.",
+    "height": "4–8 m",
+    "hue": 120,
+    "latin": "Ficus carica",
+    "peak": "Aug-Sep",
+    "pest": "",
+    "pestRisk": 6,
+    "pollination": "self-fertile; UK-grown varieties set fruit without pollination",
+    "prune": "Late winter: remove dead, crossing and frost-damaged wood. Early summer: pinch new shoots to five leaves. Late autumn: remove larger unripe figs.",
+    "resilience": "Drought tolerant once established and good in heat against a warm wall; hard frosts kill back young growth. Pests: scale insect, red spider mite under glass, birds and wasps on fruit, coral spot.",
+    "rootSize": "",
+    "soil": "Well-drained loam",
+    "soilWarning": "Restrict roots or it grows leaf, not fruit",
+    "sources": [
+      "RHS plant profile for Ficus carica / 'Brown Turkey' as remembered, not checked online",
+      "General UK fruit-growing guidance on fig pruning and root restriction, from memory",
+      "General knowledge of fig sap phytophotodermatitis, not checked online"
+    ],
+    "spread": "4–8 m",
+    "stockForm": "container",
+    "sunMin": null,
+    "sunNeed": 90,
+    "thirst": 8,
+    "toxicity": "Milky sap is a skin irritant and can cause blistering rashes in sunlight; wear gloves when pruning. Chewed leaves can irritate the mouth and stomach of dogs and cats.",
+    "uncertain": [
+      "hardiness: H4 is from memory of the RHS profile for 'Brown Turkey' and the species, not checked online.",
+      "height and spread: 4–8 m is the RHS ultimate size as remembered. Wall-trained or pot-grown plants stay much smaller. Verify this.",
+      "sunMin: left null; the lowest light it will still fruit in is not established.",
+      "clay: left blank; figs grow in many soils if drainage is adequate, but clay suitability is not confirmed.",
+      "compliance: left blank; not confident whether Ficus carica is on the Xylella host list or needs a plant passport for retail sale. Check this.",
+      "toxicity: sap phototoxicity (furanocoumarins) and pet irritation are recalled from general horticultural and veterinary sources, not checked. The word 'edible' was left out on purpose so the card shows the amber sap warning rather than the Edible tier.",
+      "hue: 120 (foliage green) chosen because fruit colour varies by cultivar.",
+      "peak: Aug-Sep is for the main outdoor UK crop; under glass a second crop and timings vary."
+    ],
+    "uses": "Warm walls · patio containers · Mediterranean gardens · fruit · conservatories",
+    "visual": "Edible purple-brown to green figs late summer · bold, deeply lobed tropical-looking leaves · grey bark",
+    "water": "Water pots generously while fruit swells; established plants in the ground need water only in long dry spells."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794760637676,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794760637676,
+  "validation": {
+    "errors": [],
+    "notes": [
+      "\"sunMin\" is blank; its row or marker will not render"
+    ],
+    "tox": "caution",
+    "warnings": [
+      "\"resilience\" is 195 characters; the fit step trims it sentence by sentence to 165"
+    ]
+  }
+}

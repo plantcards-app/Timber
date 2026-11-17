@@ -1,0 +1,79 @@
+{
+  "batch": "2026-11-15",
+  "createdAt": 1794760065327,
+  "dealtAt": null,
+  "handedAt": 1794760644511,
+  "label": "",
+  "name": "Cycas revoluta",
+  "notes": "",
+  "order": 1794760065327.443,
+  "photos": [],
+  "plant": {
+    "aspect": "South / West",
+    "careLevel": 7,
+    "clay": "no",
+    "common": "Japanese Sago Palm",
+    "compliance": "All cycads, including Cycas revoluta, are listed on CITES Appendix II, so international trade needs permits; check that nursery-propagated stock is documented.",
+    "container": "yes",
+    "cvs": "",
+    "foliage": "evergreen; stiff, glossy, pinnate dark green fronds with sharp-tipped leaflets",
+    "growthSpeed": 1,
+    "hardiness": "H2",
+    "hardinessNote": "Tender: needs frost-free protection under glass or indoors in winter, minimum about 1 to 5°C.",
+    "height": "1–2 m",
+    "hue": 130,
+    "latin": "Cycas revoluta",
+    "peak": "Jan-Dec",
+    "pest": "",
+    "pestRisk": 8,
+    "pollination": "not applicable; a dioecious cycad that bears cones rather than flowers, grown for foliage",
+    "prune": "Remove dead or yellowed fronds at the base with secateurs. Wear gloves, as the leaflet tips are sharp.",
+    "resilience": "Tolerates dry air and short dry spells; damaged by frost and cold wet compost. Pests: scale insects and mealybugs, especially indoors.",
+    "rootSize": "",
+    "soil": "Free-draining",
+    "soilWarning": "Winter wet rots the crown",
+    "sources": [
+      "RHS plant profile for Cycas revoluta as remembered, not checked online",
+      "General horticultural and veterinary toxicology knowledge (cycasin poisoning in pets), as remembered, not checked online",
+      "CITES cycad listing as remembered, not checked online"
+    ],
+    "spread": "1–2 m",
+    "stockForm": "container",
+    "sunMin": 40,
+    "sunNeed": 75,
+    "thirst": 5,
+    "toxicity": "Highly toxic: all parts, especially the seeds, can be fatal if eaten, causing liver failure. Children, dogs and cats are at risk, and dogs are frequently poisoned.",
+    "uncertain": [
+      "hardiness: given as H2 from memory of the RHS profile, but not confident. Some sources give brief tolerance of about -5 to -7°C when dry, which could suggest H3. Verify the RHS band online.",
+      "hardinessNote: the °C range follows the H2 assumption and must change if the band is corrected.",
+      "height/spread: the ultimate size in UK cultivation is estimated; plants grow extremely slowly and in pots usually stay well under 1 m for many years.",
+      "cvs: no widely sold UK cultivars known with confidence, so left blank.",
+      "rootSize: not known, so left blank.",
+      "sunMin: a judgement; it tolerates bright indirect light indoors but not shade.",
+      "clay: judged 'no' because it needs sharp drainage. This is not a documented test.",
+      "compliance: the CITES Appendix II listing for all Cycadaceae is remembered and should be confirmed. No plant passport or breeders' rights issues are known."
+    ],
+    "uses": "Conservatory · houseplant · patio pots moved under cover for winter · exotic summer displays",
+    "visual": "Rosette of stiff glossy dark green feather-like fronds on a stout shaggy trunk · year-round foliage · very slow",
+    "water": "Water when the top of the compost dries in summer; keep almost dry in winter, never letting water sit in the crown."
+  },
+  "research": {
+    "applied": "complex",
+    "at": 1794760626011,
+    "checkedOnline": false,
+    "rounds": 1,
+    "source": "page sample, no web access",
+    "tier": "complex",
+    "truncated": false
+  },
+  "updatedAt": 1794760626011,
+  "validation": {
+    "errors": [],
+    "notes": [],
+    "tox": "severe",
+    "warnings": [
+      "\"thirst\" is 5: valid, but it reads like a 0-5 rating that was not converted (x4). Confirm it means 1.25/5, not 5/5",
+      "\"growthSpeed\" is 1: valid, but it reads like a 0-5 rating that was not converted (x4). Confirm it means 0.25/5, not 1/5"
+    ]
+  }
+}
