@@ -146,6 +146,15 @@ for (const c of cards) {
   if (has(sun) && has(sunMin) && sunMin > sun)
     flag(c, 'sun-band-inverted', `sunMin ${sunMin} > sunNeed ${sun}`);
 
+  /* 3b. soil prose vs the pH tile (2026-11-24). Only the unambiguous direction: a
+     card whose soil line says ericaceous / lime-free / lime-hating and whose pH
+     figure sits above 6.2 is telling a customer two different things. Chalk and
+     "alkaline" phrasing is left alone — "avoid shallow chalk", "tolerates chalk"
+     and "not alkaline" all appear on cards and a keyword cannot tell them apart. */
+  const phv = D.parsePh(c.ph), soilT = String(c.soil || '').toLowerCase();
+  if (phv && /\b(ericaceous|lime-free|lime free|lime-hating|hates lime|no lime)\b/.test(soilT) && phv.opt > 6.2)
+    flag(c, 'ph-vs-soil', `soil says "${c.soil}" but pH figure is ${phv.opt}`);
+
   /* peak must resolve to at least one month. The card's month parser only reads
      3-letter month names, so a plausible-looking value with no month in it —
      "year-round", "all year", "spring" — silently yields an empty list and the

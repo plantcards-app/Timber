@@ -71,6 +71,8 @@ list are dropped silently, so answering them is wasted work.
   "stockForm": "container",
   "pollination": "not applicable",
   "clay": "yes",
+  "ph": "6.5 (6.0-7.5)",
+  "phSource": "RHS plant profile: soil pH acid / neutral / alkaline, URL",
   "container": "with care",
   "uncertain": ["every field left blank or judged, and why"],
   "sources": ["where the facts came from"]
@@ -234,6 +236,18 @@ If none apply, leave it `""`. Unlike `toxicity`, blank is a fine answer here.
   anything not grown for fruit, and it is NOT the same as blank.
 - **`clay`** — `yes` or `no`, blank when not established. Do not write "unknown"; a
   blank already says that.
+- **`ph`** — soil pH as **`"OPT (MIN-MAX)"`**, e.g. `"6.2 (5.5-7.0)"`: one decimal, all
+  three on 3.5–9.0, MIN ≤ OPT ≤ MAX. OPT is the single figure printed big on the front's
+  pH tile; MIN–MAX is the wiggle room its bar brackets. Research it per plant, not per
+  genus where the species differs (*Erica carnea* tolerates lime, *Erica cinerea* does
+  not). Where the best source only gives a class (RHS: acid / neutral / alkaline), map
+  it: acid only → `5.0 (4.5-6.0)`, acid+neutral → `6.0 (5.0-7.0)`, neutral only →
+  `6.8 (6.3-7.3)`, neutral+alkaline → `7.0 (6.5-8.0)`, all three → `6.5 (5.0-8.0)` — and
+  say in `phSource` that the figure is mapped from a class. Must agree with `soil`: a
+  plant whose soil says ericaceous / lime-free cannot have OPT above 6.2.
+- **`phSource`** — where `ph` came from: a URL or named reference. Required whenever
+  `ph` is set. Write `drafted` (and why) if it is a general range not checked for this
+  plant, so it lands on VERIFY-QUEUE rather than reading as checked.
 - **`visual`** — one line, **about 90 characters**, separated by `·`. What it looks
   like and when. This is the line that sells the plant, so lead with the feature
   someone buys it for.

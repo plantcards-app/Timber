@@ -263,6 +263,8 @@ OUTPUT — one JSON object with exactly these keys (this example is the shape, n
   "stockForm": "container",
   "pollination": "not applicable",
   "clay": "yes",
+  "ph": "6.5 (6.0-7.5)",
+  "phSource": "RHS soil pH class neutral/alkaline as remembered, mapped to a range; not checked online",
   "container": "with care",
   "uncertain": ["every field left blank or judged, and why"],
   "sources": ["what the facts rest on"]
@@ -310,10 +312,12 @@ FIELD RULES
 - stockForm: container · bare-root · both. pollination: must name one of needs partner · self-fertile · not applicable, prose after a semicolon. clay: yes · no · blank when not established, never "unknown". container: yes · with care · no.
 - cvs: notable sibling cultivars of the species, · separated, a few words each on how they differ. This plant's own registration goes in compliance, not here.
 - height and spread: separate fields, e.g. "1.5–2.5 m", "60 cm", ">8 m". A spread is required for the rails to draw.
+- ph: soil pH as "OPT (MIN-MAX)", e.g. "6.2 (5.5-7.0)": one decimal, 3.5–9.0, MIN <= OPT <= MAX. OPT is the one figure printed big on the card's pH tile; MIN-MAX is the wiggle room its bar shows. Use the species, not just the genus, where they differ (Erica carnea tolerates lime, Erica cinerea does not). If you only know the class, map it: acid only 5.0 (4.5-6.0) · acid+neutral 6.0 (5.0-7.0) · neutral 6.8 (6.3-7.3) · neutral+alkaline 7.0 (6.5-8.0) · any pH 6.5 (5.0-8.0). An ericaceous / lime-free plant never has OPT above 6.2. Blank if you cannot state it.
+- phSource: where ph came from, in words. This call has no web, so say "as remembered" and whether it was mapped from a class. Required whenever ph is set.
 - pest: "" or "slugs" only (the only icon key). Name the pests a plant actually gets in resilience as a last sentence, "Pests: …".
 - latin: the name as the label prints it. Trade names in CAPS with the cultivar code in quotes: "Choisya × dewitteana WHITE DAZZLER ('Londaz')", "Hydrangea paniculata LITTLE LIME PUNCH ('SMNHPH')". Use the × hybrid sign, not the letter x. Quotes balanced. A curly apostrophe inside a name, as in MINER’S GOLD.
 
-BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating on the 0–20 scale · aspect is a facing · soil at most 26 and soilWarning at most 44 and they do not repeat each other · no value ends in a citation number · peak is Mon-Mon · toxicity contains a tier keyword or says "No known hazard." · compliance checked · pest blank or slugs · no commercial field · everything unknown is blank AND listed in uncertain.
+BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating on the 0–20 scale · aspect is a facing · soil at most 26 and soilWarning at most 44 and they do not repeat each other · no value ends in a citation number · peak is Mon-Mon · toxicity contains a tier keyword or says "No known hazard." · compliance checked · pest blank or slugs · no commercial field · ph is "OPT (MIN-MAX)" with a phSource and agrees with soil · everything unknown is blank AND listed in uncertain.
 </script>
 
 <script>
@@ -325,7 +329,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
   var SCHEMA_KEYS = ['common', 'latin', 'hue', 'hardiness', 'hardinessNote', 'height', 'spread', 'peak', 'visual',
     'pestRisk', 'thirst', 'careLevel', 'growthSpeed', 'sunNeed', 'sunMin', 'pest', 'aspect', 'soil', 'soilWarning',
     'water', 'prune', 'toxicity', 'compliance', 'cvs', 'resilience', 'uses', 'foliage', 'rootSize', 'stockForm',
-    'pollination', 'clay', 'container', 'uncertain', 'sources'];
+    'pollination', 'clay', 'ph', 'phSource', 'container', 'uncertain', 'sources'];
   var NUM_KEYS = ['hue', 'pestRisk', 'thirst', 'careLevel', 'growthSpeed', 'sunNeed', 'sunMin'];
   var LIST_KEYS = ['uncertain', 'sources'];
   var BRIEF = document.getElementById('brief').textContent.trim();
@@ -428,6 +432,14 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     if (p.pollination && !/(?:^|[^-\w])(needs partner|self-fertile|not applicable)/i.test(String(p.pollination))) errors.push('"pollination" must name one of "needs partner" / "self-fertile" / "not applicable"; detail after a semicolon is fine');
     if (p.stockForm && ['container', 'bare-root', 'bare root', 'both'].indexOf(String(p.stockForm).trim().toLowerCase()) < 0) errors.push('"stockForm" is ' + JSON.stringify(p.stockForm) + '; expected container / bare-root / both');
     if (p.clay && ['yes', 'no'].indexOf(String(p.clay).trim().toLowerCase()) < 0) errors.push('"clay" is ' + JSON.stringify(p.clay) + '; expected yes / no, or blank when not established');
+    // ph: the same grammar as parsePh() in tools/plant-data.js and timber.html (keep the three in step)
+    if (p.ph && String(p.ph).trim()) {
+      var phm = String(p.ph).trim().match(/^(\d(?:\.\d)?)\s*\(\s*(\d(?:\.\d)?)\s*[-–]\s*(\d(?:\.\d)?)\s*\)$/);
+      var po = phm && +phm[1], pmin = phm && +phm[2], pmax = phm && +phm[3];
+      if (!phm || pmin < 3.5 || pmax > 9 || pmin > po || po > pmax) errors.push('"ph" is ' + JSON.stringify(p.ph) + '; expected "OPT (MIN-MAX)" e.g. "6.2 (5.5-7.0)", 3.5–9.0, MIN <= OPT <= MAX');
+      else if (/\b(ericaceous|lime-free|lime free|lime-hating)\b/i.test(String(p.soil || '')) && po > 6.2) errors.push('"soil" says ' + JSON.stringify(p.soil) + ' but "ph" centres on ' + po + '; an ericaceous plant cannot centre above 6.2');
+      if (!p.phSource || !String(p.phSource).trim()) errors.push('"ph" is set but "phSource" is blank; say where the figure came from');
+    } else warnings.push('"ph" is blank; the card will draw no pH tile');
     if (p.rootSize && !/\d/.test(String(p.rootSize))) errors.push('"rootSize" carries no figure and would print an empty row; leave it blank and say why in "uncertain"');
     if (p.container && ['yes', 'with care', 'no'].indexOf(String(p.container).toLowerCase()) < 0) warnings.push('"container" is "' + p.container + '"; expected yes / with care / no');
     if (p.pest && String(p.pest).trim() && String(p.pest).trim().toLowerCase() !== 'slugs') errors.push('"pest" is an icon key and only "slugs" exists; move the pest prose into "resilience" as "Pests: …" and leave this blank');
@@ -941,7 +953,7 @@ BEFORE YOU ANSWER, CHECK: hardiness verified not assumed · every 0–20 rating 
     ['Scores, 0–20 (sun 0–100)', [['pestRisk', 'Pest risk', 'num'], ['thirst', 'Thirst', 'num'], ['careLevel', 'Care level', 'num'], ['growthSpeed', 'Growth speed', 'num'], ['sunNeed', 'Sun need', 'num'], ['sunMin', 'Sun minimum', 'num'], ['pest', 'Pest icon key: blank or slugs']]],
     ['Site', [['aspect', 'Aspect, a compass facing'], ['soil', 'Soil', 'short', 'soil'], ['soilWarning', 'Soil warning', 'short', 'soilWarning'], ['water', 'Water', 'text', 'water'], ['prune', 'Prune', 'text', 'prune']]],
     ['Safety', [['toxicity', 'Toxicity, printed verbatim', 'text'], ['compliance', 'Compliance', 'text']]],
-    ['More', [['cvs', 'Sibling cultivars', 'text'], ['resilience', 'Resilience', 'text', 'resilience'], ['uses', 'Uses', 'text', 'uses'], ['stockForm', 'Stock form: container / bare-root / both'], ['pollination', 'Pollination: needs partner / self-fertile / not applicable; detail'], ['clay', 'Clay: yes / no / blank'], ['container', 'Container: yes / with care / no']]],
+    ['More', [['cvs', 'Sibling cultivars', 'text'], ['resilience', 'Resilience', 'text', 'resilience'], ['uses', 'Uses', 'text', 'uses'], ['stockForm', 'Stock form: container / bare-root / both'], ['pollination', 'Pollination: needs partner / self-fertile / not applicable; detail'], ['clay', 'Clay: yes / no / blank'], ['ph', 'Soil pH: OPT (MIN-MAX), e.g. 6.2 (5.5-7.0)'], ['phSource', 'pH source (URL, reference, or "drafted")', 'text'], ['container', 'Container: yes / with care / no']]],
     ['Record only (never on the card)', [['uncertain', 'Uncertain, one per line', 'lines'], ['sources', 'Sources, one per line', 'lines']]]
   ];
   var LIMITS = { soil: [26, 36], soilWarning: [44, 60], visual: [190, 190], water: [120, 120], prune: [165, 165], resilience: [165, 165], uses: [150, 150] };

@@ -42,6 +42,28 @@ applied wholesale.
 
 ## Needs a horticultural call (Oscar)
 
+### 00. Soil pH on all 789 cards is DRAFTED, not checked (2026-11-24)
+Every card now carries `ph` ("OPT (MIN-MAX)") and the front draws it as the pH tile.
+**None of the 789 figures was checked against a source for that plant.** They come
+from `data/ph/ph-draft-table.json`: general horticultural ranges written per genus
+(338 genera) with species overrides where a species is known to differ, filled by
+`tools/apply-ph-draft.js`. Each card's `phSource` says "drafted: general horticultural
+range for <genus/species>, not yet checked against a source", so the unchecked ones
+are findable: `grep -c 'phSource:"drafted' timber.html`.
+
+What WAS checked: every figure agrees with its own card's `soil` prose. The cross-check
+in `apply-ph-draft.js` flagged 23 cards; 12 were real disagreements (e.g. Amelanchier
+"lime-free" against a genus default of 6.3) and were overridden to match the card, the
+rest were "not acid" / "avoid acid" phrasing the keyword match misread. `plant-sense`
+now fails the build on an ericaceous / lime-free card whose pH centres above 6.2.
+
+To close: check each card (RHS plant profile soil-pH class at minimum, mapped as
+PLANT-BRIEF.md describes) and replace `phSource` with the URL. Highest value first:
+the ericaceous genera (Rhododendron, Camellia, Pieris, Gaultheria, Skimmia, Vaccinium,
+Calluna, Erica, Kalmia, Leucothoe, Enkianthus) and lime-lovers (Lavandula, Dianthus,
+Syringa, Clematis, Buddleja), where a wrong figure costs a customer a plant. Genus
+defaults are weakest where a genus is wide (Acer, Prunus, Hydrangea, Cornus, Salvia).
+
 ### 0. Wishlist batch 1 — 49 cards built and held, three loose ends
 Ingested 2026-08-13 from `data/incoming/wishlist-batch-01.json` (50 researched
 entries) via `tools/fit-incoming.js` → `tools/ingest-batch.js`. All 49 are in

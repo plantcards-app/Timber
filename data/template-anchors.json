@@ -47,12 +47,12 @@
    "expectFromBottom": 188.88
   },
   {
-   "selector": ".ppp",
+   "selector": ".phtile",
    "anchor": "bottom",
-   "note": "PLANT PROFILE strapline above the plaque",
-   "topPct": 58.28,
-   "expectPx": 349.68,
-   "expectFromBottom": 250.32
+   "note": "soil pH tile stacked above SOIL (replaced the PLANT POWER POINTS strapline, 2026-11-24)",
+   "topPct": 56.4,
+   "expectPx": 338.4,
+   "expectFromBottom": 261.6
   },
   {
    "selector": ".plaque",

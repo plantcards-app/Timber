@@ -81,7 +81,19 @@ const FIELDS = ['common', 'latin', 'hue', 'visual', 'water', 'aspect', 'soil', '
   // CLAY. `yes` or `no`, blank when not established. `soil` is written as texture
   // and drainage and never as clay tolerance, so "what grows in my clay?" matched
   // 11 cards of 395 by keyword. This is the column that answers it.
-  'clay'];
+  'clay',
+  // PH. Oscar, 2026-11-24: "one central figure like 6.2 and then a bar at the bottom
+  // to show how much wiggle room" — the soil-pH twin of the sun band's wiggle room.
+  // Format "OPT (MIN-MAX)", e.g. "6.2 (5.5-7.0)": OPT is the figure printed big on
+  // the front's pH tile, MIN-MAX the range the bar brackets. All three on the 3.5-9.0
+  // scale, one decimal, MIN <= OPT <= MAX. Blank = not recorded, and the tile is
+  // simply not drawn — a blank is never rendered as "neutral".
+  'ph',
+  // Where the ph figure came from, in words: a URL, a named reference, or the
+  // explicit word "drafted" when it is a general horticultural range that has not
+  // been checked against a source for this plant. Never rendered on the front; it
+  // exists so an unchecked number can be found and checked (VERIFY-QUEUE).
+  'phSource'];
 /* Nothing speculative belongs in this list. It is exactly the set of fields that
    exist on cards today, which is what makes the "unknown field" guard meaningful:
    a key not listed here is a mistake worth stopping for, not a column nobody
@@ -278,5 +290,15 @@ function csvParse(text) {
   return rows;
 }
 
-module.exports = { DECK, HOLD, FIELDS, ROW_EXPLICIT, EXTRA_FIELDS, SCORE_MAX, SCORE_FIELDS, REQUIRED,
+/* "6.2 (5.5-7.0)" -> {opt:6.2,min:5.5,max:7}, or null when it does not read that way.
+   The same grammar is parsed by parsePh() in timber.html; keep the two in step. */
+function parsePh(str) {
+  const m = String(str || '').trim().match(/^(\d(?:\.\d)?)\s*\(\s*(\d(?:\.\d)?)\s*[-–]\s*(\d(?:\.\d)?)\s*\)$/);
+  if (!m) return null;
+  const [opt, min, max] = [m[1], m[2], m[3]].map(Number);
+  if (min < 3.5 || max > 9 || min > opt || opt > max) return null;
+  return { opt, min, max };
+}
+
+module.exports = { parsePh, DECK, HOLD, FIELDS, ROW_EXPLICIT, EXTRA_FIELDS, SCORE_MAX, SCORE_FIELDS, REQUIRED,
   readDeck, readHold, bounds, writeBlock, formatCard, csvEscape, csvParse };

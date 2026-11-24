@@ -16,7 +16,7 @@ Claude Code session. This file is what that session reads.
 1. **Every Forge draft was written without web access.** The page's Claude call cannot
    browse. Each card carries `research.checkedOnline: false` and the page labels it
    "Unchecked draft". So the session that deals it owns the fact check: hardiness,
-   height and spread, peak, toxicity and compliance at least, with `WebSearch`, and the
+   height and spread, peak, toxicity, compliance and soil pH (`ph`, since 2026-11-24) at least, with `WebSearch`, and the
    batch README records what was checked and what changed. The brief tells the model to
    blank what it does not know and list it in `uncertain`; read that list first.
 2. **The page's "In deck" chip is a hint, not the double check.** It reads a slug index
@@ -85,7 +85,7 @@ plant and no errors are "ready", and only those are in the JSON file the page do
 5. **Fact-check before you write**, with the second pass (`SECOND-PASS.md`): `node tools/second-pass.js prepare
    <batch-as-sent.json>`, one checker agent per brief, `apply --batch … --out batch-corrected.json`, and the
    `REPORT.md` it writes goes in the batch folder. Every draft is unchecked (fact 1 above). Check at
-   least hardiness, height/spread, peak, toxicity and compliance for each card online,
+   least hardiness, height/spread, peak, toxicity, compliance and soil pH for each card online,
    correct the JSON where a source disagrees, and record every check and change in the
    batch README under a *Fact check* heading, [Unverified] items named as such. Where the
    proxy only gives snippets, say so, as the 2026-10-10c README does.
@@ -122,6 +122,16 @@ A session without the `ArtifactData` tool (a plain chat, a session whose artifac
 are off) takes the other route: Oscar downloads `batch-<batchId>.json` from the page's
 *JSON file* button and attaches the photos himself, which is exactly the "New plant for
 Timber" opening message in NEW-SESSION.md, one JSON array instead of one object.
+
+## Soil pH (2026-11-24)
+
+Cards carry `ph` ("OPT (MIN-MAX)", e.g. "6.2 (5.5-7.0)") and `phSource`; the front draws a
+pH tile above SOIL with OPT as the big figure and MIN-MAX as the wiggle-room bar. The page's
+brief, schema keys, validator and editor now carry both fields (the same grammar as
+`parsePh()` in `tools/plant-data.js`), and an ericaceous / lime-free `soil` with OPT above
+6.2 is an error. A page draft's `phSource` says "as remembered"; the deal session checks it
+online like hardiness and replaces it with the URL. `tools/fit-incoming.js` carries both
+fields onto the card; `tools/check-plant-json.js` refuses a `ph` without a `phSource`. Published as artifact version 10.
 
 ## The page's source, and the Label Scanner inside it (2026-10-27)
 

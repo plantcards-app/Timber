@@ -401,7 +401,8 @@ function fitCard(p) {
      still said the card could not carry them; it can, and dropping researched
      safety text on the floor is not a mapping decision worth keeping. Blank
      stays absent, not empty. */
-  for (const k of ['toxicity', 'compliance', 'hardinessNote', 'foliage']) {
+  /* ph / phSource added 2026-11-24 with the front's pH tile. */
+  for (const k of ['toxicity', 'compliance', 'hardinessNote', 'foliage', 'ph', 'phSource']) {
     if (p[k] != null && String(p[k]).trim()) card[k] = p[k];
   }
   return { card, problems };

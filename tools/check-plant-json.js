@@ -130,6 +130,18 @@ if (p.stockForm && !['container','bare-root','bare root','both'].includes(String
   errors.push(`"stockForm" is ${JSON.stringify(p.stockForm)} — expected container / bare-root / both`);
 if (p.clay && !['yes','no'].includes(String(p.clay).trim().toLowerCase()))
   errors.push(`"clay" is ${JSON.stringify(p.clay)} — expected yes / no. Leave it BLANK when it is not established; a blank already means "not known" and "unknown" is not a third answer.`);
+/* ph (2026-11-24): "OPT (MIN-MAX)", the front's pH tile reads exactly this. It must
+   say where it came from — a figure with no source is the thing VERIFY-QUEUE exists
+   to stop — so a ph without a phSource is an error, not a warning. */
+if (p.ph != null && String(p.ph).trim()) {
+  if (!require('./plant-data.js').parsePh(p.ph))
+    errors.push(`"ph" is ${JSON.stringify(p.ph)} — expected "OPT (MIN-MAX)" e.g. "6.2 (5.5-7.0)", one decimal, 3.5-9.0, MIN <= OPT <= MAX. Leave it blank if you cannot state it.`);
+  const phv = require('./plant-data.js').parsePh(p.ph);
+  if (phv && /\b(ericaceous|lime-free|lime free|lime-hating|acid\/ericaceous)\b/i.test(String(p.soil || '')) && phv.opt > 6.2)
+    errors.push(`"soil" says ${JSON.stringify(p.soil)} but "ph" OPT is ${phv.opt} — an ericaceous plant cannot centre above 6.2`);
+  if (!p.phSource || !String(p.phSource).trim())
+    errors.push(`"ph" is set but "phSource" is blank — say where the figure came from (a URL or named reference), or "drafted" if it is a general range not checked for this plant.`);
+}
 /* rootSize is prose, but a value carrying no figure at all renders as an empty rail,
    which is the exact defect `size` shipped three times before sizeOf() threw on it. */
 if (p.rootSize && !/\d/.test(String(p.rootSize)))
@@ -171,7 +183,8 @@ console.log(`  {common:${esc(p.common)}, latin:${esc(p.latin)}, hue:${hue},
    cvs:${esc(p.cvs)},
    hardiness:${esc(p.hardiness)}, resilience:${esc(p.resilience)},
    uses:${esc(p.uses)}, size:${esc(`${p.height || ''} H × ${p.spread || ''} W`)},
-   toxicity:${esc(p.toxicity)}, compliance:${esc(p.compliance)}, hardinessNote:${esc(p.hardinessNote)},
+   toxicity:${esc(p.toxicity)}, compliance:${esc(p.compliance)}, hardinessNote:${esc(p.hardinessNote)},${p.ph ? `
+   ph:${esc(p.ph)}, phSource:${esc(p.phSource)},` : ''}
    seasonalImpact:"", growthSpeed:${n(p.growthSpeed)}, pestRisk:${n(p.pestRisk)}, thirst:${n(p.thirst)}, careLevel:${n(p.careLevel)}, sunNeed:${n(p.sunNeed)}, sunMin:${n(p.sunMin)}},`);
 console.log(`\nPhoto must be staged at: photos/${(p.latin||'').normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')}.jpg`);
 console.log('Then bump NPLANTS in tests/app-test.js and tests/edge-test.js and run the suites.\n');

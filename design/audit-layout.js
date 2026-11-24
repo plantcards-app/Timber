@@ -95,6 +95,38 @@ const BAR = { start: 40.4, end: 93.2 };   // light bar span, % of band (locked m
         }
       }
 
+      /* G. pH tile (added 2026-11-24 with the tile itself). It sits in the soil
+         column above SOIL, in space that used to be bare photo, so it can only go
+         wrong by touching something: the growth rail's Slow label above it, the
+         SOIL panel below it, the plaque to its left, a photo caption, or its own
+         bar/pointer/labels spilling out of the frame. All measured, 1px tolerance;
+         the SOIL gap must stay at least 2px so the two panels read as two. */
+      {
+        const tile = card.querySelector('.phtile');
+        if (tile) {
+          const t = tile.getBoundingClientRect();
+          const hit = (r, pad = 0) => !(r.right <= t.left - pad || r.left >= t.right + pad || r.bottom <= t.top - pad || r.top >= t.bottom + pad);
+          for (const sel of ['.plaque', '.crest', '.toxflag', '.pcap', '.growth *', '.railval']) {
+            for (const el of card.querySelectorAll(sel)) {
+              const r = el.getBoundingClientRect();
+              if (r.width && r.height && hit({ left: r.left + 1, right: r.right - 1, top: r.top + 1, bottom: r.bottom - 1 }))
+                bad('ph-tile', `pH tile overlaps ${sel} (${(el.textContent || '').trim().slice(0, 20)})`);
+            }
+          }
+          const soil = card.querySelector('.soilp');
+          if (soil) {
+            const gap = soil.getBoundingClientRect().top - t.bottom;
+            if (gap < 2) bad('ph-tile', `pH tile only ${gap.toFixed(1)}px above SOIL (want >= 2px)`);
+          }
+          for (const el of tile.querySelectorAll('*')) {
+            const r = el.getBoundingClientRect();
+            if (!r.width) continue;
+            if (r.left < t.left - 1 || r.right > t.right + 1 || r.top < t.top - 1 || r.bottom > t.bottom + 1)
+              bad('ph-tile', `${el.className} spills out of the pH tile`);
+          }
+        }
+      }
+
       /* A. ink fits box */
       for (const el of card.querySelectorAll('.val-ink, .thead h2, .thead .bot')) {
         const oW = el.scrollWidth - el.clientWidth, oH = el.scrollHeight - el.clientHeight;

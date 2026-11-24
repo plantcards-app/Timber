@@ -146,6 +146,11 @@ function parseCsv() {
       errors.push(`row ${rowNo} (${p.common}): sunMin ${p.sunMin} is above sunNeed ${p.sunNeed} — the sun band would run backwards`);
     }
 
+    if (p.ph !== undefined && p.ph !== '') {
+      const m = D.parsePh(p.ph);
+      if (!m) errors.push(`row ${rowNo} (${p.common}): ph "${p.ph}" must read "OPT (MIN-MAX)" e.g. "6.2 (5.5-7.0)", 3.5-9.0, MIN <= OPT <= MAX — or blank if not recorded`);
+    }
+
     const heldFlag = p.held === '' ? '0' : p.held;
     if (heldFlag !== '0' && heldFlag !== '1') {
       errors.push(`row ${rowNo} (${p.common || '?'}): held is "${p.held}" — must be 0 (dealt) or 1 (parked, no photo yet)`);
