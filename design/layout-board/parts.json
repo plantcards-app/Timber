@@ -1,0 +1,111 @@
+{
+ "card": "Mahonia 'Winter Sun' \u2014 Mahonia \u00d7 media 'Winter Sun'",
+ "made": "2026-11-24",
+ "face": {
+  "w": 374,
+  "h": 598,
+  "ratio": 0.62504
+ },
+ "parts": [
+  {
+   "id": "title",
+   "label": "Name, latin and Listen",
+   "selector": ".thead",
+   "file": "title.png",
+   "left": 17.166,
+   "top": 4.559,
+   "width": 49.504,
+   "height": 10.723
+  },
+  {
+   "id": "crest",
+   "label": "Hardiness crest",
+   "selector": ".crest",
+   "file": "crest.png",
+   "left": 79.793,
+   "top": 2.585,
+   "width": 18.298,
+   "height": 14.124
+  },
+  {
+   "id": "growth",
+   "label": "Growth speed rail",
+   "selector": ".growth",
+   "file": "growth.png",
+   "left": 89.162,
+   "top": 16.199,
+   "width": 5.219,
+   "height": 38.218
+  },
+  {
+   "id": "railH",
+   "label": "Height rail",
+   "selector": ".rail-h",
+   "file": "railH.png",
+   "left": 2.592,
+   "top": 43.857,
+   "width": 7.874,
+   "height": 10.319
+  },
+  {
+   "id": "railS",
+   "label": "Spread rail",
+   "selector": ".rail-s",
+   "file": "railS.png",
+   "left": 2.592,
+   "top": 68.437,
+   "width": 7.874,
+   "height": 10.442
+  },
+  {
+   "id": "flag",
+   "label": "Safety flag",
+   "selector": ".toxflag",
+   "file": "flag.png",
+   "left": 2.256,
+   "top": 2.578,
+   "width": 10.446,
+   "height": 7.287
+  },
+  {
+   "id": "plaque",
+   "label": "Stats plaque",
+   "selector": ".plaque",
+   "file": "plaque.png",
+   "left": 15.406,
+   "top": 60.103,
+   "width": 62.789,
+   "height": 28.05
+  },
+  {
+   "id": "ph",
+   "label": "pH tile",
+   "selector": ".phtile",
+   "file": "ph.png",
+   "left": 80.33,
+   "top": 56.403,
+   "width": 15.314,
+   "height": 9.236
+  },
+  {
+   "id": "soil",
+   "label": "Soil panel",
+   "selector": ".soilp",
+   "file": "soil.png",
+   "left": 80.465,
+   "top": 66.635,
+   "width": 15.179,
+   "height": 21.484
+  },
+  {
+   "id": "band",
+   "label": "Aspect and light band",
+   "selector": ".band",
+   "file": "band.png",
+   "left": 14.453,
+   "top": 88.419,
+   "width": 81.198,
+   "height": 7.221
+  }
+ ]
+}

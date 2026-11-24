@@ -78,3 +78,27 @@ node tests/run-all.js --jobs 3            # includes audit-layout over every car
 
 Then send Oscar the before/after strip, say which numbers changed, and what you
 checked (which tiers, holo, edition, no-data cards).
+
+## Oscar's layouts from the Card Layout Board
+
+Oscar drags parts of a real card around on the **Card Layout Board**
+(<https://claude.ai/artifact/8RaRWN5eLwKXX9y2kEQcvu>, source in `design/layout-board/`)
+and saves a proposal. When he says "build the saved layout":
+
+1. `ArtifactData` `query` on collection `layouts` (that artifact's `url`), newest first;
+   take the documents with `status: "open"`. Each has `card`, `note`, `text` (the same
+   thing in words), `changes[]` and `added[]`.
+2. A change is `{part, label, selector, hidden, from, to}`, boxes in **% of the card
+   face**, measured as the part's drawn bounding box (a rotated part's rotated box). So
+   convert to CSS through the delta, never by copying `to` into `left/top/width`: new
+   CSS left = old CSS left + (to.left − from.left), and a size change is the ratio
+   to.width / from.width applied to the CSS width. `hidden: true` means remove it.
+   `added[]` are new things Oscar marked by position only (e.g. the photo date): build
+   them there, in the card's own style.
+3. Then the routine above: mock it with `tools/card-mock.js`, show Oscar, build, audit.
+4. Mark it done: `ArtifactData` `update` with `{status: "done", doneNote: "<rev / what
+   was built>", doneAt: <ms>}` pinned to the version you read. The board shows it as Built.
+
+The board's card is cut from the live app by `node tools/layout-board-kit.js
+[--card "<name>"]` (base.jpg + one transparent PNG per part + parts.json). After a
+layout change ships, re-cut it and republish the board so it shows the current card.
